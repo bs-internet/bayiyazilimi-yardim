@@ -192,8 +192,8 @@ export default defineConfig({
         },
 
         footer: {
-            message: 'Bayi Yazılımı açık kaynaklıdır (MIT).',
-            copyright: '© BS İnternet',
+            message: 'Bayi Yazılımı açık kaynaklıdır (AGPLv3 ve ek koşullar).',
+            copyright: '© 2026 Bülent Sakarya',
         },
 
         outline: { level: [2, 3], label: 'Bu sayfada' },

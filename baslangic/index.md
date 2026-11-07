@@ -4,7 +4,9 @@ Bayi Yazılımı, bayileriyle çalışan firmalar için hazırlanmış bir **B2B
 sistemidir**. Bayileriniz kendi panellerinden sipariş verir, teklif ister, carisini izler; siz
 yönetim panelinden ürünleri, stoğu, siparişleri ve tahsilatları yönetirsiniz.
 
-Sistem açık kaynaklıdır (MIT lisansı) ve ücretsizdir. Ek özellikler
+Sistem açık kaynaklıdır ve ücretsizdir: [GNU AGPLv3](https://github.com/bs-internet/bayiyazilimi/blob/main/LICENSE) lisansı ve
+[ek koşulları](https://github.com/bs-internet/bayiyazilimi/blob/main/EK-KOSULLAR.md) geçerlidir (atıf korunur; modül
+sistemiyle yazılan eklentiler dilediğiniz lisansla dağıtılabilir). Ek özellikler
 [modüller](/yonetim/moduller) ile gelir.
 
 ## İki alan
