@@ -179,6 +179,6 @@ Birimler diğer tanımlardan farklı çalışır:
 Tanımlama ekranlarının her işlemi (listeleme, ekleme, güncelleme, durum değiştirme, silme, geri
 alma, kalıcı silme) ayrı bir yetkidir. Birimler, Para Birimleri, Tedarikçiler, Kargo, Banka
 Hesapları ve ayar ekranlarının yetkileri kurulumla hazır gelir. **Diller, Bölgeler ve Vergi
-Oranları** ekranlarının yetkileri **Yetkiler › Rotalardan Keşfet** ile eklenip bir göreve
-atanana kadar bu ekranları yalnız Super Admin açabilir. Genel Bakış sayfası herkese açıktır ama
+Oranları** ekranlarının yetkileri kurulumda yalnız **Admin** görevine atanır; diğer görevlere
+**Görevler** ekranından eklenebilir. Genel Bakış sayfası herkese açıktır ama
 yalnız yetkili olunan ekranların kartlarını gösterir. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).

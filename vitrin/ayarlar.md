@@ -182,8 +182,9 @@ sayılır. Bkz. [Kampanyalar](/musteriler/kampanyalar).
 ## Arama motoru (SEO) {#seo}
 
 Vitrin sayfaları sunucuda hazırlanır; arama motorları içeriği doğrudan okur. Her sayfada başlık,
-açıklama, kanonik adres ve sosyal medya paylaşım bilgileri (Open Graph) bulunur; ürün sayfalarında
-ürün, fiyat ve stok bilgisi arama motorlarının anladığı yapılandırılmış veri olarak eklenir.
+açıklama, kanonik adres ve sosyal medya paylaşım bilgileri (Open Graph) bulunur. Arama motoru
+için ayrıca bir ayar yapmanız gerekmez: aşağıdaki dosyalar ve yapılandırılmış veri kendiliğinden
+üretilir.
 
 | Nerede | Alanlar |
 |---|---|
@@ -192,8 +193,39 @@ açıklama, kanonik adres ve sosyal medya paylaşım bilgileri (Open Graph) bulu
 | **İçerik › Sayfalar** › **Arama motoru (SEO)** | **Meta açıklama** (en çok 500) |
 
 - **Arama sonuç sayfaları** arama motorlarına "dizine ekleme" (noindex) olarak işaretlenir.
-- Sitenin `robots.txt` dosyası tüm sayfalara izin verir.
-- Otomatik site haritası (sitemap) üretilmez.
+
+### Tarayıcı dosyaları {#seo-dosyalari}
+
+| Adres | İçerik |
+|---|---|
+| `/robots.txt` | Arama motorlarına hangi bölümlerin taranmayacağını söyler. Vitrin sayfaları açıktır; yönetim paneli, bayi paneli, Hesabım, sepet, ödeme, teklif listesi, imzalı sipariş / teklif bağlantıları, arama sonuçları, giriş / kayıt / şifre sayfaları ve kurulum sihirbazı kapalıdır (`Disallow`). Dosyanın sonunda site haritasının adresi yazar |
+| `/sitemap.xml` | Site haritası: ana sayfa, liste sayfaları (Tüm Ürünler, Kategoriler, Markalar, Kampanyalı Ürünler, Yeni Ürünler, İletişim), aktif kategoriler, markalar ve sayfalar, aktif ve **Kimler görsün?** alanı **Vitrin** olan ürünler. Ürün, kategori, marka ve sayfalarda son güncelleme tarihi de yazar. Toplam 10.000 adresi aşarsa site haritası parçalara bölünür (`/sitemap-pages.xml`, `/sitemap-products-1.xml` …) ve `/sitemap.xml` bu parçaların listesi olur |
+| `/llms.txt` | Yapay zekâ araçları için mağaza özeti ([llmstxt.org](https://llmstxt.org) biçiminde): mağaza adı, slogan ya da alt bilgideki tanıtım metni, iletişim bilgileri (e-posta, telefon, adres, çalışma saatleri), ana kategoriler, aktif sayfalar ve önemli bağlantılar |
+
+- Site haritası ve `llms.txt` en çok **1 saat** önbellekte tutulur; ürün, kategori, marka,
+  sayfa ya da ayar değişikliği bir sonraki istekte yansır.
+- **Bakım modu** ya da **Bayilere özel** açıkken `robots.txt` tüm siteyi kapatır
+  (`Disallow: /`); site haritası ve `llms.txt` içerik vermez. Bkz. [Site erişimi](#site-erisimi).
+- Vitrin modülü kurulu değilse (yalnız bayi sistemi) `robots.txt` tüm siteyi kapatır; site
+  haritası ve `llms.txt` yoktur.
+
+Site haritasını arama motorlarına bildirmek için Google Search Console gibi araçlara
+`https://alanadiniz/sitemap.xml` adresini ekleyebilirsiniz.
+
+### Yapılandırılmış veri (Schema.org) {#yapilandirilmis-veri}
+
+Sayfalara arama motorlarının anladığı yapılandırılmış veri (JSON-LD) eklenir:
+
+| Sayfa | Veri |
+|---|---|
+| Ana sayfa | Firma (Organization: mağaza adı, logo, e-posta, telefon, adres, sosyal medya hesapları) ve site araması (WebSite + SearchAction) |
+| Ürün sayfası | Ürün (Product: ad, stok kodu, model no, barkod, görseller, açıklama, marka, kategori; fiyat varsa Offer: fiyat, para birimi ve stok durumu) ve gezinti yolu (BreadcrumbList) |
+| Ürün listeleri (tüm ürünler, kategori, marka …) | Koleksiyon sayfası (CollectionPage), gezinti yolu ve listedeki ürünler (ItemList) |
+| İçerik sayfaları | Sayfa (WebPage) ve gezinti yolu |
+| İletişim | İletişim sayfası (ContactPage) ve firma bilgileri |
+
+Firma bilgileri **Ayarlar › Genel Ayarlar** › **Kurumsal Bilgiler** ve **İletişim Bilgileri**
+ekranlarından, logo Genel Ayarlar'dan gelir; bu alanları doldurmanız yeterlidir.
 
 ## Arama ve filtreler
 

@@ -82,7 +82,7 @@ En altta siparişin verildiği IP adresi yazar.
 
 | Alan | Açıklama |
 |---|---|
-| **Yeni durum** | Yedi durumdan biri; mevcut durum seçili gelir. |
+| **Yeni durum** | Mevcut durum ve bu durumdan geçilebilecek durumlar; mevcut durum seçili gelir. Hangi durumların listelendiği: [Siparişler › Durum geçişleri](/satis/siparisler#durum-gecisleri). |
 | **Kargo firması** | Aktif kargo firmaları (siparişin mevcut firması pasif olsa da listede). Mevcut değer gelir. |
 | **Takip numarası** | En çok 255 karakter. Mevcut değer gelir. |
 | **Not** | En çok 255 karakter. Geçmişe yazılır. |

@@ -123,6 +123,7 @@ Müşteri), **durum** ve e-posta doğrulanmamışsa **E-posta doğrulanmadı** r
 | **E-postayı onayla** | Yalnız e-posta doğrulanmamışsa görünür. Adresi onaylanmış yapar; üyeye "e-posta adresi bir yönetici tarafından onaylandı" e-postası gider. |
 | **E-posta değiştir** | Yeni adrese onay bağlantısı gönderir. Bkz. [E-posta değiştirme](#e-posta). |
 | **Durum değiştir** | **Yeni durum** olarak Aktif ya da Pasif seçip **Durumu güncelle**. İşlem etkinlik kaydına yazılır ve üyeye "Üyelik durumunuz … olarak güncellendi." e-postası gider. |
+| **2FA sıfırla** | Yalnız üyenin iki adımlı doğrulaması açıksa görünür. Telefonunu ya da doğrulama uygulamasını kaybeden üye için: onay penceresinde **Sıfırla**'ya basınca doğrulama uygulaması bağlantısı ve kurtarma kodları silinir; üye yalnız şifresiyle girip doğrulamayı yeniden kurabilir. İşlem etkinlik kaydına yazılır. |
 | **Bayi ayarları** / **Bayiye çevir** | Bayide **Bayi ayarları**, müşteride **Bayiye çevir** yazar. Bkz. [Bayi ayarları](#bayi-ayarlari). |
 
 Panelden bayinin yerine giriş yapma (onun gözünden görme) özelliği yoktur.

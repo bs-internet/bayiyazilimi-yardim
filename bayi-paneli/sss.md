@@ -30,7 +30,8 @@ adresinizi de doğrulamanız gerekir.
 
 İki aşamalı doğrulama ekranında **kurtarma kodu ile giriş yapın** bağlantısına tıklayıp
 sakladığınız kurtarma kodlarından birini girin. Kurtarma kodlarınız da yoksa bizimle iletişime
-geçin.
+geçin: iki aşamalı doğrulamanızı sıfırlayabiliriz. Sonra yalnız şifrenizle girip doğrulamayı
+yeniden kurarsınız.
 
 ### Firmamızda birden fazla kişi panel kullanabilir mi? {#coklu-kullanici}
 

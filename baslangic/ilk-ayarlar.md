@@ -72,11 +72,11 @@ ekleyin. **Stok Ayarları**'nda kritik stok eşiğini ve bildirimini ayarlayın.
 
 ## 8. Çalışanlar, görevler ve yetkiler
 
-1. **Ayarlar › Kullanıcılar › Yetkiler › Rotalardan Keşfet** ile müşteri, kullanıcı, genel ayar
-   ve tanımlama ekranlarının yetkilerini listeye ekleyin (bu yetkiler kurulumla gelmez).
-2. **Görevler**'de hazır görevleri (Admin, Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu,
-   Katalog Sorumlusu, İçerik Editörü) gözden geçirin ve gereken yetkileri atayın.
-3. **Yeni Kullanıcı** ile çalışanlarınıza hesap açın.
+1. **Ayarlar › Kullanıcılar › Görevler**'de hazır görevleri (Admin, Mağaza Yöneticisi, Satış
+   Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu, İçerik Editörü) gözden geçirin. **Admin**
+   kurulumda panelin tüm yetkileriyle gelir; diğer görevler yalnız kendi alanlarının yetkileriyle
+   gelir, gerekirse yetki ekleyin.
+2. **Yeni Kullanıcı** ile çalışanlarınıza hesap açın.
 
 Bkz. [Kullanıcılar](/yonetim/kullanicilar) ve [Görevler ve yetkiler](/yonetim/roller-yetkiler).
 

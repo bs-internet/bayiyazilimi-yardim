@@ -12,7 +12,8 @@ yıl-ay-gün + günlük sıra biçimindedir (ör. `R2611070001`).
 - Sipariş **Kargoya Verildi** ya da **Tamamlandı** durumunda olmalıdır.
 - Süre: siparişin **kargoya verildiği tarihten** (kargo tarihi yoksa ödeme, o da yoksa sipariş
   tarihinden) itibaren **iade talebi süresi** kadar gün; son günün sonuna kadar. Süre
-  **Ayarlar › Tanımlamalar › Satış Ayarları**'ndan ayarlanır (varsayılan 14 gün). Bkz.
+  **Ayarlar › Tanımlamalar › Satış Ayarları**'ndan ayarlanır (varsayılan 14 gün). Süre **0**
+  ise iade kapalıdır, hiçbir sipariş için talep açılamaz. Bkz.
   [Satış Ayarları](/satis/satis-ayarlari).
 - Talepte kalemler ve adetler seçilir. Bir kalem için en fazla, sipariş adedinden o kalem için
   açılmış (reddedilmemiş) taleplerin adetleri düşüldükten kalan kadar iade istenebilir.

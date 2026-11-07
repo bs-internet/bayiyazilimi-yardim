@@ -66,9 +66,9 @@ açın. Ayrıntılar: [Toplama listesi](/stok/toplama-listesi).
 | **Kargoya Verildi** | Kargoya teslim edildi. İlk geçişte kargo tarihi kaydedilir. | Elle |
 | **Tamamlandı** | Teslim edildi. Fatura no ancak bu durumda girilir. | Elle |
 | **İptal Edildi** | Sipariş iptal. Stok geri eklenir, cari borç ters kayıtla kapanır. | Elle ya da onay bekleyen siparişte **Reddet** |
-| **Ödeme Başarısız** | Kart ödemesi başarısız oldu ya da 60 dakikada tamamlanmadı. Stok geri eklenir. | Ödeme sağlayıcısından |
+| **Ödeme Başarısız** | Kart ödemesi başarısız oldu ya da 60 dakikada tamamlanmadı. Stok geri eklenir. | Ödeme sağlayıcısından (elle seçilemez) |
 
-### Durum geçişleri
+### Durum geçişleri {#durum-gecisleri}
 
 Sistem kendiliğinden şu geçişleri yapar:
 
@@ -81,19 +81,30 @@ Sistem kendiliğinden şu geçişleri yapar:
                                       └──Reddet──► İptal Edildi
 ```
 
-Panelde **Durumu değiştir** penceresinde yedi durumun **hepsi** seçilebilir; sistem sırayı
-zorlamaz (ör. Hazırlanıyor'dan doğrudan Tamamlandı'ya geçebilirsiniz). Geçişin etkileri:
+Panelde **Durumu değiştir** penceresinde yalnız siparişin mevcut durumundan geçilebilecek
+durumlar listelenir:
+
+| Mevcut durum | Seçilebilecek durumlar |
+|---|---|
+| Ödeme Bekleniyor / Onay Bekliyor | Hazırlanıyor, İptal Edildi |
+| Hazırlanıyor | Kargoya Verildi, Tamamlandı, İptal Edildi |
+| Kargoya Verildi | Hazırlanıyor, Tamamlandı, İptal Edildi |
+| Tamamlandı | Kargoya Verildi, İptal Edildi |
+| İptal Edildi | Hazırlanıyor |
+| Ödeme Başarısız | İptal Edildi |
+
+Mevcut durum da her zaman listededir; durumu değiştirmeden yalnız not ya da kargo bilgisini
+güncellemek için kullanılır. **Ödeme Bekleniyor**, **Onay Bekliyor** ve **Ödeme Başarısız**
+sistemin kendi durumlarıdır, elle seçilemez. Ödeme alındıysa **Ödeme** penceresinden ödeme
+durumunu **Ödendi** yapın; onay bekleyen vadeli siparişte **Onayla** / **Reddet** düğmelerini
+kullanın. Geçişin etkileri:
 
 | Yeni durum | Stok | Cari |
 |---|---|---|
 | Hazırlanıyor / Kargoya Verildi / Tamamlandı | Stok düşülmemişse (ör. iptalden geri açılış) şimdi düşülür; **stok yetmezse işlem durur** (eksi stoğa açık ve takipsiz ürünler hariç) | Sipariş borcu yazılır (zaten yazılıysa tekrar yazılmaz) |
 | İptal Edildi | Düşülen stok, düştüğü depo / lokasyon / lota geri eklenir | Sipariş borcu ters kayıtla kapanır |
-| Ödeme Bekleniyor / Onay Bekliyor / Ödeme Başarısız (elle) | **Değişmez** | **Değişmez** |
 
-::: warning Siparişi kapatmak için "İptal Edildi"yi kullanın
-Elle "Ödeme Başarısız" ya da "Ödeme Bekleniyor" seçmek stoğu ve cari borcu geri almaz. Satışı
-gerçekten geri almak için durumu **İptal Edildi** yapın.
-:::
+Satışı geri almak için durumu **İptal Edildi** yapın.
 
 İptalle ilgili diğer kurallar:
 
@@ -135,15 +146,16 @@ Depo tarafı için bkz. [Stok işlemleri](/stok/stok-islemleri) ve
 
 | Ne zaman | Müşteriye | Size (bildirim adresine) |
 |---|---|---|
-| Sipariş oluştu | **Siparişiniz alındı** (ödeme yöntemi; havalede banka hesapları ve sipariş no ile açıklama hatırlatması) | **Yeni sipariş** |
-| Kart ödemesi tamamlandı | "Ödemeniz alındı, siparişiniz hazırlanıyor." | Yeni sipariş bildirimi (ikinci kez) |
+| Sipariş oluştu | **Siparişiniz alındı** (ödeme yöntemi; havalede banka hesapları ve sipariş no ile açıklama hatırlatması) | **Yeni sipariş** (kartla ödenen siparişlerde bu anda gitmez) |
+| Kart ödemesi tamamlandı | "Ödemeniz alındı, siparişiniz hazırlanıyor." | **Yeni sipariş** (kart siparişinde yalnız bu anda, bir kez) |
 | Panelde ödeme "Ödendi" yapıldı / havale bildirimi onaylandı | "Ödemeniz alındı, siparişiniz hazırlanıyor." | — |
 | Panelde durum değişti | **Sipariş durumunuz güncellendi** — yeni durum; takip no girilmişse kargo firması ve takip no; isterseniz notunuz | — |
 
 - Durum e-postası durum **gerçekten değiştiğinde** her zaman gider. Durum değiştirirken yazdığınız
   not yalnız **Notu müşteriye de göster** işaretliyse e-postaya ve müşterinin sipariş sayfasına
   eklenir.
-- Ödeme başarısız olduğunda e-posta gönderilmez.
+- Ödeme başarısız olduğunda e-posta gönderilmez. Ödemesi tamamlanmayan kart siparişi için size
+  hiç **Yeni sipariş** e-postası gitmez.
 - Bildirim adresi **Ayarlar › Genel Ayarlar › İletişim Bilgileri**'ndeki **Sipariş/teklif
   bildirim e-postası**'dır; boşsa size e-posta gitmez.
 

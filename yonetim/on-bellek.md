@@ -42,5 +42,5 @@ Her temizleme işlemi [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yaz�
 
 ## Yetki
 
-Ekranın yetkileri (görüntüleme ve temizleme) kurulumla gelmez; **Yetkiler › Rotalardan Keşfet**
-ile eklenip bir göreve atanana kadar yalnız Super Admin kullanabilir.
+Ekranın yetkileri (görüntüleme ve temizleme) kurulumda **Admin** görevine atanır; diğer görevlere
+**Görevler** ekranından eklenebilir.

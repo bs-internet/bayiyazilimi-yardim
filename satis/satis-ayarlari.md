@@ -22,12 +22,11 @@ KDV her durumda eklenir).
 | Alan | Sınır | Varsayılan | Açıklama |
 |---|---|---|---|
 | **Teklif geçerlilik süresi (gün)** | 1–365 | 15 | Teklif gönderilirken geçerlilik bitiş tarihi boşsa (ya da süresi geçmişse) gönderim gününe bu kadar gün eklenir. Onaylanan teklif bu süre içinde siparişe dönüştürülebilir. Bkz. [Teklifler](/satis/teklifler). |
-| **İade talebi süresi (gün)** | 0–365 | 14 | Müşteri, siparişin kargoya verildiği tarihten itibaren bu kadar gün içinde iade talebi açabilir. Bkz. [İadeler](/satis/iadeler). |
+| **İade talebi süresi (gün)** | 0–365 | 14 | Müşteri, siparişin kargoya verildiği tarihten itibaren bu kadar gün içinde iade talebi açabilir. Ekrandaki açıklama: "Sipariş kargoya verildikten sonra bu süre içinde iade talebi açılabilir. 0 = iade kapalı." Bkz. [İadeler](/satis/iadeler). |
 
 ::: info İade süresi 0 olursa
-Ekrandaki açıklamada "0 = iade kapalı" yazar. Süre son günün sonuna kadar sayıldığı için 0
-girildiğinde talep, siparişin kargoya verildiği **günün sonuna kadar** yine açılabilir; ertesi
-günden itibaren kapanır.
+**0** girildiğinde iade tamamen kapanır: hiçbir sipariş için iade talebi açılamaz. Müşteri yine
+de denerse "İade talebi kabul edilmiyor." uyarısını görür.
 :::
 
 Değişiklik yalnız bundan sonraki işlemleri etkiler: gönderilmiş tekliflerin bitiş tarihi

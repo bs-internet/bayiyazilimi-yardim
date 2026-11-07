@@ -212,9 +212,12 @@ kod bir kez kullanılır. **Kodları yenile** eski kodları geçersiz kılar ve 
 Açma ve kapatma işlemleri hesabınıza panel içi bildirim olarak düşer.
 
 ::: warning Telefonunuzu ve kurtarma kodlarınızı kaybettiyseniz
-Panelde iki adımlı doğrulamayı başka bir yöneticinin kapatabileceği bir ekran yoktur. Kurtarma
-kodlarınızı mutlaka saklayın; ikisini birden kaybettiyseniz sistem yöneticinizden / destekten
-yardım isteyin.
+Yetkili başka bir yönetici **Ayarlar › Kullanıcılar** › kullanıcı detayı › **Kullanıcı
+işlemleri › İki Adımlı Doğrulamayı Sıfırla** ile doğrulamanızı sıfırlayabilir; ardından
+yalnız şifrenizle girip yeniden kurarsınız. Bkz.
+[Kullanıcılar › Kullanıcı işlemleri](/yonetim/kullanicilar#kullanici-islemleri). Kendi
+doğrulamanızı bu menüden sıfırlayamazsınız; Super Admin hesabının doğrulamasını yalnız başka bir
+Super Admin sıfırlayabilir. Bu yüzden kurtarma kodlarınızı mutlaka saklayın.
 :::
 
 ### Tercihler {#tercihler}

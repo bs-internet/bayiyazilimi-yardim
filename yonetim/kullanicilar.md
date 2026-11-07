@@ -81,7 +81,7 @@ Kullanıcının adı, e-postası, görevi ve durumu ile şu bilgiler görünür:
 | **Etkinlik** | Kullanıcının yaptığı ve kullanıcıyla ilgili son 20 etkinlik kaydı |
 | **Oturumlar** | Son 20 giriş / çıkış kaydı: IP adresi, giriş ve çıkış zamanı. Çıkışı kaydedilmemiş oturumlar **Açık olabilir** olarak işaretlenir |
 
-### Kullanıcı işlemleri
+### Kullanıcı işlemleri {#kullanici-islemleri}
 
 Detay sayfasındaki **Kullanıcı işlemleri** menüsünden:
 
@@ -91,6 +91,7 @@ Detay sayfasındaki **Kullanıcı işlemleri** menüsünden:
 | **E-posta Adresini Değiştir** | **Yeni e-posta adresi**'ne onay bağlantısı gönderir (bağlantı 24 saat geçerli). Kullanıcının açık oturumları hemen kapatılır. Bağlantı onaylanınca e-posta değişir ve yeni adres onaylı olur. Yeni adres mevcut adresten farklı olmalı ve başka hesapta kullanılmamalı |
 | **Durum Değiştir** | **Aktif** ya da **Pasif**. Kullanıcıya bilgilendirme e-postası gider |
 | **Görev Değiştir** | Kullanıcının görevini değiştirir. Yalnız atayabileceğiniz görevler listelenir. Kullanıcıya e-posta gitmez |
+| **İki Adımlı Doğrulamayı Sıfırla** | Yalnız iki adımlı doğrulaması açık kullanıcıda görünür. Telefonunu ya da doğrulama uygulamasını kaybeden kullanıcı için: doğrulama uygulaması bağlantısı ve kurtarma kodları silinir; kullanıcı yalnız şifresiyle girip doğrulamayı yeniden kurabilir. Kendi doğrulamanızı buradan sıfırlayamazsınız (**Bilgilerim › Güvenlik**'i kullanın). Super Admin hesabının doğrulamasını yalnız bir Super Admin sıfırlayabilir |
 
 Her işlem [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yazılır.
 
@@ -126,6 +127,6 @@ tercihlerinizi kullanıcı menüsündeki **Bilgilerim** ekranlarından yönetirs
 ## Yetkiler
 
 Kullanıcılar bölümünün yetkileri (listeleme, ekleme, detay, e-posta onaylama / değiştirme, durum
-ve görev değiştirme) kurulumla gelmez. **Yetkiler › Rotalardan Keşfet** ile eklenip bir göreve
-atanana kadar bu bölümü yalnız Super Admin kullanabilir. Bkz.
+ve görev değiştirme, iki adımlı doğrulamayı sıfırlama) kurulumda **Admin** görevine atanır; diğer
+görevlere **Görevler** ekranından eklenebilir. Bkz.
 [Görevler ve yetkiler](/yonetim/roller-yetkiler).

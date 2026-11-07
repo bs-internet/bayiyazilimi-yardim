@@ -91,7 +91,7 @@ Dosyayı kutuya bırakın ya da **Dosya yükle** ile seçin: yalnız `.xlsx`, en
 
 | Seçenek | Varsayılan | Açıklama |
 |---|---|---|
-| **Mevcut ürünleri güncelle** | Açık | Kapalıysa yalnız sistemde olmayan stok kodları eklenir; mevcut ürünlerin satırları **Atlanan** sayılır. |
+| **Mevcut ürünleri güncelle** | Açık | Kapalıysa yalnız sistemde olmayan stok kodları eklenir (silinmiş ürünlerin kodları da geri getirilir); mevcut ürünlerin satırları **Atlanan** sayılır. |
 | **Depo stoklarını dosyadaki değerlere eşitle** | Açık | Mevcut ürünlerde `Stok:` sütunlarındaki değerler depo stoğu olarak yazılır; farklar stok hareketi (*İçe Aktarım*) olarak kaydedilir. Kapalıysa mevcut ürünlerin stoğuna dokunulmaz. Yeni ürünlerin stoğu her durumda yazılır. |
 | **Görsel bağlantılarını indir** | Kapalı | Görseli **olmayan** ürünlere Görsel 1–5 sütunlarındaki adreslerden görsel eklenir. Çok sayıda görselde aktarım uzar. |
 
@@ -107,8 +107,10 @@ Dosyayı kutuya bırakın ya da **Dosya yükle** ile seçin: yalnız `.xlsx`, en
 - Her satır ayrı işlenir: **hatalı değer içeren satır hiç yazılmaz**, diğer satırlar aktarılır.
 - Stok sütunu depo stoğunu dosyadaki sayıya **eşitler** (eklemez). Lot / seri takipli ürünlerin
   stoğu Excel ile değişmez; bu ürünlere [Mal kabul](/stok/mal-kabul) ile giriş yapın.
-- Silinmiş bir ürünün stok kodu dosyada varsa o silinmiş ürün güncellenir; ürün geri gelmez ve
-  yeni ürün de açılmaz.
+- Silinmiş bir ürünün stok kodu dosyada varsa ürün **geri getirilir** ve dosyadaki bilgilerle
+  yeni ürün gibi kurulur (Ürün Adı zorunludur, stok sütunları yazılır). Sonuçta **Yeni**
+  sayılır. Bu, **Mevcut ürünleri güncelle** kapalıyken de olur. Stok kodu tekil olduğundan aynı
+  kodla ikinci bir ürün açılmaz.
 
 ## Sonuç ekranı
 
@@ -116,7 +118,7 @@ Aktarım bitince ekranda **Son içe aktarma sonucu** kartı çıkar:
 
 | Kutu | Anlamı |
 |---|---|
-| **Yeni** | Eklenen ürün sayısı |
+| **Yeni** | Eklenen ürün sayısı (geri getirilen silinmiş ürünler dahil) |
 | **Güncellenen** | Güncellenen ürün sayısı |
 | **Atlanan** | Stok kodu boş satırlar ve ("Mevcut ürünleri güncelle" kapalıyken) mevcut ürünler |
 | **… uyarı** / **Sorunsuz** | Hata ve uyarıların listesi; hiç yoksa "Sorunsuz" |

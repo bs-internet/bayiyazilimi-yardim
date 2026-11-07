@@ -183,7 +183,7 @@ Size açık ödeme yöntemleri listelenir. Seçtiğiniz yöntemin açıklaması 
 
 | Yöntem | Ne zaman görünür? | Ne olur? |
 |---|---|---|
-| **Havale / EFT** | Firmamız havaleyi açtıysa ve tanımlı banka hesabı varsa | Sipariş **Ödeme Bekleniyor** durumunda açılır. Banka hesap bilgilerimiz sipariş e-postanızda yer alır; açıklamaya sipariş numaranızı yazın. Ödeme yaptıktan sonra [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
+| **Havale / EFT** | Firmamız havaleyi açtıysa ve tanımlı banka hesabı varsa | Sipariş **Ödeme Bekleniyor** durumunda açılır. Banka hesap bilgilerimiz sipariş e-postanızda ve ödeme alınana kadar [sipariş detayında](/bayi-paneli/siparislerim#havale-bilgileri) yer alır; açıklamaya sipariş numaranızı yazın. Ödeme yaptıktan sonra [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
 | **Cari hesaba (vadeli)** | Vadeli (açık hesap) çalışıyorsanız | Açıklamada vade gün sayınız ve kullanılabilir limitiniz yazar. Ayrıntı aşağıda |
 | **Kredi / Banka Kartı** | Kartla ödeme açıksa | Siparişi onaylayınca güvenli ödeme sayfasına geçersiniz. Altında bilgi amaçlı **Taksit seçenekleri** tablosu görünür. Bkz. [Kartla ödeme](/cari/kartla-odeme#odeme-akisi) |
 

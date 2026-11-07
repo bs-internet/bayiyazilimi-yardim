@@ -27,6 +27,13 @@ Başlıkta sipariş numarası, durum, kalem sayısı ve toplam tutar yazar.
 - **İade talebi oluştur** — yalnız iade süresi içindeki kargolanmış / tamamlanmış siparişlerde
   görünür. Bkz. [İadelerim](/bayi-paneli/iadelerim).
 
+### Havale / EFT bilgileri {#havale-bilgileri}
+
+Havaleyle verdiğiniz siparişin ödemesi henüz alınmadıysa (ve sipariş iptal edilmediyse) detayın
+en üstünde **Havale / EFT bilgileri** kartı çıkar: banka hesaplarımız ve "Ödemeyi aşağıdaki
+hesaplardan birine yapın; açıklamaya sipariş numaranızı (…) yazın." hatırlatması. Ödeme
+alındığında kart kaybolur.
+
 ### Ürünler
 
 | Sütun | Açıklama |
@@ -79,7 +86,7 @@ Eski bir siparişteki ürünleri aynı adetlerle yeniden sipariş etmek için:
 1. Sipariş detayında (ya da [Başlangıç](/bayi-paneli/baslangic) ekranındaki son siparişlerde)
    **Tekrar sipariş ver**'e basın.
 2. Ürünler sepetinize **eklenir** (sepetinizdeki mevcut ürünler silinmez) ve
-   [Sipariş ver](/bayi-paneli/siparis-verme) ekranı açılır.
+   [Sipariş ver](/bayi-paneli/siparis-verme) ekranı (sepetiniz) açılır.
 3. Sepeti kontrol edip siparişi verin.
 
 Her ürün güncel fiyatıyla ve [adet kurallarıyla](/bayi-paneli/siparis-verme#adet-kurallari)

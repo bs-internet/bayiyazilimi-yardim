@@ -21,8 +21,8 @@ Bu sayfa çekirdekte (modülsüz) gönderilen tüm bildirimleri listeler. Kurulu
 Müşteriye giden sipariş, teklif ve iade e-postaları **siparişte / talepte yazılı e-posta
 adresine** gider. Hesap e-postaları (şifre, hoş geldin, durum) hesabın e-posta adresine gider.
 
-E-posta konularının başındaki firma adı, kurulumda girilen addır (sunucudaki `.env` dosyasında
-`APP_NAME`). Genel Ayarlar'daki **Uygulama adı** bu ön eki değiştirmez. E-postaların üstünde
+E-posta konularının başındaki firma adı ve e-postanın üst / alt kısmındaki ad, **Genel
+Ayarlar**'daki **Uygulama adı**'dır (boşsa kurulumda girilen ad). E-postaların üstünde
 **Genel Ayarlar**'daki logo görünür.
 
 ::: warning E-postalar kuyruktan gider
@@ -36,10 +36,10 @@ bekler. Bkz. [Kurulum › E-posta ve kuyruk](/baslangic/kurulum#e-posta) ve
 | Olay | Alıcı | Kanal | E-posta konusu |
 |---|---|---|---|
 | Sipariş verildi (sepetten ya da tekliften) | Müşteri (siparişteki e-posta) | E-posta | *Firma* — Siparişiniz alındı (*no*) |
-| Sipariş verildi | Bildirim e-postası | E-posta | Yeni sipariş: *no* |
+| Sipariş verildi (kartla ödeme hariç) | Bildirim e-postası | E-posta | Yeni sipariş: *no* |
 | Sipariş durumu değişti | Müşteri | E-posta | *Firma* — Sipariş durumu: *durum* (*no*). Durum değiştirilirken "müşteriye bildir" seçildiyse girilen not da e-postada yer alır |
 | Sipariş ödendi (havale onayı, yönetici onayı ya da kart ödemesi) | Müşteri | E-posta | Sipariş durumu e-postası, "Ödemeniz alındı, siparişiniz hazırlanıyor." notuyla |
-| Kart ödemesi sağlayıcıdan onaylandı | Bildirim e-postası | E-posta | Yeni sipariş: *no* |
+| Kart ödemesi sağlayıcıdan onaylandı | Bildirim e-postası | E-posta | Yeni sipariş: *no*. Kart siparişi size yalnız bu anda, bir kez bildirilir; ödemesi tamamlanmayan kart siparişi için e-posta gitmez |
 | Teklif talebi geldi | Müşteri | E-posta | *Firma* — Teklif talebiniz alındı (*no*) |
 | Teklif talebi geldi | Bildirim e-postası | E-posta | Yeni teklif talebi: *no* |
 | Teklif müşteriye gönderildi | Müşteri | E-posta | *Firma* — Teklifiniz hazır (*no*) |

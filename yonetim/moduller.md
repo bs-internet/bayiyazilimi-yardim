@@ -99,5 +99,8 @@ Geçici olarak durdurmak için kaldırmak yerine Modüller ekranından **kapatma
 
 ## Yetki
 
-Modüller ekranının yetkileri (görüntüleme ve açma / kapatma) kurulumla gelmez; **Rotalardan
-Keşfet** ile eklenip bir göreve atanana kadar yalnız Super Admin kullanabilir.
+Modüller ekranının yetkileri (görüntüleme ve açma / kapatma) kurulumda **Admin** görevine atanır;
+diğer görevlere **Görevler** ekranından eklenebilir.
+
+Kurulumdan sonra eklenen bir modülün kendi ekranlarının yetkileri hiçbir göreve kendiliğinden
+atanmaz; atanana kadar bu ekranları yalnız Super Admin açabilir. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler#yeni-modul).

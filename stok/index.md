@@ -148,7 +148,8 @@ Depoda stoğu sıfırdan farklı olan ürünler, ada göre sıralı, sayfa baş�
 ### 4. Stok hareketleri
 
 Depoya ait son hareketler (sayfa başına 50): Tarih, Ürün, Lokasyon, Tür, Miktar, Bakiye,
-Referans / Not, Kullanıcı. **Filtreli hareket ekranı** düğmesi
+Referans / Not, Kullanıcı. Referanstaki numaraya tıklanınca hareketin kaynağına göre siparişin,
+mal kabulün ya da sayımın detayı açılır. **Filtreli hareket ekranı** düğmesi
 [Stok Hareketleri](/stok/stok-islemleri#stok-hareketleri) ekranını bu depoya süzülmüş açar.
 
 ## Lokasyonlar (koridor → raf → göz) {#lokasyonlar}

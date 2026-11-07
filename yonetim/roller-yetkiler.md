@@ -20,8 +20,8 @@ sayısı**. Sistem görevleri **Sistem** etiketiyle gösterilir. **Görev ara** 
 | Görev | Kapsam |
 |---|---|
 | **Super Admin** | **Her şeye** erişir; yetki listesine bakılmaz. Kurulumda açtığınız yönetici bu görevdedir. Görevler listesinde görünmez ve hiçbir formda seçilemez |
-| **Admin** | Sistem görevi. Kurulumda **tüm mağaza yetkileriyle** gelir (aşağıdaki "Mağaza:" gruplarının hepsi) |
-| **Mağaza Yöneticisi** | Admin ile aynı: tüm mağaza yetkileri |
+| **Admin** | Sistem görevi. Kurulumda panelin **tüm yetkileriyle** gelir: mağaza ekranlarının yanında müşteriler, kullanıcılar, görevler, yetkiler, Genel Ayarlar, Modüller, Tanımlamalar, Etkinlik Kayıtları ve Ön Bellek Yönetimi. Kurulum sırasında kurulu olan modüllerin yetkileri de dahildir |
+| **Mağaza Yöneticisi** | Tüm mağaza yetkileri (aşağıdaki "Mağaza:" gruplarının hepsi); müşteri, kullanıcı, genel ayar ve tanımlama ekranları hariç |
 | **Satış Sorumlusu** | Siparişler (listeleme, detay, durum, ödeme durumu, not, fatura bilgisi, lot değiştirme, toplama listesi), Teklifler (tümü), İadeler (tümü); ayrıca ürünleri, stok durumunu, kargo firmalarını ve para birimlerini **görüntüleme** |
 | **Depo Sorumlusu** | Stok (durum, hareketler, giriş / çıkış, transfer, lokasyon değişimi, lot / seri no), Depolar ve lokasyonlar, Mal kabul, Sayım, Tedarikçiler, Kargo firmaları, İadeler; siparişlerde **listeleme, detay, durum değiştirme, lot değiştirme ve toplama listesi**; ürünleri görüntüleme |
 | **Katalog Sorumlusu** | Ürünler (görseller dahil), Kategoriler, Markalar, Excel içe aktarma ve ürünleri Excel'e aktarma; ayrıca stok durumunu, stok hareketlerini ve para birimlerini **görüntüleme** |
@@ -29,10 +29,15 @@ sayısı**. Sistem görevleri **Sistem** etiketiyle gösterilir. **Görev ara** 
 
 Hazır görevlerin yetkilerini istediğiniz gibi değiştirebilir, yeni görev ekleyebilirsiniz.
 
-::: warning Çekirdek ekranların yetkileri hazır gelmez
-Kurulumla gelen görevler yalnız **mağaza** ekranlarının yetkilerini içerir. Şu ekranların
-yetkileri kurulumda tanımlı değildir; **Rotalardan Keşfet** ile eklenip bir göreve atanana kadar
-bu ekranları **yalnız Super Admin** açabilir:
+::: info Kurulumda yetkiler hazır gelir
+Kurulum, panelin bütün ekranlarının yetkilerini yetki listesine ekler ve hepsini **Admin**
+görevine atar. Bu sayede Admin görevindeki bir çalışan, Super Admin'e gerek kalmadan bayi
+ekleyebilir, kullanıcı ve görevleri yönetebilir, Genel Ayarlar ve Tanımlamalar ekranlarını
+kullanabilir.
+
+Diğer hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu …) yalnız kendi alanlarının yetkilerini
+alır. Şu ekranların yetkileri listede vardır ama bu görevlere atanmamıştır; gerekiyorsa
+**Görevler**'de ilgili göreve ekleyin:
 
 - Müşteriler listesi, müşteri detayı ve **Yeni Bayi**
 - Genel Ayarlar (Genel Ayarlar ekranı, Modüller) ve ETBİS kare kodu yükleme
@@ -41,8 +46,9 @@ bu ekranları **yalnız Super Admin** açabilir:
   silme / durum değiştirme
 - Etkinlik Kayıtları, Ön Bellek Yönetimi
 
-Örneğin Admin görevindeki bir çalışanın bayi ekleyebilmesi için müşteri yetkilerini keşfedip
-Admin görevine atamanız gerekir. Bkz. [Nasıl yapılır?](#nasil-yapilir)
+Kurulumdan **sonra** eklenen ekranların (ör. sonradan kurulan bir modül) yetkileri hiçbir göreve
+kendiliğinden atanmaz; atanana kadar bu ekranları yalnız Super Admin açabilir. Bkz.
+[Yeni kurulan bir modülün ekranlarını açmak](#yeni-modul).
 :::
 
 **Herkese açık ekranlar:** Başlangıç ekranı, Genel Ayarlar ve Tanımlamalar'ın **Genel Bakış**
@@ -87,8 +93,8 @@ açabilir.
 ### Rotalardan Keşfet {#rotalardan-kesfet}
 
 **Yetkiler › Rotalardan Keşfet** — panelde olup henüz yetki listesinde **bulunmayan** ekran ve
-işlemleri listeler. Yeni bir modül kurduğunuzda ya da çekirdek ekranlara yetki vermek
-istediğinizde kullanılır.
+işlemleri listeler. Kurulumda var olan ekranların yetkileri zaten listededir; bu ekran sonradan
+eklenen ekranlar (ör. yeni bir modül) ya da listeden kalıcı silinmiş yetkiler için kullanılır.
 
 | Sütun | Açıklama |
 |---|---|
@@ -140,15 +146,18 @@ Ekrana bağlı bir izni silerseniz o ekranı yine yalnız Super Admin açabilir.
 2. Daha dar bir kapsam istiyorsanız **Görevler › Yeni Görev** ile kendi görevinizi oluşturup
    yalnız istediğiniz izinleri işaretleyin.
 
-### Admin görevine müşteri ve kullanıcı yönetimini açmak
+### Başka bir göreve müşteri yönetimini açmak
 
-1. **Ayarlar › Kullanıcılar › Yetkiler › Rotalardan Keşfet**'i açın.
-2. `panel.members.` ile başlayanları (müşteriler) ve istiyorsanız `panel.settings.users.`
-   ile başlayanları (kullanıcılar) işaretleyip **Seçilenleri Ekle**'ye basın.
-3. **Görevler**'de **Admin**'i açın, yeni eklenen grupları işaretleyip **Değişiklikleri
+Admin görevi müşteri ve kullanıcı ekranlarına kurulumdan itibaren erişir. Bu ekranları başka bir
+göreve (ör. Mağaza Yöneticisi) açmak için:
+
+1. **Ayarlar › Kullanıcılar › Görevler**'de görevi **Düzenle** ile açın.
+2. Müşteri gruplarını (istiyorsanız kullanıcı gruplarını da) işaretleyip **Değişiklikleri
    kaydet**'e basın.
 
-### Yeni kurulan bir modülün ekranlarını açmak
+Aradığınız yetki listede yoksa önce **Yetkiler › Rotalardan Keşfet** ile ekleyin.
+
+### Yeni kurulan bir modülün ekranlarını açmak {#yeni-modul}
 
 Modül kurulduğunda (`bayi:install`) yetkileri listeye eklenir ama hiçbir göreve atanmaz. Modülün
 yetkilerini **Görevler**'de ilgili görevlere atayın. Listede görünmüyorlarsa **Rotalardan

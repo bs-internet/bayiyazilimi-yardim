@@ -161,7 +161,8 @@ bu ayara göre süzmek için **Kimler görsün** süzgeci vardır.
 
 Düzenleme ekranının altındaki **Sil** düğmesi onay sorar. Silinen ürün vitrinden ve listelerden
 kaldırılır; **geçmiş sipariş ve teklif kayıtları korunur** (kalemlerdeki ad ve kod siparişte
-saklıdır). Silinmiş ürünün stok kodu yeni ürüne verilemez.
+saklıdır). Silinmiş ürünün stok kodu yeni ürüne verilemez; ancak bu kod
+[Excel ile içe aktarımda](/satis/excel) dosyada geçerse silinmiş ürün geri getirilir.
 
 ::: tip Silmek yerine pasifleştirin
 Bir ürünü geçici olarak satıştan kaldırmak için durumunu **Pasif** yapın; ürün listesindeki

@@ -28,6 +28,7 @@ panelde **teklif** oluşturup müşteriye gönderin; müşteri onaylayıp ödedi
 4. **Sipariş oluşur**: numara `S` + tarih + sıra biçimindedir (ör. `S2611070001`).
    Stok bu anda düşülür (ayrılır).
 5. Müşteriye "Siparişiniz alındı" e-postası, size (bildirim adresine) yeni sipariş e-postası gider.
+   Kartla ödenen siparişte yeni sipariş e-postası bu anda değil, ödeme tamamlanınca gider.
 
 Sonrası ödeme yöntemine göre ayrılır.
 
@@ -39,9 +40,10 @@ PayTR ya da iyzico modülü kuruluysa sunulur. Bkz. [Kartla ödeme](/cari/kartla
 
 1. Sipariş **Ödeme Bekleniyor** durumunda oluşur, müşteri ödeme sayfasına yönlenir.
 2. Ödeme başarılı olursa sipariş kendiliğinden **Hazırlanıyor** olur, cariye borç ve ödeme
-   (alacak) yazılır. Müşteriye "Ödemeniz alındı" e-postası, size yeni sipariş bildirimi gider.
+   (alacak) yazılır. Müşteriye "Ödemeniz alındı" e-postası, size yeni sipariş e-postası gider
+   (kart siparişinde tek bildirim budur).
 3. Ödeme başarısız olursa ya da 60 dakika içinde tamamlanmazsa sipariş **Ödeme Başarısız** olur
-   ve düşülen stok geri eklenir.
+   ve düşülen stok geri eklenir. Ödemesi tamamlanmayan siparişler için size e-posta gitmez.
 
 ### Havale / EFT
 
@@ -98,15 +100,17 @@ Yalnız vadeli çalışan bayilere sunulur. Bkz. [Peşin ve vadeli çalışma](/
   Herhangi bir aşamada yönetici: ──► İptal Edildi
 ```
 
-Yönetici durum değiştirme penceresinde **her durumu** seçebilir; sistem sırayı zorlamaz. Her
-değişikliğin stok ve cari etkisi için bkz. [Sipariş durumları](/satis/siparisler#durumlar).
+Yönetici durum değiştirme penceresinde yalnız mevcut durumdan geçilebilecek durumları görür
+(ör. Hazırlanıyor'dan Kargoya Verildi, Tamamlandı ya da İptal Edildi). **Ödeme Bekleniyor**,
+**Onay Bekliyor** ve **Ödeme Başarısız** elle seçilemez. Geçişlerin listesi ve her değişikliğin
+stok ve cari etkisi için bkz. [Durum geçişleri](/satis/siparisler#durum-gecisleri).
 
 ## Kim ne zaman e-posta alır?
 
 | Olay | Müşteri | Siz (bildirim adresi) |
 |---|---|---|
-| Sipariş oluştu | "Siparişiniz alındı" (havalede banka hesaplarıyla) | Yeni sipariş |
-| Kartla ödeme tamamlandı | "Ödemeniz alındı, siparişiniz hazırlanıyor" | Yeni sipariş (ikinci bildirim) |
+| Sipariş oluştu | "Siparişiniz alındı" (havalede banka hesaplarıyla) | Yeni sipariş (kart siparişinde gitmez) |
+| Kartla ödeme tamamlandı | "Ödemeniz alındı, siparişiniz hazırlanıyor" | Yeni sipariş (kart siparişinde tek bildirim) |
 | Panelde ödeme "Ödendi" yapıldı | "Ödemeniz alındı, siparişiniz hazırlanıyor" | — |
 | Panelde durum değişti | Durum e-postası (kargoda takip no ile) | — |
 | Teklif / iade adımları | Bkz. [Teklifler](/satis/teklifler#e-postalar), [İadeler](/satis/iadeler#e-postalar) | |

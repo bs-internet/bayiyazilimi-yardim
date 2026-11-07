@@ -27,7 +27,7 @@ ekranlarını ekleyebilir (ör. Vitrin modülünün site ayarları).
 
 | Alan | Açıklama |
 |---|---|
-| Uygulama adı | Panelin adı. Kenar çubuğunda, tarayıcı sekmesinde, giriş ekranında görünür. En çok 255 karakter. Boş bırakılırsa kurulumda girilen ad kullanılır |
+| Uygulama adı | Panelin adı. Kenar çubuğunda, tarayıcı sekmesinde, giriş ekranında ve e-postalarda (konu başı, üst ve alt kısım) görünür. En çok 255 karakter. Boş bırakılırsa kurulumda girilen ad kullanılır |
 | Slogan | Kısa tanım. En çok 255 karakter, isteğe bağlı |
 | Logo | Açık tema ve genel kullanım için logo. Giriş ekranında ve e-postaların üst kısmında görünür. JPG / PNG, en çok 2 MB |
 | Logo dark | Koyu temada kullanılan logo. JPG / PNG, en çok 2 MB |
@@ -172,4 +172,4 @@ listesi. Ayrıntılar: [Modüller](/yonetim/moduller).
 Bu ekranlardaki her işlem ayrı bir yetkidir ve [görevlere](/yonetim/roller-yetkiler) atanır.
 Kurumsal Bilgiler, İletişim Bilgileri ve Site Erişimi için görüntüleme ve güncelleme yetkileri
 hazır gelir (**Mağaza: İçerik** grubunda). Genel Ayarlar ve Modüller ekranlarının yetkileri
-**Yetkiler › Rotalardan Keşfet** ile eklenmeden yalnız Super Admin bu ekranları açabilir.
+kurulumda yalnız **Admin** görevine atanır; başka bir göreve **Görevler** ekranından eklenebilir.

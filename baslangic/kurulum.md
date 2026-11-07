@@ -91,7 +91,7 @@ o adımdaki **Veritabanını değiştir** düğmesine basın.
 
 | Alan | Açıklama |
 |---|---|
-| Firma / site adı | Zorunlu, en çok 100 karakter. Panelde, tarayıcı sekmesinde ve e-posta konularında görünür. Panelde görünen ad sonradan **Genel Ayarlar**'dan değiştirilebilir |
+| Firma / site adı | Zorunlu, en çok 100 karakter. Panelde, tarayıcı sekmesinde ve e-posta konularında görünür. Panelde ve e-postalarda görünen ad sonradan **Genel Ayarlar › Uygulama adı**'ndan değiştirilebilir |
 | Yönetici adı | Zorunlu. İlk yönetici hesabının adı |
 | Yönetici e-postası | Zorunlu, geçerli bir e-posta adresi. Panele bu adresle girersiniz |
 | Şifre / Şifre (tekrar) | Zorunlu; iki alan aynı olmalı. Kurulum sırasında en az 8 karakter istenir |
@@ -130,6 +130,9 @@ Son ekranda yönetici e-postanız ve **Sıradaki adımlar** listesi görünür:
 - Veritabanı tabloları oluşturulur, temel veriler (ve seçildiyse örnek veriler) yüklenir.
 - Girdiğiniz hesap **Super Admin** görevli, e-postası onaylı, Türkçe ve İstanbul saat dilimli
   bir yönetici olarak açılır.
+- Panelin bütün ekranlarının yetkileri yetki listesine eklenir ve hepsi **Admin** görevine
+  atanır. Diğer hazır görevler yalnız kendi alanlarının yetkilerini alır. Bkz.
+  [Görevler ve yetkiler](/yonetim/roller-yetkiler#hazir-gorevler).
 - Yüklenen görsellerin sitede görünmesi için `public/storage` bağlantısı oluşturulur. Hosting
   buna izin vermezse kurulum yine tamamlanır; bkz. [Görseller görünmüyor](/baslangic/sorun-giderme#gorseller).
 - `.env` dosyası canlı kullanıma alınır: site adı ve adresi yazılır, hata ayrıntıları

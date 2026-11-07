@@ -50,8 +50,11 @@ tıklayınca detay açılır:
   indirimi (ör. havale), **Genel toplam**.
 - **Ödeme** (yöntem, durum), kargo (**Firma**, **Takip no**, **Desi**), **Teslimat adresi**,
   **Fatura adresi**, **Sipariş notunuz**, **Sipariş geçmişi**.
-- **Tekrar sipariş ver** — siparişteki ürünleri yeniden sepete ekler. Eklenemeyen ürün (stok,
-  satıştan kalkma vb.) varsa bildirilir.
+- **Havale / EFT bilgileri** — havaleyle verilen siparişin ödemesi alınmadıysa (ve sipariş iptal
+  edilmediyse) detayın üstünde banka hesaplarınız ve açıklamaya sipariş numarasını yazma
+  hatırlatması görünür.
+- **Tekrar sipariş ver** — siparişteki ürünleri vitrin sepetine ekler ve **Sepet** sayfasını
+  açar. Eklenemeyen ürün (stok, satıştan kalkma vb.) varsa bildirilir.
 - **İade talebi oluştur** — sipariş iadeye uygunsa görünür (bkz. [İadelerim](#iadelerim)).
 
 ### Sipariş durumları {#siparis-durumlari}

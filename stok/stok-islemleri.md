@@ -75,15 +75,17 @@ girmek "seri numarası zaten stokta" hatası verir.
 | Depo | Zorunlu |
 | Lot / Seri no | Yalnız lot / seri takipli üründe; isteğe bağlı. Listede depodaki lotlar SKT ve mevcut miktarla, süresi geçmişler **(süresi geçmiş)** notuyla görünür. Boşsa süresi geçmemiş, SKT'si en yakın lot önce düşülür |
 | Lokasyon | İsteğe bağlı. Boşsa toplama sırasıyla stoğu olan lokasyonlardan düşer |
-| Miktar | Zorunlu |
+| Miktar | Zorunlu; o depoda (seçtiyseniz o lokasyon / lotta) bulunan miktarı aşamaz |
 | Not | İsteğe bağlı (ör. "hasarlı", "numune") |
 
-- Lot seçtiyseniz o lotta yeterli stok yoksa işlem "lotunda yeterli stok yok" hatasıyla durur.
-- Lot seçmediyseniz ve stok yetmiyorsa yetmeyen kısım **Atanmamış**'ta eksiye düşer (lot
-  takipsiz üründe lokasyon seçtiyseniz o lokasyonda). Çıkış yapmadan önce mevcut miktarı
-  kontrol edin.
+- Çıkış, eldeki miktardan fazla olamaz. Fazlasını girerseniz işlem "Yeterli stok yok: en fazla
+  N adet çıkış yapılabilir." uyarısıyla durur. Sayılan miktar depoda (lokasyon ya da lot
+  seçtiyseniz yalnız orada) fiilen bulunan stoktur; süresi geçmiş lotlar dahil, eksideki
+  satırlar hariç. Eksi stok elle çıkışla değil, yalnız sipariş ile oluşur.
+- Lot seçtiyseniz o lotta yeterli stok yoksa işlem durur.
 - SKT'si geçmiş bir lotu imha etmek için lotu **açıkça seçin**; otomatik seçim süresi geçmiş
-  lotu almaz.
+  lotu almaz. Lot seçmeden yapılan çıkışta süresi geçmemiş lotlar yetmezse yetmeyen kısım
+  **Atanmamış**'ta eksiye düşebilir.
 
 ### Hızlı sayım (miktarı eşitle) {#hizli-sayim}
 
@@ -157,7 +159,7 @@ sayfa başına 50 kayıt. Hareketler değiştirilemez ve silinemez.
 | Tür | Hareket türü (aşağıdaki tablo) |
 | Miktar | Girişler `+`, çıkışlar `−` |
 | Bakiye | Hareketten sonra ürünün **o depodaki** toplamı |
-| Referans / Not | İlgili sipariş, mal kabul ya da sayım numarası (tıklanınca açılır) ve not |
+| Referans / Not | İlgili sipariş, mal kabul ya da sayım numarası ve not. Numaraya tıklanınca hareketin kaynağına göre siparişin, mal kabulün ya da sayımın detayı açılır |
 | Kullanıcı | İşlemi yapan; otomatik işlemlerde (ör. sipariş düşümü) **Sistem** |
 
 ### Süzgeçler

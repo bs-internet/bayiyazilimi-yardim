@@ -123,5 +123,5 @@ sonra ayarlayın.
 Bu ekranın yetkileri kurulumla hazır gelir (**Mağaza: Para Birimleri & Kurlar** grubu):
 görüntüleme, kurları elle güncelleme, TCMB'den çekme, para birimi ekleme ve TCMB ayarları.
 Satış Sorumlusu ve Katalog Sorumlusu görevleri ekranı yalnız **görüntüleyebilir**. Elle ekleme,
-düzenleme, durum değiştirme ve silme işlemleri ayrı yetkilerdir; **Rotalardan Keşfet** ile
-eklenmeden yalnız Super Admin yapabilir. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).
+düzenleme, durum değiştirme ve silme işlemleri ayrı yetkilerdir; kurulumda yalnız **Admin**
+görevine atanır. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).

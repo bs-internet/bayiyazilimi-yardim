@@ -36,7 +36,7 @@ Doğrulaması İstendi · Oturum Kapatıldı · Yeni Cihaz Girişi
 
 | Alan | Kaydedilen işlemler |
 |---|---|
-| **Kullanıcılar ve hesaplar** | Panel kullanıcısı ve üye oluşturma, hoş geldin bağlantısının kullanılması, e-posta onaylama ve değiştirme, durum değiştirme, görev atama / kaldırma |
+| **Kullanıcılar ve hesaplar** | Panel kullanıcısı ve üye oluşturma, hoş geldin bağlantısının kullanılması, e-posta onaylama ve değiştirme, durum değiştirme, görev atama / kaldırma, bir yöneticinin başka bir kullanıcının iki adımlı doğrulamasını sıfırlaması |
 | **Hesap güvenliği** | Şifre değiştirme ve sıfırlama, iki adımlı doğrulamayı açma / kapatma, başka cihazdaki oturumu kapatma, yeni cihazdan giriş, profil ve tercih değişiklikleri |
 | **Görevler ve yetkiler** | Görev ekleme, düzenleme, silme, izinlerin değişmesi; izin ekleme, toplu ekleme, silme, geri yükleme |
 | **Ayarlar** | Genel Ayarlar, Kurumsal Bilgiler, İletişim Bilgileri, Site Erişimi ve diğer mağaza ayarları; modül açma / kapatma; önbellek temizleme |
@@ -57,6 +57,6 @@ cihazdan** yapılan girişler etkinlik kaydına da düşer.
 
 ## Yetki
 
-Ekranın yetkisi kurulumla gelmez; **Yetkiler › Rotalardan Keşfet** ile eklenip bir göreve
-atanana kadar yalnız Super Admin görebilir. Bu yetkiye sahip olmayanlar başlangıç ekranında **Son
+Ekranın yetkisi kurulumda **Admin** görevine atanır; diğer görevlere **Görevler** ekranından
+eklenebilir. Bu yetkiye sahip olmayanlar başlangıç ekranında **Son
 hareketler** kartını da görmez.
