@@ -38,3 +38,12 @@ Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi 
   [Kartla ödeme](/cari/kartla-odeme).
 
 Modüller hakkında bilgi ve satın alma için: [bayiyazilimi.com](https://bayiyazilimi.com).
+
+## Nereden başlamalı?
+
+1. [Kurulum](/baslangic/kurulum) — gereksinimler ve kurulum sihirbazı.
+   [Paylaşımlı hosting](/baslangic/paylasimli-hosting) ya da [VPS](/baslangic/vps) için adım
+   adım anlatım; sorun çıkarsa [Kurulumda sorun giderme](/baslangic/sorun-giderme).
+2. [Panel tanıtımı](/baslangic/panel-tanitimi) — giriş, menü, başlangıç ekranı ve hesap ayarları.
+3. [İlk ayarlar](/baslangic/ilk-ayarlar) — satışa başlamadan önce yapılacaklar listesi.
+4. [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme) — sistemi güvende ve güncel tutmak.

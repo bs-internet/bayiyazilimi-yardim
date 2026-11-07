@@ -1,45 +1,64 @@
-# Bayinin gördüğü ekranlar
+# Bayi paneli
 
-Bayiler giriş yaptığında **bayi paneli** (`/app`) açılır. Bu sayfayı bayilerinize
-yönlendirebilir ya da kendi bilgi sayfanıza uyarlayabilirsiniz.
+Bu bölüm, bayilerinizin kullandığı **bayi panelini** anlatır. Sayfalar doğrudan bayiye hitap
+edecek şekilde yazılmıştır; bağlantılarını bayilerinize gönderebilirsiniz.
 
-## Menü
+---
 
-| Menü | İçerik |
-|---|---|
-| **Başlangıç** | Özet kartlar (açık siparişler, bekleyen teklifler, sepet, son sipariş), son siparişler ve **Tekrar sipariş ver**, son teklifler |
-| **Sipariş ver** | Ürün / kategori / marka araması ve sık alınan ürünler. Seçilen ürünler alttaki sepete eklenir, adetler anında kaydedilir. Özet kutusunda **Sipariş ver** (ödemeye geç) ve **Teklif al** (sepet teklif listesine taşınır) |
-| **Kayıtlı Sepetler** | Sık verilen siparişleri sepet olarak saklama. Kayıtlı sepet düzenlenebilir; **Sipariş ver** asıl sepete dokunmadan o sepetle ödeme ekranını açar |
-| **Siparişlerim** | Sipariş listesi ve detayı; detayda **Tekrar sipariş ver** ve (uygunsa) **İade talebi oluştur** |
-| **Teklifler** | **Teklif listem** — teklif istenecek ürünler, talep gönderme. **Tekliflerim** — gelen teklifleri onaylama, revize isteme, reddetme ve onaylı teklifi ödeme |
-| **Cari Hesabım** | Bakiye, kredi limiti, vadesi yaklaşan ve geçen siparişler, ekstre, banka hesapları, **havale bildirimi**; kart modülü varsa **Kartla öde** |
-| **İadelerim** | İade talepleri ve durumları |
-| **Bilgi Merkezi** | Sizin hazırladığınız bilgi sayfaları (banka hesapları, satış / iade şartları, teslimat, KVKK …) |
-| **Hesabım** | Hesap bilgileri, **adreslerim** (teslimat / fatura adresleri, varsayılan adres), şifre ve iki adımlı doğrulama |
+Bayi paneli, firmamızdan sipariş verdiğiniz, teklif istediğiniz, cari hesabınızı izlediğiniz ve
+iade talebi açtığınız alandır. Giriş yaptığınızda panel kendiliğinden açılır (adres çubuğunda
+`/app` görürsünüz).
 
-## Sipariş verme
+## Panelin bölümleri
 
-1. **Sipariş ver** ekranında ürünleri arayıp adetleriyle sepete ekleyin.
-2. **Sipariş ver** düğmesiyle ödeme ekranına geçin.
-3. Teslimat ve fatura adresini kayıtlı adreslerden seçin ya da yeni adres girin ("Adreslerim'e
-   kaydet" ile saklanır).
-4. Kargo firmasını ve ödeme yöntemini seçin: havale / EFT, (vadeli çalışıyorsanız) cari hesaba,
-   (kart modülü varsa) kartla ödeme.
-5. Siparişi onaylayın.
+### Sol menü
 
-Bölge deposu atanmış bayiler, ürünlerin yanında **"bölge deponuzda N"** bilgisini görür.
+| Menü | Ne işe yarar? | Ayrıntı |
+|---|---|---|
+| **Başlangıç** | Özet kartlar, son siparişleriniz, son teklifleriniz | [Başlangıç ekranı](/bayi-paneli/baslangic) |
+| **Sipariş ver** | Ürün arama, sepet, ödeme | [Sipariş verme](/bayi-paneli/siparis-verme) |
+| **Teklifler** › **Teklif listem** / **Tekliflerim** | Teklif isteme, gelen teklifi onaylama ve ödeme | [Teklifler](/bayi-paneli/teklifler) |
+| **Kayıtlı Sepetler** | Sık verdiğiniz siparişleri adıyla saklama | [Kayıtlı sepetler](/bayi-paneli/kayitli-sepetler) |
+| **Siparişlerim** | Sipariş listesi, durumlar, kargo takibi, tekrar sipariş | [Siparişlerim](/bayi-paneli/siparislerim) |
+| **Cari Hesabım** | Bakiye, limit, açık borçlar, ekstre, havale bildirimi, kartla ödeme | [Cari Hesabım](/bayi-paneli/cari-hesabim) |
+| **İadelerim** | İade talebi açma ve izleme | [İadelerim](/bayi-paneli/iadelerim) |
+| **Bilgi Merkezi** | Firmamızın hazırladığı bilgi sayfaları | [Bilgi Merkezi](/bayi-paneli/bilgi-merkezi) |
 
-## Havale bildirimi
+Firmamızın online mağazası (vitrin sitesi) varsa menünün sonunda **Mağazaya Git** de görünür.
 
-Havale yaptıktan sonra **Cari Hesabım** ya da sipariş detayından **ödeme bildirimi** gönderin:
-tutar, tarih, gönderdiğiniz banka hesabı ve dekont. Bildirim onaylanınca ödeme carinize işlenir.
+Menüyü sol üstteki düğmeyle daraltıp genişletebilirsiniz. Daraltılmış menüde yalnız simgeler
+görünür.
 
-## Bilgi Merkezi sayfaları
+### Üst çubuk
 
-Bilgi Merkezi'nde **İçerik › Sayfalar**'da "Bayi panelinde göster" işaretli sayfalar listelenir.
-Bayilerinizin sık sorduğu konuları (ödeme, iade, teslimat) buraya yazın.
+Sayfanın üstünde, sağda şunlar bulunur:
 
-## E-postalardaki bağlantılar
+- **Mağazayı aç** (mağaza simgesi) — online mağazayı yeni sekmede açar.
+- **Bildirimler** (zil simgesi) — bildirim listenizi açar.
+- **Adınız** — kullanıcı menüsünü açar:
+  - **Hesabım** — firma ve fatura bilgileriniz.
+  - **Adreslerim** — teslimat ve fatura adresleriniz.
+  - **Bilgilerim** — adınız, e-postanız, şifreniz, iki aşamalı doğrulama, oturumlar ve
+    tercihler.
+  - **Bildirimler**
+  - **Oturumu Kapat**
 
-Bayiye giden e-postalardaki bağlantılar bayi panelini açar. Bayi paneli vitrinden bağımsızdır:
-vitrin modülü kurulu olmasa ya da kapalı olsa da bayiler tüm işlerini buradan yapar.
+Hepsi [Giriş ve hesap ayarları](/bayi-paneli/giris-ve-hesap) sayfasında anlatılır.
+
+## Bu bölümdeki sayfalar
+
+1. [Giriş ve hesap ayarları](/bayi-paneli/giris-ve-hesap)
+2. [Başlangıç ekranı](/bayi-paneli/baslangic)
+3. [Sipariş verme](/bayi-paneli/siparis-verme)
+4. [Kayıtlı sepetler](/bayi-paneli/kayitli-sepetler)
+5. [Siparişlerim](/bayi-paneli/siparislerim)
+6. [Teklifler](/bayi-paneli/teklifler)
+7. [Cari Hesabım](/bayi-paneli/cari-hesabim)
+8. [İadelerim](/bayi-paneli/iadelerim)
+9. [Bilgi Merkezi](/bayi-paneli/bilgi-merkezi)
+10. [Sık sorulan sorular](/bayi-paneli/sss)
+
+::: info Panel ile online mağaza ayrıdır
+Online mağazamız (vitrin) olsun ya da olmasın, bütün işlerinizi bayi panelinden yaparsınız.
+E-postalardaki bağlantılar da bayi panelini açar.
+:::

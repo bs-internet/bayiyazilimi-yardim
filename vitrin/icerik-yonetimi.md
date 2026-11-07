@@ -1,61 +1,233 @@
 # İçerik yönetimi
 
-Vitrinin içeriği **İçerik** menüsünden yönetilir.
+Vitrinin içeriği panelde **İçerik** menüsünden yönetilir:
 
-## Ana Sayfa
+| Menü | Ne yönetilir | Ayrıntı |
+|---|---|---|
+| **İçerik › Ana Sayfa** | Ana sayfanın bölümleri | [Ana sayfa ve slider](/vitrin/ana-sayfa) |
+| **İçerik › Menüler › Ana Menü** | Sitenin üst menüsü | [Ana Menü](#ana-menu) |
+| **İçerik › Menüler › Kategori Menüsü** | "Tüm Kategoriler" açılır menüsü | [Kategori Menüsü](#kategori-menusu) |
+| **İçerik › Üst & Alt Bilgi** | Duyuru bandı ve alt bilgi metni | [Üst ve alt bilgi](#ust-alt-bilgi) |
+| **İçerik › Slider** | Ana sayfanın en üstündeki slaytlar | [Slider](/vitrin/ana-sayfa#slider) |
+| **İçerik › Sayfalar** | Hakkımızda, sözleşmeler, KVKK gibi sayfalar | [Sayfalar](#sayfalar) |
 
-Ana sayfa **bölümlerden** oluşur. Bölümler eklenir, sürüklenerek sıralanır, açılıp kapatılır ve
-her birinin içeriği (kaynak, ürün seçimi, görsel, metin, ikon) ayrı düzenlenir.
-
-| Bölüm | Ne gösterir |
-|---|---|
-| Slider | Büyük görsel geçişleri (Slider ekranından) |
-| Kategori Vitrini | Seçtiğiniz kategoriler, görselleriyle |
-| Ürün Şeridi | Ürünler: seçili ürünler, yeni ürünler, kampanyalı ürünler … |
-| Marka Şeridi | Seçtiğiniz markaların logoları |
-| Marka Vitrini | Bir markanın öne çıkan alanı; bağlantısı markanın sayfasıdır |
-| Görsel Banner | Tıklanabilir görsel alanı |
-| Kurumsal Teklif Alanı | Kurumsal müşterileri teklif istemeye yönlendiren alan |
-| Güven Bandı | Hızlı kargo, güvenli ödeme gibi ikonlu güven mesajları |
-| Serbest İçerik | Zengin metin editörüyle serbest alan |
-
-- **Vitrin seçimleri yalnız burada yapılır.** Kategori Vitrini'nin kategorileri, Marka Şeridi'nin
-  markaları ve Ürün Şeridi'nin ürünleri bölümün kendi ayarındadır; ürün / kategori / marka
-  formlarında "öne çıkan" işareti yoktur.
-- **Yeni ürünler:** Ürün Şeridi'nin kaynağını "Yeni ürünler" seçip ürünleri işaretleyin. Bu
-  ürünler "Yeni" rozeti alır ve **Yeni Ürünler** sayfasında listelenir.
-- Ürün Şeridi'nin "Tümünü gör" bağlantısı kaynağa göre otomatik oluşur.
-- Başlıklı bölümlerde başlığın soluna küçük bir logo eklenebilir.
+Bu ekranlar, kullanıcının rolünde ilgili yetki varsa görünür. Yetkiler **Yetkiler** ekranında
+"Mağaza: İçerik" ve "Mağaza: Menüler" gruplarında listelenir (bkz.
+[Kullanıcılar, roller ve yetkiler](/yonetim/roller-yetkiler)).
 
 ## Menüler
 
-- **Ana Menü** — öğe olarak kategori, marka, sayfa, hazır sayfa (Kampanyalı Ürünler, Yeni
-  Ürünler, Markalar, İletişim, Teklif Listesi) ya da özel bağlantı eklenir. Öğeler sağa
-  yaslanabilir, vurgulanabilir ya da yeni sekmede açılabilir. İki seviyelidir: bir öğe başka bir
-  öğenin altına bağlanabilir.
-- **Kategori Menüsü** — "Tüm Kategoriler" açılır menüsü. Seçtiğiniz kategoriler ve alt
-  kategorileri otomatik listelenir.
+Vitrinde iki menü vardır ve ayrı ayrı yönetilir. Her iki ekranda da öğeler tablo halinde, alt
+öğeler üst öğelerinin hemen altında listelenir.
 
-## Slider
+| Sütun | Açıklama |
+|---|---|
+| **Sıra** | **Yukarı taşı** / **Aşağı taşı** okları |
+| **Öğe** | Menüde görünen ad ve bağlantı türü. Rozetler: **Vurgulu**, **Sağda**, **Alt kategoriler gizli**, **Kayıt silinmiş** |
+| **Aktif** | Öğeyi vitrinde gösterir / gizler |
+| **İşlemler** | **Düzenle**, sil |
 
-Ana sayfa slaytları: masaüstü ve mobil için ayrı görsel, düğme metni, bağlantı ve **yayın
-tarihleri** (belirli tarihlerde otomatik başlayıp biten kampanya slaytları için).
+**Kayıt silinmiş** rozeti, öğenin bağlı olduğu kategori, marka ya da sayfanın artık bulunmadığını
+gösterir; bu öğe vitrinde gösterilmez. Düzenleyip yeni bir kayda bağlayın ya da silin. Bağlı
+kategori / marka / sayfa **pasifse** de öğe vitrinde görünmez.
 
-## Sayfalar
+### Ana Menü {#ana-menu}
 
-Hakkımızda, sözleşmeler, KVKK gibi sayfalar zengin metin editörüyle düzenlenir. Sayfa adresleri
-`/sayfa/{adres}` biçimindedir.
+Vitrinin üst menüsü. Öğeler bu sırayla soldan sağa dizilir; **Sağa yasla** işaretli öğeler sağda
+toplanır. **Üst öğe** seçilen öğeler, o öğenin açılır alt menüsünde gösterilir. Menü **iki
+seviyelidir**.
 
-Kurulumla kurumsal ve yasal sayfalar **örnek metinle** gelir: Mesafeli Satış Sözleşmesi, Ön
-Bilgilendirme Formu, KVKK, Gizlilik ve Çerez Politikası … Bu metinleri kendi firmanıza göre
-düzenleyin; düzenlediğiniz sayfa güncellemelerde değişmez.
+| Alan | Açıklama |
+|---|---|
+| **Üst öğe** | **— Üst seviye —** ya da menüdeki üst seviye bir öğe. Seçilirse bu öğe, seçilen öğenin alt menüsünde gösterilir. Alt öğeleri olan bir öğe başka öğenin altına taşınamaz |
+| **Bağlantı** | Bağlantı türü (aşağıdaki tablo) |
+| **Kategori / Marka / Sayfa** | Bağlantı türü bunlardan biriyse bağlanacak kayıt (zorunlu) |
+| **Menüde görünen ad** | En çok 120 karakter. Boş bırakılırsa kaydın kendi adı (ör. kategori adı) kullanılır. **Özel bağlantı**da zorunlu |
+| **Adres** | Yalnız **Özel bağlantı**da, zorunlu, en çok 500 karakter. Site içi adres "/" ile başlar (ör. `/marka/abc`); dış adres `https://` ile yazılır |
+| **Sağa yasla** | Öğe menünün sağ tarafında gösterilir |
+| **Vurgulu (sarı düğme)** | Öğe düğme gibi vurgulanır |
+| **Yeni sekmede aç** | Bağlantı yeni sekmede açılır |
+
+| Bağlantı türü | Nereye gider |
+|---|---|
+| **Kategori**, **Marka**, **Sayfa** | Seçilen kaydın vitrin sayfası |
+| **Ana Sayfa** | `/` |
+| **Tüm Ürünler** | `/urunler` |
+| **Tüm Kategoriler** | `/kategoriler` |
+| **Kampanyalı Ürünler** | `/kampanyali-urunler` |
+| **Yeni Ürünler** | `/yeni-urunler` |
+| **Markalar** | `/markalar` |
+| **İletişim** | `/iletisim` |
+| **Teklif Listesi** | `/teklif-listesi` |
+| **Hesabım** | Kişiye göre: ziyaretçide giriş sayfası, müşteride Hesabım, bayide bayi paneli |
+| **Özel bağlantı** | **Adres** alanına yazdığınız adres |
+
+Ana menüde hiç öğe yoksa üst menü boş görünür.
+
+### Kategori Menüsü {#kategori-menusu}
+
+Üst bilgideki **Tüm Kategoriler** açılır menüsü (mobilde menü içinde). Seçilen kategoriler bu
+sırayla listelenir; alt kategorileri otomatik gelir ya da **Üst öğe** seçerek elle eklenir.
+
+| Alan | Açıklama |
+|---|---|
+| **Üst öğe** | Boşsa ana seviye. Seçilirse bu kategori, seçilen öğenin altında elle eklenmiş alt öğe olur |
+| **Kategori** | Zorunlu. Bu menüye yalnız kategori eklenir |
+| **Menüde görünen ad** | Boşsa kategorinin adı |
+| **Alt kategorileri göster** | Yalnız ana seviyedeki öğelerde. Açıksa kategorinin alt kategorileri otomatik listelenir. Elle eklenmiş alt öğe varsa onlar gösterilir |
+
+- Tabloda **Otomatik alt kategori** olarak görünen satırlar bilgi amaçlıdır; kategori ağacından
+  gelir, ayrıca düzenlenmez.
+- Alt öğenin kendi alt kategorileri de (üçüncü seviye) otomatik gösterilir.
+- **Menüde hiç öğe yoksa tüm ana kategoriler** alt kategorileriyle birlikte gösterilir.
+- Alt bilgideki **Kategoriler** sütunu da bu menünün ilk 7 öğesini gösterir.
+
+### Nasıl yapılır? {#menu-nasil}
+
+**Üst menüye bir sayfa eklemek**
+
+1. **İçerik › Menüler › Ana Menü**'yü açın, **Öğe ekle**'ye basın.
+2. **Bağlantı** olarak **Sayfa**'yı seçin, ardından sayfayı seçin.
+3. İsterseniz **Menüde görünen ad**'ı değiştirin, **Kaydet**'e basın.
+
+**Açılır alt menü oluşturmak**
+
+1. Önce üst öğeyi ekleyin (ör. "Kurumsal" adında bir **Özel bağlantı** ya da bir sayfa).
+2. Alt öğeleri eklerken **Üst öğe** alanında bu öğeyi seçin.
+
+**Kategori menüsünü kendi sıranızla kurmak**
+
+1. **İçerik › Menüler › Kategori Menüsü**'nde **Öğe ekle** ile kategorileri istediğiniz sırada
+   ekleyin.
+2. Bir kategorinin alt kategorilerini göstermek istemiyorsanız **Alt kategorileri göster**'i
+   kapatın; yalnız bazılarını göstermek için onları **Üst öğe** seçerek elle ekleyin.
+
+**Silmek** — sil düğmesine basıp onaylayın. Alt menüdeki öğeler de kaldırılır; bağlı kategori,
+marka ya da sayfa **silinmez**.
+
+## Üst ve alt bilgi {#ust-alt-bilgi}
+
+**İçerik › Üst & Alt Bilgi** sitenin her sayfasında görünen duyuru bandını ve alt bilgi metnini
+yönetir.
+
+| Alan | Açıklama |
+|---|---|
+| **Duyuru bandı** | Sitenin en üstündeki kayan bantta sırayla gösterilen duyurular. **Duyuru ekle** ile satır eklenir; en çok 20 duyuru, her biri en çok 200 karakter (ör. "2.500 ₺ üzeri kargo bedava"). Boş satırlar kaydedilmez. Duyuru yoksa bant gizlenir |
+| **Alt bilgi › Hakkında metni** | Sayfa altında logonun yanında görünen kısa tanıtım, en çok 1.000 karakter |
+
+Kurulumda duyuru bandında "256BIT SSL İLE GÜVENLİ ALIŞVERİŞ YAPABİLİRSİNİZ" yazar; değiştirin ya da
+silin.
+
+### Alt bilgide başka neler görünür? {#alt-bilgi-icerigi}
+
+Alt bilgi, birkaç ekrandaki bilgilerden kendiliğinden oluşur:
+
+| Alt bilgideki yer | Nereden gelir |
+|---|---|
+| Logo | **Ayarlar › Genel Ayarlar** (markalama) |
+| Hakkında metni | **İçerik › Üst & Alt Bilgi** |
+| Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri**; boş bırakılan hesap gizlenir |
+| **Kurumsal** sütunu | **İçerik › Sayfalar**'da yerleşimi "Alt menü (Kurumsal)" olan sayfalar |
+| **Müşteri Hizmetleri** sütunu | Yerleşimi "Alt menü (Müşteri Hizmetleri)" olan sayfalar |
+| **Kategoriler** sütunu | Kategori Menüsü'nün ilk 7 öğesi |
+| **İletişim** sütunu | Firma adresi (**Kurumsal Bilgiler**), telefon, e-posta, çalışma saatleri (**İletişim Bilgileri**) ve ETBİS kare kodu |
+| **Çerez Tercihleri** bağlantısı | Çerez tercih penceresini yeniden açar (bkz. [Çerez yönetimi](/vitrin/ayarlar#cerez-yonetimi)) |
+
+## Sayfalar {#sayfalar}
+
+**İçerik › Sayfalar** Hakkımızda, sözleşmeler, KVKK gibi içerik sayfalarını yönetir. Sayfalar
+vitrinde `/sayfa/{adres}` adresinde yayınlanır.
+
+Liste sütunları: **Başlık**, **Yerleşim**, **Durum** (Yayında / Taslak), **Sıra**, **Güncelleme**,
+**İşlemler** (**Görüntüle** — vitrindeki sayfayı açar, **Düzenle**, sil).
+
+| Alan | Açıklama |
+|---|---|
+| **Başlık** | Zorunlu, en çok 255 karakter |
+| **URL (slug)** | Sayfa adresi, en çok 255 karakter. Boş bırakılırsa başlıktan üretilir. Adres: `/sayfa/…` |
+| **Sayfa metni** | Zengin metin editörü |
+| **Durum** | **Yayında** ya da **Taslak (gizli)**. Taslak sayfa vitrinde açılmaz, menülerde görünmez |
+| **Yerleşim** | **Alt menü (Müşteri Hizmetleri)**, **Alt menü (Kurumsal)** ya da **Menüde gösterme** |
+| **Sıra** | Alt bilgi sütununda sıralama (küçük önce) |
+| **Bayi panelinde göster** | Sayfa bayi panelindeki **Bilgi Merkezi**'nde de listelenir; vitrin kapalıyken de bayiler erişir |
+| **Arama motoru (SEO) › Meta açıklama** | Arama sonuçlarında görünen kısa açıklama, en çok 500 karakter |
+
+"Menüde gösterme" yerleşimli bir sayfayı üst menüye eklemek için **Ana Menü**'de **Sayfa**
+bağlantısı kullanın.
+
+### Hazır gelen sayfalar {#hazir-sayfalar}
+
+Kurulumla şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek olarak eklenmiştir."
+uyarısı yazar; metni kendi firmanıza göre değiştirin.
+
+| Sayfa | Adres | Yerleşim | Bayi panelinde |
+|---|---|---|---|
+| Hakkımızda | `hakkimizda` | Kurumsal | — |
+| Banka Hesap Numaraları | `banka-hesap-numaralari` | Kurumsal | Evet |
+| Müşteri Hizmetleri | `musteri-hizmetleri` | Müşteri Hizmetleri | Evet |
+| Üyelik | `uyelik` | Müşteri Hizmetleri | — |
+| Sipariş ve Teslimat | `siparis-ve-teslimat` | Müşteri Hizmetleri | Evet |
+| Garanti ve İade Şartları | `garanti-ve-iade-sartlari` | Müşteri Hizmetleri | Evet |
+| Satış Sözleşmesi | `satis-sozlesmesi` | Müşteri Hizmetleri | Evet |
+| Mesafeli Satış Sözleşmesi | `mesafeli-satis-sozlesmesi` | Müşteri Hizmetleri | Evet |
+| Ön Bilgilendirme Formu | `on-bilgilendirme-formu` | Müşteri Hizmetleri | Evet |
+| Güvenlik | `guvenlik` | Müşteri Hizmetleri | — |
+| Kişisel Verilerin Korunması | `kvkk-aydinlatma-metni` | Müşteri Hizmetleri | Evet |
+| Gizlilik ve Çerez Politikası | `gizlilik-ve-cerez-politikasi` | Müşteri Hizmetleri | — |
+
+::: warning Bu adresleri değiştirmeyin
+Bazı ekranlar bu sayfalara **adresiyle** bağlanır:
+
+- Ödeme ekranındaki onay kutusu **Ön Bilgilendirme Formu** (`on-bilgilendirme-formu`), **Mesafeli
+  Satış Sözleşmesi** (`mesafeli-satis-sozlesmesi`) ve **KVKK** (`kvkk-aydinlatma-metni`) sayfalarını
+  açar.
+- Teklif listesi ve iletişim formundaki **KVKK Aydınlatma Metni** bağlantısı
+  `kvkk-aydinlatma-metni` sayfasını açar.
+- Çerez şeridindeki **Gizlilik ve Çerez Politikası** bağlantısı yalnız
+  `gizlilik-ve-cerez-politikasi` adresli sayfa yayındaysa ve yerleşimi bir alt menü ise görünür.
+
+Bu sayfaların **URL (slug)** alanını değiştirirseniz ya da silerseniz bağlantılar boşa çıkar.
+Başlığı ve metni serbestçe değiştirebilirsiniz.
+:::
+
+::: tip Örnek metin uyarısını silin
+Sistem güncellemelerinde, metninde hâlâ "Bu metin örnek olarak eklenmiştir." cümlesi bulunan
+hazır sayfalar yeniden örnek metinle yazılabilir. Kendi metninizi girerken bu cümleyi silin;
+düzenlediğiniz sayfaya güncellemelerde dokunulmaz.
+:::
 
 ::: tip Eski siteden geçiş
-Eski sitenizin sayfa adresleri farklıysa arama motorlarında sıranızı kaybetmemek için eski
+Eski sitenizin sayfa adresleri farklıysa arama motorlarındaki sıranızı kaybetmemek için eski
 adreslerden yenilerine 301 yönlendirmesi yaptırın.
 :::
 
-## Üst ve alt bilgi
+### Nasıl yapılır? {#sayfa-nasil}
 
-**İçerik › Üst & Alt Bilgi** — sitenin üstündeki **duyuru bandı** (her satır bir duyuru) ve alt
-bilgi metni.
+**Yeni sayfa eklemek**
+
+1. **İçerik › Sayfalar**'da **Yeni sayfa**'ya basın.
+2. **Başlık** ve **Sayfa metni**ni girin; adresi kendiniz belirlemek istiyorsanız **URL (slug)**
+   yazın.
+3. **Yerleşim**'i seçin: alt bilgide hangi sütunda görüneceği ya da hiç görünmeyeceği.
+4. Bayilerinizin de görmesini istiyorsanız **Bayi panelinde göster**'i işaretleyin.
+5. **Durum**'u **Yayında** yapıp **Kaydet**'e basın.
+
+**Sayfayı bayilere açmak** — sayfayı düzenleyip **Bayi panelinde göster**'i işaretleyin. Sayfa,
+bayi panelinde **Bilgi Merkezi** menüsünde listelenir. Bkz. [Bayi paneli](/bayi-paneli/).
+
+## İletişim sayfası ve iletişim bilgileri {#iletisim}
+
+Vitrinin **İletişim** sayfası (`/iletisim`) içeriğini iki ayar ekranından alır:
+
+| Sayfada | Nereden gelir |
+|---|---|
+| Giriş metni | **Ayarlar › Genel Ayarlar › İletişim Bilgileri › Giriş metni** |
+| Adres | **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** (firma adresi) |
+| Telefon, WhatsApp, e-posta, çalışma saatleri | **İletişim Bilgileri** |
+| Şirket bilgileri (ünvan, vergi dairesi, vergi no, MERSİS) | **Kurumsal Bilgiler** |
+| Konum haritası | **İletişim Bilgileri › Harita (Google Maps embed URL)**: Google Haritalar → Paylaş → Harita yerleştir → src adresi |
+
+**Bize Yazın** formu: **Ad Soyad** (zorunlu), **E-posta** (zorunlu), telefon, **Konu**,
+**Mesajınız** (zorunlu, en çok 5.000 karakter) ve KVKK onayı (zorunlu). Gönderilen mesaj
+**İletişim Bilgileri › E-posta** adresine "İletişim formu: …" konulu e-postayla gelir. Bu adres
+boşsa mesaj kimseye iletilmez.
