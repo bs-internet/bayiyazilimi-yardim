@@ -59,7 +59,7 @@ girerek sipariş verebilir. Misafir siparişlerinde ve tekliflerinde:
 - Sipariş / teklif e-postasındaki bağlantı, **giriş gerektirmeyen** özel bir sayfayı açar.
   Misafir siparişin durumunu, kargo takip numarasını ve havale bilgilerini buradan görür; teklifi
   buradan onaylar, revize ister, reddeder ve öder.
-- Bu bağlantılar vitrin **Bayilere özel** yapılmışken de çalışır.
+- Bu bağlantılar bakım modunda yalnız görüntülenir; vitrin modülü kapatılırsa açılmaz.
 - İade talebi, ödeme geçmişi ve kayıtlı adres gibi işlemler yalnız üyelerin Hesabım'ındadır.
 
 ## Müşteri kaydı
@@ -69,11 +69,13 @@ Vitrin herkese açıkken giriş sayfasında kayıt bağlantısı görünür. Kay
 bağlantısı gider; müşteri hesabı **e-posta doğrulanınca açılır**. Ayrıntılar:
 [Müşteri hesabı](/vitrin/musteri-hesabi).
 
-## Bayilere özel vitrin
+## Vitrini kapatmak
 
-**Ayarlar › Genel Ayarlar › Site Erişimi** ekranında **Bayilere özel** açılırsa vitrin yalnız
-giriş yapmış bayilere açılır; ziyaretçiler giriş sayfasına yönlendirilir ve yeni kayıt kapanır.
-Aynı ekranda **Bakım modu** da vardır. Bkz. [Site erişimi](/vitrin/ayarlar#site-erisimi).
+Vitrin modülü kurulu ve etkinken site herkese açıktır. Siteyi yalnız bayilere açmak için
+**Ayarlar › Genel Ayarlar › Modüller**'de **Vitrin** modülünü kapatın: ziyaretçiler giriş
+sayfasına yönlendirilir, yeni kayıt kapanır, veriler korunur. Geçici kapatma için
+**Ayarlar › Genel Ayarlar › Site Erişimi**'ndeki **Bakım modu**nu kullanın. Bkz.
+[Site erişimi](/vitrin/ayarlar#site-erisimi).
 
 ## Vitrin sayfa adresleri {#adresler}
 

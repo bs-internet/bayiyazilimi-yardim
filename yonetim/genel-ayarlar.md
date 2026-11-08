@@ -146,10 +146,10 @@ paneli her durumda yöneticilere açıktır.
 |---|---|
 | Bakım modu | Açıkken site yalnız yöneticilere açıktır. Bayiler (bayi paneli dahil), müşteriler ve ziyaretçiler **bakım sayfasını** görür. Giriş ekranı açık kalır ki yöneticiler girebilsin |
 | Bakım sayfası mesajı | Bakım sayfasında gösterilecek metin. En çok 1000 karakter. Varsayılan: "Sitemizde bakım çalışması yapılmaktadır. Kısa süre içinde yeniden hizmetinizdeyiz." |
-| Bayilere özel | **Yalnız Vitrin modülü kuruluysa görünür.** Açıkken vitrin yalnız oturum açmış bayilere açılır; ziyaretçiler giriş sayfasına yönlendirilir ve yeni kayıt kapanır |
 
-Vitrin modülü yoksa sistem zaten **yalnız bayilere açıktır**: ziyaretçiler giriş ekranına
-yönlendirilir, herkese açık kayıt yoktur.
+Sitenin kimlere açık olduğunu Vitrin modülü belirler: modül kurulu ve etkinse site herkese açıktır;
+yoksa ya da **Modüller** ekranından kapatıldıysa sistem **yalnız bayilere açıktır**: ziyaretçiler
+giriş ekranına yönlendirilir, herkese açık kayıt yoktur, müşteri hesabıyla giriş yapılamaz.
 
 **Kaydet** ile kaydedilir. Bakım modu açıkken Genel Bakış'taki Site Erişimi kartı uyarı rengiyle
 "Bakım modu açık" yazar ve bayi panelindeki mağaza bağlantısı gizlenir.

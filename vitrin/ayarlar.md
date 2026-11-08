@@ -5,7 +5,8 @@ anlatır.
 
 | Ayar | Menü yolu |
 |---|---|
-| Bakım modu, bayilere özel vitrin | **Ayarlar › Genel Ayarlar › Site Erişimi** |
+| Bakım modu | **Ayarlar › Genel Ayarlar › Site Erişimi** |
+| Vitrini kapatmak (siteyi yalnız bayilere açmak) | **Ayarlar › Genel Ayarlar › Modüller** |
 | Çerez şeridi, Google Analytics, Meta Pixel | **Ayarlar › Genel Ayarlar › Çerez Yönetimi** |
 | ETBİS kare kodu | **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** |
 | KDV dahil / hariç fiyat gösterimi | **Ayarlar › Tanımlamalar › Satış Ayarları** |
@@ -17,14 +18,14 @@ anlatır.
 
 ## Site erişimi {#site-erisimi}
 
-**Ayarlar › Genel Ayarlar › Site Erişimi** vitrinin kimlere açık olduğunu belirler. Yönetim paneli
+Vitrin modülü kurulu ve etkinken site herkese açıktır: ziyaretçiler gezinir, müşteriler kayıt olur.
+**Ayarlar › Genel Ayarlar › Site Erişimi** ekranında yalnız **bakım modu** vardır. Yönetim paneli
 her durumda yöneticilere açıktır.
 
 | Alan | Açıklama |
 |---|---|
 | **Bakım modu** | Açıkken site kapalıdır; ziyaretçiler, müşteriler ve bayiler bakım sayfasını görür. Yalnız yöneticiler girebilir |
 | **Bakım sayfası mesajı** | Bakım sayfasında gösterilecek metin, en çok 1.000 karakter |
-| **Bayilere özel** | Açıkken vitrin yalnız oturum açmış bayilere açılır |
 
 **Bakım modu açıkken:**
 
@@ -33,14 +34,14 @@ her durumda yöneticilere açıktır.
 - Kartla ödemenin banka dönüş ve bildirim adresleri çalışmayı sürdürür.
 - Bayi paneli de bakım sayfasını gösterir; bakım süresince bayiler de sipariş veremez.
 
-**Bayilere özel açıkken:**
+**Vitrin modülü kapalıyken** (**Ayarlar › Genel Ayarlar › Modüller**) site yalnız bayilere açıktır:
 
-- Ziyaretçi hangi vitrin sayfasını açarsa açsın giriş sayfasına yönlendirilir.
+- Ziyaretçi hangi sayfayı açarsa açsın giriş sayfasına yönlendirilir.
 - Yeni kayıt kapanır: kayıt bağlantısı giriş sayfasından kalkar, kayıt adresi giriş sayfasına
   yönlendirir.
-- Bayi olmayan bir üye (vitrin müşterisi) giriş yaparsa oturumu kapatılır ve "Bu site yalnızca
-  bayilerimize açıktır." uyarısını görür.
-- Misafirlere daha önce gönderilmiş sipariş ve teklif bağlantıları çalışmayı sürdürür.
+- Müşteri hesabı olan bir üye giriş yaparsa oturumu kapatılır ve "Bu site yalnızca bayilerimize
+  açıktır." uyarısını görür.
+- Misafirlere gönderilmiş sipariş ve teklif bağlantıları açılmaz.
 
 ### Nasıl yapılır? {#site-erisimi-nasil}
 
@@ -51,8 +52,9 @@ her durumda yöneticilere açıktır.
    sonra yeniden açılacağız.").
 3. **Kaydet**'e basın. Bitince **Bakım modu**'nu kapatıp kaydedin.
 
-**Vitrini yalnız bayilere açmak** — **Bayilere özel**'i açıp kaydedin. Bayi olmayanlar artık siteyi
-göremez; kayıtlı müşterilerinizin verileri silinmez, ayarı kapattığınızda yeniden giriş yapabilirler.
+**Vitrini kapatmak (siteyi yalnız bayilere açmak)** — **Ayarlar › Genel Ayarlar › Modüller**'de
+**Vitrin** modülünü kapatın. Bayi olmayanlar artık siteyi göremez; müşterilerinizin ve vitrinin
+verileri silinmez, modülü yeniden açtığınızda her şey kaldığı yerden sürer.
 
 ## Çerez yönetimi {#cerez-yonetimi}
 
@@ -204,9 +206,9 @@ için ayrıca bir ayar yapmanız gerekmez: aşağıdaki dosyalar ve yapılandır
 
 - Site haritası ve `llms.txt` en çok **1 saat** önbellekte tutulur; ürün, kategori, marka,
   sayfa ya da ayar değişikliği bir sonraki istekte yansır.
-- **Bakım modu** ya da **Bayilere özel** açıkken `robots.txt` tüm siteyi kapatır
-  (`Disallow: /`); site haritası ve `llms.txt` içerik vermez. Bkz. [Site erişimi](#site-erisimi).
-- Vitrin modülü kurulu değilse (yalnız bayi sistemi) `robots.txt` tüm siteyi kapatır; site
+- **Bakım modu** açıkken `robots.txt` tüm siteyi kapatır (`Disallow: /`); site haritası ve
+  `llms.txt` içerik vermez. Bkz. [Site erişimi](#site-erisimi).
+- Vitrin modülü kurulu değilse ya da kapatıldıysa (yalnız bayi sistemi) `robots.txt` tüm siteyi kapatır; site
   haritası ve `llms.txt` yoktur.
 
 Site haritasını arama motorlarına bildirmek için Google Search Console gibi araçlara
