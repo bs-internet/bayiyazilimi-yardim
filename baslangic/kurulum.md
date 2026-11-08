@@ -106,7 +106,7 @@ o adımdaki **Veritabanını değiştir** düğmesine basın.
 | Firma / site adı | Zorunlu, en çok 100 karakter. Panelde, tarayıcı sekmesinde ve e-posta konularında görünür. Panelde ve e-postalarda görünen ad sonradan **Genel Ayarlar › Uygulama adı**'ndan değiştirilebilir |
 | Yönetici adı | Zorunlu. İlk yönetici hesabının adı |
 | Yönetici e-postası | Zorunlu, geçerli bir e-posta adresi. Panele bu adresle girersiniz |
-| Şifre / Şifre (tekrar) | Zorunlu; iki alan aynı olmalı. Kurulum sırasında en az 8 karakter istenir |
+| Şifre / Şifre (tekrar) | Zorunlu; iki alan aynı olmalı. En az 12 karakter; büyük ve küçük harf, rakam ve sembol içermeli (ör. `Firma-Bayi-2026`) |
 | Başlangıç verileri | **Boş yükle** (varsayılan) ya da **Örnek verileri yükle** |
 
 **Başlangıç verileri** seçenekleri:
@@ -149,7 +149,7 @@ Son ekranda yönetici e-postanız ve **Sıradaki adımlar** listesi görünür:
 - Yüklenen görsellerin sitede görünmesi için `public/storage` bağlantısı oluşturulur. Hosting
   buna izin vermezse kurulum yine tamamlanır; bkz. [Görseller görünmüyor](/baslangic/sorun-giderme#gorseller).
 - `.env` dosyası canlı kullanıma alınır: site adı ve adresi yazılır, hata ayrıntıları
-  ziyaretçilere gösterilmez, sistem **kurulu** olarak işaretlenir.
+  ziyaretçilere gösterilmez, kayıt düzeyi `warning` olur (ayrıntılı hata ayıklama kayıtları tutulmaz), sistem **kurulu** olarak işaretlenir. Veritabanı bilgileri `.env` dosyasındaki yorum satırlarının (`# DB_HOST=…`) yerine yazılır.
 
 Kurulumdan sonra sihirbaz kapanır: `/kurulum` adresi artık açılmaz (sayfa bulunamadı hatası
 verir). Kurulu bir sistem sihirbazla yeniden kurulamaz.
@@ -176,7 +176,7 @@ sorar:
 | Site adresi | Varsayılan `.env`'deki adres. Sitenin gerçek adresini girin (ör. `https://bayi.firmaniz.com`) |
 | Yönetici adı | Zorunlu |
 | Yönetici e-postası | Geçerli bir e-posta olmalı |
-| Yönetici şifresi | Şifre kurallarına uymazsa "Şifre yeterince güçlü değil." uyarısı verir |
+| Yönetici şifresi | Web sihirbazıyla aynı kural: en az 12 karakter; büyük ve küçük harf, rakam ve sembol. Uymazsa eksik olan kural yazılır |
 | Başlangıç verileri | **Boş yükle (yalnız temel veriler)** ya da **Örnek verileri yükle** (örnek ürünler ve bayi hesabı; vitrin kuruluysa müşteri hesabı da) |
 
 Kurulum bitince giriş e-postası ile ön yüz derlemesi, cron ve kuyruk çalıştırıcı hatırlatmaları
