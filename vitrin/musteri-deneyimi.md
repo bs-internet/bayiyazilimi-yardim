@@ -4,13 +4,18 @@ Bu sayfa, ziyaretçi ve müşterilerinizin vitrinde gördüklerini sayfa sayfa a
 gördüklerini, neyin nereden geldiğini ve hangi kurallarla çalıştığını. Ayarlar için
 [Vitrin ayarları](/vitrin/ayarlar), içerik için [İçerik yönetimi](/vitrin/icerik-yonetimi).
 
+Anlatılan görünüm **varsayılan temaya** aittir: açık renkli alt bilgi, hap biçimli arama kutusu ve
+ürün kartları; renkleri **İçerik › Görünüm**'den değiştirilir (bkz. [Görünüm](/vitrin/icerik-yonetimi#gorunum)).
+Başka bir tema etkinse ([Temalar](/yonetim/temalar)) sayfaların görünümü farklı olabilir; ayarlar
+ve kurallar aynıdır.
+
 ## Üst bilgi {#ust-bilgi}
 
 Her sayfanın üstünde:
 
 | Parça | Açıklama | Nereden gelir |
 |---|---|---|
-| Duyuru bandı | Kayan duyurular | **İçerik › Üst & Alt Bilgi** |
+| Duyuru bandı | En üstte koyu şeritte; birden fazla duyuru varsa birkaç saniyede bir sırayla değişir | **İçerik › Görünüm** |
 | Logo | Ana sayfaya götürür | **Ayarlar › Genel Ayarlar** |
 | Arama kutusu | "Aramak istediğiniz ürünü, markayı ya da stok kodunu yazınız" | Bkz. [Arama](#arama) |
 | Hesap bağlantısı | Ziyaretçide **Giriş Yap**, giriş yapmışsa kişinin adı. Müşteriyi Hesabım'a, bayiyi bayi paneline götürür | — |

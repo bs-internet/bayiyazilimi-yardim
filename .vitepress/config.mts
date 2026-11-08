@@ -111,6 +111,7 @@ export default defineConfig({
                     { text: "Tanımlamalar", link: "/yonetim/tanimlamalar" },
                     { text: "Para birimleri", link: "/yonetim/para-birimleri" },
                     { text: "Eklentiler", link: "/yonetim/moduller" },
+                    { text: "Temalar", link: "/yonetim/temalar" },
                 ],
             },
             {
@@ -159,6 +160,7 @@ export default defineConfig({
                 items: [
                     { text: "Genel bakış", link: "/gelistirici/" },
                     { text: "Eklenti geliştirme", link: "/gelistirici/modul-gelistirme" },
+                    { text: "Tema geliştirme", link: "/gelistirici/tema-gelistirme" },
                     { text: "Ödeme altyapısı", link: "/gelistirici/odeme-altyapisi" },
                     { text: "Cari defter", link: "/gelistirici/cari-defter" },
                     { text: "Stok altyapısı", link: "/gelistirici/stok-altyapisi" },

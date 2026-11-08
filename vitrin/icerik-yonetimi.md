@@ -8,7 +8,7 @@ yalnız vitrin eklentisiyle gelir; vitrin kurulu değilse menüde görünmez.
 | **İçerik › Ana Sayfa** | Ana sayfanın bölümleri | [Ana sayfa ve slider](/vitrin/ana-sayfa) |
 | **İçerik › Menüler › Ana Menü** | Sitenin üst menüsü | [Ana Menü](#ana-menu) |
 | **İçerik › Menüler › Kategori Menüsü** | "Tüm Kategoriler" açılır menüsü | [Kategori Menüsü](#kategori-menusu) |
-| **İçerik › Üst & Alt Bilgi** | Duyuru bandı ve alt bilgi metni | [Üst ve alt bilgi](#ust-alt-bilgi) |
+| **İçerik › Görünüm** | Tema renkleri, duyuru bandı ve alt bilgi metni | [Görünüm](#gorunum) |
 | **İçerik › Slider** | Ana sayfanın en üstündeki slaytlar | [Slider](/vitrin/ana-sayfa#slider) |
 | **İçerik › Sayfalar** | Hakkımızda, teslimat, gizlilik gibi içerik sayfaları | [Sayfalar](#sayfalar) |
 
@@ -106,18 +106,53 @@ sırayla listelenir; alt kategorileri otomatik gelir ya da **Üst öğe** seçer
 **Silmek** — sil düğmesine basıp onaylayın. Alt menüdeki öğeler de kaldırılır; bağlı kategori,
 marka ya da sayfa **silinmez**.
 
-## Üst ve alt bilgi {#ust-alt-bilgi}
+## Görünüm {#gorunum}
 
-**İçerik › Üst & Alt Bilgi** sitenin her sayfasında görünen duyuru bandını ve alt bilgi metnini
-yönetir.
+**İçerik › Görünüm** (eski adıyla Üst & Alt Bilgi) mağazanın renklerini, sitenin her sayfasında
+görünen duyuru bandını ve alt bilgi metnini yönetir. Ekran üç bölümdür: **Tema renkleri**,
+**Duyuru bandı** ve **Alt bilgi**. Değişiklikler **Kaydet** ile kaydedilir ("Görünüm ayarları
+kaydedildi.").
 
-| Alan | Açıklama |
+### Tema renkleri {#tema-renkleri}
+
+"Varsayılan temanın renkleri; diğer tonlar bunlardan hesaplanır. Başka bir tema etkinse o temanın
+renkleri geçerli olabilir."
+
+| Renk | Nerede kullanılır |
 |---|---|
-| **Duyuru bandı** | Sitenin en üstündeki kayan bantta sırayla gösterilen duyurular. **Duyuru ekle** ile satır eklenir; en çok 20 duyuru, her biri en çok 200 karakter (ör. "2.500 ₺ üzeri kargo bedava"). Boş satırlar kaydedilmez. Duyuru yoksa bant gizlenir |
-| **Alt bilgi › Hakkında metni** | Sayfa altında logonun yanında görünen kısa tanıtım, en çok 1.000 karakter |
+| **Ana renk** | Bağlantılar, düğmeler, fiyat vurguları |
+| **Koyu renk** | Başlıklar, üst şerit ve koyu alanlar |
+| **Vurgu rengi** | Rozetler, kampanyalar ve dikkat çeken öğeler |
+
+- Her renk, renk seçiciyle ya da yanındaki kutuya **onaltılık kod** (ör. `#0a6cff`) yazılarak
+  belirlenir. Üç rengin önizlemesi alanların altında yan yana görünür.
+- **Başlangıç renkleri** düğmesi renkleri başlangıç değerlerine döndürür: Ana renk `#0a6cff`,
+  Koyu renk `#001842`, Vurgu rengi `#ff751f` (Bayi Yazılımı logosuna yakın renkler). Kaydetmeden
+  sitede değişmez.
+- Diğer tonlar (açık / koyu tonlar) ve vurgu renginin üzerindeki yazı rengi bu üç renkten
+  **kendiliğinden hesaplanır**.
+- Bu renkler **varsayılan temaya** uygulanır. [Temalar](/yonetim/temalar) ekranından başka bir tema
+  etkinleştirilmişse o tema kendi renklerini kullanabilir.
+
+### Duyuru bandı {#duyuru-bandi}
+
+Duyurular sitenin en üstünde, **koyu bir şeritte** gösterilir: aynı anda bir duyuru görünür,
+birden fazla duyuru varsa birkaç saniyede bir sıradakine geçer.
+
+- **Duyuru ekle** ile satır eklenir; her satır bir duyurudur. En çok 20 duyuru, her biri en çok
+  200 karakter (ör. "2.500 ₺ üzeri kargo bedava").
+- Boş satırlar kaydedilmez. Duyuru yoksa bant sitede gizlenir.
 
 Kurulumda duyuru bandında "256BIT SSL İLE GÜVENLİ ALIŞVERİŞ YAPABİLİRSİNİZ" yazar; değiştirin ya da
 silin.
+
+### Alt bilgi {#alt-bilgi}
+
+| Alan | Açıklama |
+|---|---|
+| **Hakkında metni** | Sayfa altında logonun yanında görünen kısa tanıtım, en çok 1.000 karakter |
+
+Ekranın yetkileri **Görünümü görüntüle** ve **Görünümü güncelle**'dir.
 
 ### Alt bilgide başka neler görünür? {#alt-bilgi-icerigi}
 
@@ -126,7 +161,7 @@ Alt bilgi, birkaç ekrandaki bilgilerden kendiliğinden oluşur:
 | Alt bilgideki yer | Nereden gelir |
 |---|---|
 | Logo | **Ayarlar › Genel Ayarlar** (markalama) |
-| Hakkında metni | **İçerik › Üst & Alt Bilgi** |
+| Hakkında metni | **İçerik › Görünüm** |
 | Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** (bkz. [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri)); boş bırakılan hesap gizlenir |
 | **Kurumsal** sütunu | **İçerik › Sayfalar**'da yerleşimi "Alt menü (Kurumsal)" olan sayfalar |
 | **Müşteri Hizmetleri** sütunu | Yerleşimi "Alt menü (Müşteri Hizmetleri)" olan sayfalar |

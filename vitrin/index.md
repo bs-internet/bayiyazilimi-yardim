@@ -19,14 +19,15 @@ ekler: sitenizin ana adresi (`/`) mağazanın ana sayfası olur, ziyaretçiler �
 | Teklif listesi | Fiyatsız ya da toplu alım ürünleri için teklif isteme | [Müşteri deneyimi](/vitrin/musteri-deneyimi#teklif-listesi) |
 | Müşteri kaydı ve Hesabım | Siparişler, teklifler, adresler, ödemeler, iadeler | [Müşteri hesabı](/vitrin/musteri-hesabi) |
 | Ana sayfa düzenleyici ve slider | Ana sayfayı bölüm bölüm kurma | [Ana sayfa ve slider](/vitrin/ana-sayfa) |
-| Menüler, sayfalar, üst ve alt bilgi | **İçerik** menüsü: üst menü, kategori menüsü, Hakkımızda gibi içerik sayfaları, duyuru bandı | [İçerik yönetimi](/vitrin/icerik-yonetimi) |
+| Menüler, sayfalar, görünüm | **İçerik** menüsü: üst menü, kategori menüsü, Hakkımızda gibi içerik sayfaları, mağaza renkleri, duyuru bandı | [İçerik yönetimi](/vitrin/icerik-yonetimi) |
 | İletişim Bilgileri | WhatsApp, çalışma saatleri, iletişim sayfası, harita, sosyal medya | [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri) |
 | Müşteri hesapları | Panelde **Bayiler** menüsü **Müşteriler** olur; müşteri türü filtresi, **Müşteriye çevir**, raporlarda müşteri kırılımları | [Müşteriler ve bayiler](/musteriler/) |
 | Üyelik formunda sözleşme onayı | Sözleşme formunda **Üyelik formunda göster** seçeneği | [Vitrin ayarları › Sözleşmeler](/vitrin/ayarlar#sozlesmeler) |
-| İçerik Editörü görevi | Ana Sayfa, Menüler, Slider, Üst & Alt Bilgi ve Sayfalar yetkileriyle hazır görev | [Görevler ve yetkiler](/yonetim/roller-yetkiler#hazir-gorevler) |
+| İçerik Editörü görevi | Ana Sayfa, Menüler, Slider, Görünüm ve Sayfalar yetkileriyle hazır görev | [Görevler ve yetkiler](/yonetim/roller-yetkiler#hazir-gorevler) |
 | Site erişimi, çerezler, ETBİS, kupon kodu, arama motoru | Vitrinin kimlere açık olduğu ve yasal gereklilikler | [Vitrin ayarları](/vitrin/ayarlar) |
 | Ek kampanya koşulları | **Müşteri tipi**, **İlk sipariş**, **Kupon kodu** | [Kampanyalar](/musteriler/kampanyalar) |
 | Ürün görünürlüğü | Ürün formunda **Kimler görsün?** (Vitrin / Bayi) | [Ürünler](/satis/urunler#kimler-gorsun) |
+| Mağaza tasarımı ve temalar | Varsayılan tasarım (açık renkli alt bilgi, hap biçimli arama kutusu, ürün kartları); renkleri **İçerik › Görünüm**'den değişir. Farklı bir tasarım için tema kurulup **Ayarlar › Eklentiler › Temalar**'dan etkinleştirilir | [Görünüm](/vitrin/icerik-yonetimi#gorunum), [Temalar](/yonetim/temalar) |
 
 ## Kim neyi görür? {#kim-neyi-gorur}
 
@@ -107,5 +108,5 @@ Sayfalar** listesindeki **Görüntüle** bağlantısı bu adresleri yeni sekmede
 
 Vitrin **Ayarlar › Eklentiler** ekranından kapatılabilir. Kapatınca sistem yeniden
 yalnız B2B çalışır: herkese açık site, müşterinin Hesabım'ı ve vitrinin panel ekranları (Ana Sayfa,
-Menüler, Slider, Üst & Alt Bilgi, Sayfalar, Çerez Yönetimi, İletişim Bilgileri) kaybolur; veriler **silinmez**. Bayiler bayi
+Menüler, Görünüm, Slider, Sayfalar, Çerez Yönetimi, İletişim Bilgileri) kaybolur; veriler **silinmez**. Bayiler bayi
 panelini kullanmayı sürdürür. Bkz. [Eklentiler](/yonetim/moduller).

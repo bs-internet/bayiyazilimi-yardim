@@ -46,6 +46,7 @@ composer ci:check              # lint + biçim + tipler + testler
 ## Bu bölümde
 
 - [Eklenti geliştirme](/gelistirici/modul-gelistirme) — hook + registry sistemi, `module.json`
+- [Tema geliştirme](/gelistirici/tema-gelistirme) — mağaza ön yüzü teması yazma
 - [Ödeme altyapısı](/gelistirici/odeme-altyapisi) — ödeme sürücüsü yazma
 - [Cari defter](/gelistirici/cari-defter) — hareket modeli, ERP entegrasyon noktaları
 - [Stok altyapısı](/gelistirici/stok-altyapisi) — stok katmanları ve kurallar

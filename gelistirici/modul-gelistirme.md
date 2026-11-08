@@ -89,6 +89,7 @@ composer remove bsinternet/ptt
 - Eklenti `resources/js/extensions.ts` ile çekirdeğin adlandırılmış yuvalarına (`<Slot>`) bileşen
   yerleştirebilir.
 - Çeviriler eklentinin `lang/tr.json` dosyasındadır; eklenti kaldırılınca metinleri de gider.
+- Mağaza ön yüzünün görünümünü değiştiren paketler (temalar) için bkz. [Tema geliştirme](/gelistirici/tema-gelistirme).
 
 ## Yerel geliştirme
 

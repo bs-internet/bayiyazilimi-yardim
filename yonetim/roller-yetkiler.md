@@ -20,12 +20,12 @@ sayısı**. Sistem görevleri **Sistem** etiketiyle gösterilir. **Görev ara** 
 | Görev | Kapsam |
 |---|---|
 | **Super Admin** | **Her şeye** erişir; yetki listesine bakılmaz. Kurulumda açtığınız yönetici bu görevdedir. Görevler listesinde görünmez ve hiçbir formda seçilemez |
-| **Admin** | Sistem görevi. Kurulumda panelin **tüm yetkileriyle** gelir: mağaza ekranlarının yanında müşteriler, kullanıcılar, görevler, yetkiler, Genel Ayarlar, Eklentiler, Tanımlamalar, Etkinlik Kayıtları ve Ön Bellek Yönetimi. Kurulum sırasında kurulu olan eklentilerin yetkileri de dahildir |
+| **Admin** | Sistem görevi. Kurulumda panelin **tüm yetkileriyle** gelir: mağaza ekranlarının yanında müşteriler, kullanıcılar, görevler, yetkiler, Genel Ayarlar, Eklentiler ve Temalar, Tanımlamalar, Etkinlik Kayıtları ve Ön Bellek Yönetimi. Kurulum sırasında kurulu olan eklentilerin yetkileri de dahildir |
 | **Mağaza Yöneticisi** | Tüm mağaza yetkileri (aşağıdaki "Mağaza:" gruplarının hepsi); müşteri, kullanıcı, genel ayar ve tanımlama ekranları hariç |
 | **Satış Sorumlusu** | Siparişler (listeleme, detay, durum, ödeme durumu, not, fatura bilgisi, lot değiştirme, toplama listesi), Teklifler (tümü), İadeler (tümü); ayrıca ürünleri, stok durumunu, kargo firmalarını ve para birimlerini **görüntüleme** |
 | **Depo Sorumlusu** | Stok (durum, hareketler, giriş / çıkış, transfer, lokasyon değişimi, lot / seri no), Depolar ve lokasyonlar, Mal kabul, Sayım, Tedarikçiler, Kargo firmaları, İadeler; siparişlerde **listeleme, detay, durum değiştirme, lot değiştirme ve toplama listesi**; ürünleri görüntüleme |
 | **Katalog Sorumlusu** | Ürünler (görseller dahil), Kategoriler, Markalar, Excel içe aktarma ve ürünleri Excel'e aktarma; ayrıca stok durumunu, stok hareketlerini ve para birimlerini **görüntüleme** |
-| **İçerik Editörü** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa vardır: vitrin kurulurken oluşturulur, kaldırılınca silinir. Vitrinin içerik ekranları: Ana Sayfa, Menüler, Slider, Üst & Alt Bilgi, Sayfalar |
+| **İçerik Editörü** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa vardır: vitrin kurulurken oluşturulur, kaldırılınca silinir. Vitrinin içerik ekranları: Ana Sayfa, Menüler, Slider, Görünüm, Sayfalar |
 
 Çekirdekle gelen görevler: Super Admin, Admin, Mağaza Yöneticisi, Satış Sorumlusu, Depo
 Sorumlusu, Katalog Sorumlusu. Vitrin eklentisi kurulurken ayrıca vitrinin yetkileri **Admin** ve
@@ -44,7 +44,7 @@ alır. Şu ekranların yetkileri listede vardır ama bu görevlere atanmamışt�
 **Görevler**'de ilgili göreve ekleyin:
 
 - Bayiler (vitrin kuruluysa Müşteriler) listesi, detay ve **Yeni Bayi**
-- Genel Ayarlar ekranı, Eklentiler ve ETBİS kare kodu yükleme
+- Genel Ayarlar ekranı, Eklentiler, Temalar ve ETBİS kare kodu yükleme
 - Kullanıcılar, Görevler, Yetkiler
 - Tanımlamalar › Diller, Bölgeler, Vergi Oranları; Para Birimleri'nde elle ekleme / düzenleme /
   silme / durum değiştirme

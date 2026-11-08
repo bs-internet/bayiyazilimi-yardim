@@ -11,14 +11,23 @@ Ek özellikler **eklentilerle** gelir.
 | **PayTR** (ücretsiz) | PayTR ile kartla ödeme, taksit, iade, kartla cari tahsilat. Bkz. [Kartla ödeme](/cari/kartla-odeme) |
 | **iyzico** (ücretsiz) | iyzico ile kartla ödeme, taksit, iade, kartla cari tahsilat |
 
+Mağaza ön yüzünün tasarımını değiştiren **temalar** da eklenti gibi kurulur; bkz. [Temalar](/yonetim/temalar).
+
 Güncel liste, fiyatlar ve destek paketleri: [bayiyazilimi.com](https://bayiyazilimi.com).
 
-## Eklentiler ekranı
+## Eklentiler ekranı {#eklentiler-ekrani}
 
 **Ayarlar › Eklentiler** — "Kurulu eklentileri açıp kapatın. Kapatılan eklentinin menüsü,
 sayfaları ve özellikleri devre dışı kalır; verileri silinmez."
 
-Eklentiler, Ayarlar menüsünde kendi bölümüdür; bölümün iç menüsünden **Eklentiler** sayfası açılır.
+Eklentiler, Ayarlar menüsünde kendi bölümüdür. Bölümün iç menüsünde iki sayfa vardır:
+
+| İç menü | Ne yapılır |
+|---|---|
+| **Eklentiler** | Kurulu eklentileri açıp kapatma, kurulabilecek eklentileri inceleme (bu sayfa) |
+| **Temalar** | Mağaza ön yüzünün temasını seçme. Bkz. [Temalar](/yonetim/temalar) |
+
+Tema paketleri Eklentiler sayfasında değil, **Temalar** sayfasında listelenir.
 
 ### Kurulu eklentiler
 
@@ -38,7 +47,7 @@ varsayılan B2B özellikleriyle çalışıyor." yazar.
 | Kullanan eklentiler | Bu eklentiye ihtiyaç duyan eklentiler |
 | Aç / kapat anahtarı | Eklentiyi açar ya da kapatır |
 
-### Eklentiyi kapatmak / açmak
+### Eklentiyi kapatmak / açmak {#eklentiyi-kapatmak-acmak}
 
 1. Eklentinin anahtarını kapatın.
 2. "*Eklenti* eklentisi kapatılsın mı?" penceresinde **Kapat**'a basın.
@@ -81,7 +90,7 @@ Var olan dosyaların üzerine yazmak için `php artisan bayi:install <eklenti> -
 
 Eklenti güncellemesi: [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme#guncelleme).
 
-## Eklentiyi kaldırma
+## Eklentiyi kaldırma {#eklentiyi-kaldirma}
 
 Sıra önemlidir: **önce** `bayi:uninstall`, **sonra** `composer remove`.
 

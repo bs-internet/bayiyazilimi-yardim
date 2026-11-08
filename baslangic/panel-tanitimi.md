@@ -79,7 +79,7 @@ Menü gruplar halindedir. Her kullanıcı yalnız **görevinin izin verdiği** �
   Ayarları'nda izlenebilirlik açıksa görünür.
 - Kurulu eklentiler menüye kendi öğelerini ekler. [Vitrin eklentisi](/vitrin/) kuruluysa
   **Bayiler** menüsünün adı **Müşteriler** olur (bayiler ve vitrin müşterileri birlikte) ve
-  **İçerik** grubu (Ana Sayfa, Menüler, Üst & Alt Bilgi, Slider, Sayfalar) eklenir.
+  **İçerik** grubu (Ana Sayfa, Menüler, Görünüm, Slider, Sayfalar) eklenir.
 - **Genel Ayarlar**, **Kullanıcılar**, **Tanımlamalar**, **Ödemeler**, **Kampanyalar** ve
   **Raporlar** tıklanınca bir bölüm sayfası açar; bölümün alt ekranları sayfanın içindeki
   menüdedir. Bu yardımda yollar bu iç menüyle birlikte yazılır, ör. **Ayarlar › Tanımlamalar ›
