@@ -20,15 +20,15 @@ sayısı**. Sistem görevleri **Sistem** etiketiyle gösterilir. **Görev ara** 
 | Görev | Kapsam |
 |---|---|
 | **Super Admin** | **Her şeye** erişir; yetki listesine bakılmaz. Kurulumda açtığınız yönetici bu görevdedir. Görevler listesinde görünmez ve hiçbir formda seçilemez |
-| **Admin** | Sistem görevi. Kurulumda panelin **tüm yetkileriyle** gelir: mağaza ekranlarının yanında müşteriler, kullanıcılar, görevler, yetkiler, Genel Ayarlar, Modüller, Tanımlamalar, Etkinlik Kayıtları ve Ön Bellek Yönetimi. Kurulum sırasında kurulu olan modüllerin yetkileri de dahildir |
+| **Admin** | Sistem görevi. Kurulumda panelin **tüm yetkileriyle** gelir: mağaza ekranlarının yanında müşteriler, kullanıcılar, görevler, yetkiler, Genel Ayarlar, Eklentiler, Tanımlamalar, Etkinlik Kayıtları ve Ön Bellek Yönetimi. Kurulum sırasında kurulu olan eklentilerin yetkileri de dahildir |
 | **Mağaza Yöneticisi** | Tüm mağaza yetkileri (aşağıdaki "Mağaza:" gruplarının hepsi); müşteri, kullanıcı, genel ayar ve tanımlama ekranları hariç |
 | **Satış Sorumlusu** | Siparişler (listeleme, detay, durum, ödeme durumu, not, fatura bilgisi, lot değiştirme, toplama listesi), Teklifler (tümü), İadeler (tümü); ayrıca ürünleri, stok durumunu, kargo firmalarını ve para birimlerini **görüntüleme** |
 | **Depo Sorumlusu** | Stok (durum, hareketler, giriş / çıkış, transfer, lokasyon değişimi, lot / seri no), Depolar ve lokasyonlar, Mal kabul, Sayım, Tedarikçiler, Kargo firmaları, İadeler; siparişlerde **listeleme, detay, durum değiştirme, lot değiştirme ve toplama listesi**; ürünleri görüntüleme |
 | **Katalog Sorumlusu** | Ürünler (görseller dahil), Kategoriler, Markalar, Excel içe aktarma ve ürünleri Excel'e aktarma; ayrıca stok durumunu, stok hareketlerini ve para birimlerini **görüntüleme** |
-| **İçerik Editörü** | Yalnız [Vitrin modülü](/vitrin/) kuruluysa vardır: vitrin kurulurken oluşturulur, kaldırılınca silinir. Vitrinin içerik ekranları: Ana Sayfa, Menüler, Slider, Üst & Alt Bilgi, Sayfalar |
+| **İçerik Editörü** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa vardır: vitrin kurulurken oluşturulur, kaldırılınca silinir. Vitrinin içerik ekranları: Ana Sayfa, Menüler, Slider, Üst & Alt Bilgi, Sayfalar |
 
 Çekirdekle gelen görevler: Super Admin, Admin, Mağaza Yöneticisi, Satış Sorumlusu, Depo
-Sorumlusu, Katalog Sorumlusu. Vitrin modülü kurulurken ayrıca vitrinin yetkileri **Admin** ve
+Sorumlusu, Katalog Sorumlusu. Vitrin eklentisi kurulurken ayrıca vitrinin yetkileri **Admin** ve
 **Mağaza Yöneticisi** görevlerine eklenir.
 
 Hazır görevlerin yetkilerini istediğiniz gibi değiştirebilir, yeni görev ekleyebilirsiniz.
@@ -44,15 +44,15 @@ alır. Şu ekranların yetkileri listede vardır ama bu görevlere atanmamışt�
 **Görevler**'de ilgili göreve ekleyin:
 
 - Bayiler (vitrin kuruluysa Müşteriler) listesi, detay ve **Yeni Bayi**
-- Genel Ayarlar (Genel Ayarlar ekranı, Modüller) ve ETBİS kare kodu yükleme
+- Genel Ayarlar ekranı, Eklentiler ve ETBİS kare kodu yükleme
 - Kullanıcılar, Görevler, Yetkiler
 - Tanımlamalar › Diller, Bölgeler, Vergi Oranları; Para Birimleri'nde elle ekleme / düzenleme /
   silme / durum değiştirme
 - Etkinlik Kayıtları, Ön Bellek Yönetimi
 
-Kurulumdan **sonra** eklenen ekranların (ör. sonradan kurulan bir modül) yetkileri hiçbir göreve
+Kurulumdan **sonra** eklenen ekranların (ör. sonradan kurulan bir eklenti) yetkileri hiçbir göreve
 kendiliğinden atanmaz; atanana kadar bu ekranları yalnız Super Admin açabilir. Bkz.
-[Yeni kurulan bir modülün ekranlarını açmak](#yeni-modul).
+[Yeni kurulan bir eklentinin ekranlarını açmak](#yeni-modul).
 :::
 
 **Herkese açık ekranlar:** Başlangıç ekranı, Genel Ayarlar ve Tanımlamalar'ın **Genel Bakış**
@@ -99,7 +99,7 @@ açabilir.
 
 **Yetkiler › Rotalardan Keşfet** — panelde olup henüz yetki listesinde **bulunmayan** ekran ve
 işlemleri listeler. Kurulumda var olan ekranların yetkileri zaten listededir; bu ekran sonradan
-eklenen ekranlar (ör. yeni bir modül) ya da listeden kalıcı silinmiş yetkiler için kullanılır.
+eklenen ekranlar (ör. yeni bir eklenti) ya da listeden kalıcı silinmiş yetkiler için kullanılır.
 
 | Sütun | Açıklama |
 |---|---|
@@ -162,9 +162,9 @@ göreve (ör. Mağaza Yöneticisi) açmak için:
 
 Aradığınız yetki listede yoksa önce **Yetkiler › Rotalardan Keşfet** ile ekleyin.
 
-### Yeni kurulan bir modülün ekranlarını açmak {#yeni-modul}
+### Yeni kurulan bir eklentinin ekranlarını açmak {#yeni-modul}
 
-Modül kurulduğunda (`bayi:install`) yetkileri listeye eklenir ama hiçbir göreve atanmaz. Modülün
+Eklenti kurulduğunda (`bayi:install`) yetkileri listeye eklenir ama hiçbir göreve atanmaz. Eklentinin
 yetkilerini **Görevler**'de ilgili görevlere atayın. Listede görünmüyorlarsa **Rotalardan
 Keşfet** ile ekleyin.
 

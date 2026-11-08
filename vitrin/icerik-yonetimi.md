@@ -1,7 +1,7 @@
 # İçerik yönetimi
 
 Vitrinin içeriği panelde **İçerik** menüsünden yönetilir. **İçerik** grubu (Sayfalar dahil)
-yalnız vitrin modülüyle gelir; vitrin kurulu değilse menüde görünmez.
+yalnız vitrin eklentisiyle gelir; vitrin kurulu değilse menüde görünmez.
 
 | Menü | Ne yönetilir | Ayrıntı |
 |---|---|---|
@@ -165,7 +165,7 @@ bağlantısı kullanın.
 
 ### Hazır gelen sayfalar {#hazir-sayfalar}
 
-Vitrin modülü kurulurken şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek
+Vitrin eklentisi kurulurken şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek
 olarak eklenmiştir." uyarısı yazar; metni kendi firmanıza göre değiştirin.
 
 | Sayfa | Adres | Yerleşim |

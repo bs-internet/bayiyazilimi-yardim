@@ -7,8 +7,8 @@ Sistem iki kanaldan bildirim gönderir:
 | **E-posta** | Alıcının e-posta kutusu |
 | **Panel içi bildirim** | Yöneticiler için panelde zil simgesi › **Bildirimler**; bayiler için bayi panelindeki bildirimler |
 
-Bu sayfa çekirdekte (modülsüz) gönderilen tüm bildirimleri listeler. Kurulu modüller (Vitrin,
-ödeme modülleri) kendi bildirimlerini ekleyebilir.
+Bu sayfa çekirdekte (eklentisiz) gönderilen tüm bildirimleri listeler. Kurulu eklentiler (Vitrin,
+ödeme eklentileri) kendi bildirimlerini ekleyebilir.
 
 ## Alıcılar nereden ayarlanır? {#alicilar}
 

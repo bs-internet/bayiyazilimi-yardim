@@ -183,7 +183,7 @@ hesaplanan ücretle listelenir. Kargo firması tanımlı değilse bu adım gör�
 | Yöntem | Ne zaman görünür |
 |---|---|
 | **Havale / EFT** | Havale açıksa ve en az bir aktif banka hesabı varsa. Havale indirimi tanımlıysa "Havale indirimi (%…)" ve indirimli **Ödenecek tutar** gösterilir |
-| **Kartla ödeme** | Kart ödeme modülü (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir; seçilince düğme **Ödemeye Geç** olur ve ödeme sağlayıcının sayfasına gidilir |
+| **Kartla ödeme** | Kart ödeme eklentisi (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir; seçilince düğme **Ödemeye Geç** olur ve ödeme sağlayıcının sayfasına gidilir |
 | **Cari hesaba (vadeli)** | Yalnız vadeli çalışan hesaplarda (genellikle bayiler) |
 
 Hiç yöntem yoksa "Şu anda kullanılabilir ödeme yöntemi yok. Lütfen bizimle iletişime geçin."

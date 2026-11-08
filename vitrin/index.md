@@ -1,12 +1,12 @@
 # Vitrin nedir?
 
-::: info Ek modül
-Vitrin, ayrıca satılan bir modüldür. Bilgi ve satın alma için
+::: info Ek eklenti
+Vitrin, ayrıca satılan bir eklentidir. Bilgi ve satın alma için
 [bayiyazilimi.com](https://bayiyazilimi.com).
 :::
 
 Bayi Yazılımı kendi başına bir **B2B** sistemidir: yalnız sizin eklediğiniz bayiler giriş yapıp
-bayi panelinden sipariş verir. **Vitrin modülü** buna herkese açık bir **e-ticaret sitesi**
+bayi panelinden sipariş verir. **Vitrin eklentisi** buna herkese açık bir **e-ticaret sitesi**
 ekler: sitenizin ana adresi (`/`) mağazanın ana sayfası olur, ziyaretçiler ürünleri gezer,
 üye olur ya da üye olmadan (misafir olarak) sipariş verir.
 
@@ -63,7 +63,7 @@ girerek sipariş verebilir. Misafir siparişlerinde ve tekliflerinde:
 - Sipariş / teklif e-postasındaki bağlantı, **giriş gerektirmeyen** özel bir sayfayı açar.
   Misafir siparişin durumunu, kargo takip numarasını ve havale bilgilerini buradan görür; teklifi
   buradan onaylar, revize ister, reddeder ve öder.
-- Bu bağlantılar bakım modunda yalnız görüntülenir; vitrin modülü kapatılırsa açılmaz.
+- Bu bağlantılar bakım modunda yalnız görüntülenir; vitrin eklentisi kapatılırsa açılmaz.
 - İade talebi, ödeme geçmişi ve kayıtlı adres gibi işlemler yalnız üyelerin Hesabım'ındadır.
 
 ## Müşteri kaydı
@@ -75,8 +75,8 @@ bağlantısı gider; müşteri hesabı **e-posta doğrulanınca açılır**. Ayr
 
 ## Vitrini kapatmak
 
-Vitrin modülü kurulu ve etkinken site herkese açıktır. Siteyi yalnız bayilere açmak için
-**Ayarlar › Genel Ayarlar › Modüller**'de **Vitrin** modülünü kapatın: ziyaretçiler giriş
+Vitrin eklentisi kurulu ve etkinken site herkese açıktır. Siteyi yalnız bayilere açmak için
+**Ayarlar › Eklentiler**'de **Vitrin** eklentisini kapatın: ziyaretçiler giriş
 sayfasına yönlendirilir, yeni kayıt kapanır, veriler korunur. Geçici kapatma için
 **Ayarlar › Genel Ayarlar › Site Erişimi**'ndeki **Bakım modu**nu kullanın. Bkz.
 [Site erişimi](/vitrin/ayarlar#site-erisimi).
@@ -103,9 +103,9 @@ sayfasına yönlendirilir, yeni kayıt kapanır, veriler korunur. Geçici kapatm
 Panelde ürün listesindeki **Sitede gör** işlemi (aktif "Vitrin" ürünlerinde) ve **İçerik ›
 Sayfalar** listesindeki **Görüntüle** bağlantısı bu adresleri yeni sekmede açar.
 
-## Modül kapatılırsa
+## Eklenti kapatılırsa
 
-Vitrin **Ayarlar › Genel Ayarlar › Modüller** ekranından kapatılabilir. Kapatınca sistem yeniden
+Vitrin **Ayarlar › Eklentiler** ekranından kapatılabilir. Kapatınca sistem yeniden
 yalnız B2B çalışır: herkese açık site, müşterinin Hesabım'ı ve vitrinin panel ekranları (Ana Sayfa,
 Menüler, Slider, Üst & Alt Bilgi, Sayfalar, Çerez Yönetimi, İletişim Bilgileri) kaybolur; veriler **silinmez**. Bayiler bayi
-panelini kullanmayı sürdürür. Bkz. [Modüller](/yonetim/moduller).
+panelini kullanmayı sürdürür. Bkz. [Eklentiler](/yonetim/moduller).

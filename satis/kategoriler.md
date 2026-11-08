@@ -35,7 +35,7 @@ Satırın **İşlemler** menüsünde **Düzenle** ve **Alt kategori ekle** vard�
 
 | Alan | Açıklama |
 |---|---|
-| **Kategori görseli** | Görsel dosyası, en çok 4 MB. Vitrin modülü kuruluysa sitede kullanılır. |
+| **Kategori görseli** | Görsel dosyası, en çok 4 MB. Vitrin eklentisi kuruluysa sitede kullanılır. |
 | **Mevcut görseli kaldır** | Görsel yüklüyse görünür; işaretleyip kaydederseniz görsel silinir. |
 
 ### Vitrin
@@ -48,7 +48,7 @@ Satırın **İşlemler** menüsünde **Düzenle** ve **Alt kategori ekle** vard�
 
 | Alan | Açıklama |
 |---|---|
-| **Meta başlık** | En çok 255 karakter. Vitrin modülünde kategori sayfasının başlığı. |
+| **Meta başlık** | En çok 255 karakter. Vitrin eklentisinde kategori sayfasının başlığı. |
 | **Meta açıklama** | En çok 500 karakter. |
 
 Yeni kategori **aktif** olarak oluşur; durum listedeki **Aktif** anahtarıyla değiştirilir.

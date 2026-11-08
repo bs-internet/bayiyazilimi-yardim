@@ -1,7 +1,7 @@
 # Ödeme altyapısı
 
 Her ödeme yöntemi bir **sürücüdür** (`App\Support\Payments`). Çekirdekte iki sürücü vardır;
-kart sağlayıcıları modüllerle eklenir.
+kart sağlayıcıları eklentilerle eklenir.
 
 ## PaymentGateway
 
@@ -40,7 +40,7 @@ hooks()->action('shop.payment.methods.register', function (PaymentRegistry $paym
 ```
 
 `orders.payment_method` ve `payments.method` sürücü anahtarını (string) tutar; enum yoktur.
-Etiket `PaymentMethods::label($key)` ile çözülür — modül kaldırılsa da eski kayıtlar okunur.
+Etiket `PaymentMethods::label($key)` ile çözülür — eklenti kaldırılsa da eski kayıtlar okunur.
 
 ## Çekirdek sürücüler
 
@@ -67,7 +67,7 @@ siparişleri "Ödeme Başarısız" yapar ve stoğu geri ekler.
 ## Kart sağlayıcıları: HostedCardGateway
 
 Güvenli ödeme sayfası (iFrame / hosted form, 3D Secure) kullanan sağlayıcılar için ortak akış;
-PayTR ve iyzico modülleri bunu genişletir:
+PayTR ve iyzico eklentileri bunu genişletir:
 
 1. `start()` bekleyen bir ödeme kaydı açar ve müşteriyi imzalı, 2 saat geçerli
    `/odeme/kart/{referans}` sayfasına yönlendirir.

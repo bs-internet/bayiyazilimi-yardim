@@ -26,7 +26,7 @@ kodlarınızı saklayın. Kurulumda açtığınız hesap Super Admin'dir; her ş
   numarası, MERSİS ve **adres** (il / ilçe zorunlu). Vergi bilgileri eksikse Genel Bakış'ta uyarı
   görünür.
 
-[Vitrin modülü](/vitrin/) kuruluysa ayrıca **İletişim Bilgileri** ekranı gelir (WhatsApp,
+[Vitrin eklentisi](/vitrin/) kuruluysa ayrıca **İletişim Bilgileri** ekranı gelir (WhatsApp,
 çalışma saatleri, harita, sosyal medya).
 
 ## 4. Varsayılanlar ve ana para birimi
@@ -102,6 +102,6 @@ listelenir; ödeme formunda göster işaretli olanlar siparişte onaylatılır. 
 
 ## Örnek verilerle kurduysanız
 
-Örnek ürünler ve örnek bayi (`user@user.com`) hesabı yüklenmiştir; [Vitrin modülü](/vitrin/)
+Örnek ürünler ve örnek bayi (`user@user.com`) hesabı yüklenmiştir; [Vitrin eklentisi](/vitrin/)
 kuruluysa örnek müşteri (`musteri@musteri.com`) hesabı da gelir. Gerçek kullanıma geçmeden önce
 örnek ürünleri silin ya da pasifleştirin, örnek hesapları pasif yapın.

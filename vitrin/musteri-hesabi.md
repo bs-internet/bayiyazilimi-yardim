@@ -20,7 +20,7 @@ Vitrinden kayıt olan müşteriler hesaplarını vitrin tasarımındaki **Hesab�
 3. Bağlantıya tıklayınca e-posta doğrulanır ve **müşteri hesabı açılır**. Hesap açılmadan
    Hesabım'a girilemez.
 
-- Vitrin modülü kapatılmışsa kayıt kapalıdır ve müşteriler giriş yapamaz (bkz.
+- Vitrin eklentisi kapatılmışsa kayıt kapalıdır ve müşteriler giriş yapamaz (bkz.
   [Site erişimi](/vitrin/ayarlar#site-erisimi)).
 - Panelden **Müşteriler** altında üye olarak eklediğiniz kişinin hesabı da müşteri hesabıdır;
   bayi olarak eklenenler bayi panelini kullanır.

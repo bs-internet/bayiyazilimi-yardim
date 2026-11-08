@@ -32,7 +32,7 @@ features:
     - title: Bayi paneli
       details: Bayilerinizin sipariş verdiği, teklif aldığı ve carisini izlediği ekranlar.
       link: /bayi-paneli/
-    - title: Modüller
-      details: Vitrin (e-ticaret sitesi), PayTR ve iyzico gibi ek modüllerle sistemi genişletin.
+    - title: Eklentiler
+      details: Vitrin (e-ticaret sitesi), PayTR ve iyzico gibi ek eklentilerle sistemi genişletin.
       link: /yonetim/moduller
 ---

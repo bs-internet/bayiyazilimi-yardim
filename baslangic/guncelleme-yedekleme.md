@@ -7,7 +7,7 @@ Bayi Yazılımı'nın verisi üç yerde durur. Üçü birlikte yedeklenmezse ger
 | Ne | Nerede | İçinde ne var |
 |---|---|---|
 | **Veritabanı** | MySQL / MariaDB | Ürünler, siparişler, cari hareketler, kullanıcılar, ayarlar … her şey |
-| **Yüklenen dosyalar** | `storage/app` klasörü (`public` ve `private` alt klasörleri) | Logo, ürün görselleri, dekontlar, çek / senet görselleri; ayrıca kapatılan modüllerin listesi |
+| **Yüklenen dosyalar** | `storage/app` klasörü (`public` ve `private` alt klasörleri) | Logo, ürün görselleri, dekontlar, çek / senet görselleri; ayrıca kapatılan eklentilerin listesi |
 | **`.env` dosyası** | Proje klasörü | Veritabanı ve e-posta bilgileri, **uygulama anahtarı** (`APP_KEY`) |
 
 ::: danger APP_KEY'i kaybetmeyin
@@ -104,22 +104,22 @@ php artisan optimize:clear
 Hostinginizde Terminal yoksa bu adım için destek alın; yeni dosyalar yüklenip `migrate`
 çalıştırılmazsa sistem hata verebilir.
 
-### Modülleri güncelleme
+### Eklentileri güncelleme
 
-Bir modülün yeni sürümünü kurduktan sonra modülün kurulum adımını yeniden çalıştırın:
+Bir eklentinin yeni sürümünü kurduktan sonra eklentinin kurulum adımını yeniden çalıştırın:
 
 ```bash
-composer update bsinternet/<modül>
-php artisan bayi:install <modül>
+composer update bsinternet/<eklenti>
+php artisan bayi:install <eklenti>
 npm run build
 ```
 
-Bu adım çalıştırılmadıysa **Genel Ayarlar › Modüller** ekranında modülün yanında
+Bu adım çalıştırılmadıysa **Ayarlar › Eklentiler** ekranında eklentinin yanında
 **Güncelleme tamamlanmadı** uyarısı ve çalıştırılacak komut görünür. Bkz.
-[Modüller](/yonetim/moduller).
+[Eklentiler](/yonetim/moduller).
 
 ::: warning Vitrin 0.2.0'a geçiş
-İçerik sayfaları ve İletişim Bilgileri ekranı çekirdekten Vitrin modülüne taşındı. Vitrin
+İçerik sayfaları ve İletişim Bilgileri ekranı çekirdekten Vitrin eklentisine taşındı. Vitrin
 kurulu bir sistemde çekirdeği güncelledikten sonra Vitrin'i de güncelleyin; 0.2.0 sürümü kendi
 sayfa tablosunu oluşturur:
 
@@ -133,7 +133,7 @@ npm run build
 ## Güncellemeden sonra kontrol listesi
 
 - Panele giriş yapılabiliyor mu, başlangıç ekranı açılıyor mu?
-- **Genel Ayarlar › Modüller** ekranında uyarı var mı?
+- **Ayarlar › Eklentiler** ekranında uyarı var mı?
 - Bir test e-postası gidiyor mu (ör. kendi hesabınız için **Şifremi unuttum**)?
 - Sorun varsa `storage/logs` altındaki günlük dosyasına bakın ve
   [sorun giderme](/baslangic/sorun-giderme) sayfasını inceleyin.

@@ -1,7 +1,6 @@
 # Genel ayarlar
 
-**Ayarlar › Genel Ayarlar** — sistemin kimliği, varsayılanları, firma bilgileri, site erişimi
-ve modüller. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
+**Ayarlar › Genel Ayarlar** — sistemin kimliği, varsayılanları, firma bilgileri ve site erişimi. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
 
 ## Genel Bakış
 
@@ -13,10 +12,9 @@ yazar, eksik ya da dikkat isteyen bir durum varsa uyarı rengiyle gösterilir:
 | Genel Ayarlar | Uygulama adı |
 | Kurumsal Bilgiler | Firma ünvanı; vergi dairesi ya da vergi numarası boşsa **"Vergi bilgileri eksik"** uyarısı |
 | Site Erişimi | "Yalnız bayilere açık", "Herkese açık" ya da **"Bakım modu açık; site ziyaretçilere kapalı"** uyarısı |
-| Modüller | Kurulu modülleri açma / kapatma |
 
-Kartlar kullanıcının yetkisine göre gösterilir. Kurulu modüller bu bölüme kendi ayar
-ekranlarını ekleyebilir; ör. Vitrin modülü **İletişim Bilgileri** (kartta "WhatsApp · çalışma
+Kartlar kullanıcının yetkisine göre gösterilir. Kurulu eklentiler bu bölüme kendi ayar
+ekranlarını ekleyebilir; ör. Vitrin eklentisi **İletişim Bilgileri** (kartta "WhatsApp · çalışma
 saatleri" ya da "Bilgi eklenmedi") ve **Çerez Yönetimi** ekranlarını ekler.
 
 ## Genel Ayarlar sekmesi {#genel-sekme}
@@ -101,7 +99,7 @@ Firmanın resmi adresi; sitede, iletişim sayfasında ve belgelerde tek satır o
 ### ETBİS
 
 Elektronik Ticaret Bilgi Sistemi kaydınızın kare kodu; vitrinin alt bilgisinde gösterilir
-(Vitrin modülü kuruluysa).
+(Vitrin eklentisi kuruluysa).
 
 | Alan | Açıklama |
 |---|---|
@@ -112,7 +110,7 @@ Diğer alanlar **Kaydet** ile kaydedilir.
 
 ## İletişim Bilgileri (Vitrin) {#iletisim}
 
-**Ayarlar › Genel Ayarlar › İletişim Bilgileri** yalnız [Vitrin modülü](/vitrin/) kuruluysa
+**Ayarlar › Genel Ayarlar › İletişim Bilgileri** yalnız [Vitrin eklentisi](/vitrin/) kuruluysa
 görünür. Firma e-postası ve telefonu bu ekranda değil, [Kurumsal Bilgiler](#kurumsal)'dedir;
 bildirim e-postası [Satış ayarları](/satis/satis-ayarlari#bildirimler)'ndadır.
 
@@ -153,8 +151,8 @@ paneli her durumda yöneticilere açıktır.
 | Bakım modu | Açıkken site yalnız yöneticilere açıktır. Bayiler (bayi paneli dahil), müşteriler ve ziyaretçiler **bakım sayfasını** görür. Giriş ekranı açık kalır ki yöneticiler girebilsin |
 | Bakım sayfası mesajı | Bakım sayfasında gösterilecek metin. En çok 1000 karakter. Varsayılan: "Sitemizde bakım çalışması yapılmaktadır. Kısa süre içinde yeniden hizmetinizdeyiz." |
 
-Sitenin kimlere açık olduğunu Vitrin modülü belirler: modül kurulu ve etkinse site herkese açıktır;
-yoksa ya da **Modüller** ekranından kapatıldıysa sistem **yalnız bayilere açıktır**: ziyaretçiler
+Sitenin kimlere açık olduğunu Vitrin eklentisi belirler: eklenti kurulu ve etkinse site herkese açıktır;
+yoksa ya da **Eklentiler** ekranından kapatıldıysa sistem **yalnız bayilere açıktır**: ziyaretçiler
 giriş ekranına yönlendirilir, herkese açık kayıt yoktur, müşteri hesabıyla giriş yapılamaz.
 
 **Kaydet** ile kaydedilir. Bakım modu açıkken Genel Bakış'taki Site Erişimi kartı uyarı rengiyle
@@ -168,15 +166,16 @@ giriş ekranına yönlendirilir, herkese açık kayıt yoktur, müşteri hesabı
    çalışmaya devam edersiniz.
 4. İşiniz bitince **Bakım modu**'nu kapatıp yeniden kaydedin.
 
-## Modüller
+## Eklentiler
 
-**Ayarlar › Genel Ayarlar › Modüller** — kurulu modülleri açıp kapatma ve sunulan modüllerin
-listesi. Ayrıntılar: [Modüller](/yonetim/moduller).
+Eklentiler artık Genel Ayarlar içinde değil, Ayarlar menüsünde kendi bölümündedir:
+**Ayarlar › Eklentiler** — kurulu eklentileri açıp kapatma ve sunulan eklentilerin
+listesi. Ayrıntılar: [Eklentiler](/yonetim/moduller).
 
 ## Yetkiler
 
 Bu ekranlardaki her işlem ayrı bir yetkidir ve [görevlere](/yonetim/roller-yetkiler) atanır.
 Kurumsal Bilgiler ve Site Erişimi için görüntüleme ve güncelleme yetkileri hazır gelir
 (**Mağaza: Ayarlar** grubunda). Vitrin kuruluysa İletişim Bilgileri yetkileri **Mağaza: İçerik**
-grubundadır. Genel Ayarlar ve Modüller ekranlarının yetkileri
+grubundadır. Genel Ayarlar ve Eklentiler ekranlarının yetkileri
 kurulumda yalnız **Admin** görevine atanır; başka bir göreve **Görevler** ekranından eklenebilir.

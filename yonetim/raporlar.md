@@ -40,7 +40,7 @@ Her rapor yukarıdan aşağıya aynı düzendedir:
 | Dönem | Hazır aralıklar: **Bugün**, **Son 7 gün**, **Son 30 gün**, **Bu ay**, **Geçen ay**, **Bu yıl**, **Özel aralık**. Varsayılan **Son 30 gün**dür. "Son 7 gün" ve "Son 30 gün" bugünü de içerir; "Bu ay" ve "Bu yıl" bugüne kadar olan kısımdır. |
 | Başlangıç tarihi / Bitiş tarihi | Yalnızca **Özel aralık** seçildiğinde görünür. Başlangıç bitişten sonraysa ikisi yer değiştirir. Aralık en çok 1100 gün olabilir; daha uzunsa başlangıç, bitişten 1100 gün öncesine çekilir. |
 | Gruplama | Yalnızca Ürün Satışları'nda: **Ürün bazında**, **Kategori bazında**, **Marka bazında**. |
-| Müşteri | Satış, Ürün Satışları, Müşteri, Teklif, Kampanya ve İade raporlarında. Boşken **Müşteri: tümü**. Seçenekler: her bayi grubu için **Bayi: (grup adı)**. Vitrin modülü kuruluysa ayrıca **Bireysel müşteri**, **Misafir** ve **Tüm bayiler** seçenekleri çıkar. |
+| Müşteri | Satış, Ürün Satışları, Müşteri, Teklif, Kampanya ve İade raporlarında. Boşken **Müşteri: tümü**. Seçenekler: her bayi grubu için **Bayi: (grup adı)**. Vitrin eklentisi kuruluysa ayrıca **Bireysel müşteri**, **Misafir** ve **Tüm bayiler** seçenekleri çıkar. |
 | Depo | Yalnızca Stok'ta. Boşken **Depo: tümü** (tüm depoların toplam stoğu). |
 | Kategori | Ürün Satışları ve Stok'ta. Seçilen kategori **alt kategorileriyle birlikte** süzülür. |
 | Marka | Ürün Satışları ve Stok'ta. |
@@ -193,7 +193,7 @@ anlatılmıştır.
 |---|---|---|
 | Ödeme yöntemi | Yöntem, Sipariş, Ciro | Ciroya göre büyükten küçüğe. |
 | Sipariş durumu (tümü) | Durum, Sipariş, Tutar | **Tüm** siparişleri gösterir; iptal edilen, ödemesi başarısız olan ve ödemesi iade edilen siparişler de burada sayılır (ciroya sayılmasalar da). Yedi durumun hepsi listelenir: Ödeme Bekleniyor, Onay Bekliyor, Hazırlanıyor, Kargoya Verildi, Tamamlandı, İptal Edildi, Ödeme Başarısız. |
-| Müşteri tipi | Tip, Sipariş, Ciro | Yalnız vitrin modülü kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
+| Müşteri tipi | Tip, Sipariş, Ciro | Yalnız vitrin eklentisi kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Para birimi | Para birimi, Sipariş, Tutar, TL karşılığı | **Tutar** siparişlerin kendi para birimindeki toplamı (ör. "1.234,50 USD"); **TL karşılığı** ana para birimine çevrilmiş toplamı. |
 
 ### Ana tablo — Günlük satışlar / Aylık satışlar
@@ -263,7 +263,7 @@ payı **%25**'tir.
 
 ## Bayi Raporu / Müşteri Raporu {#musteri}
 
-**Raporlar › Bayi** (vitrin kuruluysa **Raporlar › Müşteri**). Vitrin modülü yoksa rapor **Bayi
+**Raporlar › Bayi** (vitrin kuruluysa **Raporlar › Müşteri**). Vitrin eklentisi yoksa rapor **Bayi
 Raporu** adını taşır ve bayi bazında sipariş ve ciroyu gösterir. Vitrin kuruluysa **Müşteri
 Raporu** olur: müşteri ve bayi bazında sipariş ve ciroyu, yeni ve tekrar eden müşterileri
 gösterir; misafir siparişler e-posta adresine göre gruplanır. Yalnızca ciroya sayılan siparişler
@@ -297,7 +297,7 @@ dönemde ise Yeni 10, Tekrar eden 40 − 10 = **30**'dur.
 
 | Tablo | Sütunlar | Not |
 |---|---|---|
-| Müşteri tipi | Tip, Müşteri, Sipariş, Ciro | Yalnız vitrin modülü kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
+| Müşteri tipi | Tip, Müşteri, Sipariş, Ciro | Yalnız vitrin eklentisi kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Bayi grupları | Grup, Bayi, Sipariş, Ciro | Yalnızca bayi hesapları. Gruba atanmamış bayiler **Grupsuz** satırındadır. |
 
 ### Ana tablo — Müşteriler (ciroya göre)

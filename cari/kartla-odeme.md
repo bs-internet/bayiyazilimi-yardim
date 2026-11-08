@@ -1,11 +1,11 @@
 # Kartla ödeme
 
-Kredi / banka kartıyla ödeme **ek modüllerle** gelir: **PayTR** ve **iyzico**. Bu modüller ücretlidir;
-satın alma ve kurulum için: [bayiyazilimi.com](https://bayiyazilimi.com). Diğer ödeme kuruluşları ve
+Kredi / banka kartıyla ödeme **eklentilerle** gelir: **PayTR** ve **iyzico**. Bu eklentiler ücretsizdir;
+bilgi ve kurulum için: [bayiyazilimi.com](https://bayiyazilimi.com). Diğer ödeme kuruluşları ve
 banka sanal POS'ları talep üzerine eklenir.
 
-Modülün kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar. Kurulu modülleri
-[Modüller](/yonetim/moduller) ekranında görebilir, açıp kapatabilirsiniz. İki modül birlikte de
+Eklentinin kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar. Kurulu eklentileri
+[Eklentiler](/yonetim/moduller) ekranında görebilir, açıp kapatabilirsiniz. İki eklenti birlikte de
 kurulabilir; ikisi de açıksa müşteri ödeme ekranında ikisini ayrı seçenek olarak görür.
 
 ## Neler sağlar?
@@ -55,7 +55,7 @@ etkilemez. PayTR'de bunun için mağaza panelinize bildirim adresi girmeniz gere
 
 Kart seçeneği ödeme ekranında yalnız şu koşullarda görünür:
 
-- Modülün ayar ekranında **… ile kartla ödemeyi aç** açık **ve** mağaza / API bilgileri girilmiş.
+- Eklentinin ayar ekranında **… ile kartla ödemeyi aç** açık **ve** mağaza / API bilgileri girilmiş.
 - Müşterinin bayi ya da bayi grubu ayarlarında **İzinli ödeme yöntemleri** işaretliyse, kart bu
   yöntemler arasında. Bayide hiçbiri işaretli değilse grubun ayarı geçerlidir; orada da hiçbiri
   işaretli değilse tüm yöntemler sunulur.
@@ -90,7 +90,7 @@ Ayar ekranında **Taksit** alanından seçilir. **Taksit yok (tek çekim)** seç
 sunulur. Tabloda bu sayının üstündeki taksitler gösterilmez; ödeme sayfasına da en fazla bu kadar
 taksit iletilir.
 
-| Modül  | Seçilebilen değerler                         |
+| Eklenti  | Seçilebilen değerler                         |
 | ------ | -------------------------------------------- |
 | PayTR  | Tek çekim ya da en fazla 2, 3, 4 … 12 taksit |
 | iyzico | Tek çekim ya da en fazla 2, 3, 6, 9, 12      |
@@ -125,13 +125,13 @@ yazılmaz.
 ## Kartla cari ödeme {#cari-odeme}
 
 Bayi, sipariş vermeden carisindeki borcu kartla ödeyebilir. **Kartla öde** düğmesi yalnız en az bir
-kart modülü açık ve ayarları girilmişse, **bayi panelinde** görünür.
+kart eklentisi açık ve ayarları girilmişse, **bayi panelinde** görünür.
 
 ### Nasıl yapılır? (bayi)
 
 1. Bayi panelinde **Cari Hesabım** ekranını açın.
 2. **Kartla öde** düğmesine basın. **Kartla cari ödeme** penceresi açılır.
-3. Birden çok kart modülü açıksa **Ödeme sağlayıcısı** listesinden birini seçin.
+3. Birden çok kart eklentisi açıksa **Ödeme sağlayıcısı** listesinden birini seçin.
 4. **Tutar** alanına ödemek istediğiniz tutarı yazın. Alan, borcunuz varsa güncel bakiyenizle dolu
    gelir; dilediğiniz tutarla değiştirebilirsiniz. Tutar ana para biriminde girilir.
 5. **Ödemeye geç** düğmesine basın; ödeme kuruluşunun güvenli sayfasında kart bilgilerinizi girip 3D
@@ -325,7 +325,7 @@ mesajı görünür.
 
 ### Kart seçeneği ödeme ekranında görünmüyor
 
-- Modülün ayar ekranında **… ile kartla ödemeyi aç** açık mı ve tüm mağaza / API bilgileri girilmiş mi?
+- Eklentinin ayar ekranında **… ile kartla ödemeyi aç** açık mı ve tüm mağaza / API bilgileri girilmiş mi?
 - Müşterinin bayi ya da bayi grubunda **İzinli ödeme yöntemleri** kartı dışarıda bırakıyor mu?
 - **Cari Ayarları**'nda kart için girilen en düşük tutarın altında bir sipariş mi?
-- Modül [Modüller](/yonetim/moduller) ekranında kapatılmış olabilir.
+- Eklenti [Eklentiler](/yonetim/moduller) ekranında kapatılmış olabilir.

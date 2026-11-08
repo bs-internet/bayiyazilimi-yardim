@@ -21,7 +21,7 @@ Sayfanın üstünde (ve mevcut üründe altında da) **Kaydet** düğmesi vardı
 - Yeni ürün kaydedilince düzenleme ekranı açılır; **görseller ancak bu aşamada** eklenebilir.
 - Hatalı alan varsa üstte "Ürün kaydedilemedi" uyarısı çıkar ve hatalı alanlar işaretlenir.
 - Mevcut ürünün başlığında durum rozeti, stok kodu, toplam stok ve görsel sayısı görünür.
-  Vitrin modülü kuruluysa ve ürün aktifse **Sitede gör** düğmesi ürünün sayfasını açar.
+  Vitrin eklentisi kuruluysa ve ürün aktifse **Sitede gör** düğmesi ürünün sayfasını açar.
 
 ### Temel bilgiler
 
@@ -97,9 +97,9 @@ görselsiz ürünlere görseller otomatik eklenir. Bkz. [Excel](/satis/excel#gor
 
 Kargo ücretinin nasıl hesaplandığı için bkz. [Kargo](/satis/kargo#hesaplama).
 
-### Arama motoru (Vitrin modülü)
+### Arama motoru (Vitrin eklentisi)
 
-Vitrin modülü kuruluysa formda bir **Arama motoru** kartı görünür. Üstteki kutu, ürünün arama
+Vitrin eklentisi kuruluysa formda bir **Arama motoru** kartı görünür. Üstteki kutu, ürünün arama
 sonuçlarında nasıl görüneceğini önizler.
 
 | Alan | Açıklama |
@@ -120,7 +120,7 @@ sonuçlarında nasıl görüneceğini önizler.
 | Alan | Açıklama |
 |---|---|
 | **Durum** * | *Aktif — vitrinde görünür* ya da *Pasif — gizli*. Yeni ürün aktif gelir. Pasif ürün müşterilere gösterilmez ve satılmaz. |
-| **Kimler görsün?** | Yalnız Vitrin modülü kuruluysa. Bkz. [aşağıda](#kimler-gorsun). |
+| **Kimler görsün?** | Yalnız Vitrin eklentisi kuruluysa. Bkz. [aşağıda](#kimler-gorsun). |
 | **Satış biçimi** * | *Sepet (doğrudan satış)* ya da *Yalnızca teklif*. Bkz. [aşağıda](#satis-bicimi). Yeni üründe Sepet. |
 | **Sıra** | Listelemede sıralama için sayı (küçük önce). Varsayılan 0. |
 
@@ -147,7 +147,7 @@ sonuçlarında nasıl görüneceğini önizler.
 
 ## Kimler görsün? {#kimler-gorsun}
 
-Ürün formundaki **Kimler görsün?** ayarı yalnız [Vitrin modülü](/vitrin/) kuruluysa görünür:
+Ürün formundaki **Kimler görsün?** ayarı yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür:
 
 | Seçenek | Kim görür |
 |---|---|

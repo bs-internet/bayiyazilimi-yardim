@@ -61,7 +61,7 @@ Aktif hesap yoksa havale seçeneği hiçbir yerde çıkmaz ve bayi havale bildir
 2. Sipariş **Ödeme Bekleniyor** durumunda açılır. Bu aşamada cariye borç yazılmaz. Ödeme
    alınana kadar (sipariş iptal edilmediyse) bayinin sipariş detayında **Havale / EFT bilgileri**
    kartı aktif banka hesaplarınızı ve açıklamaya sipariş numarasını yazma hatırlatmasını gösterir.
-   Vitrin modülü kuruluysa aynı kart vitrin müşterisinin **Hesabım › Siparişlerim** detayında da
+   Vitrin eklentisi kuruluysa aynı kart vitrin müşterisinin **Hesabım › Siparişlerim** detayında da
    görünür.
 3. Para hesabınıza geçince iki yoldan biriyle işaretlenir:
    - sipariş detayında ödemeyi alındı olarak işaretlersiniz (bkz. [Siparişler](/satis/siparisler)), ya da

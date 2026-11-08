@@ -41,7 +41,7 @@ risk = bakiye + onay bekleyen vadeli siparişler + portföydeki çek / senetler
 kullanılabilir limit = kredi limiti − risk
 ```
 
-Portföy riski `shop.ledger.instrument_risk` filtresiyle eklenir; başka bir modül (ör. teminat
+Portföy riski `shop.ledger.instrument_risk` filtresiyle eklenir; başka bir eklenti (ör. teminat
 mektubu) aynı filtreyle riske katkı yapabilir.
 
 ## Ana para birimi
@@ -52,7 +52,7 @@ kilitlenir.
 
 ## ERP entegrasyonu
 
-- **Dinleme:** her harekette `AccountTransactionRecordedEvent` yayınlanır; ERP modülü dinleyip
+- **Dinleme:** her harekette `AccountTransactionRecordedEvent` yayınlanır; ERP eklentisi dinleyip
   muhasebe programına aktarır.
 - **Yazma:** ERP'den gelen hareket için
 

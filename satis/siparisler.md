@@ -122,7 +122,7 @@ Satışı geri almak için durumu **İptal Edildi** yapın.
 |---|---|---|
 | **Havale / EFT** | **Banka Hesapları**'nda havale açıksa ve en az bir aktif hesap varsa. Havale indirimi tanımlıysa sipariş toplamından düşülür | Ödeme Bekleniyor |
 | **Cari hesaba (vadeli)** | Yalnız vadeli çalışan bayilere | Hazırlanıyor ya da Onay Bekliyor |
-| **Kartla ödeme** | PayTR ya da iyzico modülü kuruluysa | Ödeme Bekleniyor (ödeme sayfasına yönlenir) |
+| **Kartla ödeme** | PayTR ya da iyzico eklentisi kuruluysa | Ödeme Bekleniyor (ödeme sayfasına yönlenir) |
 
 Yöntemlerin en düşük tutarları **Cari Ayarları**'ndan belirlenir. Ayrıntılar:
 [Havale](/cari/havale), [Vadeli çalışma](/cari/vadeli-calisma), [Kartla ödeme](/cari/kartla-odeme).

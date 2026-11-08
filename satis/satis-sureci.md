@@ -9,7 +9,7 @@ ayrıntısı ilgili sayfadadır: [Siparişler](/satis/siparisler), [Sipariş det
 | Kaynak | Kim kullanır | Nasıl |
 |---|---|---|
 | **Sipariş ver** ekranı | Bayiler (bayi paneli) | Ürünleri sepete ekler, ödeme adımında sipariş verir. Bkz. [Bayi paneli](/bayi-paneli/) |
-| Vitrin | Ziyaretçi ve müşteriler | [Vitrin modülü](/vitrin/) kuruluysa siteden sipariş verilir |
+| Vitrin | Ziyaretçi ve müşteriler | [Vitrin eklentisi](/vitrin/) kuruluysa siteden sipariş verilir |
 | Kayıtlı sepet | Bayiler | Kaydedilmiş bir sepetten doğrudan sipariş |
 | Onaylanan teklif | Teklifi onaylayan müşteri / bayi | Teklifin ödeme sayfasından sipariş oluşur. Bkz. [Teklifler](/satis/teklifler) |
 
@@ -37,7 +37,7 @@ Sonrası ödeme yöntemine göre ayrılır.
 
 ### Kartla ödeme
 
-PayTR ya da iyzico modülü kuruluysa sunulur. Bkz. [Kartla ödeme](/cari/kartla-odeme).
+PayTR ya da iyzico eklentisi kuruluysa sunulur. Bkz. [Kartla ödeme](/cari/kartla-odeme).
 
 1. Sipariş **Ödeme Bekleniyor** durumunda oluşur, müşteri ödeme sayfasına yönlenir.
 2. Ödeme başarılı olursa sipariş kendiliğinden **Hazırlanıyor** olur, cariye borç ve ödeme

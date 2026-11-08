@@ -5,9 +5,9 @@ sistemidir**. Bayileriniz kendi panellerinden sipariş verir, teklif ister, cari
 yönetim panelinden ürünleri, stoğu, siparişleri ve tahsilatları yönetirsiniz.
 
 Sistem açık kaynaklıdır ve ücretsizdir: [GNU AGPLv3](https://github.com/bs-internet/bayiyazilimi/blob/main/LICENSE) lisansı ve
-[ek koşulları](https://github.com/bs-internet/bayiyazilimi/blob/main/EK-KOSULLAR.md) geçerlidir (atıf korunur; modül
+[ek koşulları](https://github.com/bs-internet/bayiyazilimi/blob/main/EK-KOSULLAR.md) geçerlidir (atıf korunur; eklenti
 sistemiyle yazılan eklentiler dilediğiniz lisansla dağıtılabilir). Ek özellikler
-[modüller](/yonetim/moduller) ile gelir.
+[eklentiler](/yonetim/moduller) ile gelir.
 
 ## İki alan
 
@@ -30,16 +30,16 @@ Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi 
 - **Yönetim:** raporlar ve Excel çıktısı, roller ve yetkiler, etkinlik kaydı, iki adımlı
   doğrulama, çoklu para birimi ve TCMB kurları.
 
-## Modüller
+## Eklentiler
 
-Çekirdek tek başına eksiksiz bir B2B sistemidir. İhtiyaca göre şu modüller eklenebilir:
+Çekirdek tek başına eksiksiz bir B2B sistemidir. İhtiyaca göre şu eklentiler eklenebilir:
 
-- **Vitrin** — herkese açık e-ticaret sitesi (bireysel müşteriler, kupon, ana sayfa
-  düzenleyici). Bkz. [Vitrin modülü](/vitrin/).
-- **PayTR** ve **iyzico** — kartla ödeme, taksit, kartla cari tahsilat. Bkz.
+- **Vitrin** (ücretli) — herkese açık e-ticaret sitesi (bireysel müşteriler, kupon, ana sayfa
+  düzenleyici). Bkz. [Vitrin eklentisi](/vitrin/).
+- **PayTR** ve **iyzico** (ücretsiz) — kartla ödeme, taksit, kartla cari tahsilat. Bkz.
   [Kartla ödeme](/cari/kartla-odeme).
 
-Modüller hakkında bilgi ve satın alma için: [bayiyazilimi.com](https://bayiyazilimi.com).
+Eklentiler hakkında bilgi ve fiyatlar için: [bayiyazilimi.com](https://bayiyazilimi.com).
 
 ## Nereden başlamalı?
 

@@ -26,7 +26,7 @@ kendi alanına yönlendirilir: yöneticiler **yönetim paneline**, bayiler **bay
   oturum açıldı"** e-postası gider.
 
 Bayi Yazılımı'nın çekirdeğinde ziyaretçiler kendileri **kayıt olamaz**; bayi hesaplarını siz
-açarsınız (bkz. [Müşteriler ve bayiler](/musteriler/)). Herkese açık kayıt yalnız Vitrin modülüyle
+açarsınız (bkz. [Müşteriler ve bayiler](/musteriler/)). Herkese açık kayıt yalnız Vitrin eklentisiyle
 gelir.
 
 ### Şifremi unuttum {#sifremi-unuttum}
@@ -62,7 +62,7 @@ Her ekranın üstünde:
 
 - Solda **menü düğmesi** (kenar çubuğunu daraltır / açar) ve bulunduğunuz yerin yolu
   (ör. Tanımlamalar › Para Birimleri).
-- Sağda **Mağazayı aç** (vitrin modülü kuruluysa; siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
+- Sağda **Mağazayı aç** (vitrin eklentisi kuruluysa; siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
   yazdığı **kullanıcı menüsü**: **Bilgilerim**, **Bildirimler**, **Oturumu Kapat**.
 
 ### Kenar çubuğu (menü) {#menu}
@@ -77,7 +77,7 @@ Menü gruplar halindedir. Her kullanıcı yalnız **görevinin izin verdiği** �
 
 - **Çek / Senet** yalnız Cari Ayarları'nda çek / senet açıksa, **Lot / Seri No** yalnız Stok
   Ayarları'nda izlenebilirlik açıksa görünür.
-- Kurulu modüller menüye kendi öğelerini ekler. [Vitrin modülü](/vitrin/) kuruluysa
+- Kurulu eklentiler menüye kendi öğelerini ekler. [Vitrin eklentisi](/vitrin/) kuruluysa
   **Bayiler** menüsünün adı **Müşteriler** olur (bayiler ve vitrin müşterileri birlikte) ve
   **İçerik** grubu (Ana Sayfa, Menüler, Üst & Alt Bilgi, Slider, Sayfalar) eklenir.
 - **Genel Ayarlar**, **Kullanıcılar**, **Tanımlamalar**, **Ödemeler**, **Kampanyalar** ve

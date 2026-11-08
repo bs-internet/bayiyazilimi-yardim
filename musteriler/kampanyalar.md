@@ -1,7 +1,7 @@
 # Kampanyalar
 
 Kampanya, koşulları sağlandığında **sepete** otomatik uygulanan bir indirim, hediye ya da kargo
-avantajıdır. Kupon girmek gerekmez (kupon kodu koşulu yalnız vitrin modülüyle gelir).
+avantajıdır. Kupon girmek gerekmez (kupon kodu koşulu yalnız vitrin eklentisiyle gelir).
 
 Kampanyalar sol menüde **Kampanyalar** başlığının altındadır:
 
@@ -70,7 +70,7 @@ türü), **Mantık** ve **Değer**.
 | Gün | şunlardan biri / hiçbiri değil | Pazartesi … Pazar | Sipariş anındaki gün. |
 | Saat | en az / en fazla | 0–23 | "Saat en az 18" ve "saat en fazla 21" birlikte 18:00–21:59 demektir. |
 
-[Vitrin modülü](/vitrin/) kuruluysa ayrıca **Müşteri tipi**, **İlk sipariş** ve **Kupon kodu**
+[Vitrin eklentisi](/vitrin/) kuruluysa ayrıca **Müşteri tipi**, **İlk sipariş** ve **Kupon kodu**
 koşulları gelir.
 
 ### 3. Hangi ürünlere {#urunler}

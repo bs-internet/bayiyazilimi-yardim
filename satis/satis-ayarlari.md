@@ -12,7 +12,7 @@ sayfasında fiyatı nasıl göreceğini seçer.
 | Alan | Seçenekler | Varsayılan | Açıklama |
 |---|---|---|---|
 | **Bayi** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV hariç | Giriş yapmış bayiler için |
-| **Ziyaretçi / müşteri** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV dahil | Yalnız [Vitrin modülü](/vitrin/) kuruluysa görünür. Giriş yapmamış ziyaretçiler ve bayi olmayan müşteriler için |
+| **Ziyaretçi / müşteri** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV dahil | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür. Giriş yapmamış ziyaretçiler ve bayi olmayan müşteriler için |
 
 Bu ayar yalnız fiyatların nasıl gösterileceğini etkiler; sipariş tutarını değiştirmez (siparişe
 KDV her durumda eklenir). **Tanımlamalar** genel bakış kartında seçiminiz "Bayi fiyatları KDV

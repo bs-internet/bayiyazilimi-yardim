@@ -21,7 +21,7 @@ Liste en son güncellenen ürün üstte olacak şekilde sıralanır, sayfa baş�
 | **Durum** | *Aktif* / *Pasif* |
 | **Satış biçimi** | *Sepet (doğrudan satış)* / *Yalnızca teklif* |
 | **Stok** | *Stokta var* (stok 0'dan büyük) / *Stokta yok* (0 ya da eksi) |
-| **Kimler görsün** | Yalnız Vitrin modülü kuruluysa: *Vitrin* / *Bayi* |
+| **Kimler görsün** | Yalnız Vitrin eklentisi kuruluysa: *Vitrin* / *Bayi* |
 
 Kategori süzgeci yalnız o kategoriye doğrudan bağlı ürünleri getirir; alt kategorilerdeki
 ürünler için alt kategoriyi seçin.

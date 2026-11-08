@@ -13,7 +13,7 @@ değerlerdir; ilk TCMB güncellemesinde düzelir.
 ### Nasıl çalışır?
 
 - **Aktif** anahtarı açık olan para birimleri seçim listelerinde (ürün, banka hesabı, kampanya
-  formları) ve Vitrin modülü kuruluysa vitrindeki para birimi seçicisinde görünür.
+  formları) ve Vitrin eklentisi kuruluysa vitrindeki para birimi seçicisinde görünür.
 - Varsayılan para birimi (ana para birimi) her zaman aktiftir ve kuru her zaman **1**'dir.
 - Kaynağı **TCMB** olan kurlar TCMB kuruyla güncellenir; **Elle** olanlar yalnız bu ekranda
   girdiğiniz değerle kalır.

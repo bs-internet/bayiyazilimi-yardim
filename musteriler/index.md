@@ -5,12 +5,12 @@ Sistemde iki tür üye vardır:
 | Tür | Nasıl oluşur | Hangi alanı kullanır |
 |---|---|---|
 | **Bayi** | Siz panelden eklersiniz (**Bayiler › Yeni Bayi**); bayi kendisi başvuramaz | Bayi paneli (`/app`) |
-| **Müşteri** | [Vitrin modülü](/vitrin/) kuruluysa vitrinden kendisi kayıt olur | Vitrindeki **Hesabım** |
+| **Müşteri** | [Vitrin eklentisi](/vitrin/) kuruluysa vitrinden kendisi kayıt olur | Vitrindeki **Hesabım** |
 
 Bir üye yanlış alana girmeye çalışırsa kendi alanına yönlendirilir. Panelden eklenen her hesap
-bayidir; vitrin modülü yoksa sistemdeki tüm üyeler bayidir.
+bayidir; vitrin eklentisi yoksa sistemdeki tüm üyeler bayidir.
 
-Bu bölümün ekranları sol menüde **Bayiler** başlığının altındadır. [Vitrin modülü](/vitrin/)
+Bu bölümün ekranları sol menüde **Bayiler** başlığının altındadır. [Vitrin eklentisi](/vitrin/)
 kuruluysa menünün ve listenin adı **Müşteriler** olur; liste bayileri ve müşterileri birlikte
 gösterir. Bu sayfada ekran adları vitrinsiz kuruluma göre yazılmıştır; vitrin kuruluysa
 "Bayiler" yerine "Müşteriler" okuyun.
@@ -33,7 +33,7 @@ son eklenen en üstte olacak şekilde listeler. Başlıktaki sayı, filtreye uya
 | Alan | Açıklama |
 |---|---|
 | Arama kutusu | Ad, e-posta ya da firma ünvanında arar. Yazdıktan sonra **Ara**'ya basın. |
-| Tür | Yalnız vitrin modülü kuruluyken görünür: **Bayi** ya da **Müşteri**. E-postasını henüz doğrulamamış (hesabı açılmamış) vitrin üyeleri müşteri sayılır. |
+| Tür | Yalnız vitrin eklentisi kuruluyken görünür: **Bayi** ya da **Müşteri**. E-postasını henüz doğrulamamış (hesabı açılmamış) vitrin üyeleri müşteri sayılır. |
 | Bayi grubu | Bir grup seçerseniz o grubun bayileri; **Grupsuz bayiler** seçerseniz hiçbir gruba bağlı olmayan bayiler listelenir. Grup adlarının yanında indirim oranı görünür, ör. "Altın Bayi (%15)". |
 | Durum | **Aktif**, **Pasif** ya da **Kısıtlı** (bkz. [Hesap durumları](#durumlar)). |
 
@@ -186,7 +186,7 @@ kuruluysa hesabın türünü çevirmek için de kullanılır.
 | Kredi limiti | Ana para biriminde. Boş = gruptan. |
 | Limit aşılınca | **Gruptan**, **Onaya düşsün** ya da **Engellensin**. |
 | Vadesi geçmiş borç varken | **Gruptan**, **Onaya düşsün**, **Engellensin** ya da **Serbest**. |
-| İzinli ödeme yöntemleri | Bayinin siparişte kullanabileceği yöntemler (ör. Havale / EFT, Cari hesaba (vadeli), kurulu kart modülleri). Hiçbiri işaretlenmezse grubun ayarı geçerlidir. "Cari hesaba (vadeli)" seçeneği yalnız vadeli çalışan bayiye çıkar. |
+| İzinli ödeme yöntemleri | Bayinin siparişte kullanabileceği yöntemler (ör. Havale / EFT, Cari hesaba (vadeli), kurulu kart eklentileri). Hiçbiri işaretlenmezse grubun ayarı geçerlidir. "Cari hesaba (vadeli)" seçeneği yalnız vadeli çalışan bayiye çıkar. |
 
 Bu alanların anlamı ve örnekleri: [Peşin ve vadeli çalışma](/cari/vadeli-calisma).
 
@@ -200,7 +200,7 @@ Pencerenin alt düğmeleri:
 - Bayide: **Kaydet** (vitrin kuruluysa yanında **Müşteriye çevir**).
 - Müşteride (vitrin): **Vazgeç** ve **Bayiye çevir**.
 
-Müşteri hesapları yalnız vitrin modülüyle vardır; vitrin yoksa **Müşteriye çevir** düğmesi
+Müşteri hesapları yalnız vitrin eklentisiyle vardır; vitrin yoksa **Müşteriye çevir** düğmesi
 çıkmaz. **Bayiye çevir** hesabı bayi yapar: üye bundan sonra bayi panelini (`/app`) kullanır ve bayi
 indirimi uygulanır. **Müşteriye çevir** hesabı vitrin müşterisi yapar; bayi grubu, bayiye özel
 indirim, bölge deposu ve bayiye özel cari ayarlar **temizlenir**. Müşteri her zaman peşin

@@ -19,7 +19,7 @@ istediğinize emin misiniz?") ve **Evet, Temizle** ile uygulanır.
 |---|---|---|
 | **Uygulama Önbelleği** | Uygulama düzeyinde önbelleğe alınmış veriler (ör. ayarlar, yetki listesi) | Ayarlar ya da yetkiler değişti ama ekranda eski hali görünüyor |
 | **Yapılandırma Önbelleği** | Yapılandırma dosyalarının önbelleği | `.env` dosyasını değiştirdikten sonra |
-| **Rota Önbelleği** | Derlenmiş adres (rota) tanımları | Güncelleme ya da modül kurulumundan sonra bir sayfa "bulunamadı" veriyorsa |
+| **Rota Önbelleği** | Derlenmiş adres (rota) tanımları | Güncelleme ya da eklenti kurulumundan sonra bir sayfa "bulunamadı" veriyorsa |
 | **Görünüm Önbelleği** | Derlenmiş sayfa şablonları (e-posta şablonları dahil) | Güncellemeden sonra e-postalar ya da şablonlar eski görünüyorsa |
 | **Olay Önbelleği** | Olay ve dinleyici listesi | Güncellemeden sonra |
 | **Derlenmiş Önbellek** | Derlenmiş sınıf dosyaları | Güncellemeden sonra |

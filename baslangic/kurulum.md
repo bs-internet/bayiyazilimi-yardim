@@ -114,7 +114,7 @@ o adımdaki **Veritabanını değiştir** düğmesine basın.
 - **Boş yükle** — yalnız temel veriler: ülke, il / ilçe, para birimleri, vergiler, roller ve
   ayarlar. **Gerçek kullanım için bunu seçin.**
 - **Örnek verileri yükle** — temel verilere ek olarak örnek ürünler (kategori, marka, stok) ile
-  örnek bayi hesabı ve siparişi ([Vitrin modülü](/vitrin/) kuruluysa örnek müşteri hesabı da).
+  örnek bayi hesabı ve siparişi ([Vitrin eklentisi](/vitrin/) kuruluysa örnek müşteri hesabı da).
   Sistemi denemek için.
 
 Site adresi ayrıca sorulmaz: sihirbazı hangi adresten açtıysanız o adres kaydedilir. Bu yüzden
@@ -199,12 +199,12 @@ yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir
 | Ayarlar | Genel ayarların ve mağaza ayarlarının varsayılanları; zaman dilimi İstanbul |
 | Görevler | Super Admin, Admin ve hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu). Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler) |
 
-Vitrin modülünün kendi verileri (örnek içerik sayfaları, **İçerik Editörü** görevi) modül
-kurulurken eklenir; bkz. [Vitrin modülü](/vitrin/).
+Vitrin eklentisinin kendi verileri (örnek içerik sayfaları, **İçerik Editörü** görevi) eklenti
+kurulurken eklenir; bkz. [Vitrin eklentisi](/vitrin/).
 
 **Örnek verileri yükle** seçilirse ayrıca: örnek kategoriler, markalar ve stoklu ürünler,
 "Standart Bayi" grubu (%10 indirim), örnek bayi hesabı (`user@user.com`), örnek bayinin adresi,
-siparişi ve iade talebi. Örnek müşteri hesabı (`musteri@musteri.com`) yalnız vitrin modülü
+siparişi ve iade talebi. Örnek müşteri hesabı (`musteri@musteri.com`) yalnız vitrin eklentisi
 kuruluysa oluşturulur.
 
 ## Kurulumdan sonra

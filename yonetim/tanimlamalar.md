@@ -204,7 +204,7 @@ yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
 | **Kısa ad** | Bayi panelindeki adreste kullanılır. Boş bırakılırsa başlıktan üretilir |
 | **Sözleşme metni** | Zengin metin editörü |
 | **Gösterildiği yer › Ödeme formunda göster** | İşaretliyse sözleşme ödeme formunda onaylatılır |
-| **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin modülü](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur; bayileri siz eklersiniz |
+| **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur; bayileri siz eklersiniz |
 | **Sıra** | Listede, onay kutusunda ve bayi panelinde sıralama (küçük önce) |
 
 İki kutu da işaretsizse sözleşme **genel** sözleşmedir. Ekrandaki açıklama: "İşaretliyse formda

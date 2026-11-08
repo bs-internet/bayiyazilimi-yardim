@@ -7,7 +7,7 @@ sizin eklediğiniz bölümler sırayla gösterilir. İkisi de **İçerik** menü
 - **İçerik › Slider** — slaytlar ve slider'ın ana sayfada gösterilip gösterilmeyeceği.
 
 ::: tip Başlangıç düzeni
-Vitrin modülü kurulumda hazır bulunuyorsa ana sayfa örnek bir düzenle gelir: Popüler Kategoriler,
+Vitrin eklentisi kurulumda hazır bulunuyorsa ana sayfa örnek bir düzenle gelir: Popüler Kategoriler,
 Fırsatlar (indirimdeki ürünler), Markalarımız, Öne Çıkan Ürünler, Yeni Ürünler, kurumsal teklif
 alanı ve güven bandı. Bu bölümleri dilediğiniz gibi düzenleyin, kapatın ya da silin.
 :::

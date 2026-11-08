@@ -106,7 +106,7 @@ sepet tutarına bakar (örnekte 29.750,00 × 1,20 = 35.700,00 TL).
 ## Fiyat gösterimi (KDV dahil / hariç) {#gosterim}
 
 **Ayarlar › Tanımlamalar › Satış Ayarları** › **Fiyat gösterimi** bölümünde bayi için bir ayar
-vardır; [Vitrin modülü](/vitrin/) kuruluysa ziyaretçi / müşteri için ikinci bir ayar çıkar:
+vardır; [Vitrin eklentisi](/vitrin/) kuruluysa ziyaretçi / müşteri için ikinci bir ayar çıkar:
 
 | Alan | Varsayılan | Açıklama |
 |---|---|---|

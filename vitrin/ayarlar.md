@@ -6,7 +6,7 @@ anlatır.
 | Ayar | Menü yolu |
 |---|---|
 | Bakım modu | **Ayarlar › Genel Ayarlar › Site Erişimi** |
-| Vitrini kapatmak (siteyi yalnız bayilere açmak) | **Ayarlar › Genel Ayarlar › Modüller** |
+| Vitrini kapatmak (siteyi yalnız bayilere açmak) | **Ayarlar › Eklentiler** |
 | Çerez şeridi, Google Analytics, Meta Pixel | **Ayarlar › Genel Ayarlar › Çerez Yönetimi** |
 | WhatsApp, çalışma saatleri, iletişim sayfası, harita, sosyal medya | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** |
 | Üyelik formunda onaylatılan sözleşmeler | **Ayarlar › Tanımlamalar › Sözleşmeler** |
@@ -20,7 +20,7 @@ anlatır.
 
 ## Site erişimi {#site-erisimi}
 
-Vitrin modülü kurulu ve etkinken site herkese açıktır: ziyaretçiler gezinir, müşteriler kayıt olur.
+Vitrin eklentisi kurulu ve etkinken site herkese açıktır: ziyaretçiler gezinir, müşteriler kayıt olur.
 **Ayarlar › Genel Ayarlar › Site Erişimi** ekranında yalnız **bakım modu** vardır. Yönetim paneli
 her durumda yöneticilere açıktır.
 
@@ -36,7 +36,7 @@ her durumda yöneticilere açıktır.
 - Kartla ödemenin banka dönüş ve bildirim adresleri çalışmayı sürdürür.
 - Bayi paneli de bakım sayfasını gösterir; bakım süresince bayiler de sipariş veremez.
 
-**Vitrin modülü kapalıyken** (**Ayarlar › Genel Ayarlar › Modüller**) site yalnız bayilere açıktır:
+**Vitrin eklentisi kapalıyken** (**Ayarlar › Eklentiler**) site yalnız bayilere açıktır:
 
 - Ziyaretçi hangi sayfayı açarsa açsın giriş sayfasına yönlendirilir.
 - Yeni kayıt kapanır: kayıt bağlantısı giriş sayfasından kalkar, kayıt adresi giriş sayfasına
@@ -54,9 +54,9 @@ her durumda yöneticilere açıktır.
    sonra yeniden açılacağız.").
 3. **Kaydet**'e basın. Bitince **Bakım modu**'nu kapatıp kaydedin.
 
-**Vitrini kapatmak (siteyi yalnız bayilere açmak)** — **Ayarlar › Genel Ayarlar › Modüller**'de
-**Vitrin** modülünü kapatın. Bayi olmayanlar artık siteyi göremez; müşterilerinizin ve vitrinin
-verileri silinmez, modülü yeniden açtığınızda her şey kaldığı yerden sürer.
+**Vitrini kapatmak (siteyi yalnız bayilere açmak)** — **Ayarlar › Eklentiler**'de
+**Vitrin** eklentisini kapatın. Bayi olmayanlar artık siteyi göremez; müşterilerinizin ve vitrinin
+verileri silinmez, eklentiyi yeniden açtığınızda her şey kaldığı yerden sürer.
 
 ## Çerez yönetimi {#cerez-yonetimi}
 
@@ -91,7 +91,7 @@ Genel Ayarlar ana ekranındaki **Çerez Yönetimi** kartı hangi kodların eklen
 
 ## İletişim Bilgileri {#iletisim-bilgileri}
 
-**Ayarlar › Genel Ayarlar › İletişim Bilgileri** ekranı vitrin modülüyle gelir; vitrin kurulu
+**Ayarlar › Genel Ayarlar › İletişim Bilgileri** ekranı vitrin eklentisiyle gelir; vitrin kurulu
 değilse bu ekran yoktur. Firma e-postası ve telefonu bu ekranda değil, çekirdekteki **Kurumsal
 Bilgiler** ekranındadır (bkz. [Genel ayarlar › Kurumsal Bilgiler](/yonetim/genel-ayarlar#kurumsal)).
 
@@ -235,7 +235,7 @@ için ayrıca bir ayar yapmanız gerekmez: aşağıdaki dosyalar ve yapılandır
   sayfa ya da ayar değişikliği bir sonraki istekte yansır.
 - **Bakım modu** açıkken `robots.txt` tüm siteyi kapatır (`Disallow: /`); site haritası ve
   `llms.txt` içerik vermez. Bkz. [Site erişimi](#site-erisimi).
-- Vitrin modülü kurulu değilse ya da kapatıldıysa (yalnız bayi sistemi) `robots.txt` tüm siteyi kapatır; site
+- Vitrin eklentisi kurulu değilse ya da kapatıldıysa (yalnız bayi sistemi) `robots.txt` tüm siteyi kapatır; site
   haritası ve `llms.txt` yoktur.
 
 Site haritasını arama motorlarına bildirmek için Google Search Console gibi araçlara

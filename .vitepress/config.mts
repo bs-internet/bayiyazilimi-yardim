@@ -110,7 +110,7 @@ export default defineConfig({
                     { text: "Genel ayarlar", link: "/yonetim/genel-ayarlar" },
                     { text: "Tanımlamalar", link: "/yonetim/tanimlamalar" },
                     { text: "Para birimleri", link: "/yonetim/para-birimleri" },
-                    { text: "Modüller", link: "/yonetim/moduller" },
+                    { text: "Eklentiler", link: "/yonetim/moduller" },
                 ],
             },
             {
@@ -142,7 +142,7 @@ export default defineConfig({
                 ],
             },
             {
-                text: "Vitrin modülü",
+                text: "Vitrin eklentisi",
                 collapsed: true,
                 items: [
                     { text: "Vitrin nedir?", link: "/vitrin/" },
@@ -158,7 +158,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     { text: "Genel bakış", link: "/gelistirici/" },
-                    { text: "Modül geliştirme", link: "/gelistirici/modul-gelistirme" },
+                    { text: "Eklenti geliştirme", link: "/gelistirici/modul-gelistirme" },
                     { text: "Ödeme altyapısı", link: "/gelistirici/odeme-altyapisi" },
                     { text: "Cari defter", link: "/gelistirici/cari-defter" },
                     { text: "Stok altyapısı", link: "/gelistirici/stok-altyapisi" },

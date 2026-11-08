@@ -5,7 +5,7 @@ anlık bakiyeyi, ekstreyi ve açık borçları görürsünüz; bayi de kendi pan
 (**Cari Hesabım**) aldıklarını ve ödediklerini görür.
 
 Muhasebe programı (ERP) bağlantısı gerekmez; sistem tek başına çalışır. İsterseniz bir ERP
-modülü hareketleri muhasebe programınıza aktarabilir; modülden gelen kayıtlar ekstrede kaynak
+eklentisi hareketleri muhasebe programınıza aktarabilir; eklentiden gelen kayıtlar ekstrede kaynak
 etiketiyle görünür.
 
 ## Bakiye {#bakiye}
@@ -268,6 +268,6 @@ Havale bildirimi ve çek / senet yetkileri kendi sayfalarında anlatılır. Bkz.
 ## Bayinin gördüğü {#bayi}
 
 Bayi panelinde **Cari Hesabım**: bakiye ve (vadelide) limit kartları, açık borçlar, aynı ekstre,
-ödemeleri, banka hesaplarınız, **Havale bildirimi yap** ve kart modülü kuruluysa **Kartla öde**.
+ödemeleri, banka hesaplarınız, **Havale bildirimi yap** ve kart eklentisi kuruluysa **Kartla öde**.
 Bkz. [Havale](/cari/havale#bayi-bildirimi), [Kartla ödeme](/cari/kartla-odeme#cari-odeme),
 [Bayinin gördüğü ekranlar](/bayi-paneli/).

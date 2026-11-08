@@ -21,9 +21,9 @@ npm run build     # .vitepress/dist
 | `musteriler/` | Müşteriler ve bayiler, fiyat ve indirimler, kampanyalar |
 | `cari/` | Cari hesap, vadeli çalışma, havale, çek / senet, kartla ödeme |
 | `stok/` | Depolar, stok işlemleri, mal kabul, lot / seri no, sayım, toplama listesi |
-| `yonetim/` | Raporlar, para birimleri, roller ve yetkiler, modüller |
+| `yonetim/` | Raporlar, para birimleri, roller ve yetkiler, eklentiler |
 | `bayi-paneli/` | Bayinin gördüğü ekranlar |
-| `vitrin/` | Vitrin modülü |
+| `vitrin/` | Vitrin eklentisi |
 | `gelistirici/` | Geliştirici belgeleri |
 
 Menü `.vitepress/config.mts` dosyasındadır; yeni sayfa eklerken oraya da ekleyin.

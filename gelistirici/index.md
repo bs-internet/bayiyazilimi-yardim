@@ -1,6 +1,6 @@
 # Geliştirici: genel bakış
 
-Bu bölüm Bayi Yazılımı'nı geliştirmek, modül yazmak ya da başka sistemlerle bağlamak isteyen
+Bu bölüm Bayi Yazılımı'nı geliştirmek, eklenti yazmak ya da başka sistemlerle bağlamak isteyen
 geliştiriciler içindir.
 
 ## Teknik yapı
@@ -41,11 +41,11 @@ composer ci:check              # lint + biçim + tipler + testler
   zinciriyle yapılır; controller ve servisler doğrudan göndermez.
 - **Çeviri:** kullanıcıya görünen her metin `__()` (PHP) ya da `t()` (TSX) içinden geçer; anahtar
   Türkçe metnin kendisidir.
-- **Çekirdek modüle bağımlı olmaz:** modül ihtiyacı için çekirdekte hook açılır.
+- **Çekirdek eklentiye bağımlı olmaz:** eklenti ihtiyacı için çekirdekte hook açılır.
 
 ## Bu bölümde
 
-- [Modül geliştirme](/gelistirici/modul-gelistirme) — hook + registry sistemi, `module.json`
+- [Eklenti geliştirme](/gelistirici/modul-gelistirme) — hook + registry sistemi, `module.json`
 - [Ödeme altyapısı](/gelistirici/odeme-altyapisi) — ödeme sürücüsü yazma
 - [Cari defter](/gelistirici/cari-defter) — hareket modeli, ERP entegrasyon noktaları
 - [Stok altyapısı](/gelistirici/stok-altyapisi) — stok katmanları ve kurallar
