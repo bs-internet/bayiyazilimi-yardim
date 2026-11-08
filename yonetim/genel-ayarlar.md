@@ -1,7 +1,7 @@
 # Genel ayarlar
 
-**Ayarlar › Genel Ayarlar** — sistemin kimliği, varsayılanları, firma ve iletişim bilgileri,
-site erişimi ve modüller. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
+**Ayarlar › Genel Ayarlar** — sistemin kimliği, varsayılanları, firma bilgileri, site erişimi
+ve modüller. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
 
 ## Genel Bakış
 
@@ -12,12 +12,12 @@ yazar, eksik ya da dikkat isteyen bir durum varsa uyarı rengiyle gösterilir:
 |---|---|
 | Genel Ayarlar | Uygulama adı |
 | Kurumsal Bilgiler | Firma ünvanı; vergi dairesi ya da vergi numarası boşsa **"Vergi bilgileri eksik"** uyarısı |
-| İletişim Bilgileri | E-posta · telefon |
 | Site Erişimi | "Yalnız bayilere açık", "Herkese açık" ya da **"Bakım modu açık; site ziyaretçilere kapalı"** uyarısı |
 | Modüller | Kurulu modülleri açma / kapatma |
 
 Kartlar kullanıcının yetkisine göre gösterilir. Kurulu modüller bu bölüme kendi ayar
-ekranlarını ekleyebilir (ör. Vitrin modülünün site ayarları).
+ekranlarını ekleyebilir; ör. Vitrin modülü **İletişim Bilgileri** (kartta "WhatsApp · çalışma
+saatleri" ya da "Bilgi eklenmedi") ve **Çerez Yönetimi** ekranlarını ekler.
 
 ## Genel Ayarlar sekmesi {#genel-sekme}
 
@@ -65,7 +65,7 @@ silinemez**. Önce burada başka bir kaydı varsayılan yapın. Bkz.
 ## Kurumsal Bilgiler {#kurumsal}
 
 **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** — sitede, e-postalarda ve belgelerde görünen
-firma ünvanı, vergi bilgileri ve adres.
+firma ünvanı, iletişim bilgileri, vergi bilgileri ve adres.
 
 ### Firma
 
@@ -75,8 +75,16 @@ firma ünvanı, vergi bilgileri ve adres.
 | Vergi dairesi | En çok 255 karakter |
 | Vergi no | En çok 32 karakter |
 | MERSİS no | En çok 32 karakter |
+| E-posta | İsteğe bağlı, geçerli bir e-posta, en çok 255 karakter. Firmanın e-posta adresi; vitrin kuruluysa sitede yayınlanır ve iletişim formu mesajları buraya gelir |
+| Telefon | İsteğe bağlı, en çok 255 karakter. Firmanın telefonu; vitrin kuruluysa sitede yayınlanır |
 
 Vergi dairesi ya da vergi no boşsa Genel Bakış'ta **"Vergi bilgileri eksik"** uyarısı görünür.
+
+::: tip Bildirim e-postası burada değil
+Yeni sipariş, teklif, iade ve havale bildirimlerinin gideceği adres **Ayarlar › Tanımlamalar ›
+Satış Ayarları › Bildirimler › Bildirim e-postası**'dır. Bkz.
+[Satış ayarları › Bildirimler](/satis/satis-ayarlari#bildirimler).
+:::
 
 ### Adres
 
@@ -102,10 +110,11 @@ Elektronik Ticaret Bilgi Sistemi kaydınızın kare kodu; vitrinin alt bilgisind
 
 Diğer alanlar **Kaydet** ile kaydedilir.
 
-## İletişim Bilgileri {#iletisim}
+## İletişim Bilgileri (Vitrin) {#iletisim}
 
-**Ayarlar › Genel Ayarlar › İletişim Bilgileri** — e-posta, telefon, WhatsApp, çalışma saatleri,
-iletişim sayfası ve sosyal medya. Firma adresi bu ekranda değil, Kurumsal Bilgiler'dedir.
+**Ayarlar › Genel Ayarlar › İletişim Bilgileri** yalnız [Vitrin modülü](/vitrin/) kuruluysa
+görünür. Firma e-postası ve telefonu bu ekranda değil, [Kurumsal Bilgiler](#kurumsal)'dedir;
+bildirim e-postası [Satış ayarları](/satis/satis-ayarlari#bildirimler)'ndadır.
 
 ### İletişim
 
@@ -113,16 +122,13 @@ Alt bilgide ve iletişim sayfasında yayınlanır.
 
 | Alan | Açıklama |
 |---|---|
-| E-posta | **Zorunlu**, geçerli bir e-posta. Sitede yayınlanır; iletişim formu mesajları buraya gelir |
-| Sipariş/teklif bildirim e-postası | Yeni sipariş, teklif talebi, iade talebi, havale bildirimi ve müşterinin teklife verdiği yanıtların bildirimi bu adrese gider. **Sitede görünmez.** Tek bir e-posta adresi yazılır. **Boş bırakılırsa bu bildirimler hiç gönderilmez** |
-| Telefon | En çok 255 karakter |
 | WhatsApp | En çok 32 karakter |
 | Çalışma saatleri | En çok 255 karakter. Varsayılan "Pzt - Cum: 09:00 - 18:00" |
 
 ### İletişim sayfası
 
-Hakkımızda, KVKK ve sözleşme metinleri bu ekranda değil, **İçerik › Sayfalar** ekranından
-düzenlenir.
+Hakkımızda, müşteri hizmetleri gibi metinler bu ekranda değil, **İçerik › Sayfalar** ekranından
+düzenlenir; sözleşmeler **Ayarlar › Tanımlamalar › Sözleşmeler**'dedir.
 
 | Alan | Açıklama |
 |---|---|
@@ -170,6 +176,7 @@ listesi. Ayrıntılar: [Modüller](/yonetim/moduller).
 ## Yetkiler
 
 Bu ekranlardaki her işlem ayrı bir yetkidir ve [görevlere](/yonetim/roller-yetkiler) atanır.
-Kurumsal Bilgiler, İletişim Bilgileri ve Site Erişimi için görüntüleme ve güncelleme yetkileri
-hazır gelir (**Mağaza: İçerik** grubunda). Genel Ayarlar ve Modüller ekranlarının yetkileri
+Kurumsal Bilgiler ve Site Erişimi için görüntüleme ve güncelleme yetkileri hazır gelir
+(**Mağaza: Ayarlar** grubunda). Vitrin kuruluysa İletişim Bilgileri yetkileri **Mağaza: İçerik**
+grubundadır. Genel Ayarlar ve Modüller ekranlarının yetkileri
 kurulumda yalnız **Admin** görevine atanır; başka bir göreve **Görevler** ekranından eklenebilir.

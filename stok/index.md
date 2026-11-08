@@ -270,7 +270,7 @@ Aynı ürün birden çok lokasyonda ya da lotta duruyorsa her biri ayrı satırd
 ## Bayinin bölge deposu {#bolge-deposu}
 
 Farklı bölgelerde depolarınız varsa her bayiye bir **bölge deposu** atayabilirsiniz:
-**Müşteriler › bayi detayı › Bayi ayarları › Bölge deposu**. Listede yalnız aktif ve satılabilir
+**Bayiler › bayi detayı › Bayi ayarları › Bölge deposu**. Listede yalnız aktif ve satılabilir
 depolar çıkar; **Atanmamış (tüm depolar)** seçeneği atamayı kaldırır.
 
 - Bayinin siparişi önce bölge deposundan, yetmezse diğer satılabilir depolardan (Sıra

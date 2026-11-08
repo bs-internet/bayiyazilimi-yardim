@@ -137,7 +137,7 @@ export default defineConfig({
                     { text: "Teklifler", link: "/bayi-paneli/teklifler" },
                     { text: "Cari Hesabım", link: "/bayi-paneli/cari-hesabim" },
                     { text: "İadelerim", link: "/bayi-paneli/iadelerim" },
-                    { text: "Bilgi Merkezi", link: "/bayi-paneli/bilgi-merkezi" },
+                    { text: "Sözleşmeler", link: "/bayi-paneli/sozlesmeler" },
                     { text: "Sık sorulan sorular", link: "/bayi-paneli/sss" },
                 ],
             },

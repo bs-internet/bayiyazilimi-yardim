@@ -23,7 +23,8 @@ panelde **teklif** oluşturup müşteriye gönderin; müşteri onaylayıp ödedi
 1. Müşteri ürünü sepete ekler. Sepete yalnız satış biçimi **Sepet** olan, fiyatı 0'dan büyük ve
    stoğu yeten ürünler eklenir. Diğerleri teklif listesine gider.
 2. Ödeme adımında fatura / teslimat adresi, e-posta, telefon, **kargo firması** (aktif firma
-   varsa) ve **ödeme yöntemi** seçilir; sözleşme onaylanır.
+   varsa) ve **ödeme yöntemi** seçilir; ödeme formunda gösterilen sözleşme varsa onaylanır
+   (bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler)).
 3. Sistem kampanyaları, kargo ücretini ve (havalede) havale indirimini hesaplar.
 4. **Sipariş oluşur**: numara `S` + tarih + sıra biçimindedir (ör. `S2611070001`).
    Stok bu anda düşülür (ayrılır).
@@ -115,5 +116,5 @@ stok ve cari etkisi için bkz. [Durum geçişleri](/satis/siparisler#durum-gecis
 | Panelde durum değişti | Durum e-postası (kargoda takip no ile) | — |
 | Teklif / iade adımları | Bkz. [Teklifler](/satis/teklifler#e-postalar), [İadeler](/satis/iadeler#e-postalar) | |
 
-Bildirim adresi **Ayarlar › Genel Ayarlar › İletişim Bilgileri**'ndeki **Sipariş/teklif
-bildirim e-postası** alanıdır; boşsa size e-posta gitmez.
+Bildirim adresi **Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler**'deki **Bildirim
+e-postası** alanıdır; boşsa size e-posta gitmez. Bkz. [Satış ayarları](/satis/satis-ayarlari#bildirimler).

@@ -215,14 +215,17 @@ yöntemini değiştirdiğinizde özet, ürün satırları ve kargo ücretleri bu
 
 Ayrıntı: [Peşin ve vadeli çalışma](/cari/vadeli-calisma).
 
-### Sipariş özeti ve onay
+### Sipariş özeti ve onay {#sozlesme-onayi}
 
 Sağdaki özette ürünler (adet ve tutarlarıyla), kampanya indirimi, ara toplam, KDV, kargo ve
 genel toplam yer alır.
 
-Siparişi vermek için sözleşme onay kutusunu işaretlemeniz zorunludur. Kutunun metni **Satış
-koşullarını okudum, onaylıyorum.** olur; online mağazamız varsa **Ön Bilgilendirme Formu** ve
-**Mesafeli Satış Sözleşmesi** bağlantılarını ve **KVKK** bağlantısını içerir.
+Firmamız siparişte onaylanacak sözleşme belirlediyse bir onay kutusu çıkar ve
+işaretlemeniz zorunludur. Kutunun metni sözleşmelerin adlarını sayar, ör. "**Satış Sözleşmesi**
+ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı bir
+bağlantıdır; tıklayınca metin bir pencerede açılır. Onaylanacak sözleşme yoksa onay kutusu da
+çıkmaz. Sözleşmelerin tamamını [Sözleşmeler](/bayi-paneli/sozlesmeler) menüsünde de
+okuyabilirsiniz.
 
 Son düğme:
 

@@ -1,8 +1,8 @@
 # Satış Ayarları
 
 **Ayarlar › Tanımlamalar › Satış Ayarları** fiyatların KDV dahil / hariç gösterimini, teklif
-geçerlilik süresini ve iade talebi süresini belirler. **Kaydet** ile kaydedilir; değişiklik
-etkinlik kayıtlarına yazılır.
+geçerlilik süresini, iade talebi süresini ve yönetici bildirimlerinin gideceği e-posta adresini
+belirler. **Kaydet** ile kaydedilir; değişiklik etkinlik kayıtlarına yazılır.
 
 ## Fiyat gösterimi
 
@@ -11,11 +11,12 @@ sayfasında fiyatı nasıl göreceğini seçer.
 
 | Alan | Seçenekler | Varsayılan | Açıklama |
 |---|---|---|---|
-| **Ziyaretçi / müşteri** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV dahil | Giriş yapmamış ziyaretçiler ve bayi olmayan müşteriler (vitrin) için |
 | **Bayi** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV hariç | Giriş yapmış bayiler için |
+| **Ziyaretçi / müşteri** | *KDV dahil* / *KDV hariç (girildiği gibi)* | KDV dahil | Yalnız [Vitrin modülü](/vitrin/) kuruluysa görünür. Giriş yapmamış ziyaretçiler ve bayi olmayan müşteriler için |
 
 Bu ayar yalnız fiyatların nasıl gösterileceğini etkiler; sipariş tutarını değiştirmez (siparişe
-KDV her durumda eklenir).
+KDV her durumda eklenir). **Tanımlamalar** genel bakış kartında seçiminiz "Bayi fiyatları KDV
+hariç" ya da "Bayi fiyatları KDV dahil" diye özetlenir.
 
 ## Teklif ve iade
 
@@ -31,6 +32,17 @@ de denerse "İade talebi kabul edilmiyor." uyarısını görür.
 
 Değişiklik yalnız bundan sonraki işlemleri etkiler: gönderilmiş tekliflerin bitiş tarihi
 değişmez; iade süresi ise talep açılırken o anki ayara göre denetlenir.
+
+## Bildirimler {#bildirimler}
+
+| Alan | Açıklama |
+|---|---|
+| **Bildirim e-postası** | İsteğe bağlı. Ekrandaki açıklama: "Yeni sipariş, ödeme, teklif ve iade talepleri bu adrese bildirilir. Boşsa yöneticilere e-posta gitmez." Havale bildirimleri ve müşterinin teklife verdiği yanıtlar da bu adrese gelir. Tek bir e-posta adresi yazılır; sitede görünmez. |
+
+::: warning Boş bırakırsanız
+Bildirim e-postası boşsa yeni sipariş, teklif, iade ve havale bildirimleri size **hiç gelmez**.
+Bkz. [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
+:::
 
 ## İlgili ayarlar
 

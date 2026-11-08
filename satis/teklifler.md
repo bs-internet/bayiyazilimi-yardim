@@ -176,5 +176,5 @@ ya da e-postadaki bağlantıdan açar. Talep oluşturmak için **Teklifler › T
 | Müşteri onayladı / revize istedi / reddetti / geri çekti | Teyit e-postası (onayda ödeme bağlantısıyla) | Müşterinin yanıtı ve notu |
 | Siparişe dönüştü | Teklif e-postası gitmez; sipariş e-postaları gider | Yeni sipariş |
 
-Taslak kaydetmek e-posta göndermez. Size gelen e-postalar **Ayarlar › Genel Ayarlar › İletişim
-Bilgileri**'ndeki **Sipariş/teklif bildirim e-postası** adresine gider.
+Taslak kaydetmek e-posta göndermez. Size gelen e-postalar **Ayarlar › Tanımlamalar › Satış
+Ayarları › Bildirimler**'deki **Bildirim e-postası** adresine gider.

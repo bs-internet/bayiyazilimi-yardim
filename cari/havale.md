@@ -90,7 +90,8 @@ yalnız en az bir aktif banka hesabı varken görünür; vitrin müşterilerinde
 | Dekont | İsteğe bağlı; görsel ya da PDF (JPG, PNG, WEBP, PDF), en fazla 5 MB. |
 
 **Bildir**'e basınca "Ödeme bildiriminiz alındı; onaylanınca carinize işlenecek." mesajı çıkar.
-Mağazanın sipariş bildirim e-posta adresi girilmişse bu adrese yeni bildirim e-postası gider.
+**Satış Ayarları › Bildirimler › Bildirim e-postası** girilmişse bu adrese yeni bildirim
+e-postası gider (bkz. [Satış ayarları](/satis/satis-ayarlari#bildirimler)).
 Bayi son 20 bildirimini **Havale bildirimlerim** listesinde durumu ve (reddedildiyse) ret
 gerekçesiyle görür.
 

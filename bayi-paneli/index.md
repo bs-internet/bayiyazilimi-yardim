@@ -22,7 +22,7 @@ iade talebi açtığınız alandır. Giriş yaptığınızda panel kendiliğinde
 | **Siparişlerim** | Sipariş listesi, durumlar, kargo takibi, tekrar sipariş | [Siparişlerim](/bayi-paneli/siparislerim) |
 | **Cari Hesabım** | Bakiye, limit, açık borçlar, ekstre, havale bildirimi, kartla ödeme | [Cari Hesabım](/bayi-paneli/cari-hesabim) |
 | **İadelerim** | İade talebi açma ve izleme | [İadelerim](/bayi-paneli/iadelerim) |
-| **Bilgi Merkezi** | Firmamızın hazırladığı bilgi sayfaları | [Bilgi Merkezi](/bayi-paneli/bilgi-merkezi) |
+| **Sözleşmeler** | Firmamızla aranızdaki sözleşme ve metinler | [Sözleşmeler](/bayi-paneli/sozlesmeler) |
 
 Firmamızın online mağazası (vitrin sitesi) varsa menünün sonunda **Mağazaya Git** de görünür.
 
@@ -33,7 +33,7 @@ görünür.
 
 Sayfanın üstünde, sağda şunlar bulunur:
 
-- **Mağazayı aç** (mağaza simgesi) — online mağazayı yeni sekmede açar.
+- **Mağazayı aç** (mağaza simgesi) — online mağazamız varsa görünür; mağazayı yeni sekmede açar.
 - **Bildirimler** (zil simgesi) — bildirim listenizi açar.
 - **Adınız** — kullanıcı menüsünü açar:
   - **Hesabım** — firma ve fatura bilgileriniz.
@@ -55,7 +55,7 @@ Hepsi [Giriş ve hesap ayarları](/bayi-paneli/giris-ve-hesap) sayfasında anlat
 6. [Teklifler](/bayi-paneli/teklifler)
 7. [Cari Hesabım](/bayi-paneli/cari-hesabim)
 8. [İadelerim](/bayi-paneli/iadelerim)
-9. [Bilgi Merkezi](/bayi-paneli/bilgi-merkezi)
+9. [Sözleşmeler](/bayi-paneli/sozlesmeler)
 10. [Sık sorulan sorular](/bayi-paneli/sss)
 
 ::: info Panel ile online mağaza ayrıdır

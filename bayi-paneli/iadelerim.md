@@ -13,8 +13,8 @@ açabilir ve talebinizin durumunu izleyebilirsiniz.
 - Bir üründen en fazla sipariş ettiğiniz adet kadar iade isteyebilirsiniz. Aynı sipariş için
   daha önce açtığınız (reddedilmemiş) taleplerdeki adetler bu sayıdan düşülür.
 
-Ürünün hangi durumda iade alınacağı gibi koşullar için [Bilgi Merkezi](/bayi-paneli/bilgi-merkezi)'ndeki
-iade şartları sayfasına bakın.
+Ürünün hangi durumda iade alınacağı gibi koşullar için [Sözleşmeler](/bayi-paneli/sozlesmeler)
+menüsündeki garanti ve iade şartlarına bakın.
 
 ## İadelerim ekranı
 

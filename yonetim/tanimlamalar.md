@@ -1,7 +1,7 @@
 # Tanımlamalar
 
 **Ayarlar › Tanımlamalar** — sistemin her yerinde kullanılan temel listeler: diller, bölgeler,
-para birimleri, vergi oranları, birimler ve satış / stok / cari ile ilgili tanımlar. Menüdeki
+para birimleri, vergi oranları, birimler, sözleşmeler ve satış / stok / cari ile ilgili tanımlar. Menüdeki
 **Tanımlamalar**'a tıklayınca **Genel Bakış** açılır.
 
 ## Genel Bakış
@@ -22,7 +22,8 @@ havale açık ama aktif banka hesabı yoksa). Kartlar kullanıcının yetkisine 
 | **Tedarikçiler** | Mal kabulde seçilen tedarikçiler | [Stok](/stok/) |
 | **Kargo Firmaları** | Kargo firmaları ve desi fiyat tabloları | [Kargo](/satis/kargo) |
 | **Kargo Ayarları** | Sabit kargo ücreti, ücretsiz kargo eşiği, varsayılan desi | [Kargo](/satis/kargo) |
-| **Satış Ayarları** | Fiyat gösterimi (KDV dahil / hariç), teklif geçerlilik ve iade süreleri | Satış bölümü |
+| **Satış Ayarları** | Fiyat gösterimi (KDV dahil / hariç), teklif geçerlilik ve iade süreleri, bildirim e-postası. Kartta bayi fiyat gösterimi özetlenir ("Bayi fiyatları KDV hariç" / "dahil") | [Satış ayarları](/satis/satis-ayarlari) |
+| **Sözleşmeler** | Ödeme / üyelik formunda onaylatılan ve bayi panelinde okunan metinler | [Bu sayfa](#sozlesmeler) |
 | **Banka Hesapları** | Havale / EFT hesapları ve ödeme seçeneği | [Havale ve ödeme bildirimi](/cari/havale) |
 | **Cari Ayarları** | Ödeme yöntemlerinin en düşük tutarı, vade uyarısı, çek / senet | [Cari hesap](/cari/) |
 
@@ -174,11 +175,89 @@ Birimler diğer tanımlardan farklı çalışır:
   pasifleştirin. Pasif birim yeni ürünlerde seçilemez, mevcut ürünlerde kalır.
 - Silinen birim için "Silinenler" sayfası yoktur; silme kalıcıdır.
 
+## Sözleşmeler {#sozlesmeler}
+
+**Ayarlar › Tanımlamalar › Sözleşmeler** — satış sözleşmesi, KVKK aydınlatma metni, garanti ve
+iade şartları gibi metinler. Aktif sözleşmeler bayi panelinin **Sözleşmeler** menüsünde
+listelenir; isterseniz ödeme formunda (vitrin kuruluysa üyelik formunda da) onaylatılır.
+
+### Liste
+
+Başlıkta sözleşme ve aktif sözleşme sayısı yazar. Sütunlar: **Sıra**, **Başlık**, **Gösterildiği
+yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
+
+**Gösterildiği yer** sütunundaki rozetler:
+
+| Rozet | Anlamı |
+|---|---|
+| **Ödeme formu** | Siparişin ödeme adımında onaylatılır |
+| **Üyelik formu** | Vitrinin kayıt formunda onaylatılır (yalnız vitrin kuruluysa) |
+| **Genel** | Hiçbir formda onaylatılmaz; aktifse yalnız bayi panelindeki **Sözleşmeler**'de okunur |
+
+### Sözleşme formu
+
+**Yeni sözleşme** ya da listede **Düzenle**:
+
+| Alan | Açıklama |
+|---|---|
+| **Başlık** | Zorunlu, en çok 255 karakter. Onay kutusunda ve bayi panelinde bu ad görünür |
+| **Kısa ad** | Bayi panelindeki adreste kullanılır. Boş bırakılırsa başlıktan üretilir |
+| **Sözleşme metni** | Zengin metin editörü |
+| **Gösterildiği yer › Ödeme formunda göster** | İşaretliyse sözleşme ödeme formunda onaylatılır |
+| **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin modülü](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur; bayileri siz eklersiniz |
+| **Sıra** | Listede, onay kutusunda ve bayi panelinde sıralama (küçük önce) |
+
+İki kutu da işaretsizse sözleşme **genel** sözleşmedir. Ekrandaki açıklama: "İşaretliyse formda
+onaylatılır. İşaretsizse genel sözleşmedir; aktifse yalnız bayi panelindeki Sözleşmeler'de
+okunur."
+
+Yeni sözleşme **pasif** başlar; metni hazır olunca listedeki **Aktif** anahtarıyla kullanıma
+açın. Pasif sözleşme hiçbir formda ve bayi panelinde görünmez. Sözleşmeyi silmek için düzenleme
+ekranındaki sil düğmesini kullanın (onay sorulur).
+
+### Ödeme formunda nasıl görünür? {#sozlesme-onayi}
+
+Ödeme formunda göster işaretli en az bir **aktif** sözleşme varsa bayinin sepet ödemesinde,
+teklif ödemesinde ve (vitrin kuruluysa) vitrinin ödeme ekranında **tek bir zorunlu onay kutusu**
+çıkar:
+
+> **Satış Sözleşmesi** ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum.
+
+Her sözleşme adı bir bağlantıdır; tıklayınca metin bir pencerede açılır. İşaretli aktif sözleşme
+yoksa onay kutusu hiç çıkmaz. Vitrinin kayıt formunda da **Üyelik formunda göster** işaretli
+sözleşmeler için aynı şekilde çalışır.
+
+::: info Onay ayrıca kaydedilmez
+Onay kutusu işaretlenmeden sipariş (ya da üyelik) tamamlanmaz; ancak hangi sözleşmenin hangi
+sürümünün onaylandığı ayrıca kaydedilmez.
+:::
+
+### Kurulumla gelen taslaklar {#hazir-sozlesmeler}
+
+Kurulumda dört sözleşme **pasif taslak** olarak gelir. Metinlerinde "Bu sözleşmenin metni henüz
+girilmedi." notu yazar:
+
+| Sözleşme | Gösterildiği yer |
+|---|---|
+| Satış Sözleşmesi | Ödeme formu |
+| Üyelik Sözleşmesi | Üyelik formu |
+| KVKK Aydınlatma Metni | Ödeme formu ve üyelik formu |
+| Garanti ve İade Şartları | Genel |
+
+### Nasıl yapılır? Sözleşmeleri kullanıma açmak
+
+1. **Ayarlar › Tanımlamalar › Sözleşmeler**'i açın.
+2. Kullanacağınız sözleşmenin **Düzenle**'sine basın, **Sözleşme metni**'ne kendi metninizi
+   yazın (taslak notunu silin) ve **Gösterildiği yer** kutularını kontrol edip **Kaydet**'e basın.
+3. Listede sözleşmenin **Aktif** anahtarını açın.
+4. Kullanmayacağınız taslakları pasif bırakın ya da silin.
+
 ## Yetkiler
 
 Tanımlama ekranlarının her işlemi (listeleme, ekleme, güncelleme, durum değiştirme, silme, geri
 alma, kalıcı silme) ayrı bir yetkidir. Birimler, Para Birimleri, Tedarikçiler, Kargo, Banka
-Hesapları ve ayar ekranlarının yetkileri kurulumla hazır gelir. **Diller, Bölgeler ve Vergi
+Hesapları, Sözleşmeler ("Mağaza: Sözleşmeler" grubu) ve ayar ekranlarının ("Mağaza: Ayarlar"
+grubu) yetkileri kurulumla hazır gelir. **Diller, Bölgeler ve Vergi
 Oranları** ekranlarının yetkileri kurulumda yalnız **Admin** görevine atanır; diğer görevlere
 **Görevler** ekranından eklenebilir. Genel Bakış sayfası herkese açıktır ama
 yalnız yetkili olunan ekranların kartlarını gösterir. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).

@@ -12,7 +12,7 @@ sayfanın üstünde sekmeler halinde sıralanır; yalnızca yetkiniz olan raporl
 |---|---|---|
 | Satış | [Satış Raporu](#satis) | Ciro, sipariş sayısı, ortalama sepet, KDV |
 | Ürün Satışları | [Ürün Satışları](#urun-satislari) | Ürün, kategori ya da marka bazında satılan adet ve tutar |
-| Müşteri | [Müşteri Raporu](#musteri) | Müşteri ve bayi bazında sipariş ve ciro, yeni / tekrar eden müşteri |
+| Bayi (vitrin kuruluysa Müşteri) | [Bayi Raporu / Müşteri Raporu](#musteri) | Bayi (vitrin kuruluysa müşteri ve bayi) bazında sipariş ve ciro, yeni / tekrar eden bayi ya da müşteri |
 | Stok | [Stok Raporu](#stok) | Stok adedi ve değeri, tükenen, kritik stoktaki ve satılmayan ürünler |
 | Teklif | [Teklif Raporu](#teklif) | Teklif sayıları, onay ve siparişe dönüşme oranları |
 | Kampanya | [Kampanya Raporu](#kampanya) | Kampanya bazında kullanım, müşteriye sağlanan kazanç ve ciro |
@@ -193,7 +193,7 @@ anlatılmıştır.
 |---|---|---|
 | Ödeme yöntemi | Yöntem, Sipariş, Ciro | Ciroya göre büyükten küçüğe. |
 | Sipariş durumu (tümü) | Durum, Sipariş, Tutar | **Tüm** siparişleri gösterir; iptal edilen, ödemesi başarısız olan ve ödemesi iade edilen siparişler de burada sayılır (ciroya sayılmasalar da). Yedi durumun hepsi listelenir: Ödeme Bekleniyor, Onay Bekliyor, Hazırlanıyor, Kargoya Verildi, Tamamlandı, İptal Edildi, Ödeme Başarısız. |
-| Müşteri tipi | Tip, Sipariş, Ciro | Tipler: Bayi, Bireysel müşteri, Misafir. |
+| Müşteri tipi | Tip, Sipariş, Ciro | Yalnız vitrin modülü kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Para birimi | Para birimi, Sipariş, Tutar, TL karşılığı | **Tutar** siparişlerin kendi para birimindeki toplamı (ör. "1.234,50 USD"); **TL karşılığı** ana para birimine çevrilmiş toplamı. |
 
 ### Ana tablo — Günlük satışlar / Aylık satışlar
@@ -261,15 +261,26 @@ payı **%25**'tir.
 
 ---
 
-## Müşteri Raporu {#musteri}
+## Bayi Raporu / Müşteri Raporu {#musteri}
 
-**Raporlar › Müşteri.** Müşteri ve bayi bazında sipariş ve ciroyu, yeni ve tekrar eden müşterileri
-gösterir. Yalnızca ciroya sayılan siparişler hesaba girer. Misafir siparişler e-posta adresine göre
-gruplanır.
+**Raporlar › Bayi** (vitrin kuruluysa **Raporlar › Müşteri**). Vitrin modülü yoksa rapor **Bayi
+Raporu** adını taşır ve bayi bazında sipariş ve ciroyu gösterir. Vitrin kuruluysa **Müşteri
+Raporu** olur: müşteri ve bayi bazında sipariş ve ciroyu, yeni ve tekrar eden müşterileri
+gösterir; misafir siparişler e-posta adresine göre gruplanır. Yalnızca ciroya sayılan siparişler
+hesaba girer.
 
 **Filtreler:** Dönem, Müşteri.
 
-### Özet kutuları
+### Özet kutuları — Bayi Raporu (vitrinsiz)
+
+| Kutu | Açıklama | Değişim % |
+|---|---|---|
+| Sipariş veren bayi | Dönemde en az bir siparişi olan farklı bayi sayısı | Var |
+| Yeni bayi | İlk (ciroya sayılan) siparişi bu dönemde olan bayiler. Alt not: "İlk siparişi bu dönemde" | Var |
+| Tekrar eden bayi | Sipariş veren − yeni bayi. Alt not: "Daha önce de sipariş vermiş" | Var |
+| Bayi başına ciro | Ciro ÷ sipariş veren bayi sayısı | Yok |
+
+### Özet kutuları — Müşteri Raporu (vitrin kuruluysa)
 
 | Kutu | Açıklama | Değişim % |
 |---|---|---|
@@ -279,14 +290,14 @@ gruplanır.
 | Müşteri başına ciro | Ciro ÷ alışveriş yapan müşteri sayısı | Yok |
 | Bayi cirosu payı | Bayi hesaplarının cirosunun toplam ciro içindeki yüzdesi | Yok |
 
-**Örnek:** Dönemde 40 müşteri alışveriş yaptı ve bunların 10'unun ilk siparişi bu dönemde ise
-Yeni müşteri 10, Tekrar eden müşteri 40 − 10 = **30**'dur.
+**Örnek:** Dönemde 40 bayi (ya da müşteri) sipariş verdi ve bunların 10'unun ilk siparişi bu
+dönemde ise Yeni 10, Tekrar eden 40 − 10 = **30**'dur.
 
 ### Kırılım tabloları
 
 | Tablo | Sütunlar | Not |
 |---|---|---|
-| Müşteri tipi | Tip, Müşteri, Sipariş, Ciro | Tipler: Bayi, Bireysel müşteri, Misafir. |
+| Müşteri tipi | Tip, Müşteri, Sipariş, Ciro | Yalnız vitrin modülü kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Bayi grupları | Grup, Bayi, Sipariş, Ciro | Yalnızca bayi hesapları. Gruba atanmamış bayiler **Grupsuz** satırındadır. |
 
 ### Ana tablo — Müşteriler (ciroya göre)

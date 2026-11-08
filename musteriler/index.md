@@ -4,25 +4,28 @@ Sistemde iki tür üye vardır:
 
 | Tür | Nasıl oluşur | Hangi alanı kullanır |
 |---|---|---|
-| **Bayi** | Siz panelden eklersiniz (**Müşteriler › Yeni Bayi**); bayi kendisi başvuramaz | Bayi paneli (`/app`) |
+| **Bayi** | Siz panelden eklersiniz (**Bayiler › Yeni Bayi**); bayi kendisi başvuramaz | Bayi paneli (`/app`) |
 | **Müşteri** | [Vitrin modülü](/vitrin/) kuruluysa vitrinden kendisi kayıt olur | Vitrindeki **Hesabım** |
 
 Bir üye yanlış alana girmeye çalışırsa kendi alanına yönlendirilir. Panelden eklenen her hesap
 bayidir; vitrin modülü yoksa sistemdeki tüm üyeler bayidir.
 
-Bu bölümün ekranları sol menüde **Müşteriler** başlığının altındadır:
+Bu bölümün ekranları sol menüde **Bayiler** başlığının altındadır. [Vitrin modülü](/vitrin/)
+kuruluysa menünün ve listenin adı **Müşteriler** olur; liste bayileri ve müşterileri birlikte
+gösterir. Bu sayfada ekran adları vitrinsiz kuruluma göre yazılmıştır; vitrin kuruluysa
+"Bayiler" yerine "Müşteriler" okuyun.
 
 | Menü | Ne işe yarar |
 |---|---|
-| **Müşteriler › Müşteriler** | Bayi ve müşteri listesi, müşteri detayı |
-| **Müşteriler › Cari Durum** | Tüm hesapların bakiyesi. Bkz. [Cari hesap](/cari/#cari-durum) |
-| **Müşteriler › Yeni Bayi** | Bayi ekleme formu |
-| **Müşteriler › Bayi Grupları** | Grup indirimi ve grubun cari çalışma şekli |
+| **Bayiler › Bayiler** | Bayi listesi (vitrin kuruluysa bayi ve müşteri listesi), detay |
+| **Bayiler › Cari Durum** | Tüm hesapların bakiyesi. Bkz. [Cari hesap](/cari/#cari-durum) |
+| **Bayiler › Yeni Bayi** | Bayi ekleme formu |
+| **Bayiler › Bayi Grupları** | Grup indirimi ve grubun cari çalışma şekli |
 
-## Müşteri listesi {#liste}
+## Bayi listesi {#liste}
 
-**Müşteriler › Müşteriler** ekranı bayileri ve müşterileri birlikte, en son eklenen en üstte
-olacak şekilde listeler. Başlıktaki sayı, filtreye uyan toplam kayıt sayısıdır. Sağ üstte
+**Bayiler › Bayiler** ekranı bayileri (vitrin kuruluysa bayileri ve müşterileri birlikte), en
+son eklenen en üstte olacak şekilde listeler. Başlıktaki sayı, filtreye uyan toplam kayıt sayısıdır. Sağ üstte
 **Bayi grupları** ve **Yeni bayi** düğmeleri vardır.
 
 ### Arama ve filtreler
@@ -30,7 +33,7 @@ olacak şekilde listeler. Başlıktaki sayı, filtreye uyan toplam kayıt sayıs
 | Alan | Açıklama |
 |---|---|
 | Arama kutusu | Ad, e-posta ya da firma ünvanında arar. Yazdıktan sonra **Ara**'ya basın. |
-| Tür | **Bayi** ya da **Müşteri**. Müşteri seçeneği vitrin modülü kuruluyken çıkar. E-postasını henüz doğrulamamış (hesabı açılmamış) vitrin üyeleri müşteri sayılır. |
+| Tür | Yalnız vitrin modülü kuruluyken görünür: **Bayi** ya da **Müşteri**. E-postasını henüz doğrulamamış (hesabı açılmamış) vitrin üyeleri müşteri sayılır. |
 | Bayi grubu | Bir grup seçerseniz o grubun bayileri; **Grupsuz bayiler** seçerseniz hiçbir gruba bağlı olmayan bayiler listelenir. Grup adlarının yanında indirim oranı görünür, ör. "Altın Bayi (%15)". |
 | Durum | **Aktif**, **Pasif** ya da **Kısıtlı** (bkz. [Hesap durumları](#durumlar)). |
 
@@ -40,8 +43,8 @@ Herhangi bir filtre seçiliyken **Temizle** düğmesi çıkar; tüm filtreleri s
 
 | Sütun | Açıklama |
 |---|---|
-| Müşteri | Ad soyad; altında e-posta ve (addan farklıysa) firma ünvanı. Tıklayınca müşteri detayı açılır. |
-| Tür | **Bayi** ya da **Müşteri** rozeti. Bayide altında grup ve uygulanan indirim yazar, ör. "Altın Bayi · %15"; bayiye özel oran girildiyse "(özel)" eklenir, grubu yoksa "Grupsuz". |
+| Bayi | Ad soyad; altında e-posta ve (addan farklıysa) firma ünvanı. Tıklayınca detay açılır. Vitrin kuruluysa başlık **Müşteri** olur. |
+| Bayi grubu | Grup ve uygulanan indirim, ör. "Altın Bayi · %15"; bayiye özel oran girildiyse "(özel)" eklenir, grubu yoksa "Grupsuz". Vitrin kuruluysa başlık **Tür** olur ve üstte **Bayi** ya da **Müşteri** rozeti görünür. |
 | Sipariş | Ciroya sayılan sipariş adedi. |
 | Toplam harcama | Bu siparişlerin toplamı, ana para biriminde (siparişteki kurla çevrilerek). |
 | Son giriş | Üyenin son giriş tarihi ve saati. |
@@ -55,7 +58,7 @@ siparişler girmez. Başlangıç ekranı ve [Raporlar](/yonetim/raporlar) da ayn
 
 ## Yeni bayi ekleme {#yeni-bayi}
 
-**Müşteriler › Yeni Bayi** (ya da listedeki **Yeni bayi** düğmesi). Panelden eklenen hesaplar
+**Bayiler › Yeni Bayi** (ya da listedeki **Yeni bayi** düğmesi). Panelden eklenen hesaplar
 bayidir ve bayi panelini (`/app`) kullanır. Bayiye şifresini kendisinin belirlemesi için bir
 **hoş geldin bağlantısı** gönderilir; şifreyi siz girmezsiniz.
 
@@ -76,7 +79,7 @@ ayarlarıyla başlar. Bayiye özel bir ayar gerekiyorsa kayıttan sonra müşter
 
 ### Nasıl yapılır?
 
-1. **Müşteriler › Yeni Bayi**'yi açın.
+1. **Bayiler › Yeni Bayi**'yi açın.
 2. Firma ünvanını, yetkilinin adını ve e-posta adresini yazın.
 3. Sağdaki **Durum**, **Bayi grubu**, gerekiyorsa **Bayiye özel indirim** ve **Bölge deposu**'nu seçin.
 4. **Bayi oluştur**'a basın. "Bayi oluşturuldu ve hoş geldin e-postası gönderildi." mesajıyla
@@ -113,8 +116,8 @@ Durum, müşteri detayındaki **Durum değiştir** ile Aktif ↔ Pasif arasında
 
 ## Müşteri detayı {#detay}
 
-Listede bir müşterinin adına tıklayınca açılır. Üst kısımda adın yanında **tür** (Bayi /
-Müşteri), **durum** ve e-posta doğrulanmamışsa **E-posta doğrulanmadı** rozeti görünür.
+Listede bir bayinin adına tıklayınca açılır. Üst kısımda adın yanında **tür** (Bayi; vitrin
+kuruluysa Müşteri de olabilir), **durum** ve e-posta doğrulanmamışsa **E-posta doğrulanmadı** rozeti görünür.
 
 ### Üst düğmeler
 
@@ -124,7 +127,7 @@ Müşteri), **durum** ve e-posta doğrulanmamışsa **E-posta doğrulanmadı** r
 | **E-posta değiştir** | Yeni adrese onay bağlantısı gönderir. Bkz. [E-posta değiştirme](#e-posta). |
 | **Durum değiştir** | **Yeni durum** olarak Aktif ya da Pasif seçip **Durumu güncelle**. İşlem etkinlik kaydına yazılır ve üyeye "Üyelik durumunuz … olarak güncellendi." e-postası gider. |
 | **2FA sıfırla** | Yalnız üyenin iki adımlı doğrulaması açıksa görünür. Telefonunu ya da doğrulama uygulamasını kaybeden üye için: onay penceresinde **Sıfırla**'ya basınca doğrulama uygulaması bağlantısı ve kurtarma kodları silinir; üye yalnız şifresiyle girip doğrulamayı yeniden kurabilir. İşlem etkinlik kaydına yazılır. |
-| **Bayi ayarları** / **Bayiye çevir** | Bayide **Bayi ayarları**, müşteride **Bayiye çevir** yazar. Bkz. [Bayi ayarları](#bayi-ayarlari). |
+| **Bayi ayarları** / **Bayiye çevir** | Bayide **Bayi ayarları**, müşteride (vitrin) **Bayiye çevir** yazar. Bkz. [Bayi ayarları](#bayi-ayarlari). |
 
 Panelden bayinin yerine giriş yapma (onun gözünden görme) özelliği yoktur.
 
@@ -136,7 +139,7 @@ Panelden bayinin yerine giriş yapma (onun gözünden görme) özelliği yoktur.
 |---|---|
 | Kimlik ve iletişim | Ad soyad, Firma, E-posta, Telefon (varsayılan teslimat adresindeki telefon), E-posta doğrulama tarihi (ya da "Doğrulanmadı"), Kayıt tarihi, Son giriş |
 | Fatura ve vergi | Üyenin kendi **Hesabım** ekranında girdiği fatura bilgileri: Fatura türü, Ünvan ya da Ad soyad, kurumsalda Vergi dairesi ve Vergi no, bireyselde TC kimlik no, E-fatura e-postası, Adres. Girilmemişse "Üye henüz fatura bilgisi girmedi." |
-| Ticari | Hesap türü (Bayi / Müşteri (vitrin)); bayide Bayi grubu, Uygulanan indirim (bayiye özelse "(bayiye özel)"), Bölge deposu, Çalışma şekli (vadelide "· 30 gün" gibi); Durum; Varsayılan teslimat (ilçe / il) |
+| Ticari | Hesap türü (**Bayi**; vitrin kuruluysa **Müşteri**; hesabı henüz açılmamış üyede **Hesap açılmadı**); bayide Bayi grubu, Uygulanan indirim (bayiye özelse "(bayiye özel)"), Bölge deposu, Çalışma şekli (vadelide "· 30 gün" gibi); Durum; Varsayılan teslimat (ilçe / il) |
 | Sayı şeridi | Sipariş, Toplam harcama, Ortalama sipariş, Son sipariş, Teklif, İade |
 
 Sipariş, Toplam harcama ve Ortalama sipariş listedeki gibi yalnız ciroya sayılan siparişlerden
@@ -169,9 +172,9 @@ Bağlantı tıklanana kadar e-posta adresi değişmez; üye eski adresiyle giri�
 
 ## Bayi ayarları {#bayi-ayarlari}
 
-Müşteri detayı › **Bayi ayarları** (bayide) ya da **Bayiye çevir** (müşteride). Aynı pencere
-iki iş görür: bayinin grubunu, indirimini, deposunu ve cari çalışma şeklini değiştirmek ya da
-hesabın türünü çevirmek.
+Detay › **Bayi ayarları** (bayide) ya da **Bayiye çevir** (müşteride, vitrin kuruluysa). Aynı
+pencere bayinin grubunu, indirimini, deposunu ve cari çalışma şeklini değiştirir; vitrin
+kuruluysa hesabın türünü çevirmek için de kullanılır.
 
 | Alan | Açıklama |
 |---|---|
@@ -194,17 +197,18 @@ Bayiye özel bir alan boş bırakılırsa grubun değeri geçerlidir. Örneğin 
 
 Pencerenin alt düğmeleri:
 
-- Bayide: **Müşteriye çevir** ve **Kaydet**.
-- Müşteride: **Vazgeç** ve **Bayiye çevir**.
+- Bayide: **Kaydet** (vitrin kuruluysa yanında **Müşteriye çevir**).
+- Müşteride (vitrin): **Vazgeç** ve **Bayiye çevir**.
 
-**Bayiye çevir** hesabı bayi yapar: üye bundan sonra bayi panelini (`/app`) kullanır ve bayi
+Müşteri hesapları yalnız vitrin modülüyle vardır; vitrin yoksa **Müşteriye çevir** düğmesi
+çıkmaz. **Bayiye çevir** hesabı bayi yapar: üye bundan sonra bayi panelini (`/app`) kullanır ve bayi
 indirimi uygulanır. **Müşteriye çevir** hesabı vitrin müşterisi yapar; bayi grubu, bayiye özel
 indirim, bölge deposu ve bayiye özel cari ayarlar **temizlenir**. Müşteri her zaman peşin
 çalışır. Cari hareketler ve siparişler her iki yönde de olduğu gibi kalır.
 
 ### Nasıl yapılır? — Bayiye vadeli çalışma tanımlamak
 
-1. Müşteri detayında **Bayi ayarları**'nı açın.
+1. Bayi detayında **Bayi ayarları**'nı açın.
 2. **Çalışma şekli**'nde **Vadeli (açık hesap)** seçin.
 3. **Vade (gün)** ve **Kredi limiti**'ni girin (grupla aynıysa boş bırakın).
 4. **Limit aşılınca** ve **Vadesi geçmiş borç varken** davranışını seçin.
@@ -213,7 +217,7 @@ indirim, bölge deposu ve bayiye özel cari ayarlar **temizlenir**. Müşteri he
 
 ## Bayi grupları {#bayi-gruplari}
 
-**Müşteriler › Bayi Grupları**. Her grubun **tek bir indirim oranı** ve varsayılan **cari
+**Bayiler › Bayi Grupları**. Her grubun **tek bir indirim oranı** ve varsayılan **cari
 çalışma şekli** vardır. Örneğin "Standart Bayi %10, peşin", "Altın Bayi %15, 60 gün vadeli,
 200.000 TL limit".
 

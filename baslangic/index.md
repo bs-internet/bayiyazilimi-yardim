@@ -21,7 +21,7 @@ Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi 
 ## Neler yapabilirsiniz?
 
 - **Satış:** ürün kataloğu, Excel ile toplu ürün aktarma, sepetten sipariş, teklif ile satış,
-  iade talepleri, desi tablolu kargo firmaları.
+  iade talepleri, desi tablolu kargo firmaları, ödeme formunda onaylatılan sözleşmeler.
 - **Müşteriler:** bayi grupları ve grup indirimi, bayiye özel indirim, kampanyalar.
 - **Cari ve ödeme:** her bayinin aldı / verdi ekstresi, peşin ya da vadeli çalışma, kredi
   limiti, havale bildirimi ve dekont, çek / senet portföyü, geciken ödemeler raporu.

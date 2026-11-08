@@ -8,6 +8,8 @@ anlatır.
 | Bakım modu | **Ayarlar › Genel Ayarlar › Site Erişimi** |
 | Vitrini kapatmak (siteyi yalnız bayilere açmak) | **Ayarlar › Genel Ayarlar › Modüller** |
 | Çerez şeridi, Google Analytics, Meta Pixel | **Ayarlar › Genel Ayarlar › Çerez Yönetimi** |
+| WhatsApp, çalışma saatleri, iletişim sayfası, harita, sosyal medya | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** |
+| Üyelik formunda onaylatılan sözleşmeler | **Ayarlar › Tanımlamalar › Sözleşmeler** |
 | ETBİS kare kodu | **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** |
 | KDV dahil / hariç fiyat gösterimi | **Ayarlar › Tanımlamalar › Satış Ayarları** |
 | Para birimleri | **Ayarlar › Tanımlamalar › Para Birimleri** |
@@ -87,6 +89,29 @@ Genel Ayarlar ana ekranındaki **Çerez Yönetimi** kartı hangi kodların eklen
 - Şeritteki **Gizlilik ve Çerez Politikası** bağlantısı, adresi `gizlilik-ve-cerez-politikasi` olan
   sayfa yayında ve bir alt menüde ise görünür (bkz. [Hazır gelen sayfalar](/vitrin/icerik-yonetimi#hazir-sayfalar)).
 
+## İletişim Bilgileri {#iletisim-bilgileri}
+
+**Ayarlar › Genel Ayarlar › İletişim Bilgileri** ekranı vitrin modülüyle gelir; vitrin kurulu
+değilse bu ekran yoktur. Firma e-postası ve telefonu bu ekranda değil, çekirdekteki **Kurumsal
+Bilgiler** ekranındadır (bkz. [Genel ayarlar › Kurumsal Bilgiler](/yonetim/genel-ayarlar#kurumsal)).
+
+| Bölüm | Alanlar |
+|---|---|
+| **İletişim** | **WhatsApp**, **Çalışma saatleri** |
+| **İletişim sayfası** | **Giriş metni** (iletişim sayfasının üstündeki metin), **Harita (Google Maps embed URL)** |
+| **Sosyal medya** | Instagram, LinkedIn, YouTube, X (Twitter), Facebook; boş bırakılan hesap sitede gizlenir |
+
+Bu bilgilerin vitrinde nerede göründüğü: [İçerik yönetimi › İletişim sayfası](/vitrin/icerik-yonetimi#iletisim)
+ve [Alt bilgide başka neler görünür?](/vitrin/icerik-yonetimi#alt-bilgi-icerigi).
+
+## Sözleşmeler ve üyelik formu {#sozlesmeler}
+
+Ödeme formunda ve vitrinin **üyelik (kayıt) formunda** onaylatılan metinler çekirdekteki
+**Ayarlar › Tanımlamalar › Sözleşmeler** ekranından gelir. Vitrin kuruluyken sözleşme formunda
+**Ödeme formunda göster** kutusunun yanında **Üyelik formunda göster** kutusu da çıkar. Üyelik
+formunda göster işaretli aktif bir sözleşme varsa kayıt formunda zorunlu bir onay kutusu
+görünür; yoksa kutu çıkmaz. Ayrıntı: [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler).
+
 ## ETBİS {#etbis}
 
 **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler › ETBİS** kartında:
@@ -106,6 +131,8 @@ Kare kod yüklenince vitrin alt bilgisinde **İletişim** sütununda görünür.
 |---|---|---|
 | **Ziyaretçi / müşteri** | **KDV dahil** ya da **KDV hariç (girildiği gibi)** | KDV dahil |
 | **Bayi** | Aynı seçenekler | KDV hariç |
+
+**Ziyaretçi / müşteri** seçeneği yalnız vitrin kuruluyken görünür.
 
 Vitrinde ürün kartında KDV hariç gösterimde fiyatın yanında "+KDV" yazar. Ürün sayfasında KDV
 dahil gösterimde altında KDV hariç fiyat, KDV hariç gösterimde "KDV hariç (+%… KDV)" notu yer alır.
@@ -226,8 +253,9 @@ Sayfalara arama motorlarının anladığı yapılandırılmış veri (JSON-LD) e
 | İçerik sayfaları | Sayfa (WebPage) ve gezinti yolu |
 | İletişim | İletişim sayfası (ContactPage) ve firma bilgileri |
 
-Firma bilgileri **Ayarlar › Genel Ayarlar** › **Kurumsal Bilgiler** ve **İletişim Bilgileri**
-ekranlarından, logo Genel Ayarlar'dan gelir; bu alanları doldurmanız yeterlidir.
+Firma bilgileri (ünvan, adres, e-posta, telefon) **Ayarlar › Genel Ayarlar** › **Kurumsal
+Bilgiler**'den, sosyal medya hesapları **İletişim Bilgileri**'nden, logo Genel Ayarlar'dan gelir;
+bu alanları doldurmanız yeterlidir.
 
 ## Arama ve filtreler
 

@@ -22,15 +22,12 @@ kodlarınızı saklayın. Kurulumda açtığınız hesap Super Admin'dir; her ş
 
 - **Genel Ayarlar** — uygulama adı, slogan, **logo**, **koyu tema logosu** ve **favicon**.
   Yüklemezseniz Bayi Yazılımı logosu kullanılır.
-- **Kurumsal Bilgiler** — firma ünvanı, vergi dairesi / numarası, MERSİS ve **adres** (il / ilçe
-  zorunlu). Vergi bilgileri eksikse Genel Bakış'ta uyarı görünür.
-- **İletişim Bilgileri** — e-posta, telefon, WhatsApp, çalışma saatleri, sosyal medya ve
-  özellikle **Sipariş/teklif bildirim e-postası**.
+- **Kurumsal Bilgiler** — firma ünvanı, firma **e-postası** ve **telefonu**, vergi dairesi /
+  numarası, MERSİS ve **adres** (il / ilçe zorunlu). Vergi bilgileri eksikse Genel Bakış'ta uyarı
+  görünür.
 
-::: warning Bildirim e-postası boşsa
-**Sipariş/teklif bildirim e-postası** boş bırakılırsa yeni sipariş, teklif, iade ve havale
-bildirimleri size **hiç gelmez**. Bkz. [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
-:::
+[Vitrin modülü](/vitrin/) kuruluysa ayrıca **İletişim Bilgileri** ekranı gelir (WhatsApp,
+çalışma saatleri, harita, sosyal medya).
 
 ## 4. Varsayılanlar ve ana para birimi
 
@@ -51,7 +48,15 @@ Ana para birimi **ilk sipariş ya da ilk cari hareketten sonra değiştirilemez*
 - **Vergi Oranları**, **Birimler** — gerekiyorsa ekleyin. Yeni eklenen vergi oranı pasif başlar;
   aktif yapmayı unutmayın.
 - **Satış Ayarları** — fiyatlar KDV dahil mi hariç mi gösterilsin, teklif geçerlilik süresi,
-  iade talebi süresi.
+  iade talebi süresi ve özellikle **Bildirimler › Bildirim e-postası**. Bkz.
+  [Satış ayarları](/satis/satis-ayarlari).
+- **Sözleşmeler** — kurulumla gelen taslak sözleşmelerin metnini yazın ve aktif yapın. Bkz.
+  [Sözleşmeler](#sozlesmeler) aşağıda.
+::: warning Bildirim e-postası boşsa
+**Bildirim e-postası** boş bırakılırsa yeni sipariş, teklif, iade ve havale bildirimleri size
+**hiç gelmez**. Bkz. [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
+:::
+
 - **Banka Hesapları** — havale / EFT ile ödeme alacaksanız hesaplarınızı ekleyin. Bkz.
   [Havale ve ödeme bildirimi](/cari/havale).
 - **Cari Ayarları** — ödeme yöntemine göre en düşük sipariş tutarı, vade uyarı süresi, çek /
@@ -73,7 +78,8 @@ ekleyin. **Stok Ayarları**'nda kritik stok eşiğini ve bildirimini ayarlayın.
 ## 8. Çalışanlar, görevler ve yetkiler
 
 1. **Ayarlar › Kullanıcılar › Görevler**'de hazır görevleri (Admin, Mağaza Yöneticisi, Satış
-   Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu, İçerik Editörü) gözden geçirin. **Admin**
+   Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu; vitrin kuruluysa İçerik Editörü) gözden
+   geçirin. **Admin**
    kurulumda panelin tüm yetkileriyle gelir; diğer görevler yalnız kendi alanlarının yetkileriyle
    gelir, gerekirse yetki ekleyin.
 2. **Yeni Kullanıcı** ile çalışanlarınıza hesap açın.
@@ -82,17 +88,20 @@ Bkz. [Kullanıcılar](/yonetim/kullanicilar) ve [Görevler ve yetkiler](/yonetim
 
 ## 9. Bayiler
 
-- **Müşteriler › Bayi Grupları** — gruplarınızı ve grup indirimlerini tanımlayın.
-- **Müşteriler › Yeni Bayi** — bayilerinizi ekleyin. Bkz. [Müşteriler ve bayiler](/musteriler/).
+- **Bayiler › Bayi Grupları** — gruplarınızı ve grup indirimlerini tanımlayın.
+- **Bayiler › Yeni Bayi** — bayilerinizi ekleyin. Bkz. [Müşteriler ve bayiler](/musteriler/).
 
-## 10. Bilgi sayfaları
+## 10. Sözleşmeler {#sozlesmeler}
 
-**İçerik › Sayfalar** — satış / iade şartları, teslimat, banka bilgileri, KVKK gibi sayfalarınızı
-düzenleyin. Kurulumla şablon metinler gelir. "Bayi panelinde göster" işaretli sayfalar
-bayilerin **Bilgi Merkezi**'nde listelenir.
+**Ayarlar › Tanımlamalar › Sözleşmeler** — kurulumla dört **pasif taslak** gelir: Satış
+Sözleşmesi, Üyelik Sözleşmesi, KVKK Aydınlatma Metni, Garanti ve İade Şartları. Metinleri henüz
+girilmemiştir. Kullanacaklarınızın metnini yazın, **Ödeme formunda göster** işaretini kontrol
+edin ve listedeki anahtarla aktif yapın. Aktif sözleşmeler bayilerin **Sözleşmeler** menüsünde
+listelenir; ödeme formunda göster işaretli olanlar siparişte onaylatılır. Bkz.
+[Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler).
 
 ## Örnek verilerle kurduysanız
 
-Örnek ürünler, örnek bayi (`user@user.com`) ve örnek müşteri (`musteri@musteri.com`) hesapları
-yüklenmiştir. Gerçek kullanıma geçmeden önce örnek ürünleri silin ya da pasifleştirin, örnek
-hesapları pasif yapın.
+Örnek ürünler ve örnek bayi (`user@user.com`) hesabı yüklenmiştir; [Vitrin modülü](/vitrin/)
+kuruluysa örnek müşteri (`musteri@musteri.com`) hesabı da gelir. Gerçek kullanıma geçmeden önce
+örnek ürünleri silin ya da pasifleştirin, örnek hesapları pasif yapın.

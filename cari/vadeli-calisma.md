@@ -16,7 +16,7 @@ değiştirilebilir. Vitrin müşterileri her zaman peşin çalışır ve yöntem
 
 **Nerede girilir?**
 
-- Grup için: **Müşteriler › Bayi Grupları** › grubu düzenle. Bkz. [Bayi grupları](/musteriler/#bayi-gruplari).
+- Grup için: **Bayiler › Bayi Grupları** › grubu düzenle. Bkz. [Bayi grupları](/musteriler/#bayi-gruplari).
 - Bayiye özel: müşteri detayı › **Bayi ayarları**. Bkz. [Bayi ayarları](/musteriler/#bayi-ayarlari).
 
 ### Hangi değer geçerli? {#oncelik}

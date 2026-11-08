@@ -156,8 +156,8 @@ Depo tarafı için bkz. [Stok işlemleri](/stok/stok-islemleri) ve
   eklenir.
 - Ödeme başarısız olduğunda e-posta gönderilmez. Ödemesi tamamlanmayan kart siparişi için size
   hiç **Yeni sipariş** e-postası gitmez.
-- Bildirim adresi **Ayarlar › Genel Ayarlar › İletişim Bilgileri**'ndeki **Sipariş/teklif
-  bildirim e-postası**'dır; boşsa size e-posta gitmez.
+- Bildirim adresi **Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler**'deki **Bildirim
+  e-postası**'dır; boşsa size e-posta gitmez.
 
 ## Müşteri tarafı
 

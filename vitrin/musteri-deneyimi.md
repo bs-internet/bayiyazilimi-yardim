@@ -192,9 +192,11 @@ yazar. Bkz. [Havale ve ödeme bildirimi](/cari/havale), [Kartla ödeme](/cari/ka
 ### Not ve onay
 
 - **Sipariş Notu** — isteğe bağlı, en çok 2.000 karakter.
-- Onay kutusu (zorunlu): "**Ön Bilgilendirme Formu** ve **Mesafeli Satış Sözleşmesi**'ni okudum,
-  onaylıyorum." ve **KVKK** bağlantısı. Bağlantılar vitrindeki yasal sayfaları açar (bkz.
-  [Hazır gelen sayfalar](/vitrin/icerik-yonetimi#hazir-sayfalar)).
+- Sözleşme onayı: **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Ödeme formunda göster**
+  işaretli aktif sözleşme varsa zorunlu bir onay kutusu çıkar, ör. "**Satış Sözleşmesi** ve
+  **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı metni bir
+  pencerede açan bir bağlantıdır. İşaretli sözleşme yoksa onay kutusu çıkmaz (bkz.
+  [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler)).
 - **Siparişi Onayla** (kartta **Ödemeye Geç**) siparişi oluşturur.
 
 ### Sipariş sonrası {#siparis-sonrasi}
@@ -281,5 +283,6 @@ ilgili sayfayı, misafirde giriş gerektirmeyen sipariş / teklif sayfasını a�
 | Şifre sıfırlama | Şifremi unuttum ile |
 
 E-postalarda logonuz ve firma adınız kullanılır. Yeni sipariş ve teklif bildirimleri ise size,
-**Ayarlar › Genel Ayarlar › İletişim Bilgileri › Sipariş/teklif bildirim e-postası** adresine
-gider; iletişim formu mesajları **E-posta** alanındaki adrese gelir.
+**Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler › Bildirim e-postası** adresine gider;
+iletişim formu mesajları **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler**'deki **E-posta**
+adresine gelir.

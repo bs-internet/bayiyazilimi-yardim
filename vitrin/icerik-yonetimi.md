@@ -1,6 +1,7 @@
 # İçerik yönetimi
 
-Vitrinin içeriği panelde **İçerik** menüsünden yönetilir:
+Vitrinin içeriği panelde **İçerik** menüsünden yönetilir. **İçerik** grubu (Sayfalar dahil)
+yalnız vitrin modülüyle gelir; vitrin kurulu değilse menüde görünmez.
 
 | Menü | Ne yönetilir | Ayrıntı |
 |---|---|---|
@@ -9,7 +10,7 @@ Vitrinin içeriği panelde **İçerik** menüsünden yönetilir:
 | **İçerik › Menüler › Kategori Menüsü** | "Tüm Kategoriler" açılır menüsü | [Kategori Menüsü](#kategori-menusu) |
 | **İçerik › Üst & Alt Bilgi** | Duyuru bandı ve alt bilgi metni | [Üst ve alt bilgi](#ust-alt-bilgi) |
 | **İçerik › Slider** | Ana sayfanın en üstündeki slaytlar | [Slider](/vitrin/ana-sayfa#slider) |
-| **İçerik › Sayfalar** | Hakkımızda, sözleşmeler, KVKK gibi sayfalar | [Sayfalar](#sayfalar) |
+| **İçerik › Sayfalar** | Hakkımızda, teslimat, gizlilik gibi içerik sayfaları | [Sayfalar](#sayfalar) |
 
 Bu ekranlar, kullanıcının rolünde ilgili yetki varsa görünür. Yetkiler **Yetkiler** ekranında
 "Mağaza: İçerik" ve "Mağaza: Menüler" gruplarında listelenir (bkz.
@@ -126,17 +127,25 @@ Alt bilgi, birkaç ekrandaki bilgilerden kendiliğinden oluşur:
 |---|---|
 | Logo | **Ayarlar › Genel Ayarlar** (markalama) |
 | Hakkında metni | **İçerik › Üst & Alt Bilgi** |
-| Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri**; boş bırakılan hesap gizlenir |
+| Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** (bkz. [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri)); boş bırakılan hesap gizlenir |
 | **Kurumsal** sütunu | **İçerik › Sayfalar**'da yerleşimi "Alt menü (Kurumsal)" olan sayfalar |
 | **Müşteri Hizmetleri** sütunu | Yerleşimi "Alt menü (Müşteri Hizmetleri)" olan sayfalar |
 | **Kategoriler** sütunu | Kategori Menüsü'nün ilk 7 öğesi |
-| **İletişim** sütunu | Firma adresi (**Kurumsal Bilgiler**), telefon, e-posta, çalışma saatleri (**İletişim Bilgileri**) ve ETBİS kare kodu |
+| **İletişim** sütunu | Firma adresi, telefon ve e-posta (**Kurumsal Bilgiler**), çalışma saatleri (**İletişim Bilgileri**) ve ETBİS kare kodu |
 | **Çerez Tercihleri** bağlantısı | Çerez tercih penceresini yeniden açar (bkz. [Çerez yönetimi](/vitrin/ayarlar#cerez-yonetimi)) |
 
 ## Sayfalar {#sayfalar}
 
-**İçerik › Sayfalar** Hakkımızda, sözleşmeler, KVKK gibi içerik sayfalarını yönetir. Sayfalar
-vitrinde `/sayfa/{adres}` adresinde yayınlanır.
+**İçerik › Sayfalar** Hakkımızda, sipariş ve teslimat, gizlilik gibi içerik sayfalarını yönetir.
+Sayfalar vitrinde `/sayfa/{adres}` adresinde yayınlanır.
+
+::: info Sözleşmeler burada değil
+Ödeme ve üyelik formunda onaylatılan sözleşmeler (satış sözleşmesi, üyelik sözleşmesi, KVKK
+aydınlatma metni …) bu ekrandan değil, **Ayarlar › Tanımlamalar › Sözleşmeler**'den yönetilir;
+bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler). Banka hesapları da
+**Banka Hesapları** ekranındadır (bkz. [Havale](/cari/havale)). Sayfalar bayi panelinde
+listelenmez; bayiler sözleşmeleri kendi **Sözleşmeler** menüsünde görür.
+:::
 
 Liste sütunları: **Başlık**, **Yerleşim**, **Durum** (Yayında / Taslak), **Sıra**, **Güncelleme**,
 **İşlemler** (**Görüntüle** — vitrindeki sayfayı açar, **Düzenle**, sil).
@@ -149,7 +158,6 @@ Liste sütunları: **Başlık**, **Yerleşim**, **Durum** (Yayında / Taslak), *
 | **Durum** | **Yayında** ya da **Taslak (gizli)**. Taslak sayfa vitrinde açılmaz, menülerde görünmez |
 | **Yerleşim** | **Alt menü (Müşteri Hizmetleri)**, **Alt menü (Kurumsal)** ya da **Menüde gösterme** |
 | **Sıra** | Alt bilgi sütununda sıralama (küçük önce) |
-| **Bayi panelinde göster** | Sayfa bayi panelindeki **Bilgi Merkezi**'nde de listelenir; vitrin kapalıyken de bayiler erişir |
 | **Arama motoru (SEO) › Meta açıklama** | Arama sonuçlarında görünen kısa açıklama, en çok 500 karakter |
 
 "Menüde gösterme" yerleşimli bir sayfayı üst menüye eklemek için **Ana Menü**'de **Sayfa**
@@ -157,30 +165,26 @@ bağlantısı kullanın.
 
 ### Hazır gelen sayfalar {#hazir-sayfalar}
 
-Kurulumla şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek olarak eklenmiştir."
-uyarısı yazar; metni kendi firmanıza göre değiştirin.
+Vitrin modülü kurulurken şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek
+olarak eklenmiştir." uyarısı yazar; metni kendi firmanıza göre değiştirin.
 
-| Sayfa | Adres | Yerleşim | Bayi panelinde |
-|---|---|---|---|
-| Hakkımızda | `hakkimizda` | Kurumsal | — |
-| Banka Hesap Numaraları | `banka-hesap-numaralari` | Kurumsal | Evet |
-| Müşteri Hizmetleri | `musteri-hizmetleri` | Müşteri Hizmetleri | Evet |
-| Üyelik | `uyelik` | Müşteri Hizmetleri | — |
-| Sipariş ve Teslimat | `siparis-ve-teslimat` | Müşteri Hizmetleri | Evet |
-| Garanti ve İade Şartları | `garanti-ve-iade-sartlari` | Müşteri Hizmetleri | Evet |
-| Satış Sözleşmesi | `satis-sozlesmesi` | Müşteri Hizmetleri | Evet |
-| Mesafeli Satış Sözleşmesi | `mesafeli-satis-sozlesmesi` | Müşteri Hizmetleri | Evet |
-| Ön Bilgilendirme Formu | `on-bilgilendirme-formu` | Müşteri Hizmetleri | Evet |
-| Güvenlik | `guvenlik` | Müşteri Hizmetleri | — |
-| Kişisel Verilerin Korunması | `kvkk-aydinlatma-metni` | Müşteri Hizmetleri | Evet |
-| Gizlilik ve Çerez Politikası | `gizlilik-ve-cerez-politikasi` | Müşteri Hizmetleri | — |
+| Sayfa | Adres | Yerleşim |
+|---|---|---|
+| Hakkımızda | `hakkimizda` | Kurumsal |
+| Müşteri Hizmetleri | `musteri-hizmetleri` | Müşteri Hizmetleri |
+| Sipariş ve Teslimat | `siparis-ve-teslimat` | Müşteri Hizmetleri |
+| Garanti ve İade Şartları | `garanti-ve-iade-sartlari` | Müşteri Hizmetleri |
+| Güvenlik | `guvenlik` | Müşteri Hizmetleri |
+| Kişisel Verilerin Korunması | `kvkk-aydinlatma-metni` | Müşteri Hizmetleri |
+| Gizlilik ve Çerez Politikası | `gizlilik-ve-cerez-politikasi` | Müşteri Hizmetleri |
+
+Satış sözleşmesi, mesafeli satış sözleşmesi, ön bilgilendirme formu ve banka hesap numaraları
+sayfa olarak gelmez: ödeme formundaki onay metinleri **Sözleşmeler**'den, banka hesapları
+**Banka Hesapları**'ndan gelir. Ödeme ekranı hiçbir sayfanın adresine bağlı değildir.
 
 ::: warning Bu adresleri değiştirmeyin
 Bazı ekranlar bu sayfalara **adresiyle** bağlanır:
 
-- Ödeme ekranındaki onay kutusu **Ön Bilgilendirme Formu** (`on-bilgilendirme-formu`), **Mesafeli
-  Satış Sözleşmesi** (`mesafeli-satis-sozlesmesi`) ve **KVKK** (`kvkk-aydinlatma-metni`) sayfalarını
-  açar.
 - Teklif listesi ve iletişim formundaki **KVKK Aydınlatma Metni** bağlantısı
   `kvkk-aydinlatma-metni` sayfasını açar.
 - Çerez şeridindeki **Gizlilik ve Çerez Politikası** bağlantısı yalnız
@@ -209,11 +213,11 @@ adreslerden yenilerine 301 yönlendirmesi yaptırın.
 2. **Başlık** ve **Sayfa metni**ni girin; adresi kendiniz belirlemek istiyorsanız **URL (slug)**
    yazın.
 3. **Yerleşim**'i seçin: alt bilgide hangi sütunda görüneceği ya da hiç görünmeyeceği.
-4. Bayilerinizin de görmesini istiyorsanız **Bayi panelinde göster**'i işaretleyin.
-5. **Durum**'u **Yayında** yapıp **Kaydet**'e basın.
+4. **Durum**'u **Yayında** yapıp **Kaydet**'e basın.
 
-**Sayfayı bayilere açmak** — sayfayı düzenleyip **Bayi panelinde göster**'i işaretleyin. Sayfa,
-bayi panelinde **Bilgi Merkezi** menüsünde listelenir. Bkz. [Bayi paneli](/bayi-paneli/).
+Bayilerinizin görmesi gereken metinleri (iade şartları, satış sözleşmesi …) sözleşme olarak
+ekleyin: aktif sözleşmeler bayi panelinde **Sözleşmeler** menüsünde listelenir. Bkz.
+[Bayi paneli › Sözleşmeler](/bayi-paneli/sozlesmeler).
 
 ## İletişim sayfası ve iletişim bilgileri {#iletisim}
 
@@ -222,12 +226,12 @@ Vitrinin **İletişim** sayfası (`/iletisim`) içeriğini iki ayar ekranından 
 | Sayfada | Nereden gelir |
 |---|---|
 | Giriş metni | **Ayarlar › Genel Ayarlar › İletişim Bilgileri › Giriş metni** |
-| Adres | **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** (firma adresi) |
-| Telefon, WhatsApp, e-posta, çalışma saatleri | **İletişim Bilgileri** |
+| Adres, telefon, e-posta | **Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** |
+| WhatsApp, çalışma saatleri | **İletişim Bilgileri** |
 | Şirket bilgileri (ünvan, vergi dairesi, vergi no, MERSİS) | **Kurumsal Bilgiler** |
 | Konum haritası | **İletişim Bilgileri › Harita (Google Maps embed URL)**: Google Haritalar → Paylaş → Harita yerleştir → src adresi |
 
 **Bize Yazın** formu: **Ad Soyad** (zorunlu), **E-posta** (zorunlu), telefon, **Konu**,
 **Mesajınız** (zorunlu, en çok 5.000 karakter) ve KVKK onayı (zorunlu). Gönderilen mesaj
-**İletişim Bilgileri › E-posta** adresine "İletişim formu: …" konulu e-postayla gelir. Bu adres
+firma e-postasına (**Kurumsal Bilgiler › E-posta**) "İletişim formu: …" konulu e-postayla gelir. Bu adres
 boşsa mesaj kimseye iletilmez.

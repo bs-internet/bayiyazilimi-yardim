@@ -62,7 +62,7 @@ Her ekranın üstünde:
 
 - Solda **menü düğmesi** (kenar çubuğunu daraltır / açar) ve bulunduğunuz yerin yolu
   (ör. Tanımlamalar › Para Birimleri).
-- Sağda **Mağazayı aç** (siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
+- Sağda **Mağazayı aç** (vitrin modülü kuruluysa; siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
   yazdığı **kullanıcı menüsü**: **Bilgilerim**, **Bildirimler**, **Oturumu Kapat**.
 
 ### Kenar çubuğu (menü) {#menu}
@@ -71,14 +71,15 @@ Menü gruplar halindedir. Her kullanıcı yalnız **görevinin izin verdiği** �
 
 | Grup | Öğeler |
 |---|---|
-| **Platform** | Başlangıç · Müşteriler (Müşteriler, Cari Durum, Yeni Bayi, Bayi Grupları) · Kampanyalar · Raporlar |
+| **Platform** | Başlangıç · Bayiler (Bayiler, Cari Durum, Yeni Bayi, Bayi Grupları) · Kampanyalar · Raporlar |
 | **Mağaza** | Siparişler · Teklifler · İadeler · Ödemeler (Tahsilatlar, Havale Bildirimleri, Çek / Senet, Geciken Ödemeler) · Katalog (Ürünler, Yeni Ürün, Kategoriler, Markalar, İçe / Dışa Aktar) · Stok (Stok Durumu, Toplama Listesi, Mal Kabul, Sayım, Stok Hareketleri, Lot / Seri No, Depolar, Stok Ayarları) |
-| **İçerik** | Sayfalar |
 | **Ayarlar** | Genel Ayarlar · Kullanıcılar · Tanımlamalar · Etkinlik Kayıtları · Ön Bellek Yönetimi |
 
 - **Çek / Senet** yalnız Cari Ayarları'nda çek / senet açıksa, **Lot / Seri No** yalnız Stok
   Ayarları'nda izlenebilirlik açıksa görünür.
-- Kurulu modüller menüye kendi öğelerini ekler (ör. Vitrin modülü İçerik grubuna).
+- Kurulu modüller menüye kendi öğelerini ekler. [Vitrin modülü](/vitrin/) kuruluysa
+  **Bayiler** menüsünün adı **Müşteriler** olur (bayiler ve vitrin müşterileri birlikte) ve
+  **İçerik** grubu (Ana Sayfa, Menüler, Üst & Alt Bilgi, Slider, Sayfalar) eklenir.
 - **Genel Ayarlar**, **Kullanıcılar**, **Tanımlamalar**, **Ödemeler**, **Kampanyalar** ve
   **Raporlar** tıklanınca bir bölüm sayfası açar; bölümün alt ekranları sayfanın içindeki
   menüdedir. Bu yardımda yollar bu iç menüyle birlikte yazılır, ör. **Ayarlar › Tanımlamalar ›
@@ -103,7 +104,7 @@ ciroya katılmaz.
 | **Ciro** | Son 30 günün toplam sipariş tutarı | Siparişleri listele |
 | **Siparişler** | Son 30 günün sipariş sayısı | Siparişleri listele |
 | **Ortalama sipariş** | Sipariş başına tutar (ciro ÷ sipariş sayısı) | Siparişleri listele |
-| **Yeni üye** | Son 30 günde açılan üye hesabı; altında "*x* müşteri · *y* bayi" kırılımı | Müşterileri listeleme |
+| **Yeni üye** | Son 30 günde açılan üye hesabı; altında "*y* bayi" (vitrin kuruluysa "*x* müşteri · *y* bayi") kırılımı | Müşterileri listeleme |
 
 Her kartta **önceki 30 güne göre değişim** yüzdesi gösterilir.
 

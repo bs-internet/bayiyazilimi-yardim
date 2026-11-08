@@ -50,14 +50,14 @@ geçmiş her zaman izlenebilir.
 
 ## Cari Durum {#cari-durum}
 
-**Müşteriler › Cari Durum** — tüm hesapların bakiyesi tek listede. Başlıkta **toplam
+**Bayiler › Cari Durum** — tüm hesapların bakiyesi tek listede. Başlıkta **toplam
 alacağınız** (borçlu hesapların bakiyeleri toplamı) yazar.
 
 | Filtre | Açıklama |
 |---|---|
 | Arama | Ünvan, hesap kodu, üye adı ya da e-posta. |
 | Bakiye | **Hareketi olanlar** (varsayılan: en az bir cari hareketi olan hesaplar), **Borçlular**, **Alacaklılar**. |
-| Tür | **Tüm hesaplar** ya da hesap türü (Bayi; vitrin kuruluysa Müşteri). |
+| Tür | Yalnız vitrin kuruluyken görünür: **Tüm hesaplar** ya da hesap türü (Bayi, Müşteri). |
 
 | Sütun | Açıklama |
 |---|---|

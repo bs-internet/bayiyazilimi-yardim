@@ -14,7 +14,7 @@ Bu sayfa çekirdekte (modülsüz) gönderilen tüm bildirimleri listeler. Kurulu
 
 | Ayar | Nerede | Neyi etkiler |
 |---|---|---|
-| **Sipariş/teklif bildirim e-postası** | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** | Yeni sipariş, teklif talebi, iade talebi, havale bildirimi ve müşterinin teklif yanıtı e-postalarının **firma tarafındaki** alıcısı. Tek adres. **Boşsa bu e-postalar gönderilmez** |
+| **Bildirim e-postası** | **Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler** (bkz. [Satış ayarları](/satis/satis-ayarlari#bildirimler)) | Yeni sipariş, teklif talebi, iade talebi, havale bildirimi ve müşterinin teklif yanıtı e-postalarının **firma tarafındaki** alıcısı. Tek adres. **Boşsa bu e-postalar gönderilmez** |
 | **Kritik stok bildirimi** | **Mağaza › Stok › Stok Ayarları** | Kapalıysa kritik stok / stok tükendi bildirimi gönderilmez. Açıksa, **stok durumunu görüntüleme** yetkisi olan tüm aktif panel kullanıcılarına (Super Admin dahil) gider |
 | **Gönderen adı ve adresi** | Sunucudaki `.env` dosyası (`MAIL_FROM_ADDRESS`, `MAIL_FROM_NAME`) | Tüm e-postaların "Kimden" bilgisi. Bkz. [VPS › E-posta](/baslangic/vps#e-posta) |
 
@@ -80,7 +80,7 @@ Görev değişikliğinde e-posta gönderilmez.
 
 ## Bayi ve müşteri hesapları {#uyeler}
 
-Yöneticinin **Müşteriler** ekranında bayi / müşteri hesabı üzerinde yaptığı işlemler (bkz.
+Yöneticinin **Bayiler** (vitrin kuruluysa **Müşteriler**) ekranında bayi / müşteri hesabı üzerinde yaptığı işlemler (bkz.
 [Müşteriler ve bayiler](/musteriler/)):
 
 | Olay | Alıcı | Kanal | E-posta konusu |
@@ -113,6 +113,6 @@ birleşimiyle ilk kez girildiğinde gönderilir (hesabın açıldığı ilk daki
 
 Panelde bildirim türlerini tek tek kapatma ekranı yoktur. Kapatılabilenler:
 
-- Firma tarafındaki sipariş / teklif / iade / havale e-postaları: **Sipariş/teklif bildirim
-  e-postası** alanını boşaltarak (hepsi birden).
+- Firma tarafındaki sipariş / teklif / iade / havale e-postaları: **Satış Ayarları ›
+  Bildirimler › Bildirim e-postası** alanını boşaltarak (hepsi birden).
 - Kritik stok bildirimleri: **Stok Ayarları**'ndan.

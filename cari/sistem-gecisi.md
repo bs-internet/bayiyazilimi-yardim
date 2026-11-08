@@ -15,17 +15,17 @@ eklenir, her bayinin devreden bakiyesi **açılış bakiyesi** olarak girilir.
 | 4 | Cari ayarları (çek / senet kullanılacaksa açın) | **Ayarlar › Tanımlamalar › Cari Ayarları** — [Cari Ayarları](/cari/#cari-ayarlari) |
 | 5 | Ürünler, kategoriler, markalar | **Katalog › İçe / Dışa Aktar** — [Excel ile ürün aktarma](/satis/excel) |
 | 6 | Açılış stokları | Excel'deki depo stok sütunları ya da [Sayım](/stok/sayim) / [Mal kabul](/stok/mal-kabul) |
-| 7 | Bayi grupları | **Müşteriler › Bayi Grupları** — [Bayi grupları](/musteriler/#bayi-gruplari) |
-| 8 | Bayiler | **Müşteriler › Yeni Bayi** — [Yeni bayi](/musteriler/#yeni-bayi) |
+| 7 | Bayi grupları | **Bayiler › Bayi Grupları** — [Bayi grupları](/musteriler/#bayi-gruplari) |
+| 8 | Bayiler | **Bayiler › Yeni Bayi** — [Yeni bayi](/musteriler/#yeni-bayi) |
 | 9 | Açılış bakiyeleri | Müşteri detayı › **Cari** › **Dekont** |
 | 10 | Portföydeki çek / senetler | Müşteri detayı › **Cari** › **Tahsilat ekle** |
-| 11 | Kontrol | **Müşteriler › Cari Durum**, **Mağaza › Ödemeler › Geciken Ödemeler** |
+| 11 | Kontrol | **Bayiler › Cari Durum**, **Mağaza › Ödemeler › Geciken Ödemeler** |
 
 ## Bayi grupları ve bayiler {#bayiler}
 
 1. Eski sistemdeki fiyat / iskonto seviyelerinize göre **bayi gruplarını** oluşturun: her grubun
    indirim oranı, peşin / vadeli çalışma şekli, vade günü ve kredi limiti.
-2. Bayileri **Müşteriler › Yeni Bayi** ile tek tek ekleyin (toplu bayi aktarma yoktur). Firma
+2. Bayileri **Bayiler › Yeni Bayi** ile tek tek ekleyin (toplu bayi aktarma yoktur). Firma
    ünvanını eski programdaki cari ünvanıyla aynı yazmanız, ekstreleri karşılaştırırken kolaylık
    sağlar.
 3. Gruptan farklı limiti, vadesi ya da indirimi olan bayilerde **Bayi ayarları**'nı düzenleyin.
@@ -42,7 +42,7 @@ Her bayinin geçiş günündeki bakiyesini eski programdaki ekstresinden alın v
 
 ### Nasıl yapılır?
 
-1. **Müşteriler › Müşteriler**'den bayiyi açın, **Cari** sekmesine geçin.
+1. **Bayiler › Bayiler**'den bayiyi açın, **Cari** sekmesine geçin.
 2. **Dekont**'a basın.
 3. Alanları doldurun:
 
@@ -125,7 +125,7 @@ cariye otomatik yazılır.
 
 ## Kontrol listesi {#kontrol}
 
-1. **Müşteriler › Cari Durum**'da başlıktaki **Toplam alacağınız** tutarını eski programdaki
+1. **Bayiler › Cari Durum**'da başlıktaki **Toplam alacağınız** tutarını eski programdaki
    toplam müşteri alacağıyla karşılaştırın.
 2. Birkaç bayinin ekstresini (**Cari** › **Yazdır** ya da **Excel**) eski ekstresiyle karşılaştırın.
 3. Vadeli bayilerin **Kullanılabilir limit** kartını kontrol edin: açılış bakiyesi riske dahil

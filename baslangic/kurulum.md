@@ -29,6 +29,12 @@ Sihirbaz PHP sürümünü, eklentileri ve yazma izinlerini kendisi kontrol eder.
 kütüphanelerinin (`vendor` klasörü) ve derlenmiş ön yüz dosyalarının (`public/build` klasörü)
 yüklediğiniz dosyalar arasında hazır bulunması gerekir; bunları sihirbaz kontrol etmez.
 
+::: warning Git ile indirdiyseniz önce ön yüzü derleyin
+Hazır kurulum paketinde `public/build` klasörü bulunur. Kodu `git clone` ile indirdiyseniz bu
+klasör yoktur: sihirbazı açmadan önce proje klasöründe `npm ci && npm run build` çalıştırın.
+Derlemeden açılan sihirbaz **boş (beyaz) bir sayfa** gösterir.
+:::
+
 ::: warning Site kökü public olmalı
 Alan adınız projenin ana klasörünü değil **`public`** klasörünü göstermelidir. Aksi halde site
 açılmaz ya da proje dosyaları dışarıdan erişilebilir hale gelir.
@@ -38,7 +44,8 @@ açılmaz ya da proje dosyaları dışarıdan erişilebilir hale gelir.
 
 Barındırma panelinizden (cPanel, Plesk, DirectAdmin …):
 
-1. **Boş bir MySQL / MariaDB veritabanı** oluşturun.
+1. **Boş bir MySQL / MariaDB veritabanı** oluşturun. İçinde başka bir uygulamanın tabloları
+   bulunan veritabanı kabul edilmez (bkz. aşağıda **Veritabanı** adımı).
 2. Bir **veritabanı kullanıcısı** oluşturup bu veritabanına **tüm yetkilerle** ekleyin.
 3. Veritabanı adını, kullanıcı adını ve şifreyi not edin; kurulumda sorulacak.
 
@@ -78,8 +85,13 @@ sihirbaz kendiliğinden sonraki adıma geçer.
 **Bağlan ve devam et** düğmesine bastığınızda bağlantı denenir:
 
 - Bağlantı kurulursa bilgiler `.env` dosyasına yazılır ve üçüncü adıma geçilir.
-- Kurulamazsa **Bağlantı kurulamadı** uyarısıyla veritabanı sunucusunun döndürdüğü hata
-  gösterilir. Hataların anlamı: [Veritabanı bağlantı hataları](/baslangic/sorun-giderme#veritabani).
+- Kurulamazsa **Bağlantı kurulamadı** uyarısıyla nedeni Türkçe açıklanır (ör. "Kullanıcı adı ya
+  da şifre hatalı…"). Uyarıların anlamı ve çözümü:
+  [Veritabanı bağlantı hataları](/baslangic/sorun-giderme#veritabani).
+- Veritabanında başka tablolar varsa (ör. başka bir uygulamanın kurulu olduğu veritabanı)
+  "**Veritabanı boş değil: içinde başka tablolar var…**" uyarısı çıkar ve bu adımda durulur.
+  Böylece kurulum tabloların bir kısmını oluşturup yarıda kalmaz. Boş bir veritabanı seçin ya
+  da içindeki tabloları silin.
 
 ::: tip Bu adım atlanabilir
 `.env` dosyasına veritabanı bilgilerini önceden elle yazdıysanız ve bağlantı çalışıyorsa sihirbaz
@@ -102,7 +114,8 @@ o adımdaki **Veritabanını değiştir** düğmesine basın.
 - **Boş yükle** — yalnız temel veriler: ülke, il / ilçe, para birimleri, vergiler, roller ve
   ayarlar. **Gerçek kullanım için bunu seçin.**
 - **Örnek verileri yükle** — temel verilere ek olarak örnek ürünler (kategori, marka, stok) ile
-  örnek bayi ve müşteri hesapları. Sistemi denemek için.
+  örnek bayi hesabı ve siparişi ([Vitrin modülü](/vitrin/) kuruluysa örnek müşteri hesabı da).
+  Sistemi denemek için.
 
 Site adresi ayrıca sorulmaz: sihirbazı hangi adresten açtıysanız o adres kaydedilir. Bu yüzden
 sihirbazı **sitenin gerçek adresinden** (ör. `https://bayi.firmaniz.com`) açın.
@@ -120,8 +133,8 @@ Son ekranda yönetici e-postanız ve **Sıradaki adımlar** listesi görünür:
 - Logo, iletişim ve firma bilgilerini girin (**Ayarlar › Genel Ayarlar**).
 - Ürünleri ekleyin ya da Excel ile içe aktarın.
 - Sunucunuzda zamanlanmış görev (cron) tanımlayın.
-- (Örnek verileri yüklediyseniz) Örnek bayi ve müşteri hesapları **rastgele şifreyle**
-  oluşturulur; denemek için panelden şifrelerini belirleyin.
+- (Örnek verileri yüklediyseniz) Örnek hesaplar **rastgele şifreyle** oluşturulur; denemek için
+  panelden şifrelerini belirleyin.
 
 **Giriş yap** düğmesiyle giriş ekranına geçin.
 
@@ -158,13 +171,13 @@ sorar:
 
 | Soru | Açıklama |
 |---|---|
-| Veritabanı | `.env`'deki bağlantı çalışıyorsa "*kullanıcı@sunucu/veritabanı* kullanılsın mı?" diye sorar. Hayır derseniz ya da bağlantı yoksa: **Veritabanı sunucusu**, **Port**, **Veritabanı adı**, **Kullanıcı adı**, **Şifre**. Bağlanamazsa hatayı gösterip yeniden sorar |
+| Veritabanı | `.env`'deki bağlantı çalışıyorsa "*kullanıcı@sunucu/veritabanı* kullanılsın mı?" diye sorar. Hayır derseniz ya da bağlantı yoksa: **Veritabanı sunucusu**, **Port**, **Veritabanı adı**, **Kullanıcı adı**, **Şifre**. Bağlanamazsa ya da veritabanı boş değilse nedeni sihirbazdaki gibi Türkçe yazıp yeniden sorar |
 | Firma / site adı | Zorunlu |
 | Site adresi | Varsayılan `.env`'deki adres. Sitenin gerçek adresini girin (ör. `https://bayi.firmaniz.com`) |
 | Yönetici adı | Zorunlu |
 | Yönetici e-postası | Geçerli bir e-posta olmalı |
 | Yönetici şifresi | Şifre kurallarına uymazsa "Şifre yeterince güçlü değil." uyarısı verir |
-| Başlangıç verileri | **Boş yükle (yalnız temel veriler)** ya da **Örnek verileri yükle (örnek ürünler, bayi ve müşteri hesapları)** |
+| Başlangıç verileri | **Boş yükle (yalnız temel veriler)** ya da **Örnek verileri yükle** (örnek ürünler ve bayi hesabı; vitrin kuruluysa müşteri hesabı da) |
 
 Kurulum bitince giriş e-postası ile ön yüz derlemesi, cron ve kuyruk çalıştırıcı hatırlatmaları
 yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir şey yapmaz.
@@ -181,14 +194,18 @@ yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir
 | Vergi oranları | KDV %20 (varsayılan), KDV %10, KDV %0 |
 | Birimler | Adet, Paket, Kutu, Koli, Set, Takım, Rulo, Litre, Kg, Metre |
 | Depo | Merkez Depo (varsayılan depo) |
-| Sayfalar | Hakkımızda, Banka Hesap Numaraları, Sipariş ve Teslimat, Garanti ve İade Şartları, Satış Sözleşmesi, KVKK gibi şablon sayfalar |
+| Sözleşmeler | Satış Sözleşmesi, Üyelik Sözleşmesi, KVKK Aydınlatma Metni, Garanti ve İade Şartları: **pasif taslaklar**, metinleri henüz girilmemiştir. Bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler) |
 | Kargo | Yurtiçi, Aras ve MNG Kargo; örnek desi fiyatlarıyla (kendi anlaşmanıza göre düzenleyin) |
 | Ayarlar | Genel ayarların ve mağaza ayarlarının varsayılanları; zaman dilimi İstanbul |
-| Görevler | Super Admin, Admin ve hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu, İçerik Editörü). Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler) |
+| Görevler | Super Admin, Admin ve hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu). Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler) |
+
+Vitrin modülünün kendi verileri (örnek içerik sayfaları, **İçerik Editörü** görevi) modül
+kurulurken eklenir; bkz. [Vitrin modülü](/vitrin/).
 
 **Örnek verileri yükle** seçilirse ayrıca: örnek kategoriler, markalar ve stoklu ürünler,
-"Standart Bayi" grubu (%10 indirim), örnek bayi hesabı (`user@user.com`), örnek müşteri hesabı
-(`musteri@musteri.com`), örnek bayinin adresi, siparişi ve iade talebi.
+"Standart Bayi" grubu (%10 indirim), örnek bayi hesabı (`user@user.com`), örnek bayinin adresi,
+siparişi ve iade talebi. Örnek müşteri hesabı (`musteri@musteri.com`) yalnız vitrin modülü
+kuruluysa oluşturulur.
 
 ## Kurulumdan sonra
 

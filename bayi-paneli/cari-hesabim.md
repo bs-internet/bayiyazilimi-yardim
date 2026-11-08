@@ -94,8 +94,7 @@ Sipariş vermeden carinizdeki borcu kartla ödersiniz.
 
 Ödemesi beklenen havale siparişiniz varsa ekranda **Havale / EFT bilgileri** kutusu ve banka
 hesaplarımız (banka, hesap sahibi, IBAN) görünür. Açıklama kısmına sipariş numaranızı yazmayı
-unutmayın. Banka hesaplarımız ayrıca sipariş e-postanızda ve
-[Bilgi Merkezi](/bayi-paneli/bilgi-merkezi)'nde de yer alabilir.
+unutmayın. Banka hesaplarımız ayrıca havale siparişinizin e-postasında yazar.
 
 ## Ödemeler {#odemeler}
 

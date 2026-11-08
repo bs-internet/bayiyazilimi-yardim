@@ -21,21 +21,35 @@ Düzelttikten sonra **Tekrar kontrol et** düğmesine basın.
 
 ## Veritabanı bağlantı hataları {#veritabani}
 
-Sihirbaz bağlanamazsa veritabanı sunucusunun hatasını gösterir. Hata metninde geçen koda göre:
+Sihirbaz (ve `bayi:setup`) bağlanamazsa nedeni Türkçe bir uyarıyla gösterir:
 
-| Hatada geçen | Anlamı | Çözüm |
+| Uyarı | Anlamı | Çözüm |
 |---|---|---|
-| `[1045] Access denied` | Kullanıcı adı ya da şifre yanlış | cPanel'de kullanıcı adının başında hesap adınız olduğunu unutmayın (`hesabim_kullanici`). Şifreyi yeniden belirleyip deneyin |
-| `[1044] Access denied … to database` | Kullanıcı bu veritabanına ekli değil | **MySQL Databases › Add User To Database** ile kullanıcıyı veritabanına **ALL PRIVILEGES** ile ekleyin |
-| `[1049] Unknown database` | Veritabanı adı yanlış ya da veritabanı yok | Tam adı (önekiyle) yazın |
-| `[2002] Connection refused` / `No such file or directory` | Sunucu adresi ya da port yanlış, veritabanı çalışmıyor | Sunucu alanında `localhost` ile `127.0.0.1`'i ayrı ayrı deneyin; portu `3306` bırakın |
-| `[2002] Connection timed out` | Uzak bir veritabanı sunucusuna erişilemiyor | Hosting firmanızın verdiği adresi ve uzaktan erişim iznini kontrol edin |
+| "Kullanıcı adı ya da şifre hatalı…" | Veritabanı kullanıcısının adı ya da şifresi yanlış | cPanel'de kullanıcı adının başında hesap adınız olduğunu unutmayın (`hesabim_kullanici`). Şifreyi yeniden belirleyip deneyin |
+| "Bu kullanıcının "*ad*" veritabanına erişim izni yok." | Kullanıcı bu veritabanına ekli değil | **MySQL Databases › Add User To Database** ile kullanıcıyı veritabanına **ALL PRIVILEGES** ile ekleyin |
+| "\"*ad*\" adında bir veritabanı bulunamadı…" | Veritabanı adı yanlış ya da veritabanı yok | Önce boş bir veritabanı oluşturun; adı tam (önekiyle) yazın |
+| "Veritabanı sunucusuna ulaşılamadı…" | Sunucu adresi ya da port yanlış, veritabanı çalışmıyor ya da uzak sunucuya erişilemiyor | Sunucu alanında `localhost` ile `127.0.0.1`'i ayrı ayrı deneyin; portu `3306` bırakın. Uzak sunucuda hosting firmanızın verdiği adresi ve uzaktan erişim iznini kontrol edin |
+| "Veritabanı kullanıcısının tablo oluşturma yetkisi yok…" | Kullanıcının yetkileri eksik | Kullanıcıya bu veritabanında **tüm yetkileri** (ALL PRIVILEGES) verin |
+| "Veritabanı boş değil: içinde başka tablolar var…" | Veritabanında başka bir uygulamanın ya da eski bir denemenin tabloları var | Boş bir veritabanı seçin ya da içindeki tabloları silip yeniden deneyin |
+| "Veritabanı işlemi başarısız oldu… (Ayrıntı: …)" | Yukarıdakilerin dışında bir hata | Parantez içindeki ayrıntıyla hosting firmanızdan destek isteyin |
 | `.env dosyası yazılamadı` | Bağlantı kuruldu ama bilgiler kaydedilemedi | `.env` dosyasının (ya da proje klasörünün) yazma iznini düzeltin |
+
+## Sihirbaz boş (beyaz) sayfa gösteriyor {#bos-sayfa}
+
+Ön yüz dosyaları (`public/build` klasörü) yoktur. Hazır kurulum paketinde bu klasör bulunur;
+kodu `git clone` ile indirdiyseniz proje klasöründe önce şunu çalıştırın, sonra sihirbazı
+yeniden açın:
+
+```bash
+npm ci && npm run build
+```
 
 ## Kurulum yarıda kaldı ya da hata verdi {#kurulum-hatasi}
 
-- **"Kurulum tamamlanamadı"** uyarısının metnini okuyun. Çoğunlukla veritabanı kullanıcısının
-  tablo oluşturma yetkisi yoktur (tüm yetkileri verin) ya da veritabanı boş değildir.
+- **"Kurulum tamamlanamadı"** uyarısının metnini okuyun; nedeni yukarıdaki
+  [veritabanı uyarılarından](#veritabani) biriyse oradaki çözümü uygulayın. Çoğunlukla veritabanı
+  kullanıcısının tablo oluşturma yetkisi yoktur (tüm yetkileri verin). Başka tabloları olan
+  veritabanı zaten veritabanı adımında reddedilir.
 - Sayfa uzun süre "Kuruluyor…" durumunda kalıp zaman aşımına uğradıysa: veritabanını boşaltın
   (tüm tabloları silin) ve sihirbazı yeniden açın. Sistem kurulu olarak işaretlenmediyse sihirbaz
   yeniden başlar.
@@ -91,8 +105,8 @@ Sırayla kontrol edin:
    hostingde `QUEUE_CONNECTION=sync` yapın.
 4. **Yapılandırma önbelleği** temizlendi mi? `.env` değişikliğinden sonra **Ön Bellek Yönetimi ›
    Yapılandırma Önbelleği**'ni temizleyin (VPS'te ayrıca `php artisan queue:restart`).
-5. **Yönetici bildirimleri** gelmiyor ama müşteri e-postaları gidiyorsa: **Ayarlar › Genel
-   Ayarlar › İletişim Bilgileri › Sipariş/teklif bildirim e-postası** alanı boştur. Bkz.
+5. **Yönetici bildirimleri** gelmiyor ama müşteri e-postaları gidiyorsa: **Ayarlar ›
+   Tanımlamalar › Satış Ayarları › Bildirimler › Bildirim e-postası** alanı boştur. Bkz.
    [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
 6. E-postalar gidiyor ama **spam'e düşüyorsa**: `MAIL_FROM_ADDRESS` SMTP hesabıyla aynı alan
    adında olmalı; alan adınız için SPF / DKIM kayıtlarını e-posta sağlayıcınızın tarifine göre

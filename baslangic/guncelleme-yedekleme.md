@@ -118,6 +118,18 @@ Bu adım çalıştırılmadıysa **Genel Ayarlar › Modüller** ekranında mod�
 **Güncelleme tamamlanmadı** uyarısı ve çalıştırılacak komut görünür. Bkz.
 [Modüller](/yonetim/moduller).
 
+::: warning Vitrin 0.2.0'a geçiş
+İçerik sayfaları ve İletişim Bilgileri ekranı çekirdekten Vitrin modülüne taşındı. Vitrin
+kurulu bir sistemde çekirdeği güncelledikten sonra Vitrin'i de güncelleyin; 0.2.0 sürümü kendi
+sayfa tablosunu oluşturur:
+
+```bash
+composer update bsinternet/vitrin
+php artisan bayi:install vitrin
+npm run build
+```
+:::
+
 ## Güncellemeden sonra kontrol listesi
 
 - Panele giriş yapılabiliyor mu, başlangıç ekranı açılıyor mu?

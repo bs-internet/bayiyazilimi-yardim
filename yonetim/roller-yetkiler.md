@@ -25,7 +25,11 @@ sayısı**. Sistem görevleri **Sistem** etiketiyle gösterilir. **Görev ara** 
 | **Satış Sorumlusu** | Siparişler (listeleme, detay, durum, ödeme durumu, not, fatura bilgisi, lot değiştirme, toplama listesi), Teklifler (tümü), İadeler (tümü); ayrıca ürünleri, stok durumunu, kargo firmalarını ve para birimlerini **görüntüleme** |
 | **Depo Sorumlusu** | Stok (durum, hareketler, giriş / çıkış, transfer, lokasyon değişimi, lot / seri no), Depolar ve lokasyonlar, Mal kabul, Sayım, Tedarikçiler, Kargo firmaları, İadeler; siparişlerde **listeleme, detay, durum değiştirme, lot değiştirme ve toplama listesi**; ürünleri görüntüleme |
 | **Katalog Sorumlusu** | Ürünler (görseller dahil), Kategoriler, Markalar, Excel içe aktarma ve ürünleri Excel'e aktarma; ayrıca stok durumunu, stok hareketlerini ve para birimlerini **görüntüleme** |
-| **İçerik Editörü** | Sayfalar (listeleme, ekleme, düzenleme, silme). Vitrin modülü kuruluysa onun içerik ekranlarına da yetki verebilirsiniz |
+| **İçerik Editörü** | Yalnız [Vitrin modülü](/vitrin/) kuruluysa vardır: vitrin kurulurken oluşturulur, kaldırılınca silinir. Vitrinin içerik ekranları: Ana Sayfa, Menüler, Slider, Üst & Alt Bilgi, Sayfalar |
+
+Çekirdekle gelen görevler: Super Admin, Admin, Mağaza Yöneticisi, Satış Sorumlusu, Depo
+Sorumlusu, Katalog Sorumlusu. Vitrin modülü kurulurken ayrıca vitrinin yetkileri **Admin** ve
+**Mağaza Yöneticisi** görevlerine eklenir.
 
 Hazır görevlerin yetkilerini istediğiniz gibi değiştirebilir, yeni görev ekleyebilirsiniz.
 
@@ -39,7 +43,7 @@ Diğer hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu …) yalnız ken
 alır. Şu ekranların yetkileri listede vardır ama bu görevlere atanmamıştır; gerekiyorsa
 **Görevler**'de ilgili göreve ekleyin:
 
-- Müşteriler listesi, müşteri detayı ve **Yeni Bayi**
+- Bayiler (vitrin kuruluysa Müşteriler) listesi, detay ve **Yeni Bayi**
 - Genel Ayarlar (Genel Ayarlar ekranı, Modüller) ve ETBİS kare kodu yükleme
 - Kullanıcılar, Görevler, Yetkiler
 - Tanımlamalar › Diller, Bölgeler, Vergi Oranları; Para Birimleri'nde elle ekleme / düzenleme /
@@ -83,7 +87,8 @@ basılır. Değişiklik o göreve sahip tüm kullanıcılara hemen uygulanır.
 ## Yetkiler {#yetkiler}
 
 **Ayarlar › Kullanıcılar › Yetkiler** — sistemdeki yetkilerin listesi, gruplar halinde
-(ör. "Mağaza: Siparişler"). Sütunlar: **Etiket** (anlaşılır ad), **İzin Adı** (teknik ad),
+(ör. "Mağaza: Siparişler"; sözleşmeler "Mağaza: Sözleşmeler"; stok, satış ve kurumsal bilgi
+ayarları ile site erişimi "Mağaza: Ayarlar"). Sütunlar: **Etiket** (anlaşılır ad), **İzin Adı** (teknik ad),
 **Görevler** (bu yetkiye sahip görevler).
 
 Yetkinin teknik adı, panelde açtığı ekranın adıyla aynıdır. Bu sayede **her panel ekranı

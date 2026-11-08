@@ -13,6 +13,7 @@ Vitrinden kayıt olan müşteriler hesaplarını vitrin tasarımındaki **Hesab�
 | **Ad soyad** | Zorunlu, en çok 255 karakter |
 | **E-posta adresi** | Zorunlu; daha önce kullanılmamış olmalı |
 | **Şifre** / **Şifre tekrarı** | Zorunlu; iki alan aynı olmalı |
+| Sözleşme onayı | **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Üyelik formunda göster** işaretli aktif sözleşme varsa zorunlu onay kutusu: "*A* ve *B* metinlerini okudum, onaylıyorum." Sözleşme adları metni pencerede açar. İşaretli sözleşme yoksa kutu çıkmaz. Bkz. [Vitrin ayarları › Sözleşmeler](/vitrin/ayarlar#sozlesmeler) |
 
 1. Müşteri formu doldurup **Hesap oluştur**'a basar.
 2. E-posta adresine doğrulama bağlantısı gider.

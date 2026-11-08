@@ -23,7 +23,7 @@ aynı hesabı kullanır.
 | İndirim | Nerede tanımlanır | Nasıl uygulanır |
 |---|---|---|
 | **Ürün indirimi** | Ürünün karşılaştırma fiyatı | Satış fiyatı zaten indirimli fiyattır; karşılaştırma fiyatı üstü çizili gösterilir |
-| **Bayi grubu indirimi** | **Müşteriler › Bayi Grupları** — grubun tek indirim oranı | Satış fiyatından yüzde düşülür |
+| **Bayi grubu indirimi** | **Bayiler › Bayi Grupları** — grubun tek indirim oranı | Satış fiyatından yüzde düşülür |
 | **Bayiye özel indirim** | Müşteri detayı › **Bayi ayarları** | Girilirse grubun oranının yerine geçer |
 | **Kampanya** | **Kampanyalar**. Bkz. [Kampanyalar](/musteriler/kampanyalar) | Sepette, koşullar sağlanınca |
 | **Havale indirimi** | **Ayarlar › Tanımlamalar › Banka Hesapları**. Bkz. [Havale](/cari/havale#havale-indirimi) | Ödemede havale / EFT seçilince genel toplamdan |
@@ -105,12 +105,13 @@ sepet tutarına bakar (örnekte 29.750,00 × 1,20 = 35.700,00 TL).
 
 ## Fiyat gösterimi (KDV dahil / hariç) {#gosterim}
 
-**Ayarlar › Tanımlamalar › Satış Ayarları** › **Fiyat gösterimi** bölümünde iki ayrı ayar vardır:
+**Ayarlar › Tanımlamalar › Satış Ayarları** › **Fiyat gösterimi** bölümünde bayi için bir ayar
+vardır; [Vitrin modülü](/vitrin/) kuruluysa ziyaretçi / müşteri için ikinci bir ayar çıkar:
 
 | Alan | Varsayılan | Açıklama |
 |---|---|---|
-| Ziyaretçi / müşteri | **KDV dahil** | Giriş yapmamış ziyaretçi ve vitrin müşterisi için ürün fiyatları |
 | Bayi | **KDV hariç (girildiği gibi)** | Giriş yapmış bayi için ürün fiyatları |
+| Ziyaretçi / müşteri | **KDV dahil** | Yalnız vitrin kuruluysa: giriş yapmamış ziyaretçi ve vitrin müşterisi için ürün fiyatları |
 
 Bu ayar yalnız ürün listesi ve ürün kartındaki fiyatın nasıl **gösterileceğini** belirler;
 hesabı değiştirmez. Sepet ve ödeme ekranında ara toplam (KDV hariç), KDV ve genel toplam her

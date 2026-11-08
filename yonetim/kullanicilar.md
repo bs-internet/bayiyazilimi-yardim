@@ -1,7 +1,7 @@
 # Kullanıcılar
 
 **Ayarlar › Kullanıcılar** — yönetim paneline giren çalışanlarınızın (yönetici hesapları)
-listesi. Bayi ve müşteri hesapları burada değil, **Müşteriler** menüsündedir; bkz.
+listesi. Bayi ve müşteri hesapları burada değil, **Bayiler** (vitrin kuruluysa **Müşteriler**) menüsündedir; bkz.
 [Müşteriler ve bayiler](/musteriler/).
 
 Bölümün iç menüsü: **Kullanıcılar** · **Yeni Kullanıcı** · **Görevler** · **Yetkiler**.
@@ -14,7 +14,7 @@ Sistemde iki tür hesap vardır:
 | Tür | Kim | Nereye girer | Nerede yönetilir |
 |---|---|---|---|
 | **Yönetici** | Siz ve çalışanlarınız | Yönetim paneli (`/panel`) | Ayarlar › Kullanıcılar |
-| **Üye** | Bayiler ve müşteriler | Bayi paneli (`/app`) | Müşteriler |
+| **Üye** | Bayiler (vitrin kuruluysa müşteriler de) | Bayi paneli (`/app`) | Bayiler (vitrin kuruluysa Müşteriler) |
 
 Bir hesabın türü sonradan değiştirilemez.
 
