@@ -76,7 +76,19 @@ Kurulu olanlar **Kurulu** rozetiyle işaretlidir. **İncele** eklentinin tanıt�
 
 Edindiğiniz eklenti sunucunuza kurulur. Kurulumu kendiniz yapmak isterseniz (SSH gerekir):
 
+**Ücretsiz eklentiler** (PayTR, iyzico) Packagist'te yayımlanır; doğrudan kurulur:
+
 ```bash
+composer require bsinternet/<eklenti>
+php artisan bayi:install <eklenti>
+npm run build
+```
+
+**Ücretli eklentiler** (ör. Vitrin) özel depodadır. Satın aldığınızda size verilen depo erişimiyle,
+önce depo adresini tanıtın, sonra aynı komutları çalıştırın:
+
+```bash
+composer config repositories.<eklenti> vcs https://github.com/bs-internet/bayiyazilimi-<eklenti>
 composer require bsinternet/<eklenti>
 php artisan bayi:install <eklenti>
 npm run build
