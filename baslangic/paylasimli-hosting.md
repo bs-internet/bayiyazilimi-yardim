@@ -12,12 +12,23 @@ panellerde menü adları farklıdır ama adımlar aynıdır.
   komut gerektirir.
 :::
 
-## 1. Kurulum paketini hazırlayın
+::: tip Önerilen sunucu
+Paylaşımlı hostingde temel sistem ve ödeme eklentileri çalışır. Sistemi daha verimli kullanmak
+ve eklentileri rahatça kurup güncellemek için **en az 2 işlemci, 2 GB RAM ve 20 GB disk alanı**
+olan bir VPS öneririz; bkz. [VPS'e kurulum](/baslangic/vps).
+:::
+
+## 1. Kurulum paketini indirin
 
 Sunucuya yükleyeceğiniz paketin içinde PHP kütüphaneleri (`vendor`) ve derlenmiş ön yüz
 dosyaları (`public/build`) **hazır** olmalıdır; paylaşımlı hostingde bunları oluşturamazsınız.
 
-Hazır bir paketiniz yoksa kendi bilgisayarınızda (PHP 8.4, Composer ve Node.js 20+ kurulu):
+Hazır paket her sürümde [GitHub › Sürümler](https://github.com/bs-internet/bayiyazilimi/releases)
+sayfasında `bayiyazilimi-<sürüm>.zip` adıyla yayımlanır. İçinde ücretsiz ödeme eklentileri
+**PayTR** ve **iyzico** da hazır gelir; kurulum sihirbazı onları da kurar. Kullanmadığınızı
+**Ayarlar › Eklentiler**'den kapatabilirsiniz.
+
+Paketi kendiniz hazırlamak isterseniz kendi bilgisayarınızda (PHP 8.4, Composer ve Node.js 20+ kurulu):
 
 ```bash
 git clone https://github.com/bs-internet/bayiyazilimi.git

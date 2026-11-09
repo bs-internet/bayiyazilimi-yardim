@@ -124,7 +124,11 @@ php artisan bayi:update --build
 
 ### Paylaşımlı hosting
 
-1. Yeni sürümün hazır paketini (`vendor` ve `public/build` dahil) edinin.
+1. Yeni sürümün hazır paketini (`vendor` ve `public/build` dahil, PayTR ve iyzico içinde)
+   [GitHub › Sürümler](https://github.com/bs-internet/bayiyazilimi/releases) sayfasından indirin.
+   Hazır paket yalnız PayTR ve iyzico'yu içerir: başka eklenti kurduysanız (Vitrin, Plasiyer …)
+   paketi yüklemek o eklentilerin ekranlarını siler. Bu durumda güncellemeyi VPS'teki gibi komutla
+   yapın ya da kurulumu yapan firmadan destek alın.
 2. Proje klasörüne yükleyip üzerine açın. **`.env` dosyasının ve `storage` klasörünün üzerine
    yazmayın.**
 3. Güncellemeyi tamamlayın:

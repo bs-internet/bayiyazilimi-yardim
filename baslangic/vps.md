@@ -5,6 +5,9 @@ Bu sayfa SSH ile bağlanabildiğiniz bir Linux sunucu (VPS) içindir. Komutlar U
 
 ## Sunucuda gerekenler
 
+Önerilen boyut: **en az 2 işlemci, 2 GB RAM ve 20 GB disk alanı**. Ön yüz derlemesi
+(`npm run build`) 1 GB RAM'li sunucularda yavaşlar ya da yarıda kalabilir.
+
 - PHP **8.4** (PHP-FPM) ve eklentiler: pdo_mysql, mbstring, openssl, tokenizer, ctype, json,
   fileinfo, dom, xml, xmlreader, zip, iconv, curl
 - MySQL 8+ ya da MariaDB 10.6+

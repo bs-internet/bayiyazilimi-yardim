@@ -75,7 +75,12 @@ Kurulu olanlar **Kurulu** rozetiyle işaretlidir. **İncele** eklentinin tanıt�
 
 ## Eklenti kurulumu
 
-Edindiğiniz eklenti sunucunuza kurulur. Kurulumu kendiniz yapmak isterseniz (SSH gerekir):
+Edindiğiniz eklenti sunucunuza kurulur. Kurulum sunucuda komut çalıştırmayı (Composer ve ön yüz
+derlemesi) gerektirir; bu yüzden eklentili kullanım için **en az 2 işlemci, 2 GB RAM ve 20 GB disk
+alanı** olan bir VPS öneririz. Paylaşımlı hostingde hazır kurulum paketindeki **PayTR** ve
+**iyzico** kurulu gelir.
+
+Kurulumu kendiniz yapmak isterseniz (SSH gerekir):
 
 **Ücretsiz eklentiler** (PayTR, iyzico) Packagist'te yayımlanır; doğrudan kurulur:
 

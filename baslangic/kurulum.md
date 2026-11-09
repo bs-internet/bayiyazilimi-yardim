@@ -25,6 +25,13 @@ Sunucu türünüze göre adım adım anlatım:
 | Zamanlanmış görev | Sunucuda cron (kurlar, kart ödemesi zaman aşımı, son kullanma tarihi kontrolü) |
 | E-posta | Bir SMTP hesabı (bildirim e-postaları için) |
 
+::: tip Önerilen sunucu
+Sistemi daha verimli kullanmak için **en az 2 işlemci, 2 GB RAM ve 20 GB disk alanı** olan bir
+VPS öneririz. Paylaşımlı hostingde temel sistem ve ödeme eklentileri (PayTR, iyzico) çalışır;
+diğer eklentilerin kurulumu ve güncellemesi sunucuda komut çalıştırmayı (Composer, ön yüz
+derlemesi) gerektirir.
+:::
+
 Sihirbaz PHP sürümünü, eklentileri ve yazma izinlerini kendisi kontrol eder. PHP
 kütüphanelerinin (`vendor` klasörü) ve derlenmiş ön yüz dosyalarının (`public/build` klasörü)
 yüklediğiniz dosyalar arasında hazır bulunması gerekir; bunları sihirbaz kontrol etmez.
