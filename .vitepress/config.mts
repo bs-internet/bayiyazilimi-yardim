@@ -156,6 +156,14 @@ export default defineConfig({
                 ],
             },
             {
+                text: "Plasiyer eklentisi",
+                collapsed: true,
+                items: [
+                    { text: "Plasiyer nedir?", link: "/plasiyer/" },
+                    { text: "Plasiyer ekranı", link: "/plasiyer/plasiyer-ekrani" },
+                ],
+            },
+            {
                 text: "Muhasebe entegrasyonları",
                 collapsed: true,
                 items: [

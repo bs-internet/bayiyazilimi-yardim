@@ -12,6 +12,7 @@ Ek özellikler **eklentilerle** gelir.
 | **iyzico** (ücretsiz) | iyzico ile kartla ödeme, taksit, iade, kartla cari tahsilat |
 | **Paraşüt** | Satışları Paraşüt'e satış faturası olarak aktarır; isteğe bağlı e-Fatura / e-Arşiv. Bkz. [Paraşüt](/muhasebe/parasut) |
 | **BizimHesap** | Satışları BizimHesap'a satış faturası olarak aktarır. Bkz. [BizimHesap](/muhasebe/bizimhesap) |
+| **Plasiyer** (ücretli) | Saha satış temsilcileri kendi mobil ekranından bayileri adına sipariş, teklif, tahsilat (yönetici onayıyla) ve ziyaret girer; hedef ve prim. Bkz. [Plasiyer eklentisi](/plasiyer/) |
 
 Mağaza ön yüzünün tasarımını değiştiren **temalar** da eklenti gibi kurulur; bkz. [Temalar](/yonetim/temalar).
 
