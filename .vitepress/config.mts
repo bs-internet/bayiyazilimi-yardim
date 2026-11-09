@@ -112,6 +112,7 @@ export default defineConfig({
                     { text: "Para birimleri", link: "/yonetim/para-birimleri" },
                     { text: "Eklentiler", link: "/yonetim/moduller" },
                     { text: "Temalar", link: "/yonetim/temalar" },
+                    { text: "API Anahtarları", link: "/yonetim/api-anahtarlari" },
                 ],
             },
             {
@@ -173,6 +174,7 @@ export default defineConfig({
                     { text: "Ödeme altyapısı", link: "/gelistirici/odeme-altyapisi" },
                     { text: "Cari defter", link: "/gelistirici/cari-defter" },
                     { text: "Stok altyapısı", link: "/gelistirici/stok-altyapisi" },
+                    { text: "REST API", link: "/gelistirici/rest-api" },
                 ],
             },
         ],

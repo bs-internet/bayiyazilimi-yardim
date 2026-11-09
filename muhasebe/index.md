@@ -11,6 +11,13 @@ Eklentinin kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar; bilgi
 [bayiyazilimi.com](https://bayiyazilimi.com). Kurulu eklentileri [Eklentiler](/yonetim/moduller)
 ekranında görebilir, açıp kapatabilirsiniz.
 
+::: tip Programınız listede yoksa
+Logo, Mikro, Netsis gibi bir ERP ya da kendi yazılımınız sisteme **REST API** ile bağlanabilir:
+siparişleri okur, stok ve fiyatları günceller, fatura numarası ve tahsilat yazar. Bağlantı için
+[API Anahtarları](/yonetim/api-anahtarlari) ekranından bir anahtar oluşturulur; teknik ayrıntılar
+geliştiriciniz için [REST API](/gelistirici/rest-api) sayfasındadır.
+:::
+
 ## Ortak çalışma şekli {#ortak}
 
 İki eklenti de aynı mantıkla çalışır:

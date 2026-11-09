@@ -67,3 +67,7 @@ app(LedgerService::class)->record(
 ```
 
 Aynı `origin + external_ref` ikinci kez yazılmaz; senkronizasyon güvenle tekrarlanabilir.
+
+Eklenti yazmadan dışarıdan bağlanan bir program için aynı yol REST API'dedir:
+`POST /api/v1/accounts/{code}/transactions` hareketi `origin = api` ve `external_ref` = istekteki
+`reference` ile yazar. Bkz. [REST API › Cari hareket yazma](/gelistirici/rest-api#cari-hareket).

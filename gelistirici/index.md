@@ -50,3 +50,4 @@ composer ci:check              # lint + biçim + tipler + testler
 - [Ödeme altyapısı](/gelistirici/odeme-altyapisi) — ödeme sürücüsü yazma
 - [Cari defter](/gelistirici/cari-defter) — hareket modeli, ERP entegrasyon noktaları
 - [Stok altyapısı](/gelistirici/stok-altyapisi) — stok katmanları ve kurallar
+- [REST API](/gelistirici/rest-api) — `/api/v1`: ürün, stok, sipariş ve cari uç noktaları, ERP eşitlemesi

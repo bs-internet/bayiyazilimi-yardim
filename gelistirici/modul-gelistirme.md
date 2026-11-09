@@ -24,6 +24,8 @@ Başlıca hook'lar:
 | `shop.payment.methods.register` | Ödeme sürücüleri. Bkz. [Ödeme altyapısı](/gelistirici/odeme-altyapisi) |
 | `shop.campaigns.conditions.register` / `shop.campaigns.actions.register` | Kampanya koşul ve işlem türleri |
 | `database.seed` | Eklentinin başlangıç verileri |
+| `api.routes.register` | REST API uç noktaları; `/api/v1` grubunun içinde tetiklenir. Bkz. [REST API](/gelistirici/rest-api#eklentiler-icin) |
+| `api.abilities` (filtre) | API anahtarı yetkileri (`anahtar => etiket`) |
 
 Callback'leri sağlayıcının `register()` metodunda bağlayın (çekirdek tetiklemeden önce).
 
