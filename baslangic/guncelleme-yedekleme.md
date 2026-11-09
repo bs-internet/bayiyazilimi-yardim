@@ -186,18 +186,6 @@ Bu adım çalıştırılmadıysa **Ayarlar › Eklentiler** ekranında eklentini
 **Güncelleme tamamlanmadı** uyarısı ve çalıştırılacak komut görünür; Super Admin ayrıca panelin
 üstünde [Güncellemeyi tamamla](#panel-uyarisi) uyarısını görür. Bkz. [Eklentiler](/yonetim/moduller).
 
-::: warning Vitrin 0.2.0'a geçiş
-İçerik sayfaları ve İletişim Bilgileri ekranı çekirdekten Vitrin eklentisine taşındı. Vitrin
-kurulu bir sistemde çekirdeği güncelledikten sonra Vitrin'i de güncelleyin; 0.2.0 sürümü kendi
-sayfa tablosunu oluşturur:
-
-```bash
-composer update bsinternet/vitrin
-php artisan bayi:install vitrin
-npm run build
-```
-:::
-
 ## Güncellemeden sonra kontrol listesi
 
 - Panele giriş yapılabiliyor mu, başlangıç ekranı açılıyor mu?
