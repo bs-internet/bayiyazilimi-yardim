@@ -38,6 +38,8 @@ Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi 
   düzenleyici). Bkz. [Vitrin eklentisi](/vitrin/).
 - **PayTR** ve **iyzico** (ücretsiz) — kartla ödeme, taksit, kartla cari tahsilat. Bkz.
   [Kartla ödeme](/cari/kartla-odeme).
+- **Paraşüt** ve **BizimHesap** — satışları ön muhasebe programına satış faturası olarak aktarır.
+  Bkz. [Muhasebe entegrasyonları](/muhasebe/).
 
 Eklentiler hakkında bilgi ve fiyatlar için: [bayiyazilimi.com](https://bayiyazilimi.com).
 

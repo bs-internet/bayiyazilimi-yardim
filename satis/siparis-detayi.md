@@ -74,6 +74,10 @@ Siparişin tüm adımları tarih sırasıyla: durum, not, işlemi yapan kullanı
 
 En altta siparişin verildiği IP adresi yazar.
 
+Muhasebe eklentisi kuruluysa sağ sütunda **Paraşüt** ya da **BizimHesap** kartı da görünür:
+faturanın aktarım durumu ve gönder / yeniden dene düğmesi. Bkz.
+[Muhasebe entegrasyonları](/muhasebe/).
+
 ## İşlemler
 
 ### Durumu değiştirmek {#durum}

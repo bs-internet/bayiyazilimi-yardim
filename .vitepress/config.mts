@@ -155,6 +155,15 @@ export default defineConfig({
                 ],
             },
             {
+                text: "Muhasebe entegrasyonları",
+                collapsed: true,
+                items: [
+                    { text: "Genel bakış", link: "/muhasebe/" },
+                    { text: "Paraşüt", link: "/muhasebe/parasut" },
+                    { text: "BizimHesap", link: "/muhasebe/bizimhesap" },
+                ],
+            },
+            {
                 text: "Geliştirici",
                 collapsed: true,
                 items: [

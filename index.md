@@ -33,6 +33,6 @@ features:
       details: Bayilerinizin sipariş verdiği, teklif aldığı ve carisini izlediği ekranlar.
       link: /bayi-paneli/
     - title: Eklentiler
-      details: Vitrin (e-ticaret sitesi), PayTR ve iyzico gibi ek eklentilerle sistemi genişletin.
+      details: Vitrin (e-ticaret sitesi), PayTR, iyzico, Paraşüt ve BizimHesap gibi eklentilerle sistemi genişletin.
       link: /yonetim/moduller
 ---

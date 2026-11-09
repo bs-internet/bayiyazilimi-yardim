@@ -61,30 +61,63 @@ php artisan optimize:clear
 
 ## Sistemi güncelleme {#guncelleme}
 
-Güncellemeler yeni dosyaları ve gerekiyorsa veritabanı değişikliklerini getirir. Veritabanı
-değişiklikleri **otomatik uygulanmaz**; aşağıdaki `migrate` komutunu çalıştırmanız gerekir.
+Güncellemeler yeni dosyaları ve gerekiyorsa veritabanı değişikliklerini getirir. Güncelleme iki
+adımdır:
+
+1. **Yeni dosyaları yerine koymak** — `git pull` + `composer install` ya da hazır paketi yüklemek.
+2. **Güncellemeyi tamamlamak** — veritabanı değişikliklerini uygulamak, eklentilerin kurulum
+   adımlarını çalıştırmak, önbellekleri temizlemek. Bunu tek komut yapar: `php artisan bayi:update`.
+   Terminal yoksa aynı işi paneldeki **Güncellemeyi tamamla** düğmesi yapar.
 
 ::: warning Önce yedek
-Her güncellemeden önce veritabanının ve dosyaların [yedeğini](#yedek) alın.
+Her güncellemeden önce veritabanının ve dosyaların [yedeğini](#yedek) alın. `bayi:update`
+veritabanının yedeğini kendisi de alır (aşağıya bakın), ama yüklenen dosyaları ve `.env`'yi
+yedeklemez.
+:::
+
+### bayi:update ne yapar? {#bayi-update}
+
+Yeni dosyalar yerine konduktan sonra proje klasöründe:
+
+```bash
+php artisan bayi:update
+```
+
+Sırasıyla:
+
+1. Siteyi **bakım moduna** alır (ziyaretçiler ve bayiler bakım sayfası görür).
+2. **Veritabanı yedeği** alır: sunucuda `mysqldump` varsa SQL yedeği
+   `storage/app/private/backups/` klasörüne yazılır (dosya adı tarih ve saat). `mysqldump`
+   bulunamazsa güncelleme durmaz, "yedeği kendiniz alın" uyarısı verir.
+3. Veritabanı değişikliklerini uygular (`migrate`).
+4. Kurulum adımı bekleyen ya da yeni sürümü gelmiş açık eklentiler için `bayi:install` çalıştırır.
+5. Önbellekleri temizler.
+6. Kuyruk işleyicisine yeniden başlama sinyali gönderir (`queue:restart`); işleyici yeni kodla
+   devam eder.
+7. Kurulu sürümü kaydeder ve siteyi yeniden açar. Bir adım hata verse de site bakımda kalmaz.
+
+| Seçenek | Ne yapar |
+|---|---|
+| `--no-backup` | Veritabanı yedeği almaz (yedeği zaten kendiniz aldıysanız) |
+| `--no-maintenance` | Siteyi bakıma almaz |
+| `--build` | Ön yüzü de derler (`npm ci && npm run build`) |
+
+`--build` vermezseniz komut sonunda ön yüz dosyaları değiştiyse derlemeniz hatırlatılır.
+
+::: tip Yedek klasörü
+`storage/app/private/backups/` altındaki yedekler zamanla birikir. Eskilerini silin ve önemli
+olanları sunucunun dışına taşıyın; aynı sunucudaki yedek sunucu kaybında işe yaramaz.
 :::
 
 ### VPS (git ile kurulduysa)
 
 ```bash
 cd /var/www/bayiyazilimi
-php artisan down                       # ziyaretçilere bakım sayfası (isteğe bağlı)
 git pull
 composer install --no-dev --optimize-autoloader
-npm ci && npm run build
-php artisan migrate --force            # veritabanı değişikliklerini uygula
-php artisan optimize:clear             # eski önbellekleri temizle
-php artisan queue:restart              # kuyruk işleyicisi yeni kodu alsın
-php artisan up
+php artisan bayi:update --build
 ```
 
-- `php artisan down` siteyi (paneli de) herkese kapatır; işiniz bitince mutlaka `php artisan up`
-  çalıştırın. Yalnız bayilere / ziyaretçilere kapatmak isterseniz panelden **Bakım modu**'nu
-  kullanabilirsiniz; bkz. [Genel ayarlar › Site Erişimi](/yonetim/genel-ayarlar#site-erisimi).
 - [Hızlandırma](/baslangic/vps#hizlandirma) için `php artisan optimize`
   kullanıyorsanız en sonda yeniden çalıştırın.
 - SSR kullanıyorsanız `npm run build:ssr` ile derleyip SSR sürecini yeniden başlatın.
@@ -94,29 +127,64 @@ php artisan up
 1. Yeni sürümün hazır paketini (`vendor` ve `public/build` dahil) edinin.
 2. Proje klasörüne yükleyip üzerine açın. **`.env` dosyasının ve `storage` klasörünün üzerine
    yazmayın.**
-3. Veritabanı değişikliklerini uygulamak için **cPanel › Terminal**'de proje klasörüne geçip:
+3. Güncellemeyi tamamlayın:
+   - **cPanel › Terminal** varsa proje klasörüne geçip `php artisan bayi:update` çalıştırın; ya da
+   - Terminal yoksa panele **Super Admin** olarak girin ve sarı uyarıdaki **Güncellemeyi tamamla**
+     düğmesine basın (aşağıya bakın).
+
+Yeni dosyalar yüklenip güncelleme tamamlanmazsa sistem hata verebilir.
+
+### Paneldeki "Güncellemeyi tamamla" uyarısı {#panel-uyarisi}
+
+Kod veritabanından yeniyse (yeni dosyalar yüklenmiş ama güncelleme tamamlanmamışsa) ya da bir
+eklentinin kurulum adımı bekliyorsa, **Super Admin** panelin üstünde sarı bir uyarı görür:
+
+> Sistem güncellemesi tamamlanmadı: veritabanı ya da eklenti kurulum adımları bekliyor.
+> Güncellemeden önce yedek aldığınızdan emin olun.
+
+**Güncellemeyi tamamla** düğmesi `bayi:update` ile aynı adımları çalıştırır (veritabanı yedeği,
+veritabanı değişiklikleri, eklenti kurulum adımları, önbellek, kuyruk sinyali). Farkları: siteyi
+bakıma almaz ve ön yüzü derlemez. Sonuç ekranın üstünde bildirilir ("Sistem … sürümüne
+güncellendi."); işlem kimin yaptığıyla birlikte [Etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari)
+yazılır.
+
+Uyarı yalnız Super Admin'e görünür; dosyalar yüklendikten sonra birkaç dakika içinde çıkar.
+
+### Komutları tek tek çalıştırmak (alternatif) {#elle}
+
+`bayi:update` yerine adımları kendiniz de çalıştırabilirsiniz:
 
 ```bash
-php artisan migrate --force
-php artisan optimize:clear
+php artisan down                       # ziyaretçilere bakım sayfası (isteğe bağlı)
+npm ci && npm run build                # ön yüz (git ile kurulumda)
+php artisan migrate --force            # veritabanı değişikliklerini uygula
+php artisan bayi:install <eklenti>     # kurulum adımı bekleyen her eklenti için
+php artisan optimize:clear             # eski önbellekleri temizle
+php artisan queue:restart              # kuyruk işleyicisi yeni kodu alsın
+php artisan up
 ```
 
-Hostinginizde Terminal yoksa bu adım için destek alın; yeni dosyalar yüklenip `migrate`
-çalıştırılmazsa sistem hata verebilir.
+- `php artisan down` siteyi (paneli de) herkese kapatır; işiniz bitince mutlaka `php artisan up`
+  çalıştırın. Yalnız bayilere / ziyaretçilere kapatmak isterseniz panelden **Bakım modu**'nu
+  kullanabilirsiniz; bkz. [Genel ayarlar › Site Erişimi](/yonetim/genel-ayarlar#site-erisimi).
+- Bu yolla güncellediğinizde kurulu sürüm kaydedilmez; paneldeki uyarı görünmeye devam ederse
+  bir kez `php artisan bayi:update --no-backup` çalıştırın ya da **Güncellemeyi tamamla**'ya basın.
 
 ### Eklentileri güncelleme
 
-Bir eklentinin yeni sürümünü kurduktan sonra eklentinin kurulum adımını yeniden çalıştırın:
+Bir eklentinin yeni sürümünü kurduktan sonra kurulum adımını çalıştırın. En kolayı
+`bayi:update`'tir; kurulum adımı bekleyen bütün eklentileri kendisi bulur:
 
 ```bash
 composer update bsinternet/<eklenti>
-php artisan bayi:install <eklenti>
-npm run build
+php artisan bayi:update --build
 ```
 
+Tek bir eklenti için elle: `php artisan bayi:install <eklenti>` ve ardından `npm run build`.
+
 Bu adım çalıştırılmadıysa **Ayarlar › Eklentiler** ekranında eklentinin yanında
-**Güncelleme tamamlanmadı** uyarısı ve çalıştırılacak komut görünür. Bkz.
-[Eklentiler](/yonetim/moduller).
+**Güncelleme tamamlanmadı** uyarısı ve çalıştırılacak komut görünür; Super Admin ayrıca panelin
+üstünde [Güncellemeyi tamamla](#panel-uyarisi) uyarısını görür. Bkz. [Eklentiler](/yonetim/moduller).
 
 ::: warning Vitrin 0.2.0'a geçiş
 İçerik sayfaları ve İletişim Bilgileri ekranı çekirdekten Vitrin eklentisine taşındı. Vitrin
@@ -133,7 +201,8 @@ npm run build
 ## Güncellemeden sonra kontrol listesi
 
 - Panele giriş yapılabiliyor mu, başlangıç ekranı açılıyor mu?
-- **Ayarlar › Eklentiler** ekranında uyarı var mı?
+- Panelin üstündeki sarı güncelleme uyarısı kalktı mı, **Ayarlar › Eklentiler** ekranında uyarı
+  var mı?
 - Bir test e-postası gidiyor mu (ör. kendi hesabınız için **Şifremi unuttum**)?
 - Sorun varsa `storage/logs` altındaki günlük dosyasına bakın ve
   [sorun giderme](/baslangic/sorun-giderme) sayfasını inceleyin.

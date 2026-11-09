@@ -65,6 +65,10 @@ Her ekranın üstünde:
 - Sağda **Mağazayı aç** (vitrin eklentisi kuruluysa; siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
   yazdığı **kullanıcı menüsü**: **Bilgilerim**, **Bildirimler**, **Oturumu Kapat**.
 
+Yeni sürümün dosyaları yüklenmiş ama güncelleme tamamlanmamışsa (ya da bir eklentinin kurulum
+adımı bekliyorsa) **Super Admin** üst çubuğun altında sarı bir uyarı ve **Güncellemeyi tamamla**
+düğmesi görür. Bkz. [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme#panel-uyarisi).
+
 ### Kenar çubuğu (menü) {#menu}
 
 Menü gruplar halindedir. Her kullanıcı yalnız **görevinin izin verdiği** öğeleri görür.

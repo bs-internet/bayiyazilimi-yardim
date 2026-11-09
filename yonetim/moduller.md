@@ -10,6 +10,8 @@ Ek özellikler **eklentilerle** gelir.
 | **Vitrin** (ücretli) | Herkese açık e-ticaret sitesi: katalog, ana sayfa düzenleyici, müşteri kaydı, kupon. Bkz. [Vitrin eklentisi](/vitrin/) |
 | **PayTR** (ücretsiz) | PayTR ile kartla ödeme, taksit, iade, kartla cari tahsilat. Bkz. [Kartla ödeme](/cari/kartla-odeme) |
 | **iyzico** (ücretsiz) | iyzico ile kartla ödeme, taksit, iade, kartla cari tahsilat |
+| **Paraşüt** | Satışları Paraşüt'e satış faturası olarak aktarır; isteğe bağlı e-Fatura / e-Arşiv. Bkz. [Paraşüt](/muhasebe/parasut) |
+| **BizimHesap** | Satışları BizimHesap'a satış faturası olarak aktarır. Bkz. [BizimHesap](/muhasebe/bizimhesap) |
 
 Mağaza ön yüzünün tasarımını değiştiren **temalar** da eklenti gibi kurulur; bkz. [Temalar](/yonetim/temalar).
 
@@ -89,6 +91,8 @@ Super Admin görür.
 Var olan dosyaların üzerine yazmak için `php artisan bayi:install <eklenti> --force`.
 
 Eklenti güncellemesi: [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme#guncelleme).
+`php artisan bayi:update` kurulum adımı bekleyen bütün eklentiler için `bayi:install`'ı kendisi
+çalıştırır; terminal yoksa Super Admin paneldeki **Güncellemeyi tamamla** düğmesini kullanabilir.
 
 ## Eklentiyi kaldırma {#eklentiyi-kaldirma}
 
