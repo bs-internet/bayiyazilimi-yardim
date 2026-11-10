@@ -73,62 +73,29 @@ Açma / kapatma [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yazılır.
 alınır ("Eklenti listesi yükleniyor…"). Sunucu internete çıkamazsa son alınan liste gösterilir.
 Kurulu olanlar **Kurulu** rozetiyle işaretlidir. **İncele** eklentinin tanıtım sayfasını açar.
 
-## Eklenti kurulumu
+## Eklenti kurulumu {#eklenti-kurulumu}
 
-Edindiğiniz eklenti sunucunuza kurulur. Kurulum sunucuda komut çalıştırmayı (Composer ve ön yüz
-derlemesi) gerektirir. Bu yüzden eklentili kullanım için **en az 2 işlemci, 2 GB RAM ve 20 GB disk
-alanı** olan bir VPS öneririz. Paylaşımlı hostingde hazır kurulum paketindeki **PayTR** ve
-**iyzico** kurulu gelir.
+Edindiğiniz eklenti sunucunuza kurulur. Kurulum sunucuda komut çalıştırmayı gerektirdiği için
+eklentili kullanımda **en az 2 işlemci, 2 GB RAM ve 20 GB disk alanı** olan bir VPS öneririz.
+Paylaşımlı hostingde hazır kurulum paketindeki **PayTR** ve **iyzico** kurulu gelir. Kurulumu
+kendiniz yapacaksanız teknik adımlar [VPS'e kurulum](/baslangic/vps#eklenti) sayfasındadır.
 
-Kurulumu kendiniz yapmak isterseniz (SSH gerekir):
+Kurulan eklentinin yetkileri yetki listesine eklenir ama **hiçbir göreve atanmaz**. O zamana kadar
+eklentinin ekranlarını yalnız Super Admin görür. Çalışanlarınıza açmak için **Ayarlar ›
+Kullanıcılar › Görevler**'de yetkileri ilgili görevlere atayın (bkz.
+[Görevler ve yetkiler](/yonetim/roller-yetkiler#nasil-yapilir)).
 
-**Ücretsiz eklentiler** (PayTR, iyzico) Packagist'te yayımlanır. Doğrudan kurulur:
-
-```bash
-composer require bsinternet/<eklenti>
-php artisan bayi:install <eklenti>
-npm run build
-```
-
-**Ücretli eklentiler** (ör. Vitrin) özel depodadır. Satın aldığınızda size verilen depo erişimiyle,
-önce depo adresini tanıtın, sonra aynı komutları çalıştırın:
-
-```bash
-composer config repositories.<eklenti> vcs https://github.com/bs-internet/bayiyazilimi-<eklenti>
-composer require bsinternet/<eklenti>
-php artisan bayi:install <eklenti>
-npm run build
-```
-
-`bayi:install` eklentinin veritabanı tablolarını oluşturur, gerekli dosyaları yerleştirir ve
-yetkilerini yetki listesine ekler. Yetkiler **hiçbir göreve atanmaz**: eklentinin ekranlarını
-çalışanlarınıza açmak için **Ayarlar › Kullanıcılar › Görevler**'de ilgili görevlere atayın (bkz.
-[Görevler ve yetkiler](/yonetim/roller-yetkiler#nasil-yapilir)). O zamana kadar ekranları yalnız
-Super Admin görür.
-
-Var olan dosyaların üzerine yazmak için `php artisan bayi:install <eklenti> --force`.
-
-Eklenti güncellemesi: [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme#guncelleme).
-`php artisan bayi:update` kurulum adımı bekleyen bütün eklentiler için `bayi:install`'ı kendisi
-çalıştırır. Terminal yoksa Super Admin paneldeki **Güncellemeyi tamamla** düğmesini kullanabilir.
+Eklentiler sistemle birlikte güncellenir: bkz.
+[Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme#guncelleme).
 
 ## Eklentiyi kaldırma {#eklentiyi-kaldirma}
 
-Sıra önemlidir: **önce** `bayi:uninstall`, **sonra** `composer remove`.
+Bir eklentiyi geçici olarak durdurmak için kaldırmanız gerekmez. Eklentiler ekranından
+**kapatmak** yeterlidir, verileri korunur.
 
-```bash
-php artisan bayi:uninstall <eklenti>
-composer remove bsinternet/<eklenti>
-npm run build
-```
-
-- Kaldırma **verileri silmez**. Eklentinin tabloları ve kayıtları korunur. Verileri de silmek için
-  `--purge-data` ekleyin (geri alınamaz. Önce [yedek alın](/baslangic/guncelleme-yedekleme#yedek)).
-- Eklentinin yetkileri görevlere atanmışsa etkilenecek görevler gösterilir ve onay sorulur
-  (`--force` ile sorulmaz).
-- Sizin değiştirdiğiniz eklenti dosyaları silinmez, rapor edilir.
-
-Geçici olarak durdurmak için kaldırmak yerine Eklentiler ekranından **kapatmak** yeterlidir.
+Tümden kaldırmada da eklentinin tabloları ve kayıtları silinmez. Verilerin de silinmesi ayrıca
+istenmelidir ve geri alınamaz, öncesinde [yedek alın](/baslangic/guncelleme-yedekleme#yedek).
+Teknik adımlar: [VPS'e kurulum](/baslangic/vps#eklenti).
 
 ## Yetki
 

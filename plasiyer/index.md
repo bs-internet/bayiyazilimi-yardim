@@ -14,22 +14,11 @@ Plasiyer ekranının kullanımı için bkz. [Plasiyer ekranı](/plasiyer/plasiye
 
 ## Kurulum ve lisans {#kurulum}
 
-Plasiyer özel depodadır. Satın aldığınızda verilen erişimle kurulur
-(bkz. [Eklentiler](/yonetim/moduller)):
-
-```bash
-composer config repositories.plasiyer vcs https://github.com/bs-internet/bayiyazilimi-plasiyer
-composer require bsinternet/plasiyer
-php artisan bayi:install plasiyer
-npm run build
-```
+Plasiyer ücretli bir eklentidir, satın aldığınızda sunucunuza kurulur (bkz.
+[Eklentiler](/yonetim/moduller#eklenti-kurulumu)).
 
 Lisans plasiyer sayısına göredir: **10 plasiyere kadar** ve **sınırsız**. Aynı anda olabilecek aktif
-plasiyer sayısı `.env` dosyasındaki ayarla belirlenir (kurulumda yapılır):
-
-```ini
-PLASIYER_MAX_REPS=10   # 0 = sınırsız
-```
+plasiyer sayısı kurulumda lisansınıza göre ayarlanır.
 
 Sınıra ulaşınca yeni plasiyer eklenemez ya da pasif bir plasiyer aktif yapılamaz. Ekranlarda
 "x / 10 plasiyer" ya da "Sınırsız" görünür.

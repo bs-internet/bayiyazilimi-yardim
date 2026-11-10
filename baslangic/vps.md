@@ -171,8 +171,45 @@ Canlı sunucuda yapılandırma, rota ve görünüm dosyalarını önbelleğe alm
 php artisan optimize
 ```
 
-Bu komutu kullanıyorsanız `.env` değişikliğinden ve her güncellemeden sonra yeniden çalıştırın;
-önbelleği kaldırmak için `php artisan optimize:clear`.
+Bu komutu kullanıyorsanız `.env` değişikliğinden ve her güncellemeden sonra yeniden çalıştırın.
+Önbelleği kaldırmak için `php artisan optimize:clear`.
+
+## 9. Eklenti kurmak ve kaldırmak {#eklenti}
+
+**Ücretsiz eklentiler** (PayTR, iyzico) Packagist'te yayımlanır:
+
+```bash
+composer require bsinternet/<eklenti>
+php artisan bayi:install <eklenti>
+npm run build
+```
+
+**Ücretli eklentiler** ve temalar özel depodadır. Satın aldığınızda verilen depo erişimiyle önce depo
+adresini tanıtın, sonra aynı komutları çalıştırın:
+
+```bash
+composer config repositories.<eklenti> vcs https://github.com/bs-internet/bayiyazilimi-<eklenti>
+composer require bsinternet/<eklenti>
+php artisan bayi:install <eklenti>
+npm run build
+```
+
+`bayi:install` eklentinin tablolarını oluşturur, gerekli dosyaları yerleştirir ve yetkilerini yetki
+listesine ekler. Var olan dosyaların üzerine yazmak için `--force` ekleyin. `php artisan bayi:update`
+kurulum adımı bekleyen bütün eklentiler için `bayi:install`'ı kendisi çalıştırır.
+
+Kaldırırken sıra önemlidir: **önce** `bayi:uninstall`, **sonra** `composer remove`.
+
+```bash
+php artisan bayi:uninstall <eklenti>
+composer remove bsinternet/<eklenti>
+npm run build
+```
+
+- Kaldırma verileri silmez. Verileri de silmek için `--purge-data` ekleyin (geri alınamaz).
+- Eklentinin yetkileri görevlere atanmışsa etkilenecek görevler gösterilir ve onay sorulur
+  (`--force` ile sorulmaz).
+- Sizin değiştirdiğiniz eklenti dosyaları silinmez, rapor edilir.
 
 Sonraki adımlar: [Panel tanıtımı](/baslangic/panel-tanitimi) ·
 [İlk ayarlar](/baslangic/ilk-ayarlar) · [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme).

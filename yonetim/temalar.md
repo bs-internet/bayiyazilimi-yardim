@@ -49,15 +49,8 @@ temanın tanıtım sayfasını (önizleme ve fiyat bilgisi) açar.
 
 ## Tema kurulumu
 
-Tema, kurulumu her eklentiyle aynı olan bir pakettir (SSH gerekir):
-
-```bash
-composer require bsinternet/tema-<ad>
-php artisan bayi:install <anahtar>
-npm run build
-```
-
-Ardından **Ayarlar › Eklentiler › Temalar**'da temayı seçip **Etkinleştir**'e basın. Kaldırma ve
+Tema da bir eklenti gibi sunucunuza kurulur (bkz. [Eklentiler](/yonetim/moduller#eklenti-kurulumu)).
+Kurulduktan sonra **Ayarlar › Eklentiler › Temalar**'da temayı seçip **Etkinleştir**'e basın. Kaldırma ve
 güncelleme de eklentilerle aynıdır: bkz. [Eklentiler › Eklentiyi kaldırma](/yonetim/moduller#eklentiyi-kaldirma).
 
 ## Tema mı, renk ayarı mı?
