@@ -2,7 +2,7 @@
 
 Tema, mağaza ön yüzünün (Vitrin eklentisinin sunduğu sayfaların) görünümünü değiştiren bir
 eklenti paketidir. Kurulumu, açılıp kapatılması ve kaldırılması diğer eklentilerle aynıdır (bkz.
-[Eklenti geliştirme](/gelistirici/modul-gelistirme)); farkı, panelde **Ayarlar › Eklentiler ›
+[Eklenti geliştirme](/gelistirici/modul-gelistirme)). Farkı, panelde **Ayarlar › Eklentiler ›
 Temalar** ekranında listelenmesi ve oradan etkinleştirilmesidir (bkz. [Temalar](/yonetim/temalar)).
 
 Bir tema **yalnız mağaza sayfalarını** (`shop/*`) değiştirebilir. Giriş ekranı, yönetim paneli ve
@@ -36,7 +36,7 @@ bsinternet/tema-modern
 ```
 
 - `"type": "theme"` paketi tema yapar: Eklentiler sayfasında değil Temalar sayfasında görünür.
-- `requires.vitrin` zorunludur; tema mağaza ön yüzünü değiştirdiği için Vitrin eklentisi olmadan
+- `requires.vitrin` zorunludur. Tema mağaza ön yüzünü değiştirdiği için Vitrin eklentisi olmadan
   çalışmaz. Temanın açıklaması, sürümü ve geliştireni Temalar ekranındaki kartta gösterilir.
 
 ## Sağlayıcı
@@ -69,7 +69,7 @@ class ModernServiceProvider extends ServiceProvider
 - Yalnız `shop/*` sayfaları değiştirilebilir.
 - Tema bütün sayfaları vermek zorunda değildir: **vermediği sayfalarda Vitrin'in kendi sayfası**
   kullanılır. Yalnız ana sayfayı ya da ürün sayfasını değiştiren bir tema da geçerlidir.
-- Sayfaya gelen veriler (props) Vitrin'in aynı sayfasınınkiyle aynıdır; aynı controller'lar
+- Sayfaya gelen veriler (props) Vitrin'in aynı sayfasınınkiyle aynıdır. Aynı controller'lar
   çalışır, tema yalnız görünümü değiştirir.
 - Tema sayfaları layout'larını **kendileri** belirler (`Sayfa.layout = …`).
 - Vitrin'in ön yüz yardımcıları `@modules` takma adıyla içe aktarılır
@@ -97,12 +97,12 @@ export default function ModernHome() {
 ModernHome.layout = ShopLayout;
 ```
 
-Vitrin'in layout'u (`shop-layout`) üst bilgi, alt bilgi ve çerez şeridini getirir; tamamen farklı
+Vitrin'in layout'u (`shop-layout`) üst bilgi, alt bilgi ve çerez şeridini getirir. Tamamen farklı
 bir üst / alt bilgi istiyorsanız kendi layout'unuzu yazın.
 
 ## Renkler
 
-Mağaza sayfaları genel `store-*` Tailwind belirteçlerini kullanır; temanız da bunları kullanmalıdır
+Mağaza sayfaları genel `store-*` Tailwind belirteçlerini kullanır. Temanız da bunları kullanmalıdır
 (`bg-store-primary`, `text-store-ink`, `border-store-border` …):
 
 | Belirteç | Kullanım |
@@ -116,7 +116,7 @@ Mağaza sayfaları genel `store-*` Tailwind belirteçlerini kullanır; temanız 
 | `store-border`, `store-soft`, `store-footer` | Kenarlık, açık zemin, alt bilgi zemini |
 
 Belirteçlerin değerleri `.storefront` sarmalayıcısındaki `--store-*` CSS değişkenleridir. Vitrin'in
-**İçerik › Görünüm** ekranındaki renkler bu değişkenleri yazar; böylece `store-*` kullanan bir tema
+**İçerik › Görünüm** ekranındaki renkler bu değişkenleri yazar. Böylece `store-*` kullanan bir tema
 mağaza sahibinin seçtiği renklere kendiliğinden uyar.
 
 Temanın kendi renklerini kullanması için değişkenleri yeniden tanımlayın. Görünüm renkleri

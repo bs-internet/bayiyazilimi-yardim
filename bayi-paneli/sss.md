@@ -12,7 +12,7 @@ isteyin. Bağlantı 60 dakika geçerlidir. Ayrıntı:
 
 ### "Şifremi Belirle" bağlantısının süresi doldu {#hosgeldin}
 
-Giriş ekranından **Şifrenizi mi unuttunuz?** ile yeni bağlantı isteyin; aynı şekilde şifrenizi
+Giriş ekranından **Şifrenizi mi unuttunuz?** ile yeni bağlantı isteyin. Aynı şekilde şifrenizi
 belirlersiniz.
 
 ### "Hesabınız pasif durumda" uyarısı alıyorum {#pasif}
@@ -48,7 +48,7 @@ deneyin.
 
 ### Aradığım ürün çıkmıyor {#urun-yok}
 
-- En az 2 karakter yazın; stok koduyla aramayı deneyin.
+- En az 2 karakter yazın. Stok koduyla aramayı deneyin.
 - Bir aramada en fazla 40 ürün gösterilir. Kategori ya da marka seçerek aramayı daraltın.
 - Ürün satıştan kaldırılmış ya da size gösterilmiyor olabilir. Bizimle iletişime geçin.
 
@@ -56,16 +56,16 @@ deneyin.
 
 Ekranın üstünde çıkan uyarı nedeni söyler:
 
-- **Yalnızca teklif ile satılıyor** — ürünün yanındaki **Teklif listesine** düğmesiyle teklif
+- **Yalnızca teklif ile satılıyor**: ürünün yanındaki **Teklif listesine** düğmesiyle teklif
   isteyin.
-- **Yeterli stok yok** — stok istediğiniz adede yetmiyor; adedi azaltın ya da teklif isteyin.
-- **En fazla N adet sipariş verilebilir** — üründe en fazla sipariş adedi tanımlı.
+- **Yeterli stok yok**: stok istediğiniz adede yetmiyor. Adedi azaltın ya da teklif isteyin.
+- **En fazla N adet sipariş verilebilir**: üründe en fazla sipariş adedi tanımlı.
 
 Ayrıntı: [Adet kuralları](/bayi-paneli/siparis-verme#adet-kurallari).
 
 ### Adet kutusu 1'in altına inmiyor / yazdığım adet değişiyor {#adet}
 
-Üründe en az ya da en fazla sipariş adedi tanımlıdır; yazdığınız adet bu sınırlara çekilir.
+Üründe en az ya da en fazla sipariş adedi tanımlıdır. Yazdığınız adet bu sınırlara çekilir.
 Stok yetmezse adet mevcut stoğa düşürülür.
 
 ### "Bölge deponuzda N" ne demek? {#bolge-deposu}

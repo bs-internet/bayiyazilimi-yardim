@@ -1,6 +1,6 @@
 # Markalar
 
-**Mağaza › Katalog › Markalar** ürünlere atanan markaları yönetir. Marka; ürün listelerinde,
+**Mağaza › Katalog › Markalar** ürünlere atanan markaları yönetir. Marka. Ürün listelerinde,
 süzgeçlerde, kampanya koşullarında ve satış raporlarında kullanılır.
 
 ## Liste
@@ -23,10 +23,10 @@ Satırdaki **İşlemler › Düzenle** ya da **Yeni marka** sağdan açılan for
 | Alan | Açıklama |
 |---|---|
 | **Ad** * | En çok 255 karakter. |
-| **URL (slug)** | Marka sayfasının adresi. Boş bırakılırsa addan üretilir; aynısı varsa sonuna sayı eklenir. |
+| **URL (slug)** | Marka sayfasının adresi. Boş bırakılırsa addan üretilir. Aynısı varsa sonuna sayı eklenir. |
 | **Açıklama** | En çok 5000 karakter. |
 | **Logo dosyası** | Görsel dosyası, en çok 4 MB. |
-| **Mevcut logoyu kaldır** | Logo yüklüyse görünür; işaretleyip kaydederseniz logo silinir. |
+| **Mevcut logoyu kaldır** | Logo yüklüyse görünür. İşaretleyip kaydederseniz logo silinir. |
 
 ### Vitrin
 
@@ -38,7 +38,7 @@ Yeni marka **aktif** olarak oluşur.
 
 ## Kurallar
 
-- **Ürünü olan marka silinemez**; bunun yerine pasifleştirin. Silme düğmesi düzenleme formunun
+- **Ürünü olan marka silinemez**. Bunun yerine pasifleştirin. Silme düğmesi düzenleme formunun
   altındadır ve onay sorar.
 - Excel aktarımında **Marka** sütununa yazılan ad sistemde yoksa marka otomatik oluşturulur
   (büyük / küçük harf farkı aynı marka sayılır). Bkz. [Excel](/satis/excel#sutunlar).

@@ -15,7 +15,7 @@ kendi alanına yönlendirilir: yöneticiler **yönetim paneline**, bayiler **bay
 | Şifre | Hesabın şifresi |
 | Beni hatırla | İşaretlerseniz tarayıcıyı kapatıp açtığınızda yeniden şifre sorulmaz. Ortak bilgisayarlarda işaretlemeyin |
 
-- Aynı e-posta ve IP adresinden **dakikada en çok 5** giriş denemesi yapılabilir; aşılırsa bir
+- Aynı e-posta ve IP adresinden **dakikada en çok 5** giriş denemesi yapılabilir. Aşılırsa bir
   dakika beklemeniz istenir.
 - **Pasif** hesaplar giriş yapamaz ("Hesabınız pasif durumda" uyarısı). **Kısıtlı** hesaplar
   girer ama hiçbir kayıt ekleyemez / değiştiremez. Bkz. [Kullanıcılar](/yonetim/kullanicilar#durumlar).
@@ -25,7 +25,7 @@ kendi alanına yönlendirilir: yöneticiler **yönetim paneline**, bayiler **bay
 - Yeni bir cihazdan ya da tarayıcıdan giriş yapıldığında hesabın sahibine **"Farklı bir cihazdan
   oturum açıldı"** e-postası gider.
 
-Bayi Yazılımı'nın çekirdeğinde ziyaretçiler kendileri **kayıt olamaz**; bayi hesaplarını siz
+Bayi Yazılımı'nın çekirdeğinde ziyaretçiler kendileri **kayıt olamaz**. Bayi hesaplarını siz
 açarsınız (bkz. [Müşteriler ve bayiler](/musteriler/)). Herkese açık kayıt yalnız Vitrin eklentisiyle
 gelir.
 
@@ -39,7 +39,7 @@ gelir.
 Şifre değişince size "Şifreniz değiştirildi" e-postası gelir. Aynı e-posta için dakikada en çok
 3 sıfırlama bağlantısı istenebilir.
 
-**Şifre kuralları:** en az 12 karakter; büyük ve küçük harf, rakam ve sembol içermeli; daha önce
+**Şifre kuralları:** en az 12 karakter. Büyük ve küçük harf, rakam ve sembol içermeli. Daha önce
 internete sızmış şifre listelerinde bulunmamalı.
 
 ### İki adımlı doğrulama ekranı {#iki-adimli-giris}
@@ -47,7 +47,7 @@ internete sızmış şifre listelerinde bulunmamalı.
 Hesabında iki adımlı doğrulama açık olan kullanıcı, şifresinden sonra **İki adımlı doğrulama**
 ekranını görür:
 
-- **Kimlik doğrulama kodu** — telefonunuzdaki doğrulama uygulamasında (Google Authenticator,
+- **Kimlik doğrulama kodu**: telefonunuzdaki doğrulama uygulamasında (Google Authenticator,
   Microsoft Authenticator, 1Password vb.) görünen 6 haneli kodu girip **Devam et**'e basın.
 - Telefonunuza ulaşamıyorsanız **kurtarma kodu ile giriş yapın** bağlantısına tıklayın ve
   kurtarma kodlarınızdan birini girin. Her kurtarma kodu **bir kez** kullanılabilir.
@@ -62,7 +62,7 @@ Her ekranın üstünde:
 
 - Solda **menü düğmesi** (kenar çubuğunu daraltır / açar) ve bulunduğunuz yerin yolu
   (ör. Tanımlamalar › Para Birimleri).
-- Sağda **Mağazayı aç** (vitrin eklentisi kuruluysa; siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
+- Sağda **Mağazayı aç** (vitrin eklentisi kuruluysa. Siteyi yeni sekmede açar), **Bildirimler** (zil simgesi) ve adınızın
   yazdığı **kullanıcı menüsü**: **Bilgilerim**, **Bildirimler**, **Oturumu Kapat**.
 
 Yeni sürümün dosyaları yüklenmiş ama güncelleme tamamlanmamışsa (ya da bir eklentinin kurulum
@@ -85,19 +85,19 @@ Menü gruplar halindedir. Her kullanıcı yalnız **görevinin izin verdiği** �
   **Bayiler** menüsünün adı **Müşteriler** olur (bayiler ve vitrin müşterileri birlikte) ve
   **İçerik** grubu (Ana Sayfa, Menüler, Görünüm, Slider, Sayfalar) eklenir.
 - **Genel Ayarlar**, **Kullanıcılar**, **Tanımlamalar**, **Ödemeler**, **Kampanyalar** ve
-  **Raporlar** tıklanınca bir bölüm sayfası açar; bölümün alt ekranları sayfanın içindeki
+  **Raporlar** tıklanınca bir bölüm sayfası açar. Bölümün alt ekranları sayfanın içindeki
   menüdedir. Bu yardımda yollar bu iç menüyle birlikte yazılır, ör. **Ayarlar › Tanımlamalar ›
   Vergi Oranları**.
-- Kenar çubuğu daraltıldığında yalnız simgeler kalır; alt menüler simgenin üzerine gelince açılır
+- Kenar çubuğu daraltıldığında yalnız simgeler kalır. Alt menüler simgenin üzerine gelince açılır
   menü olarak görünür.
 
 ## Başlangıç ekranı {#baslangic}
 
-**Platform › Başlangıç** — "Mağazanızın son 30 günlük özeti." Kartların her biri yalnız ilgili
-yetkiye sahip kullanıcıya gösterilir; hiçbirine yetkiniz yoksa "Panelde görüntüleyebileceğiniz
+**Platform › Başlangıç**: "Mağazanızın son 30 günlük özeti." Kartların her biri yalnız ilgili
+yetkiye sahip kullanıcıya gösterilir. Hiçbirine yetkiniz yoksa "Panelde görüntüleyebileceğiniz
 bir özet yok" yazar.
 
-Tutarlar sistemin **ana para birimiyle** gösterilir; başka para birimindeki siparişler sipariş
+Tutarlar sistemin **ana para birimiyle** gösterilir. Başka para birimindeki siparişler sipariş
 anındaki kurla çevrilir. **İptal edilen**, **başarısız** ve **ödemesi iade edilen** siparişler
 ciroya katılmaz.
 
@@ -108,20 +108,20 @@ ciroya katılmaz.
 | **Ciro** | Son 30 günün toplam sipariş tutarı | Siparişleri listele |
 | **Siparişler** | Son 30 günün sipariş sayısı | Siparişleri listele |
 | **Ortalama sipariş** | Sipariş başına tutar (ciro ÷ sipariş sayısı) | Siparişleri listele |
-| **Yeni üye** | Son 30 günde açılan üye hesabı; altında "*y* bayi" (vitrin kuruluysa "*x* müşteri · *y* bayi") kırılımı | Müşterileri listeleme |
+| **Yeni üye** | Son 30 günde açılan üye hesabı. Altında "*y* bayi" (vitrin kuruluysa "*x* müşteri · *y* bayi") kırılımı | Müşterileri listeleme |
 
 Her kartta **önceki 30 güne göre değişim** yüzdesi gösterilir.
 
 ### Grafikler
 
-- **Gelir** — son 30 günün günlük cirosu ve dönem toplamı; grafiğin üzerine gelince o günün
+- **Gelir**: son 30 günün günlük cirosu ve dönem toplamı. Grafiğin üzerine gelince o günün
   cirosu ve sipariş sayısı görünür.
-- **Sipariş durumları** — son 30 günde oluşan siparişlerin durumlara göre dağılımı (iptal
+- **Sipariş durumları**: son 30 günde oluşan siparişlerin durumlara göre dağılımı (iptal
   edilenler dahil).
 
 ### Bekleyen işler
 
-İlgilenilmesi gereken kayıtların sayısı; her satır ilgili listeye götürür:
+İlgilenilmesi gereken kayıtların sayısı. Her satır ilgili listeye götürür:
 
 | Satır | Neyi sayar |
 |---|---|
@@ -132,10 +132,10 @@ Her kartta **önceki 30 güne göre değişim** yüzdesi gösterilir.
 
 ### Listeler
 
-- **Son siparişler** — en son oluşturulan 8 sipariş: numara, müşteri, tarih, durum ve tutar
+- **Son siparişler**: en son oluşturulan 8 sipariş: numara, müşteri, tarih, durum ve tutar
   (siparişin kendi para birimiyle). **Tümü** sipariş listesini açar.
-- **En çok satanlar** — son 30 günde satılan **adede** göre ilk 5 ürün, adet ve ciro.
-- **Son hareketler** — sistemdeki son 8 etkinlik kaydı (kim, ne yaptı). Yalnız Etkinlik
+- **En çok satanlar**: son 30 günde satılan **adede** göre ilk 5 ürün, adet ve ciro.
+- **Son hareketler**: sistemdeki son 8 etkinlik kaydı (kim, ne yaptı). Yalnız Etkinlik
   Kayıtları yetkisi olanlar görür; **Tümü** etkinlik kayıtları ekranını açar. Bkz.
   [Etkinlik kayıtları](/yonetim/etkinlik-kayitlari).
 
@@ -168,13 +168,13 @@ açıldı, yeni cihazdan giriş). Okunmamış bildirimler **Yeni** etiketiyle g�
 **Okundu olarak işaretle** ile işaretlersiniz. Hangi olayların bildirim oluşturduğu:
 [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
 
-Bildirimler için ayrı bir tercih ekranı yoktur; panel içi bildirimler kapatılamaz.
+Bildirimler için ayrı bir tercih ekranı yoktur. Panel içi bildirimler kapatılamaz.
 
 ### Oturum Kayıtları {#oturumlar}
 
 Hesabınızın açık olduğu cihazlar: tarayıcı / cihaz, IP adresi, giriş zamanı ve son hareket.
 Kullandığınız cihaz **Bu cihaz** olarak işaretlidir ve buradan kapatılamaz. Tanımadığınız bir
-cihazı **Oturumu kapat** ile sonlandırın; ardından şifrenizi değiştirmeniz önerilir.
+cihazı **Oturumu kapat** ile sonlandırın. Ardından şifrenizi değiştirmeniz önerilir.
 
 ### Güvenlik
 
@@ -204,12 +204,12 @@ kez doğruladıktan sonra 3 saat boyunca tekrar sorulmaz.
    kurulum anahtarını uygulamaya yazın. **Devam et**'e basın.
 4. Uygulamanın gösterdiği **6 haneli kodu** girip **Doğrula**'ya basın.
 
-Kod doğrulanmadan iki adımlı doğrulama devreye girmez; pencereyi kapatırsanız aynı ekranda
+Kod doğrulanmadan iki adımlı doğrulama devreye girmez. Pencereyi kapatırsanız aynı ekranda
 **Kuruluma devam et** düğmesi görünür.
 
 **Kurtarma kodları:** iki adımlı doğrulama açıldıktan sonra **2FA kurtarma kodları** bölümü
 görünür. **Kurtarma kodlarını göster** ile kodları açın ve güvenli bir yerde (ör. parola
-yöneticisi) saklayın. Telefonunuzu kaybederseniz girişte bu kodlardan birini kullanırsınız; her
+yöneticisi) saklayın. Telefonunuzu kaybederseniz girişte bu kodlardan birini kullanırsınız. Her
 kod bir kez kullanılır. **Kodları yenile** eski kodları geçersiz kılar ve yenilerini üretir.
 
 **Kapatmak için:** **2FA kapat**'a basıp onaylayın.
@@ -218,7 +218,7 @@ Açma ve kapatma işlemleri hesabınıza panel içi bildirim olarak düşer.
 
 ::: warning Telefonunuzu ve kurtarma kodlarınızı kaybettiyseniz
 Yetkili başka bir yönetici **Ayarlar › Kullanıcılar** › kullanıcı detayı › **Kullanıcı
-işlemleri › İki Adımlı Doğrulamayı Sıfırla** ile doğrulamanızı sıfırlayabilir; ardından
+işlemleri › İki Adımlı Doğrulamayı Sıfırla** ile doğrulamanızı sıfırlayabilir. Ardından
 yalnız şifrenizle girip yeniden kurarsınız. Bkz.
 [Kullanıcılar › Kullanıcı işlemleri](/yonetim/kullanicilar#kullanici-islemleri). Kendi
 doğrulamanızı bu menüden sıfırlayamazsınız; Super Admin hesabının doğrulamasını yalnız başka bir

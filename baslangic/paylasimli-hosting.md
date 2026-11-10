@@ -15,17 +15,17 @@ panellerde menü adları farklıdır ama adımlar aynıdır.
 ::: tip Önerilen sunucu
 Paylaşımlı hostingde temel sistem ve ödeme eklentileri çalışır. Sistemi daha verimli kullanmak
 ve eklentileri rahatça kurup güncellemek için **en az 2 işlemci, 2 GB RAM ve 20 GB disk alanı**
-olan bir VPS öneririz; bkz. [VPS'e kurulum](/baslangic/vps).
+olan bir VPS öneririz. Bkz. [VPS'e kurulum](/baslangic/vps).
 :::
 
 ## 1. Kurulum paketini indirin
 
 Sunucuya yükleyeceğiniz paketin içinde PHP kütüphaneleri (`vendor`) ve derlenmiş ön yüz
-dosyaları (`public/build`) **hazır** olmalıdır; paylaşımlı hostingde bunları oluşturamazsınız.
+dosyaları (`public/build`) **hazır** olmalıdır. Paylaşımlı hostingde bunları oluşturamazsınız.
 
 Hazır paket her sürümde [GitHub › Sürümler](https://github.com/bs-internet/bayiyazilimi/releases)
 sayfasında `bayiyazilimi-<sürüm>.zip` adıyla yayımlanır. İçinde ücretsiz ödeme eklentileri
-**PayTR** ve **iyzico** da hazır gelir; kurulum sihirbazı onları da kurar. Kullanmadığınızı
+**PayTR** ve **iyzico** da hazır gelir. Kurulum sihirbazı onları da kurar. Kullanmadığınızı
 **Ayarlar › Eklentiler**'den kapatabilirsiniz.
 
 Paketi kendiniz hazırlamak isterseniz kendi bilgisayarınızda (PHP 8.4, Composer ve Node.js 20+ kurulu):
@@ -65,7 +65,7 @@ adımında kırmızıyla gösterilir.
 2. Zip dosyasını bu klasöre yükleyin ve **Extract** ile açın. Klasörün içinde `app`, `public`,
    `vendor`, `artisan` gibi dosya ve klasörler görünmelidir.
 3. `storage` ve `bootstrap/cache` klasörlerinin yazılabilir olduğundan emin olun (izin genellikle
-   `755` yeterlidir; sihirbaz yazamıyorsa hosting firmanıza danışın).
+   `755` yeterlidir. Sihirbaz yazamıyorsa hosting firmanıza danışın).
 
 ::: warning Gizli dosyalar
 `.env` ve `.htaccess` nokta ile başlayan dosyalardır. File Manager'da görmek için **Settings ›
@@ -80,7 +80,7 @@ Show Hidden Files** seçeneğini açın. `public/.htaccess` dosyası yüklenmezs
 3. Kaydedin.
 
 Ana alan adınızın kök klasörü değiştirilemiyorsa sistemi bir alt alan adına (ör.
-`bayi.firmaniz.com`) kurun; alt alan adı oluştururken kök klasörü doğrudan
+`bayi.firmaniz.com`) kurun. Alt alan adı oluştururken kök klasörü doğrudan
 `bayiyazilimi/public` olarak verebilirsiniz.
 
 SSL sertifikasının (https) alan adı için etkin olduğundan emin olun (**cPanel › SSL/TLS Status**
@@ -106,7 +106,7 @@ cd /home/hesabim/bayiyazilimi && /usr/local/bin/php artisan schedule:run >> /dev
 3. **Add New Cron Job** ile kaydedin.
 
 PHP'nin yolu hostinge göre değişir (`/usr/local/bin/php`, `/opt/cpanel/ea-php84/root/usr/bin/php`
-gibi). Cron'da kullanılan PHP'nin de **8.4** olması gerekir; doğru yolu hosting firmanızdan
+gibi). Cron'da kullanılan PHP'nin de **8.4** olması gerekir. Doğru yolu hosting firmanızdan
 öğrenebilirsiniz.
 
 ## 8. E-posta ayarları {#e-posta}

@@ -5,7 +5,7 @@ Sistem iki kanaldan bildirim gönderir:
 | Kanal | Nerede görünür |
 |---|---|
 | **E-posta** | Alıcının e-posta kutusu |
-| **Panel içi bildirim** | Yöneticiler için panelde zil simgesi › **Bildirimler**; bayiler için bayi panelindeki bildirimler |
+| **Panel içi bildirim** | Yöneticiler için panelde zil simgesi › **Bildirimler**. Bayiler için bayi panelindeki bildirimler |
 
 Bu sayfa çekirdekte (eklentisiz) gönderilen tüm bildirimleri listeler. Kurulu eklentiler (Vitrin,
 ödeme eklentileri) kendi bildirimlerini ekleyebilir.
@@ -35,24 +35,24 @@ bekler. Bkz. [Kurulum › E-posta ve kuyruk](/baslangic/kurulum#e-posta) ve
 
 | Olay | Alıcı | Kanal | E-posta konusu |
 |---|---|---|---|
-| Sipariş verildi (sepetten ya da tekliften) | Müşteri (siparişteki e-posta) | E-posta | *Firma* — Siparişiniz alındı (*no*) |
+| Sipariş verildi (sepetten ya da tekliften) | Müşteri (siparişteki e-posta) | E-posta | *Firma*: Siparişiniz alındı (*no*) |
 | Sipariş verildi (kartla ödeme hariç) | Bildirim e-postası | E-posta | Yeni sipariş: *no* |
-| Sipariş durumu değişti | Müşteri | E-posta | *Firma* — Sipariş durumu: *durum* (*no*). Durum değiştirilirken "müşteriye bildir" seçildiyse girilen not da e-postada yer alır |
+| Sipariş durumu değişti | Müşteri | E-posta | *Firma*: Sipariş durumu: *durum* (*no*). Durum değiştirilirken "müşteriye bildir" seçildiyse girilen not da e-postada yer alır |
 | Sipariş ödendi (havale onayı, yönetici onayı ya da kart ödemesi) | Müşteri | E-posta | Sipariş durumu e-postası, "Ödemeniz alındı, siparişiniz hazırlanıyor." notuyla |
-| Kart ödemesi sağlayıcıdan onaylandı | Bildirim e-postası | E-posta | Yeni sipariş: *no*. Kart siparişi size yalnız bu anda, bir kez bildirilir; ödemesi tamamlanmayan kart siparişi için e-posta gitmez |
-| Teklif talebi geldi | Müşteri | E-posta | *Firma* — Teklif talebiniz alındı (*no*) |
+| Kart ödemesi sağlayıcıdan onaylandı | Bildirim e-postası | E-posta | Yeni sipariş: *no*. Kart siparişi size yalnız bu anda, bir kez bildirilir. Ödemesi tamamlanmayan kart siparişi için e-posta gitmez |
+| Teklif talebi geldi | Müşteri | E-posta | *Firma*: Teklif talebiniz alındı (*no*) |
 | Teklif talebi geldi | Bildirim e-postası | E-posta | Yeni teklif talebi: *no* |
-| Teklif müşteriye gönderildi | Müşteri | E-posta | *Firma* — Teklifiniz hazır (*no*) |
-| Teklif yönetici tarafından iptal edildi | Müşteri | E-posta | *Firma* — Teklifiniz iptal edildi (*no*) |
+| Teklif müşteriye gönderildi | Müşteri | E-posta | *Firma*: Teklifiniz hazır (*no*) |
+| Teklif yönetici tarafından iptal edildi | Müşteri | E-posta | *Firma*: Teklifiniz iptal edildi (*no*) |
 | Müşteri teklifi onayladı / revize istedi / reddetti / geri çekti | Bildirim e-postası | E-posta | Teklif *no*: *durum* |
 | Müşteri teklifi onayladı / revize istedi / reddetti / geri çekti | Müşteri (onay olarak) | E-posta | Teklif onayınız alındı · Revize isteğiniz alındı · Teklifi reddettiniz · Teklif talebiniz geri çekildi |
-| İade talebi geldi | Müşteri (siparişin e-postası) | E-posta | *Firma* — İade talebiniz alındı (*no*) |
+| İade talebi geldi | Müşteri (siparişin e-postası) | E-posta | *Firma*: İade talebiniz alındı (*no*) |
 | İade talebi geldi | Bildirim e-postası | E-posta | Yeni iade talebi: *no* |
-| İade talebinin durumu değişti | Müşteri | E-posta | *Firma* — İade talebiniz: *durum* (*no*) |
+| İade talebinin durumu değişti | Müşteri | E-posta | *Firma*: İade talebiniz: *durum* (*no*) |
 | Havale bildirimi geldi | Bildirim e-postası | E-posta | Yeni havale bildirimi: *tutar* |
 | Havale bildirimi onaylandı / reddedildi | Bildirimi yapan bayi | E-posta + panel içi | Havale bildiriminiz onaylandı / reddedildi |
 
-Teklif siparişe dönüştüğünde ayrıca teklif e-postası gitmez; sipariş e-postaları gider.
+Teklif siparişe dönüştüğünde ayrıca teklif e-postası gitmez. Sipariş e-postaları gider.
 
 ## Stok {#stok}
 
@@ -61,7 +61,7 @@ Teklif siparişe dönüştüğünde ayrıca teklif e-postası gitmez; sipariş e
 | Ürünün stoğu kritik eşiğe indi | Stok durumunu görme yetkisi olan aktif panel kullanıcıları | E-posta + panel içi | Kritik stok: *stok kodu* |
 | Ürünün stoğu tükendi (0 ya da altı) | Aynı | E-posta + panel içi | Stok tükendi: *stok kodu* |
 
-Bildirim, stok eşiğin altına **inerken bir kez** gönderilir; stok yeniden eşiğin üstüne çıkıp
+Bildirim, stok eşiğin altına **inerken bir kez** gönderilir. Stok yeniden eşiğin üstüne çıkıp
 tekrar inerse yeniden gönderilir. Stok takibi yapılmayan ve pasif ürünler için gönderilmez.
 Eşik ve aç / kapat: **Stok Ayarları** (bkz. [Stok](/stok/)).
 
@@ -71,10 +71,10 @@ Yöneticinin **Ayarlar › Kullanıcılar** ekranında yaptığı işlemler:
 
 | Olay | Alıcı | Kanal | E-posta konusu |
 |---|---|---|---|
-| Yeni kullanıcı oluşturuldu | Yeni kullanıcı | E-posta + panel içi | *Firma* — Panel Hesabınız Oluşturuldu (şifre belirleme bağlantısı, 60 dakika geçerli) |
-| E-posta değişikliği istendi | Kullanıcının **yeni** adresi | E-posta + panel içi | *Firma* — E-posta Değişikliği Onayı (bağlantı 24 saat geçerli) |
-| E-posta yönetici tarafından onaylandı | Kullanıcı | E-posta + panel içi | *Firma* — E-posta Adresiniz Onaylandı |
-| Durum değişti (aktif / pasif) | Kullanıcı | E-posta + panel içi | *Firma* — Hesap Durumunuz Güncellendi |
+| Yeni kullanıcı oluşturuldu | Yeni kullanıcı | E-posta + panel içi | *Firma*: Panel Hesabınız Oluşturuldu (şifre belirleme bağlantısı, 60 dakika geçerli) |
+| E-posta değişikliği istendi | Kullanıcının **yeni** adresi | E-posta + panel içi | *Firma*: E-posta Değişikliği Onayı (bağlantı 24 saat geçerli) |
+| E-posta yönetici tarafından onaylandı | Kullanıcı | E-posta + panel içi | *Firma*: E-posta Adresiniz Onaylandı |
+| Durum değişti (aktif / pasif) | Kullanıcı | E-posta + panel içi | *Firma*: Hesap Durumunuz Güncellendi |
 
 Görev değişikliğinde e-posta gönderilmez.
 
@@ -85,10 +85,10 @@ Yöneticinin **Bayiler** (vitrin kuruluysa **Müşteriler**) ekranında bayi / m
 
 | Olay | Alıcı | Kanal | E-posta konusu |
 |---|---|---|---|
-| Yeni bayi hesabı açıldı | Bayi | E-posta + panel içi | *Firma* — Üyeliğiniz Oluşturuldu (şifre belirleme bağlantısı, 60 dakika geçerli) |
-| E-posta değişikliği istendi | Üyenin yeni adresi | E-posta + panel içi | *Firma* — E-posta Değişikliği Onayı (24 saat geçerli) |
-| E-posta yönetici tarafından onaylandı | Üye | E-posta + panel içi | *Firma* — E-posta Adresiniz Onaylandı |
-| Üyelik durumu değişti | Üye | E-posta + panel içi | *Firma* — Üyelik Durumunuz Güncellendi |
+| Yeni bayi hesabı açıldı | Bayi | E-posta + panel içi | *Firma*: Üyeliğiniz Oluşturuldu (şifre belirleme bağlantısı, 60 dakika geçerli) |
+| E-posta değişikliği istendi | Üyenin yeni adresi | E-posta + panel içi | *Firma*: E-posta Değişikliği Onayı (24 saat geçerli) |
+| E-posta yönetici tarafından onaylandı | Üye | E-posta + panel içi | *Firma*: E-posta Adresiniz Onaylandı |
+| Üyelik durumu değişti | Üye | E-posta + panel içi | *Firma*: Üyelik Durumunuz Güncellendi |
 
 ## Giriş ve hesap güvenliği (herkes) {#guvenlik}
 
@@ -96,9 +96,9 @@ Yöneticiler ve üyeler için aynıdır:
 
 | Olay | Alıcı | Kanal | E-posta konusu |
 |---|---|---|---|
-| Şifremi unuttum | Hesap sahibi | E-posta + panel içi | *Firma* — Şifre Sıfırlama Bağlantınız (60 dakika geçerli) |
-| Şifre sıfırlandı | Hesap sahibi | E-posta + panel içi | *Firma* — Şifreniz Değiştirildi |
-| E-posta doğrulaması gerekiyor (kendi e-postasını değiştirdi ya da doğrulama e-postasını yeniden istedi) | Hesap sahibi | E-posta + panel içi | *Firma* — E-posta Adresinizi Doğrulayın |
+| Şifremi unuttum | Hesap sahibi | E-posta + panel içi | *Firma*: Şifre Sıfırlama Bağlantınız (60 dakika geçerli) |
+| Şifre sıfırlandı | Hesap sahibi | E-posta + panel içi | *Firma*: Şifreniz Değiştirildi |
+| E-posta doğrulaması gerekiyor (kendi e-postasını değiştirdi ya da doğrulama e-postasını yeniden istedi) | Hesap sahibi | E-posta + panel içi | *Firma*: E-posta Adresinizi Doğrulayın |
 | Yeni bir cihaz / tarayıcıdan giriş yapıldı | Hesap sahibi | E-posta + panel içi | *Firma* - Farklı Bir Cihazdan Oturum Açıldı |
 | Profil bilgileri güncellendi | Hesap sahibi | Yalnız panel içi | — |
 | Şifre (hesap ekranından) değiştirildi | Hesap sahibi | Yalnız panel içi | — |

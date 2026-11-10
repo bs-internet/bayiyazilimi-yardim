@@ -57,8 +57,8 @@ En az bir ürün için adet girmeniz gerekir. Süre dolduysa ya da sipariş hen�
 
 ## Talep detayı {#detay}
 
-- **İade edilen ürünler** — ürün ve adetler.
-- **Talep** kutusu — **Neden**, **Sipariş** ve iade tamamlandıysa **İade tutarı**.
+- **İade edilen ürünler**: ürün ve adetler.
+- **Talep** kutusu: **Neden**, **Sipariş** ve iade tamamlandıysa **İade tutarı**.
 - **Açıklamanız** ve varsa **Mağaza notu**.
 - Talebiniz onaylandıysa **Talebiniz onaylandı** kutusu: ürünleri orijinal ambalajı ve
   faturasıyla birlikte göndereceğiniz adres burada yazar.
@@ -69,7 +69,7 @@ En az bir ürün için adet girmeniz gerekir. Süre dolduysa ya da sipariş hen�
 |---|---|---|
 | **Beklemede** | Talebiniz inceleniyor | Bekleyin |
 | **Onaylandı** | Talebiniz kabul edildi | Ürünleri detayda yazan adrese gönderin |
-| **Reddedildi** | Talebiniz kabul edilmedi; varsa nedeni mağaza notunda | — |
+| **Reddedildi** | Talebiniz kabul edilmedi. Varsa nedeni mağaza notunda | — |
 | **Ürün Teslim Alındı** | Gönderdiğiniz ürünler bize ulaştı | Bekleyin |
 | **İade Tamamlandı** | İade tutarı ödendi / carinize işlendi | — |
 

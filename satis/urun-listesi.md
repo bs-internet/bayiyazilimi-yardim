@@ -23,7 +23,7 @@ Liste en son güncellenen ürün üstte olacak şekilde sıralanır, sayfa baş�
 | **Stok** | *Stokta var* (stok 0'dan büyük) / *Stokta yok* (0 ya da eksi) |
 | **Kimler görsün** | Yalnız Vitrin eklentisi kuruluysa: *Vitrin* / *Bayi* |
 
-Kategori süzgeci yalnız o kategoriye doğrudan bağlı ürünleri getirir; alt kategorilerdeki
+Kategori süzgeci yalnız o kategoriye doğrudan bağlı ürünleri getirir. Alt kategorilerdeki
 ürünler için alt kategoriyi seçin.
 
 ## Sütunlar
@@ -34,9 +34,9 @@ Kategori süzgeci yalnız o kategoriye doğrudan bağlı ürünleri getirir; alt
 | **Kategori** | Kategori adı, altında marka |
 | **Stok** | *Stokta N*, *Tükendi* ya da stok takibi kapalıysa *Takipsiz* |
 | **Fiyat** | Ürünün kendi para biriminde KDV hariç fiyat, altında "+ KDV %…" |
-| **Satış** | *Sepet* ya da *Teklif*; vitrin kuruluysa yalnız bayilere açık ürünlerde *Bayi* rozeti |
+| **Satış** | *Sepet* ya da *Teklif*. Vitrin kuruluysa yalnız bayilere açık ürünlerde *Bayi* rozeti |
 | **Aktif** | Anahtar: tıklayınca ürün aktif / pasif olur |
-| **İşlem** | **Düzenle**; vitrin kuruluysa ve ürün herkese açıksa **Sitede gör** |
+| **İşlem** | **Düzenle**. Vitrin kuruluysa ve ürün herkese açıksa **Sitede gör** |
 
 ## Nasıl yapılır?
 

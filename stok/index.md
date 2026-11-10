@@ -4,7 +4,7 @@ Stok menüsü **Mağaza › Stok** altındadır:
 
 | Menü | Ne işe yarar |
 |---|---|
-| **Stok Durumu** | Ürünlerin depo depo miktarı; giriş, çıkış, sayım, transfer, lokasyon değişimi. Bkz. [Stok işlemleri](/stok/stok-islemleri) |
+| **Stok Durumu** | Ürünlerin depo depo miktarı. Giriş, çıkış, sayım, transfer, lokasyon değişimi. Bkz. [Stok işlemleri](/stok/stok-islemleri) |
 | **Toplama Listesi** | Siparişleri raftan toplamak için yazdırılabilir liste. Bkz. [Toplama listesi](/stok/toplama-listesi) |
 | **Mal Kabul** | Tedarikçi irsaliyesi / faturasıyla stok girişi. Bkz. [Mal kabul](/stok/mal-kabul) |
 | **Sayım** | Depo ya da raf sayım oturumları. Bkz. [Sayım](/stok/sayim) |
@@ -16,7 +16,7 @@ Stok menüsü **Mağaza › Stok** altındadır:
 Gündelik işlerin adım adım anlatımı için [Depo iş akışları](/stok/is-akislari) sayfasına bakın.
 
 ::: info Maliyet tutulmaz
-Sistem stok miktarını ve hareketlerini izler; alış fiyatı, maliyet ve muhasebe kaydı tutmaz.
+Sistem stok miktarını ve hareketlerini izler. Alış fiyatı, maliyet ve muhasebe kaydı tutmaz.
 Bunlar muhasebe programınızın (ERP) işidir.
 :::
 
@@ -24,9 +24,9 @@ Bunlar muhasebe programınızın (ERP) işidir.
 
 Stok üç katmanda tutulur:
 
-1. **Lokasyon** — ürünün bir rafta (ve lot takipliyse belirli bir lotta) kaç adet olduğu.
-2. **Depo toplamı** — ürünün o depodaki tüm lokasyonlarının toplamı.
-3. **Satılabilir stok** — **aktif** ve **satılabilir** depoların toplamı; lot / seri no takibi
+1. **Lokasyon**: ürünün bir rafta (ve lot takipliyse belirli bir lotta) kaç adet olduğu.
+2. **Depo toplamı**: ürünün o depodaki tüm lokasyonlarının toplamı.
+3. **Satılabilir stok**: **aktif** ve **satılabilir** depoların toplamı. Lot / seri no takibi
    açıksa son kullanma tarihi geçmiş lotlar bu toplama sayılmaz. Sitede, bayi panelinde ve
    sepette görünen stok budur.
 
@@ -57,17 +57,17 @@ durumu** (Stok Durumu ekranını bu depoya süzülmüş açar).
 | Alan | Açıklama |
 |---|---|
 | Kod | Zorunlu, en fazla 32 karakter. Her depoda farklı olmalıdır. Stok Durumu'nda sütun başlığı olarak görünür |
-| Sıra | 0 ya da daha büyük tam sayı; boş bırakılırsa 0. Listelerde ve sipariş düşümünde depoların sırası |
+| Sıra | 0 ya da daha büyük tam sayı. Boş bırakılırsa 0. Listelerde ve sipariş düşümünde depoların sırası |
 | Ad | Zorunlu, en fazla 255 karakter |
 | Adres | İsteğe bağlı, en fazla 1000 karakter |
 | Telefon | İsteğe bağlı, en fazla 32 karakter |
 | Durum | **Aktif** (varsayılan) ya da **Pasif** |
 | Satılabilir depo | Varsayılan olarak işaretli. İşaretliyse deponun stoğu satılabilir stoğa dahil edilir ve siparişler buradan düşebilir |
 
-### Nasıl yapılır? — Yeni depo eklemek
+### Nasıl yapılır? Yeni depo eklemek
 
 1. **Mağaza › Stok › Depolar** ekranında **Yeni depo**'ya basın.
-2. Kod ve adı yazın; gerekiyorsa sıra, adres ve telefonu girin.
+2. Kod ve adı yazın. Gerekiyorsa sıra, adres ve telefonu girin.
 3. Depo satışa açık olmayacaksa (hurda, karantina, iade deposu gibi) **Satılabilir depo**
    işaretini kaldırın.
 4. **Kaydet**. Depo için **Atanmamış** lokasyonu kendiliğinden açılır.
@@ -76,7 +76,7 @@ durumu** (Stok Durumu ekranını bu depoya süzülmüş açar).
 
 - Sistemdeki **ilk depo kendiliğinden varsayılan** olur. Kurulumda **Merkez Depo** (kod `DEPO`)
   oluşturulur ve varsayılan olarak işaretlenir.
-- Varsayılan depo **yalnız** [Stok Ayarları](/stok/stok-ayarlari) ekranından değiştirilir; depo
+- Varsayılan depo **yalnız** [Stok Ayarları](/stok/stok-ayarlari) ekranından değiştirilir. Depo
   formunda yalnız "Varsayılan satış deposu. Değiştirmek için Stok Ayarları." notu görünür.
 - Varsayılan depo **pasif yapılamaz** ve **silinemez**. Önce başka bir depoyu varsayılan yapın.
 - Siparişlerde stok önce siparişin deposundan (bayinin bölge deposu, yoksa varsayılan depo),
@@ -85,7 +85,7 @@ durumu** (Stok Durumu ekranını bu depoya süzülmüş açar).
 ### Satılabilir ve pasif depo
 
 - **Satılabilir** işareti kaldırılan ya da **pasif** yapılan deponun stoğu satılabilir stoktan
-  hemen çıkar; ürünlerin sitede görünen stoğu yeniden hesaplanır.
+  hemen çıkar. Ürünlerin sitede görünen stoğu yeniden hesaplanır.
 - Satışa kapalı depo, Stok Durumu'nda sütun başlığında **\*** ile işaretlenir.
 - Pasif depo mal kabul, sayım başlatma ve Stok Ayarları'ndaki depo listelerinde çıkmaz.
 
@@ -95,18 +95,18 @@ Silme, depo düzenleme panelindeki sil düğmesiyle yapılır ve onay ister. Dep
 birlikte sağlanırsa silinir:
 
 1. Varsayılan depo değildir.
-2. Hiçbir üründe sıfırdan farklı stoğu yoktur — varsa önce stokları
+2. Hiçbir üründe sıfırdan farklı stoğu yoktur: varsa önce stokları
    [transfer edin](/stok/stok-islemleri#transfer).
 3. Hiç stok hareketi olmamıştır.
 
-Hareket geçmişi denetim kaydıdır ve silinmez; bir kez kullanılmış depoyu silmek yerine
+Hareket geçmişi denetim kaydıdır ve silinmez. Bir kez kullanılmış depoyu silmek yerine
 **pasife alın**.
 
 ## Depo detayı {#depo-detayi}
 
 Depolar listesinde depo adına ya da **⋯ › Detay**'a basınca açılır.
 
-**Başlık:** depo adı, Aktif / Pasif, **Varsayılan** ve **Satışa kapalı** etiketleri; altında
+**Başlık:** depo adı, Aktif / Pasif, **Varsayılan** ve **Satışa kapalı** etiketleri. Altında
 kod, lokasyon sayısı (Atanmamış hariç), stoğu olan ürün sayısı ve toplam adet. Sağ üstte
 **Depolar** (listeye dönüş) ve **Excel'e aktar** düğmeleri vardır.
 
@@ -116,10 +116,10 @@ Sayfada dört bölüm vardır:
 
 | Sütun | Açıklama |
 |---|---|
-| Lokasyon | Lokasyon kodu. Koda tıklayınca aşağıdaki **Depodaki ürünler** listesi yalnız bu lokasyondaki ürünlere süzülür; yeniden tıklayınca süzme kalkar |
+| Lokasyon | Lokasyon kodu. Koda tıklayınca aşağıdaki **Depodaki ürünler** listesi yalnız bu lokasyondaki ürünlere süzülür. Yeniden tıklayınca süzme kalkar |
 | Koridor / Raf / Göz | Kodu oluşturan parçalar |
 | Ürün | Lokasyonda stoğu olan ürün çeşidi |
-| Adet | Lokasyondaki toplam adet; eksi ise kırmızı |
+| Adet | Lokasyondaki toplam adet. Eksi ise kırmızı |
 | Aktif | Lokasyonu açıp kapatan anahtar. Atanmamış'ta "Sistem" yazar |
 | İşlemler | Düzenle (kalem simgesi) |
 
@@ -138,10 +138,10 @@ Depoda stoğu sıfırdan farklı olan ürünler, ada göre sıralı, sayfa baş�
 - **Süzme:** lokasyon seçimi ("Tüm lokasyonlar") ve **Ürün adı veya SKU ara** kutusu.
 - **Ürün:** görsel, ürün adı (ürün formuna gider), SKU ve kategori.
 - **Lokasyonlar:** ürünün bu depodaki her lokasyonu ayrı etiket olarak: `lokasyon · lot: miktar`.
-  Eksi miktarlı ya da son kullanma tarihi geçmiş lot etiketi kırmızıdır; etiketin üzerine
+  Eksi miktarlı ya da son kullanma tarihi geçmiş lot etiketi kırmızıdır. Etiketin üzerine
   gelince SKT görünür.
-- **Miktar:** depo toplamı; eksi ise kırmızı.
-- **İşlemler:** çift ok simgesi **Stok işlemi** panelini açar — bu ekrandan açıldığında depo bu
+- **Miktar:** depo toplamı. Eksi ise kırmızı.
+- **İşlemler:** çift ok simgesi **Stok işlemi** panelini açar: bu ekrandan açıldığında depo bu
   depo, işlem türü **Lokasyon değiştir** olarak gelir (değiştirilebilir). Saat simgesi ürünün
   bu depodaki hareketlerini açar.
 
@@ -162,7 +162,7 @@ depoda `A-03`).
 
 Her deponun silinemeyen bir **Atanmamış** lokasyonu vardır:
 
-- Lokasyon kullanmıyorsanız tüm stok burada durur; hiçbir şey yapmanız gerekmez.
+- Lokasyon kullanmıyorsanız tüm stok burada durur. Hiçbir şey yapmanız gerekmez.
 - Yeri belirsiz girişler ve stok yetmeden yapılan düşümler (eksi bakiye) buraya yazılır.
 - Düzenlenemez, kapatılamaz, silinemez. Listelerde ve toplama sırasında **her zaman en
   sondadır**.
@@ -189,19 +189,19 @@ kullanın; `A-3` ile `A-03` farklı lokasyonlardır.
 ### Toplu lokasyon oluşturma {#toplu-lokasyon}
 
 Depo detayında **Toplu oluştur**: **koridorlar × raf aralığı × göz aralığı** kadar lokasyon
-açılır; zaten var olan kodlar atlanır.
+açılır. Zaten var olan kodlar atlanır.
 
 | Alan | Açıklama |
 |---|---|
-| Koridorlar | Zorunlu. Virgül ya da boşlukla ayırın (ör. `A, B, C`). Büyük harfe çevrilir; tekrarlar bir kez sayılır |
-| İlk raf | Zorunlu, 0–999. Varsayılan 1 |
+| Koridorlar | Zorunlu. Virgül ya da boşlukla ayırın (ör. `A, B, C`). Büyük harfe çevrilir. Tekrarlar bir kez sayılır |
+| İlk raf | Zorunlu, 0-999. Varsayılan 1 |
 | Son raf | Zorunlu, ilk raftan küçük olamaz, en fazla 999. Varsayılan 10 |
-| İlk göz | İsteğe bağlı, 0–99 |
+| İlk göz | İsteğe bağlı, 0-99 |
 | Son göz | İsteğe bağlı, ilk gözden küçük olamaz, en fazla 99 |
 
 - Göz alanları **ya ikisi birden doldurulur ya ikisi birden boş bırakılır**. Boşsa lokasyonlar
   koridor-raf düzeyinde açılır (`A-01`, `A-02` …).
-- Raf numarası en az iki basamağa sıfırla doldurulur (`01`); son raf 100 ve üstündeyse üç
+- Raf numarası en az iki basamağa sıfırla doldurulur (`01`). Son raf 100 ve üstündeyse üç
   basamağa (`001`). Göz numarası son gözün basamak sayısına doldurulur (son göz 12 ise `01`
   … `12`).
 - Tek seferde **en fazla 2000** lokasyon oluşturulabilir.
@@ -229,10 +229,10 @@ değiştirmez. Bu yüzden lokasyonları depo içindeki yürüyüş rotanıza gö
 
 ### Lokasyon düzenleme, kapatma, silme
 
-- **Düzenle** (kalem simgesi): koridor, raf, göz değiştirilir; kod yeniden oluşur. İçindeki
+- **Düzenle** (kalem simgesi): koridor, raf, göz değiştirilir. Kod yeniden oluşur. İçindeki
   stok yerinde kalır.
 - **Aktif anahtarı:** kapatılan lokasyon stok işlemi, mal kabul ve sayım formlarındaki lokasyon
-  listelerinde çıkmaz. İçindeki stok silinmez ve depo toplamında kalır; kapatmadan önce
+  listelerinde çıkmaz. İçindeki stok silinmez ve depo toplamında kalır. Kapatmadan önce
   ürünleri başka lokasyona taşıyın.
 - **Silme:** düzenleme panelindeki sil düğmesiyle. Yalnız **stoğu olmayan** lokasyon silinir;
   stok varsa düğme kapalıdır ve önce ürünleri
@@ -242,13 +242,13 @@ değiştirmez. Bu yüzden lokasyonları depo içindeki yürüyüş rotanıza gö
 
 | İşlem | Lokasyon boşsa |
 |---|---|
-| Giriş (hızlı giriş, mal kabul, transfer girişi, iade) | Ürünün o depoda **en çok bulunduğu** lokasyona; ürün depoda henüz hiçbir rafta yoksa **Atanmamış**'a |
+| Giriş (hızlı giriş, mal kabul, transfer girişi, iade) | Ürünün o depoda **en çok bulunduğu** lokasyona. Ürün depoda henüz hiçbir rafta yoksa **Atanmamış**'a |
 | Çıkış, sipariş, transfer çıkışı | Toplama sırasıyla stoğu olan lokasyonlardan (lot takipli üründe önce SKT'si en yakın lot). Stok yetmezse kalan kısım Atanmamış'ta eksiye düşer |
 
 ## Depo Excel'i {#depo-exceli}
 
 Depo detayında **Excel'e aktar** deponun stoğunu indirir (`depo-KOD-tarih.xlsx`). Yalnız
-miktarı sıfırdan farklı satırlar gelir; sıralama lokasyon sırasına, sonra SKU'ya göredir.
+miktarı sıfırdan farklı satırlar gelir. Sıralama lokasyon sırasına, sonra SKU'ya göredir.
 
 | Sütun | Açıklama |
 |---|---|

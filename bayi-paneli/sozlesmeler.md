@@ -5,12 +5,12 @@ sözleşmesi, KVKK aydınlatma metni, garanti ve iade şartları gibi.
 
 ## Kullanım
 
-- Sol tarafta sözleşmelerin listesi bulunur; bir başlığa tıklayınca metin açılır.
+- Sol tarafta sözleşmelerin listesi bulunur. Bir başlığa tıklayınca metin açılır.
 - Menüden Sözleşmeler'i açtığınızda listedeki ilk sözleşme gösterilir.
-- Başlığın altında **Son güncelleme** tarihi yazar; metin güncellendiğinde bu tarih değişir.
+- Başlığın altında **Son güncelleme** tarihi yazar. Metin güncellendiğinde bu tarih değişir.
 - Henüz sözleşme eklenmediyse "Henüz sözleşme eklenmedi." yazar.
 
-Sipariş verirken onaylamanız istenen sözleşmeler de bu listededir; metinleri sipariş öncesinde
+Sipariş verirken onaylamanız istenen sözleşmeler de bu listededir. Metinleri sipariş öncesinde
 burada okuyabilirsiniz (bkz. [Sipariş verme › Sözleşme onayı](/bayi-paneli/siparis-verme#sozlesme-onayi)).
 
 Banka hesap numaralarımız bu bölümde değil, **Cari Hesabım**'daki havale bildirimi ve sipariş

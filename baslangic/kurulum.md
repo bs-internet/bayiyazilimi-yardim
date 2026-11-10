@@ -1,6 +1,6 @@
 # Kurulum
 
-Bayi Yazılımı VPS'e de paylaşımlı hostinge de kurulur. Kurulum iki yoldan yapılır; ikisi de
+Bayi Yazılımı VPS'e de paylaşımlı hostinge de kurulur. Kurulum iki yoldan yapılır. İkisi de
 aynı adımları izler ve aynı sonucu verir:
 
 | Yol | Kimin için |
@@ -34,7 +34,7 @@ derlemesi) gerektirir.
 
 Sihirbaz PHP sürümünü, eklentileri ve yazma izinlerini kendisi kontrol eder. PHP
 kütüphanelerinin (`vendor` klasörü) ve derlenmiş ön yüz dosyalarının (`public/build` klasörü)
-yüklediğiniz dosyalar arasında hazır bulunması gerekir; bunları sihirbaz kontrol etmez.
+yüklediğiniz dosyalar arasında hazır bulunması gerekir. Bunları sihirbaz kontrol etmez.
 
 ::: warning Git ile indirdiyseniz önce ön yüzü derleyin
 Hazır kurulum paketinde `public/build` klasörü bulunur. Kodu `git clone` ile indirdiyseniz bu
@@ -54,7 +54,7 @@ Barındırma panelinizden (cPanel, Plesk, DirectAdmin …):
 1. **Boş bir MySQL / MariaDB veritabanı** oluşturun. İçinde başka bir uygulamanın tabloları
    bulunan veritabanı kabul edilmez (bkz. aşağıda **Veritabanı** adımı).
 2. Bir **veritabanı kullanıcısı** oluşturup bu veritabanına **tüm yetkilerle** ekleyin.
-3. Veritabanı adını, kullanıcı adını ve şifreyi not edin; kurulumda sorulacak.
+3. Veritabanı adını, kullanıcı adını ve şifreyi not edin. Kurulumda sorulacak.
 
 ## Kurulum sihirbazı {#sihirbaz}
 
@@ -65,7 +65,7 @@ yönetici**.
 ### 1. Gereksinimler
 
 **Sunucu gereksinimleri** listesi gösterilir. Her satırın yanında yeşil tik (tamam) ya da kırmızı
-çarpı (eksik) vardır; eksikler listenin en üstündedir.
+çarpı (eksik) vardır. Eksikler listenin en üstündedir.
 
 | Kontrol | Ne anlama gelir |
 |---|---|
@@ -73,7 +73,7 @@ yönetici**.
 | PHP eklentisi: … | Her zorunlu eklenti için ayrı satır |
 | Yazılabilir klasör: storage | Yüklenen dosyalar, günlükler, önbellek |
 | Yazılabilir klasör: bootstrap/cache | Sistemin hızlandırma dosyaları |
-| Yazılabilir dosya: .env | Veritabanı ve site ayarlarının yazıldığı dosya. Dosya yoksa proje klasörünün yazılabilir olması yeterlidir; sihirbaz dosyayı kendisi oluşturur |
+| Yazılabilir dosya: .env | Veritabanı ve site ayarlarının yazıldığı dosya. Dosya yoksa proje klasörünün yazılabilir olması yeterlidir. Sihirbaz dosyayı kendisi oluşturur |
 
 Eksik varsa kurulum ilerlemez. Hosting firmanızdan PHP eklentilerini açmasını ve klasör
 izinlerini düzeltmesini isteyin, ardından **Tekrar kontrol et** düğmesine basın. Her şey tamamsa
@@ -83,7 +83,7 @@ sihirbaz kendiliğinden sonraki adıma geçer.
 
 | Alan | Açıklama |
 |---|---|
-| Sunucu | Veritabanı sunucusunun adresi. Varsayılan `127.0.0.1`; paylaşımlı hostingde genellikle `localhost` ya da `127.0.0.1`. En çok 255 karakter |
+| Sunucu | Veritabanı sunucusunun adresi. Varsayılan `127.0.0.1`. Paylaşımlı hostingde genellikle `localhost` ya da `127.0.0.1`. En çok 255 karakter |
 | Port | Varsayılan `3306`. 1 ile 65535 arasında bir sayı |
 | Veritabanı adı | Oluşturduğunuz boş veritabanı. cPanel'de başında hesap adınız olur (ör. `hesabim_bayi`). En çok 64 karakter |
 | Kullanıcı adı | Veritabanı kullanıcısı (cPanel'de ör. `hesabim_kullanici`) |
@@ -113,24 +113,24 @@ o adımdaki **Veritabanını değiştir** düğmesine basın.
 | Firma / site adı | Zorunlu, en çok 100 karakter. Panelde, tarayıcı sekmesinde ve e-posta konularında görünür. Panelde ve e-postalarda görünen ad sonradan **Genel Ayarlar › Uygulama adı**'ndan değiştirilebilir |
 | Yönetici adı | Zorunlu. İlk yönetici hesabının adı |
 | Yönetici e-postası | Zorunlu, geçerli bir e-posta adresi. Panele bu adresle girersiniz |
-| Şifre / Şifre (tekrar) | Zorunlu; iki alan aynı olmalı. En az 12 karakter; büyük ve küçük harf, rakam ve sembol içermeli (ör. `Firma-Bayi-2026`) |
+| Şifre / Şifre (tekrar) | Zorunlu. İki alan aynı olmalı. En az 12 karakter. Büyük ve küçük harf, rakam ve sembol içermeli (ör. `Firma-Bayi-2026`) |
 | Başlangıç verileri | **Boş yükle** (varsayılan) ya da **Örnek verileri yükle** |
 
 **Başlangıç verileri** seçenekleri:
 
-- **Boş yükle** — yalnız temel veriler: ülke, il / ilçe, para birimleri, vergiler, roller ve
+- **Boş yükle**: yalnız temel veriler: ülke, il / ilçe, para birimleri, vergiler, roller ve
   ayarlar. **Gerçek kullanım için bunu seçin.**
-- **Örnek verileri yükle** — temel verilere ek olarak örnek ürünler (kategori, marka, stok) ile
+- **Örnek verileri yükle**: temel verilere ek olarak örnek ürünler (kategori, marka, stok) ile
   örnek bayi hesabı ve siparişi ([Vitrin eklentisi](/vitrin/) kuruluysa örnek müşteri hesabı da).
   Sistemi denemek için.
 
 Site adresi ayrıca sorulmaz: sihirbazı hangi adresten açtıysanız o adres kaydedilir. Bu yüzden
 sihirbazı **sitenin gerçek adresinden** (ör. `https://bayi.firmaniz.com`) açın.
 
-**Kurulumu başlat** düğmesine basın. "Kuruluyor…" yazısı görünür; tablolar oluşturulup veriler
+**Kurulumu başlat** düğmesine basın. "Kuruluyor…" yazısı görünür. Tablolar oluşturulup veriler
 yüklenirken **sayfayı kapatmayın** (birkaç dakika sürebilir).
 
-Bir hata olursa **Kurulum tamamlanamadı** uyarısıyla nedeni gösterilir; girdiğiniz bilgiler
+Bir hata olursa **Kurulum tamamlanamadı** uyarısıyla nedeni gösterilir. Girdiğiniz bilgiler
 (şifre hariç) formda kalır.
 
 ### Kurulum tamamlandı
@@ -140,7 +140,7 @@ Son ekranda yönetici e-postanız ve **Sıradaki adımlar** listesi görünür:
 - Logo, iletişim ve firma bilgilerini girin (**Ayarlar › Genel Ayarlar**).
 - Ürünleri ekleyin ya da Excel ile içe aktarın.
 - Sunucunuzda zamanlanmış görev (cron) tanımlayın.
-- (Örnek verileri yüklediyseniz) Örnek hesaplar **rastgele şifreyle** oluşturulur; denemek için
+- (Örnek verileri yüklediyseniz) Örnek hesaplar **rastgele şifreyle** oluşturulur. Denemek için
   panelden şifrelerini belirleyin.
 
 **Giriş yap** düğmesiyle giriş ekranına geçin.
@@ -154,7 +154,7 @@ Son ekranda yönetici e-postanız ve **Sıradaki adımlar** listesi görünür:
   atanır. Diğer hazır görevler yalnız kendi alanlarının yetkilerini alır. Bkz.
   [Görevler ve yetkiler](/yonetim/roller-yetkiler#hazir-gorevler).
 - Yüklenen görsellerin sitede görünmesi için `public/storage` bağlantısı oluşturulur. Hosting
-  buna izin vermezse kurulum yine tamamlanır; bkz. [Görseller görünmüyor](/baslangic/sorun-giderme#gorseller).
+  buna izin vermezse kurulum yine tamamlanır. Bkz. [Görseller görünmüyor](/baslangic/sorun-giderme#gorseller).
 - `.env` dosyası canlı kullanıma alınır: site adı ve adresi yazılır, hata ayrıntıları
   ziyaretçilere gösterilmez, kayıt düzeyi `warning` olur (ayrıntılı hata ayıklama kayıtları tutulmaz), sistem **kurulu** olarak işaretlenir. Veritabanı bilgileri `.env` dosyasındaki yorum satırlarının (`# DB_HOST=…`) yerine yazılır.
 
@@ -173,7 +173,7 @@ npm ci && npm run build
 php artisan bayi:setup
 ```
 
-`bayi:setup` önce gereksinimleri kontrol eder; eksik varsa listeler ve durur. Ardından sırayla
+`bayi:setup` önce gereksinimleri kontrol eder. Eksik varsa listeler ve durur. Ardından sırayla
 sorar:
 
 | Soru | Açıklama |
@@ -183,15 +183,15 @@ sorar:
 | Site adresi | Varsayılan `.env`'deki adres. Sitenin gerçek adresini girin (ör. `https://bayi.firmaniz.com`) |
 | Yönetici adı | Zorunlu |
 | Yönetici e-postası | Geçerli bir e-posta olmalı |
-| Yönetici şifresi | Web sihirbazıyla aynı kural: en az 12 karakter; büyük ve küçük harf, rakam ve sembol. Uymazsa eksik olan kural yazılır |
-| Başlangıç verileri | **Boş yükle (yalnız temel veriler)** ya da **Örnek verileri yükle** (örnek ürünler ve bayi hesabı; vitrin kuruluysa müşteri hesabı da) |
+| Yönetici şifresi | Web sihirbazıyla aynı kural: en az 12 karakter. Büyük ve küçük harf, rakam ve sembol. Uymazsa eksik olan kural yazılır |
+| Başlangıç verileri | **Boş yükle (yalnız temel veriler)** ya da **Örnek verileri yükle** (örnek ürünler ve bayi hesabı. Vitrin kuruluysa müşteri hesabı da) |
 
 Kurulum bitince giriş e-postası ile ön yüz derlemesi, cron ve kuyruk çalıştırıcı hatırlatmaları
 yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir şey yapmaz.
 
 ## Her kurulumda gelen temel veriler
 
-"Boş yükle" seçseniz de şunlar hazır gelir; yeniden girmeniz gerekmez:
+"Boş yükle" seçseniz de şunlar hazır gelir. Yeniden girmeniz gerekmez:
 
 | Veri | İçerik |
 |---|---|
@@ -202,12 +202,12 @@ yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir
 | Birimler | Adet, Paket, Kutu, Koli, Set, Takım, Rulo, Litre, Kg, Metre |
 | Depo | Merkez Depo (varsayılan depo) |
 | Sözleşmeler | Satış Sözleşmesi, Üyelik Sözleşmesi, KVKK Aydınlatma Metni, Garanti ve İade Şartları: **pasif taslaklar**, metinleri henüz girilmemiştir. Bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler) |
-| Kargo | Yurtiçi, Aras ve MNG Kargo; örnek desi fiyatlarıyla (kendi anlaşmanıza göre düzenleyin) |
-| Ayarlar | Genel ayarların ve mağaza ayarlarının varsayılanları; zaman dilimi İstanbul |
+| Kargo | Yurtiçi, Aras ve MNG Kargo. Örnek desi fiyatlarıyla (kendi anlaşmanıza göre düzenleyin) |
+| Ayarlar | Genel ayarların ve mağaza ayarlarının varsayılanları. Zaman dilimi İstanbul |
 | Görevler | Super Admin, Admin ve hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu). Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler) |
 
 Vitrin eklentisinin kendi verileri (örnek içerik sayfaları, **İçerik Editörü** görevi) eklenti
-kurulurken eklenir; bkz. [Vitrin eklentisi](/vitrin/).
+kurulurken eklenir. Bkz. [Vitrin eklentisi](/vitrin/).
 
 **Örnek verileri yükle** seçilirse ayrıca: örnek kategoriler, markalar ve stoklu ürünler,
 "Standart Bayi" grubu (%10 indirim), örnek bayi hesabı (`user@user.com`), örnek bayinin adresi,
@@ -250,6 +250,6 @@ e-postaları gönderdiği: [E-posta ve bildirimler](/yonetim/e-posta-bildirimler
 
 ### İlk giriş
 
-Kurulumda belirlediğiniz e-posta ve şifreyle `/login` adresinden giriş yapın; yönetim paneli
-(`/panel`) açılır. Panelin tanıtımı için [Panel tanıtımı](/baslangic/panel-tanitimi); sırada
+Kurulumda belirlediğiniz e-posta ve şifreyle `/login` adresinden giriş yapın. Yönetim paneli
+(`/panel`) açılır. Panelin tanıtımı için [Panel tanıtımı](/baslangic/panel-tanitimi). Sırada
 [İlk ayarlar](/baslangic/ilk-ayarlar) var.

@@ -26,11 +26,11 @@ npm run build     # .vitepress/dist
 | `vitrin/` | Vitrin eklentisi |
 | `gelistirici/` | Geliştirici belgeleri |
 
-Menü `.vitepress/config.mts` dosyasındadır; yeni sayfa eklerken oraya da ekleyin.
+Menü `.vitepress/config.mts` dosyasındadır. Yeni sayfa eklerken oraya da ekleyin.
 
 ## Yazım kuralları
 
 - Ekran adlarını paneldeki gibi yazın ve yolu `›` ile verin: **Ayarlar › Tanımlamalar › Kargo Ayarları**.
-- Kullanıcı sayfalarında kod, tablo adı ya da teknik terim kullanmayın; bunlar `gelistirici/`
+- Kullanıcı sayfalarında kod, tablo adı ya da teknik terim kullanmayın. Bunlar `gelistirici/`
   bölümüne.
 - Başlıklarda bağlantı verilecekse `{#kisa-ad}` ile açık bağlantı adı tanımlayın.

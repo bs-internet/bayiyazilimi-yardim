@@ -1,7 +1,7 @@
 # Teklifler
 
 Toplu alımlarınız ya da yalnız teklifle satılan ürünler için bizden fiyat teklifi
-isteyebilirsiniz. Teklifi inceleyip onaylar, değişiklik ister ya da reddedersiniz; onayladığınız
+isteyebilirsiniz. Teklifi inceleyip onaylar, değişiklik ister ya da reddedersiniz. Onayladığınız
 teklifi ödeyince sipariş oluşur.
 
 **Teklifler** menüsünün iki bölümü vardır: **Teklif listem** (teklif isteyeceğiniz ürünler) ve
@@ -30,7 +30,7 @@ Sağdaki **Teklif talebi** kutusundan gönderilir.
 
 | Alan | Açıklama |
 |---|---|
-| İletişim bilgileri | Adınız, firma ünvanınız, e-postanız ve telefonunuz hesabınızdan otomatik alınır; formda değiştirilmez |
+| İletişim bilgileri | Adınız, firma ünvanınız, e-postanız ve telefonunuz hesabınızdan otomatik alınır. Formda değiştirilmez |
 | **Notunuz** | İsteğe bağlı, en fazla 2000 karakter. Ör. teslim yeri, istenen tarih, alternatif ürün |
 
 1. Listeyi kontrol edin, gerekiyorsa not yazın.
@@ -68,11 +68,11 @@ verilir." yazar.
 
 Yan kutularda:
 
-- **Teklif** — **Teklif tarihi** (ya da **Talep tarihi**), **Geçerlilik** tarihleri; süresi
+- **Teklif**: **Teklif tarihi** (ya da **Talep tarihi**), **Geçerlilik** tarihleri. Süresi
   geçtiyse "(süresi doldu)".
-- **Notumuz** — satış ekibimizin teklife yazdığı not.
-- **Talep notunuz** — talep ederken yazdığınız not.
-- **Geçmiş** — talep, gönderim, revize, onay gibi adımlar ve notları.
+- **Notumuz**: satış ekibimizin teklife yazdığı not.
+- **Talep notunuz**: talep ederken yazdığınız not.
+- **Geçmiş**: talep, gönderim, revize, onay gibi adımlar ve notları.
 - Siparişe dönüştüyse **Sipariş …** bağlantısı.
 
 ## Teklife yanıt verme {#yanit}
@@ -81,12 +81,12 @@ Teklif **Onayınızı bekliyor** durumundayken ve geçerlilik süresi içindeyke
 
 | Düğme | Pencere | Sonuç |
 |---|---|---|
-| **Onayla** | "Teklifi onaylıyor musunuz?" — **Not (isteğe bağlı)**. **Onayla ve ödemeye geç** | Teklif **Onaylandı — ödeme bekliyor** olur ve ödeme ekranı açılır |
-| **Revize iste** | "Teklifte neyin değişmesini istersiniz?" — **İsteğiniz** (zorunlu, en fazla 2000 karakter; ör. "20 adet yerine 50 adet için fiyat rica ederiz.") | Teklif **Revize ediliyor** olur; güncel teklif size e-postayla gönderilir |
-| **Reddet** | "Teklifi reddediyor musunuz?" — **Neden (isteğe bağlı)** | Teklif kapanır (**Reddedildi**). Yeni fiyat için yeni talep açabilirsiniz |
+| **Onayla** | "Teklifi onaylıyor musunuz?": **Not (isteğe bağlı)**. **Onayla ve ödemeye geç** | Teklif **Onaylandı — ödeme bekliyor** olur ve ödeme ekranı açılır |
+| **Revize iste** | "Teklifte neyin değişmesini istersiniz?": **İsteğiniz** (zorunlu, en fazla 2000 karakter. Ör. "20 adet yerine 50 adet için fiyat rica ederiz.") | Teklif **Revize ediliyor** olur. Güncel teklif size e-postayla gönderilir |
+| **Reddet** | "Teklifi reddediyor musunuz?": **Neden (isteğe bağlı)** | Teklif kapanır (**Reddedildi**). Yeni fiyat için yeni talep açabilirsiniz |
 
 Talebiniz henüz fiyatlanmadıysa (**Fiyatlandırılıyor** ya da **Revize ediliyor**) **Talebi geri
-çek** düğmesi görünür; onaylarsanız talebiniz iptal edilir.
+çek** düğmesi görünür. Onaylarsanız talebiniz iptal edilir.
 
 Geçerlilik başlangıcı ileri bir tarihse "Teklif … tarihinden itibaren geçerlidir." yazar ve o
 tarihe kadar yanıt veremezsiniz.
@@ -99,8 +99,8 @@ Onayladığınız teklif hemen ödenmek zorunda değildir. Daha sonra ödemek i�
 Ödeme ekranı "Teklif … — Ödeme" başlığıyla açılır ve normal siparişteki gibi doldurulur
 ([Ödeme ekranı](/bayi-paneli/siparis-verme#odeme)), şu farklarla:
 
-- **Kargo firması adımı yoktur**; kargo ücreti teklifte belirlenmiştir.
-- Kampanyalar teklife uygulanmaz; tutarlar teklifteki gibidir.
+- **Kargo firması adımı yoktur**. Kargo ücreti teklifte belirlenmiştir.
+- Kampanyalar teklife uygulanmaz. Tutarlar teklifteki gibidir.
 - Ödeme yöntemleri ve havale indirimi siparişteki gibi çalışır.
 
 Sipariş oluşunca teklif **Siparişe dönüştü** olur ve sipariş [Siparişlerim](/bayi-paneli/siparislerim)
@@ -117,8 +117,8 @@ yeni talep oluşturun.
 |---|---|
 | **Fiyatlandırılıyor** | Talebiniz alındı, satış ekibimiz fiyatlandırıyor |
 | **Revize ediliyor** | Revize isteğiniz iletildi, teklif güncelleniyor |
-| **Onayınızı bekliyor** | Teklif size gönderildi; onaylayın, revize isteyin ya da reddedin |
-| **Onaylandı — ödeme bekliyor** | Teklifi onayladınız; ödeyince sipariş oluşur |
+| **Onayınızı bekliyor** | Teklif size gönderildi. Onaylayın, revize isteyin ya da reddedin |
+| **Onaylandı — ödeme bekliyor** | Teklifi onayladınız. Ödeyince sipariş oluşur |
 | **Siparişe dönüştü** | Teklif ödendi, sipariş oluştu |
 | **Reddedildi** | Teklifi reddettiniz |
 | **İptal edildi** | Talebinizi geri çektiniz ya da teklif tarafımızdan iptal edildi |

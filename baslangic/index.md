@@ -1,11 +1,11 @@
 # Bayi Yazılımı nedir?
 
 Bayi Yazılımı, bayileriyle çalışan firmalar için hazırlanmış bir **B2B satış ve cari takip
-sistemidir**. Bayileriniz kendi panellerinden sipariş verir, teklif ister, carisini izler; siz
+sistemidir**. Bayileriniz kendi panellerinden sipariş verir, teklif ister, carisini izler. Siz
 yönetim panelinden ürünleri, stoğu, siparişleri ve tahsilatları yönetirsiniz.
 
 Sistem açık kaynaklıdır ve ücretsizdir: [GNU AGPLv3](https://github.com/bs-internet/bayiyazilimi/blob/main/LICENSE) lisansı ve
-[ek koşulları](https://github.com/bs-internet/bayiyazilimi/blob/main/EK-KOSULLAR.md) geçerlidir (atıf korunur; eklenti
+[ek koşulları](https://github.com/bs-internet/bayiyazilimi/blob/main/EK-KOSULLAR.md) geçerlidir (atıf korunur. Eklenti
 sistemiyle yazılan eklentiler dilediğiniz lisansla dağıtılabilir). Ek özellikler
 [eklentiler](/yonetim/moduller) ile gelir.
 
@@ -16,7 +16,7 @@ sistemiyle yazılan eklentiler dilediğiniz lisansla dağıtılabilir). Ek özel
 | **Yönetim paneli** | Siz ve çalışanlarınız | `/panel` |
 | **Bayi paneli** | Bayileriniz | `/app` |
 
-Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi alanına yönlendirilir.
+Giriş ekranı ortaktır. Kullanıcı giriş yaptığında türüne göre kendi alanına yönlendirilir.
 
 ## Neler yapabilirsiniz?
 
@@ -34,20 +34,20 @@ Giriş ekranı ortaktır; kullanıcı giriş yaptığında türüne göre kendi 
 
 Çekirdek tek başına eksiksiz bir B2B sistemidir. İhtiyaca göre şu eklentiler eklenebilir:
 
-- **Vitrin** (ücretli) — herkese açık e-ticaret sitesi (bireysel müşteriler, kupon, ana sayfa
+- **Vitrin** (ücretli): herkese açık e-ticaret sitesi (bireysel müşteriler, kupon, ana sayfa
   düzenleyici). Bkz. [Vitrin eklentisi](/vitrin/).
-- **PayTR** ve **iyzico** (ücretsiz) — kartla ödeme, taksit, kartla cari tahsilat. Bkz.
+- **PayTR** ve **iyzico** (ücretsiz): kartla ödeme, taksit, kartla cari tahsilat. Bkz.
   [Kartla ödeme](/cari/kartla-odeme).
-- **Paraşüt** ve **BizimHesap** — satışları ön muhasebe programına satış faturası olarak aktarır.
+- **Paraşüt** ve **BizimHesap**: satışları ön muhasebe programına satış faturası olarak aktarır.
   Bkz. [Muhasebe entegrasyonları](/muhasebe/).
 
 Eklentiler hakkında bilgi ve fiyatlar için: [bayiyazilimi.com](https://bayiyazilimi.com).
 
 ## Nereden başlamalı?
 
-1. [Kurulum](/baslangic/kurulum) — gereksinimler ve kurulum sihirbazı.
+1. [Kurulum](/baslangic/kurulum): gereksinimler ve kurulum sihirbazı.
    [Paylaşımlı hosting](/baslangic/paylasimli-hosting) ya da [VPS](/baslangic/vps) için adım
-   adım anlatım; sorun çıkarsa [Kurulumda sorun giderme](/baslangic/sorun-giderme).
-2. [Panel tanıtımı](/baslangic/panel-tanitimi) — giriş, menü, başlangıç ekranı ve hesap ayarları.
-3. [İlk ayarlar](/baslangic/ilk-ayarlar) — satışa başlamadan önce yapılacaklar listesi.
-4. [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme) — sistemi güvende ve güncel tutmak.
+   adım anlatım. Sorun çıkarsa [Kurulumda sorun giderme](/baslangic/sorun-giderme).
+2. [Panel tanıtımı](/baslangic/panel-tanitimi): giriş, menü, başlangıç ekranı ve hesap ayarları.
+3. [İlk ayarlar](/baslangic/ilk-ayarlar): satışa başlamadan önce yapılacaklar listesi.
+4. [Güncelleme ve yedekleme](/baslangic/guncelleme-yedekleme): sistemi güvende ve güncel tutmak.

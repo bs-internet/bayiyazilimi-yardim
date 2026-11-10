@@ -1,7 +1,7 @@
 # VPS'e kurulum
 
 Bu sayfa SSH ile bağlanabildiğiniz bir Linux sunucu (VPS) içindir. Komutlar Ubuntu / Debian
-örneğidir; paket adları dağıtıma göre değişebilir.
+örneğidir. Paket adları dağıtıma göre değişebilir.
 
 ## Sunucuda gerekenler
 
@@ -38,7 +38,7 @@ php artisan bayi:setup
 `bayi:setup` veritabanı bilgilerini, firma adını, site adresini, yönetici hesabını ve başlangıç
 verilerini sorar. Her sorunun anlamı: [Komutla kurulum](/baslangic/kurulum#bayi-setup).
 Tarayıcıdan kurmayı tercih ederseniz bu komutu çalıştırmadan web sunucusunu ayarlayıp siteyi
-açın; [kurulum sihirbazı](/baslangic/kurulum#sihirbaz) başlar.
+açın. [kurulum sihirbazı](/baslangic/kurulum#sihirbaz) başlar.
 
 Dosya sahipliğini web sunucusu kullanıcısına verin (Ubuntu'da genellikle `www-data`):
 

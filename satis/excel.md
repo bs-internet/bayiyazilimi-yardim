@@ -11,14 +11,14 @@ dosya da aynı sütunlarla iner.
 
 | Düğme | Ne indirir |
 |---|---|
-| **Boş şablonu indir** | Yalnız başlık satırı olan şablon; yeni ürünler için |
-| **Tüm ürünleri dışa aktar** | Tüm ürünler, dolu şablon olarak; mevcut ürünleri düzenlemek için |
+| **Boş şablonu indir** | Yalnız başlık satırı olan şablon. Yeni ürünler için |
+| **Tüm ürünleri dışa aktar** | Tüm ürünler, dolu şablon olarak. Mevcut ürünleri düzenlemek için |
 | **Dışa aktar** (Ürün listesinde) | Yalnız listede o an uygulanan arama / süzgeçlere uyan ürünler. Bkz. [Ürün listesi](/satis/urun-listesi) |
 
 Dosyanın iki sayfası vardır:
 
-- **Ürünler** — ürün satırları. İlk satır başlıktır. İçe aktarmada **yalnız bu ilk sayfa** okunur.
-- **Açıklamalar** — her sütunun anlamı, zorunlu olup olmadığı ve örnek değeri; sistemdeki depo
+- **Ürünler**: ürün satırları. İlk satır başlıktır. İçe aktarmada **yalnız bu ilk sayfa** okunur.
+- **Açıklamalar**: her sütunun anlamı, zorunlu olup olmadığı ve örnek değeri. Sistemdeki depo
   kodları. İçe aktarmada okunmaz.
 
 Zorunlu sütunların başlığında `*` vardır. Dışa aktarılan dosyada görseller tam adresleriyle,
@@ -31,16 +31,16 @@ isteğe bağlıdır ve dosyadan tamamen çıkarılabilir.
 
 | Sütun | Anlamı | Kabul edilen değer | Boş hücre | Örnek |
 |---|---|---|---|---|
-| **Stok Kodu\*** | Ürünün tekil kodu; eşleşme bununla yapılır | Metin | Satır atlanır (uyarı) | `ABC-100` |
-| **Ürün Adı\*** | Ürün adı | Metin (250 karaktere kısaltılır) | Yeni üründe hata; mevcutta değişmez | `Örnek Ürün 5 L` |
-| **Marka** | Marka adı; yoksa oluşturulur | Metin | Markayı kaldırır | `Örnek Marka` |
-| **Kategori** | Kategorinin tam yolu, seviyeler `>` ile ayrılır; yoksa oluşturulur | `Üst > Alt` | Kategoriyi kaldırır | `Temizlik > Deterjanlar` |
+| **Stok Kodu\*** | Ürünün tekil kodu. Eşleşme bununla yapılır | Metin | Satır atlanır (uyarı) | `ABC-100` |
+| **Ürün Adı\*** | Ürün adı | Metin (250 karaktere kısaltılır) | Yeni üründe hata. Mevcutta değişmez | `Örnek Ürün 5 L` |
+| **Marka** | Marka adı. Yoksa oluşturulur | Metin | Markayı kaldırır | `Örnek Marka` |
+| **Kategori** | Kategorinin tam yolu, seviyeler `>` ile ayrılır. Yoksa oluşturulur | `Üst > Alt` | Kategoriyi kaldırır | `Temizlik > Deterjanlar` |
 | **Model No** | Üretici model numarası | Metin | Temizler | `MX-500` |
 | **Barkod** | EAN / barkod | Metin | Temizler | `8690000000001` |
 | **Fiyat** | KDV hariç satış fiyatı | Sayı; `149,90`, `1.249,90` ya da `1249.90` | Değişmez (yeni üründe 0) | `149,90` |
 | **İndirimsiz Fiyat** | KDV hariç üstü çizili fiyat | Sayı; Fiyat'tan büyük değilse indirim kaldırılır | İndirimi kaldırır | `179,90` |
 | **Para Birimi** | Fiyatın para birimi | Sistemde tanımlı kod: `TRY`, `USD`, `EUR` … (`TL` = TRY) | Değişmez (yeni üründe TRY) | `TRY` |
-| **KDV (%)** | KDV oranı | `0`–`100`; yüzde biçimli hücre (`%20` / `0,2`) de olur | Değişmez (yeni üründe varsayılan oran) | `20` |
+| **KDV (%)** | KDV oranı | `0`–`100`. Yüzde biçimli hücre (`%20` / `0,2`) de olur | Değişmez (yeni üründe varsayılan oran) | `20` |
 | **Satış Biçimi** | Sepet ya da teklif | `Sepet` / `Teklif` | Değişmez (yeni üründe fiyat > 0 ise Sepet, değilse Teklif) | `Sepet` |
 | **Durum** | Yayın durumu | `Aktif` / `Pasif` | Değişmez (yeni üründe Aktif) | `Aktif` |
 | **Yeni Ürün** | Vitrinde "Yeni ürünler" listesinde gösterilir | Evet / Hayır | Hayır yapar | `Hayır` |
@@ -59,19 +59,19 @@ isteğe bağlıdır ve dosyadan tamamen çıkarılabilir.
 | **SEO Açıklama** | Arama motoru açıklaması | Metin | Temizler | |
 | **Arama Kelimeleri** | Aramada eşleşecek ek kelimeler | Metin (2000 karakter) | Temizler | `deterjan sıvı` |
 | **Görsel 1 … Görsel 5** | Görselin tam adresi | `https://…` | Görsel eklenmez | `https://ornek.com/gorsel.jpg` |
-| **Stok: {depo kodu}** | O depodaki stok adedi (her depo için bir sütun) | Tam sayı; eksi değer 0 sayılır | Stoğa dokunmaz | `25` |
+| **Stok: {depo kodu}** | O depodaki stok adedi (her depo için bir sütun) | Tam sayı. Eksi değer 0 sayılır | Stoğa dokunmaz | `25` |
 
 **Evet / Hayır** sütunlarında `Evet`, `Hayır`, `E`, `H`, `1`, `0`, `x` (= Evet) kabul edilir.
 
 Ek kurallar:
 
 - **Sayılar:** Excel'in sayı hücreleri doğrudan okunur. Metin olarak yazılan sayılarda virgül
-  varsa ondalık ayırıcı sayılır ve noktalar binlik kabul edilir (`1.249,90`); virgül yoksa nokta
+  varsa ondalık ayırıcı sayılır ve noktalar binlik kabul edilir (`1.249,90`). Virgül yoksa nokta
   ondalıktır (`1249.90`). Bu yüzden virgülsüz `1.249` bin değil "1,249" okunur.
-- **URL** yalnız **yeni** üründe kullanılır; mevcut ürünün adresi değişmez.
-- **Öne Çıkan** sütunlarında yalnız dosyada olan sıralar değişir; formdan girilmiş 4. ve sonraki
+- **URL** yalnız **yeni** üründe kullanılır. Mevcut ürünün adresi değişmez.
+- **Öne Çıkan** sütunlarında yalnız dosyada olan sıralar değişir. Formdan girilmiş 4. ve sonraki
   maddeler korunur.
-- **Para Birimi** ve **depolar** sistemde tanımlı olmalıdır; marka, kategori ve birim ise yoksa
+- **Para Birimi** ve **depolar** sistemde tanımlı olmalıdır. Marka, kategori ve birim ise yoksa
   otomatik oluşturulur. Para birimleri için bkz. [Para birimleri](/yonetim/para-birimleri),
   depo kodları için **Mağaza › Stok › Depolar**.
 - **Kimler görsün?** (Vitrin) ve stok takibi / eksi stok / izlenebilirlik ayarları Excel'de yoktur.
@@ -82,7 +82,7 @@ Ek kurallar:
 - Başlıklarda büyük / küçük harf, `*` işareti ve parantez içi önemsizdir: `KDV (%)`, `kdv`,
   `KDV*` aynı sütundur. **Sütun sırası önemli değildir.**
 - Tanınmayan sütunlar atlanır ve sonuçta uyarı olarak listelenir.
-- `Stok: ` ile başlayan sütunlar depo stoğudur; kodu bilinmeyen depo sütunu uyarıyla atlanır.
+- `Stok: ` ile başlayan sütunlar depo stoğudur. Kodu bilinmeyen depo sütunu uyarıyla atlanır.
 - "Stok Kodu" sütunu olmayan dosya hiç işlenmez.
 
 ## İçe aktarma seçenekleri
@@ -91,22 +91,22 @@ Dosyayı kutuya bırakın ya da **Dosya yükle** ile seçin: yalnız `.xlsx`, en
 
 | Seçenek | Varsayılan | Açıklama |
 |---|---|---|
-| **Mevcut ürünleri güncelle** | Açık | Kapalıysa yalnız sistemde olmayan stok kodları eklenir (silinmiş ürünlerin kodları da geri getirilir); mevcut ürünlerin satırları **Atlanan** sayılır. |
-| **Depo stoklarını dosyadaki değerlere eşitle** | Açık | Mevcut ürünlerde `Stok:` sütunlarındaki değerler depo stoğu olarak yazılır; farklar stok hareketi (*İçe Aktarım*) olarak kaydedilir. Kapalıysa mevcut ürünlerin stoğuna dokunulmaz. Yeni ürünlerin stoğu her durumda yazılır. |
-| **Görsel bağlantılarını indir** | Kapalı | Görseli **olmayan** ürünlere Görsel 1–5 sütunlarındaki adreslerden görsel eklenir. Çok sayıda görselde aktarım uzar. |
+| **Mevcut ürünleri güncelle** | Açık | Kapalıysa yalnız sistemde olmayan stok kodları eklenir (silinmiş ürünlerin kodları da geri getirilir). Mevcut ürünlerin satırları **Atlanan** sayılır. |
+| **Depo stoklarını dosyadaki değerlere eşitle** | Açık | Mevcut ürünlerde `Stok:` sütunlarındaki değerler depo stoğu olarak yazılır. Farklar stok hareketi (*İçe Aktarım*) olarak kaydedilir. Kapalıysa mevcut ürünlerin stoğuna dokunulmaz. Yeni ürünlerin stoğu her durumda yazılır. |
+| **Görsel bağlantılarını indir** | Kapalı | Görseli **olmayan** ürünlere Görsel 1-5 sütunlarındaki adreslerden görsel eklenir. Çok sayıda görselde aktarım uzar. |
 
-**İçe aktar** deyin. Aktarım bitene kadar "Aktarılıyor…" yazar; sayfayı kapatmayın.
+**İçe aktar** deyin. Aktarım bitene kadar "Aktarılıyor…" yazar. Sayfayı kapatmayın.
 
 ## Nasıl çalışır?
 
 - Ürünler **Stok Kodu** ile eşleşir: sistemde olan kod güncellenir, olmayan kod **yeni ürün** olur.
 - **Kısmi güncelleme:** dosyada olmayan sütunlara dokunulmaz. Örneğin yalnız *Stok Kodu* ve
   *Fiyat* sütunlarıyla toplu fiyat güncelleyebilirsiniz.
-- **Boş hücre** metin ve Evet / Hayır alanlarını temizler; *Ürün Adı, Fiyat, Para Birimi, KDV,
+- **Boş hücre** metin ve Evet / Hayır alanlarını temizler. *Ürün Adı, Fiyat, Para Birimi, KDV,
   Satış Biçimi, Durum ve Birim* boşsa değişmez. Boş stok hücresi stoğa dokunmaz.
 - Her satır ayrı işlenir: **hatalı değer içeren satır hiç yazılmaz**, diğer satırlar aktarılır.
 - Stok sütunu depo stoğunu dosyadaki sayıya **eşitler** (eklemez). Lot / seri takipli ürünlerin
-  stoğu Excel ile değişmez; bu ürünlere [Mal kabul](/stok/mal-kabul) ile giriş yapın.
+  stoğu Excel ile değişmez. Bu ürünlere [Mal kabul](/stok/mal-kabul) ile giriş yapın.
 - Silinmiş bir ürünün stok kodu dosyada varsa ürün **geri getirilir** ve dosyadaki bilgilerle
   yeni ürün gibi kurulur (Ürün Adı zorunludur, stok sütunları yazılır). Sonuçta **Yeni**
   sayılır. Bu, **Mevcut ürünleri güncelle** kapalıyken de olur. Stok kodu tekil olduğundan aynı
@@ -121,7 +121,7 @@ Aktarım bitince ekranda **Son içe aktarma sonucu** kartı çıkar:
 | **Yeni** | Eklenen ürün sayısı (geri getirilen silinmiş ürünler dahil) |
 | **Güncellenen** | Güncellenen ürün sayısı |
 | **Atlanan** | Stok kodu boş satırlar ve ("Mevcut ürünleri güncelle" kapalıyken) mevcut ürünler |
-| **… uyarı** / **Sorunsuz** | Hata ve uyarıların listesi; hiç yoksa "Sorunsuz" |
+| **… uyarı** / **Sorunsuz** | Hata ve uyarıların listesi. Hiç yoksa "Sorunsuz" |
 
 Ekranın üstünde ayrıca özet bildirim çıkar (uyarı varsa sarı).
 
@@ -134,23 +134,23 @@ Ekranın üstünde ayrıca özet bildirim çıkar (uyarı varsa sarı).
 | `Satır 9 (ABC-104): Satış Biçimi "Hemen" geçersiz (Sepet ya da Teklif).` | `Sepet` ya da `Teklif` yazın |
 | `Satır 11 (ABC-106): Durum "Açık" geçersiz (Aktif / Pasif).` | `Aktif` ya da `Pasif` yazın |
 | `Satır 12 (ABC-107): Ücretsiz Kargo "belki" geçersiz (Evet / Hayır).` | `Evet` ya da `Hayır` yazın |
-| `Satır 14 (ABC-109): KDV "150" geçersiz (0–100).` | 0–100 arası oran yazın |
+| `Satır 14 (ABC-109): KDV "150" geçersiz (0–100).` | 0-100 arası oran yazın |
 | `Satır 15 (YENI-1): Ürün Adı boş.` | Yeni ürüne ad yazın |
 | `Satır 20: Stok Kodu boş, satır atlandı.` | Kodu doldurun ya da satırı silin |
 | `"Stok: DEPO2" sütunu atlandı: DEPO2 kodlu depo yok (Stok › Depolar).` | Depo kodunu düzeltin |
-| `Tanınmayan sütunlar atlandı: Renk, Beden.` | Bilgi amaçlı; bu sütunlar okunmaz |
+| `Tanınmayan sütunlar atlandı: Renk, Beden.` | Bilgi amaçlı. Bu sütunlar okunmaz |
 | `Dosya biçimi tanınmadı: "Stok Kodu" sütunu bulunamadı. …` | Ekrandaki şablonu kullanın |
 
 "Satır" numarası Excel'deki satır numarasıdır (başlık 1. satırdır).
 
 ## Görseller {#gorseller}
 
-- Görseller yalnız **hiç görseli olmayan** ürünlere eklenir; görseli olan ürünün görselleri
+- Görseller yalnız **hiç görseli olmayan** ürünlere eklenir. Görseli olan ürünün görselleri
   Excel'le değişmez. Görselleri değiştirmek için ürün formunu kullanın.
-- Panelden aktarımda görseller yalnız **Görsel bağlantılarını indir** seçiliyse, Görsel 1–5
+- Panelden aktarımda görseller yalnız **Görsel bağlantılarını indir** seçiliyse, Görsel 1-5
   sütunlarındaki `http://` / `https://` adreslerinden indirilir. Sıra, sütun sırasıdır
   (Görsel 1 kapak olur). Açılamayan adres sessizce atlanır.
-- Panelin sonuç ekranında indirilen görsel sayısı gösterilmez; komut satırı aktarımı gösterir
+- Panelin sonuç ekranında indirilen görsel sayısı gösterilmez. Komut satırı aktarımı gösterir
   (aşağıya bakın).
 
 ## Toplu fiyat güncelleme {#toplu-fiyat}
@@ -183,7 +183,7 @@ php artisan shop:import-products /yol/urunler.xlsx
 
 | Seçenek | Anlamı |
 |---|---|
-| `--download-images` | Görseli olmayan ürünlerin görsellerini Görsel 1–5 bağlantılarından indirir |
+| `--download-images` | Görseli olmayan ürünlerin görsellerini Görsel 1-5 bağlantılarından indirir |
 | `--images=/yol/klasor` | Görselleri sunucudaki klasörden alır: her ürün için `klasor/{Stok Kodu}/` alt klasöründeki jpg, png, webp, gif dosyaları (dosya adı sırasıyla). Klasörde görsel bulunan ürünlerde bağlantılar kullanılmaz |
 | `--no-update` | Var olan ürünleri güncellemez (yalnız yeni ürün ekler) |
 | `--no-stock` | Var olan ürünlerin stoklarını güncellemez |

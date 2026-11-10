@@ -1,13 +1,13 @@
 # Siparişler
 
 Siparişler **Mağaza › Siparişler** ekranında listelenir. Bayiler bayi panelindeki **Sipariş ver**
-ekranından, vitrin kuruluysa müşteriler siteden sipariş verir; onaylanan teklifler de siparişe
-dönüşür. Sürecin tamamı için bkz. [Satış süreci](/satis/satis-sureci); tek bir siparişin ekranı
+ekranından, vitrin kuruluysa müşteriler siteden sipariş verir. Onaylanan teklifler de siparişe
+dönüşür. Sürecin tamamı için bkz. [Satış süreci](/satis/satis-sureci). Tek bir siparişin ekranı
 için bkz. [Sipariş detayı](/satis/siparis-detayi).
 
 ::: info Panelden sipariş girilmez
 Yönetim panelinde sipariş oluşturma ekranı yoktur. Müşteri adına satış hazırlamak için
-[teklif](/satis/teklifler) oluşturup gönderin; müşteri onaylayıp ödeyince sipariş oluşur.
+[teklif](/satis/teklifler) oluşturup gönderin. Müşteri onaylayıp ödeyince sipariş oluşur.
 :::
 
 Sipariş numarası `S` + yıl-ay-gün + günlük sıra biçimindedir (ör. `S2611070001`).
@@ -26,7 +26,7 @@ Başlıkta toplam sipariş sayısı yazar. En yeni sipariş üstte, sayfa başı
 | **Ödeme yöntemi** | Siparişlerde kullanılmış yöntemler (Havale / EFT, Cari hesaba, kart …). |
 | **Başlangıç tarihi** / **Bitiş tarihi** | Sipariş tarihine göre aralık. |
 | **Fatura** | *Faturalandı* (fatura no girilmiş) ya da *Tamamlandı, faturalanmadı* (tamamlanmış ama fatura no girilmemiş). |
-| Hesap | Müşteri kartından ya da sipariş detayındaki "Müşterinin siparişleri"nden gelindiyse **Tek hesabın siparişleri** etiketi görünür; çarpı ile kaldırılır. |
+| Hesap | Müşteri kartından ya da sipariş detayındaki "Müşterinin siparişleri"nden gelindiyse **Tek hesabın siparişleri** etiketi görünür. Çarpı ile kaldırılır. |
 
 **Temizle** tüm süzgeçleri kaldırır.
 
@@ -35,8 +35,8 @@ Başlıkta toplam sipariş sayısı yazar. En yeni sipariş üstte, sayfa başı
 | Sütun | İçerik |
 |---|---|
 | Seçim kutusu | Toplama listesi için sipariş seçer (başlıktaki kutu sayfadakilerin hepsini seçer) |
-| **Sipariş** | Sipariş no, tarih; tekliften geldiyse "· Tekliften" |
-| **Müşteri** | Ad, e-posta; bayi hesabıysa *Bayi* etiketi |
+| **Sipariş** | Sipariş no, tarih. Tekliften geldiyse "· Tekliften" |
+| **Müşteri** | Ad, e-posta. Bayi hesabıysa *Bayi* etiketi |
 | **Durum** | Sipariş durumu rozeti |
 | **Ödeme** | Ödeme durumu ve yöntemi |
 | **Fatura** | *Faturalandı · fatura no* ya da tamamlanmışsa *Faturalanmadı* |
@@ -53,7 +53,7 @@ Listede tek toplu işlem **Toplama listesi**'dir (yetkiniz varsa sağ üstte gö
 - Sipariş **seçerseniz** düğme "Toplama listesi (N)" olur ve yalnız seçilenler alınır.
 - Bir listede en çok 100 sipariş olur.
 
-Liste yazdırılabilir; tek bir siparişi yazdırmak için de o siparişi seçip toplama listesini
+Liste yazdırılabilir. Tek bir siparişi yazdırmak için de o siparişi seçip toplama listesini
 açın. Ayrıntılar: [Toplama listesi](/stok/toplama-listesi).
 
 ## Sipariş durumları {#durumlar}
@@ -61,8 +61,8 @@ açın. Ayrıntılar: [Toplama listesi](/stok/toplama-listesi).
 | Durum | Anlamı | Nasıl gelinir |
 |---|---|---|
 | **Ödeme Bekleniyor** | Havale ya da kart ödemesi bekleniyor. Stok ayrılmıştır. | Kart / havale siparişi oluşunca |
-| **Onay Bekliyor** | Vadeli siparişte limit aşıldı ya da vadesi geçmiş borç var; onayınızı bekliyor. Bkz. [Peşin ve vadeli çalışma](/cari/vadeli-calisma) | Vadeli sipariş limit dışı kalınca |
-| **Hazırlanıyor** | Ödeme alındı ya da vadeli sipariş onaylandı; hazırlanıyor. **Cari borç bu anda yazılır.** | Ödeme alınınca, vadeli sipariş limit içindeyse, onay verilince ya da elle |
+| **Onay Bekliyor** | Vadeli siparişte limit aşıldı ya da vadesi geçmiş borç var. Onayınızı bekliyor. Bkz. [Peşin ve vadeli çalışma](/cari/vadeli-calisma) | Vadeli sipariş limit dışı kalınca |
+| **Hazırlanıyor** | Ödeme alındı ya da vadeli sipariş onaylandı. Hazırlanıyor. **Cari borç bu anda yazılır.** | Ödeme alınınca, vadeli sipariş limit içindeyse, onay verilince ya da elle |
 | **Kargoya Verildi** | Kargoya teslim edildi. İlk geçişte kargo tarihi kaydedilir. | Elle |
 | **Tamamlandı** | Teslim edildi. Fatura no ancak bu durumda girilir. | Elle |
 | **İptal Edildi** | Sipariş iptal. Stok geri eklenir, cari borç ters kayıtla kapanır. | Elle ya da onay bekleyen siparişte **Reddet** |
@@ -93,10 +93,10 @@ durumlar listelenir:
 | İptal Edildi | Hazırlanıyor |
 | Ödeme Başarısız | İptal Edildi |
 
-Mevcut durum da her zaman listededir; durumu değiştirmeden yalnız not ya da kargo bilgisini
+Mevcut durum da her zaman listededir. Durumu değiştirmeden yalnız not ya da kargo bilgisini
 güncellemek için kullanılır. **Ödeme Bekleniyor**, **Onay Bekliyor** ve **Ödeme Başarısız**
 sistemin kendi durumlarıdır, elle seçilemez. Ödeme alındıysa **Ödeme** penceresinden ödeme
-durumunu **Ödendi** yapın; onay bekleyen vadeli siparişte **Onayla** / **Reddet** düğmelerini
+durumunu **Ödendi** yapın. Onay bekleyen vadeli siparişte **Onayla** / **Reddet** düğmelerini
 kullanın. Geçişin etkileri:
 
 | Yeni durum | Stok | Cari |
@@ -108,7 +108,7 @@ Satışı geri almak için durumu **İptal Edildi** yapın.
 
 İptalle ilgili diğer kurallar:
 
-- **Ödenmiş** siparişi iptal etmek ödemeyi kendiliğinden iade etmez; ödeme müşterinin carisinde
+- **Ödenmiş** siparişi iptal etmek ödemeyi kendiliğinden iade etmez. Ödeme müşterinin carisinde
   alacak olarak kalır. Parayı geri verecekseniz kart ödemesini **Ödemeler** bölümünden iade edin
   ya da ödeme durumunu **İade Edildi** yapın. Bkz. [Sipariş detayı](/satis/siparis-detayi#odeme).
 - Tekliften gelen ve **ödenmemiş** sipariş iptal edilirse teklif yeniden "Onaylandı" olur ve
@@ -132,11 +132,11 @@ Yöntemlerin en düşük tutarları **Cari Ayarları**'ndan belirlenir. Ayrınt�
 - Stok **sipariş verildiği anda** ayrılır (düşülür), ödeme beklense de. Aynı son ürünü iki kişi
   aynı anda satın alamaz.
 - Bayiye bölge deposu atanmışsa stok önce o depodan, yetmezse diğer satılabilir depolardan
-  düşülür; atanmamışsa önce varsayılan depodan.
+  düşülür. Atanmamışsa önce varsayılan depodan.
 - Stok takibi kapalı ürünlerde stok düşülmez.
 - **Ödeme başarısız** olursa ya da sipariş **iptal** edilirse stok, düştüğü depo ve lokasyona
   geri eklenir.
-- Teklif siparişleri stok kontrolüne takılmaz; stok yetmezse eksiye düşer.
+- Teklif siparişleri stok kontrolüne takılmaz. Stok yetmezse eksiye düşer.
 - Sipariş detayında her kalemin hangi depo, lokasyon ve lottan düştüğü görünür.
 
 Depo tarafı için bkz. [Stok işlemleri](/stok/stok-islemleri) ve
@@ -146,10 +146,10 @@ Depo tarafı için bkz. [Stok işlemleri](/stok/stok-islemleri) ve
 
 | Ne zaman | Müşteriye | Size (bildirim adresine) |
 |---|---|---|
-| Sipariş oluştu | **Siparişiniz alındı** (ödeme yöntemi; havalede banka hesapları ve sipariş no ile açıklama hatırlatması) | **Yeni sipariş** (kartla ödenen siparişlerde bu anda gitmez) |
+| Sipariş oluştu | **Siparişiniz alındı** (ödeme yöntemi. Havalede banka hesapları ve sipariş no ile açıklama hatırlatması) | **Yeni sipariş** (kartla ödenen siparişlerde bu anda gitmez) |
 | Kart ödemesi tamamlandı | "Ödemeniz alındı, siparişiniz hazırlanıyor." | **Yeni sipariş** (kart siparişinde yalnız bu anda, bir kez) |
 | Panelde ödeme "Ödendi" yapıldı / havale bildirimi onaylandı | "Ödemeniz alındı, siparişiniz hazırlanıyor." | — |
-| Panelde durum değişti | **Sipariş durumunuz güncellendi** — yeni durum; takip no girilmişse kargo firması ve takip no; isterseniz notunuz | — |
+| Panelde durum değişti | **Sipariş durumunuz güncellendi**: yeni durum. Takip no girilmişse kargo firması ve takip no. İsterseniz notunuz | — |
 
 - Durum e-postası durum **gerçekten değiştiğinde** her zaman gider. Durum değiştirirken yazdığınız
   not yalnız **Notu müşteriye de göster** işaretliyse e-postaya ve müşterinin sipariş sayfasına
@@ -157,12 +157,12 @@ Depo tarafı için bkz. [Stok işlemleri](/stok/stok-islemleri) ve
 - Ödeme başarısız olduğunda e-posta gönderilmez. Ödemesi tamamlanmayan kart siparişi için size
   hiç **Yeni sipariş** e-postası gitmez.
 - Bildirim adresi **Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler**'deki **Bildirim
-  e-postası**'dır; boşsa size e-posta gitmez.
+  e-postası**'dır. Boşsa size e-posta gitmez.
 
 ## Müşteri tarafı
 
 Bayi, siparişlerini bayi panelinde **Siparişlerim**'de görür: durum, kalemler, ödeme, kargo
-takip bağlantısı ve "müşteriye gösterilen" notlar. Müşteri siparişi kendisi iptal edemez; iptal
+takip bağlantısı ve "müşteriye gösterilen" notlar. Müşteri siparişi kendisi iptal edemez. İptal
 için sizinle iletişime geçer. Teslim edilen siparişten [iade talebi](/satis/iadeler) açabilir ve
 eski siparişi **tekrar sipariş** olarak sepete alabilir.
 

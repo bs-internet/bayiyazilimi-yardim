@@ -30,7 +30,7 @@ Giriş ekranında:
 
 **Giriş yap** düğmesine basınca bayi paneline geçersiniz.
 
-- Aynı e-posta adresiyle **dakikada en fazla 5** hatalı deneme yapılabilir; sonra kısa bir süre
+- Aynı e-posta adresiyle **dakikada en fazla 5** hatalı deneme yapılabilir. Sonra kısa bir süre
   beklemeniz gerekir.
 - Hesabınız pasif yapılmışsa giriş ekranına geri dönersiniz ve "Hesabınız pasif durumda. Lütfen
   yönetici ile iletişime geçin." uyarısı görünür.
@@ -44,7 +44,7 @@ Giriş ekranında:
    gönder**'e basın.
 3. Gelen e-postadaki bağlantıyı açın. **Şifreyi sıfırla** ekranında **Şifre** ve **Şifre
    tekrarı** alanlarını doldurup **Şifreyi sıfırla**'ya basın.
-4. Giriş ekranına dönersiniz; yeni şifrenizle giriş yapın.
+4. Giriş ekranına dönersiniz. Yeni şifrenizle giriş yapın.
 
 Sıfırlama bağlantısı da 60 dakika geçerlidir.
 
@@ -67,7 +67,7 @@ oturumu kapatabilirsiniz.
 
 İki aşamalı doğrulamayı açtıysanız şifrenizden sonra **İki aşamalı doğrulama** ekranı gelir:
 
-- **Kimlik doğrulama kodu** — telefonunuzdaki doğrulama uygulamasında (Google Authenticator,
+- **Kimlik doğrulama kodu**: telefonunuzdaki doğrulama uygulamasında (Google Authenticator,
   Microsoft Authenticator vb.) görünen 6 haneli kodu yazıp **Devam et**'e basın.
 - Telefonunuza erişemiyorsanız **kurtarma kodu ile giriş yapın** bağlantısına tıklayın ve
   sakladığınız kurtarma kodlarından birini yazın. Her kurtarma kodu yalnız bir kez kullanılır.
@@ -118,7 +118,7 @@ Hesabınızın açık olduğu cihazları listeler: **Bu cihaz** / **Diğer cihaz
 zamanı ve son hareket zamanı. Üstte son giriş tarihiniz yazar.
 
 Tanımadığınız ya da artık kullanmadığınız bir cihazın satırındaki **Oturumu kapat** düğmesine
-basıp onaylayın; o cihazdaki oturum sonlanır. Kullandığınız cihazın oturumu buradan kapatılamaz
+basıp onaylayın. O cihazdaki oturum sonlanır. Kullandığınız cihazın oturumu buradan kapatılamaz
 (bunun için **Oturumu Kapat** menüsünü kullanın).
 
 ## Güvenlik {#guvenlik}
@@ -135,7 +135,7 @@ Bu ekranı açarken şifreniz bir kez daha sorulabilir (**Şifrenizi doğrulayı
 | **Yeni şifre** | [Şifre kurallarına](#sifre-kurallari) uymalı |
 | **Yeni şifre tekrar** | Yeni şifreyle aynı olmalı |
 
-**Şifreyi kaydet**'e basınca bütün cihazlardaki oturumlarınız kapanır; yeni şifrenizle tekrar
+**Şifreyi kaydet**'e basınca bütün cihazlardaki oturumlarınız kapanır. Yeni şifrenizle tekrar
 giriş yaparsınız.
 
 ### İki aşamalı doğrulamayı açma {#iki-asamali-acma}
@@ -152,8 +152,8 @@ uygulamasının ürettiği kod istenir.
 
 Kurulumu yarıda bıraktıysanız **Kuruluma devam et** düğmesiyle kaldığınız yerden sürdürürsünüz.
 
-- **Kodları yenile** — eski kurtarma kodlarını geçersiz yapar ve yenilerini üretir.
-- **2FA kapat** — onay sonrasında girişte kod istenmez.
+- **Kodları yenile**: eski kurtarma kodlarını geçersiz yapar ve yenilerini üretir.
+- **2FA kapat**: onay sonrasında girişte kod istenmez.
 
 ## Tercihler {#tercihler}
 
@@ -179,7 +179,7 @@ Firmanızın **fatura bilgileri** ve resmî adresidir. Teslimat ve fatura adresl
 
 | Alan | Açıklama |
 |---|---|
-| **Fatura türü** | **Kurumsal** (firma adına; vergi dairesi ve vergi no ile) ya da **Bireysel** (şahıs adına; TC kimlik no ile) |
+| **Fatura türü** | **Kurumsal** (firma adına. Vergi dairesi ve vergi no ile) ya da **Bireysel** (şahıs adına; TC kimlik no ile) |
 | **Firma ünvanı** / **Ad soyad** | Fatura türüne göre etiketi değişir. Zorunlu, en fazla 255 karakter |
 | **Vergi dairesi** | Kurumsal'da zorunlu, en fazla 100 karakter |
 | **Vergi no** | Kurumsal'da zorunlu, 10 ya da 11 rakam |
@@ -202,11 +202,11 @@ Firmanızın **fatura bilgileri** ve resmî adresidir. Teslimat ve fatura adresl
 
 Teslimat ve fatura adresleriniz **iki ayrı listede** tutulur:
 
-- **Teslimat adreslerim** — siparişlerinizin gönderileceği adresler.
-- **Fatura adreslerim** — faturalarınızın düzenleneceği bireysel / kurumsal bilgiler.
+- **Teslimat adreslerim**: siparişlerinizin gönderileceği adresler.
+- **Fatura adreslerim**: faturalarınızın düzenleneceği bireysel / kurumsal bilgiler.
 
 Kaydettiğiniz adresleri ödeme ekranında listeden seçersiniz. Adresler firmanızın hesabına
-kaydedilir; firmanızdaki diğer kullanıcılar da aynı adresleri görür.
+kaydedilir. Firmanızdaki diğer kullanıcılar da aynı adresleri görür.
 
 ### Adres alanları
 
@@ -232,18 +232,18 @@ kaydedilir; firmanızdaki diğer kullanıcılar da aynı adresleri görür.
 1. İlgili listede **Yeni teslimat adresi** ya da **Yeni fatura adresi** düğmesine basın.
 2. Alanları doldurun ve **Kaydet**'e basın.
 
-**Adresi düzenlemek** — adres kartındaki **Düzenle** düğmesine basın, değiştirip kaydedin.
+**Adresi düzenlemek**: adres kartındaki **Düzenle** düğmesine basın, değiştirip kaydedin.
 
-**Varsayılan adresi değiştirmek** — adres kartındaki **Varsayılan teslimat yap** /
+**Varsayılan adresi değiştirmek**: adres kartındaki **Varsayılan teslimat yap** /
 **Varsayılan fatura yap** düğmesine basın. Varsayılan adresin kartında **Varsayılan teslimat** /
 **Varsayılan fatura** etiketi görünür.
 
-**Adresi silmek** — silme simgesine basın ve onaylayın. Silme işlemi geri alınamaz.
+**Adresi silmek**: silme simgesine basın ve onaylayın. Silme işlemi geri alınamaz.
 
 ### Kurallar
 
 - Bir türdeki **ilk adresiniz** kendiliğinden varsayılan olur.
-- Her türde yalnız bir varsayılan adres olur; yenisini seçince eskisinin işareti kalkar.
+- Her türde yalnız bir varsayılan adres olur. Yenisini seçince eskisinin işareti kalkar.
 - Varsayılan adresi silerseniz o türdeki en eski adresiniz varsayılan olur.
 - Ödeme ekranında yeni adres girip **Yeni adresleri Adreslerim'e kaydet** işaretlerseniz
   adresler buraya da eklenir (aynı adres zaten kayıtlıysa tekrar eklenmez). Bkz.

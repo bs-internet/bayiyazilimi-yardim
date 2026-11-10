@@ -8,7 +8,7 @@ değiştirilebilir. Vitrin müşterileri her zaman peşin çalışır ve yöntem
 | Ayar | Grupta varsayılan | Açıklama |
 |---|---|---|
 | Çalışma şekli | **Peşin** | **Peşin** ya da **Vadeli (açık hesap)** |
-| Vade (gün) | **30** | 0–3650. Vadeli siparişin vade tarihi = siparişin onaylandığı gün + vade günü |
+| Vade (gün) | **30** | 0-3650. Vadeli siparişin vade tarihi = siparişin onaylandığı gün + vade günü |
 | Kredi limiti | boş = **limitsiz** | Vadeli bayinin borç sınırı, ana para biriminde |
 | Limit aşılınca | **Onaya düşsün** | ya da **Engellensin** |
 | Vadesi geçmiş borç varken | **Onaya düşsün** | ya da **Engellensin** / **Serbest** |
@@ -33,9 +33,9 @@ kredi limiti 50.000 TL girilmiş, diğerleri "Gruptan". Bayi A için geçerli ol
 
 Sipariş, ödeme gelince işleme alınır:
 
-- **Havale / EFT** — sipariş **Ödeme Bekleniyor** durumunda açılır; ödeme onaylanınca
+- **Havale / EFT**: sipariş **Ödeme Bekleniyor** durumunda açılır. Ödeme onaylanınca
   hazırlanır (bkz. [Havale](/cari/havale)).
-- **Kartla ödeme** — ödeme başarılı olunca sipariş hazırlanmaya alınır (bkz. [Kartla ödeme](/cari/kartla-odeme)).
+- **Kartla ödeme**: ödeme başarılı olunca sipariş hazırlanmaya alınır (bkz. [Kartla ödeme](/cari/kartla-odeme)).
 
 Ödeme ekranında **Cari hesaba (vadeli)** seçeneği çıkmaz.
 
@@ -51,8 +51,8 @@ Bayi bu seçenekle sipariş verdiğinde sistem iki şeye bakar:
 
 | Sonuç | Ne olur |
 |---|---|
-| İkisi de sorun değil | Sipariş doğrudan **Hazırlanıyor** olur; borç vade tarihiyle cariye yazılır. Bayiye "Siparişiniz alındı (…); vade tarihi …" mesajı gösterilir. |
-| Sorun var, ayar **Onaya düşsün** | Sipariş **Onay Bekliyor** durumuna düşer; gerekçe sipariş geçmişine yazılır. Bayiye "Siparişiniz alındı (…) ve onaya gönderildi: …" mesajı gösterilir. |
+| İkisi de sorun değil | Sipariş doğrudan **Hazırlanıyor** olur. Borç vade tarihiyle cariye yazılır. Bayiye "Siparişiniz alındı (…); vade tarihi …" mesajı gösterilir. |
+| Sorun var, ayar **Onaya düşsün** | Sipariş **Onay Bekliyor** durumuna düşer. Gerekçe sipariş geçmişine yazılır. Bayiye "Siparişiniz alındı (…) ve onaya gönderildi: …" mesajı gösterilir. |
 | Sorun var, ayar **Engellensin** | Sipariş verilemez: "Vadeli sipariş verilemiyor: … Kartla ya da havaleyle ödeyebilirsiniz." |
 
 İki sorun birden varsa ve biri "Engellensin" ise sipariş engellenir.
@@ -61,19 +61,19 @@ Bayi bu seçenekle sipariş verdiğinde sistem iki şeye bakar:
 
 Sipariş detayında "Vadeli sipariş onay bekliyor" uyarısı ve iki düğme çıkar:
 
-- **Onayla** — sipariş **Hazırlanıyor** olur, borç cariye yazılır. Vade tarihi **onaylandığı
+- **Onayla**: sipariş **Hazırlanıyor** olur, borç cariye yazılır. Vade tarihi **onaylandığı
   günden** itibaren vade günü kadar sonradır.
-- **Reddet** — onay sorulur; sipariş iptal edilir, stok geri eklenir ve müşteriye bildirilir.
+- **Reddet**: onay sorulur. Sipariş iptal edilir, stok geri eklenir ve müşteriye bildirilir.
 
 Onay bekleyen vadeli siparişler, onaylanana kadar bayinin **riskine** eklenir.
 
 ### Diğer kurallar
 
-- Vadeli bayi isterse kartla ya da havaleyle **peşin** de ödeyebilir; bu sipariş limit
+- Vadeli bayi isterse kartla ya da havaleyle **peşin** de ödeyebilir. Bu sipariş limit
   kontrolüne girmez.
 - **İzinli ödeme yöntemleri** işaretliyse bayiye yalnız o yöntemler sunulur. Cari Ayarları'ndaki
   yönteme göre en düşük sipariş tutarı da ayrıca uygulanır (bkz. [Cari Ayarları](/cari/#cari-ayarlari)).
-- "Vadesi geçmiş borç" yalnız **sipariş borçlarına** bakar; dekont ve açılış bakiyesi bu kontrole
+- "Vadesi geçmiş borç" yalnız **sipariş borçlarına** bakar. Dekont ve açılış bakiyesi bu kontrole
   girmez.
 
 ## Risk ve kullanılabilir limit {#risk}
@@ -81,7 +81,7 @@ Onay bekleyen vadeli siparişler, onaylanana kadar bayinin **riskine** eklenir.
 **Risk** = cari bakiye + onay bekleyen vadeli siparişler + henüz paraya dönmemiş çek / senetler
 (Portföyde, Tahsile verildi ve Ciro edildi durumundakiler).
 
-**Kullanılabilir limit** = kredi limiti − risk (sıfırın altına inmez; limit yoksa "Limitsiz").
+**Kullanılabilir limit** = kredi limiti − risk (sıfırın altına inmez. Limit yoksa "Limitsiz").
 
 Bu değerler müşteri detayı › **Cari** sekmesinin özet kartlarında ve bayinin **Cari Hesabım**
 ekranında görünür.
@@ -102,7 +102,7 @@ Vadesi geçmiş borç varken: **Onaya düşsün**.
 - Bayi 12.000 TL'lik vadeli sipariş verir: 85.000 + 12.000 = 97.000 ≤ 100.000 → vadesi geçmiş
   borcu yoksa sipariş **doğrudan Hazırlanıyor** olur, vade bugünden 30 gün sonradır.
 - Bayi 20.000 TL'lik vadeli sipariş verir: 85.000 + 20.000 = 105.000 > 100.000 → sipariş **Onay
-  Bekliyor**'a düşer; gerekçe "Kredi limiti aşılıyor (limit 100.000,00 TL, kullanılabilir
+  Bekliyor**'a düşer. Gerekçe "Kredi limiti aşılıyor (limit 100.000,00 TL, kullanılabilir
   15.000,00 TL)".
 - Ayar **Engellensin** olsaydı 20.000 TL'lik sipariş hiç verilemezdi.
 - Portföydeki çek **Tahsil edildi** yapılınca risk 15.000 TL azalır (alacak zaten çek alındığında
@@ -131,7 +131,7 @@ alacaklar **vadesi en eski** borçtan başlayarak (vadesi olmayan borçta işlem
 3. Bakiye: 23.000 − 12.000 − 8.000 = **3.000 TL borç** (Sipariş A'nın kalanı). 16 Nisan'da bu tutar
    "Vadesi geçen" kartına ve [Geciken Ödemeler](/cari/#yaslandirma)'de "0–30 gün" dilimine düşer.
 
-Dağıtım her harekette baştan yapılır; bir tahsilatı iptal ederseniz siparişlerin ödeme durumu
+Dağıtım her harekette baştan yapılır. Bir tahsilatı iptal ederseniz siparişlerin ödeme durumu
 da buna göre geri döner.
 
 ## Bayinin gördüğü {#bayi}

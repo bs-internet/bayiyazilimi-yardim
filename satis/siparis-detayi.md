@@ -40,19 +40,19 @@ Alttaki toplam bölümü:
 | **Ödeme farkı** | Ödeme yöntemine bağlı fark, ör. *Havale indirimi (%2)* |
 | **Genel toplam** | Müşterinin ödediği / borçlandığı tutar |
 
-Sipariş TL dışında bir para birimindeyse altta **Sipariş kuru: 1 USD = … TL** yazar; cari bu kurla
+Sipariş TL dışında bir para birimindeyse altta **Sipariş kuru: 1 USD = … TL** yazar. Cari bu kurla
 TL'ye çevrilir.
 
 ### Ödemeler {#odeme}
 
 Siparişe ait ödeme kayıtları: **Yöntem** (taksit sayısı, vade farkı), **Tarih**, **Durum**,
 **Tutar**, kısmi iade yapıldıysa "İade: …" ve başarısız ödemelerde neden. Kayıt yoksa
-"Ödeme kaydı yok." yazar; havale siparişinde ödemeyi aldığınızda **Ödeme** düğmesinden durumu
+"Ödeme kaydı yok." yazar. Havale siparişinde ödemeyi aldığınızda **Ödeme** düğmesinden durumu
 "Ödendi" yapmanız hatırlatılır.
 
 **Kart ödemesini iade et:** ödendi durumdaki kart ödemesinin satırında **İade et** düğmesi çıkar
 (yetkiniz varsa). **İade tutarı** girilir (en fazla ödemenin iade edilmemiş kısmı). İade ödeme
-sağlayıcısına iletilir; tamamı iade edilirse ödeme "İade Edildi" olur ve cari düzeltilir, kısmi
+sağlayıcısına iletilir. Tamamı iade edilirse ödeme "İade Edildi" olur ve cari düzeltilir, kısmi
 iadede iade edilen tutar kadar cari kaydı yazılır. Bkz. [Kartla ödeme](/cari/kartla-odeme).
 
 ### Geçmiş
@@ -64,10 +64,10 @@ Siparişin tüm adımları tarih sırasıyla: durum, not, işlemi yapan kullanı
 
 | Kart | İçerik |
 |---|---|
-| **Müşteri** | Hesap adı ve türü (*Bayi* / müşteri) ya da *Misafir sipariş*; hesabın kaçıncı siparişi (*İlk siparişi* ya da "N sipariş"); tekliften geldiyse **Teklif #…** bağlantısı; **Müşteri notu** |
+| **Müşteri** | Hesap adı ve türü (*Bayi* / müşteri) ya da *Misafir sipariş*. Hesabın kaçıncı siparişi (*İlk siparişi* ya da "N sipariş"). Tekliften geldiyse **Teklif #…** bağlantısı; **Müşteri notu** |
 | **İletişim** | E-posta ve telefon |
 | **Teslimat adresi** | Ad, firma, adres, ilçe / il, posta kodu, telefon (girilenler) |
-| **Fatura adresi** | **Fatura türü** (*Bireysel* / *Kurumsal*), kurumsalda firma, vergi dairesi ve no; bireyselde girildiyse T.C. kimlik no |
+| **Fatura adresi** | **Fatura türü** (*Bireysel* / *Kurumsal*), kurumsalda firma, vergi dairesi ve no. Bireyselde girildiyse T.C. kimlik no |
 | **Kargo** | **Kargo firması**, **Toplam desi**, **Takip numarası** (firmanın takip bağlantısı tanımlıysa tıklanabilir), **Kargoya verildi** tarihi |
 | **Fatura** | Fatura no ve faturalandırma tarihi. Bkz. [Fatura numarası girmek](#fatura) |
 | **Yönetici notu** | Yalnız panelde görünen iç not. Bkz. aşağıda |
@@ -86,7 +86,7 @@ faturanın aktarım durumu ve gönder / yeniden dene düğmesi. Bkz.
 
 | Alan | Açıklama |
 |---|---|
-| **Yeni durum** | Mevcut durum ve bu durumdan geçilebilecek durumlar; mevcut durum seçili gelir. Hangi durumların listelendiği: [Siparişler › Durum geçişleri](/satis/siparisler#durum-gecisleri). |
+| **Yeni durum** | Mevcut durum ve bu durumdan geçilebilecek durumlar. Mevcut durum seçili gelir. Hangi durumların listelendiği: [Siparişler › Durum geçişleri](/satis/siparisler#durum-gecisleri). |
 | **Kargo firması** | Aktif kargo firmaları (siparişin mevcut firması pasif olsa da listede). Mevcut değer gelir. |
 | **Takip numarası** | En çok 255 karakter. Mevcut değer gelir. |
 | **Not** | En çok 255 karakter. Geçmişe yazılır. |
@@ -104,7 +104,7 @@ durumu aynı bırakırsanız e-posta gitmez).
 2. **Yeni durum**: *Kargoya Verildi*.
 3. **Kargo firması**'nı seçin, **Takip numarası**'nı yazın.
 4. İsterseniz not ekleyin ("Notu müşteriye de göster" işaretli kalsın).
-5. **Durumu kaydet**. Kargo tarihi kaydedilir; müşteriye kargo firması ve takip numarasıyla
+5. **Durumu kaydet**. Kargo tarihi kaydedilir. Müşteriye kargo firması ve takip numarasıyla
    e-posta gider. Firmanın takip bağlantısı tanımlıysa müşteri siparişinden kargoyu izleyebilir
    (bkz. [Kargo](/satis/kargo#firma-formu)).
 
@@ -115,7 +115,7 @@ durumu aynı bırakırsanız e-posta gitmez).
 
 | Seçim | Ne olur |
 |---|---|
-| **Ödendi** | Siparişin yöntemi ve tutarıyla bir ödeme kaydı yazılır. Sipariş *Ödeme Bekleniyor* ya da *Ödeme Başarısız* ise **Hazırlanıyor** olur; stok düşülmemişse düşülür; cariye sipariş borcu ve ödeme (alacak) yazılır. Müşteriye "Ödemeniz alındı" e-postası gider. |
+| **Ödendi** | Siparişin yöntemi ve tutarıyla bir ödeme kaydı yazılır. Sipariş *Ödeme Bekleniyor* ya da *Ödeme Başarısız* ise **Hazırlanıyor** olur. Stok düşülmemişse düşülür. Cariye sipariş borcu ve ödeme (alacak) yazılır. Müşteriye "Ödemeniz alındı" e-postası gider. |
 | **İade Edildi** | Önceden ödendiyse ödeme kayıtları "İade Edildi" olur ve cari tahsilatı ters kayıtla geri alınır. Sipariş durumu değişmez. |
 | **Bekliyor** / **Başarısız** | Önceden ödendiyse ödeme kayıtları iptal edilir ve cari tahsilatı geri alınır. Sipariş durumu ve stok **değişmez**. |
 
@@ -127,9 +127,9 @@ onaylamaktır: bkz. [Havale ve ödeme bildirimi](/cari/havale).
 Onay bekleyen siparişte uyarıdaki açıklama: limit aşıldığı ya da vadesi geçmiş borç olduğu için
 sipariş onaya düştü (nedeni geçmişte yazar).
 
-- **Onayla** — sipariş **Hazırlanıyor** olur, borç cariye vadeyle yazılır; müşteriye "Vadeli
+- **Onayla**: sipariş **Hazırlanıyor** olur, borç cariye vadeyle yazılır. Müşteriye "Vadeli
   sipariş onaylandı." notuyla e-posta gider.
-- **Reddet** — onay sorulur; sipariş **İptal Edildi** olur, stok geri eklenir ve müşteriye
+- **Reddet**: onay sorulur. Sipariş **İptal Edildi** olur, stok geri eklenir ve müşteriye
   "Vadeli sipariş onaylanmadı." notuyla e-posta gider.
 
 Bkz. [Peşin ve vadeli çalışma](/cari/vadeli-calisma).

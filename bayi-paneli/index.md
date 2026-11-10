@@ -1,7 +1,7 @@
 # Bayi paneli
 
 Bu bölüm, bayilerinizin kullandığı **bayi panelini** anlatır. Sayfalar doğrudan bayiye hitap
-edecek şekilde yazılmıştır; bağlantılarını bayilerinize gönderebilirsiniz.
+edecek şekilde yazılmıştır. Bağlantılarını bayilerinize gönderebilirsiniz.
 
 ---
 
@@ -33,12 +33,12 @@ görünür.
 
 Sayfanın üstünde, sağda şunlar bulunur:
 
-- **Mağazayı aç** (mağaza simgesi) — online mağazamız varsa görünür; mağazayı yeni sekmede açar.
-- **Bildirimler** (zil simgesi) — bildirim listenizi açar.
-- **Adınız** — kullanıcı menüsünü açar:
-  - **Hesabım** — firma ve fatura bilgileriniz.
-  - **Adreslerim** — teslimat ve fatura adresleriniz.
-  - **Bilgilerim** — adınız, e-postanız, şifreniz, iki aşamalı doğrulama, oturumlar ve
+- **Mağazayı aç** (mağaza simgesi): online mağazamız varsa görünür. Mağazayı yeni sekmede açar.
+- **Bildirimler** (zil simgesi): bildirim listenizi açar.
+- **Adınız**: kullanıcı menüsünü açar:
+  - **Hesabım**: firma ve fatura bilgileriniz.
+  - **Adreslerim**: teslimat ve fatura adresleriniz.
+  - **Bilgilerim**: adınız, e-postanız, şifreniz, iki aşamalı doğrulama, oturumlar ve
     tercihler.
   - **Bildirimler**
   - **Oturumu Kapat**

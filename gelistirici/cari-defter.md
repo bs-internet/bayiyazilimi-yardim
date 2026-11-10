@@ -14,7 +14,7 @@ tablosundadır. ERP entegrasyonu isteğe bağlıdır.
 | `original_amount` + `original_currency` + `exchange_rate` | Belgenin kendi para birimi ve çevrim kuru |
 | `transaction_date`, `due_date` | İşlem ve vade tarihi |
 | `source_type` / `source_id` | Hareketi doğuran belge (Order, Payment, ReturnRequest, Cheque …) |
-| `origin` + `external_ref` | `system` ya da `erp:{ad}`; ikisi birlikte tekildir |
+| `origin` + `external_ref` | `system` ya da `erp:{ad}`. İkisi birlikte tekildir |
 | `reversal_of` / `reversed_at` | Kayıt silinmez, ters kayıtla düzeltilir |
 
 **Bakiye = Σ borç − Σ alacak.**
@@ -23,14 +23,14 @@ tablosundadır. ERP entegrasyonu isteğe bağlıdır.
 
 - Sipariş **Hazırlanıyor**'a geçince borç (vadeli siparişte `due_date` = bugün + vade günü).
 - Sipariş iptali → borcun ters kaydı.
-- Ödeme "ödendi" → alacak; iade / iptal → ters kayıt.
+- Ödeme "ödendi" → alacak. İade / iptal → ters kayıt.
 - İade talebi tamamlanınca (tutar girilmişse) → alacak.
 - Tutar, siparişin oluştuğu andaki kurla (`orders.base_exchange_rate`) ana birime çevrilir.
 - Misafir siparişleri deftere yazılmaz.
 
 ## FIFO dağıtım
 
-`account_allocations`: önce siparişe bağlı ödemeler kendi siparişini kapatır; kalan alacaklar en
+`account_allocations`: önce siparişe bağlı ödemeler kendi siparişini kapatır. Kalan alacaklar en
 eski vadeli borçtan başlayarak dağıtılır. Vadeli sipariş tamamen kapanınca ödeme durumu "Ödendi"
 olur. Yaşlandırma raporu açık (kapanmamış) borçları bu dağıtımdan hesaplar.
 
@@ -41,12 +41,12 @@ risk = bakiye + onay bekleyen vadeli siparişler + portföydeki çek / senetler
 kullanılabilir limit = kredi limiti − risk
 ```
 
-Portföy riski `shop.ledger.instrument_risk` filtresiyle eklenir; başka bir eklenti (ör. teminat
+Portföy riski `shop.ledger.instrument_risk` filtresiyle eklenir. Başka bir eklenti (ör. teminat
 mektubu) aynı filtreyle riske katkı yapabilir.
 
 ## Ana para birimi
 
-Kurlar TL üzerinden tutulur (TCMB); ana birime çapraz kurla çevrilir:
+Kurlar TL üzerinden tutulur (TCMB). Ana birime çapraz kurla çevrilir:
 `tutar × kur(belge) / kur(ana birim)`. Ana birim ilk sipariş ya da ilk cari hareketten sonra
 kilitlenir.
 
@@ -66,7 +66,7 @@ app(LedgerService::class)->record(
 );
 ```
 
-Aynı `origin + external_ref` ikinci kez yazılmaz; senkronizasyon güvenle tekrarlanabilir.
+Aynı `origin + external_ref` ikinci kez yazılmaz. Senkronizasyon güvenle tekrarlanabilir.
 
 Eklenti yazmadan dışarıdan bağlanan bir program için aynı yol REST API'dedir:
 `POST /api/v1/accounts/{code}/transactions` hareketi `origin = api` ve `external_ref` = istekteki

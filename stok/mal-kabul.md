@@ -6,12 +6,12 @@ kez alınmasını engeller ve lot / seri numaralı ürünlerde toplu girişe izi
 
 ## Tedarikçiler {#tedarikciler}
 
-**Ayarlar › Tanımlamalar › Tedarikçiler** — mal kabulde seçilen tedarikçiler. Mal kabul formunda
+**Ayarlar › Tanımlamalar › Tedarikçiler**: mal kabulde seçilen tedarikçiler. Mal kabul formunda
 hiç tedarikçi yoksa bu ekrana bağlantı çıkar.
 
 | Alan | Açıklama |
 |---|---|
-| Tedarikçi adı | Zorunlu, en fazla 255 karakter; her tedarikçide farklı olmalı |
+| Tedarikçi adı | Zorunlu, en fazla 255 karakter. Her tedarikçide farklı olmalı |
 | Vergi dairesi | İsteğe bağlı |
 | Vergi / TC no | İsteğe bağlı, en fazla 32 karakter. Mal kabul detayında "VN:" ile görünür |
 | Telefon | İsteğe bağlı, en fazla 32 karakter |
@@ -23,12 +23,12 @@ Listede: Tedarikçi, Vergi no, İletişim, Mal kabul (kaç mal kabulde kullanıl
 anahtarı ve işlemler.
 
 - Yeni tedarikçi **aktif** olarak eklenir. Mal kabul formunda yalnız aktif tedarikçiler çıkar.
-- Mal kabulde kullanılmış tedarikçi **silinemez**; pasifleştirin. Pasif tedarikçinin geçmiş
+- Mal kabulde kullanılmış tedarikçi **silinemez**. Pasifleştirin. Pasif tedarikçinin geçmiş
   mal kabulleri görünmeye devam eder.
 
 ## Mal kabul listesi
 
-**Mağaza › Stok › Mal Kabul** — en yeni kayıt üstte, sayfa başına 50 kayıt.
+**Mağaza › Stok › Mal Kabul**: en yeni kayıt üstte, sayfa başına 50 kayıt.
 
 | Sütun | Açıklama |
 |---|---|
@@ -50,20 +50,20 @@ anahtarı ve işlemler.
 | Alan | Açıklama |
 |---|---|
 | Tedarikçi | Zorunlu. Yalnız aktif tedarikçiler |
-| Giriş deposu | Zorunlu. Yalnız aktif depolar; varsayılan depo seçili gelir. Depoyu değiştirirseniz satırlarda seçili lokasyonlar temizlenir |
+| Giriş deposu | Zorunlu. Yalnız aktif depolar. Varsayılan depo seçili gelir. Depoyu değiştirirseniz satırlarda seçili lokasyonlar temizlenir |
 | Belge türü | Zorunlu: **İrsaliye** (varsayılan), **Fatura**, **İrsaliyeli Fatura** |
 | Belge no | Zorunlu, en fazla 64 karakter |
-| Belge tarihi | Zorunlu; bugün gelir. İleri bir tarih seçilemez |
+| Belge tarihi | Zorunlu. Bugün gelir. İleri bir tarih seçilemez |
 | Not | İsteğe bağlı, en fazla 500 karakter |
 
 ::: warning Aynı belge iki kez alınamaz
-Aynı tedarikçinin aynı türdeki aynı belge numarası ikinci kez kabul edilmez; hata mesajında önceki
+Aynı tedarikçinin aynı türdeki aynı belge numarası ikinci kez kabul edilmez. Hata mesajında önceki
 mal kabulün numarası yazar.
 :::
 
 ### Satırlar bölümü
 
-Arama kutusuna en az 2 karakter yazın (ürün adı, SKU ya da barkod); en fazla 20 sonuç listelenir.
+Arama kutusuna en az 2 karakter yazın (ürün adı, SKU ya da barkod). En fazla 20 sonuç listelenir.
 Sonuçta ürünün takip türü ("Lot takipli", "Seri no takipli", "SKT") görünür. Ürüne tıklayınca
 satır eklenir. Bölüm başlığında satır sayısı ve toplam adet yazar.
 
@@ -72,11 +72,11 @@ farklı lot).
 
 | Alan | Ne zaman görünür | Açıklama |
 |---|---|---|
-| Miktar (birim) | Seri takipli ürün hariç | Zorunlu, 1–1.000.000. Varsayılan 1 |
-| Lokasyon | Her satırda | İsteğe bağlı; giriş deposunun aktif lokasyonları. Boşsa (**Otomatik**) ürünün o depodaki ana lokasyonuna, yoksa Atanmamış'a girer |
-| Lot no | Lot takipli üründe | Zorunlu, en fazla 64 karakter; büyük harfe çevrilir |
+| Miktar (birim) | Seri takipli ürün hariç | Zorunlu, 1-1.000.000. Varsayılan 1 |
+| Lokasyon | Her satırda | İsteğe bağlı. Giriş deposunun aktif lokasyonları. Boşsa (**Otomatik**) ürünün o depodaki ana lokasyonuna, yoksa Atanmamış'a girer |
+| Lot no | Lot takipli üründe | Zorunlu, en fazla 64 karakter. Büyük harfe çevrilir |
 | Son kullanma tarihi | Lot ya da seri takipli üründe | Üründe SKT takibi açıksa zorunlu, değilse "(isteğe bağlı)" |
-| Seri numaraları | Seri takipli üründe | Zorunlu. Miktar, girilen seri numarası sayısından hesaplanır; etikette sayı görünür |
+| Seri numaraları | Seri takipli üründe | Zorunlu. Miktar, girilen seri numarası sayısından hesaplanır. Etikette sayı görünür |
 
 Çöp kutusu simgesi satırı siler.
 
@@ -96,12 +96,12 @@ farklı lot).
 - Lot daha önce **farklı** bir SKT ile kaydedildiyse hata verir ("lotu farklı bir son kullanma
   tarihiyle kayıtlı"). SKT'siz kayıtlı lota SKT girilirse lot tamamlanır.
 
-### Nasıl yapılır? — Mal kabul girmek
+### Nasıl yapılır? Mal kabul girmek
 
 1. **Mağaza › Stok › Mal Kabul**'de **Yeni mal kabul**'e basın.
-2. Tedarikçiyi, giriş deposunu, belge türünü seçin; belge numarasını ve tarihini irsaliyeden
+2. Tedarikçiyi, giriş deposunu, belge türünü seçin. Belge numarasını ve tarihini irsaliyeden
    yazın.
-3. Arama kutusuyla irsaliyedeki her ürünü ekleyin; miktarı yazın.
+3. Arama kutusuyla irsaliyedeki her ürünü ekleyin. Miktarı yazın.
 4. Lot takipli ürünlerde lot no ve SKT, seri takipli ürünlerde seri numaralarını girin.
 5. Malı yerleştireceğiniz rafı biliyorsanız lokasyonu seçin.
 6. **Mal kabulü kaydet**. Detay sayfası açılır ve "… mal kabulü kaydedildi." mesajı çıkar.
@@ -109,7 +109,7 @@ farklı lot).
 ### Kayıt sonrası
 
 - Her satır bir **Giriş** stok hareketi olarak yazılır (seri takipli üründe her seri numarası
-  için bir hareket); hareketin notu "Mal kabul MK…" ve referansı bu mal kabuldür.
+  için bir hareket). Hareketin notu "Mal kabul MK…" ve referansı bu mal kabuldür.
 - Lot takipli üründe aynı depoda **lot belirsiz** eksi stok varsa gelen lotla kapatılır. Bkz.
   [Lot belirsiz stok](/stok/lot-seri-skt#lot-belirsiz).
 
@@ -126,11 +126,11 @@ kullanıcı yazar.
 
 - **Belge** bölümü: tedarikçi (vergi numarasıyla), belge türü ve numarası, belge tarihi, giriş
   deposu, not.
-- **Satırlar** tablosu: Ürün, Lokasyon, Lot / Seri no, SKT, Miktar; başlıkta toplam adet.
-- **Yazdır** düğmesi sayfayı yazıcıya gönderir; düğmeler çıktıda görünmez.
+- **Satırlar** tablosu: Ürün, Lokasyon, Lot / Seri no, SKT, Miktar. Başlıkta toplam adet.
+- **Yazdır** düğmesi sayfayı yazıcıya gönderir. Düğmeler çıktıda görünmez.
 
 ## Düzeltme
 
 Kaydedilmiş mal kabul değiştirilemez ve silinemez. Hatalı girişi
 [Stok Durumu](/stok/stok-islemleri#cikis)'ndan **stok çıkışı** yaparak düzeltin (lot takipli
-üründe ilgili lotu seçerek); nota mal kabul numarasını yazın.
+üründe ilgili lotu seçerek). Nota mal kabul numarasını yazın.

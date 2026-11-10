@@ -10,13 +10,13 @@ eklenir, her bayinin devreden bakiyesi **açılış bakiyesi** olarak girilir.
 | Adım | Ne yapılır | Nerede |
 |---|---|---|
 | 1 | Kurulum ve ilk ayarlar | [Kurulum](/baslangic/kurulum), [İlk ayarlar](/baslangic/ilk-ayarlar) |
-| 2 | Para birimleri ve kurlar | **Ayarlar › Tanımlamalar › Para Birimleri** — [Para birimleri](/yonetim/para-birimleri) |
-| 3 | Banka hesapları, havale ayarı | **Ayarlar › Tanımlamalar › Banka Hesapları** — [Havale](/cari/havale#banka-hesaplari) |
-| 4 | Cari ayarları (çek / senet kullanılacaksa açın) | **Ayarlar › Tanımlamalar › Cari Ayarları** — [Cari Ayarları](/cari/#cari-ayarlari) |
-| 5 | Ürünler, kategoriler, markalar | **Katalog › İçe / Dışa Aktar** — [Excel ile ürün aktarma](/satis/excel) |
+| 2 | Para birimleri ve kurlar | **Ayarlar › Tanımlamalar › Para Birimleri**: [Para birimleri](/yonetim/para-birimleri) |
+| 3 | Banka hesapları, havale ayarı | **Ayarlar › Tanımlamalar › Banka Hesapları**: [Havale](/cari/havale#banka-hesaplari) |
+| 4 | Cari ayarları (çek / senet kullanılacaksa açın) | **Ayarlar › Tanımlamalar › Cari Ayarları**: [Cari Ayarları](/cari/#cari-ayarlari) |
+| 5 | Ürünler, kategoriler, markalar | **Katalog › İçe / Dışa Aktar**: [Excel ile ürün aktarma](/satis/excel) |
 | 6 | Açılış stokları | Excel'deki depo stok sütunları ya da [Sayım](/stok/sayim) / [Mal kabul](/stok/mal-kabul) |
-| 7 | Bayi grupları | **Bayiler › Bayi Grupları** — [Bayi grupları](/musteriler/#bayi-gruplari) |
-| 8 | Bayiler | **Bayiler › Yeni Bayi** — [Yeni bayi](/musteriler/#yeni-bayi) |
+| 7 | Bayi grupları | **Bayiler › Bayi Grupları**: [Bayi grupları](/musteriler/#bayi-gruplari) |
+| 8 | Bayiler | **Bayiler › Yeni Bayi**: [Yeni bayi](/musteriler/#yeni-bayi) |
 | 9 | Açılış bakiyeleri | Müşteri detayı › **Cari** › **Dekont** |
 | 10 | Portföydeki çek / senetler | Müşteri detayı › **Cari** › **Tahsilat ekle** |
 | 11 | Kontrol | **Bayiler › Cari Durum**, **Mağaza › Ödemeler › Geciken Ödemeler** |
@@ -48,23 +48,23 @@ Her bayinin geçiş günündeki bakiyesini eski programdaki ekstresinden alın v
 
 | Alan | Ne girilir |
 |---|---|
-| Yön | Bayi size borçluysa **Borç (müşteri borçlanır)**; bayinin sizden alacağı varsa **Alacak (müşteri alacaklanır)**. |
+| Yön | Bayi size borçluysa **Borç (müşteri borçlanır)**. Bayinin sizden alacağı varsa **Alacak (müşteri alacaklanır)**. |
 | Tutar | Bakiye tutarı, ana para biriminde (pozitif sayı). |
 | Tarih | Geçiş tarihi (ör. eski programı kapattığınız gün). |
 | Açılış bakiyesi | **İşaretleyin.** Kayıt ekstrede "Açılış bakiyesi" türüyle görünür. |
-| Açıklama | Zorunlu; ör. "Eski sistemden devir — 31.12 bakiyesi". |
+| Açıklama | Zorunlu. Ör. "Eski sistemden devir — 31.12 bakiyesi". |
 
 4. **Kaydet**. Bakiye kartı ve **Cari Durum** listesi hemen güncellenir.
 
 Yanlış girdiyseniz satırdaki geri al düğmesiyle iptal edip doğrusunu girin (kayıt silinmez,
 ters kaydı yazılır).
 
-Döviz cinsinden çalıştığınız bayilerde de açılış bakiyesi **ana para biriminde** girilir; dövizli
+Döviz cinsinden çalıştığınız bayilerde de açılış bakiyesi **ana para biriminde** girilir. Dövizli
 tutarı geçiş günündeki kurla çevirerek yazın.
 
 ### Açık faturaları vadesine göre girmek {#vadeli-acilis}
 
-Açılış bakiyesinin vade tarihi yoktur; borç dağıtımında ve [Geciken Ödemeler](/cari/#yaslandirma)
+Açılış bakiyesinin vade tarihi yoktur. Borç dağıtımında ve [Geciken Ödemeler](/cari/#yaslandirma)
 raporunda **kaydın tarihi** vade sayılır. Tek satırlık devir, geçiş gününden itibaren
 yaşlandırılır.
 
@@ -81,11 +81,11 @@ için ayrı bir açılış bakiyesi** girin ve **Tarih** alanına o faturanın *
 | "Fatura 1102 devir" | 8.000 TL | 5 Mart |
 
 Gelen tahsilatlar önce 15 Ocak'lı kaydı, sonra diğerlerini kapatır; Geciken Ödemeler raporu her
-kaydı kendi tarihine göre 0–30, 31–60 … dilimlerine yerleştirir.
+kaydı kendi tarihine göre 0-30, 31-60 … dilimlerine yerleştirir.
 
 ::: info Vadesi geçen kartı ve sipariş onayı
 Açılış bakiyeleri (ve dekontlar) müşteri detayındaki **Vadesi geçen** kartına ve vadeli
-siparişi onaya düşüren "vadesi geçmiş borç" kontrolüne **girmez**; bu ikisi yalnız sistemde
+siparişi onaya düşüren "vadesi geçmiş borç" kontrolüne **girmez**. Bu ikisi yalnız sistemde
 verilen siparişlerin borçlarına bakar. Kredi limiti kontrolünde ise açılış bakiyesi, bakiyenin
 parçası olarak **riske dahildir**.
 :::
@@ -99,7 +99,7 @@ Eski sistemde alınmış ama henüz tahsil edilmemiş çek / senetleri portföyd
 bakiyesinden zaten düşülmüş olduğundan, açılış bakiyesini **çekler düşülmeden önceki tutarla**
 girin, ardından çekleri tek tek tahsilat olarak girin.
 
-**Örnek:** Eski ekstrede bayinin bakiyesi 40.000 TL borç; bu bakiyeye 15.000 TL'lik portföydeki
+**Örnek:** Eski ekstrede bayinin bakiyesi 40.000 TL borç. Bu bakiyeye 15.000 TL'lik portföydeki
 bir çek alacak olarak işlenmiş.
 
 1. Açılış bakiyesi: **Borç 55.000 TL** (40.000 + 15.000).
@@ -107,7 +107,7 @@ bir çek alacak olarak işlenmiş.
 3. Sonuç: bakiye **40.000 TL borç** (eski ekstreyle aynı), çek **Portföyde** ve bayinin
    riskinde. Çek tahsil edilince **Tahsil edildi** yapın.
 
-Tahsilat tarihi ileri olamaz; çeki geçiş günü tarihiyle girin, gerçek vadesini **Vade** alanına
+Tahsilat tarihi ileri olamaz. Çeki geçiş günü tarihiyle girin, gerçek vadesini **Vade** alanına
 yazın. Bkz. [Çek ve senet](/cari/cek-senet).
 
 ## Ürünler ve stok {#urunler}

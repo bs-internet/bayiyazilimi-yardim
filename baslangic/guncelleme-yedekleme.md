@@ -7,7 +7,7 @@ Bayi Yazılımı'nın verisi üç yerde durur. Üçü birlikte yedeklenmezse ger
 | Ne | Nerede | İçinde ne var |
 |---|---|---|
 | **Veritabanı** | MySQL / MariaDB | Ürünler, siparişler, cari hareketler, kullanıcılar, ayarlar … her şey |
-| **Yüklenen dosyalar** | `storage/app` klasörü (`public` ve `private` alt klasörleri) | Logo, ürün görselleri, dekontlar, çek / senet görselleri; ayrıca kapatılan eklentilerin listesi |
+| **Yüklenen dosyalar** | `storage/app` klasörü (`public` ve `private` alt klasörleri) | Logo, ürün görselleri, dekontlar, çek / senet görselleri. Ayrıca kapatılan eklentilerin listesi |
 | **`.env` dosyası** | Proje klasörü | Veritabanı ve e-posta bilgileri, **uygulama anahtarı** (`APP_KEY`) |
 
 ::: danger APP_KEY'i kaybetmeyin
@@ -57,15 +57,15 @@ php artisan storage:link
 php artisan optimize:clear
 ```
 
-`.env` yedeğiyle birlikte sistem **kurulu** olarak tanınır; kurulum sihirbazı açılmaz.
+`.env` yedeğiyle birlikte sistem **kurulu** olarak tanınır. Kurulum sihirbazı açılmaz.
 
 ## Sistemi güncelleme {#guncelleme}
 
 Güncellemeler yeni dosyaları ve gerekiyorsa veritabanı değişikliklerini getirir. Güncelleme iki
 adımdır:
 
-1. **Yeni dosyaları yerine koymak** — `git pull` + `composer install` ya da hazır paketi yüklemek.
-2. **Güncellemeyi tamamlamak** — veritabanı değişikliklerini uygulamak, eklentilerin kurulum
+1. **Yeni dosyaları yerine koymak**: `git pull` + `composer install` ya da hazır paketi yüklemek.
+2. **Güncellemeyi tamamlamak**: veritabanı değişikliklerini uygulamak, eklentilerin kurulum
    adımlarını çalıştırmak, önbellekleri temizlemek. Bunu tek komut yapar: `php artisan bayi:update`.
    Terminal yoksa aynı işi paneldeki **Güncellemeyi tamamla** düğmesi yapar.
 
@@ -92,7 +92,7 @@ Sırasıyla:
 3. Veritabanı değişikliklerini uygular (`migrate`).
 4. Kurulum adımı bekleyen ya da yeni sürümü gelmiş açık eklentiler için `bayi:install` çalıştırır.
 5. Önbellekleri temizler.
-6. Kuyruk işleyicisine yeniden başlama sinyali gönderir (`queue:restart`); işleyici yeni kodla
+6. Kuyruk işleyicisine yeniden başlama sinyali gönderir (`queue:restart`). İşleyici yeni kodla
    devam eder.
 7. Kurulu sürümü kaydeder ve siteyi yeniden açar. Bir adım hata verse de site bakımda kalmaz.
 
@@ -106,7 +106,7 @@ Sırasıyla:
 
 ::: tip Yedek klasörü
 `storage/app/private/backups/` altındaki yedekler zamanla birikir. Eskilerini silin ve önemli
-olanları sunucunun dışına taşıyın; aynı sunucudaki yedek sunucu kaybında işe yaramaz.
+olanları sunucunun dışına taşıyın. Aynı sunucudaki yedek sunucu kaybında işe yaramaz.
 :::
 
 ### VPS (git ile kurulduysa)
@@ -132,7 +132,7 @@ php artisan bayi:update --build
 2. Proje klasörüne yükleyip üzerine açın. **`.env` dosyasının ve `storage` klasörünün üzerine
    yazmayın.**
 3. Güncellemeyi tamamlayın:
-   - **cPanel › Terminal** varsa proje klasörüne geçip `php artisan bayi:update` çalıştırın; ya da
+   - **cPanel › Terminal** varsa proje klasörüne geçip `php artisan bayi:update` çalıştırın. Ya da
    - Terminal yoksa panele **Super Admin** olarak girin ve sarı uyarıdaki **Güncellemeyi tamamla**
      düğmesine basın (aşağıya bakın).
 
@@ -149,10 +149,10 @@ eklentinin kurulum adımı bekliyorsa, **Super Admin** panelin üstünde sarı b
 **Güncellemeyi tamamla** düğmesi `bayi:update` ile aynı adımları çalıştırır (veritabanı yedeği,
 veritabanı değişiklikleri, eklenti kurulum adımları, önbellek, kuyruk sinyali). Farkları: siteyi
 bakıma almaz ve ön yüzü derlemez. Sonuç ekranın üstünde bildirilir ("Sistem … sürümüne
-güncellendi."); işlem kimin yaptığıyla birlikte [Etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari)
+güncellendi."). İşlem kimin yaptığıyla birlikte [Etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari)
 yazılır.
 
-Uyarı yalnız Super Admin'e görünür; dosyalar yüklendikten sonra birkaç dakika içinde çıkar.
+Uyarı yalnız Super Admin'e görünür. Dosyalar yüklendikten sonra birkaç dakika içinde çıkar.
 
 ### Komutları tek tek çalıştırmak (alternatif) {#elle}
 
@@ -168,16 +168,16 @@ php artisan queue:restart              # kuyruk işleyicisi yeni kodu alsın
 php artisan up
 ```
 
-- `php artisan down` siteyi (paneli de) herkese kapatır; işiniz bitince mutlaka `php artisan up`
+- `php artisan down` siteyi (paneli de) herkese kapatır. İşiniz bitince mutlaka `php artisan up`
   çalıştırın. Yalnız bayilere / ziyaretçilere kapatmak isterseniz panelden **Bakım modu**'nu
-  kullanabilirsiniz; bkz. [Genel ayarlar › Site Erişimi](/yonetim/genel-ayarlar#site-erisimi).
-- Bu yolla güncellediğinizde kurulu sürüm kaydedilmez; paneldeki uyarı görünmeye devam ederse
+  kullanabilirsiniz. Bkz. [Genel ayarlar › Site Erişimi](/yonetim/genel-ayarlar#site-erisimi).
+- Bu yolla güncellediğinizde kurulu sürüm kaydedilmez. Paneldeki uyarı görünmeye devam ederse
   bir kez `php artisan bayi:update --no-backup` çalıştırın ya da **Güncellemeyi tamamla**'ya basın.
 
 ### Eklentileri güncelleme
 
 Bir eklentinin yeni sürümünü kurduktan sonra kurulum adımını çalıştırın. En kolayı
-`bayi:update`'tir; kurulum adımı bekleyen bütün eklentileri kendisi bulur:
+`bayi:update`'tir. Kurulum adımı bekleyen bütün eklentileri kendisi bulur:
 
 ```bash
 composer update bsinternet/<eklenti>

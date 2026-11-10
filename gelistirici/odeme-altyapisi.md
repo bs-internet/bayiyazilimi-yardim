@@ -20,8 +20,8 @@ interface PaymentGateway
 }
 ```
 
-- `available()` — bu müşteri, tutar ve para birimi için yöntem sunulsun mu.
-- `start()` — sipariş oluşturulduğu transaction içinde çağrılır; burada HTTP çağrısı yapmayın.
+- `available()`: bu müşteri, tutar ve para birimi için yöntem sunulsun mu.
+- `start()`: sipariş oluşturulduğu transaction içinde çağrılır. Burada HTTP çağrısı yapmayın.
 
 Ek arayüzler:
 
@@ -39,8 +39,8 @@ hooks()->action('shop.payment.methods.register', function (PaymentRegistry $paym
 });
 ```
 
-`orders.payment_method` ve `payments.method` sürücü anahtarını (string) tutar; enum yoktur.
-Etiket `PaymentMethods::label($key)` ile çözülür — eklenti kaldırılsa da eski kayıtlar okunur.
+`orders.payment_method` ve `payments.method` sürücü anahtarını (string) tutar. Enum yoktur.
+Etiket `PaymentMethods::label($key)` ile çözülür: eklenti kaldırılsa da eski kayıtlar okunur.
 
 ## Çekirdek sürücüler
 
@@ -58,8 +58,8 @@ Başlıca alanlar: `account_id`, `order_id` (cari tahsilatta boş), `method`, `p
 
 Sağlayıcı geri dönüş adresleri:
 
-- `POST|GET /odeme/bildirim/{gateway}` — sunucudan sunucuya bildirim (oturum ve CSRF dışı)
-- `GET|POST /odeme/donus/{gateway}` — tarayıcı dönüşü
+- `POST|GET /odeme/bildirim/{gateway}`: sunucudan sunucuya bildirim (oturum ve CSRF dışı)
+- `GET|POST /odeme/donus/{gateway}`: tarayıcı dönüşü
 
 `shop:expire-pending-payments` (5 dakikada bir) `pendingTimeout()` süresini aşan bekleyen
 siparişleri "Ödeme Başarısız" yapar ve stoğu geri ekler.
@@ -72,7 +72,7 @@ PayTR ve iyzico eklentileri bunu genişletir:
 1. `start()` bekleyen bir ödeme kaydı açar ve müşteriyi imzalı, 2 saat geçerli
    `/odeme/kart/{referans}` sayfasına yönlendirir.
 2. Bu sayfa sağlayıcıdan token / oturum alır ve ödeme sayfasını gösterir.
-3. Sonuç doğrulanınca sipariş "Ödendi" olur (cari borç + alacak); başarısızsa "Ödeme Başarısız".
+3. Sonuç doğrulanınca sipariş "Ödendi" olur (cari borç + alacak). Başarısızsa "Ödeme Başarısız".
    Aynı bildirim ikinci kez gelirse yok sayılır.
 4. Müşterinin ödediği fazlası (taksit / vade farkı) `fee_amount`, taksit sayısı `installment`
    alanına yazılır.

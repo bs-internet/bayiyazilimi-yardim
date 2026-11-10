@@ -1,12 +1,12 @@
 # Para birimleri
 
-**Ayarlar › Tanımlamalar › Para Birimleri** — para birimi tanımları ve Türk Lirası karşısındaki
+**Ayarlar › Tanımlamalar › Para Birimleri**: para birimi tanımları ve Türk Lirası karşısındaki
 kurları tek ekrandadır. Ekranın başlığında toplam para birimi sayısı ve kaçının TCMB kaynaklı
 olduğu yazar.
 
 Kurulumla **Türk Lirası** (varsayılan, ana para birimi, kaynağı Elle, kuru 1), **Amerikan
 Doları** ve **Euro** (TCMB kaynaklı, aktif) gelir. Dolar ve Euro'nun ilk kurları yaklaşık
-değerlerdir; ilk TCMB güncellemesinde düzelir.
+değerlerdir. İlk TCMB güncellemesinde düzelir.
 
 ## Ekranın bölümleri
 
@@ -64,15 +64,15 @@ ile eski kaydı geri getirirsiniz (TCMB kaynaklı ve aktif olur).
 | Alan | Açıklama |
 |---|---|
 | Kod | **Zorunlu**, tam 3 harf (ISO kodu, ör. `AED`), benzersiz |
-| Sıra No | İsteğe bağlı; listelerde sıralama |
+| Sıra No | İsteğe bağlı. Listelerde sıralama |
 | Ad | **Zorunlu** (ör. BAE Dirhemi) |
 | Sembol | **Zorunlu**, en çok 8 karakter (ör. `د.إ`, `AED`) |
-| Basamak sayısı | **Zorunlu**, 0–6. Tutarların virgülden sonra kaç basamakla gösterileceği |
+| Basamak sayısı | **Zorunlu**, 0-6. Tutarların virgülden sonra kaç basamakla gösterileceği |
 | Binlik ayracı | **Virgül (,)**, **Nokta (.)** ya da **Boşluk ( )** |
-| Onluk ayracı | Virgül, nokta ya da boşluk; binlik ayracından **farklı** olmalı |
+| Onluk ayracı | Virgül, nokta ya da boşluk. Binlik ayracından **farklı** olmalı |
 
 3. Elle eklenen para birimi **pasif** oluşur. Tabloda **Kur (TL)** değerini girin, kaynağı
-   **Elle** bırakın, alttaki **Kaydet**'e basın; sonra **Aktif** anahtarını açın.
+   **Elle** bırakın, alttaki **Kaydet**'e basın. Sonra **Aktif** anahtarını açın.
 
 ### Kurları TCMB'den hemen güncellemek
 
@@ -90,7 +90,7 @@ Kaynağı Elle olan kur, TCMB güncellemelerinden etkilenmez.
 
 ### Para birimini düzenlemek ya da silmek
 
-Satırdaki kalem simgesiyle **"*Kod* düzenle"** penceresi açılır; elle eklemedeki alanların
+Satırdaki kalem simgesiyle **"*Kod* düzenle"** penceresi açılır. Elle eklemedeki alanların
 aynısı düzenlenir. Pencerenin altındaki silme düğmesi para birimini listeden kaldırır.
 Silinen para birimi ekranın üstündeki **Silinenler** sayfasından **Geri al** ile ya da TCMB
 listesinden yeniden eklenerek geri getirilir; **Kalıcı sil** veritabanından tamamen kaldırır.
@@ -102,7 +102,7 @@ listesinden yeniden eklenerek geri getirilir; **Kalıcı sil** veritabanından t
 
 - Ürün fiyatı **kendi para biriminde ve KDV hariç** saklanır (ör. bir ürün EUR, bir başkası TL).
 - Gösterimde seçilen para birimine güncel kurla çevrilir.
-- **Sipariş ve teklif**, oluştuğu andaki para birimi ve kurla kaydedilir; kur sonradan değişse de
+- **Sipariş ve teklif**, oluştuğu andaki para birimi ve kurla kaydedilir. Kur sonradan değişse de
   sipariş tutarı değişmez.
 - Başlangıç ekranı, farklı para birimindeki siparişleri sipariş anındaki kurla ana para birimine
   çevirerek toplar.
@@ -123,5 +123,5 @@ sonra ayarlayın.
 Bu ekranın yetkileri kurulumla hazır gelir (**Mağaza: Para Birimleri & Kurlar** grubu):
 görüntüleme, kurları elle güncelleme, TCMB'den çekme, para birimi ekleme ve TCMB ayarları.
 Satış Sorumlusu ve Katalog Sorumlusu görevleri ekranı yalnız **görüntüleyebilir**. Elle ekleme,
-düzenleme, durum değiştirme ve silme işlemleri ayrı yetkilerdir; kurulumda yalnız **Admin**
+düzenleme, durum değiştirme ve silme işlemleri ayrı yetkilerdir. Kurulumda yalnız **Admin**
 görevine atanır. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).

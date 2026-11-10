@@ -1,7 +1,7 @@
 # REST API
 
 Bayi Yazılımı, ERP / muhasebe programları, özel yazılımlar ve ileride mobil uygulamalar için bir
-**REST API** sunar. API ürünleri, stoğu, siparişleri ve cari hesapları kapsar; yazma işlemleri
+**REST API** sunar. API ürünleri, stoğu, siparişleri ve cari hesapları kapsar. Yazma işlemleri
 panelle **aynı servislerden** geçer (sipariş durum makinesi, stok kilitleri, cari defter kuralları
 API'de de geçerlidir).
 
@@ -23,7 +23,7 @@ curl https://bayi.ornek.com/api/v1/products?per_page=10 \
 
 ## Kimlik doğrulama {#kimlik}
 
-API yalnız **kişisel erişim anahtarıyla** (Laravel Sanctum) çalışır; oturum çerezi kabul edilmez.
+API yalnız **kişisel erişim anahtarıyla** (Laravel Sanctum) çalışır. Oturum çerezi kabul edilmez.
 Anahtarı panelde bir yönetici **Ayarlar › API Anahtarları** ekranından oluşturur (bkz. [API
 Anahtarları](/yonetim/api-anahtarlari)). Anahtar `{uuid}|bayi_…` biçimindedir ve yalnız
 oluşturulduğunda bir kez gösterilir.
@@ -31,9 +31,9 @@ oluşturulduğunda bir kez gösterilir.
 - Anahtar onu oluşturan **yöneticiye** aittir; API o kullanıcı olarak çalışır. Etkinlik
   kayıtları, sipariş geçmişi ve stok hareketleri onun adına yazılır.
 - Sahibi **pasif** yapılan, silinen ya da yönetici olmayan kullanıcının anahtarı `401` alır.
-- Sahibi **kısıtlı** kullanıcıysa anahtar yalnız okuma (`GET`) yapar; yazma istekleri `403` alır.
+- Sahibi **kısıtlı** kullanıcıysa anahtar yalnız okuma (`GET`) yapar. Yazma istekleri `403` alır.
 - Süresi dolan ya da iptal edilen anahtar `401` alır.
-- Her uç nokta bir **yetki** (Sanctum ability) ister; anahtarda o yetki yoksa `403`.
+- Her uç nokta bir **yetki** (Sanctum ability) ister. Anahtarda o yetki yoksa `403`.
 
 ### Yetkiler {#yetkiler}
 
@@ -53,13 +53,13 @@ Eklentiler bu listeye kendi yetkilerini ekleyebilir (bkz. [Eklentiler için](#ek
 
 ### Tutarlar
 
-Tutarlar **kesin ondalık dize** olarak gelir ve gönderilebilir — asla float değildir:
+Tutarlar **kesin ondalık dize** olarak gelir ve gönderilebilir: asla float değildir:
 
 - Birim fiyatlar (`price`, `compare_price`, `unit_price`) **4 basamak**: `"1250.0000"`
 - Diğer tutarlar ve oranlar **2 basamak**: `"1500.00"`, `"20.00"`
 - Kur (`exchange_rate`) 6 basamak.
 
-İstekte sayı ya da dize gönderebilirsiniz (`"price": "1299.9"` ya da `1299.9`); sunucu HalfUp
+İstekte sayı ya da dize gönderebilirsiniz (`"price": "1299.9"` ya da `1299.9`). Sunucu HalfUp
 yuvarlayarak saklar. İstemci tarafında tutarları bir ondalık kütüphanesiyle işleyin.
 
 ### Tarih ve saat
@@ -102,9 +102,9 @@ Liste uç noktaları Laravel sayfalayıcı biçiminde döner:
 | Parametre | Açıklama |
 |---|---|
 | `page` | Sayfa numarası (1'den başlar) |
-| `per_page` | Sayfa boyutu; varsayılan **50**, en çok **100** |
+| `per_page` | Sayfa boyutu. Varsayılan **50**, en çok **100** |
 
-`links.next` doluysa sonraki sayfayı isteyin; süzgeçler sayfa bağlantılarında korunur.
+`links.next` doluysa sonraki sayfayı isteyin. Süzgeçler sayfa bağlantılarında korunur.
 
 ### Sıralama ve artımlı eşitleme {#updated-since}
 
@@ -118,7 +118,7 @@ kayıtlar gelir.
 2. İşlediğiniz son kaydın `updated_at` değerini saklayın.
 3. Sonraki çalıştırmada `?updated_since=<saklanan değer>` ile isteyin.
 
-Sınır `>=` olduğu için son kayıt bir sonraki istekte yeniden gelebilir; kayıtları `id` ile
+Sınır `>=` olduğu için son kayıt bir sonraki istekte yeniden gelebilir. Kayıtları `id` ile
 **upsert** edin (tekrar gelen kayıt sorun çıkarmaz). `+` işaretli saat dilimini URL kodlamayı
 unutmayın (`%2B03:00`).
 
@@ -154,7 +154,7 @@ alan başına mesaj listesi verir (dizi alanlarında anahtar `items.0.sku` gibi 
 }
 ```
 
-Birden çok hata varsa `message` ilk hatanın sonuna kalan hata sayısını ekler; hataları her zaman
+Birden çok hata varsa `message` ilk hatanın sonuna kalan hata sayısını ekler. Hataları her zaman
 `errors` üzerinden işleyin.
 
 **İş kuralı hataları** (`422`) yalnız `message` taşır:
@@ -166,7 +166,7 @@ Birden çok hata varsa `message` ilk hatanın sonuna kalan hata sayısını ekle
 ## İstek sınırı {#istek-siniri}
 
 Her anahtar dakikada en çok **120** istek yapabilir (sayaç anahtar başınadır). Yanıtlarda
-`X-RateLimit-Limit` ve `X-RateLimit-Remaining` başlıkları bulunur; sınır aşılınca `429` ve
+`X-RateLimit-Limit` ve `X-RateLimit-Remaining` başlıkları bulunur. Sınır aşılınca `429` ve
 `Retry-After` (saniye) döner. Sınır sunucunun `.env` dosyasında değiştirilir:
 
 ```ini
@@ -180,7 +180,7 @@ düşük tutun.
 
 ### Ürün listesi
 
-`GET /products` — yetki: `products:read`
+`GET /products`: yetki: `products:read`
 
 | Parametre | Açıklama |
 |---|---|
@@ -197,7 +197,7 @@ Yanıt: sayfalı liste, her öğe [ürün gösterimi](#urun-gosterimi).
 
 ### Ürün ayrıntısı {#urun-gosterimi}
 
-`GET /products/{sku}` — yetki: `products:read`
+`GET /products/{sku}`: yetki: `products:read`
 
 ```json
 {
@@ -243,9 +243,9 @@ Yanıt: sayfalı liste, her öğe [ürün gösterimi](#urun-gosterimi).
 
 ### Ürün güncelleme
 
-`PATCH /products/{sku}` — yetki: `products:write`
+`PATCH /products/{sku}`: yetki: `products:write`
 
-Yalnız gönderilen alanlar değişir; panelin ürün formuyla aynı servisten geçer.
+Yalnız gönderilen alanlar değişir. Panelin ürün formuyla aynı servisten geçer.
 
 | Alan | Kural |
 |---|---|
@@ -253,12 +253,12 @@ Yalnız gönderilen alanlar değişir; panelin ürün formuyla aynı servisten g
 | `barcode` | Dize, en çok 64; `null` kaldırır |
 | `price` | Sayı ≥ 0 (4 basamağa yuvarlanır) |
 | `compare_price` | Sayı ≥ 0; `null` kaldırır |
-| `tax_rate` | 0–100 |
+| `tax_rate` | 0-100 |
 | `status` | `active` / `passive` |
 | `min_qty` | Tam sayı ≥ 1 |
 | `max_qty` | Tam sayı ≥ 1; `null` sınırı kaldırır |
-| `delivery_days` | 0–365 |
-| `min_stock` | Kritik stok seviyesi, 0–1.000.000; `null` kaldırır |
+| `delivery_days` | 0-365 |
+| `min_stock` | Kritik stok seviyesi, 0-1.000.000; `null` kaldırır |
 
 SKU, kategori, görseller, açıklama gibi alanlar API ile değiştirilmez.
 
@@ -275,18 +275,18 @@ Yanıt: güncellenmiş [ürün gösterimi](#urun-gosterimi) (`200`).
 
 ### Toplu stok eşitleme
 
-`PUT /stock` — yetki: `stock:write`
+`PUT /stock`: yetki: `stock:write`
 
 Ürünlerin depolardaki miktarını **mutlak değere** getirir (ERP'deki sayım / eldeki miktar).
-Aradaki fark **Sayım Düzeltme** hareketi olarak, not alanı "API" ile yazılır; stok hareketlerinde
+Aradaki fark **Sayım Düzeltme** hareketi olarak, not alanı "API" ile yazılır. Stok hareketlerinde
 ve ürün geçmişinde görünür.
 
 | Alan | Kural |
 |---|---|
-| `items` | Zorunlu dizi, 1–500 satır |
+| `items` | Zorunlu dizi, 1-500 satır |
 | `items.*.sku` | Ürün SKU'su (büyük / küçük harf duyarsız) |
 | `items.*.warehouse` | Depo kodu (büyük / küçük harf duyarsız) |
-| `items.*.quantity` | Tam sayı, 0–100.000.000 |
+| `items.*.quantity` | Tam sayı, 0-100.000.000 |
 
 Kurallar:
 
@@ -334,7 +334,7 @@ ve depo istekte birden fazla kez geçiyor."
 
 ### Sipariş listesi
 
-`GET /orders` — yetki: `orders:read`
+`GET /orders`: yetki: `orders:read`
 
 | Parametre | Açıklama |
 |---|---|
@@ -346,7 +346,7 @@ Yanıt: sayfalı liste, her öğe [sipariş gösterimi](#siparis-gosterimi) (sat
 
 ### Sipariş ayrıntısı {#siparis-gosterimi}
 
-`GET /orders/{number}` — yetki: `orders:read`
+`GET /orders/{number}`: yetki: `orders:read`
 
 ```json
 {
@@ -420,15 +420,15 @@ Yanıt: sayfalı liste, her öğe [sipariş gösterimi](#siparis-gosterimi) (sat
 Notlar:
 
 - Tutarlar **siparişin para birimindedir** (`currency`).
-- `billing_address` / `shipping_address` sipariş anındaki adresin kopyasıdır; alanlar sipariş
+- `billing_address` / `shipping_address` sipariş anındaki adresin kopyasıdır. Alanlar sipariş
   formundan gelir (bireysel faturada `company`, `tax_office`, `tax_number` boş olabilir).
 - `account` misafir siparişinde `null`'dır.
 - `payment.method` ödeme yönteminin anahtarıdır (`bank_transfer`, `on_account`, kart eklentileri
-  kendi anahtarlarını kullanır); görünen adı `method_label`.
+  kendi anahtarlarını kullanır). Görünen adı `method_label`.
 
 ### Sipariş durumu değiştirme {#siparis-durumu}
 
-`PATCH /orders/{number}/status` — yetki: `orders:write`
+`PATCH /orders/{number}/status`: yetki: `orders:write`
 
 Paneldeki durum değişikliğiyle aynı servisten geçer: **durum makinesi**, stok iadesi (iptal), cari
 borç ve müşteri bildirimi kuralları aynıdır.
@@ -455,9 +455,9 @@ geçerlidir: durum değişmeden yalnız not / kargo bilgisi güncellenir.
 | İptal Edildi (`cancelled`) | `processing` |
 | Ödeme Başarısız (`failed`) | `cancelled` |
 
-İzinsiz geçiş `422` döner (ör. "Kargoya verilmiş / tamamlanmış sipariş iptal edilemez; ürünlerin
+İzinsiz geçiş `422` döner (ör. "Kargoya verilmiş / tamamlanmış sipariş iptal edilemez. Ürünlerin
 geri dönüşü için iade talebi oluşturun."). Onay bekleyen vadeli sipariş `processing`'e geçerken
-kredi kuralları yeniden denetlenir; limit yetmiyorsa yine `422`.
+kredi kuralları yeniden denetlenir. Limit yetmiyorsa yine `422`.
 
 ```bash
 curl -X PATCH https://bayi.ornek.com/api/v1/orders/S2611090001/status \
@@ -470,15 +470,15 @@ Yanıt: güncellenmiş [sipariş gösterimi](#siparis-gosterimi) (`200`).
 
 ### Fatura bilgisi yazma
 
-`PUT /orders/{number}/invoice` — yetki: `orders:write`
+`PUT /orders/{number}/invoice`: yetki: `orders:write`
 
 | Alan | Kural |
 |---|---|
 | `invoice_number` | **Gönderilmesi zorunlu** (`null` olabilir). Dize, en çok 64. `null` ya da boş dize fatura bilgisini kaldırır |
 
-- Yalnız **Tamamlandı** durumundaki siparişe yazılır; diğerlerinde `422` ("Fatura bilgisi yalnızca
+- Yalnız **Tamamlandı** durumundaki siparişe yazılır. Diğerlerinde `422` ("Fatura bilgisi yalnızca
   tamamlanan siparişlere girilebilir.").
-- `invoiced_at` ilk yazıldığı anda dolar; numara değişince korunur, kaldırılınca boşalır.
+- `invoiced_at` ilk yazıldığı anda dolar. Numara değişince korunur, kaldırılınca boşalır.
 - Sipariş geçmişine "Fatura no … ile faturalandırıldı." notu düşer.
 
 ```bash
@@ -498,20 +498,20 @@ Yanıt: güncellenmiş [sipariş gösterimi](#siparis-gosterimi); `invoice` alan
 
 ### Cari listesi
 
-`GET /accounts` — yetki: `accounts:read`
+`GET /accounts`: yetki: `accounts:read`
 
 | Parametre | Açıklama |
 |---|---|
 | `type` | `dealer` (bayi) ya da `customer` (müşteri) |
 | `updated_since`, `page`, `per_page` | Bkz. [Kurallar](#kurallar) |
 
-Listede her öğe bakiyeyi ve kredi koşullarını içerir; risk, kullanılabilir limit ve vadesi geçmiş
-borç yalnız tekil gösterimde gelir. `updated_since` cari kartın güncellenme zamanına bakar —
+Listede her öğe bakiyeyi ve kredi koşullarını içerir. Risk, kullanılabilir limit ve vadesi geçmiş
+borç yalnız tekil gösterimde gelir. `updated_since` cari kartın güncellenme zamanına bakar: 
 bakiye değişimi cari kartı güncellemez.
 
 ### Cari ayrıntısı {#cari-gosterimi}
 
-`GET /accounts/{code}` — yetki: `accounts:read`
+`GET /accounts/{code}`: yetki: `accounts:read`
 
 ```json
 {
@@ -553,19 +553,19 @@ bakiye değişimi cari kartı güncellemez.
 
 | Alan | Açıklama |
 |---|---|
-| `balance` | **Ana para biriminde** (`currency`) bakiye; pozitif = müşteri borçlu |
-| `discount_rate` | Bayinin geçerli iskonto oranı; müşteride `null` |
-| `credit.payment_terms` | `prepaid` (peşin) ya da `credit` (vadeli); geçerli çalışma şeklinden (bayiye özel → grup → varsayılan) |
+| `balance` | **Ana para biriminde** (`currency`) bakiye. Pozitif = müşteri borçlu |
+| `discount_rate` | Bayinin geçerli iskonto oranı. Müşteride `null` |
+| `credit.payment_terms` | `prepaid` (peşin) ya da `credit` (vadeli). Geçerli çalışma şeklinden (bayiye özel → grup → varsayılan) |
 | `credit.limit` | Kredi limiti; `null` = limitsiz |
 | `credit.risk` | Bakiye + onay bekleyen vadeli siparişler + portföydeki çek / senetler (yalnız tekil) |
-| `credit.available` | Kullanılabilir limit; limitsizse `null` (yalnız tekil) |
+| `credit.available` | Kullanılabilir limit. Limitsizse `null` (yalnız tekil) |
 | `credit.overdue_amount`, `overdue_count` | Vadesi geçmiş borç tutarı ve belge sayısı (yalnız tekil) |
 
 Hesaplamalar için bkz. [Cari defter](/gelistirici/cari-defter).
 
 ### Cari hareket yazma {#cari-hareket}
 
-`POST /accounts/{code}/transactions` — yetki: `ledger:write`
+`POST /accounts/{code}/transactions`: yetki: `ledger:write`
 
 ERP / muhasebe programındaki tahsilatı ya da dekontu cari deftere işler.
 
@@ -573,10 +573,10 @@ ERP / muhasebe programındaki tahsilatı ya da dekontu cari deftere işler.
 |---|---|
 | `type` | **Zorunlu.** `collection` = **Tahsilat** (alacak), `debit` = **borç dekontu**, `credit` = **alacak dekontu** |
 | `amount` | **Zorunlu.** Sayı > 0, ana para biriminde (2 basamağa yuvarlanır) |
-| `reference` | **Zorunlu.** Dış sistemin belge numarası, en çok 100 karakter — **tekil anahtar** |
-| `date` | İşlem tarihi; boşsa bugün |
-| `due_date` | Vade tarihi; yalnız `debit` için kullanılır |
-| `description` | Açıklama, en çok 255; boşsa hareket türünün adı |
+| `reference` | **Zorunlu.** Dış sistemin belge numarası, en çok 100 karakter: **tekil anahtar** |
+| `date` | İşlem tarihi. Boşsa bugün |
+| `due_date` | Vade tarihi. Yalnız `debit` için kullanılır |
+| `description` | Açıklama, en çok 255. Boşsa hareket türünün adı |
 
 **Tekrar güvenli (idempotent):** `reference` API'den gelen hareketler arasında tekildir.
 
@@ -584,7 +584,7 @@ ERP / muhasebe programındaki tahsilatı ya da dekontu cari deftere işler.
 |---|---|
 | Yeni referans | Hareket yazılır, `201 Created` |
 | Aynı referans, aynı cari | Yeni kayıt açılmaz, **mevcut hareket** `200 OK` ile döner |
-| Aynı referans, başka cari | `422` — "Bu referans başka bir cari hesabın hareketinde kullanılmış." |
+| Aynı referans, başka cari | `422`: "Bu referans başka bir cari hesabın hareketinde kullanılmış." |
 
 Böylece ağ hatasında isteği güvenle tekrarlayabilirsiniz. Yanlış işlenen hareket panelde cari
 ekranından ters kayıtla iptal edilebilir (yanıtta `reversed: true` olur).
@@ -626,11 +626,11 @@ yetkileri: `orders:read`, `orders:write`, `products:write`, `stock:write`, `ledg
 gerekirse `accounts:read`):
 
 1. **Yeni / değişen siparişleri çek.** `GET /orders?updated_since=<son değer>&per_page=100`,
-   `links.next` boşalana kadar. Siparişleri `number` (ya da `id`) ile ERP'ye upsert edin; son
+   `links.next` boşalana kadar. Siparişleri `number` (ya da `id`) ile ERP'ye upsert edin. Son
    kaydın `updated_at`'ini saklayın. Yalnız kesinleşmiş siparişleri aktarmak için `status`
    alanına bakın (`processing`, `shipped`, `completed`).
 2. **Stok ve fiyatları gönder.** ERP'deki eldeki miktarları 500'lük parçalar halinde
-   `PUT /stock` ile; değişen fiyatları ürün başına `PATCH /products/{sku}` ile yazın.
+   `PUT /stock` ile. Değişen fiyatları ürün başına `PATCH /products/{sku}` ile yazın.
 3. **Durum ve kargo bilgisini yaz.** Sevk edilen siparişler için
    `PATCH /orders/{number}/status` (`shipped` + `carrier` + `tracking_number`), teslim edilenler
    için `completed`.
@@ -644,7 +644,7 @@ gerekirse `accounts:read`):
 
 - `429` alırsanız `Retry-After` kadar bekleyip devam edin; `5xx` ve ağ hatalarında aynı isteği
   tekrarlayın (stok mutlak, cari hareket referanslı olduğu için tekrar güvenlidir).
-- `422` yanıtları kalıcıdır (veri ya da kural hatası); tekrar denemeyin, kaydedip inceleyin.
+- `422` yanıtları kalıcıdır (veri ya da kural hatası). Tekrar denemeyin, kaydedip inceleyin.
 - Entegrasyon için ayrı bir yönetici kullanıcı ve yalnız gereken yetkilerle bir anahtar kullanın.
 
 ## Eklentiler için {#eklentiler-icin}
@@ -654,7 +654,7 @@ geliştirme](/gelistirici/modul-gelistirme)).
 
 ### Uç nokta eklemek
 
-Çekirdek `api.routes.register` kancasını **v1 grubunun içinde** tetikler; eklenti rotaları
+Çekirdek `api.routes.register` kancasını **v1 grubunun içinde** tetikler. Eklenti rotaları
 `/api/v1` önekini, `api.v1.` ad önekini ve kimlik (`auth:sanctum`), etkin yönetici (`api_user`)
 ve istek sınırı (`throttle:api`) ara katmanlarını kendiliğinden alır. Her rotayı kendi yetkinizle
 koruyun:
@@ -669,7 +669,7 @@ hooks()->action('api.routes.register', function (): void {
 ```
 
 Yanıtlarda çekirdeğin kurallarına uyun: tutarlar kesin ondalık dize, zaman damgaları ISO-8601,
-listeler sayfalı ve `updated_at, id` sıralı; yazmaları çekirdek servislerinden geçirin, durum /
+listeler sayfalı ve `updated_at, id` sıralı. Yazmaları çekirdek servislerinden geçirin, durum /
 stok / cari sütunlarını doğrudan yazmayın. İş kuralı hatası için `ShopException` fırlatmak `422 +
 message` döndürür.
 

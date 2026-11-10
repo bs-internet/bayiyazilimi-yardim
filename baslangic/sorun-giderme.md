@@ -15,7 +15,7 @@ klasöründeki `storage/logs` altında, günün tarihini taşıyan dosyadadır (
 | PHP 8.4 veya üstü | Barındırma panelinden (cPanel › MultiPHP Manager / Select PHP Version) alan adı için PHP 8.4 seçin. Parantez içinde yazan sürüm, sitenin gerçekten kullandığı sürümdür |
 | PHP eklentisi: … | Aynı ekranın eklentiler bölümünden ilgili eklentiyi açın ya da hosting firmanızdan isteyin |
 | Yazılabilir klasör: storage / bootstrap/cache | Klasör izinlerini düzeltin (genellikle `755`, bazı sunucularda `775`). VPS'te klasörlerin sahibi web sunucusu kullanıcısı olmalı |
-| Yazılabilir dosya: .env | `.env` dosyası varsa yazılabilir olmalı; yoksa proje klasörünün kendisi yazılabilir olmalı |
+| Yazılabilir dosya: .env | `.env` dosyası varsa yazılabilir olmalı. Yoksa proje klasörünün kendisi yazılabilir olmalı |
 
 Düzelttikten sonra **Tekrar kontrol et** düğmesine basın.
 
@@ -27,8 +27,8 @@ Sihirbaz (ve `bayi:setup`) bağlanamazsa nedeni Türkçe bir uyarıyla gösterir
 |---|---|---|
 | "Kullanıcı adı ya da şifre hatalı…" | Veritabanı kullanıcısının adı ya da şifresi yanlış | cPanel'de kullanıcı adının başında hesap adınız olduğunu unutmayın (`hesabim_kullanici`). Şifreyi yeniden belirleyip deneyin |
 | "Bu kullanıcının "*ad*" veritabanına erişim izni yok." | Kullanıcı bu veritabanına ekli değil | **MySQL Databases › Add User To Database** ile kullanıcıyı veritabanına **ALL PRIVILEGES** ile ekleyin |
-| "\"*ad*\" adında bir veritabanı bulunamadı…" | Veritabanı adı yanlış ya da veritabanı yok | Önce boş bir veritabanı oluşturun; adı tam (önekiyle) yazın |
-| "Veritabanı sunucusuna ulaşılamadı…" | Sunucu adresi ya da port yanlış, veritabanı çalışmıyor ya da uzak sunucuya erişilemiyor | Sunucu alanında `localhost` ile `127.0.0.1`'i ayrı ayrı deneyin; portu `3306` bırakın. Uzak sunucuda hosting firmanızın verdiği adresi ve uzaktan erişim iznini kontrol edin |
+| "\"*ad*\" adında bir veritabanı bulunamadı…" | Veritabanı adı yanlış ya da veritabanı yok | Önce boş bir veritabanı oluşturun. Adı tam (önekiyle) yazın |
+| "Veritabanı sunucusuna ulaşılamadı…" | Sunucu adresi ya da port yanlış, veritabanı çalışmıyor ya da uzak sunucuya erişilemiyor | Sunucu alanında `localhost` ile `127.0.0.1`'i ayrı ayrı deneyin. Portu `3306` bırakın. Uzak sunucuda hosting firmanızın verdiği adresi ve uzaktan erişim iznini kontrol edin |
 | "Veritabanı kullanıcısının tablo oluşturma yetkisi yok…" | Kullanıcının yetkileri eksik | Kullanıcıya bu veritabanında **tüm yetkileri** (ALL PRIVILEGES) verin |
 | "Veritabanı boş değil: içinde başka tablolar var…" | Veritabanında başka bir uygulamanın ya da eski bir denemenin tabloları var | Boş bir veritabanı seçin ya da içindeki tabloları silip yeniden deneyin |
 | "Veritabanı işlemi başarısız oldu… (Ayrıntı: …)" | Yukarıdakilerin dışında bir hata | Parantez içindeki ayrıntıyla hosting firmanızdan destek isteyin |
@@ -46,14 +46,14 @@ npm ci && npm run build
 
 ## Kurulum yarıda kaldı ya da hata verdi {#kurulum-hatasi}
 
-- **"Kurulum tamamlanamadı"** uyarısının metnini okuyun; nedeni yukarıdaki
+- **"Kurulum tamamlanamadı"** uyarısının metnini okuyun. Nedeni yukarıdaki
   [veritabanı uyarılarından](#veritabani) biriyse oradaki çözümü uygulayın. Çoğunlukla veritabanı
   kullanıcısının tablo oluşturma yetkisi yoktur (tüm yetkileri verin). Başka tabloları olan
   veritabanı zaten veritabanı adımında reddedilir.
 - Sayfa uzun süre "Kuruluyor…" durumunda kalıp zaman aşımına uğradıysa: veritabanını boşaltın
   (tüm tabloları silin) ve sihirbazı yeniden açın. Sistem kurulu olarak işaretlenmediyse sihirbaz
   yeniden başlar.
-- Eski bir denemeden kalma tablolar varsa önce temizleyin; kurulum **boş** veritabanı bekler.
+- Eski bir denemeden kalma tablolar varsa önce temizleyin. Kurulum **boş** veritabanı bekler.
 
 ## Site açılmıyor ya da dosya listesi görünüyor {#site-koku}
 
@@ -71,18 +71,18 @@ sunucuda adres yeniden yazma (Apache `mod_rewrite`) kapalıdır.
 |---|---|
 | `Vite manifest not found` | `public/build` klasörü yüklenmemiş. Ön yüzü derleyin (`npm run build`) ya da hazır paketteki `public/build` klasörünü yükleyin |
 | `Permission denied` (storage / bootstrap/cache) | Klasörlerin yazma iznini düzeltin |
-| `No application encryption key` | `.env` dosyasında `APP_KEY` boş. SSH varsa `php artisan key:generate`; yoksa destek alın |
+| `No application encryption key` | `.env` dosyasında `APP_KEY` boş. SSH varsa `php artisan key:generate`. Yoksa destek alın |
 | `Class … not found` / `vendor/autoload.php` | `vendor` klasörü eksik ya da yarım yüklenmiş. Paketi yeniden yükleyin |
 | `SQLSTATE` ile başlayan hatalar | Veritabanı bilgileri sonradan değişmiş olabilir; `.env` dosyasındaki `DB_*` satırlarını kontrol edin |
 
 `.env` dosyasında değişiklik yaptıysanız ve panele girebiliyorsanız **Ayarlar › Ön Bellek
-Yönetimi** ekranından **Tüm Önbellekleri Temizle**'yi kullanın; panele giremiyorsanız SSH'tan
+Yönetimi** ekranından **Tüm Önbellekleri Temizle**'yi kullanın. Panele giremiyorsanız SSH'tan
 `php artisan optimize:clear` çalıştırın.
 
 ## Görseller görünmüyor {#gorseller}
 
 Logo, ürün görseli gibi yüklenen dosyalar `public/storage` bağlantısı üzerinden yayımlanır.
-Kurulum bu bağlantıyı oluşturmaya çalışır; bazı hostinglerde sembolik bağlantıya izin
+Kurulum bu bağlantıyı oluşturmaya çalışır. Bazı hostinglerde sembolik bağlantıya izin
 verilmediği için oluşmayabilir. SSH ya da cPanel Terminal varsa proje klasöründe:
 
 ```bash
@@ -101,7 +101,7 @@ Sırayla kontrol edin:
 2. **SMTP bilgileri** doğru mu? Sunucu, port, kullanıcı adı ve şifre e-posta sağlayıcınızın
    verdiği değerlerle aynı olmalı. 465 portunda `MAIL_SCHEME=smtps` yazın.
 3. **Kuyruk işleniyor mu?** `QUEUE_CONNECTION=database` ise e-postalar bir kuyruk işleyicisi
-   çalışana kadar bekler. VPS'te [supervisor](/baslangic/vps#kuyruk) tanımlayın; paylaşımlı
+   çalışana kadar bekler. VPS'te [supervisor](/baslangic/vps#kuyruk) tanımlayın. Paylaşımlı
    hostingde `QUEUE_CONNECTION=sync` yapın.
 4. **Yapılandırma önbelleği** temizlendi mi? `.env` değişikliğinden sonra **Ön Bellek Yönetimi ›
    Yapılandırma Önbelleği**'ni temizleyin (VPS'te ayrıca `php artisan queue:restart`).
@@ -109,7 +109,7 @@ Sırayla kontrol edin:
    Tanımlamalar › Satış Ayarları › Bildirimler › Bildirim e-postası** alanı boştur. Bkz.
    [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
 6. E-postalar gidiyor ama **spam'e düşüyorsa**: `MAIL_FROM_ADDRESS` SMTP hesabıyla aynı alan
-   adında olmalı; alan adınız için SPF / DKIM kayıtlarını e-posta sağlayıcınızın tarifine göre
+   adında olmalı. Alan adınız için SPF / DKIM kayıtlarını e-posta sağlayıcınızın tarifine göre
    ekleyin.
 
 ## Kurlar güncellenmiyor, kart ödemeleri "bekliyor"da kalıyor {#cron}
@@ -128,9 +128,9 @@ geçerlidir).
   Bir dakika bekleyin.
 - **Şifremi unuttum** e-postası gelmiyorsa yukarıdaki [e-posta](#e-posta) adımlarını kontrol
   edin.
-- **"Hesabınız pasif durumda"** uyarısı: hesap pasif yapılmıştır; başka bir yönetici
+- **"Hesabınız pasif durumda"** uyarısı: hesap pasif yapılmıştır. Başka bir yönetici
   **Ayarlar › Kullanıcılar** ekranından aktifleştirmelidir.
-- İki adımlı doğrulama kodunuza ulaşamıyorsanız kurtarma kodlarından birini kullanın; bkz.
+- İki adımlı doğrulama kodunuza ulaşamıyorsanız kurtarma kodlarından birini kullanın. Bkz.
   [Panel tanıtımı › İki adımlı doğrulama](/baslangic/panel-tanitimi#iki-adimli-dogrulama).
 
 ## /kurulum adresi "bulunamadı" diyor

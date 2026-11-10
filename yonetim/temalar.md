@@ -6,12 +6,12 @@ etkilenmez.**
 
 ::: info Vitrin gerekir
 Temalar mağaza ön yüzünü değiştirdiği için [Vitrin eklentisi](/vitrin/) kurulu ve açık olmalıdır.
-Vitrin yoksa sitenin herkese açık bir ön yüzü yoktur; tema seçmenin bir etkisi olmaz.
+Vitrin yoksa sitenin herkese açık bir ön yüzü yoktur. Tema seçmenin bir etkisi olmaz.
 :::
 
 ## Temalar ekranı
 
-**Ayarlar › Eklentiler › Temalar** — "Tema, mağaza ön yüzünün görünümünü değiştirir; giriş ekranı
+**Ayarlar › Eklentiler › Temalar**: "Tema, mağaza ön yüzünün görünümünü değiştirir. Giriş ekranı
 ve paneller etkilenmez. Temanın vermediği sayfalarda varsayılan tema kullanılır."
 
 Temalar, **Eklentiler** bölümünün iç menüsündedir (bkz. [Eklentiler](/yonetim/moduller#eklentiler-ekrani)).
@@ -24,7 +24,7 @@ Tema paketleri Eklentiler sayfasında değil, burada listelenir.
 | **Varsayılan tema** | Mağaza ön yüzünü sunan eklentinin (Vitrin) kendi tasarımı. Renkleri Vitrin'in **İçerik › Görünüm** ekranından değiştirilir (bkz. [Görünüm](/vitrin/icerik-yonetimi#gorunum)) |
 | Kurulu tema paketleri | Her biri ayrı bir kart: temanın adı, açıklaması, sürümü ve geliştireni |
 
-Etkin temanın kartında **Etkin** rozeti vardır; diğerlerinde **Etkinleştir** düğmesi.
+Etkin temanın kartında **Etkin** rozeti vardır. Diğerlerinde **Etkinleştir** düğmesi.
 
 ### Tema etkinleştirmek
 
@@ -67,7 +67,7 @@ güncelleme de eklentilerle aynıdır: bkz. [Eklentiler › Eklentiyi kaldırma]
 | Varsayılan tasarımı koruyup renkleri markanıza uydurmak | **İçerik › Görünüm › Tema renkleri** (bkz. [Görünüm](/vitrin/icerik-yonetimi#gorunum)) |
 | Mağazanın sayfa düzenini tamamen farklı bir tasarımla değiştirmek | Bir tema kurup **Temalar**'dan etkinleştirmek |
 
-Görünüm'deki renkler varsayılan temaya uygulanır; başka bir tema etkinse kendi renklerini
+Görünüm'deki renkler varsayılan temaya uygulanır. Başka bir tema etkinse kendi renklerini
 kullanabilir.
 
 ## Yetki

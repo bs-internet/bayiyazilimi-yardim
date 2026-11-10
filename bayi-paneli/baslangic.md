@@ -6,10 +6,10 @@ durumunu tek bakışta görür, sık yaptığınız işlere buradan geçersiniz.
 ## Üst bölüm
 
 - **Hoş geldiniz, (adınız)** başlığı.
-- Bayi indiriminiz tanımlıysa **Bayi indiriminiz: %…** etiketi; bir bayi grubundaysanız grubun
+- Bayi indiriminiz tanımlıysa **Bayi indiriminiz: %…** etiketi. Bir bayi grubundaysanız grubun
   adı da yanında yazar. Bu oran fiyatlarınıza zaten uygulanmış olarak gösterilir.
-- **Mağazaya git** — online mağazamızı açar (mağaza bakımdayken görünmez).
-- **Sipariş ver** — [Sipariş ver](/bayi-paneli/siparis-verme) ekranını açar.
+- **Mağazaya git**: online mağazamızı açar (mağaza bakımdayken görünmez).
+- **Sipariş ver**: [Sipariş ver](/bayi-paneli/siparis-verme) ekranını açar.
 
 ## Özet kartlar
 
@@ -27,10 +27,10 @@ Her karta tıklayınca ilgili ekran açılır.
 En son verdiğiniz **5 sipariş**: sipariş numarası, kaç ürün içerdiği, durumu ve tutarı.
 
 - Sipariş numarasına tıklayınca sipariş detayı açılır.
-- **Tekrar sipariş ver** — o siparişteki ürünleri aynı adetlerle sepetinize ekler ve
+- **Tekrar sipariş ver**: o siparişteki ürünleri aynı adetlerle sepetinize ekler ve
   [Sipariş ver](/bayi-paneli/siparis-verme) ekranına geçer. Ayrıntı:
   [Tekrar sipariş](/bayi-paneli/siparislerim#tekrar-siparis).
-- **Tümü** — Siparişlerim listesini açar.
+- **Tümü**: Siparişlerim listesini açar.
 
 ## Teklifler
 
@@ -38,5 +38,5 @@ En son **5 teklifiniz**: teklif numarası, durumu, tutarı (fiyatlandırılmadı
 "Fiyatlandırılıyor") ve varsa geçerlilik tarihi.
 
 Onayladığınız ve süresi geçmemiş bir teklifin altında **Onayla ve sipariş ver** düğmesi
-görünür; teklifin ödeme ekranını açar. **Tümü** ile Tekliflerim listesine geçersiniz.
+görünür. Teklifin ödeme ekranını açar. **Tümü** ile Tekliflerim listesine geçersiniz.
 Durumların anlamı: [Teklif durumları](/bayi-paneli/teklifler#durumlar).

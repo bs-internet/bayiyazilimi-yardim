@@ -15,15 +15,15 @@ kargo → havale indirimi.
 | Para birimi | Ürünün fiyat para birimi (ör. bir ürün TL, bir başkası EUR). |
 | KDV oranı | Fiyata eklenecek KDV yüzdesi. |
 
-Fiyatlar her gösterimde güncel ürün ve kur bilgisinden yeniden hesaplanır; sepet ve sipariş
+Fiyatlar her gösterimde güncel ürün ve kur bilgisinden yeniden hesaplanır. Sepet ve sipariş
 aynı hesabı kullanır.
 
 ## İndirim türleri
 
 | İndirim | Nerede tanımlanır | Nasıl uygulanır |
 |---|---|---|
-| **Ürün indirimi** | Ürünün karşılaştırma fiyatı | Satış fiyatı zaten indirimli fiyattır; karşılaştırma fiyatı üstü çizili gösterilir |
-| **Bayi grubu indirimi** | **Bayiler › Bayi Grupları** — grubun tek indirim oranı | Satış fiyatından yüzde düşülür |
+| **Ürün indirimi** | Ürünün karşılaştırma fiyatı | Satış fiyatı zaten indirimli fiyattır. Karşılaştırma fiyatı üstü çizili gösterilir |
+| **Bayi grubu indirimi** | **Bayiler › Bayi Grupları**: grubun tek indirim oranı | Satış fiyatından yüzde düşülür |
 | **Bayiye özel indirim** | Müşteri detayı › **Bayi ayarları** | Girilirse grubun oranının yerine geçer |
 | **Kampanya** | **Kampanyalar**. Bkz. [Kampanyalar](/musteriler/kampanyalar) | Sepette, koşullar sağlanınca |
 | **Havale indirimi** | **Ayarlar › Tanımlamalar › Banka Hesapları**. Bkz. [Havale](/cari/havale#havale-indirimi) | Ödemede havale / EFT seçilince genel toplamdan |
@@ -32,16 +32,16 @@ aynı hesabı kullanır.
 
 Ürün indirimi ile bayi indirimi **birikmez**:
 
-1. Üründe karşılaştırma fiyatı satış fiyatından yüksekse **ürün indirimi** geçerlidir; bayi
+1. Üründe karşılaştırma fiyatı satış fiyatından yüksekse **ürün indirimi** geçerlidir. Bayi
    indirimi bu ürüne **uygulanmaz**.
 2. Değilse giriş yapmış bayinin **bayiye özel oranı**, o da yoksa **grubunun oranı** uygulanır.
 3. Giriş yapmamış ziyaretçiye, vitrin müşterisine ve grubu / özel oranı olmayan bayiye bayi
    indirimi uygulanmaz.
 
-Ekranda gösterilen indirim yüzdesi tam sayıya yuvarlanır; hesap ise kesin oranla yapılır.
+Ekranda gösterilen indirim yüzdesi tam sayıya yuvarlanır. Hesap ise kesin oranla yapılır.
 
 **Örnek:** Satış fiyatı 100 TL, karşılaştırma fiyatı 125 TL olan ürün %20 indirimli görünür
-(üstü çizili 125 TL). %15 indirimli Altın Bayi de bu ürünü **100 TL**'ye görür; ek %15 düşülmez.
+(üstü çizili 125 TL). %15 indirimli Altın Bayi de bu ürünü **100 TL**'ye görür. Ek %15 düşülmez.
 
 Kampanyalar ve havale indirimi bunlardan **ayrıdır**: ürün / bayi indirimi uygulanmış fiyatın
 üzerine sepette ayrıca uygulanır.
@@ -81,7 +81,7 @@ Varsayımlar:
 - Bayi **10 adet** alıyor.
 - Aktif kampanya: tüm ürünlerde **%5 yüzde indirim**.
 - Sepet, ücretsiz kargo eşiğinin üstünde (kargo 0).
-- Havale indirimi **%2**; bayi havale / EFT ile ödüyor.
+- Havale indirimi **%2**. Bayi havale / EFT ile ödüyor.
 
 | Adım | Hesap | Sonuç |
 |---|---|---|
@@ -106,7 +106,7 @@ sepet tutarına bakar (örnekte 29.750,00 × 1,20 = 35.700,00 TL).
 ## Fiyat gösterimi (KDV dahil / hariç) {#gosterim}
 
 **Ayarlar › Tanımlamalar › Satış Ayarları** › **Fiyat gösterimi** bölümünde bayi için bir ayar
-vardır; [Vitrin eklentisi](/vitrin/) kuruluysa ziyaretçi / müşteri için ikinci bir ayar çıkar:
+vardır. [Vitrin eklentisi](/vitrin/) kuruluysa ziyaretçi / müşteri için ikinci bir ayar çıkar:
 
 | Alan | Varsayılan | Açıklama |
 |---|---|---|
@@ -119,6 +119,6 @@ zaman ayrı gösterilir.
 
 ## Teklif ürünleri ve tekliften sipariş
 
-Satış biçimi **Teklif** olan ürünlerin fiyatı gösterilmez; fiyat teklifte belirlenir. Tekliften
+Satış biçimi **Teklif** olan ürünlerin fiyatı gösterilmez. Fiyat teklifte belirlenir. Tekliften
 oluşan siparişte teklifteki fiyatlar ve para birimi kullanılır; **kampanya uygulanmaz**, havale
 ile ödenirse havale indirimi uygulanır. Bkz. [Teklifler](/satis/teklifler).

@@ -14,33 +14,33 @@ ekler: sitenizin ana adresi (`/`) mağazanın ana sayfası olur, ziyaretçiler �
 
 | Parça | Ne işe yarar | Ayrıntı |
 |---|---|---|
-| Herkese açık katalog | Kategori, marka, arama ve ürün sayfaları; filtreler ve sıralama | [Müşteri deneyimi](/vitrin/musteri-deneyimi) |
+| Herkese açık katalog | Kategori, marka, arama ve ürün sayfaları. Filtreler ve sıralama | [Müşteri deneyimi](/vitrin/musteri-deneyimi) |
 | Sepet ve ödeme | Üye ve misafir alışverişi, kargo ve ödeme seçimi, sözleşme onayları | [Müşteri deneyimi](/vitrin/musteri-deneyimi#odeme) |
 | Teklif listesi | Fiyatsız ya da toplu alım ürünleri için teklif isteme | [Müşteri deneyimi](/vitrin/musteri-deneyimi#teklif-listesi) |
 | Müşteri kaydı ve Hesabım | Siparişler, teklifler, adresler, ödemeler, iadeler | [Müşteri hesabı](/vitrin/musteri-hesabi) |
 | Ana sayfa düzenleyici ve slider | Ana sayfayı bölüm bölüm kurma | [Ana sayfa ve slider](/vitrin/ana-sayfa) |
 | Menüler, sayfalar, görünüm | **İçerik** menüsü: üst menü, kategori menüsü, Hakkımızda gibi içerik sayfaları, mağaza renkleri, duyuru bandı | [İçerik yönetimi](/vitrin/icerik-yonetimi) |
 | İletişim Bilgileri | WhatsApp, çalışma saatleri, iletişim sayfası, harita, sosyal medya | [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri) |
-| Müşteri hesapları | Panelde **Bayiler** menüsü **Müşteriler** olur; müşteri türü filtresi, **Müşteriye çevir**, raporlarda müşteri kırılımları | [Müşteriler ve bayiler](/musteriler/) |
+| Müşteri hesapları | Panelde **Bayiler** menüsü **Müşteriler** olur. Müşteri türü filtresi, **Müşteriye çevir**, raporlarda müşteri kırılımları | [Müşteriler ve bayiler](/musteriler/) |
 | Üyelik formunda sözleşme onayı | Sözleşme formunda **Üyelik formunda göster** seçeneği | [Vitrin ayarları › Sözleşmeler](/vitrin/ayarlar#sozlesmeler) |
 | İçerik Editörü görevi | Ana Sayfa, Menüler, Slider, Görünüm ve Sayfalar yetkileriyle hazır görev | [Görevler ve yetkiler](/yonetim/roller-yetkiler#hazir-gorevler) |
 | Site erişimi, çerezler, ETBİS, kupon kodu, arama motoru | Vitrinin kimlere açık olduğu ve yasal gereklilikler | [Vitrin ayarları](/vitrin/ayarlar) |
 | Ek kampanya koşulları | **Müşteri tipi**, **İlk sipariş**, **Kupon kodu** | [Kampanyalar](/musteriler/kampanyalar) |
 | Ürün görünürlüğü | Ürün formunda **Kimler görsün?** (Vitrin / Bayi) | [Ürünler](/satis/urunler#kimler-gorsun) |
-| Mağaza tasarımı ve temalar | Varsayılan tasarım (açık renkli alt bilgi, hap biçimli arama kutusu, ürün kartları); renkleri **İçerik › Görünüm**'den değişir. Farklı bir tasarım için tema kurulup **Ayarlar › Eklentiler › Temalar**'dan etkinleştirilir | [Görünüm](/vitrin/icerik-yonetimi#gorunum), [Temalar](/yonetim/temalar) |
+| Mağaza tasarımı ve temalar | Varsayılan tasarım (açık renkli alt bilgi, hap biçimli arama kutusu, ürün kartları). Renkleri **İçerik › Görünüm**'den değişir. Farklı bir tasarım için tema kurulup **Ayarlar › Eklentiler › Temalar**'dan etkinleştirilir | [Görünüm](/vitrin/icerik-yonetimi#gorunum), [Temalar](/yonetim/temalar) |
 
 ## Kim neyi görür? {#kim-neyi-gorur}
 
 | Kişi | Vitrinde | Hesap alanı |
 |---|---|---|
-| **Ziyaretçi** (giriş yapmamış) | Yalnız "Vitrin" ürünlerini görür; sepete ekler, misafir olarak sipariş verir, teklif ister | Yok. Sipariş ve teklif sayfalarını e-postadaki bağlantıyla açar |
-| **Müşteri** (vitrinden kayıt olmuş) | Ziyaretçiyle aynı ürünler; kayıtlı adreslerini ödeme ekranında seçer | Vitrin tasarımındaki **Hesabım** (`/hesabim`) |
-| **Bayi** | "Vitrin" ürünlerine ek olarak "Bayi" ürünlerini de görür; kendi fiyatlarıyla (grup / bayi indirimi) | **Bayi paneli** (`/app`) |
+| **Ziyaretçi** (giriş yapmamış) | Yalnız "Vitrin" ürünlerini görür. Sepete ekler, misafir olarak sipariş verir, teklif ister | Yok. Sipariş ve teklif sayfalarını e-postadaki bağlantıyla açar |
+| **Müşteri** (vitrinden kayıt olmuş) | Ziyaretçiyle aynı ürünler. Kayıtlı adreslerini ödeme ekranında seçer | Vitrin tasarımındaki **Hesabım** (`/hesabim`) |
+| **Bayi** | "Vitrin" ürünlerine ek olarak "Bayi" ürünlerini de görür. Kendi fiyatlarıyla (grup / bayi indirimi) | **Bayi paneli** (`/app`) |
 | **Yönetici** | Vitrini her durumda görür (bakım modunda da) | Yönetim paneli (`/panel`) |
 
 - Vitrinden kayıt olan ya da panelden üye olarak eklenen kişinin hesabı **müşteri** hesabıdır.
   Bayi hesabı panelden bayi olarak açılır (bkz. [Müşteriler ve bayiler](/musteriler/)).
-- Müşteri bayi paneline (`/app`) girmeye çalışırsa vitrindeki Hesabım'a; bayi `/hesabim`
+- Müşteri bayi paneline (`/app`) girmeye çalışırsa vitrindeki Hesabım'a. Bayi `/hesabim`
   adresine girmeye çalışırsa bayi paneline yönlendirilir.
 - Vitrin üst bilgisindeki hesap bağlantısı da kişiye göre değişir: ziyaretçiyi giriş sayfasına,
   müşteriyi Hesabım'a, bayiyi bayi paneline, yöneticiyi yönetim paneline götürür.
@@ -53,7 +53,7 @@ ekler: sitenizin ana adresi (`/`) mağazanın ana sayfası olur, ziyaretçiler �
 - **Fiyat gösterimi ayrıdır.** KDV dahil / hariç gösterim ziyaretçi-müşteri için ve bayi için
   ayrı ayarlanır (bkz. [Fiyat gösterimi](/vitrin/ayarlar#fiyat-gosterimi)).
 - **Kampanyalar** müşteri tipine göre ayrılabilir: misafir, müşteri ya da bayi. **İlk sipariş**
-  ve **Kupon kodu** koşulları da yalnız vitrinle gelir; kupon kodu yalnız vitrin sepetinde girilir.
+  ve **Kupon kodu** koşulları da yalnız vitrinle gelir. Kupon kodu yalnız vitrin sepetinde girilir.
 - **Raporlar** misafir ve müşteri siparişlerini bayi siparişlerinden ayrı gösterir.
 
 ## Misafir alışverişi
@@ -62,16 +62,16 @@ Ziyaretçi üye olmadan sepetini doldurup ödeme ekranında iletişim, teslimat 
 girerek sipariş verebilir. Misafir siparişlerinde ve tekliflerinde:
 
 - Sipariş / teklif e-postasındaki bağlantı, **giriş gerektirmeyen** özel bir sayfayı açar.
-  Misafir siparişin durumunu, kargo takip numarasını ve havale bilgilerini buradan görür; teklifi
+  Misafir siparişin durumunu, kargo takip numarasını ve havale bilgilerini buradan görür. Teklifi
   buradan onaylar, revize ister, reddeder ve öder.
-- Bu bağlantılar bakım modunda yalnız görüntülenir; vitrin eklentisi kapatılırsa açılmaz.
+- Bu bağlantılar bakım modunda yalnız görüntülenir. Vitrin eklentisi kapatılırsa açılmaz.
 - İade talebi, ödeme geçmişi ve kayıtlı adres gibi işlemler yalnız üyelerin Hesabım'ındadır.
 
 ## Müşteri kaydı
 
 Vitrin herkese açıkken giriş sayfasında kayıt bağlantısı görünür. Kayıt formu: **Ad soyad**,
 **E-posta adresi**, **Şifre**, **Şifre tekrarı**. Kayıttan sonra e-posta adresine doğrulama
-bağlantısı gider; müşteri hesabı **e-posta doğrulanınca açılır**. Ayrıntılar:
+bağlantısı gider. Müşteri hesabı **e-posta doğrulanınca açılır**. Ayrıntılar:
 [Müşteri hesabı](/vitrin/musteri-hesabi).
 
 ## Vitrini kapatmak
@@ -108,5 +108,5 @@ Sayfalar** listesindeki **Görüntüle** bağlantısı bu adresleri yeni sekmede
 
 Vitrin **Ayarlar › Eklentiler** ekranından kapatılabilir. Kapatınca sistem yeniden
 yalnız B2B çalışır: herkese açık site, müşterinin Hesabım'ı ve vitrinin panel ekranları (Ana Sayfa,
-Menüler, Görünüm, Slider, Sayfalar, Çerez Yönetimi, İletişim Bilgileri) kaybolur; veriler **silinmez**. Bayiler bayi
+Menüler, Görünüm, Slider, Sayfalar, Çerez Yönetimi, İletişim Bilgileri) kaybolur. Veriler **silinmez**. Bayiler bayi
 panelini kullanmayı sürdürür. Bkz. [Eklentiler](/yonetim/moduller).

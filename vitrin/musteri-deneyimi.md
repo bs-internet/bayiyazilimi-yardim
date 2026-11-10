@@ -5,8 +5,8 @@ gördüklerini, neyin nereden geldiğini ve hangi kurallarla çalıştığını.
 [Vitrin ayarları](/vitrin/ayarlar), içerik için [İçerik yönetimi](/vitrin/icerik-yonetimi).
 
 Anlatılan görünüm **varsayılan temaya** aittir: açık renkli alt bilgi, hap biçimli arama kutusu ve
-ürün kartları; renkleri **İçerik › Görünüm**'den değiştirilir (bkz. [Görünüm](/vitrin/icerik-yonetimi#gorunum)).
-Başka bir tema etkinse ([Temalar](/yonetim/temalar)) sayfaların görünümü farklı olabilir; ayarlar
+ürün kartları. Renkleri **İçerik › Görünüm**'den değiştirilir (bkz. [Görünüm](/vitrin/icerik-yonetimi#gorunum)).
+Başka bir tema etkinse ([Temalar](/yonetim/temalar)) sayfaların görünümü farklı olabilir. Ayarlar
 ve kurallar aynıdır.
 
 ## Üst bilgi {#ust-bilgi}
@@ -15,7 +15,7 @@ Her sayfanın üstünde:
 
 | Parça | Açıklama | Nereden gelir |
 |---|---|---|
-| Duyuru bandı | En üstte koyu şeritte; birden fazla duyuru varsa birkaç saniyede bir sırayla değişir | **İçerik › Görünüm** |
+| Duyuru bandı | En üstte koyu şeritte. Birden fazla duyuru varsa birkaç saniyede bir sırayla değişir | **İçerik › Görünüm** |
 | Logo | Ana sayfaya götürür | **Ayarlar › Genel Ayarlar** |
 | Arama kutusu | "Aramak istediğiniz ürünü, markayı ya da stok kodunu yazınız" | Bkz. [Arama](#arama) |
 | Hesap bağlantısı | Ziyaretçide **Giriş Yap**, giriş yapmışsa kişinin adı. Müşteriyi Hesabım'a, bayiyi bayi paneline götürür | — |
@@ -50,8 +50,8 @@ düzenini kullanır: solda filtreler, üstte toplam ürün sayısı ve sıralama
 | **Tüm Ürünler** | Kişinin görebildiği tüm ürünler |
 | **Kampanyalı Ürünler** | Üstü çizili fiyatı olan ürünler **ve** şu an yayında, kişiye uygun bir kampanyanın kapsadığı ürünler (kupon kodlu kampanyalar hariç) |
 | **Yeni Ürünler** | "Yeni ürünler" listesindeki ürünler, varsayılan olarak o listenin sırasıyla (bkz. [Yeni ürünler listesi](/vitrin/ana-sayfa#yeni-urunler-listesi)) |
-| Kategori sayfası | Kategori ve tüm alt kategorilerindeki ürünler; kategorinin açıklaması ve kategori yolu (breadcrumb) |
-| Marka sayfası | Markanın ürünleri; marka logosu ve açıklaması. Marka filtresi gösterilmez |
+| Kategori sayfası | Kategori ve tüm alt kategorilerindeki ürünler. Kategorinin açıklaması ve kategori yolu (breadcrumb) |
+| Marka sayfası | Markanın ürünleri. Marka logosu ve açıklaması. Marka filtresi gösterilmez |
 
 **Kategoriler** (`/kategoriler`) sayfası ana kategorileri görselleri, ürün sayıları ve alt
 kategorileriyle; **Markalar** (`/markalar`) sayfası aktif markaları logoları ve ürün sayılarıyla
@@ -61,8 +61,8 @@ listeler.
 
 | Filtre | Açıklama |
 |---|---|
-| **Kategoriler** | Birden çok seçilebilir; alt kategoriler dahil |
-| **Fiyat Aralığı** | Hazır aralıklar (0–25, 25–50, … 25.000–50.000, 50.000+), ziyaretçinin seçtiği para biriminde, KDV gösterimine ve bayi indirimine göre. Fiyatı gösterilmeyen (teklif) ürünler bu filtreye girmez |
+| **Kategoriler** | Birden çok seçilebilir. Alt kategoriler dahil |
+| **Fiyat Aralığı** | Hazır aralıklar (0-25, 25-50, … 25.000-50.000, 50.000+), ziyaretçinin seçtiği para biriminde, KDV gösterimine ve bayi indirimine göre. Fiyatı gösterilmeyen (teklif) ürünler bu filtreye girmez |
 | **Markalar** | Birden çok seçilebilir |
 | **Ürün Durumu** | **Yeni ürünler**, **Kampanyalı ürünler**, **Teklif ile satılanlar** |
 | **Yalnızca stoktakiler** | Stoğu biten ürünleri gizler |
@@ -76,7 +76,7 @@ listeler.
 
 **Sırala:** **Önerilen** (varsayılan: stoktakiler önce, sonra ürün sırası ve satış adedi), **Fiyat
 (Artan)**, **Fiyat (Azalan)**, **En Yeniler**, **Çok Satanlar**, **Ürün Adı (A-Z)**. Fiyat
-sıralamasında farklı para birimindeki ürünler TL karşılığına göre sıralanır; fiyatı gösterilmeyen
+sıralamasında farklı para birimindeki ürünler TL karşılığına göre sıralanır. Fiyatı gösterilmeyen
 ürünler sona kalır.
 
 ### Ürün kartı {#urun-karti}
@@ -84,7 +84,7 @@ sıralamasında farklı para birimindeki ürünler TL karşılığına göre sı
 Listelerde ve ana sayfa şeritlerinde her ürün bir kartla gösterilir:
 
 - Görsel, marka, ürün adı, **Kod: stok kodu**.
-- Fiyat (KDV hariç gösterimde yanında **+KDV**); üstü çizili fiyat ve **%** indirim etiketi.
+- Fiyat (KDV hariç gösterimde yanında **+KDV**). Üstü çizili fiyat ve **%** indirim etiketi.
   İndirim bayi indiriminden geliyorsa etiket **Bayi %…** olur.
 - Kampanya varsa kampanya etiketi (ör. "2 Al 1 Öde") ve **Sepette** kampanyalı fiyat.
 - **YENİ** ve **Ücretsiz Kargo** rozetleri (ürün formundaki işaretlere göre).
@@ -108,7 +108,7 @@ Listelerde ve ana sayfa şeritlerinde her ürün bir kartla gösterilir:
 
 **Adet kuralları:**
 
-- Adet kutusu ürünün **en az sipariş adedinden** başlar; altına inilmez.
+- Adet kutusu ürünün **en az sipariş adedinden** başlar. Altına inilmez.
 - Ürünün **en fazla sipariş adedi** varsa "Bu üründen en fazla N adet sipariş verilebilir." yazar.
 - Stok yetmezse "… için yeterli stok yok (mevcut: N). Daha fazla adet için teklif
   isteyebilirsiniz." uyarısı çıkar.
@@ -124,7 +124,7 @@ Sepete eklenince sayfanın üstünde "… sepete eklendi." bildirimi ve **Sepete
 
 - Her satırda ürün, **Kod**, birim fiyat, adet (azalt / artır, ya da yazarak), satır tutarı ve
   çıkarma düğmesi. Adet değişikliği anında kaydedilir.
-- Adet en az sipariş adedinin altına inmez, en fazla sipariş adedini aşmaz; stok yetmezse adet
+- Adet en az sipariş adedinin altına inmez, en fazla sipariş adedini aşmaz. Stok yetmezse adet
   stoğa düşürülür ve "… için en fazla N adet eklenebilir." uyarısı çıkar.
 - Kampanyayla gelen ücretsiz ürün **Hediye** olarak, kampanyanın uygulandığı satır ve
   **Uygulanan kampanya** adı gösterilir. Sepete birden çok kampanya uyuyorsa "en avantajlı olan
@@ -136,7 +136,7 @@ Sepete eklenince sayfanın üstünde "… sepete eklendi." bildirimi ve **Sepete
 - **Siparişi Tamamla** ödeme ekranına geçirir. Kargo ücreti ödeme adımında seçilen kargo firmasına
   ve sepetin desisine göre kesinleşir.
 
-Sepette yalnız teklifle satılan ya da stoğu yetersiz ürün kaldıysa sipariş tamamlanamaz; müşteriye
+Sepette yalnız teklifle satılan ya da stoğu yetersiz ürün kaldıysa sipariş tamamlanamaz. Müşteriye
 bu ürünleri çıkarması ya da teklif listesine eklemesi söylenir.
 
 ## Ödeme {#odeme}
@@ -188,7 +188,7 @@ hesaplanan ücretle listelenir. Kargo firması tanımlı değilse bu adım gör�
 | Yöntem | Ne zaman görünür |
 |---|---|
 | **Havale / EFT** | Havale açıksa ve en az bir aktif banka hesabı varsa. Havale indirimi tanımlıysa "Havale indirimi (%…)" ve indirimli **Ödenecek tutar** gösterilir |
-| **Kartla ödeme** | Kart ödeme eklentisi (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir; seçilince düğme **Ödemeye Geç** olur ve ödeme sağlayıcının sayfasına gidilir |
+| **Kartla ödeme** | Kart ödeme eklentisi (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir. Seçilince düğme **Ödemeye Geç** olur ve ödeme sağlayıcının sayfasına gidilir |
 | **Cari hesaba (vadeli)** | Yalnız vadeli çalışan hesaplarda (genellikle bayiler) |
 
 Hiç yöntem yoksa "Şu anda kullanılabilir ödeme yöntemi yok. Lütfen bizimle iletişime geçin."
@@ -196,7 +196,7 @@ yazar. Bkz. [Havale ve ödeme bildirimi](/cari/havale), [Kartla ödeme](/cari/ka
 
 ### Not ve onay
 
-- **Sipariş Notu** — isteğe bağlı, en çok 2.000 karakter.
+- **Sipariş Notu**: isteğe bağlı, en çok 2.000 karakter.
 - Sözleşme onayı: **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Ödeme formunda göster**
   işaretli aktif sözleşme varsa zorunlu bir onay kutusu çıkar, ör. "**Satış Sözleşmesi** ve
   **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı metni bir
@@ -207,7 +207,7 @@ yazar. Bkz. [Havale ve ödeme bildirimi](/cari/havale), [Kartla ödeme](/cari/ka
 ### Sipariş sonrası {#siparis-sonrasi}
 
 Sipariş verilince müşteri **sipariş sayfasına** yönlendirilir ve "Siparişiniz alındı. Sipariş
-numaranız: …" mesajını görür. Bu sayfa giriş gerektirmez; aynı bağlantı sipariş e-postasında da
+numaranız: …" mesajını görür. Bu sayfa giriş gerektirmez. Aynı bağlantı sipariş e-postasında da
 vardır. Sayfada:
 
 - Sipariş numarası ve **Ödeme** durumu.
@@ -241,8 +241,8 @@ Teklif Listem'de ürünler ve adetleri düzenlenir, yanında **Teklif Talebi** f
 talebi gönderir:
 
 - **Misafir** "Teklif talebiniz alındı" sayfasını görür (**Talebi Görüntüle**, **Alışverişe Devam
-  Et**); teklif hazır olunca e-postayla bildirilir.
-- **Üye** doğrudan Hesabım'daki teklif sayfasına gider; teklifi **Hesabım › Tekliflerim**'den
+  Et**). Teklif hazır olunca e-postayla bildirilir.
+- **Üye** doğrudan Hesabım'daki teklif sayfasına gider. Teklifi **Hesabım › Tekliflerim**'den
   onaylar.
 
 Kupon kodu teklif listesine uygulanmaz.
@@ -254,12 +254,12 @@ misafir e-postadaki bağlantıyla (giriş gerekmez) teklifi açar ve:
 
 | İşlem | Açıklama |
 |---|---|
-| **Onayla** | "Onayla ve ödemeye geç" — ödeme ekranı açılır; ödeme ile sipariş oluşur |
-| **Revize iste** | **İsteğiniz** (zorunlu) notuyla değişiklik ister; güncel teklif e-postayla gelir |
+| **Onayla** | "Onayla ve ödemeye geç": ödeme ekranı açılır. Ödeme ile sipariş oluşur |
+| **Revize iste** | **İsteğiniz** (zorunlu) notuyla değişiklik ister. Güncel teklif e-postayla gelir |
 | **Reddet** | **Neden (isteğe bağlı)** ile teklifi kapatır |
 | **Talebi geri çek** | Henüz fiyatlanmamış talebi iptal eder |
 
-Teklif geçerlilik süresi dolarsa onaylanamaz; müşteriye yeni talep oluşturması ya da sizinle
+Teklif geçerlilik süresi dolarsa onaylanamaz. Müşteriye yeni talep oluşturması ya da sizinle
 iletişime geçmesi söylenir. Süre **Ayarlar › Tanımlamalar › Satış Ayarları › Teklif geçerlilik
 süresi** ile belirlenir. Panel tarafı için bkz. [Teklifler](/satis/teklifler).
 
@@ -278,7 +278,7 @@ ilgili sayfayı, misafirde giriş gerektirmeyen sipariş / teklif sayfasını a�
 |---|---|
 | E-posta doğrulama | Kayıt olunca ve e-posta adresi değiştirilince |
 | Siparişiniz alındı (no) | Sipariş verilince |
-| Sipariş durumu: … (no) | Siparişin durumu değişince; ödeme alınınca "Ödemeniz alındı, siparişiniz hazırlanıyor." notuyla |
+| Sipariş durumu: … (no) | Siparişin durumu değişince. Ödeme alınınca "Ödemeniz alındı, siparişiniz hazırlanıyor." notuyla |
 | Teklif talebiniz alındı (no) | Teklif istenince |
 | Teklifiniz hazır | Teklifi fiyatlandırıp gönderdiğinizde |
 | Teklif onayınız alındı / Revize isteğiniz alındı / Teklifi reddettiniz / Teklif talebiniz geri çekildi | Müşterinin yanıtından sonra |

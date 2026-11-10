@@ -15,7 +15,7 @@ Açınca:
 - Stok Ayarları'nda **SKT uyarı süresi (gün)** alanı görünür.
 
 Kapatırsanız tüm ürünler takipsiz davranır ve bu alanlar gizlenir. Ürünlerin ayarları ve kayıtlı
-lotlar **silinmez**; yeniden açınca geri gelir.
+lotlar **silinmez**. Yeniden açınca geri gelir.
 
 ## Ürün ayarı {#urun-ayari}
 
@@ -24,12 +24,12 @@ lotlar **silinmez**; yeniden açınca geri gelir.
 | Alan | Açıklama |
 |---|---|
 | İzlenebilirlik | **Takip yok**, **Lot / parti** (parti numarasıyla) ya da **Seri numarası** (her adet ayrı numarayla) |
-| Son kullanma tarihi (SKT) takibi | İşaretliyse girişte SKT zorunlu olur; süresi geçen lot satılmaz. Yalnız İzlenebilirlik "Lot / parti" ya da "Seri numarası" iken etkilidir |
+| Son kullanma tarihi (SKT) takibi | İşaretliyse girişte SKT zorunlu olur. Süresi geçen lot satılmaz. Yalnız İzlenebilirlik "Lot / parti" ya da "Seri numarası" iken etkilidir |
 
 - Ürünün kayıtlı lotları varken izlenebilirliği değiştirirseniz mevcut kayıtlar korunur
   (formda uyarı çıkar).
 - Bir **seri numarası** tüm depolarda toplam en fazla 1 adet olabilir.
-- Lot ve seri numaraları büyük harfe çevrilerek saklanır; en fazla 64 karakterdir.
+- Lot ve seri numaraları büyük harfe çevrilerek saklanır. En fazla 64 karakterdir.
 
 ## Lotlu stok nasıl girilir? {#giris}
 
@@ -47,8 +47,8 @@ Lot seçimi işleme göre:
 | İşlem | Lot |
 |---|---|
 | Giriş | Lot / seri no **yazılır** (zorunlu) |
-| Çıkış, transfer | İsteğe bağlı; boşsa otomatik (FEFO) |
-| Hızlı sayım, lokasyon değiştir | **Zorunlu**; var olan lotlardan seçilir |
+| Çıkış, transfer | İsteğe bağlı. Boşsa otomatik (FEFO) |
+| Hızlı sayım, lokasyon değiştir | **Zorunlu**. Var olan lotlardan seçilir |
 
 ## Çıkış ve sipariş: önce SKT'si yakın olan (FEFO) {#fefo}
 
@@ -82,7 +82,7 @@ Lot seçilmeden yapılan her düşümde (sipariş, çıkış, transfer) sıra ş
 
 - Son kullanma tarihi **bugünden önce** olan lot "süresi geçmiş" sayılır: satılabilir stoğa
   sayılmaz, otomatik seçilmez; Stok Durumu'nda ve depo detayında kırmızı görünür.
-- Süresi geçen lot depoda **durmaya devam eder** (depo toplamında görünür); siz çıkış yapana
+- Süresi geçen lot depoda **durmaya devam eder** (depo toplamında görünür). Siz çıkış yapana
   kadar silinmez.
 - SKT dolması bir stok hareketi değildir. Bu yüzden sistem **her gece 00:10'da** son iki günde
   süresi dolan lotların ürünlerinde satılabilir stoğu yeniden hesaplar. Böylece süresi gece
@@ -108,7 +108,7 @@ fazlası) sistem bunu kendiliğinden düzeltir:
 1. Önce eksik düşülmüş **siparişler**, en eskiden başlayarak gelen lota bağlanır.
 2. Sonra kalan **sipariş dışı** lot belirsiz eksi, gelen lottan kapatılır.
 
-Her iki adım **Lot Değişimi** hareketi yazar; depo toplamı değişmez. SKT'si geçmiş bir lotla
+Her iki adım **Lot Değişimi** hareketi yazar. Depo toplamı değişmez. SKT'si geçmiş bir lotla
 giriş yapılırsa düzeltme yapılmaz.
 
 **Örnek.** Merkez Depo'da ürünün stoğu 0. Ön siparişle iki sipariş geldi: **S1** 3 adet, **S2**
@@ -139,7 +139,7 @@ giriş yapılırsa düzeltme yapılmaz.
 
 - **Arama:** lot / seri no, ürün adı ya da SKU.
 - **Durum:** **Stokta olanlar** (varsayılan), **SKT yaklaşan (N gün)**, **SKT geçmiş (stokta)**,
-  **Tümü (geçmiş dahil)** — tükenmiş lotlar da listelenir.
+  **Tümü (geçmiş dahil)**: tükenmiş lotlar da listelenir.
 - **Depo:** stoğun bu depoda olmasını şart koşar.
 
 ### Lot hareketleri ve geri çağırma
@@ -155,7 +155,7 @@ Depo Excel'inde de **Lot / Seri No** ve **SKT** sütunları vardır.
 
 ## Siparişte lot değiştirme {#siparis-lot-degistir}
 
-Sistem siparişe FEFO ile bir lot ayırır; depoda fiziksel olarak başka bir lot toplandıysa sipariş
+Sistem siparişe FEFO ile bir lot ayırır. Depoda fiziksel olarak başka bir lot toplandıysa sipariş
 detayından düzeltilir.
 
 1. Sipariş detayında ürün satırının altındaki toplama etiketinde (`lokasyon · lot ×adet`)
@@ -166,7 +166,7 @@ detayından düzeltilir.
 4. **Miktar**: 1 ile o etiketteki adet arasında (seri takiplide 1 gelir).
 5. **Kaydet**.
 
-Sonuç: eski lot aynı lokasyona geri eklenir, yeni lot aynı depodan düşülür; iki **Lot Değişimi**
+Sonuç: eski lot aynı lokasyona geri eklenir, yeni lot aynı depodan düşülür. İki **Lot Değişimi**
 hareketi yazılır, sipariş tutarı ve depo toplamı değişmez, sipariş geçmişine "… için lot / seri
 no değiştirildi." notu düşer. "Lot belirsiz" bir kalem de bu yolla gerçek lota bağlanabilir.
 

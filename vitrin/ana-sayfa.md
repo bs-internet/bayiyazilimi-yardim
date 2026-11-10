@@ -3,8 +3,8 @@
 Vitrinin ana sayfası **bölümlerden** oluşur. En üstte **slider** (büyük görsel geçişleri), altında
 sizin eklediğiniz bölümler sırayla gösterilir. İkisi de **İçerik** menüsünden yönetilir:
 
-- **İçerik › Ana Sayfa** — slider'ın altındaki bölümler.
-- **İçerik › Slider** — slaytlar ve slider'ın ana sayfada gösterilip gösterilmeyeceği.
+- **İçerik › Ana Sayfa**: slider'ın altındaki bölümler.
+- **İçerik › Slider**: slaytlar ve slider'ın ana sayfada gösterilip gösterilmeyeceği.
 
 ::: tip Başlangıç düzeni
 Vitrin eklentisi kurulumda hazır bulunuyorsa ana sayfa örnek bir düzenle gelir: Popüler Kategoriler,
@@ -33,12 +33,12 @@ sayısı yazar. Bölümler vitrinde slider'ın altında **bu sırayla** gösteri
 3. **Ekle ve düzenle**'ye basın. Bölüm **pasif** olarak eklenir ve düzenleme ekranı açılır.
 4. Ayarları yapın, **Durum** kartında **Ana sayfada göster**'i açın ve **Kaydet**'e basın.
 
-**Sırayı değiştirmek** — tablodaki **Yukarı taşı** / **Aşağı taşı** oklarını kullanın.
+**Sırayı değiştirmek**: tablodaki **Yukarı taşı** / **Aşağı taşı** oklarını kullanın.
 
-**Geçici olarak gizlemek** — tablodaki **Aktif** anahtarını kapatın ya da düzenleme ekranında
+**Geçici olarak gizlemek**: tablodaki **Aktif** anahtarını kapatın ya da düzenleme ekranında
 **Ana sayfada göster**'i kapatıp kaydedin.
 
-**Silmek** — düzenleme ekranında sil düğmesine basın ve onaylayın. Bölüm ve yüklediğiniz
+**Silmek**: düzenleme ekranında sil düğmesine basın ve onaylayın. Bölüm ve yüklediğiniz
 görselleri kalıcı olarak silinir.
 
 ::: info Boş bölümler görünmez
@@ -56,9 +56,9 @@ Her bölümün düzenleme ekranında şu kartlar vardır:
 | **İçerik** | Bölüm türüne özel ayarlar (aşağıda tür tür) |
 | **Özellikler** | Yalnız Kurumsal Teklif Alanı: metnin yanındaki ikonlu maddeler |
 | **Görseller** | Görseli olan türlerde görsel yükleme alanları |
-| **Durum** | **Ana sayfada göster** — kapalıyken bölüm gizlenir, ayarları korunur |
-| **Başlık** | **Başlık** (en çok 255 karakter), **Alt başlık** (en çok 500 karakter); bazı türlerde **Logo** |
-| **Önizleme** | **Ana sayfayı aç** — kaydettikten sonra değişikliği vitrinde görürsünüz |
+| **Durum** | **Ana sayfada göster**: kapalıyken bölüm gizlenir, ayarları korunur |
+| **Başlık** | **Başlık** (en çok 255 karakter), **Alt başlık** (en çok 500 karakter). Bazı türlerde **Logo** |
+| **Önizleme** | **Ana sayfayı aç**: kaydettikten sonra değişikliği vitrinde görürsünüz |
 
 **Başlık logosu:** Kategori Vitrini, Ürün Şeridi, Marka Şeridi, Marka Vitrini ve Serbest İçerik
 bölümlerinde başlığın soluna küçük bir **Logo** eklenebilir (isteğe bağlı, önerilen yükseklik
@@ -78,7 +78,7 @@ görseli kullanılır. Başlığın yanında **Tüm Kategoriler** bağlantısı 
 | Alan | Açıklama |
 |---|---|
 | **Kategoriler** | İşaretlediğiniz kategoriler, işaretleme sırasıyla. Hiçbiri seçilmezse **ana (kök) kategoriler** gösterilir |
-| **En fazla** | Gösterilecek kategori sayısı: 1–24 (yeni bölümde 6) |
+| **En fazla** | Gösterilecek kategori sayısı: 1-24 (yeni bölümde 6) |
 
 ### Ürün Şeridi {#urun-seridi}
 
@@ -87,7 +87,7 @@ Bir ürün kaynağından şerit ya da ızgara oluşturur.
 | Alan | Açıklama |
 |---|---|
 | **Ürün kaynağı** | Aşağıdaki tabloya bakın |
-| **En fazla ürün** | 1–48 (yeni bölümde 10). **Seçili ürünler** kaynağında seçtiğiniz ürünlerin hepsi gösterilir |
+| **En fazla ürün** | 1-48 (yeni bölümde 10). **Seçili ürünler** kaynağında seçtiğiniz ürünlerin hepsi gösterilir |
 | **Görünüm** | **Kayan şerit** ya da **Izgara** |
 | **Kategori** | Kaynak "Bir kategoriden" ise zorunlu |
 | **Marka** | Kaynak "Bir markadan" ise zorunlu |
@@ -125,7 +125,7 @@ yalnız bu ekranda, bölümün kendi ayarında seçilir.
 
 ### Marka Şeridi {#marka-seridi}
 
-Marka logolarından kayan bir bant. Logoya tıklayan ziyaretçi markanın sayfasına gider; başlığın
+Marka logolarından kayan bir bant. Logoya tıklayan ziyaretçi markanın sayfasına gider. Başlığın
 yanında **Tüm Markalar** bağlantısı çıkar.
 
 | Alan | Açıklama |
@@ -140,7 +140,7 @@ markanın sayfasıdır.
 | Alan | Açıklama |
 |---|---|
 | **Marka** | Zorunlu |
-| **En fazla ürün** | 1–24 (yeni bölümde 10). Stoktakiler ve çok satanlar önce |
+| **En fazla ürün** | 1-24 (yeni bölümde 10). Stoktakiler ve çok satanlar önce |
 | **Bant görseli** | Önerilen 1920×400 px |
 
 ### Görsel Banner {#gorsel-banner}
@@ -185,14 +185,14 @@ Zengin metin editörüyle yazılan serbest alan (metin, bağlantı, görsel vb.)
 
 | Alan | Açıklama |
 |---|---|
-| **İçerik** | En çok 100.000 karakter. Güvenlik için içerik kaydedilirken temizlenir; çalıştırılabilir kodlar (script vb.) vitrine çıkmaz |
+| **İçerik** | En çok 100.000 karakter. Güvenlik için içerik kaydedilirken temizlenir. Çalıştırılabilir kodlar (script vb.) vitrine çıkmaz |
 
 ## Slider {#slider}
 
 **İçerik › Slider** ana sayfanın en üstündeki slaytları yönetir. Başlıkta toplam slayt ve şu an
 yayında olan slayt sayısı yazar.
 
-**Slider ana sayfada gösterilsin** — ekranın üstündeki **Ana sayfada göster** anahtarı slider'ın
+**Slider ana sayfada gösterilsin**: ekranın üstündeki **Ana sayfada göster** anahtarı slider'ın
 ana sayfada görünüp görünmeyeceğini belirler. Kapalıyken slaytlar korunur ama ana sayfada slider
 çıkmaz.
 
@@ -201,7 +201,7 @@ ana sayfada görünüp görünmeyeceğini belirler. Kapalıyken slaytlar korunur
 | **Sıra** | **Yukarı taşı** / **Aşağı taşı** okları |
 | **Slayt** | Görsel ve başlık |
 | **Yayın tarihi** | Başlangıç–bitiş ya da **Süresiz** |
-| **Durum** | **Yayında** / **Yayında değil**; anahtarla açılıp kapatılır |
+| **Durum** | **Yayında** / **Yayında değil**. Anahtarla açılıp kapatılır |
 | **İşlemler** | **Düzenle**, sil |
 
 ### Slayt alanları {#slayt-alanlari}
@@ -216,7 +216,7 @@ ana sayfada görünüp görünmeyeceğini belirler. Kapalıyken slaytlar korunur
 | **Masaüstü görseli** | Yeni slaytta zorunlu. Önerilen 1920×600 px, JPG/WebP, en çok 8 MB |
 | **Mobil görsel (opsiyonel)** | Önerilen 800×800 px, en çok 4 MB. Boşsa masaüstü görseli kullanılır. Kaldırmak için **Mobil görseli kaldır** |
 | **Yayın başlangıcı** | Tarih ve saat. Boşsa hemen |
-| **Yayın bitişi** | Tarih ve saat; başlangıçtan önce olamaz. Boşsa süresiz |
+| **Yayın bitişi** | Tarih ve saat. Başlangıçtan önce olamaz. Boşsa süresiz |
 | **Durum** | **Aktif** / **Pasif** |
 
 Bir slayt vitrinde ancak **Aktif** ise ve şu an yayın tarihleri arasındaysa görünür. Yayında
@@ -227,13 +227,13 @@ slayt kalmazsa slider alanı ana sayfada hiç gösterilmez.
 **Slayt eklemek**
 
 1. **İçerik › Slider**'da **Yeni slayt**'a basın.
-2. **Başlık** girin, **Masaüstü görseli**ni yükleyin; isterseniz mobil görsel, buton metni ve
+2. **Başlık** girin, **Masaüstü görseli**ni yükleyin. İsterseniz mobil görsel, buton metni ve
    bağlantı ekleyin.
 3. **Kaydet**'e basın.
 4. Slider ilk kez kullanılıyorsa üstteki **Ana sayfada göster** anahtarını açın.
 
-**Belirli tarihlerde çalışan kampanya slaytı** — slaytı ekleyin, **Yayın başlangıcı** ve
-**Yayın bitişi**ni girin. Slayt o tarihlerde kendiliğinden görünür ve kaybolur; bitince silmenize
+**Belirli tarihlerde çalışan kampanya slaytı**: slaytı ekleyin, **Yayın başlangıcı** ve
+**Yayın bitişi**ni girin. Slayt o tarihlerde kendiliğinden görünür ve kaybolur. Bitince silmenize
 gerek yoktur.
 
-**Silmek** — slaytın sil düğmesine basıp onaylayın. Görselleri kalıcı olarak silinir.
+**Silmek**: slaytın sil düğmesine basıp onaylayın. Görselleri kalıcı olarak silinir.

@@ -1,7 +1,7 @@
 # Müşteri hesabı
 
 Vitrinden kayıt olan müşteriler hesaplarını vitrin tasarımındaki **Hesabım** alanından
-(`/hesabim`) yönetir. Bayiler bu alanı kullanmaz; onlar bayi paneline yönlendirilir (bkz.
+(`/hesabim`) yönetir. Bayiler bu alanı kullanmaz. Onlar bayi paneline yönlendirilir (bkz.
 [Kim neyi görür?](/vitrin/#kim-neyi-gorur)).
 
 ## Kayıt ve giriş {#kayit}
@@ -11,8 +11,8 @@ Vitrinden kayıt olan müşteriler hesaplarını vitrin tasarımındaki **Hesab�
 | Alan | Açıklama |
 |---|---|
 | **Ad soyad** | Zorunlu, en çok 255 karakter |
-| **E-posta adresi** | Zorunlu; daha önce kullanılmamış olmalı |
-| **Şifre** / **Şifre tekrarı** | Zorunlu; iki alan aynı olmalı |
+| **E-posta adresi** | Zorunlu. Daha önce kullanılmamış olmalı |
+| **Şifre** / **Şifre tekrarı** | Zorunlu. İki alan aynı olmalı |
 | Sözleşme onayı | **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Üyelik formunda göster** işaretli aktif sözleşme varsa zorunlu onay kutusu: "*A* ve *B* metinlerini okudum, onaylıyorum." Sözleşme adları metni pencerede açar. İşaretli sözleşme yoksa kutu çıkmaz. Bkz. [Vitrin ayarları › Sözleşmeler](/vitrin/ayarlar#sozlesmeler) |
 
 1. Müşteri formu doldurup **Hesap oluştur**'a basar.
@@ -38,7 +38,7 @@ Hesabım'ın solunda (mobilde açılır menüde) "Merhaba, …" selamı ve şu b
 |---|---|
 | Sayaçlar | **Açık siparişler** (ödeme bekleyen, hazırlanan, kargodaki), **Toplam sipariş**, **Yanıtınızı bekleyen teklifler**, **Açık iadeler** |
 | **Son siparişlerim** | Son 5 sipariş: Sipariş No, Tarih, Durum, Tutar. **Tümü** ile Siparişlerim |
-| **Varsayılan adresim** | Varsayılan teslimat adresi; adres yoksa **Adres ekle** |
+| **Varsayılan adresim** | Varsayılan teslimat adresi. Adres yoksa **Adres ekle** |
 | **Hızlı bağlantılar** | **Alışverişe devam et**, **Sepetim**, **Teklif listem**, **İade talebi oluştur** |
 
 ## Siparişlerim {#siparislerim}
@@ -51,12 +51,12 @@ tıklayınca detay açılır:
   indirimi (ör. havale), **Genel toplam**.
 - **Ödeme** (yöntem, durum), kargo (**Firma**, **Takip no**, **Desi**), **Teslimat adresi**,
   **Fatura adresi**, **Sipariş notunuz**, **Sipariş geçmişi**.
-- **Havale / EFT bilgileri** — havaleyle verilen siparişin ödemesi alınmadıysa (ve sipariş iptal
+- **Havale / EFT bilgileri**: havaleyle verilen siparişin ödemesi alınmadıysa (ve sipariş iptal
   edilmediyse) detayın üstünde banka hesaplarınız ve açıklamaya sipariş numarasını yazma
   hatırlatması görünür.
-- **Tekrar sipariş ver** — siparişteki ürünleri vitrin sepetine ekler ve **Sepet** sayfasını
+- **Tekrar sipariş ver**: siparişteki ürünleri vitrin sepetine ekler ve **Sepet** sayfasını
   açar. Eklenemeyen ürün (stok, satıştan kalkma vb.) varsa bildirilir.
-- **İade talebi oluştur** — sipariş iadeye uygunsa görünür (bkz. [İadelerim](#iadelerim)).
+- **İade talebi oluştur**: sipariş iadeye uygunsa görünür (bkz. [İadelerim](#iadelerim)).
 
 ### Sipariş durumları {#siparis-durumlari}
 
@@ -65,7 +65,7 @@ tıklayınca detay açılır:
 | **Ödeme Bekleniyor** | Sipariş alındı, ödeme bekleniyor (ör. havale) |
 | **Onay Bekliyor** | Sipariş sizin onayınızı bekliyor |
 | **Hazırlanıyor** | Ödeme alındı / sipariş onaylandı, hazırlanıyor |
-| **Kargoya Verildi** | Kargoya teslim edildi; takip numarası görünür |
+| **Kargoya Verildi** | Kargoya teslim edildi. Takip numarası görünür |
 | **Tamamlandı** | Sipariş tamamlandı |
 | **İptal Edildi** | Sipariş iptal edildi |
 | **Ödeme Başarısız** | Kartla ödeme tamamlanamadı |
@@ -84,8 +84,8 @@ henüz fiyatlanmadıysa **Talebi geri çek** düğmeleri çıkar. Onaylanan tekl
 |---|---|
 | **Fiyatlandırılıyor** | Talep alındı, teklif hazırlanıyor |
 | **Revize ediliyor** | Müşteri revize istedi, güncel teklif hazırlanıyor |
-| **Onayınızı bekliyor** | Teklif gönderildi; müşteri onaylayabilir, revize isteyebilir ya da reddedebilir |
-| **Onaylandı — ödeme bekliyor** | Onaylandı; ödeme yapılınca sipariş oluşur |
+| **Onayınızı bekliyor** | Teklif gönderildi. Müşteri onaylayabilir, revize isteyebilir ya da reddedebilir |
+| **Onaylandı — ödeme bekliyor** | Onaylandı. Ödeme yapılınca sipariş oluşur |
 | **Siparişe dönüştü** | Ödendi, sipariş oluştu |
 | **Reddedildi** | Müşteri teklifi reddetti |
 | **İptal edildi** | Teklif ya da talep iptal edildi |
@@ -102,7 +102,7 @@ gönderileceği adresler) ve **Fatura adreslerim** (bireysel / kurumsal fatura b
 | **Telefon** | Zorunlu, en az 10 karakter |
 | **Bireysel / Kurumsal** | Yalnız fatura adresinde |
 | **Firma ünvanı** | Yalnız fatura adresinde. Girilirse **Vergi dairesi** ve **Vergi numarası** zorunlu olur |
-| **T.C. kimlik no (isteğe bağlı)** | Yalnız fatura adresinde; girilirse 11 hane |
+| **T.C. kimlik no (isteğe bağlı)** | Yalnız fatura adresinde. Girilirse 11 hane |
 | **İl** / **İlçe** | Listeden seçilir, zorunlu |
 | **Adres** | Zorunlu, en çok 500 karakter |
 | **Posta kodu** | İsteğe bağlı |
@@ -111,7 +111,7 @@ gönderileceği adresler) ve **Fatura adreslerim** (bireysel / kurumsal fatura b
 
 Listede **Varsayılan teslimat yap** / **Varsayılan fatura yap**, **Düzenle** ve sil işlemleri
 vardır. Adresler ödeme ekranında **Kayıtlı teslimat adreslerim** / **Kayıtlı fatura adreslerim**
-olarak tek tıkla seçilir; ödeme ekranında girilen yeni adresler de **Adreslerim'e kaydet** ile
+olarak tek tıkla seçilir. Ödeme ekranında girilen yeni adresler de **Adreslerim'e kaydet** ile
 buraya eklenebilir.
 
 ## Ödemelerim {#odemelerim}
@@ -140,16 +140,16 @@ kapatır. Daha önce açılmış talepteki adetler düşülür.
 
 | Alan | Açıklama |
 |---|---|
-| **İade adedi** | Her ürün için iade edilecek adet; iade edilebilecek adetten fazla olamaz. Adedi kalmayan ürün "İade edilemez" görünür |
+| **İade adedi** | Her ürün için iade edilecek adet. İade edilebilecek adetten fazla olamaz. Adedi kalmayan ürün "İade edilemez" görünür |
 | **İade nedeni** | Zorunlu: **Hasarlı / kusurlu ürün**, **Yanlış ürün gönderildi**, **Vazgeçtim**, **Diğer** |
 | **Açıklama** | İsteğe bağlı, en çok 2.000 karakter (ürünün durumu, sorun vb.) |
 
-**İade talebini gönder** ile talep oluşur; müşteriye "İade talebiniz alındı" e-postası gider.
+**İade talebini gönder** ile talep oluşur. Müşteriye "İade talebiniz alındı" e-postası gider.
 
 | İade durumu | Anlamı |
 |---|---|
 | **Beklemede** | Talep inceleniyor |
-| **Onaylandı** | Talep onaylandı; ürün gönderilebilir |
+| **Onaylandı** | Talep onaylandı. Ürün gönderilebilir |
 | **Reddedildi** | Talep reddedildi |
 | **Ürün Teslim Alındı** | İade edilen ürün size ulaştı |
 | **İade Tamamlandı** | İade sonuçlandı |
@@ -161,7 +161,7 @@ Panel tarafı için bkz. [İadeler](/satis/iadeler).
 | Bölüm | Alanlar ve davranış |
 |---|---|
 | **Kişisel bilgiler** | **Ad soyad** |
-| **E-posta adresi** | **Yeni e-posta adresi** → **E-postayı değiştir**. Oturum kapatılır; yeni adrese gelen bağlantıyla doğrulayıp tekrar giriş yapmak gerekir |
+| **E-posta adresi** | **Yeni e-posta adresi** → **E-postayı değiştir**. Oturum kapatılır. Yeni adrese gelen bağlantıyla doğrulayıp tekrar giriş yapmak gerekir |
 | **Şifre değiştir** | **Mevcut şifre**, **Yeni şifre**, **Yeni şifre (tekrar)** → **Şifreyi güncelle**. Oturum kapatılır, yeni şifreyle tekrar giriş yapılır |
 
 E-posta ve şifre değişikliği dakikada en çok 6 kez denenebilir.

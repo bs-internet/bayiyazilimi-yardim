@@ -1,25 +1,25 @@
 # Genel ayarlar
 
-**Ayarlar › Genel Ayarlar** — sistemin kimliği, varsayılanları, firma bilgileri ve site erişimi. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
+**Ayarlar › Genel Ayarlar**: sistemin kimliği, varsayılanları, firma bilgileri ve site erişimi. Menüdeki **Genel Ayarlar**'a tıklayınca **Genel Bakış** açılır.
 
 ## Genel Bakış
 
-Bölümün giriş sayfası. Her alt ekran bir kart olarak listelenir; kartta o ekranın kısa özeti
+Bölümün giriş sayfası. Her alt ekran bir kart olarak listelenir. Kartta o ekranın kısa özeti
 yazar, eksik ya da dikkat isteyen bir durum varsa uyarı rengiyle gösterilir:
 
 | Kart | Özet |
 |---|---|
 | Genel Ayarlar | Uygulama adı |
-| Kurumsal Bilgiler | Firma ünvanı; vergi dairesi ya da vergi numarası boşsa **"Vergi bilgileri eksik"** uyarısı |
+| Kurumsal Bilgiler | Firma ünvanı. Vergi dairesi ya da vergi numarası boşsa **"Vergi bilgileri eksik"** uyarısı |
 | Site Erişimi | "Yalnız bayilere açık", "Herkese açık" ya da **"Bakım modu açık; site ziyaretçilere kapalı"** uyarısı |
 
 Kartlar kullanıcının yetkisine göre gösterilir. Kurulu eklentiler bu bölüme kendi ayar
-ekranlarını ekleyebilir; ör. Vitrin eklentisi **İletişim Bilgileri** (kartta "WhatsApp · çalışma
+ekranlarını ekleyebilir. Ör. Vitrin eklentisi **İletişim Bilgileri** (kartta "WhatsApp · çalışma
 saatleri" ya da "Bilgi eklenmedi") ve **Çerez Yönetimi** ekranlarını ekler.
 
 ## Genel Ayarlar sekmesi {#genel-sekme}
 
-**Ayarlar › Genel Ayarlar › Genel Ayarlar** — panel kimliği ve varsayılan sistem tercihleri.
+**Ayarlar › Genel Ayarlar › Genel Ayarlar**: panel kimliği ve varsayılan sistem tercihleri.
 
 ### Kimlik
 
@@ -29,9 +29,9 @@ saatleri" ya da "Bilgi eklenmedi") ve **Çerez Yönetimi** ekranlarını ekler.
 | Slogan | Kısa tanım. En çok 255 karakter, isteğe bağlı |
 | Logo | Açık tema ve genel kullanım için logo. Giriş ekranında ve e-postaların üst kısmında görünür. JPG / PNG, en çok 2 MB |
 | Logo dark | Koyu temada kullanılan logo. JPG / PNG, en çok 2 MB |
-| Favicon | Tarayıcı sekmesi ikonu; kenar çubuğunda uygulama adının yanında da görünür. JPG / PNG, en çok 512 KB. Kare bir görsel kullanın |
+| Favicon | Tarayıcı sekmesi ikonu. Kenar çubuğunda uygulama adının yanında da görünür. JPG / PNG, en çok 512 KB. Kare bir görsel kullanın |
 
-Görseller **seçtiğiniz anda yüklenir**; ayrıca **Kaydet**'e basmanız gerekmez. Yüklü görseli
+Görseller **seçtiğiniz anda yüklenir**. Ayrıca **Kaydet**'e basmanız gerekmez. Yüklü görseli
 kaldırırsanız Bayi Yazılımı'nın kendi logosu kullanılır. Logolar e-postalarda da göründüğü için
 PNG ya da JPG kullanılır (SVG kabul edilmez).
 
@@ -51,7 +51,7 @@ kayıt listede görünmez.
 **Kaydet** ile kaydedilir.
 
 ::: danger Ana para birimi kilitlenir
-Ana para birimi **ilk sipariş ya da ilk cari hareket oluştuktan sonra değiştirilemez**; alanın
+Ana para birimi **ilk sipariş ya da ilk cari hareket oluştuktan sonra değiştirilemez**. Alanın
 altında "İlk sipariş / cari hareket oluştuğu için artık değiştirilemez." yazar ve alan kapanır.
 TL dışında (ör. USD, EUR) çalışacaksanız bunu satışa başlamadan önce ayarlayın.
 :::
@@ -62,7 +62,7 @@ silinemez**. Önce burada başka bir kaydı varsayılan yapın. Bkz.
 
 ## Kurumsal Bilgiler {#kurumsal}
 
-**Ayarlar › Genel Ayarlar › Kurumsal Bilgiler** — sitede, e-postalarda ve belgelerde görünen
+**Ayarlar › Genel Ayarlar › Kurumsal Bilgiler**: sitede, e-postalarda ve belgelerde görünen
 firma ünvanı, iletişim bilgileri, vergi bilgileri ve adres.
 
 ### Firma
@@ -73,8 +73,8 @@ firma ünvanı, iletişim bilgileri, vergi bilgileri ve adres.
 | Vergi dairesi | En çok 255 karakter |
 | Vergi no | En çok 32 karakter |
 | MERSİS no | En çok 32 karakter |
-| E-posta | İsteğe bağlı, geçerli bir e-posta, en çok 255 karakter. Firmanın e-posta adresi; vitrin kuruluysa sitede yayınlanır ve iletişim formu mesajları buraya gelir |
-| Telefon | İsteğe bağlı, en çok 255 karakter. Firmanın telefonu; vitrin kuruluysa sitede yayınlanır |
+| E-posta | İsteğe bağlı, geçerli bir e-posta, en çok 255 karakter. Firmanın e-posta adresi. Vitrin kuruluysa sitede yayınlanır ve iletişim formu mesajları buraya gelir |
+| Telefon | İsteğe bağlı, en çok 255 karakter. Firmanın telefonu. Vitrin kuruluysa sitede yayınlanır |
 
 Vergi dairesi ya da vergi no boşsa Genel Bakış'ta **"Vergi bilgileri eksik"** uyarısı görünür.
 
@@ -86,24 +86,24 @@ Satış Ayarları › Bildirimler › Bildirim e-postası**'dır. Bkz.
 
 ### Adres
 
-Firmanın resmi adresi; sitede, iletişim sayfasında ve belgelerde tek satır olarak görünür.
+Firmanın resmi adresi. Sitede, iletişim sayfasında ve belgelerde tek satır olarak görünür.
 
 | Alan | Açıklama |
 |---|---|
 | Ülke | **Zorunlu.** Boşsa varsayılan ülke seçili gelir |
-| İl | **Zorunlu.** Seçilen ülkenin illeri; listede arama yapılabilir |
+| İl | **Zorunlu.** Seçilen ülkenin illeri. Listede arama yapılabilir |
 | İlçe | **Zorunlu.** Seçilen ilin ilçeleri |
 | Açık adres | **Zorunlu**, en çok 500 karakter. Mahalle, cadde / sokak, bina ve kapı no |
 | Posta kodu | En çok 16 karakter |
 
 ### ETBİS
 
-Elektronik Ticaret Bilgi Sistemi kaydınızın kare kodu; vitrinin alt bilgisinde gösterilir
+Elektronik Ticaret Bilgi Sistemi kaydınızın kare kodu. Vitrinin alt bilgisinde gösterilir
 (Vitrin eklentisi kuruluysa).
 
 | Alan | Açıklama |
 |---|---|
-| Kare kod | ETBİS'ten indirdiğiniz kare kod görseli. JPG / PNG (WEBP de kabul edilir), en çok 1 MB. Seçtiğiniz anda yüklenir; yenisi eskisinin yerine geçer |
+| Kare kod | ETBİS'ten indirdiğiniz kare kod görseli. JPG / PNG (WEBP de kabul edilir), en çok 1 MB. Seçtiğiniz anda yüklenir. Yenisi eskisinin yerine geçer |
 | Doğrulama bağlantısı | İsteğe bağlı. Girilirse kare koda tıklayan ziyaretçi bu adrese gider. `https://` ile başlamalı, en çok 500 karakter |
 
 Diğer alanlar **Kaydet** ile kaydedilir.
@@ -126,7 +126,7 @@ Alt bilgide ve iletişim sayfasında yayınlanır.
 ### İletişim sayfası
 
 Hakkımızda, müşteri hizmetleri gibi metinler bu ekranda değil, **İçerik › Sayfalar** ekranından
-düzenlenir; sözleşmeler **Ayarlar › Tanımlamalar › Sözleşmeler**'dedir.
+düzenlenir. Sözleşmeler **Ayarlar › Tanımlamalar › Sözleşmeler**'dedir.
 
 | Alan | Açıklama |
 |---|---|
@@ -136,14 +136,14 @@ düzenlenir; sözleşmeler **Ayarlar › Tanımlamalar › Sözleşmeler**'dedir
 ### Sosyal medya
 
 Instagram, LinkedIn, YouTube, X (Twitter), Facebook. Her biri hesabınızın tam adresi
-(`https://…`), en çok 255 karakter. Alt bilgide ve iletişim sayfasında gösterilir; **boş
+(`https://…`), en çok 255 karakter. Alt bilgide ve iletişim sayfasında gösterilir. **boş
 bırakılan hesap gizlenir**.
 
 **Kaydet** ile kaydedilir.
 
 ## Site Erişimi {#site-erisimi}
 
-**Ayarlar › Genel Ayarlar › Site Erişimi** — sitenin kimlere açık olduğunu belirler. Yönetim
+**Ayarlar › Genel Ayarlar › Site Erişimi**: sitenin kimlere açık olduğunu belirler. Yönetim
 paneli her durumda yöneticilere açıktır.
 
 | Alan | Açıklama |
@@ -162,14 +162,14 @@ giriş ekranına yönlendirilir, herkese açık kayıt yoktur, müşteri hesabı
 
 1. **Ayarlar › Genel Ayarlar › Site Erişimi**'ni açın.
 2. **Bakım modu**'nu açın, **Bakım sayfası mesajı**'nı düzenleyin.
-3. **Kaydet**'e basın. Bayileriniz ve ziyaretçiler artık bakım sayfasını görür; siz panelde
+3. **Kaydet**'e basın. Bayileriniz ve ziyaretçiler artık bakım sayfasını görür. Siz panelde
    çalışmaya devam edersiniz.
 4. İşiniz bitince **Bakım modu**'nu kapatıp yeniden kaydedin.
 
 ## Eklentiler
 
 Eklentiler artık Genel Ayarlar içinde değil, Ayarlar menüsünde kendi bölümündedir:
-**Ayarlar › Eklentiler** — kurulu eklentileri açıp kapatma ve sunulan eklentilerin
+**Ayarlar › Eklentiler**: kurulu eklentileri açıp kapatma ve sunulan eklentilerin
 listesi. Ayrıntılar: [Eklentiler](/yonetim/moduller).
 
 ## Yetkiler
@@ -178,4 +178,4 @@ Bu ekranlardaki her işlem ayrı bir yetkidir ve [görevlere](/yonetim/roller-ye
 Kurumsal Bilgiler ve Site Erişimi için görüntüleme ve güncelleme yetkileri hazır gelir
 (**Mağaza: Ayarlar** grubunda). Vitrin kuruluysa İletişim Bilgileri yetkileri **Mağaza: İçerik**
 grubundadır. Genel Ayarlar ve Eklentiler ekranlarının yetkileri
-kurulumda yalnız **Admin** görevine atanır; başka bir göreve **Görevler** ekranından eklenebilir.
+kurulumda yalnız **Admin** görevine atanır. Başka bir göreve **Görevler** ekranından eklenebilir.

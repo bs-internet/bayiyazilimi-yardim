@@ -1,11 +1,11 @@
 # Cari hesap
 
 Her bayinin (ve vitrin müşterisinin) **aldı / verdi** kayıtları sistemde tutulur. Siz panelde
-anlık bakiyeyi, ekstreyi ve açık borçları görürsünüz; bayi de kendi panelinde
+anlık bakiyeyi, ekstreyi ve açık borçları görürsünüz. Bayi de kendi panelinde
 (**Cari Hesabım**) aldıklarını ve ödediklerini görür.
 
-Muhasebe programı (ERP) bağlantısı gerekmez; sistem tek başına çalışır. İsterseniz bir ERP
-eklentisi hareketleri muhasebe programınıza aktarabilir; eklentiden gelen kayıtlar ekstrede kaynak
+Muhasebe programı (ERP) bağlantısı gerekmez. Sistem tek başına çalışır. İsterseniz bir ERP
+eklentisi hareketleri muhasebe programınıza aktarabilir. Eklentiden gelen kayıtlar ekstrede kaynak
 etiketiyle görünür.
 
 ## Bakiye {#bakiye}
@@ -14,14 +14,14 @@ etiketiyle görünür.
 
 | Gösterim | Anlamı |
 |---|---|
-| **(B)** / **Borçlu** — kırmızı | Müşteri size borçlu |
-| **(A)** / **Alacaklı** — yeşil | Müşterinin sizden alacağı var (fazla ödeme, iade …) |
+| **(B)** / **Borçlu**: kırmızı | Müşteri size borçlu |
+| **(A)** / **Alacaklı**: yeşil | Müşterinin sizden alacağı var (fazla ödeme, iade …) |
 | **Bakiye yok** | Borç ve alacak eşit |
 
 ### Para birimi {#para-birimi}
 
 Cari, sistemin **ana para birimiyle** tutulur (varsayılan TL). Başka para birimindeki bir sipariş
-ya da ödeme, **siparişin kendi kuruyla** çevrilerek yazılır; ekstrede satırın altında asıl tutar
+ya da ödeme, **siparişin kendi kuruyla** çevrilerek yazılır. Ekstrede satırın altında asıl tutar
 (ör. "1.250,00 EUR") ayrıca görünür. Elle girilen tahsilat ve dekontlar her zaman ana para
 birimindedir.
 
@@ -50,7 +50,7 @@ geçmiş her zaman izlenebilir.
 
 ## Cari Durum {#cari-durum}
 
-**Bayiler › Cari Durum** — tüm hesapların bakiyesi tek listede. Başlıkta **toplam
+**Bayiler › Cari Durum**: tüm hesapların bakiyesi tek listede. Başlıkta **toplam
 alacağınız** (borçlu hesapların bakiyeleri toplamı) yazar.
 
 | Filtre | Açıklama |
@@ -77,9 +77,9 @@ Müşteri detayı › **Cari** sekmesi. "Cari durumu ve müşteri carisini gör�
 | Kart | Ne zaman | İçerik |
 |---|---|---|
 | Bakiye | Her zaman | Tutar ve Borçlu / Alacaklı / Bakiye yok |
-| Çalışma şekli | Her zaman | Peşin ya da Vadeli (açık hesap); vadelide "30 gün vade" gibi |
-| Kullanılabilir limit | Vadelide | Kredi limiti − risk; altında "Limit … · risk … · onayda …". Limit aşıldıysa kırmızı. Limit yoksa "Limitsiz". |
-| Vadesi geçen | Vadelide | Vadesi geçmiş açık sipariş borcu ve sipariş sayısı; yoksa "Yok". |
+| Çalışma şekli | Her zaman | Peşin ya da Vadeli (açık hesap). Vadelide "30 gün vade" gibi |
+| Kullanılabilir limit | Vadelide | Kredi limiti − risk. Altında "Limit … · risk … · onayda …". Limit aşıldıysa kırmızı. Limit yoksa "Limitsiz". |
+| Vadesi geçen | Vadelide | Vadesi geçmiş açık sipariş borcu ve sipariş sayısı. Yoksa "Yok". |
 
 Risk ve kullanılabilir limit: [Peşin ve vadeli çalışma](/cari/vadeli-calisma#risk).
 
@@ -106,9 +106,9 @@ Müşteriden siparişten bağımsız alınan ödemeyi cariye işler. Ekstre › 
 
 | Alan | Açıklama |
 |---|---|
-| Tür | **Nakit**, **Havale / EFT**, **POS (Kart)**, **Mahsup / Virman**; çek / senet portföyü açıksa **Çek** ve **Senet**. Varsayılan Nakit. |
+| Tür | **Nakit**, **Havale / EFT**, **POS (Kart)**, **Mahsup / Virman**. Çek / senet portföyü açıksa **Çek** ve **Senet**. Varsayılan Nakit. |
 | Tutar | Zorunlu, 0'dan büyük, ana para biriminde. |
-| Tarih | Varsayılan bugün; ileri tarih girilemez. |
+| Tarih | Varsayılan bugün. İleri tarih girilemez. |
 | Seri no | Yalnız çek / senette, zorunlu, en fazla 64 karakter. |
 | Vade | Yalnız çek / senette, zorunlu. |
 | Banka, Şube | Yalnız çekte, isteğe bağlı. |
@@ -118,7 +118,7 @@ Müşteriden siparişten bağımsız alınan ödemeyi cariye işler. Ekstre › 
 
 **Kaydet**'e basınca ödeme kaydı ve cari alacak yazılır ("… tahsilat cariye işlendi.") ve tutar
 [en eski borçtan başlayarak](#fifo) dağıtılır. "POS (Kart)" kendi POS cihazınızdan çektiğiniz
-ödemeyi kaydetmek içindir; sanal POS ile kart ödemesi için bkz. [Kartla ödeme](/cari/kartla-odeme).
+ödemeyi kaydetmek içindir. Sanal POS ile kart ödemesi için bkz. [Kartla ödeme](/cari/kartla-odeme).
 Çek / senet tahsilatı ayrıca portföye kaydedilir (bkz. [Çek ve senet](/cari/cek-senet)).
 
 ## Borç / alacak dekontu ve açılış bakiyesi {#dekont}
@@ -131,7 +131,7 @@ bakiyesi için. Ekstre › **Dekont**.
 | Yön | **Borç (müşteri borçlanır)** (varsayılan) ya da **Alacak (müşteri alacaklanır)**. |
 | Tutar | Zorunlu, 0'dan büyük, ana para biriminde. |
 | Tarih | Varsayılan bugün. |
-| Açılış bakiyesi | İşaretlenirse kayıt "Açılış bakiyesi" türüyle yazılır; işaretsizse "Dekont". |
+| Açılış bakiyesi | İşaretlenirse kayıt "Açılış bakiyesi" türüyle yazılır. İşaretsizse "Dekont". |
 | Açıklama | **Zorunlu**, en fazla 255 karakter. |
 
 Dekont ve açılış bakiyesinin **vade tarihi yoktur**: borç dağıtımında ve yaşlandırmada işlem
@@ -143,15 +143,15 @@ Sisteme geçişte açılış bakiyesi girmek için bkz. [Sisteme geçiş](/cari/
 ## Kayıt iptali {#iptal}
 
 Ekstrede iptal edilebilen satırların sonunda geri al düğmesi vardır ("Elle girilen cari kaydı
-iptal et" yetkisi gerekir). Onay penceresinde "Kayıt silinmez; aynı tutarda ters kayıt yazılır ve
+iptal et" yetkisi gerekir). Onay penceresinde "Kayıt silinmez. Aynı tutarda ters kayıt yazılır ve
 bakiye düzelir." yazar; **İptal et** ile onaylanır.
 
 | Kayıt | Ekstreden iptal |
 |---|---|
 | Dekont, açılış bakiyesi | Edilir |
-| Elle girilen tahsilat (Nakit, Havale / EFT, POS, Mahsup) | Edilir; ödeme kaydı "İptal Edildi" olur |
-| Çek / senet tahsilatı | Edilmez — portföyden **Karşılıksız** ya da **İade edildi** yapılır |
-| Sipariş borcu, sipariş ödemesi, iade | Edilmez — kendi belgesinden (sipariş / iade ekranı) yönetilir |
+| Elle girilen tahsilat (Nakit, Havale / EFT, POS, Mahsup) | Edilir. Ödeme kaydı "İptal Edildi" olur |
+| Çek / senet tahsilatı | Edilmez: portföyden **Karşılıksız** ya da **İade edildi** yapılır |
+| Sipariş borcu, sipariş ödemesi, iade | Edilmez: kendi belgesinden (sipariş / iade ekranı) yönetilir |
 | Zaten iptal edilmiş kayıt ya da ters kayıt | Edilmez |
 
 Ters kayıt **bugünün tarihiyle** ve "İptal: …" açıklamasıyla yazılır.
@@ -160,14 +160,14 @@ Ters kayıt **bugünün tarihiyle** ve "İptal: …" açıklamasıyla yazılır.
 
 Her ikisi de ekstrede seçili tarih aralığını kullanır.
 
-**Excel** — `cari-ekstre-HESAPKODU-TARİH.xlsx` dosyası iner:
+**Excel**: `cari-ekstre-HESAPKODU-TARİH.xlsx` dosyası iner:
 
 1. Başlık satırları: "Cari Ekstre" + hesap adı ve kodu, **Dönem**, **Para birimi**.
 2. Sütunlar: Tarih, Vade, Tür, Açıklama, Borç, Alacak, Bakiye, B/A.
 3. İlk satır **Devir** (dönem başı bakiye), son satır **Dönem toplamı**.
 
-**Yazdır** — yeni sekmede "Cari Hesap Ekstresi" açılır: hesap ünvanı, vergi dairesi / numarası,
-dönem, para birimi ve düzenlenme tarihi; devir, hareketler ve dönem toplamı / bakiye. Sayfadaki
+**Yazdır**: yeni sekmede "Cari Hesap Ekstresi" açılır: hesap ünvanı, vergi dairesi / numarası,
+dönem, para birimi ve düzenlenme tarihi. Devir, hareketler ve dönem toplamı / bakiye. Sayfadaki
 **Yazdır / PDF olarak kaydet** düğmesiyle yazdırın ya da PDF kaydedin. Altta "B: borç bakiyesi
 (müşteri borçlu), A: alacak bakiyesi (müşteri alacaklı)." açıklaması yer alır.
 
@@ -197,7 +197,7 @@ Ayrıntılı örnek: [Peşin ve vadeli çalışma › FIFO örneği](/cari/vadel
 
 ### Tahsilatlar {#tahsilatlar}
 
-**Mağaza › Ödemeler › Tahsilatlar** — ödenmiş tüm ödeme kayıtları: sipariş ödemeleri (kart,
+**Mağaza › Ödemeler › Tahsilatlar**: ödenmiş tüm ödeme kayıtları: sipariş ödemeleri (kart,
 havale) ve cariye girilen tahsilatlar. Elle tahsilat buradan değil, müşteri detayının **Cari**
 sekmesinden girilir.
 
@@ -211,28 +211,28 @@ sekmesinden girilir.
 |---|---|
 | Tarih | Ödeme tarihi ve saati. |
 | Hesap | Müşteri (tıklayınca detay). |
-| Yöntem | Ödeme yöntemi; altında kaydı giren kullanıcı. |
-| Belge | Bağlı sipariş numarası ya da **Cari tahsilat**; sistemin verdiği belge numarası ve not. |
+| Yöntem | Ödeme yöntemi. Altında kaydı giren kullanıcı. |
+| Belge | Bağlı sipariş numarası ya da **Cari tahsilat**. Sistemin verdiği belge numarası ve not. |
 | Tutar | Ödenen tutar, ödemenin para biriminde. |
 
 En yeni ödeme en üsttedir.
 
 ### Geciken Ödemeler (yaşlandırma) {#yaslandirma}
 
-**Mağaza › Ödemeler › Geciken Ödemeler** — tahsilatla kapanmamış borçların vadesine göre
+**Mağaza › Ödemeler › Geciken Ödemeler**: tahsilatla kapanmamış borçların vadesine göre
 dağılımı. Başlıkta hesap sayısı ve toplam açık borç yazar.
 
 | Dilim | Açık borç |
 |---|---|
 | Vadesi gelmemiş | Vadesi bugünden sonra |
-| 0–30 gün | Vadesi bugün ya da 1–30 gün önce |
-| 31–60 gün | 31–60 gün önce |
-| 61–90 gün | 61–90 gün önce |
+| 0-30 gün | Vadesi bugün ya da 1-30 gün önce |
+| 31-60 gün | 31-60 gün önce |
+| 61-90 gün | 61-90 gün önce |
 | 90+ gün | 90 günden önce |
 | Toplam | Hesabın tüm açık borcu |
 
 Vadesi olmayan borçlar (dekont, açılış bakiyesi) işlem tarihinden yaşlandırılır. Liste önce
-**90+ gün** tutarı, sonra toplam büyük olandan sıralanır; en altta genel toplam satırı vardır.
+**90+ gün** tutarı, sonra toplam büyük olandan sıralanır. En altta genel toplam satırı vardır.
 
 **Excel** düğmesi `yaslandirma-TARİH.xlsx` indirir: başlık (Geciken ödemeler, tarih, para
 birimi), Hesap, Kod, beş dilim ve Toplam sütunları, en altta Toplam satırı.
@@ -244,10 +244,10 @@ birimi), Hesap, Kod, beş dilim ve Toplam sütunları, en altta Toplam satırı.
 
 | Alan | Varsayılan | Açıklama |
 |---|---|---|
-| Ödeme yöntemleri — her yöntem için en düşük tutar | Sınır yok | Yöntemin ödeme ekranında sunulduğu en düşük sipariş tutarı (ana para biriminde, KDV dahil). Boş = sınır yok. Ör. Havale / EFT için 500 girilirse 500 TL altındaki siparişte havale seçeneği çıkmaz. Yalnız siparişte geçerlidir. |
-| Vade uyarı süresi (gün) | 7 | Zorunlu, 0–365. Vadesine bu kadar gün kalan borçlar bayinin Cari Hesabım ekranında ve müşteri detayında "vadesi yaklaşan" olarak gösterilir. |
-| Çek / senet portföyünü kullan | Kapalı | Açıkken tahsilatta çek ve senet seçilebilir, **Ödemeler** menüsünde **Çek / Senet** görünür. Kapalıyken hiçbir ekranda yer almaz; kayıtlı çek / senetler silinmez. |
-| Vadesi yaklaşan uyarısı (gün) | 7 | 0–365. Vadesine bu kadar gün kalan portföydeki çek / senetler listede işaretlenir. |
+| Ödeme yöntemleri: her yöntem için en düşük tutar | Sınır yok | Yöntemin ödeme ekranında sunulduğu en düşük sipariş tutarı (ana para biriminde, KDV dahil). Boş = sınır yok. Ör. Havale / EFT için 500 girilirse 500 TL altındaki siparişte havale seçeneği çıkmaz. Yalnız siparişte geçerlidir. |
+| Vade uyarı süresi (gün) | 7 | Zorunlu, 0-365. Vadesine bu kadar gün kalan borçlar bayinin Cari Hesabım ekranında ve müşteri detayında "vadesi yaklaşan" olarak gösterilir. |
+| Çek / senet portföyünü kullan | Kapalı | Açıkken tahsilatta çek ve senet seçilebilir, **Ödemeler** menüsünde **Çek / Senet** görünür. Kapalıyken hiçbir ekranda yer almaz. Kayıtlı çek / senetler silinmez. |
+| Vadesi yaklaşan uyarısı (gün) | 7 | 0-365. Vadesine bu kadar gün kalan portföydeki çek / senetler listede işaretlenir. |
 
 ## Yetkiler {#yetkiler}
 

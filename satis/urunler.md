@@ -28,7 +28,7 @@ Sayfanın üstünde (ve mevcut üründe altında da) **Kaydet** düğmesi vardı
 | Alan | Açıklama |
 |---|---|
 | **Ürün adı** * | En çok 255 karakter. |
-| **URL (slug)** | Ürün sayfasının adresi. Boş bırakılırsa ürün adından üretilir; aynı adres başka üründe varsa sonuna sayı eklenir. Vitrin kuruluysa önünde sitenin ürün adresi öneki görünür. |
+| **URL (slug)** | Ürün sayfasının adresi. Boş bırakılırsa ürün adından üretilir. Aynı adres başka üründe varsa sonuna sayı eklenir. Vitrin kuruluysa önünde sitenin ürün adresi öneki görünür. |
 | **Kısa açıklama** | En çok 2000 karakter. Vitrin kuruluysa meta açıklama boşken arama motoru açıklaması olarak da kullanılır. |
 | **Açıklama** | Biçimlendirilebilir metin (kalın, liste, bağlantı …). Uzunluk sınırı yoktur. |
 | **Öne çıkan özellikler** | Her satır bir madde olarak ürün sayfasında listelenir. Boş satırlar atılır. Toplam en çok 5000 karakter. |
@@ -36,20 +36,20 @@ Sayfanın üstünde (ve mevcut üründe altında da) **Kaydet** düğmesi vardı
 
 ### Fiyatlandırma
 
-Fiyatlar **KDV hariç** ve seçilen para biriminde girilir; müşteriye kendi para birimine
+Fiyatlar **KDV hariç** ve seçilen para biriminde girilir. Müşteriye kendi para birimine
 çevrilerek ve KDV eklenerek gösterilir (KDV dahil / hariç gösterim
 [Satış Ayarları](/satis/satis-ayarlari)'ndan seçilir).
 
 | Alan | Açıklama |
 |---|---|
 | **Satış fiyatı (KDV hariç)** * | 0 ya da büyük; 4 ondalığa kadar. Fiyatı 0 olan ürün sepete eklenemez, yalnız teklifle satılır. |
-| **Karşılaştırma fiyatı** | Üstü çizili liste fiyatı. Satış fiyatından büyükse indirim yüzdesi gösterilir; küçük ya da eşitse indirim gösterilmez. |
+| **Karşılaştırma fiyatı** | Üstü çizili liste fiyatı. Satış fiyatından büyükse indirim yüzdesi gösterilir. Küçük ya da eşitse indirim gösterilmez. |
 | **Para birimi** * | Aktif para birimleri listelenir. Yeni üründe **Genel Ayarlar › Varsayılanlar**'daki para birimi gelir. Bkz. [Para birimleri](/yonetim/para-birimleri). |
 | **KDV oranı** * | Vergi tanımlarındaki oranlar ile %0, %10, %20. Yeni üründe varsayılan vergi oranı gelir (tanımlı değilse %20). |
 
 Kartın altındaki kutuda **KDV hariç**, **KDV dahil** tutar ve **İndirim** yüzdesi kaydetmeden
 önce hesaplanıp gösterilir. Bayi ve bayi grubu indirimleri burada değil, müşteri tarafında
-uygulanır; bkz. [Fiyat ve indirimler](/musteriler/fiyat-ve-indirimler).
+uygulanır. Bkz. [Fiyat ve indirimler](/musteriler/fiyat-ve-indirimler).
 
 ### Stok
 
@@ -57,18 +57,18 @@ uygulanır; bkz. [Fiyat ve indirimler](/musteriler/fiyat-ve-indirimler).
 |---|---|
 | **Stok takibi yap** | Varsayılan açık. Kapalıysa ürün stoktan bağımsız satılır, siparişte stok düşülmez. |
 | **Stok yokken satışa izin ver (eksi stok)** | Açıksa stok bitse de sipariş alınır, stok eksiye düşer. Varsayılan kapalı. |
-| **Kritik stok** | Toplam stok bu sayıya inince uyarı verilir. Boşsa **Stok Ayarları**'ndaki genel eşik geçerlidir (kutuda gri olarak görünür). 0–1.000.000. |
+| **Kritik stok** | Toplam stok bu sayıya inince uyarı verilir. Boşsa **Stok Ayarları**'ndaki genel eşik geçerlidir (kutuda gri olarak görünür). 0-1.000.000. |
 | **İzlenebilirlik** | *Takip yok*, *Lot / parti* ya da *Seri numarası*. Yalnız **Stok Ayarları**'nda izlenebilirlik açıksa görünür. Lot / seri takipli üründe giriş lot ya da seri no ile yapılır, siparişte son kullanma tarihi yakın olan önce çıkar. Kayıtlı lotu olan üründe değiştirirseniz mevcut kayıtlar korunur. |
-| **Son kullanma tarihi (SKT) takibi** | İzlenebilirlik açıksa görünür. Girişte SKT zorunlu olur; süresi geçen lot satılmaz. |
+| **Son kullanma tarihi (SKT) takibi** | İzlenebilirlik açıksa görünür. Girişte SKT zorunlu olur. Süresi geçen lot satılmaz. |
 | **Min. adet** * | Bir siparişte alınabilecek en az adet. En az 1, varsayılan 1. |
 | **Maks. adet** | En çok adet. Boş = sınırsız. |
 | **Birim** * | **Tanımlamalar › Birimler**'deki aktif birimler. Yeni üründe sıradaki ilk aktif birim gelir. |
-| **Teslim süresi** * | Gün; 0–365, varsayılan 0. Vitrinde "… iş gününde kargoda" olarak gösterilir (0 ise gösterilmez). |
+| **Teslim süresi** * | Gün; 0-365, varsayılan 0. Vitrinde "… iş gününde kargoda" olarak gösterilir (0 ise gösterilmez). |
 
 Kartta ürünün **satılabilir stoğu** ve depo depo miktarları görünür (satışa kapalı depolar
 işaretlidir). Stok bu formdan değiştirilmez:
 
-- Yeni ürün **0 stokla** oluşur; stok girişi **Mağaza › Stok** ekranlarından yapılır. Bkz.
+- Yeni ürün **0 stokla** oluşur. Stok girişi **Mağaza › Stok** ekranlarından yapılır. Bkz.
   [Stok işlemleri](/stok/stok-islemleri) ve [Mal kabul](/stok/mal-kabul).
 - **Stok ekranında yönet** bağlantısı ürünü Stok Durumu ekranında açar, **Hareketler**
   düğmesi ürünün stok hareketlerini gösterir.
@@ -80,10 +80,10 @@ Lot, seri no ve SKT için bkz. [Lot, seri no ve SKT](/stok/lot-seri-skt).
 Yalnız kaydedilmiş üründe görünür.
 
 - **Görsel yükle** ile seçin ya da dosyaları kutuya sürükleyip bırakın. Bir seferde en çok
-  20 dosya; her biri en çok 8 MB, JPG / PNG / WebP gibi görsel dosyaları.
+  20 dosya. Her biri en çok 8 MB, JPG / PNG / WebP gibi görsel dosyaları.
 - **İlk görsel kapak görselidir** (listede ve vitrinde bu görünür). Sırayı sürükleyerek ya da
   **Öne al** / **Arkaya al** düğmeleriyle değiştirin.
-- Görseli silmek için çöp kutusu simgesi; onay sorulur ve görsel kalıcı olarak silinir.
+- Görseli silmek için çöp kutusu simgesi. Onay sorulur ve görsel kalıcı olarak silinir.
 
 Excel aktarımında görsel bağlantıları verilip **Görsel bağlantılarını indir** seçilirse
 görselsiz ürünlere görseller otomatik eklenir. Bkz. [Excel](/satis/excel#gorseller).
@@ -119,7 +119,7 @@ sonuçlarında nasıl görüneceğini önizler.
 
 | Alan | Açıklama |
 |---|---|
-| **Durum** * | *Aktif — vitrinde görünür* ya da *Pasif — gizli*. Yeni ürün aktif gelir. Pasif ürün müşterilere gösterilmez ve satılmaz. |
+| **Durum** * | *Aktif, vitrinde görünür* ya da *Pasif, gizli*. Yeni ürün aktif gelir. Pasif ürün müşterilere gösterilmez ve satılmaz. |
 | **Kimler görsün?** | Yalnız Vitrin eklentisi kuruluysa. Bkz. [aşağıda](#kimler-gorsun). |
 | **Satış biçimi** * | *Sepet (doğrudan satış)* ya da *Yalnızca teklif*. Bkz. [aşağıda](#satis-bicimi). Yeni üründe Sepet. |
 | **Sıra** | Listelemede sıralama için sayı (küçük önce). Varsayılan 0. |
@@ -129,7 +129,7 @@ sonuçlarında nasıl görüneceğini önizler.
 | Alan | Açıklama |
 |---|---|
 | **Kategori** | Kategoriler tam yoluyla listelenir (ör. *Temizlik › Deterjanlar*). Boş bırakılabilir. |
-| **Marka** | Boş bırakılabilir (*— Marka yok —*). |
+| **Marka** | Boş bırakılabilir (*: Marka yok: *). |
 | **Stok kodu (SKU)** * | Ürünün tekil kodu, en çok 64 karakter. Excel aktarımında ürünler bu kodla eşleşir. Başka bir üründe (silinmiş ürünler dahil) kullanılan kod verilemez. |
 | **Model no** | Üretici model numarası, en çok 128 karakter. Listede ve aramada görünür. |
 | **Barkod** | EAN / barkod, en çok 64 karakter. Aramada ve sayımda kullanılır. |
@@ -139,7 +139,7 @@ sonuçlarında nasıl görüneceğini önizler.
 | Satış biçimi | Davranış |
 |---|---|
 | **Sepet (doğrudan satış)** | Fiyat gösterilir, ürün sepete eklenir ve doğrudan sipariş verilir. |
-| **Yalnızca teklif** | Fiyat gösterilmez, sepete eklenemez; müşteri **Teklif Al** ile teklif listesine ekler ve size teklif talebi gelir. Bkz. [Teklifler](/satis/teklifler). |
+| **Yalnızca teklif** | Fiyat gösterilmez, sepete eklenemez. Müşteri **Teklif Al** ile teklif listesine ekler ve size teklif talebi gelir. Bkz. [Teklifler](/satis/teklifler). |
 
 - Satış biçimi Sepet olsa bile **fiyatı 0** olan ürün sepete eklenemez, teklifle istenir.
 - Stoğu yetmeyen ürün (stok takibi açık ve eksi stok izni yoksa) sepete eklenemez ama teklif
@@ -161,11 +161,11 @@ bu ayara göre süzmek için **Kimler görsün** süzgeci vardır.
 
 Düzenleme ekranının altındaki **Sil** düğmesi onay sorar. Silinen ürün vitrinden ve listelerden
 kaldırılır; **geçmiş sipariş ve teklif kayıtları korunur** (kalemlerdeki ad ve kod siparişte
-saklıdır). Silinmiş ürünün stok kodu yeni ürüne verilemez; ancak bu kod
+saklıdır). Silinmiş ürünün stok kodu yeni ürüne verilemez. Ancak bu kod
 [Excel ile içe aktarımda](/satis/excel) dosyada geçerse silinmiş ürün geri getirilir.
 
 ::: tip Silmek yerine pasifleştirin
-Bir ürünü geçici olarak satıştan kaldırmak için durumunu **Pasif** yapın; ürün listesindeki
+Bir ürünü geçici olarak satıştan kaldırmak için durumunu **Pasif** yapın. Ürün listesindeki
 **Aktif** anahtarıyla da tek tıkla açıp kapatabilirsiniz.
 :::
 
@@ -174,17 +174,17 @@ Bir ürünü geçici olarak satıştan kaldırmak için durumunu **Pasif** yapı
 ### Yeni ürün eklemek
 
 1. **Mağaza › Katalog › Yeni Ürün**'ü açın.
-2. **Ürün adı**, **Stok kodu (SKU)** ve **Satış fiyatı**'nı girin; para birimi ve KDV'yi kontrol
+2. **Ürün adı**, **Stok kodu (SKU)** ve **Satış fiyatı**'nı girin. Para birimi ve KDV'yi kontrol
    edin.
 3. Kategori, marka, birim ve gerekiyorsa desi girin.
 4. **Kaydet** deyin. Düzenleme ekranı açılır.
-5. **Görseller** kartından görselleri yükleyin; ilk görsel kapak olur.
+5. **Görseller** kartından görselleri yükleyin. İlk görsel kapak olur.
 6. Stok girişini **Mağaza › Stok › Mal Kabul** ya da **Stok Durumu** ekranından yapın.
 
 ### Ürünü yalnız teklifle satmak
 
 1. Ürünü açın, **Yayın** kartında **Satış biçimi**'ni *Yalnızca teklif* yapın.
-2. **Kaydet** deyin. Fiyat müşteriye gösterilmez; talepler **Mağaza › Teklifler**'e düşer.
+2. **Kaydet** deyin. Fiyat müşteriye gösterilmez. Talepler **Mağaza › Teklifler**'e düşer.
 
 ### Ürüne indirim göstermek
 

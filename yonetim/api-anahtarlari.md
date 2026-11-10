@@ -1,11 +1,11 @@
 # API Anahtarları
 
-**Ayarlar › API Anahtarları** — "ERP, muhasebe programı ya da özel yazılımlarınız ürün, stok,
+**Ayarlar › API Anahtarları**: "ERP, muhasebe programı ya da özel yazılımlarınız ürün, stok,
 sipariş ve cari verilerine REST API ile erişir. İstekler Authorization: Bearer başlığıyla anahtar
 gönderir."
 
 Bayi Yazılımı'nın bir **REST API**'si vardır: ERP'niz, muhasebe programınız ya da yazılımcınızın
-hazırladığı bir program; ürünleri ve siparişleri okuyabilir, stok miktarlarını ve fiyatları
+hazırladığı bir program. Ürünleri ve siparişleri okuyabilir, stok miktarlarını ve fiyatları
 güncelleyebilir, sipariş durumunu ve fatura numarasını yazabilir, cari hesaplara tahsilat
 işleyebilir. Bu programın sisteme bağlanmak için kullandığı şifreye **API anahtarı** denir.
 
@@ -22,7 +22,7 @@ kayıtları](/yonetim/etkinlik-kayitlari)'nda ve sipariş geçmişinde bu yönet
 | Anahtarın sahibi | Anahtar |
 |---|---|
 | **Aktif** yönetici | Normal çalışır (yalnız verilen yetkiler kadar) |
-| **Kısıtlı** yönetici | Yalnız **okuma** yapar; yazma istekleri reddedilir |
+| **Kısıtlı** yönetici | Yalnız **okuma** yapar. Yazma istekleri reddedilir |
 | **Pasif** yapılan yönetici | **Çalışmaz.** Yönetici yeniden aktif yapılırsa anahtarları da yeniden çalışır |
 | **Silinen** yönetici | **Çalışmaz** |
 
@@ -34,7 +34,7 @@ görünür.
 :::
 
 ::: warning Yetkiyi panel görevi değil, anahtarın izinleri belirler
-API, sahibinin paneldeki görevine (rolüne) bakmaz; anahtarın neye erişeceğini yalnız oluştururken
+API, sahibinin paneldeki görevine (rolüne) bakmaz. Anahtarın neye erişeceğini yalnız oluştururken
 seçilen **yetkiler** belirler. Örneğin yalnız siparişleri görebilen bir çalışan "Cari hareket
 yazma" yetkili bir anahtar oluşturursa, o anahtar cari hareket yazabilir. Bu yüzden ekrana kimin
 erişeceğini dikkatle seçin (bkz. [Yetki](#yetki)).
@@ -66,16 +66,16 @@ Kurulu eklentiler bu listeye kendi yetkilerini ekleyebilir.
 
 Kaydetmek için **Anahtar oluştur**'a basın.
 
-### Anahtarı kopyalayın — yalnız bir kez gösterilir {#kopyalama}
+### Anahtarı kopyalayın: yalnız bir kez gösterilir {#kopyalama}
 
 Anahtar oluşturulunca sayfanın üstünde **Yeni API anahtarınız** kutusu açılır: "Anahtarı şimdi
-kopyalayıp güvenli bir yere kaydedin; bu sayfadan ayrıldığınızda bir daha gösterilmez."
+kopyalayıp güvenli bir yere kaydedin. Bu sayfadan ayrıldığınızda bir daha gösterilmez."
 
 1. **Kopyala** düğmesine basın (düğme kısa süre **Kopyalandı** olur).
 2. Anahtarı entegrasyonu yapacak programa ya da kişiye güvenli bir yoldan iletin.
 
-Anahtarın kendisi sistemde saklanmaz (yalnız doğrulamak için bir özeti tutulur); bu yüzden sonradan
-**hiç kimse — siz de dahil — anahtarı yeniden göremez**. Kaybettiyseniz eskisini iptal edip yeni bir
+Anahtarın kendisi sistemde saklanmaz (yalnız doğrulamak için bir özeti tutulur). Bu yüzden sonradan
+**hiç kimse, siz de dahil, anahtarı yeniden göremez**. Kaybettiyseniz eskisini iptal edip yeni bir
 anahtar oluşturun.
 
 ## Mevcut anahtarlar {#liste}
@@ -88,7 +88,7 @@ yok" yazar.
 | **Ad** | Anahtarın adı. Altında geçerlilik sonu tarihi ("Geçerlilik sonu: *tarih*") ya da süresi dolmuşsa **Süresi doldu** etiketi görünür |
 | **Sahibi** | Anahtarı oluşturan (API'nin adına çalıştığı) yönetici |
 | **Yetkiler** | Anahtara verilen yetkiler |
-| **Son kullanım** | Anahtarla en son istek yapılan zaman; hiç kullanılmadıysa "Hiç kullanılmadı" |
+| **Son kullanım** | Anahtarla en son istek yapılan zaman. Hiç kullanılmadıysa "Hiç kullanılmadı" |
 | **Oluşturulma** | Anahtarın oluşturulduğu tarih |
 | **İşlem** | **İptal et** |
 
@@ -105,7 +105,7 @@ gerekiyorsa yeni anahtar oluşturup programda onu kullanın, eskisini iptal edin
 1. Anahtarın satırındaki **İptal et**'e basın.
 2. "API anahtarı iptal edilsin mi?" penceresinde **İptal et** ile onaylayın.
 
-İptal edilen anahtar **hemen** çalışmaz olur; onu kullanan program "Kimlik doğrulanamadı" hatası
+İptal edilen anahtar **hemen** çalışmaz olur. Onu kullanan program "Kimlik doğrulanamadı" hatası
 almaya başlar. İptal geri alınamaz.
 
 Şu durumlarda anahtarı iptal edin:
@@ -117,15 +117,15 @@ almaya başlar. İptal geri alınamaz.
 ## Güvenlik önerileri {#guvenlik}
 
 - **Anahtarı şifre gibi saklayın.** E-postayla, mesajlaşma grubunda ya da ekran görüntüsüyle
-  paylaşmayın; programın ayarlarında ya da bir şifre yöneticisinde saklayın.
+  paylaşmayın. Programın ayarlarında ya da bir şifre yöneticisinde saklayın.
 - **En az yetki verin.** Program yalnız stok yazıyorsa yalnız **Stok miktarı yazma** yetkisi
-  verin; okuma ihtiyacı yoksa okuma yetkisi eklemeyin.
+  verin. Okuma ihtiyacı yoksa okuma yetkisi eklemeyin.
 - **Her entegrasyona ayrı anahtar.** Muhasebe programı ve stok aktarımı aynı anahtarı kullanmasın;
   biri sorun çıkarırsa yalnız onu iptal edersiniz, Son kullanım sütunu da anlamlı olur.
 - **Geçici işlere süreli anahtar.** Bir defalık aktarım ya da deneme için geçerlilik sonu
   verin.
 - **Kullanılmayanları iptal edin.** Listeyi ara ara gözden geçirin.
-- Sitenizin **HTTPS** ile çalıştığından emin olun; anahtar her istekte gönderilir.
+- Sitenizin **HTTPS** ile çalıştığından emin olun. Anahtar her istekte gönderilir.
 
 ## Yetki {#yetki}
 

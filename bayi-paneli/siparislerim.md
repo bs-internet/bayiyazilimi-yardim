@@ -15,7 +15,7 @@ Firmanızdaki tüm kullanıcıların siparişleri birlikte listelenir.
 | **Ödeme** | Ödeme yöntemi ve ödeme durumu |
 | **Tutar** | Genel toplam ve ürün sayısı |
 
-En yeni sipariş en üsttedir. Liste sayfalara bölünür; alttaki sayfa düğmeleriyle gezinirsiniz.
+En yeni sipariş en üsttedir. Liste sayfalara bölünür. Alttaki sayfa düğmeleriyle gezinirsiniz.
 
 ## Sipariş detayı {#detay}
 
@@ -23,22 +23,22 @@ Başlıkta sipariş numarası, durum, kalem sayısı ve toplam tutar yazar.
 
 ### Düğmeler
 
-- **Tekrar sipariş ver** — bkz. [Tekrar sipariş](#tekrar-siparis).
-- **İade talebi oluştur** — yalnız iade süresi içindeki kargolanmış / tamamlanmış siparişlerde
+- **Tekrar sipariş ver**: bkz. [Tekrar sipariş](#tekrar-siparis).
+- **İade talebi oluştur**: yalnız iade süresi içindeki kargolanmış / tamamlanmış siparişlerde
   görünür. Bkz. [İadelerim](/bayi-paneli/iadelerim).
 
 ### Havale / EFT bilgileri {#havale-bilgileri}
 
 Havaleyle verdiğiniz siparişin ödemesi henüz alınmadıysa (ve sipariş iptal edilmediyse) detayın
 en üstünde **Havale / EFT bilgileri** kartı çıkar: banka hesaplarımız ve "Ödemeyi aşağıdaki
-hesaplardan birine yapın; açıklamaya sipariş numaranızı (…) yazın." hatırlatması. Ödeme
+hesaplardan birine yapın. Açıklamaya sipariş numaranızı (…) yazın." hatırlatması. Ödeme
 alındığında kart kaybolur.
 
 ### Ürünler
 
 | Sütun | Açıklama |
 |---|---|
-| **Ürün** | Ad ve stok kodu; kampanyalı ürünlerde kampanya adı ve indirim tutarı |
+| **Ürün** | Ad ve stok kodu. Kampanyalı ürünlerde kampanya adı ve indirim tutarı |
 | **Adet** | |
 | **Birim (KDV hariç)** | |
 | **Tutar (KDV dahil)** | |
@@ -62,9 +62,9 @@ onun satırı ve **Genel toplam**.
 | Durum | Anlamı | Sizin yapmanız gereken |
 |---|---|---|
 | **Ödeme Bekleniyor** | Sipariş alındı, ödemesi bekleniyor (havale ya da tamamlanmamış kart ödemesi) | Havaleyle ödüyorsanız ödemeyi yapıp [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
-| **Onay Bekliyor** | Vadeli siparişiniz limit aşımı ya da vadesi geçmiş borç nedeniyle onayımızda | Bekleyin; gerekirse carinizdeki borcu kapatın |
-| **Hazırlanıyor** | Ödeme alındı ya da vadeli sipariş onaylandı; sipariş hazırlanıyor | — |
-| **Kargoya Verildi** | Sipariş kargoya teslim edildi; takip numarası Kargo kutusunda | Kargonuzu takip edin |
+| **Onay Bekliyor** | Vadeli siparişiniz limit aşımı ya da vadesi geçmiş borç nedeniyle onayımızda | Bekleyin. Gerekirse carinizdeki borcu kapatın |
+| **Hazırlanıyor** | Ödeme alındı ya da vadeli sipariş onaylandı. Sipariş hazırlanıyor | — |
+| **Kargoya Verildi** | Sipariş kargoya teslim edildi. Takip numarası Kargo kutusunda | Kargonuzu takip edin |
 | **Tamamlandı** | Sipariş teslim edildi ve kapandı | — |
 | **İptal Edildi** | Sipariş iptal edildi | — |
 | **Ödeme Başarısız** | Kart ödemesi tamamlanamadı | Yeni sipariş verin ya da başka bir yöntemle ödeyin |

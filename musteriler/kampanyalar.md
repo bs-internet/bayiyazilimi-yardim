@@ -5,8 +5,8 @@ avantajıdır. Kupon girmek gerekmez (kupon kodu koşulu yalnız vitrin eklentis
 
 Kampanyalar sol menüde **Kampanyalar** başlığının altındadır:
 
-- **Kampanyalar › Kampanyalar** — liste
-- **Kampanyalar › Yeni Kampanya** — yeni kampanya formu
+- **Kampanyalar › Kampanyalar**: liste
+- **Kampanyalar › Yeni Kampanya**: yeni kampanya formu
 
 ## Kampanya listesi {#liste}
 
@@ -22,7 +22,7 @@ Başlıkta toplam kampanya sayısı ve **Yeni kampanya** düğmesi vardır.
 |---|---|
 | Kampanya | Adı (tıklayınca düzenleme formu açılır). Aktif olduğu halde tarih aralığının dışındaysa **Süresi dışında** rozeti çıkar. |
 | İşlem | Kısa özet (ör. "3 Al 2 Öde + ücretsiz kargo", "%10 indirim (en fazla ₺500,00)") ve altında işlem türü. |
-| Tarih aralığı | Başlangıç – bitiş; ikisi de boşsa **Süresiz**. |
+| Tarih aralığı | Başlangıç: bitiş. İkisi de boşsa **Süresiz**. |
 | Aktif | Aç / kapa anahtarı. Kampanyayı listeden aktif ya da pasif yaparsınız. |
 
 Pasif kampanyalar soluk görünür.
@@ -31,7 +31,7 @@ Pasif kampanyalar soluk görünür.
 
 Yeni kampanya **pasif** oluşturulur ("… kampanyası oluşturuldu (pasif). Kontrol edip
 aktifleştirin."). Ayarları kontrol ettikten sonra formun başlığındaki ya da listedeki anahtarla
-aktif yapın. Düzenleme formunun altında kampanyayı **silme** düğmesi vardır; silinen kampanya
+aktif yapın. Düzenleme formunun altında kampanyayı **silme** düğmesi vardır. Silinen kampanya
 geçmiş siparişlerde ve raporlarda kayıttaki adıyla görünmeye devam eder.
 
 Form beş bölümden oluşur.
@@ -43,8 +43,8 @@ Form beş bölümden oluşur.
 | Kampanya adı | Zorunlu, en fazla 255 karakter. Sepette ve siparişte bu ad görünür (ör. "Zemin temizleyicilerde 2 Al 1 Öde"). |
 | Vitrin etiketi | İsteğe bağlı, en fazla 40 karakter. Kampanyadaki ürünlerin kartında rozet olarak görünür. Boşsa işlemden üretilir: "2 Al 1 Öde", "%10 İndirim", "Hediyeli", "Kademeli İndirim", ücretsiz kargo kampanyasında "Kargo Bedava". |
 | Başlangıç | Tarih ve saat. Boş = hemen. |
-| Bitiş | Tarih ve saat; başlangıçtan önce olamaz. Boş = süresiz. |
-| Sıra | 0–9999, varsayılan 0. Eşit kazançta **küçük sıra** öne geçer. |
+| Bitiş | Tarih ve saat. Başlangıçtan önce olamaz. Boş = süresiz. |
+| Sıra | 0-9999, varsayılan 0. Eşit kazançta **küçük sıra** öne geçer. |
 
 ### 2. Kime / ne zaman {#kime}
 
@@ -60,7 +60,7 @@ türü), **Mantık** ve **Değer**.
 
 | Koşul | Mantık | Değer | Notlar |
 |---|---|---|---|
-| Bayi grubu | şunlardan biri / hiçbiri değil | bir ya da birden çok grup | Yalnız bayilerde dolu; misafir ve vitrin müşterisi hiçbir grupta değildir. |
+| Bayi grubu | şunlardan biri / hiçbiri değil | bir ya da birden çok grup | Yalnız bayilerde dolu. Misafir ve vitrin müşterisi hiçbir grupta değildir. |
 | Belirli müşteri | şunlardan biri / hiçbiri değil | üyeler (ad ve e-posta ile) | Giriş yapmış bayi ya da müşteri. |
 | Sepet tutarı (KDV dahil) | en az / en fazla | tutar, ana para biriminde | Kampanya öncesi KDV dahil sepet tutarı. Sepet başka para birimindeyse girilen tutar kurla çevrilerek karşılaştırılır. |
 | Sepetteki ürün adedi | en az / en fazla | adet | Sepetteki tüm ürünlerin toplam adedi. |
@@ -68,7 +68,7 @@ türü), **Mantık** ve **Değer**.
 | Ödeme yöntemi | şunlardan biri / hiçbiri değil | yöntemler (ör. Havale / EFT) | Yöntem ödeme adımında seçilir; **sepet ekranında sağlanmamış** sayılır. |
 | Teslimat ili | şunlardan biri / hiçbiri değil | iller | Ödeme adımında seçilen teslimat adresinin ili. Bayide sepet ekranında **varsayılan teslimat adresinin ili** kullanılır. İl bilinmiyorsa koşul sağlanmamış sayılır. |
 | Gün | şunlardan biri / hiçbiri değil | Pazartesi … Pazar | Sipariş anındaki gün. |
-| Saat | en az / en fazla | 0–23 | "Saat en az 18" ve "saat en fazla 21" birlikte 18:00–21:59 demektir. |
+| Saat | en az / en fazla | 0-23 | "Saat en az 18" ve "saat en fazla 21" birlikte 18:00-21:59 demektir. |
 
 [Vitrin eklentisi](/vitrin/) kuruluysa ayrıca **Müşteri tipi**, **İlk sipariş** ve **Kupon kodu**
 koşulları gelir.
@@ -77,8 +77,8 @@ koşulları gelir.
 
 İndirimin uygulanacağı sepet ürünleri:
 
-- **Tüm ürünler** (varsayılan) — sepetteki her ürün.
-- **Koşula uyan ürünler** — en az bir koşul girilmelidir; girilen koşulların **hepsi** (ve)
+- **Tüm ürünler** (varsayılan): sepetteki her ürün.
+- **Koşula uyan ürünler**: en az bir koşul girilmelidir. Girilen koşulların **hepsi** (ve)
   sağlanan ürünler kampanyaya girer. En fazla 10 koşul.
 
 | Koşul | Mantık | Değer | Notlar |
@@ -94,17 +94,17 @@ bulunmalıdır.
 ### 4. İşlem {#islem}
 
 **İşlem türü** kampanyanın ne kazandıracağını belirler (varsayılan **Yüzde indirim**). Tutar
-içeren işlemlerde ayrıca **Para birimi** seçilir (varsayılan ana para birimi); sepet başka para
+içeren işlemlerde ayrıca **Para birimi** seçilir (varsayılan ana para birimi). Sepet başka para
 birimindeyse tutar kurla çevrilir.
 
 | İşlem türü | Alanlar | Nasıl uygulanır |
 |---|---|---|
-| **Yüzde indirim** | **İndirim oranı** (%, 0'dan büyük, en fazla 100); **En fazla indirim (KDV hariç)** — boş = sınır yok | Koşula uyan her satıra oran uygulanır. Toplam indirim üst sınırı geçerse sınır kadar indirim yapılır ve satırlara indirimleri oranında dağıtılır. |
+| **Yüzde indirim** | **İndirim oranı** (%, 0'dan büyük, en fazla 100); **En fazla indirim (KDV hariç)**: boş = sınır yok | Koşula uyan her satıra oran uygulanır. Toplam indirim üst sınırı geçerse sınır kadar indirim yapılır ve satırlara indirimleri oranında dağıtılır. |
 | **Tutar indirimi** | **İndirim tutarı (KDV hariç)**; **Uygulama**: **Sepete bir kez** ya da **Her ürün adedine** | Sepete bir kez: tutar, koşula uyan satırlara tutarları oranında dağıtılır (satırların toplamını geçemez). Her ürün adedine: koşula uyan her adet için tutar düşülür. |
-| **X Al Y Öde** | **Al** (2–1000 adet), **Öde** (en az 1, Al'dan küçük) | Her satır (tek ürün) ayrı değerlendirilir; farklı ürünlerin adetleri birleştirilmez. Ücretsiz adet = (adet ÷ Al, aşağı yuvarlanır) × (Al − Öde). |
-| **Kargo kampanyası** | — | İndirim yoktur; yalnız kampanyanın **Kargo** ayarı uygulanır (Ücretsiz ya da Sabit ücret). |
-| **Hediye ürün** | **Hediye ürün** (ürün seçici), **Adet** (1–100) | Koşullar sağlanınca ürün sepete 0 tutarlı ayrı satır olarak eklenir; siparişe geçer ve stoktan düşer. Ürün görünür, sepete eklenebilir ve (sepetteki adediyle birlikte) stokta değilse hediye verilmez. |
-| **Kademeli indirim** | **Kademe ölçütü**: **Ürün adedi (her ürün ayrı)** ya da **Sepet tutarı (KDV dahil)**; **Kademeler**: en fazla 10 satır, her satırda **En az** ve **İndirim oranı** | Ulaşılan **en yüksek** kademenin oranı uygulanır. Ürün adedinde her satır kendi adediyle; sepet tutarında kampanya öncesi KDV dahil sepet tutarına göre koşula uyan bütün satırlara. |
+| **X Al Y Öde** | **Al** (2-1000 adet), **Öde** (en az 1, Al'dan küçük) | Her satır (tek ürün) ayrı değerlendirilir. Farklı ürünlerin adetleri birleştirilmez. Ücretsiz adet = (adet ÷ Al, aşağı yuvarlanır) × (Al − Öde). |
+| **Kargo kampanyası** | — | İndirim yoktur. Yalnız kampanyanın **Kargo** ayarı uygulanır (Ücretsiz ya da Sabit ücret). |
+| **Hediye ürün** | **Hediye ürün** (ürün seçici), **Adet** (1-100) | Koşullar sağlanınca ürün sepete 0 tutarlı ayrı satır olarak eklenir. Siparişe geçer ve stoktan düşer. Ürün görünür, sepete eklenebilir ve (sepetteki adediyle birlikte) stokta değilse hediye verilmez. |
+| **Kademeli indirim** | **Kademe ölçütü**: **Ürün adedi (her ürün ayrı)** ya da **Sepet tutarı (KDV dahil)**; **Kademeler**: en fazla 10 satır, her satırda **En az** ve **İndirim oranı** | Ulaşılan **en yüksek** kademenin oranı uygulanır. Ürün adedinde her satır kendi adediyle. Sepet tutarında kampanya öncesi KDV dahil sepet tutarına göre koşula uyan bütün satırlara. |
 
 Bütün indirimler **KDV hariç** satır tutarından düşülür; KDV indirimli tutar üzerinden
 hesaplanır.
@@ -141,26 +141,26 @@ sayılmaz.
 2. Normalde **tek kampanya** uygulanır: en çok kazandıran. Eşitlikte **Sıra**'sı küçük olan
    (sıra da eşitse önce oluşturulan) seçilir.
 3. Birbirini **Birlikte kullanılacak kampanyalar**'da seçmiş kampanyalar aynı sepette birlikte
-   uygulanabilir; sistem birleşebilen kampanyalar arasından en çok kazandıran kümeyi seçer.
-   Aynı satıra düşen indirimlerin toplamı satır tutarını geçemez; kargoda en düşük ücret geçerlidir.
+   uygulanabilir. Sistem birleşebilen kampanyalar arasından en çok kazandıran kümeyi seçer.
+   Aynı satıra düşen indirimlerin toplamı satır tutarını geçemez. Kargoda en düşük ücret geçerlidir.
 
 ## Müşteri kampanyayı nasıl görür? {#musteri}
 
 - **Ürün kartı:** kampanyadaki ürünlerde vitrin etiketi rozeti.
 - **Sepet:** "Uygulanan kampanya: *ad* (*özet*)" kutusu. Başka uyan kampanyalar da varsa
   "Sepetinize N kampanya daha uyuyor; en avantajlı olan uygulandı." eklenir. İndirim alan satırda
-  kampanya adı yazar; toplamlarda **Kampanya indirimi (KDV hariç)** satırı görünür.
+  kampanya adı yazar. Toplamlarda **Kampanya indirimi (KDV hariç)** satırı görünür.
 - **"Daha ekleyin" uyarısı:** bir kampanyanın tek eksiği sepet tutarıysa (ya da kademeli
   indirimde bir üst kademeye az kaldıysa) sepette ":amount daha ekleyin, "*ad*" kampanyasından
   yararlanın." yazar.
 - **Ödeme ekranı:** ödeme yöntemi ve teslimat iline bağlı kampanyalar burada, seçim yapılınca
   görünür.
-- **Sipariş:** "Kampanya indirimi" satırı; hediye ürün 0 tutarlı satır.
+- **Sipariş:** "Kampanya indirimi" satırı. Hediye ürün 0 tutarlı satır.
 
 ## Nerede uygulanmaz?
 
 - Teklif listesine ve tekliften oluşan siparişlere kampanya uygulanmaz.
-- Kampanya sipariş anında yeniden denetlenir; bu arada kullanım sınırı dolduysa sipariş
+- Kampanya sipariş anında yeniden denetlenir. Bu arada kullanım sınırı dolduysa sipariş
   kampanyasız hesaplanır.
 
 ## Örnekler {#ornekler}
@@ -174,7 +174,7 @@ sayılmaz.
 | Hangi ürünlere | Tüm ürünler |
 | İşlem | Yüzde indirim, oran **3**, en fazla boş; Kargo: Sepete göre hesaplansın |
 
-İndirim sepette görünmez; ödeme ekranında Havale / EFT seçilince KDV hariç satırlardan düşülür.
+İndirim sepette görünmez. Ödeme ekranında Havale / EFT seçilince KDV hariç satırlardan düşülür.
 
 ::: warning Havale indirimiyle karıştırmayın
 **Banka Hesapları** ekranındaki **Havale indirimi** ayrı bir ayardır ve KDV ile kargo dahil
@@ -236,14 +236,14 @@ Hediye stokta yoksa kampanya hediye vermez (ve kazancı olmadığı için uygula
 | Kime / ne zaman | Gün · şunlardan biri · **Cumartesi**, **Pazar** |
 | İşlem | Yüzde indirim · oran **10** · En fazla indirim **500** (TL) |
 
-KDV hariç 8.000 TL'lik sepette %10 = 800 TL olurdu; üst sınır nedeniyle **500 TL** indirim
+KDV hariç 8.000 TL'lik sepette %10 = 800 TL olurdu. Üst sınır nedeniyle **500 TL** indirim
 yapılır ve satırlara tutarları oranında dağıtılır.
 
 ### İki kampanyayı birleştirmek {#ornek-birlesim}
 
 "3 al 2 öde" kampanyasının **Birlikte kullanılacak kampanyalar** alanında "Havale ile ödeyene
 %3"ü seçin (diğerinde de otomatik seçilir). Havaleyle ödeyen bayi aynı sepette ikisini birden
-alır; aynı satıra düşen indirimlerin toplamı satır tutarını geçmez.
+alır. Aynı satıra düşen indirimlerin toplamı satır tutarını geçmez.
 
 ## Kampanya raporu
 

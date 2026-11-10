@@ -1,7 +1,7 @@
 # Kayıtlı sepetler
 
 Sık verdiğiniz siparişleri (ör. aylık sarf malzemesi) bir adla saklayıp tek tıkla tekrar
-sipariş vermenizi sağlar. Kayıtlı sepetler firmanızın hesabına kaydedilir; firmanızdaki diğer
+sipariş vermenizi sağlar. Kayıtlı sepetler firmanızın hesabına kaydedilir. Firmanızdaki diğer
 kullanıcılar da görür ve kullanabilir.
 
 ## Sepeti kaydetme {#kaydetme}
@@ -15,7 +15,7 @@ kullanıcılar da görür ve kullanabilir.
 | **Sepet adı** | Zorunlu, en fazla 120 karakter (ör. "Aylık sarf malzemesi") |
 | **Not (isteğe bağlı)** | En fazla 1000 karakter |
 
-Sepetinizdeki ürünler ve adetler bu adla saklanır; mevcut sepetiniz olduğu gibi kalır. Fiyatlar
+Sepetinizdeki ürünler ve adetler bu adla saklanır. Mevcut sepetiniz olduğu gibi kalır. Fiyatlar
 saklanmaz: kayıtlı sepet her açıldığında **güncel fiyatlarla** hesaplanır.
 
 ## Kayıtlı sepet listesi {#liste}
@@ -32,7 +32,7 @@ saklanmaz: kayıtlı sepet her açıldığında **güncel fiyatlarla** hesaplan�
 
 ## Kayıtlı sepetin detayı {#detay}
 
-Listeden **Detay** ile açılır. Başlıkta ürün sayısı ve **Tahmini** toplam yazar; sorunlu ürün
+Listeden **Detay** ile açılır. Başlıkta ürün sayısı ve **Tahmini** toplam yazar. Sorunlu ürün
 varsa **Uyarı var** etiketi görünür.
 
 Ürün tablosu: **Ürün**, **Birim fiyat**, **Adet**, **Tutar**.
@@ -53,13 +53,13 @@ Bazı ürünler satışta değilse, yalnız teklifle satılıyorsa ya da stoğu 
    yapın ya da **Sepetten çıkar**'a basın.
 2. **Sepeti güncelle**'ye basın.
 
-Kayıtlı sepette en az bir ürün kalmalıdır; hepsini çıkarmak istiyorsanız sepeti silin.
+Kayıtlı sepette en az bir ürün kalmalıdır. Hepsini çıkarmak istiyorsanız sepeti silin.
 
-**Adını ya da notunu değiştirmek** — **Düzenle** düğmesine basın (**Kayıtlı sepeti düzenle**
+**Adını ya da notunu değiştirmek**: **Düzenle** düğmesine basın (**Kayıtlı sepeti düzenle**
 penceresi), değiştirip **Kaydet**'e basın.
 
-**Silmek** — **Düzenle** penceresindeki silme düğmesine basıp onaylayın. Kayıtlı sepet kalıcı
-olarak silinir; mevcut sepetiniz etkilenmez.
+**Silmek**: **Düzenle** penceresindeki silme düğmesine basıp onaylayın. Kayıtlı sepet kalıcı
+olarak silinir. Mevcut sepetiniz etkilenmez.
 
 **Kayıtlı sepetle sipariş vermek**
 
@@ -69,9 +69,9 @@ olarak silinir; mevcut sepetiniz etkilenmez.
 3. Siparişi onaylayın.
 
 ::: info Asıl sepetiniz etkilenmez
-Kayıtlı sepetten sipariş verirken **Sipariş ver** ekranındaki sepetinize dokunulmaz; o sepetteki
+Kayıtlı sepetten sipariş verirken **Sipariş ver** ekranındaki sepetinize dokunulmaz. O sepetteki
 ürünler yerinde kalır. Kayıtlı sepet de siparişten sonra silinmez, tekrar kullanabilirsiniz.
 :::
 
-Sepette siparişe eklenemeyen ürün varsa ödeme ekranı açılmaz; detaya dönersiniz ve "N ürün
+Sepette siparişe eklenemeyen ürün varsa ödeme ekranı açılmaz. Detaya dönersiniz ve "N ürün
 siparişe eklenemiyor…" uyarısı görünür. Adetleri düzeltin ya da ürünleri çıkarın.

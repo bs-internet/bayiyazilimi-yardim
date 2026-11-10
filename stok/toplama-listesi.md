@@ -1,7 +1,7 @@
 # Toplama listesi
 
 Depo personelinin siparişleri raftan toplaması için yazdırılabilir liste. Birden çok siparişin
-ürünlerini depo ve raf sırasına dizer; personel depoyu bir kez dolaşarak hepsini toplar.
+ürünlerini depo ve raf sırasına dizer. Personel depoyu bir kez dolaşarak hepsini toplar.
 
 Toplama listesini görmek için **Toplama listesi oluştur / yazdır** yetkisi gerekir.
 
@@ -9,7 +9,7 @@ Toplama listesini görmek için **Toplama listesi oluştur / yazdır** yetkisi g
 
 İki yol vardır:
 
-1. **Belirli siparişler:** **Mağaza › Siparişler** listesinde siparişleri işaretleyin; başlıktaki
+1. **Belirli siparişler:** **Mağaza › Siparişler** listesinde siparişleri işaretleyin. Başlıktaki
    düğme **Toplama listesi (n)** olur, basın. Seçilen siparişler durumlarına bakılmadan alınır.
 2. **Tüm hazırlananlar:** **Mağaza › Stok › Toplama Listesi** menüsü ya da Siparişler'de hiçbir
    sipariş seçmeden **Toplama listesi** düğmesi. **Hazırlanıyor** durumundaki siparişler alınır.
@@ -24,9 +24,9 @@ düğmeleri vardır.
 
 ## Satırlar nasıl oluşur? {#satirlar}
 
-- Satırlar, siparişlerin **stoktan düştüğü** depo, lokasyon ve lot bilgisinden gelir — yani
+- Satırlar, siparişlerin **stoktan düştüğü** depo, lokasyon ve lot bilgisinden gelir: yani
   sipariş verilirken sistemin ayırdığı yerden. Siparişte
-  [lot değiştirdiyseniz](/stok/lot-seri-skt#siparis-lot-degistir) yeni lot görünür; iptal ve
+  [lot değiştirdiyseniz](/stok/lot-seri-skt#siparis-lot-degistir) yeni lot görünür. İptal ve
   iade edilen adetler düşülür.
 - **Aynı yerdeki aynı ürün** (aynı depo, lokasyon ve lot) **tek satırda** toplanır. **Siparişler**
   sütununda hangi siparişe kaç adet gideceği yazar (ör. `S2611070003 ×2`, `S2611070007 ×1`).
@@ -42,9 +42,9 @@ numarasına göre dizilir.
 | Sütun | Açıklama |
 |---|---|
 | (kutu) | Toplanan satırı kâğıt üzerinde işaretlemek için boş kutu |
-| Lokasyon | Raf kodu; yeri belirsiz stokta **Atanmamış** |
+| Lokasyon | Raf kodu. Yeri belirsiz stokta **Atanmamış** |
 | Ürün | Ürün adı, SKU ve barkod |
-| Lot / Seri | Lot ya da seri no ve SKT; takipsiz üründe "—" |
+| Lot / Seri | Lot ya da seri no ve SKT. Takipsiz üründe "—" |
 | Adet | Toplanacak toplam adet ve birim |
 | Siparişler | Sipariş numarası × adet |
 
@@ -52,7 +52,7 @@ Satırlar depo içinde **toplama sırasına** dizilir: lokasyon sırası (korido
 Atanmamış en sonda), aynı lokasyonda ürün adı, aynı üründe SKT'si yakın lot önce. Bkz.
 [Lokasyon sırası](/stok/#lokasyon-sirasi).
 
-**"Stok yetmeden düşüldü"** etiketi: o lokasyon / lotta stok şu an **eksi**dir; sipariş stok
+**"Stok yetmeden düşüldü"** etiketi: o lokasyon / lotta stok şu an **eksi**dir. Sipariş stok
 yetmeden (ön sipariş) düşülmüştür ve ürün rafta olmayabilir. Mal gelene kadar bu satırı
 toplayamayabilirsiniz.
 
@@ -68,7 +68,7 @@ Listenin sonunda, yazdırırken **yeni sayfada**, siparişlerin özeti: Sipariş
 
 ## Yazdırma
 
-**Yazdır** düğmesi tarayıcının yazdırma penceresini açar. Menüler ve düğmeler basılmaz; satırlar
+**Yazdır** düğmesi tarayıcının yazdırma penceresini açar. Menüler ve düğmeler basılmaz. Satırlar
 sayfa sonunda bölünmez. Liste boşsa düğme kapalıdır.
 
 ::: tip
@@ -80,7 +80,7 @@ siparişte lot değiştirdiyseniz sayfayı yenileyip yeniden yazdırın.
 
 - Seçimle açtıysanız: "Seçilen siparişlerde toplanacak kalem bulunmadı."
 - Menüden açtıysanız: "**Hazırlanıyor** durumunda sipariş yok." Ödemesi bekleyen siparişler
-  listeye girmez; önce durumlarının Hazırlanıyor olması gerekir. Bkz.
+  listeye girmez. Önce durumlarının Hazırlanıyor olması gerekir. Bkz.
   [Siparişler](/satis/siparisler).
 
 Toplama sonrası paketleme ve kargo adımları için bkz.

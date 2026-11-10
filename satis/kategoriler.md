@@ -11,7 +11,7 @@ Başlıkta toplam kategori sayısı yazar. **Kategori ara** kutusu ada göre sü
 
 | Sütun | İçerik |
 |---|---|
-| **Kategori** | Ad ve görsel; alt kategoriler girintili |
+| **Kategori** | Ad ve görsel. Alt kategoriler girintili |
 | **Ürün** | Kategoriye doğrudan bağlı ürün sayısı |
 | **Sıra** | Sıralama sayısı |
 | **Aktif** | Anahtar: kategoriyi aktif / pasif yapar |
@@ -26,9 +26,9 @@ Satırın **İşlemler** menüsünde **Düzenle** ve **Alt kategori ekle** vard�
 
 | Alan | Açıklama |
 |---|---|
-| **Üst kategori** | Boşsa (*— Ana kategori —*) kategori en üst düzeydedir. **Alt kategori ekle** ile açıldıysa üst kategori seçili gelir. Düzenlemede kategorinin kendisi ve kendi alt dalları listede çıkmaz. |
+| **Üst kategori** | Boşsa (*: Ana kategori: *) kategori en üst düzeydedir. **Alt kategori ekle** ile açıldıysa üst kategori seçili gelir. Düzenlemede kategorinin kendisi ve kendi alt dalları listede çıkmaz. |
 | **Ad** * | En çok 255 karakter. |
-| **URL (slug)** | Kategori sayfasının adresi. Boş bırakılırsa addan üretilir; aynısı varsa sonuna sayı eklenir. |
+| **URL (slug)** | Kategori sayfasının adresi. Boş bırakılırsa addan üretilir. Aynısı varsa sonuna sayı eklenir. |
 | **Açıklama** | En çok 5000 karakter. |
 
 ### Görsel
@@ -36,13 +36,13 @@ Satırın **İşlemler** menüsünde **Düzenle** ve **Alt kategori ekle** vard�
 | Alan | Açıklama |
 |---|---|
 | **Kategori görseli** | Görsel dosyası, en çok 4 MB. Vitrin eklentisi kuruluysa sitede kullanılır. |
-| **Mevcut görseli kaldır** | Görsel yüklüyse görünür; işaretleyip kaydederseniz görsel silinir. |
+| **Mevcut görseli kaldır** | Görsel yüklüyse görünür. İşaretleyip kaydederseniz görsel silinir. |
 
 ### Vitrin
 
 | Alan | Açıklama |
 |---|---|
-| **Sıra** | Küçük sayı önce gelir; eşitse ada göre. Varsayılan 0. |
+| **Sıra** | Küçük sayı önce gelir. Eşitse ada göre. Varsayılan 0. |
 
 ### Arama motoru
 
@@ -51,16 +51,16 @@ Satırın **İşlemler** menüsünde **Düzenle** ve **Alt kategori ekle** vard�
 | **Meta başlık** | En çok 255 karakter. Vitrin eklentisinde kategori sayfasının başlığı. |
 | **Meta açıklama** | En çok 500 karakter. |
 
-Yeni kategori **aktif** olarak oluşur; durum listedeki **Aktif** anahtarıyla değiştirilir.
+Yeni kategori **aktif** olarak oluşur. Durum listedeki **Aktif** anahtarıyla değiştirilir.
 
 ## Kaç seviye?
 
 Kategoriler iç içe kurulur: ana kategori › alt kategori. Ekran her satırda **Alt kategori
-ekle** sunduğu için daha derin seviyeler de açılabilir; ürün formunda ve süzgeçlerde
+ekle** sunduğu için daha derin seviyeler de açılabilir. Ürün formunda ve süzgeçlerde
 kategoriler tam yoluyla görünür (ör. *Temizlik › Deterjanlar › Sıvı*). Pratikte iki seviye
 (ana › alt) yeterli ve en okunaklı yapıdır.
 
-Excel aktarımında kategori `Üst > Alt` biçiminde yazılır; olmayan kategoriler otomatik
+Excel aktarımında kategori `Üst > Alt` biçiminde yazılır. Olmayan kategoriler otomatik
 oluşturulur. Bkz. [Excel](/satis/excel#sutunlar).
 
 ## Kurallar

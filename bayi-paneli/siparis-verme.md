@@ -13,11 +13,11 @@ yanında sepetinizdeki çeşit ve adet sayısı ile toplam tutar yazar.
 
 Başlıktaki düğmeler:
 
-- **Kayıtlı sepetler** — kayıtlı sepet listenizi açar; parantez içinde kaç kayıtlı sepetiniz
+- **Kayıtlı sepetler**: kayıtlı sepet listenizi açar. Parantez içinde kaç kayıtlı sepetiniz
   olduğu yazar.
-- **Sepeti kaydet** — sepetiniz doluyken görünür. Bkz.
+- **Sepeti kaydet**: sepetiniz doluyken görünür. Bkz.
   [Kayıtlı sepetler](/bayi-paneli/kayitli-sepetler#kaydetme).
-- **Mağazaya git** — online mağazamız varsa görünür.
+- **Mağazaya git**: online mağazamız varsa görünür.
 
 ### Ürün arama {#urun-arama}
 
@@ -28,9 +28,9 @@ Başlıktaki düğmeler:
 | **Marka** (Tüm markalar) | Seçilen markanın ürünleri listelenir |
 
 - Alanları birlikte kullanabilirsiniz (ör. bir markanın belirli bir kategorideki ürünleri).
-- Yazmayı bıraktığınızda sonuçlar kendiliğinden gelir; aramak için bir düğmeye basmanız
+- Yazmayı bıraktığınızda sonuçlar kendiliğinden gelir. Aramak için bir düğmeye basmanız
   gerekmez.
-- Bir aramada en fazla **40 ürün** gösterilir; en çok satanlar üstte yer alır. Aradığınızı
+- Bir aramada en fazla **40 ürün** gösterilir. En çok satanlar üstte yer alır. Aradığınızı
   göremiyorsanız aramayı daraltın.
 - Yalnız size gösterilen, satıştaki ürünler listelenir.
 
@@ -49,14 +49,14 @@ Her üründe şunları görürsünüz:
 | Görsel ve ürün adı | |
 | Marka · stok kodu | |
 | **Stok N** | Stok takibi yapılan ürünlerde satılabilir stok. Stok takibi yapılmayan üründe yazmaz |
-| **(bölge deponuzda N)** | Size bir bölge deposu atanmışsa o depodaki stok. Siparişiniz önce bölge deponuzdan, yetmezse diğer depolarımızdan karşılanır; sipariş verebilmeniz toplam stoğa bağlıdır |
+| **(bölge deponuzda N)** | Size bir bölge deposu atanmışsa o depodaki stok. Siparişiniz önce bölge deponuzdan, yetmezse diğer depolarımızdan karşılanır. Sipariş verebilmeniz toplam stoğa bağlıdır |
 | **… adet aldınız** | Yalnız Sık aldıklarınız listesinde |
 | **Teklifle satılır** | Ürün yalnız teklifle satılıyor ya da fiyatı yok. Fiyat yerine "—" görünür |
 | **Stok yetersiz** | Stok, ürünün en az sipariş adedini karşılamıyor |
 | Fiyat | Size uygulanan birim fiyat (bayi / grup indiriminiz dahil) |
 | Adet kutusu | **−** / **+** ya da elle yazılır |
 | **Sepete ekle** | Ürünü seçtiğiniz adetle sepete ekler |
-| **Teklif listesine** | Sepete eklenemeyen ürünlerde (teklifle satılan ya da stoğu yetersiz) **Sepete ekle** yerine görünür; ürünü [Teklif listenize](/bayi-paneli/teklifler#teklif-listem) ekler |
+| **Teklif listesine** | Sepete eklenemeyen ürünlerde (teklifle satılan ya da stoğu yetersiz) **Sepete ekle** yerine görünür. Ürünü [Teklif listenize](/bayi-paneli/teklifler#teklif-listem) ekler |
 
 ### Adet kuralları {#adet-kurallari}
 
@@ -85,7 +85,7 @@ Sepete eklediğiniz ürünler aramanın altındaki tabloda listelenir.
 |---|---|
 | **Ürün** | Görsel, ad ve stok kodu. Kampanyayla gelen hediye üründe **Hediye**, kampanyalı üründe kampanyanın adı yazar. Sorunlu satırda "Yalnızca teklifle satılır" ya da "Yetersiz stok (mevcut: N)" uyarısı çıkar |
 | **Birim fiyat** | Size uygulanan birim fiyat |
-| **Adet** | **−** / **+** ya da elle değiştirilir; kısa bir beklemeden sonra **kendiliğinden kaydedilir**. 0 yaparsanız ürün sepetten çıkar |
+| **Adet** | **−** / **+** ya da elle değiştirilir. Kısa bir beklemeden sonra **kendiliğinden kaydedilir**. 0 yaparsanız ürün sepetten çıkar |
 | **Tutar** | Satır tutarı. Hediye üründe **Ücretsiz** |
 | **İşlem** | Çarpı simgesi ürünü sepetten çıkarır |
 
@@ -105,9 +105,9 @@ mevcut stoğa düşürülür ve "(ürün) için en fazla N adet eklenebilir." uy
 
 Kutunun altında:
 
-- **Uygulanan kampanya: (ad)** — sepetinize uygulanan kampanya ve özeti. Sepetiniz birden çok
+- **Uygulanan kampanya: (ad)**: sepetinize uygulanan kampanya ve özeti. Sepetiniz birden çok
   kampanyaya uyuyorsa "Sepetinize N kampanya daha uyuyor; en avantajlı olan uygulandı." yazar.
-- **"… daha ekleyin, "(kampanya)" kampanyasından yararlanın."** — bir kampanyaya az kaldıysa
+- **"… daha ekleyin, "(kampanya)" kampanyasından yararlanın."**: bir kampanyaya az kaldıysa
   ne kadar daha eklemeniz gerektiğini gösterir.
 - Sepette sipariş verilemeyen ürün varsa kırmızı uyarı çıkar ve **Sipariş ver** düğmesi
   pasifleşir. Bu ürünleri çıkarın ya da **Teklif al** ile tüm sepet için teklif isteyin.
@@ -120,18 +120,18 @@ Kargo ücreti ödeme adımında seçtiğiniz kargo firmasına ve sepetin desisin
 
 ### Sepetteki düğmeler
 
-- **Sipariş ver** — [ödeme ekranına](#odeme) geçer.
-- **Teklif al** — sepetteki **bütün ürünleri** teklif listenize taşır ve sepetinizi boşaltır.
+- **Sipariş ver**: [ödeme ekranına](#odeme) geçer.
+- **Teklif al**: sepetteki **bütün ürünleri** teklif listenize taşır ve sepetinizi boşaltır.
   Teklif listesinde aynı ürün varsa adetler toplanır. Ardından teklif talebinizi
   gönderirsiniz: [Teklif isteme](/bayi-paneli/teklifler#teklif-isteme).
 
 ## Ödeme ekranı {#odeme}
 
-**Sipariş ver › Sipariş ver** düğmesi. Başlık **Siparişi tamamla**'dır; sağ üstteki geri
+**Sipariş ver › Sipariş ver** düğmesi. Başlık **Siparişi tamamla**'dır. Sağ üstteki geri
 düğmesi sepete döner. Sepetiniz boşsa bu ekran açılmaz, "Sepetiniz boş." uyarısıyla sepete
 dönersiniz.
 
-Ekran numaralı adımlardan oluşur; sağda **Sipariş özeti** görünür.
+Ekran numaralı adımlardan oluşur. Sağda **Sipariş özeti** görünür.
 
 ### 1. İletişim Bilgileri
 
@@ -158,12 +158,12 @@ Kayıtlı bir adres seçtiğinizde alanlar o adresle dolar.
 | Alan | Açıklama |
 |---|---|
 | **Fatura adresim teslimat adresimle aynı** | İşaretliyse fatura adresi olarak teslimat adresi kullanılır. Kayıtlı fatura adresiniz yoksa işaretli gelir |
-| **Kayıtlı fatura adreslerim** | Kutu işaretli değilse görünür; varsayılan fatura adresiniz seçili gelir |
+| **Kayıtlı fatura adreslerim** | Kutu işaretli değilse görünür. Varsayılan fatura adresiniz seçili gelir |
 | **Bireysel** / **Kurumsal** | Fatura türü |
 | **Ad Soyad** | Zorunlu |
 | **Firma Ünvanı**, **Vergi Dairesi**, **Vergi Numarası** | Kurumsal'da zorunlu |
-| **T.C. Kimlik No (isteğe bağlı)** | Bireysel'de; girilirse 11 rakam |
-| **Fatura Adresi**, **İl**, **İlçe**, **Posta Kodu** | Kutu işaretli değilse görünür; adres, il ve ilçe zorunlu |
+| **T.C. Kimlik No (isteğe bağlı)** | Bireysel'de. Girilirse 11 rakam |
+| **Fatura Adresi**, **İl**, **İlçe**, **Posta Kodu** | Kutu işaretli değilse görünür. Adres, il ve ilçe zorunlu |
 | **Yeni adresleri Adreslerim'e kaydet (teslimat ve fatura adresi ayrı ayrı)** | Kayıtlı olmayan bir adres girdiyseniz görünür. İşaretlerseniz sipariş sonrası teslimat adresi teslimat, fatura adresi fatura listenize eklenir. Hiç kayıtlı adresiniz yoksa işaretli gelir |
 
 Teslimat ve fatura adresi aynı olsa bile sipariş ikisini ayrı ayrı saklar.
@@ -171,7 +171,7 @@ Teslimat ve fatura adresi aynı olsa bile sipariş ikisini ayrı ayrı saklar.
 ### 4. Kargo Firması {#kargo}
 
 Sepetinizi taşıyabilecek kargo firmaları listelenir: logo, ad, **Tahmini N iş günü** ve bu
-sepet için kargo ücreti (ya da **Ücretsiz**). Varsayılan firma seçili gelir; başka bir firma
+sepet için kargo ücreti (ya da **Ücretsiz**). Varsayılan firma seçili gelir. Başka bir firma
 seçince özet ve toplam güncellenir. Altta "Sepet toplamı N desi üzerinden hesaplanmıştır."
 yazar.
 
@@ -183,15 +183,15 @@ Size açık ödeme yöntemleri listelenir. Seçtiğiniz yöntemin açıklaması 
 
 | Yöntem | Ne zaman görünür? | Ne olur? |
 |---|---|---|
-| **Havale / EFT** | Firmamız havaleyi açtıysa ve tanımlı banka hesabı varsa | Sipariş **Ödeme Bekleniyor** durumunda açılır. Banka hesap bilgilerimiz sipariş e-postanızda ve ödeme alınana kadar [sipariş detayında](/bayi-paneli/siparislerim#havale-bilgileri) yer alır; açıklamaya sipariş numaranızı yazın. Ödeme yaptıktan sonra [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
+| **Havale / EFT** | Firmamız havaleyi açtıysa ve tanımlı banka hesabı varsa | Sipariş **Ödeme Bekleniyor** durumunda açılır. Banka hesap bilgilerimiz sipariş e-postanızda ve ödeme alınana kadar [sipariş detayında](/bayi-paneli/siparislerim#havale-bilgileri) yer alır. Açıklamaya sipariş numaranızı yazın. Ödeme yaptıktan sonra [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
 | **Cari hesaba (vadeli)** | Vadeli (açık hesap) çalışıyorsanız | Açıklamada vade gün sayınız ve kullanılabilir limitiniz yazar. Ayrıntı aşağıda |
 | **Kredi / Banka Kartı** | Kartla ödeme açıksa | Siparişi onaylayınca güvenli ödeme sayfasına geçersiniz. Altında bilgi amaçlı **Taksit seçenekleri** tablosu görünür. Bkz. [Kartla ödeme](/cari/kartla-odeme#odeme-akisi) |
 
 Bazı yöntemler size özel kısıtlanmış olabilir (hesabınıza tanımlı izinli yöntemler) ya da en
-düşük sipariş tutarı olabilir; bu durumda o yöntem listede görünmez. Hiç yöntem yoksa "Şu anda
+düşük sipariş tutarı olabilir. Bu durumda o yöntem listede görünmez. Hiç yöntem yoksa "Şu anda
 kullanılabilir ödeme yöntemi yok. Lütfen bizimle iletişime geçin." yazar.
 
-**Sipariş Notu** — isteğe bağlı, en fazla 2000 karakter. Teslimat ya da sipariş hakkında
+**Sipariş Notu**: isteğe bağlı, en fazla 2000 karakter. Teslimat ya da sipariş hakkında
 iletmek istediğiniz notu yazın.
 
 #### Havale indirimi
@@ -223,14 +223,14 @@ genel toplam yer alır.
 Firmamız siparişte onaylanacak sözleşme belirlediyse bir onay kutusu çıkar ve
 işaretlemeniz zorunludur. Kutunun metni sözleşmelerin adlarını sayar, ör. "**Satış Sözleşmesi**
 ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı bir
-bağlantıdır; tıklayınca metin bir pencerede açılır. Onaylanacak sözleşme yoksa onay kutusu da
+bağlantıdır. Tıklayınca metin bir pencerede açılır. Onaylanacak sözleşme yoksa onay kutusu da
 çıkmaz. Sözleşmelerin tamamını [Sözleşmeler](/bayi-paneli/sozlesmeler) menüsünde de
 okuyabilirsiniz.
 
 Son düğme:
 
-- **Siparişi Onayla** — havale ve cari hesaba ödemede.
-- **Ödemeye Geç** — kartla ödemede; güvenli ödeme sayfasına geçersiniz.
+- **Siparişi Onayla**: havale ve cari hesaba ödemede.
+- **Ödemeye Geç**: kartla ödemede. Güvenli ödeme sayfasına geçersiniz.
 
 Hatalı ya da eksik alan varsa sayfa gönderilmez ve alanın altında hata yazar.
 

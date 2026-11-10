@@ -1,7 +1,7 @@
 # Ön bellek yönetimi
 
-**Ayarlar › Ön Bellek Yönetimi** — sistemin hız için sakladığı geçici dosyaları (önbellek)
-temizler. Normal kullanımda gerekmez; şu durumlarda işe yarar:
+**Ayarlar › Ön Bellek Yönetimi**: sistemin hız için sakladığı geçici dosyaları (önbellek)
+temizler. Normal kullanımda gerekmez. Şu durumlarda işe yarar:
 
 - `.env` dosyasında bir değişiklik yaptınız (ör. e-posta ayarları) ama etkisi görünmüyor.
 - Sunucuya yeni dosyalar yüklediniz (güncelleme) ve ekranlar eski haliyle görünüyor.
@@ -12,7 +12,7 @@ kalır. Temizlemeden hemen sonraki ilk sayfa açılışları biraz yavaş olabil
 
 ## Önbellek türleri
 
-Her kartta **Temizle** düğmesi vardır; basınca onay sorulur ("… önbelleğini temizlemek
+Her kartta **Temizle** düğmesi vardır. Basınca onay sorulur ("… önbelleğini temizlemek
 istediğinize emin misiniz?") ve **Evet, Temizle** ile uygulanır.
 
 | Kart | Ne temizlenir | Ne zaman kullanılır |
@@ -26,7 +26,7 @@ istediğinize emin misiniz?") ve **Evet, Temizle** ile uygulanır.
 
 ## Tüm önbellekleri temizle
 
-**Tüm Önbellekler** kartındaki **Tümünü Temizle** — uygulama, yapılandırma, rota, görünüm, olay
+**Tüm Önbellekler** kartındaki **Tümünü Temizle**: uygulama, yapılandırma, rota, görünüm, olay
 ve derlenmiş önbellekleri tek seferde temizler. Hangisini seçeceğinizden emin değilseniz bunu
 kullanın.
 
@@ -35,12 +35,12 @@ giremiyorsanız komutu SSH'tan çalıştırın.
 
 ::: info Kuyruk işleyicisi
 VPS'te supervisor ile kuyruk çalıştırıyorsanız `.env` değişikliğinden sonra önbelleği temizlemek
-yetmez; işleyicinin yeni ayarları alması için ayrıca `php artisan queue:restart` çalıştırın.
+yetmez. İşleyicinin yeni ayarları alması için ayrıca `php artisan queue:restart` çalıştırın.
 :::
 
 Her temizleme işlemi [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yazılır.
 
 ## Yetki
 
-Ekranın yetkileri (görüntüleme ve temizleme) kurulumda **Admin** görevine atanır; diğer görevlere
+Ekranın yetkileri (görüntüleme ve temizleme) kurulumda **Admin** görevine atanır. Diğer görevlere
 **Görevler** ekranından eklenebilir.

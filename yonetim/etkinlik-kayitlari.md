@@ -1,7 +1,7 @@
 # Etkinlik kayıtları
 
-**Ayarlar › Etkinlik Kayıtları** — sistemde kimin, ne zaman, ne yaptığının listesi (denetim
-kaydı). Kayıtlar otomatik tutulur; elle eklenemez, düzenlenemez, silinemez.
+**Ayarlar › Etkinlik Kayıtları**: sistemde kimin, ne zaman, ne yaptığının listesi (denetim
+kaydı). Kayıtlar otomatik tutulur. Elle eklenemez, düzenlenemez, silinemez.
 
 ## Liste
 
@@ -12,7 +12,7 @@ kaydı). Kayıtlar otomatik tutulur; elle eklenemez, düzenlenemez, silinemez.
 | Olay | İşlemin türü (aşağıdaki tablo) |
 | Açıklama | Ne yapıldığının kısa anlatımı (ör. "… birimini ekledi.") |
 
-Liste en yeniden eskiye sıralıdır; sayfa başına 50 kayıt.
+Liste en yeniden eskiye sıralıdır. Sayfa başına 50 kayıt.
 
 ## Filtreler
 
@@ -38,11 +38,11 @@ Doğrulaması İstendi · Oturum Kapatıldı · Yeni Cihaz Girişi
 |---|---|
 | **Kullanıcılar ve hesaplar** | Panel kullanıcısı ve üye oluşturma, hoş geldin bağlantısının kullanılması, e-posta onaylama ve değiştirme, durum değiştirme, görev atama / kaldırma, bir yöneticinin başka bir kullanıcının iki adımlı doğrulamasını sıfırlaması |
 | **Hesap güvenliği** | Şifre değiştirme ve sıfırlama, iki adımlı doğrulamayı açma / kapatma, başka cihazdaki oturumu kapatma, yeni cihazdan giriş, profil ve tercih değişiklikleri |
-| **Görevler ve yetkiler** | Görev ekleme, düzenleme, silme, izinlerin değişmesi; izin ekleme, toplu ekleme, silme, geri yükleme |
-| **Ayarlar** | Genel Ayarlar, Kurumsal Bilgiler, Site Erişimi (vitrin kuruluysa İletişim Bilgileri) ve diğer mağaza ayarları; eklenti açma / kapatma; mağaza teması değiştirme; API anahtarı oluşturma / iptal; önbellek temizleme |
-| **Tanımlamalar** | Dil, ülke, il, ilçe, para birimi, vergi oranı ekleme / güncelleme / durum / silme / geri alma; birim, kargo firması, banka hesabı, tedarikçi değişiklikleri; kur güncellemeleri |
+| **Görevler ve yetkiler** | Görev ekleme, düzenleme, silme, izinlerin değişmesi. İzin ekleme, toplu ekleme, silme, geri yükleme |
+| **Ayarlar** | Genel Ayarlar, Kurumsal Bilgiler, Site Erişimi (vitrin kuruluysa İletişim Bilgileri) ve diğer mağaza ayarları. Eklenti açma / kapatma. Mağaza teması değiştirme; API anahtarı oluşturma / iptal. Önbellek temizleme |
+| **Tanımlamalar** | Dil, ülke, il, ilçe, para birimi, vergi oranı ekleme / güncelleme / durum / silme / geri alma. Birim, kargo firması, banka hesabı, tedarikçi değişiklikleri. Kur güncellemeleri |
 | **Katalog** | Ürün, kategori, marka değişiklikleri; Excel aktarımları |
-| **Satış** | Sipariş oluşması, ödenmesi, durum değişiklikleri, kart iadeleri; teklif talebi ve teklif değişiklikleri; iade talebi ve durumları; kayıtlı sepetler |
+| **Satış** | Sipariş oluşması, ödenmesi, durum değişiklikleri, kart iadeleri. Teklif talebi ve teklif değişiklikleri. İade talebi ve durumları. Kayıtlı sepetler |
 | **Cari ve ödeme** | Cari hareketler (tahsilat, dekont, iptal), havale bildirimleri ve onay / ret |
 | **Stok** | Stok giriş / çıkış / transfer, mal kabul, sayımın kapanması |
 
@@ -52,11 +52,11 @@ cihazdan** yapılan girişler etkinlik kaydına da düşer.
 
 ## Başka nerelerde görünür?
 
-- **Başlangıç ekranı › Son hareketler** — son 8 kayıt.
-- **Kullanıcı detayı › Etkinlik** — o kullanıcının yaptığı ve onunla ilgili son 20 kayıt.
+- **Başlangıç ekranı › Son hareketler**: son 8 kayıt.
+- **Kullanıcı detayı › Etkinlik**: o kullanıcının yaptığı ve onunla ilgili son 20 kayıt.
 
 ## Yetki
 
-Ekranın yetkisi kurulumda **Admin** görevine atanır; diğer görevlere **Görevler** ekranından
+Ekranın yetkisi kurulumda **Admin** görevine atanır. Diğer görevlere **Görevler** ekranından
 eklenebilir. Bu yetkiye sahip olmayanlar başlangıç ekranında **Son
 hareketler** kartını da görmez.

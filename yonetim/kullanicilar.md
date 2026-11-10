@@ -1,7 +1,7 @@
 # Kullanıcılar
 
-**Ayarlar › Kullanıcılar** — yönetim paneline giren çalışanlarınızın (yönetici hesapları)
-listesi. Bayi ve müşteri hesapları burada değil, **Bayiler** (vitrin kuruluysa **Müşteriler**) menüsündedir; bkz.
+**Ayarlar › Kullanıcılar**: yönetim paneline giren çalışanlarınızın (yönetici hesapları)
+listesi. Bayi ve müşteri hesapları burada değil, **Bayiler** (vitrin kuruluysa **Müşteriler**) menüsündedir. Bkz.
 [Müşteriler ve bayiler](/musteriler/).
 
 Bölümün iç menüsü: **Kullanıcılar** · **Yeni Kullanıcı** · **Görevler** · **Yetkiler**.
@@ -26,12 +26,12 @@ Bir hesabın türü sonradan değiştirilemez.
 | **Pasif** | Giriş yapamaz. Açık oturumu varsa bir sonraki işleminde oturumu kapatılır ve "Hesabınız pasif durumda. Lütfen yönetici ile iletişime geçin." uyarısını görür |
 | **Kısıtlı** | Giriş yapar, ekranları görür ama **hiçbir kayıt ekleyemez, değiştiremez, silemez** ("Hesabınız kısıtlı modda. Yazma işlemi yapamazsınız."). Örneğin yalnız raporlara bakacak biri için |
 
-Kısıtlı durumu yalnız kullanıcı oluşturulurken seçilebilir; sonradan **Durum değiştir** ile
+Kısıtlı durumu yalnız kullanıcı oluşturulurken seçilebilir. Sonradan **Durum değiştir** ile
 yalnız Aktif ya da Pasif yapılabilir.
 
 ## Kullanıcı listesi
 
-Sütunlar: **Kullanıcı** (ad, e-posta ve görev; görevi yoksa **Rolsüz**), **Durum**, **Son giriş**,
+Sütunlar: **Kullanıcı** (ad, e-posta ve görev. Görevi yoksa **Rolsüz**), **Durum**, **Son giriş**,
 **Kayıt tarihi**, **İşlem**.
 
 - **Ad veya e-posta ara** kutusuna yazıp **Filtrele**'ye basın; **Sıfırla** aramayı temizler.
@@ -40,7 +40,7 @@ Sütunlar: **Kullanıcı** (ad, e-posta ve görev; görevi yoksa **Rolsüz**), *
 
 ## Yeni kullanıcı {#yeni}
 
-**Ayarlar › Kullanıcılar › Yeni Kullanıcı** — "Kullanıcı Ekle".
+**Ayarlar › Kullanıcılar › Yeni Kullanıcı**: "Kullanıcı Ekle".
 
 | Alan | Açıklama |
 |---|---|
@@ -61,7 +61,7 @@ Bağlantının süresi dolduysa ("Hoş geldin bağlantısı artık geçerli değ
 ekranındaki **Şifrenizi mi unuttunuz?** ile yeni şifre belirleyebilir.
 
 ::: tip Kimler hangi görevi atayabilir?
-- **Super Admin** görevi hiçbir formda listelenmez; yalnız kurulumda açılan hesapta vardır.
+- **Super Admin** görevi hiçbir formda listelenmez. Yalnız kurulumda açılan hesapta vardır.
 - **Admin** görevini yalnız Super Admin atayabilir.
 - Diğer kullanıcılar yalnız sistem görevi olmayan görevleri (Mağaza Yöneticisi, Satış Sorumlusu
   ve sizin eklediğiniz görevler) atayabilir.
@@ -71,7 +71,7 @@ ekranındaki **Şifrenizi mi unuttunuz?** ile yeni şifre belirleyebilir.
 
 Kullanıcının adı, e-postası, görevi ve durumu ile şu bilgiler görünür:
 
-- **E-posta doğrulama** — onaylandığı tarih ya da **Doğrulanmadı**
+- **E-posta doğrulama**: onaylandığı tarih ya da **Doğrulanmadı**
 - **Son giriş** ve **Kayıt tarihi**
 
 İki sekme vardır:
@@ -87,11 +87,11 @@ Detay sayfasındaki **Kullanıcı işlemleri** menüsünden:
 
 | İşlem | Ne yapar |
 |---|---|
-| **E-posta Adresini Onayla** | Yalnız e-postası onaylanmamış kullanıcıda görünür. Adresi onaylı yapar; kullanıcıya bilgilendirme e-postası gider |
+| **E-posta Adresini Onayla** | Yalnız e-postası onaylanmamış kullanıcıda görünür. Adresi onaylı yapar. Kullanıcıya bilgilendirme e-postası gider |
 | **E-posta Adresini Değiştir** | **Yeni e-posta adresi**'ne onay bağlantısı gönderir (bağlantı 24 saat geçerli). Kullanıcının açık oturumları hemen kapatılır. Bağlantı onaylanınca e-posta değişir ve yeni adres onaylı olur. Yeni adres mevcut adresten farklı olmalı ve başka hesapta kullanılmamalı |
 | **Durum Değiştir** | **Aktif** ya da **Pasif**. Kullanıcıya bilgilendirme e-postası gider |
 | **Görev Değiştir** | Kullanıcının görevini değiştirir. Yalnız atayabileceğiniz görevler listelenir. Kullanıcıya e-posta gitmez |
-| **İki Adımlı Doğrulamayı Sıfırla** | Yalnız iki adımlı doğrulaması açık kullanıcıda görünür. Telefonunu ya da doğrulama uygulamasını kaybeden kullanıcı için: doğrulama uygulaması bağlantısı ve kurtarma kodları silinir; kullanıcı yalnız şifresiyle girip doğrulamayı yeniden kurabilir. Kendi doğrulamanızı buradan sıfırlayamazsınız (**Bilgilerim › Güvenlik**'i kullanın). Super Admin hesabının doğrulamasını yalnız bir Super Admin sıfırlayabilir |
+| **İki Adımlı Doğrulamayı Sıfırla** | Yalnız iki adımlı doğrulaması açık kullanıcıda görünür. Telefonunu ya da doğrulama uygulamasını kaybeden kullanıcı için: doğrulama uygulaması bağlantısı ve kurtarma kodları silinir. Kullanıcı yalnız şifresiyle girip doğrulamayı yeniden kurabilir. Kendi doğrulamanızı buradan sıfırlayamazsınız (**Bilgilerim › Güvenlik**'i kullanın). Super Admin hesabının doğrulamasını yalnız bir Super Admin sıfırlayabilir |
 
 Her işlem [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yazılır.
 
@@ -108,7 +108,7 @@ yetkilerine ihtiyacı varsa bu yetkileri içeren yeni bir görev oluşturun.
 2. **Kullanıcı işlemleri › Durum Değiştir**'i seçin, **Pasif** yapıp **Durumu güncelle**'ye basın.
 
 Kullanıcı bir sonraki işleminde oturumdan atılır ve bir daha giriş yapamaz. Hesap ve geçmiş
-kayıtları silinmez; etkinlik kayıtlarında adı görünmeye devam eder. Panelden kullanıcı silme
+kayıtları silinmez. Etkinlik kayıtlarında adı görünmeye devam eder. Panelden kullanıcı silme
 işlemi yoktur.
 
 ### Yalnız görüntüleyebilen bir kullanıcı açmak
@@ -127,6 +127,6 @@ tercihlerinizi kullanıcı menüsündeki **Bilgilerim** ekranlarından yönetirs
 ## Yetkiler
 
 Kullanıcılar bölümünün yetkileri (listeleme, ekleme, detay, e-posta onaylama / değiştirme, durum
-ve görev değiştirme, iki adımlı doğrulamayı sıfırlama) kurulumda **Admin** görevine atanır; diğer
+ve görev değiştirme, iki adımlı doğrulamayı sıfırlama) kurulumda **Admin** görevine atanır. Diğer
 görevlere **Görevler** ekranından eklenebilir. Bkz.
 [Görevler ve yetkiler](/yonetim/roller-yetkiler).

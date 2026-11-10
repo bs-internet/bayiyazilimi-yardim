@@ -6,7 +6,7 @@ ve Excel'e aktarılabilir.
 
 Raporlara yönetim panelinin sol menüsündeki **Raporlar** öğesinden ulaşılır (Kampanyalar'ın
 hemen altında). **Raporlar**'a tıkladığınızda, görme yetkiniz olan ilk rapor açılır. Raporlar
-sayfanın üstünde sekmeler halinde sıralanır; yalnızca yetkiniz olan raporların sekmesi görünür:
+sayfanın üstünde sekmeler halinde sıralanır. Yalnızca yetkiniz olan raporların sekmesi görünür:
 
 | Sekme | Rapor | Neyi gösterir |
 |---|---|---|
@@ -24,28 +24,28 @@ sayfanın üstünde sekmeler halinde sıralanır; yalnızca yetkiniz olan raporl
 
 Her rapor yukarıdan aşağıya aynı düzendedir:
 
-1. **Filtre çubuğu** — dönem ve rapora göre ek filtreler; sağda **Filtreleri temizle** ve
+1. **Filtre çubuğu**: dönem ve rapora göre ek filtreler. Sağda **Filtreleri temizle** ve
    **Excel'e aktar** düğmeleri.
-2. **Dönem ve açıklama satırı** — filtre çubuğunun altında seçili tarih aralığı
+2. **Dönem ve açıklama satırı**: filtre çubuğunun altında seçili tarih aralığı
    (ör. "08.10.2026 – 06.11.2026") ve raporun kısa açıklaması.
-3. **Özet kutuları** — raporun ana göstergeleri.
-4. **Grafik** — yalnızca Satış ve Teklif raporlarında.
-5. **Kırılım tabloları** — küçük özet tablolar (ör. ödeme yöntemine göre).
-6. **Ana tablo** — raporun ayrıntılı satırları; başlığının yanında toplam satır sayısı yazar.
+3. **Özet kutuları**: raporun ana göstergeleri.
+4. **Grafik**: yalnızca Satış ve Teklif raporlarında.
+5. **Kırılım tabloları**: küçük özet tablolar (ör. ödeme yöntemine göre).
+6. **Ana tablo**: raporun ayrıntılı satırları. Başlığının yanında toplam satır sayısı yazar.
 
 ### Filtreler {#filtreler}
 
 | Filtre | Açıklama |
 |---|---|
 | Dönem | Hazır aralıklar: **Bugün**, **Son 7 gün**, **Son 30 gün**, **Bu ay**, **Geçen ay**, **Bu yıl**, **Özel aralık**. Varsayılan **Son 30 gün**dür. "Son 7 gün" ve "Son 30 gün" bugünü de içerir; "Bu ay" ve "Bu yıl" bugüne kadar olan kısımdır. |
-| Başlangıç tarihi / Bitiş tarihi | Yalnızca **Özel aralık** seçildiğinde görünür. Başlangıç bitişten sonraysa ikisi yer değiştirir. Aralık en çok 1100 gün olabilir; daha uzunsa başlangıç, bitişten 1100 gün öncesine çekilir. |
+| Başlangıç tarihi / Bitiş tarihi | Yalnızca **Özel aralık** seçildiğinde görünür. Başlangıç bitişten sonraysa ikisi yer değiştirir. Aralık en çok 1100 gün olabilir. Daha uzunsa başlangıç, bitişten 1100 gün öncesine çekilir. |
 | Gruplama | Yalnızca Ürün Satışları'nda: **Ürün bazında**, **Kategori bazında**, **Marka bazında**. |
 | Müşteri | Satış, Ürün Satışları, Müşteri, Teklif, Kampanya ve İade raporlarında. Boşken **Müşteri: tümü**. Seçenekler: her bayi grubu için **Bayi: (grup adı)**. Vitrin eklentisi kuruluysa ayrıca **Bireysel müşteri**, **Misafir** ve **Tüm bayiler** seçenekleri çıkar. |
 | Depo | Yalnızca Stok'ta. Boşken **Depo: tümü** (tüm depoların toplam stoğu). |
 | Kategori | Ürün Satışları ve Stok'ta. Seçilen kategori **alt kategorileriyle birlikte** süzülür. |
 | Marka | Ürün Satışları ve Stok'ta. |
 | Stok durumu | Yalnızca Stok'ta: **Stokta olanlar**, **Kritik stoktakiler**, **Tükenenler**, **Dönemde satılmayanlar**. |
-| Eşik ≤ | Yalnızca Stok'ta **Kritik stoktakiler** seçildiğinde görünür. Kendine özel kritik stok eşiği olmayan ürünler için kullanılacak eşiktir; varsayılanı **Stok Ayarları**'ndaki genel kritik stok eşiğidir. |
+| Eşik ≤ | Yalnızca Stok'ta **Kritik stoktakiler** seçildiğinde görünür. Kendine özel kritik stok eşiği olmayan ürünler için kullanılacak eşiktir. Varsayılanı **Stok Ayarları**'ndaki genel kritik stok eşiğidir. |
 
 Hangi raporda hangi filtrenin olduğu:
 
@@ -59,7 +59,7 @@ Hangi raporda hangi filtrenin olduğu:
 | Kampanya | ✓ | ✓ | | | | | |
 | İade | ✓ | ✓ | | | | | |
 
-**Nasıl yapılır? — Raporu süzmek**
+**Nasıl yapılır? Raporu süzmek**
 
 1. **Raporlar**'a girin ve üstteki sekmeden raporu seçin.
 2. Dönem kutusundan hazır bir aralık seçin ya da **Özel aralık** seçip başlangıç ve bitiş
@@ -80,7 +80,7 @@ yetkili bir çalışma arkadaşınıza gönderebilirsiniz.
 gösterilir. Önceki dönem, seçili dönemden hemen önce gelen ve aynı gün sayısına sahip dönemdir;
 seçtiğiniz diğer filtreler (müşteri, kategori vb.) önceki döneme de uygulanır.
 
-- Seçili dönem 1–30 Kasım (30 gün) ise önceki dönem 2–31 Ekim'dir (30 gün).
+- Seçili dönem 1-30 Kasım (30 gün) ise önceki dönem 2-31 Ekim'dir (30 gün).
 - Seçili dönem "Bugün" ise önceki dönem dündür.
 
 Değişim = (bu dönem − önceki dönem) ÷ önceki dönem × 100, bir ondalıkla.
@@ -89,7 +89,7 @@ Değişim = (bu dönem − önceki dönem) ÷ önceki dönem × 100, bir ondalı
 (120.000 − 100.000) ÷ 100.000 × 100 = **%20** artıştır.
 
 Önceki dönemin değeri sıfırsa değişim hesaplanamaz ve gösterilmez. Bazı kutularda (ör. ortalamalar,
-stok kutuları) değişim hiç gösterilmez; bunlar aşağıda her raporun tablosunda belirtilmiştir.
+stok kutuları) değişim hiç gösterilmez. Bunlar aşağıda her raporun tablosunda belirtilmiştir.
 Bazı kutuların altında küçük bir açıklama satırı da bulunur.
 
 ### Grafik {#grafik}
@@ -103,19 +103,19 @@ grafikte sıfır olarak görünür. Satış raporunun ana tablosu da aynı kural
 Kırılım tabloları raporun özetini farklı açılardan böler (ör. ödeme yöntemi, durum, depo). Kayıt
 yoksa "Bu dönemde kayıt yok." yazar.
 
-Ana tablo sayfalıdır: her sayfada **50 satır** gösterilir; altta sayfa geçişi vardır. Seçili dönem
+Ana tablo sayfalıdır: her sayfada **50 satır** gösterilir. Altta sayfa geçişi vardır. Seçili dönem
 ve filtrelerde veri yoksa "Kayıt yok" yazar.
 
 ### Hesaplama kuralları {#hesaplama}
 
 - **Para birimi:** Tüm tutarlar **ana para birimine** çevrilerek gösterilir (bkz.
   [Para birimleri](/yonetim/para-birimleri)). Siparişlerde siparişin verildiği andaki kurlar
-  kullanılır; sonradan kur değişse de rapor değişmez.
+  kullanılır. Sonradan kur değişse de rapor değişmez.
 - **Ciro:** Siparişin genel toplamıdır (KDV ve kargo dahil, indirim düşülmüş). Ciroya
   **İptal Edildi** ve **Ödeme Başarısız** durumundaki siparişler ile **ödemesi iade edilmiş**
   siparişler **sayılmaz**. Diğer tüm durumlar (Ödeme Bekleniyor, Onay Bekliyor, Hazırlanıyor,
   Kargoya Verildi, Tamamlandı) sayılır. Başlangıç ekranındaki ciro da aynı tanımla hesaplanır.
-- **Tarih:** Siparişler oluşturulma tarihine göre döneme girer; teklifler ve iade talepleri de
+- **Tarih:** Siparişler oluşturulma tarihine göre döneme girer. Teklifler ve iade talepleri de
   kendi oluşturulma tarihlerine göre.
 - **Misafir siparişler:** Hesabı olmayan (misafir) siparişler, müşteri sayılırken e-posta
   adresine göre tek müşteri kabul edilir.
@@ -132,13 +132,13 @@ yazar). Yalnızca o raporun Excel yetkisi olan kullanıcılara görünür.
 3. Dosya bilgisayarınıza iner. Dosya adı rapor adı ve dönemden oluşur, ör.
    `satis-raporu-20261008-20261106.xlsx`.
 
-Excel ekrandakiyle **aynı filtrelerle** hazırlanır; ancak ana tablonun yalnızca o sayfası değil,
+Excel ekrandakiyle **aynı filtrelerle** hazırlanır. Ancak ana tablonun yalnızca o sayfası değil,
 **tüm satırları** yazılır. Dosyada iki sayfa vardır:
 
 | Sayfa | İçerik |
 |---|---|
-| Özet | Rapor adı, **Dönem**, **Oluşturma** (tarih ve saat); ardından **Gösterge**, **Değer**, **Önceki döneme göre %** sütunlarıyla özet kutuları; ardından her kırılım tablosu kendi başlığı ve sütunlarıyla. |
-| (Ana tablonun başlığı) | Ana tablonun tüm satırları, ekrandaki sütunlarla. Sayfa adı ana tablonun başlığıdır (ör. "Günlük satışlar"); en çok 31 karakter. |
+| Özet | Rapor adı, **Dönem**, **Oluşturma** (tarih ve saat). Ardından **Gösterge**, **Değer**, **Önceki döneme göre %** sütunlarıyla özet kutuları. Ardından her kırılım tablosu kendi başlığı ve sütunlarıyla. |
+| (Ana tablonun başlığı) | Ana tablonun tüm satırları, ekrandaki sütunlarla. Sayfa adı ana tablonun başlığıdır (ör. "Günlük satışlar"). En çok 31 karakter. |
 
 - Adet, tutar ve yüzdeler **sayı hücresi** olarak yazılır; Excel'de toplama, süzme ve sıralama
   yapabilirsiniz. Yüzdeler "12,5" gibi düz sayı olarak yazılır.
@@ -158,7 +158,7 @@ Raporlarda üç düzey yetki vardır:
 Böylece örneğin bir muhasebe çalışanına yalnızca Satış ve İade raporlarını, Excel'leriyle birlikte
 açabilirsiniz. **Raporlar** yetkisi olup hiçbir raporu görme yetkisi olmayan kullanıcı menüye
 tıkladığında erişim hatası alır. Super Admin tüm raporları görür. Yetkiler
-**Yetkiler** ekranından rollere dağıtılır; bkz.
+**Yetkiler** ekranından rollere dağıtılır. Bkz.
 [Kullanıcılar, roller ve yetkiler](/yonetim/roller-yetkiler).
 
 ---
@@ -166,7 +166,7 @@ tıkladığında erişim hatası alır. Super Admin tüm raporları görür. Yet
 ## Satış Raporu {#satis}
 
 **Raporlar › Satış.** Seçili dönemdeki ciro, sipariş sayısı ve ortalama sepeti gösterir. Tutarlar
-KDV ve kargo dahildir; ciroya sayılmayan siparişler [hesaplama kurallarında](#hesaplama)
+KDV ve kargo dahildir. Ciroya sayılmayan siparişler [hesaplama kurallarında](#hesaplama)
 anlatılmıştır.
 
 **Filtreler:** Dönem, Müşteri.
@@ -192,11 +192,11 @@ anlatılmıştır.
 | Tablo | Sütunlar | Not |
 |---|---|---|
 | Ödeme yöntemi | Yöntem, Sipariş, Ciro | Ciroya göre büyükten küçüğe. |
-| Sipariş durumu (tümü) | Durum, Sipariş, Tutar | **Tüm** siparişleri gösterir; iptal edilen, ödemesi başarısız olan ve ödemesi iade edilen siparişler de burada sayılır (ciroya sayılmasalar da). Yedi durumun hepsi listelenir: Ödeme Bekleniyor, Onay Bekliyor, Hazırlanıyor, Kargoya Verildi, Tamamlandı, İptal Edildi, Ödeme Başarısız. |
+| Sipariş durumu (tümü) | Durum, Sipariş, Tutar | **Tüm** siparişleri gösterir. İptal edilen, ödemesi başarısız olan ve ödemesi iade edilen siparişler de burada sayılır (ciroya sayılmasalar da). Yedi durumun hepsi listelenir: Ödeme Bekleniyor, Onay Bekliyor, Hazırlanıyor, Kargoya Verildi, Tamamlandı, İptal Edildi, Ödeme Başarısız. |
 | Müşteri tipi | Tip, Sipariş, Ciro | Yalnız vitrin eklentisi kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Para birimi | Para birimi, Sipariş, Tutar, TL karşılığı | **Tutar** siparişlerin kendi para birimindeki toplamı (ör. "1.234,50 USD"); **TL karşılığı** ana para birimine çevrilmiş toplamı. |
 
-### Ana tablo — Günlük satışlar / Aylık satışlar
+### Ana tablo: Günlük satışlar / Aylık satışlar
 
 Dönem 92 günden uzunsa aylık, değilse günlük satırlar; **en yeni dönem en üstte**. Satış olmayan
 günler / aylar da sıfırla listelenir.
@@ -234,7 +234,7 @@ Bu raporda grafik ve kırılım tablosu yoktur.
 
 ### Ana tablo
 
-Başlık ve ilk sütunlar seçilen gruplamaya göre değişir; satırlar **tutara göre büyükten küçüğe**
+Başlık ve ilk sütunlar seçilen gruplamaya göre değişir. Satırlar **tutara göre büyükten küçüğe**
 sıralanır.
 
 | Gruplama | Tablo başlığı | İlk sütunlar |
@@ -266,12 +266,12 @@ payı **%25**'tir.
 **Raporlar › Bayi** (vitrin kuruluysa **Raporlar › Müşteri**). Vitrin eklentisi yoksa rapor **Bayi
 Raporu** adını taşır ve bayi bazında sipariş ve ciroyu gösterir. Vitrin kuruluysa **Müşteri
 Raporu** olur: müşteri ve bayi bazında sipariş ve ciroyu, yeni ve tekrar eden müşterileri
-gösterir; misafir siparişler e-posta adresine göre gruplanır. Yalnızca ciroya sayılan siparişler
+gösterir. Misafir siparişler e-posta adresine göre gruplanır. Yalnızca ciroya sayılan siparişler
 hesaba girer.
 
 **Filtreler:** Dönem, Müşteri.
 
-### Özet kutuları — Bayi Raporu (vitrinsiz)
+### Özet kutuları: Bayi Raporu (vitrinsiz)
 
 | Kutu | Açıklama | Değişim % |
 |---|---|---|
@@ -280,11 +280,11 @@ hesaba girer.
 | Tekrar eden bayi | Sipariş veren − yeni bayi. Alt not: "Daha önce de sipariş vermiş" | Var |
 | Bayi başına ciro | Ciro ÷ sipariş veren bayi sayısı | Yok |
 
-### Özet kutuları — Müşteri Raporu (vitrin kuruluysa)
+### Özet kutuları: Müşteri Raporu (vitrin kuruluysa)
 
 | Kutu | Açıklama | Değişim % |
 |---|---|---|
-| Alışveriş yapan müşteri | Dönemde en az bir siparişi olan farklı müşteri sayısı (hesap; hesap yoksa e-posta) | Var |
+| Alışveriş yapan müşteri | Dönemde en az bir siparişi olan farklı müşteri sayısı (hesap. Hesap yoksa e-posta) | Var |
 | Yeni müşteri | İlk (ciroya sayılan) siparişi bu dönemde olan müşteriler. Alt not: "İlk siparişi bu dönemde" | Var |
 | Tekrar eden müşteri | Alışveriş yapan − yeni müşteri. Alt not: "Daha önce de sipariş vermiş" | Var |
 | Müşteri başına ciro | Ciro ÷ alışveriş yapan müşteri sayısı | Yok |
@@ -300,13 +300,13 @@ dönemde ise Yeni 10, Tekrar eden 40 − 10 = **30**'dur.
 | Müşteri tipi | Tip, Müşteri, Sipariş, Ciro | Yalnız vitrin eklentisi kuruluysa. Tipler: Bayi, Bireysel müşteri, Misafir. |
 | Bayi grupları | Grup, Bayi, Sipariş, Ciro | Yalnızca bayi hesapları. Gruba atanmamış bayiler **Grupsuz** satırındadır. |
 
-### Ana tablo — Müşteriler (ciroya göre)
+### Ana tablo: Müşteriler (ciroya göre)
 
 Satırlar **ciroya göre büyükten küçüğe** sıralanır.
 
 | Sütun | Açıklama |
 |---|---|
-| Müşteri | Hesap adı; misafirde siparişteki müşteri adı |
+| Müşteri | Hesap adı. Misafirde siparişteki müşteri adı |
 | E-posta | Siparişteki e-posta adresi |
 | Tip | Bayi, Bireysel müşteri ya da Misafir |
 | Bayi grubu | Bayinin grubu |
@@ -327,7 +327,7 @@ girer. Stok bilgisi bkz. [Stok](/stok/).
 stoktakiler seçiliyken Eşik ≤).
 
 ::: info Dönem bu raporda neyi etkiler?
-Stok adetleri ve değerleri **bugünkü** durumdur; seçili dönem yalnızca "dönemde satış" ve "dönemde
+Stok adetleri ve değerleri **bugünkü** durumdur. Seçili dönem yalnızca "dönemde satış" ve "dönemde
 satılmayan" hesaplarını etkiler.
 :::
 
@@ -348,15 +348,15 @@ Bu raporun kutularında değişim yüzdesi gösterilmez.
 | Toplam stok | Stoğu sıfırdan büyük ürünlerin stok adetleri toplamı. Alt not: kaç stok takipli ürün olduğu (ör. "1.250 stok takipli ürün") |
 | Stok değeri | Stok değerlerinin toplamı. Alt not: "Satış fiyatıyla, KDV hariç" |
 | Tükenen | Stoğu sıfır ya da eksi olan ürün sayısı |
-| Kritik stokta | Stoğu sıfırdan büyük ama kritik stok eşiğinde ya da altında olan ürün sayısı. Eşik, üründe tanımlı kritik stok eşiğidir; yoksa **Eşik ≤** değeri (varsayılanı Stok Ayarları'ndaki genel eşik) |
+| Kritik stokta | Stoğu sıfırdan büyük ama kritik stok eşiğinde ya da altında olan ürün sayısı. Eşik, üründe tanımlı kritik stok eşiğidir. Yoksa **Eşik ≤** değeri (varsayılanı Stok Ayarları'ndaki genel eşik) |
 | Dönemde satılmayan | Stokta olup seçili dönemde hiç satılmayan (ciroya sayılan siparişlerde yer almayan) ürün sayısı. Alt not: "Stokta olup hiç satılmayan" |
 
 ### Kırılım tabloları
 
 | Tablo | Sütunlar | Not |
 |---|---|---|
-| Depolar | Depo, Ürün çeşidi, Adet, Değer | Her deponun stoğu olan ürünleri; değere göre büyükten küçüğe. Depo filtresinden etkilenmez, kategori ve marka filtresinden etkilenir. |
-| Lokasyonlar | Lokasyon, Ürün çeşidi, Adet | Yalnızca bir **depo seçiliyken** görünür; o deponun raf / lokasyonları kod sırasıyla. Lokasyona yerleştirilmemiş stok **Atanmamış** satırındadır. |
+| Depolar | Depo, Ürün çeşidi, Adet, Değer | Her deponun stoğu olan ürünleri. Değere göre büyükten küçüğe. Depo filtresinden etkilenmez, kategori ve marka filtresinden etkilenir. |
+| Lokasyonlar | Lokasyon, Ürün çeşidi, Adet | Yalnızca bir **depo seçiliyken** görünür. O deponun raf / lokasyonları kod sırasıyla. Lokasyona yerleştirilmemiş stok **Atanmamış** satırındadır. |
 
 ### Ana tablo
 
@@ -413,16 +413,16 @@ birimin güncel kuru kullanılır).
 
 ### Grafik
 
-**Günlük teklifler** (dönem 92 günden uzunsa **Aylık teklifler**): sütun grafikte iki seri —
+**Günlük teklifler** (dönem 92 günden uzunsa **Aylık teklifler**): sütun grafikte iki seri: 
 **Gelen** ve **Onaylanan**.
 
-### Kırılım tablosu — Teklif durumu
+### Kırılım tablosu: Teklif durumu
 
 Sütunlar: Durum, Teklif, Tutar. Taslak dışındaki tüm durumlar listelenir: **Fiyat bekliyor**,
 **Revize istendi**, **Yanıt bekliyor**, **Onaylandı**, **Siparişe dönüştü**, **Reddedildi**,
 **İptal edildi**.
 
-### Ana tablo — Dönemdeki teklifler
+### Ana tablo: Dönemdeki teklifler
 
 Satırlar **en yeni teklif en üstte** sıralanır.
 
@@ -457,12 +457,12 @@ bkz. [Kampanyalar](/musteriler/kampanyalar).
 | Ort. sepet (kampanyalı) | Kampanyalı ciro ÷ kampanyalı sipariş. Alt not: "Kampanyasız: …" (kampanyasız siparişlerin ortalama sepeti) | Yok |
 
 **Örnek:** Dönemde 200 sipariş var, 50'sinde kampanya uygulanmışsa alt notta "%25 sipariş" yazar.
-Bu 50 siparişin cirosu 100.000 ise kampanyalı ortalama sepet **2.000**'dir; kampanyasız 150
+Bu 50 siparişin cirosu 100.000 ise kampanyalı ortalama sepet **2.000**'dir. Kampanyasız 150
 siparişin cirosu 225.000 ise alt notta "Kampanyasız: 1.500" görünür.
 
 Bu raporda grafik ve kırılım tablosu yoktur.
 
-### Ana tablo — Kampanyalar (kullanıma göre)
+### Ana tablo: Kampanyalar (kullanıma göre)
 
 Satırlar **kullanım sayısına göre** (eşitse ciroya göre) büyükten küçüğe sıralanır.
 
@@ -471,18 +471,18 @@ Satırlar **kullanım sayısına göre** (eşitse ciroya göre) büyükten küç
 | Kampanya | Kampanyanın adı |
 | İşlem | Kampanyanın işlem türü (kampanya silinmişse boş) |
 | Kullanım | Kampanyanın uygulandığı sipariş sayısı |
-| Müşteri | Kampanyayı kullanan farklı müşteri sayısı (hesap; hesap yoksa e-posta) |
-| Kazanç | Kampanyanın müşteriye sağladığı toplam kazanç: indirim, hediye ve kargo kazancı; sipariş anında ana para biriminde kaydedilen değer |
+| Müşteri | Kampanyayı kullanan farklı müşteri sayısı (hesap. Hesap yoksa e-posta) |
+| Kazanç | Kampanyanın müşteriye sağladığı toplam kazanç: indirim, hediye ve kargo kazancı. Sipariş anında ana para biriminde kaydedilen değer |
 | Ciro | Bu kampanyanın uygulandığı siparişlerin cirosu |
 | Ort. sepet | Ciro ÷ kullanım |
 | Son kullanım | Kampanyanın dönemdeki son kullanıldığı tarih |
 
 - Bir siparişte **birlikte uygulanan kampanyaların her biri kendi satırında** sayılır. Bu yüzden
-  aynı sipariş birden çok satırın Kullanım ve Ciro sütununa girebilir; satırların cirolarını
+  aynı sipariş birden çok satırın Kullanım ve Ciro sütununa girebilir. Satırların cirolarını
   toplamak kampanyalı ciroyu vermez.
-- **Silinmiş bir kampanya**, kullanım kaydındaki adıyla tabloda görünmeye devam eder; yalnızca
+- **Silinmiş bir kampanya**, kullanım kaydındaki adıyla tabloda görünmeye devam eder. Yalnızca
   İşlem sütunu boş kalır.
-- Özet kutusundaki **Verilen indirim** siparişlerdeki indirim tutarıdır; tablodaki **Kazanç** ise
+- Özet kutusundaki **Verilen indirim** siparişlerdeki indirim tutarıdır. Tablodaki **Kazanç** ise
   hediye ve kargo kazancını da içerir. Bu yüzden ikisi farklı olabilir.
 
 ---
@@ -516,9 +516,9 @@ süreci için bkz. [İadeler](/satis/iadeler).
 
 Her iki tabloda da tüm nedenler / durumlar, talep olmasa bile sıfırla listelenir.
 
-### Ana tablo — En çok iade edilen ürünler
+### Ana tablo: En çok iade edilen ürünler
 
-Ürünler stok koduna göre birleştirilir; satırlar **iade adedine göre büyükten küçüğe** sıralanır.
+Ürünler stok koduna göre birleştirilir. Satırlar **iade adedine göre büyükten küçüğe** sıralanır.
 
 | Sütun | Açıklama |
 |---|---|
@@ -527,10 +527,10 @@ Her iki tabloda da tüm nedenler / durumlar, talep olmasa bile sıfırla listele
 | İade adedi | Dönemdeki taleplerde iade edilen toplam adet |
 | Talep | Bu ürünü içeren talep sayısı |
 | Dönemde satış | Aynı dönemde (aynı müşteri filtresiyle) ciroya sayılan siparişlerde satılan adet |
-| İade / satış | İade adedi ÷ dönemde satış × 100; dönemde satış yoksa boş |
+| İade / satış | İade adedi ÷ dönemde satış × 100. Dönemde satış yoksa boş |
 
 ::: tip
 İade / satış oranı, talebin açıldığı dönemdeki satışla karşılaştırır. Ürün önceki bir dönemde
-satılıp bu dönemde iade edildiyse "Dönemde satış" düşük ya da boş görünebilir; uzun bir dönem
+satılıp bu dönemde iade edildiyse "Dönemde satış" düşük ya da boş görünebilir. Uzun bir dönem
 seçmek daha anlamlı bir oran verir.
 :::

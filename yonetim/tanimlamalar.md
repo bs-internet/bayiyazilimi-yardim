@@ -1,12 +1,12 @@
 # Tanımlamalar
 
-**Ayarlar › Tanımlamalar** — sistemin her yerinde kullanılan temel listeler: diller, bölgeler,
+**Ayarlar › Tanımlamalar**: sistemin her yerinde kullanılan temel listeler: diller, bölgeler,
 para birimleri, vergi oranları, birimler, sözleşmeler ve satış / stok / cari ile ilgili tanımlar. Menüdeki
 **Tanımlamalar**'a tıklayınca **Genel Bakış** açılır.
 
 ## Genel Bakış
 
-Her tanım ekranı bir kart olarak listelenir; kartta kısa bir özet yazar (ör. "2 dil · varsayılan
+Her tanım ekranı bir kart olarak listelenir. Kartta kısa bir özet yazar (ör. "2 dil · varsayılan
 Türkçe", "1 ülke · 81 il", "10 birim"). Dikkat isteyen durumlar uyarı rengiyle gösterilir (ör.
 havale açık ama aktif banka hesabı yoksa). Kartlar kullanıcının yetkisine göre gösterilir.
 
@@ -33,7 +33,7 @@ Diller, ülkeler, iller, ilçeler, para birimleri ve vergi oranları aynı şeki
 
 ### Yeni kayıtlar pasif başlar {#pasif}
 
-Bu ekranlarda **Yeni** ile eklenen her kayıt **pasif** olarak oluşturulur; formda durum alanı
+Bu ekranlarda **Yeni** ile eklenen her kayıt **pasif** olarak oluşturulur. Formda durum alanı
 yoktur. Pasif kayıt seçim listelerinde (ürün formu, adres formu, varsayılan seçimleri …)
 görünmez. Kaydı kullanıma açmak için listedeki **Aktif** anahtarını açın.
 
@@ -73,13 +73,13 @@ kutuları bu sıraya göre dizilir.
 
 ## Diller {#diller}
 
-**Ayarlar › Tanımlamalar › Diller** — "Dil Tanımları": sistemde kullanılacak diller. Kurulumla
+**Ayarlar › Tanımlamalar › Diller**: "Dil Tanımları": sistemde kullanılacak diller. Kurulumla
 **Türkçe** (varsayılan) ve **English** gelir.
 
 | Alan | Açıklama |
 |---|---|
 | Sıra No | İsteğe bağlı |
-| Kod | **Zorunlu**, 2–5 karakter, benzersiz (ör. `tr`, `en`, `de`) |
+| Kod | **Zorunlu**, 2-5 karakter, benzersiz (ör. `tr`, `en`, `de`) |
 | Ad | **Zorunlu.** Dilin adı (ör. Turkish) |
 | Yerel ad | **Zorunlu.** Dilin kendi dilindeki adı (ör. Türkçe). Seçim listelerinde bu ad görünür |
 
@@ -88,12 +88,12 @@ varsayılan dil listesinde görünür.
 
 ::: info Yeni dil eklemek çeviri getirmez
 Buradan dil eklemek yalnız listeyi genişletir. Arayüzün o dilde görünmesi için o dilin çeviri
-dosyası sisteme eklenmiş olmalıdır; çevirisi olmayan metinler Türkçe görünür.
+dosyası sisteme eklenmiş olmalıdır. Çevirisi olmayan metinler Türkçe görünür.
 :::
 
 ## Bölgeler (ülke, il, ilçe) {#bolgeler}
 
-**Ayarlar › Tanımlamalar › Bölgeler** — adres formlarında kullanılan ülke, il ve ilçe listeleri.
+**Ayarlar › Tanımlamalar › Bölgeler**: adres formlarında kullanılan ülke, il ve ilçe listeleri.
 Kurulumla **Türkiye**, **81 il** ve **ilçeleri** aktif olarak gelir.
 
 Bölgeler üç kademelidir:
@@ -113,14 +113,14 @@ kurallara](#ortak-kurallar) göre çalışır.
 |---|---|
 | Sıra No | İsteğe bağlı |
 | Kod | **Zorunlu**, tam 2 harf, benzersiz (ör. `TR`, `DE`) |
-| Ad | **Zorunlu.** Adres bağlantısı addan otomatik üretilir; aynı ada sahip iki ülke olamaz |
+| Ad | **Zorunlu.** Adres bağlantısı addan otomatik üretilir. Aynı ada sahip iki ülke olamaz |
 
 ### İl alanları
 
 | Alan | Açıklama |
 |---|---|
 | Sıra No | İsteğe bağlı |
-| Kod | **Zorunlu**, en çok 16 karakter; aynı ülke içinde benzersiz. Türkiye'de plaka kodu kullanılır (ör. `34`) |
+| Kod | **Zorunlu**, en çok 16 karakter. Aynı ülke içinde benzersiz. Türkiye'de plaka kodu kullanılır (ör. `34`) |
 | Ad | **Zorunlu** |
 
 ### İlçe alanları
@@ -137,7 +137,7 @@ eski adreslerdeki kayıtlar bozulmaz.
 
 ## Vergi Oranları {#vergi-oranlari}
 
-**Ayarlar › Tanımlamalar › Vergi Oranları** — ürünlerde seçilen KDV oranları. Kurulumla
+**Ayarlar › Tanımlamalar › Vergi Oranları**: ürünlerde seçilen KDV oranları. Kurulumla
 **KDV %20** (varsayılan), **KDV %10** ve **KDV %0** gelir.
 
 | Alan | Açıklama |
@@ -147,17 +147,17 @@ eski adreslerdeki kayıtlar bozulmaz.
 | Oran | **Zorunlu.** 0 ile 100 arasında bir yüzde (ör. `1`, `20`) |
 
 Varsayılan vergi oranı yeni ürünlerde önce seçili gelir. Oranı değiştirmek mevcut ürünlerin
-fiyatlarını kendiliğinden değiştirmez; geçmiş siparişler oluştukları andaki oranla kalır.
+fiyatlarını kendiliğinden değiştirmez. Geçmiş siparişler oluştukları andaki oranla kalır.
 
 ### Nasıl yapılır? Yeni bir KDV oranı eklemek
 
 1. **Ayarlar › Tanımlamalar › Vergi Oranları**'nı açın, **Yeni**'ye basın.
 2. **Ad** (ör. "KDV %1") ve **Oran** (`1`) girin, **Kaydet**'e basın.
-3. Kayıt pasif oluşur; listede **Aktif** anahtarını açın. Artık ürün formunda seçilebilir.
+3. Kayıt pasif oluşur. Listede **Aktif** anahtarını açın. Artık ürün formunda seçilebilir.
 
 ## Birimler {#birimler}
 
-**Ayarlar › Tanımlamalar › Birimler** — ürün birimleri. Ürün eklerken birim bu listedeki **aktif**
+**Ayarlar › Tanımlamalar › Birimler**: ürün birimleri. Ürün eklerken birim bu listedeki **aktif**
 birimlerden seçilir. Kurulumla Adet, Paket, Kutu, Koli, Set, Takım, Rulo, Litre, Kg, Metre gelir.
 
 Listede her birimin **kaç üründe kullanıldığı** (**Ürün sayısı**) görünür.
@@ -171,15 +171,15 @@ Birimler diğer tanımlardan farklı çalışır:
 
 - **Yeni birim** ile eklenen birim **aktif** oluşur.
 - Birimin **adını değiştirirseniz** o birimi kullanan tüm ürünler de yeni adla güncellenir.
-- **Ürünlerde kullanılan birim silinemez** (silinmiş ürünler dahil); silme düğmesi yerine
+- **Ürünlerde kullanılan birim silinemez** (silinmiş ürünler dahil). Silme düğmesi yerine
   pasifleştirin. Pasif birim yeni ürünlerde seçilemez, mevcut ürünlerde kalır.
-- Silinen birim için "Silinenler" sayfası yoktur; silme kalıcıdır.
+- Silinen birim için "Silinenler" sayfası yoktur. Silme kalıcıdır.
 
 ## Sözleşmeler {#sozlesmeler}
 
-**Ayarlar › Tanımlamalar › Sözleşmeler** — satış sözleşmesi, KVKK aydınlatma metni, garanti ve
+**Ayarlar › Tanımlamalar › Sözleşmeler**: satış sözleşmesi, KVKK aydınlatma metni, garanti ve
 iade şartları gibi metinler. Aktif sözleşmeler bayi panelinin **Sözleşmeler** menüsünde
-listelenir; isterseniz ödeme formunda (vitrin kuruluysa üyelik formunda da) onaylatılır.
+listelenir. İsterseniz ödeme formunda (vitrin kuruluysa üyelik formunda da) onaylatılır.
 
 ### Liste
 
@@ -192,7 +192,7 @@ yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
 |---|---|
 | **Ödeme formu** | Siparişin ödeme adımında onaylatılır |
 | **Üyelik formu** | Vitrinin kayıt formunda onaylatılır (yalnız vitrin kuruluysa) |
-| **Genel** | Hiçbir formda onaylatılmaz; aktifse yalnız bayi panelindeki **Sözleşmeler**'de okunur |
+| **Genel** | Hiçbir formda onaylatılmaz. Aktifse yalnız bayi panelindeki **Sözleşmeler**'de okunur |
 
 ### Sözleşme formu
 
@@ -204,14 +204,14 @@ yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
 | **Kısa ad** | Bayi panelindeki adreste kullanılır. Boş bırakılırsa başlıktan üretilir |
 | **Sözleşme metni** | Zengin metin editörü |
 | **Gösterildiği yer › Ödeme formunda göster** | İşaretliyse sözleşme ödeme formunda onaylatılır |
-| **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur; bayileri siz eklersiniz |
+| **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur. Bayileri siz eklersiniz |
 | **Sıra** | Listede, onay kutusunda ve bayi panelinde sıralama (küçük önce) |
 
 İki kutu da işaretsizse sözleşme **genel** sözleşmedir. Ekrandaki açıklama: "İşaretliyse formda
-onaylatılır. İşaretsizse genel sözleşmedir; aktifse yalnız bayi panelindeki Sözleşmeler'de
+onaylatılır. İşaretsizse genel sözleşmedir. Aktifse yalnız bayi panelindeki Sözleşmeler'de
 okunur."
 
-Yeni sözleşme **pasif** başlar; metni hazır olunca listedeki **Aktif** anahtarıyla kullanıma
+Yeni sözleşme **pasif** başlar. Metni hazır olunca listedeki **Aktif** anahtarıyla kullanıma
 açın. Pasif sözleşme hiçbir formda ve bayi panelinde görünmez. Sözleşmeyi silmek için düzenleme
 ekranındaki sil düğmesini kullanın (onay sorulur).
 
@@ -223,12 +223,12 @@ teklif ödemesinde ve (vitrin kuruluysa) vitrinin ödeme ekranında **tek bir zo
 
 > **Satış Sözleşmesi** ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum.
 
-Her sözleşme adı bir bağlantıdır; tıklayınca metin bir pencerede açılır. İşaretli aktif sözleşme
+Her sözleşme adı bir bağlantıdır. Tıklayınca metin bir pencerede açılır. İşaretli aktif sözleşme
 yoksa onay kutusu hiç çıkmaz. Vitrinin kayıt formunda da **Üyelik formunda göster** işaretli
 sözleşmeler için aynı şekilde çalışır.
 
 ::: info Onay ayrıca kaydedilmez
-Onay kutusu işaretlenmeden sipariş (ya da üyelik) tamamlanmaz; ancak hangi sözleşmenin hangi
+Onay kutusu işaretlenmeden sipariş (ya da üyelik) tamamlanmaz. Ancak hangi sözleşmenin hangi
 sürümünün onaylandığı ayrıca kaydedilmez.
 :::
 
@@ -258,6 +258,6 @@ Tanımlama ekranlarının her işlemi (listeleme, ekleme, güncelleme, durum de�
 alma, kalıcı silme) ayrı bir yetkidir. Birimler, Para Birimleri, Tedarikçiler, Kargo, Banka
 Hesapları, Sözleşmeler ("Mağaza: Sözleşmeler" grubu) ve ayar ekranlarının ("Mağaza: Ayarlar"
 grubu) yetkileri kurulumla hazır gelir. **Diller, Bölgeler ve Vergi
-Oranları** ekranlarının yetkileri kurulumda yalnız **Admin** görevine atanır; diğer görevlere
+Oranları** ekranlarının yetkileri kurulumda yalnız **Admin** görevine atanır. Diğer görevlere
 **Görevler** ekranından eklenebilir. Genel Bakış sayfası herkese açıktır ama
 yalnız yetkili olunan ekranların kartlarını gösterir. Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler).

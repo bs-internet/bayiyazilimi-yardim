@@ -1,7 +1,7 @@
 # İçerik yönetimi
 
 Vitrinin içeriği panelde **İçerik** menüsünden yönetilir. **İçerik** grubu (Sayfalar dahil)
-yalnız vitrin eklentisiyle gelir; vitrin kurulu değilse menüde görünmez.
+yalnız vitrin eklentisiyle gelir. Vitrin kurulu değilse menüde görünmez.
 
 | Menü | Ne yönetilir | Ayrıntı |
 |---|---|---|
@@ -29,7 +29,7 @@ Vitrinde iki menü vardır ve ayrı ayrı yönetilir. Her iki ekranda da öğele
 | **İşlemler** | **Düzenle**, sil |
 
 **Kayıt silinmiş** rozeti, öğenin bağlı olduğu kategori, marka ya da sayfanın artık bulunmadığını
-gösterir; bu öğe vitrinde gösterilmez. Düzenleyip yeni bir kayda bağlayın ya da silin. Bağlı
+gösterir. Bu öğe vitrinde gösterilmez. Düzenleyip yeni bir kayda bağlayın ya da silin. Bağlı
 kategori / marka / sayfa **pasifse** de öğe vitrinde görünmez.
 
 ### Ana Menü {#ana-menu}
@@ -44,7 +44,7 @@ seviyelidir**.
 | **Bağlantı** | Bağlantı türü (aşağıdaki tablo) |
 | **Kategori / Marka / Sayfa** | Bağlantı türü bunlardan biriyse bağlanacak kayıt (zorunlu) |
 | **Menüde görünen ad** | En çok 120 karakter. Boş bırakılırsa kaydın kendi adı (ör. kategori adı) kullanılır. **Özel bağlantı**da zorunlu |
-| **Adres** | Yalnız **Özel bağlantı**da, zorunlu, en çok 500 karakter. Site içi adres "/" ile başlar (ör. `/marka/abc`); dış adres `https://` ile yazılır |
+| **Adres** | Yalnız **Özel bağlantı**da, zorunlu, en çok 500 karakter. Site içi adres "/" ile başlar (ör. `/marka/abc`). Dış adres `https://` ile yazılır |
 | **Sağa yasla** | Öğe menünün sağ tarafında gösterilir |
 | **Vurgulu (sarı düğme)** | Öğe düğme gibi vurgulanır |
 | **Yeni sekmede aç** | Bağlantı yeni sekmede açılır |
@@ -68,7 +68,7 @@ Ana menüde hiç öğe yoksa üst menü boş görünür.
 ### Kategori Menüsü {#kategori-menusu}
 
 Üst bilgideki **Tüm Kategoriler** açılır menüsü (mobilde menü içinde). Seçilen kategoriler bu
-sırayla listelenir; alt kategorileri otomatik gelir ya da **Üst öğe** seçerek elle eklenir.
+sırayla listelenir. Alt kategorileri otomatik gelir ya da **Üst öğe** seçerek elle eklenir.
 
 | Alan | Açıklama |
 |---|---|
@@ -77,7 +77,7 @@ sırayla listelenir; alt kategorileri otomatik gelir ya da **Üst öğe** seçer
 | **Menüde görünen ad** | Boşsa kategorinin adı |
 | **Alt kategorileri göster** | Yalnız ana seviyedeki öğelerde. Açıksa kategorinin alt kategorileri otomatik listelenir. Elle eklenmiş alt öğe varsa onlar gösterilir |
 
-- Tabloda **Otomatik alt kategori** olarak görünen satırlar bilgi amaçlıdır; kategori ağacından
+- Tabloda **Otomatik alt kategori** olarak görünen satırlar bilgi amaçlıdır. Kategori ağacından
   gelir, ayrıca düzenlenmez.
 - Alt öğenin kendi alt kategorileri de (üçüncü seviye) otomatik gösterilir.
 - **Menüde hiç öğe yoksa tüm ana kategoriler** alt kategorileriyle birlikte gösterilir.
@@ -101,9 +101,9 @@ sırayla listelenir; alt kategorileri otomatik gelir ya da **Üst öğe** seçer
 1. **İçerik › Menüler › Kategori Menüsü**'nde **Öğe ekle** ile kategorileri istediğiniz sırada
    ekleyin.
 2. Bir kategorinin alt kategorilerini göstermek istemiyorsanız **Alt kategorileri göster**'i
-   kapatın; yalnız bazılarını göstermek için onları **Üst öğe** seçerek elle ekleyin.
+   kapatın. Yalnız bazılarını göstermek için onları **Üst öğe** seçerek elle ekleyin.
 
-**Silmek** — sil düğmesine basıp onaylayın. Alt menüdeki öğeler de kaldırılır; bağlı kategori,
+**Silmek**: sil düğmesine basıp onaylayın. Alt menüdeki öğeler de kaldırılır. Bağlı kategori,
 marka ya da sayfa **silinmez**.
 
 ## Görünüm {#gorunum}
@@ -115,7 +115,7 @@ kaydedildi.").
 
 ### Tema renkleri {#tema-renkleri}
 
-"Varsayılan temanın renkleri; diğer tonlar bunlardan hesaplanır. Başka bir tema etkinse o temanın
+"Varsayılan temanın renkleri. Diğer tonlar bunlardan hesaplanır. Başka bir tema etkinse o temanın
 renkleri geçerli olabilir."
 
 | Renk | Nerede kullanılır |
@@ -139,11 +139,11 @@ renkleri geçerli olabilir."
 Duyurular sitenin en üstünde, **koyu bir şeritte** gösterilir: aynı anda bir duyuru görünür,
 birden fazla duyuru varsa birkaç saniyede bir sıradakine geçer.
 
-- **Duyuru ekle** ile satır eklenir; her satır bir duyurudur. En çok 20 duyuru, her biri en çok
+- **Duyuru ekle** ile satır eklenir. Her satır bir duyurudur. En çok 20 duyuru, her biri en çok
   200 karakter (ör. "2.500 ₺ üzeri kargo bedava").
 - Boş satırlar kaydedilmez. Duyuru yoksa bant sitede gizlenir.
 
-Kurulumda duyuru bandında "256BIT SSL İLE GÜVENLİ ALIŞVERİŞ YAPABİLİRSİNİZ" yazar; değiştirin ya da
+Kurulumda duyuru bandında "256BIT SSL İLE GÜVENLİ ALIŞVERİŞ YAPABİLİRSİNİZ" yazar. Değiştirin ya da
 silin.
 
 ### Alt bilgi {#alt-bilgi}
@@ -162,7 +162,7 @@ Alt bilgi, birkaç ekrandaki bilgilerden kendiliğinden oluşur:
 |---|---|
 | Logo | **Ayarlar › Genel Ayarlar** (markalama) |
 | Hakkında metni | **İçerik › Görünüm** |
-| Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** (bkz. [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri)); boş bırakılan hesap gizlenir |
+| Sosyal medya ikonları (Instagram, LinkedIn, YouTube, X, Facebook) | **Ayarlar › Genel Ayarlar › İletişim Bilgileri** (bkz. [Vitrin ayarları › İletişim Bilgileri](/vitrin/ayarlar#iletisim-bilgileri)). Boş bırakılan hesap gizlenir |
 | **Kurumsal** sütunu | **İçerik › Sayfalar**'da yerleşimi "Alt menü (Kurumsal)" olan sayfalar |
 | **Müşteri Hizmetleri** sütunu | Yerleşimi "Alt menü (Müşteri Hizmetleri)" olan sayfalar |
 | **Kategoriler** sütunu | Kategori Menüsü'nün ilk 7 öğesi |
@@ -179,11 +179,11 @@ Sayfalar vitrinde `/sayfa/{adres}` adresinde yayınlanır.
 aydınlatma metni …) bu ekrandan değil, **Ayarlar › Tanımlamalar › Sözleşmeler**'den yönetilir;
 bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler). Banka hesapları da
 **Banka Hesapları** ekranındadır (bkz. [Havale](/cari/havale)). Sayfalar bayi panelinde
-listelenmez; bayiler sözleşmeleri kendi **Sözleşmeler** menüsünde görür.
+listelenmez. Bayiler sözleşmeleri kendi **Sözleşmeler** menüsünde görür.
 :::
 
 Liste sütunları: **Başlık**, **Yerleşim**, **Durum** (Yayında / Taslak), **Sıra**, **Güncelleme**,
-**İşlemler** (**Görüntüle** — vitrindeki sayfayı açar, **Düzenle**, sil).
+**İşlemler** (**Görüntüle**: vitrindeki sayfayı açar, **Düzenle**, sil).
 
 | Alan | Açıklama |
 |---|---|
@@ -201,7 +201,7 @@ bağlantısı kullanın.
 ### Hazır gelen sayfalar {#hazir-sayfalar}
 
 Vitrin eklentisi kurulurken şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek
-olarak eklenmiştir." uyarısı yazar; metni kendi firmanıza göre değiştirin.
+olarak eklenmiştir." uyarısı yazar. Metni kendi firmanıza göre değiştirin.
 
 | Sayfa | Adres | Yerleşim |
 |---|---|---|
@@ -245,7 +245,7 @@ adreslerden yenilerine 301 yönlendirmesi yaptırın.
 **Yeni sayfa eklemek**
 
 1. **İçerik › Sayfalar**'da **Yeni sayfa**'ya basın.
-2. **Başlık** ve **Sayfa metni**ni girin; adresi kendiniz belirlemek istiyorsanız **URL (slug)**
+2. **Başlık** ve **Sayfa metni**ni girin. Adresi kendiniz belirlemek istiyorsanız **URL (slug)**
    yazın.
 3. **Yerleşim**'i seçin: alt bilgide hangi sütunda görüneceği ya da hiç görünmeyeceği.
 4. **Durum**'u **Yayında** yapıp **Kaydet**'e basın.

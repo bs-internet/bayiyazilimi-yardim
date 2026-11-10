@@ -31,13 +31,13 @@ Yeni birim aktif olarak eklenir.
   En çok kullandığınız birimi en üste alın.
 - **Adı değiştirmek:** birimin adını değiştirirseniz bu birimi kullanan ürünler de yeni adla
   güncellenir.
-- **Pasifleştirmek:** pasif birim yeni ürünlerde seçilemez; onu zaten kullanan ürünler birimini
+- **Pasifleştirmek:** pasif birim yeni ürünlerde seçilemez. Onu zaten kullanan ürünler birimini
   korur ve o ürünün formunda seçili görünmeye devam eder.
 - **Silmek:** ürünlerde kullanılan birim silinemez ("… üründe kullanıldığı için silinemez;
-  pasifleştirebilirsiniz"). Kullanılmayan birim onayla silinir; bu işlem geri alınamaz.
+  pasifleştirebilirsiniz"). Kullanılmayan birim onayla silinir. Bu işlem geri alınamaz.
 - **Excel aktarımı:** **Birim** sütunundaki ad listede yoksa birim otomatik eklenir (büyük /
   küçük harf farkı aynı birim sayılır). Boş hücre yeni üründe "Adet" demektir. Bkz.
   [Excel](/satis/excel#sutunlar).
 
-Birim, sepet ve sipariş ekranlarında adetin yanında gösterilir; tekliflerde her kalemin birimi
+Birim, sepet ve sipariş ekranlarında adetin yanında gösterilir. Tekliflerde her kalemin birimi
 ayrıca değiştirilebilir.

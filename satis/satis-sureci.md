@@ -15,7 +15,7 @@ ayrıntısı ilgili sayfadadır: [Siparişler](/satis/siparisler), [Sipariş det
 
 ::: info Panelden sipariş oluşturulmaz
 Yönetim panelinde "yeni sipariş" ekranı yoktur. Bir müşteri adına satış hazırlamak istiyorsanız
-panelde **teklif** oluşturup müşteriye gönderin; müşteri onaylayıp ödediğinde sipariş oluşur.
+panelde **teklif** oluşturup müşteriye gönderin. Müşteri onaylayıp ödediğinde sipariş oluşur.
 :::
 
 ## Sepetten siparişe
@@ -23,7 +23,7 @@ panelde **teklif** oluşturup müşteriye gönderin; müşteri onaylayıp ödedi
 1. Müşteri ürünü sepete ekler. Sepete yalnız satış biçimi **Sepet** olan, fiyatı 0'dan büyük ve
    stoğu yeten ürünler eklenir. Diğerleri teklif listesine gider.
 2. Ödeme adımında fatura / teslimat adresi, e-posta, telefon, **kargo firması** (aktif firma
-   varsa) ve **ödeme yöntemi** seçilir; ödeme formunda gösterilen sözleşme varsa onaylanır
+   varsa) ve **ödeme yöntemi** seçilir. Ödeme formunda gösterilen sözleşme varsa onaylanır
    (bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler)).
 3. Sistem kampanyaları, kargo ücretini ve (havalede) havale indirimini hesaplar.
 4. **Sipariş oluşur**: numara `S` + tarih + sıra biçimindedir (ör. `S2611070001`).
@@ -51,13 +51,13 @@ PayTR ya da iyzico eklentisi kuruluysa sunulur. Bkz. [Kartla ödeme](/cari/kartl
 **Banka Hesapları**'nda havale açıksa ve en az bir aktif hesap varsa sunulur. Bkz.
 [Havale ve ödeme bildirimi](/cari/havale).
 
-1. Sipariş **Ödeme Bekleniyor** durumunda kalır; stok ayrılmıştır.
+1. Sipariş **Ödeme Bekleniyor** durumunda kalır. Stok ayrılmıştır.
 2. Müşteri havaleyi yapar, isterse ödeme bildirimi gönderir.
 3. Paranın geldiğini gördüğünüzde sipariş detayında **Ödeme › Ödendi** deyin (ya da ödeme
    bildirimini onaylayın). Sipariş **Hazırlanıyor** olur, cari kayıtları yazılır.
 
 ::: warning Ödenmeyen havale siparişi
-Havale siparişlerinin süresi dolmaz; ödeme gelmezse sipariş "Ödeme Bekleniyor"da kalır ve stok
+Havale siparişlerinin süresi dolmaz. Ödeme gelmezse sipariş "Ödeme Bekleniyor"da kalır ve stok
 ayrılmış durur. Ödemeyecek siparişi **İptal Edildi** durumuna alın, stok geri eklenir.
 :::
 
@@ -74,11 +74,11 @@ Yalnız vadeli çalışan bayilere sunulur. Bkz. [Peşin ve vadeli çalışma](/
 
 ## Hazırlık, kargo ve teslim
 
-1. **Hazırlanıyor** — depo ekibi siparişi toplar. Birden çok siparişi birlikte toplamak için
+1. **Hazırlanıyor**: depo ekibi siparişi toplar. Birden çok siparişi birlikte toplamak için
    [Toplama listesi](/stok/toplama-listesi) kullanılır.
-2. **Kargoya Verildi** — durum değiştirilirken kargo firması ve takip numarası girilir;
+2. **Kargoya Verildi**: durum değiştirilirken kargo firması ve takip numarası girilir;
    müşteriye takip numarasıyla e-posta gider.
-3. **Tamamlandı** — teslim edilen sipariş kapatılır, sonra fatura numarası girilir.
+3. **Tamamlandı**: teslim edilen sipariş kapatılır, sonra fatura numarası girilir.
 4. Gerekirse müşteri iade süresi içinde **iade talebi** açar. Bkz. [İadeler](/satis/iadeler).
 
 ## Durum akışı
@@ -117,4 +117,4 @@ stok ve cari etkisi için bkz. [Durum geçişleri](/satis/siparisler#durum-gecis
 | Teklif / iade adımları | Bkz. [Teklifler](/satis/teklifler#e-postalar), [İadeler](/satis/iadeler#e-postalar) | |
 
 Bildirim adresi **Ayarlar › Tanımlamalar › Satış Ayarları › Bildirimler**'deki **Bildirim
-e-postası** alanıdır; boşsa size e-posta gitmez. Bkz. [Satış ayarları](/satis/satis-ayarlari#bildirimler).
+e-postası** alanıdır. Boşsa size e-posta gitmez. Bkz. [Satış ayarları](/satis/satis-ayarlari#bildirimler).
