@@ -4,7 +4,7 @@ layout: home
 hero:
     name: Bayi Yazılımı
     text: Yardım merkezi
-    tagline: Kurulumdan cari hesaba, stoktan kampanyalara: sistemi adım adım öğrenin.
+    tagline: "Kurulumdan cari hesaba, stoktan kampanyalara: sistemi adım adım öğrenin."
     image:
         src: /logo.png
         alt: Bayi Yazılımı
