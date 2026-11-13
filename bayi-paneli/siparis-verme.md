@@ -77,6 +77,23 @@ Her üründe şunları görürsünüz:
 
 Başarılı eklemede "(ürün) sepete eklendi." mesajı görünür.
 
+### Excel ile toplu sipariş {#excel}
+
+Yüzlerce kalemlik siparişi tek tek eklemek yerine **Excel ile sipariş** düğmesini kullanın:
+
+1. İlk sütunda **stok kodu ya da barkod**, ikinci sütunda **adet** olan bir liste hazırlayın.
+   **Boş şablonu indir** hazır bir Excel dosyası verir.
+2. Dosyayı (.xlsx ya da .csv) yükleyin **ya da** Excel'de satırları seçip kopyalayın ve kutuya yapıştırın.
+3. **Sepete ekle**'ye basın.
+
+- Başlık satırı varsa kendiliğinden atlanır. Adet boşsa 1 sayılır.
+- Aynı ürün birden çok satırdaysa adetler toplanır.
+- Tek seferde en fazla 1.000 satır yüklenir.
+- Yukarıdaki [adet kuralları](#adet-kurallari) her satıra aynen uygulanır.
+
+Eklenemeyen satırlar (bulunamayan ürün, yetersiz stok, yalnız teklifle satılan ürün, geçersiz adet …)
+nedenleriyle sayfanın üstünde listelenir; eklenenler sepete düşer.
+
 ## Sepetiniz {#sepet}
 
 Sepete eklediğiniz ürünler aramanın altındaki tabloda listelenir.

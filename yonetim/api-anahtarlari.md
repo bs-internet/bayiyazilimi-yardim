@@ -54,15 +54,22 @@ Sayfanın altındaki **Yeni anahtar oluştur** bölümünü doldurun:
 
 | Yetki | Ne sağlar |
 |---|---|
-| **Ürünleri okuma** | Ürün listesi ve ürün ayrıntısı: fiyat, KDV, durum, depo bazında stok |
-| **Ürün güncelleme (fiyat, durum)** | Ürünün adı, barkodu, fiyatı, karşılaştırma fiyatı, KDV oranı, durumu, sipariş adetleri, teslim süresi ve kritik stoğu |
+| **Ürünleri okuma** | Ürün listesi ve ayrıntısı (fiyat, KDV, durum, depo bazında stok), stok listesi, kategoriler, markalar, depolar, para birimleri |
+| **Ürün ekleme, güncelleme, silme ve toplu fiyat** | Yeni ürün; ürünün adı, barkodu, fiyatı, karşılaştırma fiyatı, KDV oranı, durumu, sipariş adetleri, teslim süresi ve kritik stoğu; ürün silme; toplu fiyat güncelleme |
 | **Stok miktarı yazma** | Ürünlerin depolardaki stok miktarını toplu olarak güncelleme |
-| **Siparişleri okuma** | Sipariş listesi ve sipariş ayrıntısı: müşteri, adresler, satırlar, tutarlar, ödeme, fatura ve kargo bilgisi |
-| **Sipariş durumu ve fatura bilgisi yazma** | Sipariş durumunu değiştirme (kargo bilgisiyle), fatura numarası yazma |
-| **Cari hesapları okuma** | Cari hesap listesi ve ayrıntısı: unvan, vergi bilgileri, bakiye, kredi limiti, risk |
+| **Kategori ve marka yazma** | Kategori ve marka ekleme / güncelleme |
+| **Siparişleri okuma** | Sipariş listesi ve sipariş ayrıntısı: müşteri, adresler, satırlar, tutarlar, ödeme, fatura ve kargo bilgisi; kargo firmaları |
+| **Sipariş oluşturma, durum ve fatura bilgisi yazma** | Cari hesap adına sipariş açma, sipariş durumunu değiştirme (kargo bilgisiyle), fatura numarası yazma |
+| **Cari hesapları okuma** | Cari hesap listesi ve ayrıntısı (unvan, vergi bilgileri, bakiye, kredi limiti, risk), cari hareketler, bayi grupları |
+| **Cari hesap (bayi) oluşturma ve güncelleme** | Yeni cari hesap açma, ünvan / vergi / indirim / kredi bilgisini güncelleme |
 | **Cari hareket yazma (tahsilat, dekont)** | Cari hesaba tahsilat, borç dekontu ya da alacak dekontu işleme |
+| **Webhook adreslerini yönetme** | Webhook ekleme, açma / kapatma, silme (bkz. [Webhook'lar](/gelistirici/webhooklar)) |
 
 Kurulu eklentiler bu listeye kendi yetkilerini ekleyebilir.
+
+Aynı anahtar yapay zekâ asistanlarının bağlandığı **MCP sunucusunda** da kullanılır; ekranın üstünde
+"MCP adresi" yazar (bkz. [MCP sunucusu](/gelistirici/mcp)). Asistana ayrı ve yalnız gereken yetkileri
+olan bir anahtar verin.
 
 Kaydetmek için **Anahtar oluştur**'a basın.
 

@@ -1,9 +1,16 @@
 # REST API
 
 Bayi Yazılımı, ERP / muhasebe programları, özel yazılımlar ve ileride mobil uygulamalar için bir
-**REST API** sunar. API ürünleri, stoğu, siparişleri ve cari hesapları kapsar. Yazma işlemleri
-panelle **aynı servislerden** geçer (sipariş durum makinesi, stok kilitleri, cari defter kuralları
-API'de de geçerlidir).
+**REST API** sunar. Panelde yapılan işler API'den de yapılır: ürün, stok, fiyat, kategori / marka,
+sipariş, cari hesap ve webhook. Yazma işlemleri panelle **aynı servislerden** geçer (sipariş durum
+makinesi, stok kilitleri, cari defter ve kredi kuralları API'de de geçerlidir).
+
+::: tip Tam başvuru belgesi
+Her uç noktanın alanları, örnekleri ve yanıtları **[api.bayiyazilimi.com](https://api.bayiyazilimi.com)**
+adresindedir (OpenAPI 3.1). Kurulumunuzun tanımı `https://{alan-adınız}/api/v1/openapi.yaml` adresinden
+de alınır; Postman, Insomnia gibi araçlara içe aktarılabilir. Olay bildirimleri için bkz.
+[Webhook'lar](/gelistirici/webhooklar), yapay zekâ asistanları için bkz. [MCP sunucusu](/gelistirici/mcp).
+:::
 
 ## Temel bilgiler
 
@@ -39,13 +46,17 @@ oluşturulduğunda bir kez gösterilir.
 
 | Yetki | Paneldeki adı | Uç noktalar |
 |---|---|---|
-| `products:read` | Ürünleri okuma | `GET /products`, `GET /products/{sku}` |
-| `products:write` | Ürün güncelleme (fiyat, durum) | `PATCH /products/{sku}` |
+| — | (her anahtar) | `GET /` (anahtar ve sistem bilgisi) |
+| `products:read` | Ürünleri okuma | `GET /products`, `GET /products/{sku}`, `GET /stock`, `GET /categories`, `GET /brands`, `GET /warehouses`, `GET /currencies` |
+| `products:write` | Ürün ekleme, güncelleme, silme ve toplu fiyat | `POST /products`, `PATCH /products/{sku}`, `DELETE /products/{sku}`, `PUT /prices` |
 | `stock:write` | Stok miktarı yazma | `PUT /stock` |
-| `orders:read` | Siparişleri okuma | `GET /orders`, `GET /orders/{number}` |
-| `orders:write` | Sipariş durumu ve fatura bilgisi yazma | `PATCH /orders/{number}/status`, `PUT /orders/{number}/invoice` |
-| `accounts:read` | Cari hesapları okuma | `GET /accounts`, `GET /accounts/{code}` |
+| `catalog:write` | Kategori ve marka yazma | `POST /categories`, `PATCH /categories/{slug}`, `POST /brands`, `PATCH /brands/{slug}` |
+| `orders:read` | Siparişleri okuma | `GET /orders`, `GET /orders/{number}`, `GET /carriers` |
+| `orders:write` | Sipariş oluşturma, durum ve fatura bilgisi yazma | `POST /orders`, `PATCH /orders/{number}/status`, `PUT /orders/{number}/invoice` |
+| `accounts:read` | Cari hesapları okuma | `GET /accounts`, `GET /accounts/{code}`, `GET /accounts/{code}/transactions`, `GET /dealer-groups` |
+| `accounts:write` | Cari hesap (bayi) oluşturma ve güncelleme | `POST /accounts`, `PATCH /accounts/{code}` |
 | `ledger:write` | Cari hareket yazma (tahsilat, dekont) | `POST /accounts/{code}/transactions` |
+| `webhooks:manage` | Webhook adreslerini yönetme | `/webhooks` uç noktaları |
 
 Eklentiler bu listeye kendi yetkilerini ekleyebilir (bkz. [Eklentiler için](#eklentiler-icin)).
 
@@ -618,6 +629,43 @@ curl -X POST https://bayi.ornek.com/api/v1/accounts/B0001/transactions \
 
 Yanıttaki `type` cari defterin hareket türüdür: tahsilat `payment`, dekontlar `adjustment`;
 `direction` `debit` (borç) ya da `credit` (alacak).
+
+## Yazma isteğini iki kez işlememe {#idempotency}
+
+Ağ hatası yüzünden yanıtı alamadığınız bir yazma isteğini (`POST`, `PUT`, `PATCH`, `DELETE`) güvenle
+tekrarlamak için isteğe `Idempotency-Key` başlığı ekleyin:
+
+```bash
+curl -X POST https://bayi.ornek.com/api/v1/orders \
+  -H "Authorization: Bearer …" -H "Content-Type: application/json" \
+  -H "Idempotency-Key: erp-siparis-48213" \
+  -d '{"account":"BAYI001","payment_method":"on_account","lines":[{"sku":"URUN-001","quantity":10}]}'
+```
+
+Aynı anahtarla 24 saat içinde gelen istek yeniden işlenmez, ilk yanıt aynen döner ve yanıtta
+`Idempotent-Replayed: true` başlığı bulunur. Aynı anahtar farklı bir gövdeyle gelirse `422` döner.
+Anahtarlar API anahtarı başına ayrıdır; ERP'deki belge numarası gibi benzersiz bir değer kullanın.
+
+## 1.1 ile gelen uç noktalar {#yeni-uc-noktalar}
+
+Ayrıntılı alanlar ve örnekler [api.bayiyazilimi.com](https://api.bayiyazilimi.com)'dadır.
+
+- **Ürün ekleme / silme:** `POST /products` (fiyat KDV hariç; kategori ve marka slug, para birimi
+  kodla), `DELETE /products/{sku}` (stoğu olan ürün silinmez). `GET /products?q=` ad, stok kodu ya da
+  barkodda arar.
+- **Toplu fiyat:** `PUT /prices` ile en çok 1.000 ürünün fiyatı tek işlemde; bilinmeyen stok kodu
+  tüm isteği reddeder, değişmeyen ürün yazılmaz.
+- **Stok listesi:** `GET /stock?sku=&warehouse=` depo bazında miktarlar.
+- **Tanımlar:** kategoriler, markalar (okuma ve yazma), depolar, para birimleri ve kurlar, kargo
+  firmaları, bayi grupları.
+- **Sipariş oluşturma:** `POST /orders` cari hesap adına sipariş açar. Satırda birim fiyat (KDV dahil)
+  verilmezse bayinin fiyatı uygulanır (ürün indirimi, yoksa bayi / grup indirimi). Ödeme yöntemi
+  `on_account` (vadeli; kredi limiti ve vade kuralları panelle aynı) ya da `bank_transfer`. Stok düşer;
+  sipariş bildirimleri her sipariş gibi gider.
+- **Cari hesaplar:** `POST /accounts` (kod verilmezse üretilir), `PATCH /accounts/{code}`,
+  `GET /accounts/{code}/transactions?from=&to=`.
+- **Webhook'lar:** `/webhooks` ile adres ekleme, açma / kapatma, deneme gönderimi ve son gönderimler
+  (bkz. [Webhook'lar](/gelistirici/webhooklar)).
 
 ## Örnek: ERP eşitlemesi {#erp-tarifi}
 
