@@ -7,8 +7,8 @@ makinesi, stok kilitleri, cari defter ve kredi kuralları API'de de geçerlidir)
 
 ::: tip Tam başvuru belgesi
 Her uç noktanın alanları, örnekleri ve yanıtları **[api.bayiyazilimi.com](https://api.bayiyazilimi.com)**
-adresindedir (OpenAPI 3.1). Kurulumunuzun tanımı `https://{alan-adınız}/api/v1/openapi.yaml` adresinden
-de alınır; Postman, Insomnia gibi araçlara içe aktarılabilir. Olay bildirimleri için bkz.
+adresindedir (OpenAPI 3.1). Tanım dosyası `https://api.bayiyazilimi.com/openapi.yaml` adresinden
+alınır; Postman, Insomnia gibi araçlara içe aktarılabilir. Olay bildirimleri için bkz.
 [Webhook'lar](/gelistirici/webhooklar), yapay zekâ asistanları için bkz. [MCP sunucusu](/gelistirici/mcp).
 :::
 
