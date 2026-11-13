@@ -140,6 +140,7 @@ export default defineConfig({
                     { text: "Cari Hesabım", link: "/bayi-paneli/cari-hesabim" },
                     { text: "İadelerim", link: "/bayi-paneli/iadelerim" },
                     { text: "Sözleşmeler", link: "/bayi-paneli/sozlesmeler" },
+                    { text: "Pazaryeri mağazam", link: "/bayi-paneli/pazaryeri-magazam" },
                     { text: "Sık sorulan sorular", link: "/bayi-paneli/sss" },
                 ],
             },
@@ -161,6 +162,24 @@ export default defineConfig({
                 items: [
                     { text: "Plasiyer nedir?", link: "/plasiyer/" },
                     { text: "Plasiyer ekranı", link: "/plasiyer/plasiyer-ekrani" },
+                ],
+            },
+            {
+                text: "Sevkiyat eklentisi",
+                collapsed: true,
+                items: [
+                    { text: "Sevkiyat nedir?", link: "/sevkiyat/" },
+                    { text: "Personel ekranı", link: "/sevkiyat/personel-ekrani" },
+                ],
+            },
+            {
+                text: "Pazaryeri eklentileri",
+                collapsed: true,
+                items: [
+                    { text: "Genel bakış", link: "/pazaryeri/" },
+                    { text: "Trendyol", link: "/pazaryeri/trendyol" },
+                    { text: "Hepsiburada", link: "/pazaryeri/hepsiburada" },
+                    { text: "Bayi aktarımı", link: "/pazaryeri/bayi-aktarimi" },
                 ],
             },
             {
