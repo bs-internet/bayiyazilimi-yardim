@@ -78,7 +78,7 @@ Müşteri detayı › **Cari** sekmesi. "Cari durumu ve müşteri carisini gör�
 |---|---|---|
 | Bakiye | Her zaman | Tutar ve Borçlu / Alacaklı / Bakiye yok |
 | Çalışma şekli | Her zaman | Peşin ya da Vadeli (açık hesap). Vadelide "30 gün vade" gibi |
-| Kullanılabilir limit | Vadelide | Kredi limiti − risk. Altında "Limit … · risk … · onayda …". Limit aşıldıysa kırmızı. Limit yoksa "Limitsiz". |
+| Kullanılabilir limit | Vadelide ve kredi limiti tanımlıysa | Kredi limiti − risk. Altında "Limit … · risk … · onayda …". Limit aşıldıysa kırmızı. Limit tanımlı değilse kart görünmez. |
 | Vadesi geçen | Vadelide | Vadesi geçmiş açık sipariş borcu ve sipariş sayısı. Yoksa "Yok". |
 
 Risk ve kullanılabilir limit: [Peşin ve vadeli çalışma](/cari/vadeli-calisma#risk).
@@ -98,7 +98,8 @@ kalmış sipariş borçları listelenir: sipariş numarası, "Vade … · toplam
 | Sıralama | En yeni hareket en üstte. |
 | Alt satır | **Devir** (başlangıç tarihinden önceki bakiye), dönemin **Borç** ve **Alacak** toplamları, **Bakiye** (dönem sonu). |
 
-Ekstrenin üstündeki düğmeler (yetkiye göre): **Tahsilat ekle**, **Dekont**, **Excel**, **Yazdır**.
+Ekstrenin üstündeki düğmeler (yetkiye göre): **Tahsilat ekle**, **Dekont**, **Excel**, **Yazdır**,
+**E-postayla gönder**.
 
 ## Tahsilat ekle {#tahsilat}
 
@@ -170,6 +171,20 @@ Her ikisi de ekstrede seçili tarih aralığını kullanır.
 dönem, para birimi ve düzenlenme tarihi. Devir, hareketler ve dönem toplamı / bakiye. Sayfadaki
 **Yazdır / PDF olarak kaydet** düğmesiyle yazdırın ya da PDF kaydedin. Altta "B: borç bakiyesi
 (müşteri borçlu), A: alacak bakiyesi (müşteri alacaklı)." açıklaması yer alır.
+
+## Ekstreyi e-postayla göndermek {#e-posta}
+
+Ekstre › **E-postayla gönder**: "Ekstreyi e-postayla gönder" penceresi açılır. Tarih filtresi
+seçiliyse **seçili dönemin**, değilse **tüm hareketlerin** ekstresi Excel ekiyle gönderilir.
+Pencerede alıcı adresler listelenir:
+
+- hesabın **aktif kullanıcılarının** e-posta adresleri,
+- müşteri kaydında tanımlıysa **fatura e-postası**.
+
+**Gönder** ile "Ekstre gönderildi: *adresler*" bildirimi çıkar. Hesabın aktif kullanıcısı ve
+fatura e-postası yoksa ekstre gönderilmez ("Bu carinin aktif üyesi ya da fatura e-postası yok;
+ekstre gönderilemedi."). Gönderim etkinlik kayıtlarına yazılır. Kötüye kullanıma karşı dakikada
+en çok 10 ekstre gönderilebilir.
 
 ## Ödemeler borçları nasıl kapatır? {#fifo}
 
@@ -245,6 +260,9 @@ birimi), Hesap, Kod, beş dilim ve Toplam sütunları, en altta Toplam satırı.
 | Alan | Varsayılan | Açıklama |
 |---|---|---|
 | Ödeme yöntemleri: her yöntem için en düşük tutar | Sınır yok | Yöntemin ödeme ekranında sunulduğu en düşük sipariş tutarı (ana para biriminde, KDV dahil). Boş = sınır yok. Ör. Havale / EFT için 500 girilirse 500 TL altındaki siparişte havale seçeneği çıkmaz. Yalnız siparişte geçerlidir. |
+| Vade hatırlatma e-postaları | Hepsi kapalı | Vadesi yaklaşan ve geçen borç için bayiye ve yöneticiye giden e-postalar; her biri ayrı açılır. Bkz. [Vade hatırlatmaları](/cari/vadeli-calisma#hatirlatma). |
+| Vadesi geçen borç hatırlatma aralığı (gün) | 7 | Yalnız "Vadesi geçen borç: bayi" açıkken. Borç ödenene kadar bu kadar günde bir yeniden hatırlatılır. 0: yalnız bir kez. |
+| Bayiye kredi limitini göster | Açık | Açıkken limiti tanımlı bayi Cari Hesabım ekranında limitini, riskini ve kullanılabilir limitini görür. Limiti tanımlı olmayan bayiye hiç gösterilmez. Yönetici her durumda müşteri detayında görür. |
 | Vade uyarı süresi (gün) | 7 | Zorunlu, 0-365. Vadesine bu kadar gün kalan borçlar bayinin Cari Hesabım ekranında ve müşteri detayında "vadesi yaklaşan" olarak gösterilir. |
 | Çek / senet portföyünü kullan | Kapalı | Açıkken tahsilatta çek ve senet seçilebilir, **Ödemeler** menüsünde **Çek / Senet** görünür. Kapalıyken hiçbir ekranda yer almaz. Kayıtlı çek / senetler silinmez. |
 | Vadesi yaklaşan uyarısı (gün) | 7 | 0-365. Vadesine bu kadar gün kalan portföydeki çek / senetler listede işaretlenir. |
@@ -259,6 +277,7 @@ birimi), Hesap, Kod, beş dilim ve Toplam sütunları, en altta Toplam satırı.
 | Borç / alacak dekontu ve açılış bakiyesi gir | **Dekont** düğmesi |
 | Elle girilen cari kaydı iptal et | Ekstredeki iptal düğmesi |
 | Cari ekstreyi Excel'e aktar / Cari ekstreyi yazdır | **Excel** / **Yazdır** |
+| Cari ekstreyi e-postayla gönder | **E-postayla gönder** |
 | Geciken ödemeleri görüntüle / Excel'e aktar | Geciken Ödemeler ekranı ve Excel |
 | Cari ayarlarını görüntüle / güncelle | Cari Ayarları |
 

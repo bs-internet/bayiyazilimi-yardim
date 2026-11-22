@@ -166,6 +166,21 @@ giriş ekranına yönlendirilir, herkese açık kayıt yoktur, müşteri hesabı
    çalışmaya devam edersiniz.
 4. İşiniz bitince **Bakım modu**'nu kapatıp yeniden kaydedin.
 
+## Yedekleme {#yedekleme}
+
+**Ayarlar › Genel Ayarlar › Yedekleme**: günlük veritabanı yedeğinin e-postayla gönderilmesi.
+Ekranın üstünde yedeğin hangi saatte alındığı ve sunucuda kaç yedek saklandığı yazar; yanında
+**Yedek e-postayla gönderiliyor** ya da **Yedek e-postayla gönderilmiyor** rozeti görünür.
+
+| Alan | Açıklama |
+|---|---|
+| **E-posta adresleri** | Günlük yedeğin gideceği adresler. Birden çok adres virgülle ayrılır. Boş bırakılırsa yedek e-postayla gönderilmez (sunucunun `.env` dosyasında `BAYIYAZILIMI_BACKUP_MAIL_TO` varsa o kullanılır) |
+| **Zip şifresi** | En az 8 karakter. Yedek bu şifreyle AES-256 şifreli zip olarak gönderilir. **Şifre olmadan yedek hiç gönderilmez.** Kayıtlı şifre gösterilmez; boş bırakılırsa korunur, değiştirmek için yenisini yazın |
+
+Şifreyi güvenli bir yerde saklayın: zip yalnız onunla açılır. Yedek tüm veritabanını içerdiği
+için bu ayarları **yalnız Super Admin** değiştirebilir. Yedeğin nasıl alındığı:
+[Otomatik veritabanı yedeği](/baslangic/guncelleme-yedekleme#otomatik-yedek).
+
 ## Eklentiler
 
 Eklentiler artık Genel Ayarlar içinde değil, Ayarlar menüsünde kendi bölümündedir:

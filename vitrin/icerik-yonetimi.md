@@ -198,6 +198,12 @@ Liste sütunları: **Başlık**, **Yerleşim**, **Durum** (Yayında / Taslak), *
 "Menüde gösterme" yerleşimli bir sayfayı üst menüye eklemek için **Ana Menü**'de **Sayfa**
 bağlantısı kullanın.
 
+::: tip Yer tutucular
+Sayfa metninde `{unvan}`, `{adres}`, `{telefon}`, `{eposta}`, `{banka_hesaplari}` gibi yer
+tutucular kullanılabilir; sayfa gösterilirken Kurumsal Bilgiler ve Banka Hesapları'ndaki güncel
+değerle doldurulur. Tam liste: [Tanımlamalar › Yer tutucular](/yonetim/tanimlamalar#yer-tutucular).
+:::
+
 ### Hazır gelen sayfalar {#hazir-sayfalar}
 
 Vitrin eklentisi kurulurken şu sayfalar **örnek metinle** gelir. Her birinde "Bu metin örnek

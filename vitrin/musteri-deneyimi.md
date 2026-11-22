@@ -198,9 +198,10 @@ yazar. Bkz. [Havale ve ödeme bildirimi](/cari/havale), [Kartla ödeme](/cari/ka
 
 - **Sipariş Notu**: isteğe bağlı, en çok 2.000 karakter.
 - Sözleşme onayı: **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Ödeme formunda göster**
-  işaretli aktif sözleşme varsa zorunlu bir onay kutusu çıkar, ör. "**Satış Sözleşmesi** ve
-  **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı metni bir
-  pencerede açan bir bağlantıdır. İşaretli sözleşme yoksa onay kutusu çıkmaz (bkz.
+  işaretli her aktif sözleşme için kendi onay kutusu çıkar, ör. "**Mesafeli Satış Sözleşmesi** metnini okudum, onaylıyorum." Her kutuyu
+  işaretlemek zorunludur. Sözleşme adı metni bir pencerede açan bir bağlantıdır. İşaretli sözleşme
+  yoksa onay kutusu çıkmaz. Altındaki **ticari ileti** kutusu ("Kampanya ve yenilikler hakkında
+  e-posta ve telefonla ticari ileti almak istiyorum.") isteğe bağlıdır (bkz.
   [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler)).
 - **Siparişi Onayla** (kartta **Ödemeye Geç**) siparişi oluşturur.
 

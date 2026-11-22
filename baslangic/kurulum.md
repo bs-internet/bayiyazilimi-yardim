@@ -201,7 +201,7 @@ yazdırılır. Sistem zaten kuruluysa komut "Sistem zaten kurulu." deyip hiçbir
 | Vergi oranları | KDV %20 (varsayılan), KDV %10, KDV %0 |
 | Birimler | Adet, Paket, Kutu, Koli, Set, Takım, Rulo, Litre, Kg, Metre |
 | Depo | Merkez Depo (varsayılan depo) |
-| Sözleşmeler | Satış Sözleşmesi, Üyelik Sözleşmesi, KVKK Aydınlatma Metni, Garanti ve İade Şartları: **pasif taslaklar**, metinleri henüz girilmemiştir. Bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler) |
+| Sözleşmeler | Mesafeli Satış Sözleşmesi, Üyelik Sözleşmesi, KVKK Aydınlatma Metni, Garanti ve İade Şartları: **pasif taslaklar**, metinleri henüz girilmemiştir. Bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler) |
 | Kargo | Yurtiçi, Aras ve MNG Kargo. Örnek desi fiyatlarıyla (kendi anlaşmanıza göre düzenleyin) |
 | Ayarlar | Genel ayarların ve mağaza ayarlarının varsayılanları. Zaman dilimi İstanbul |
 | Görevler | Super Admin, Admin ve hazır görevler (Mağaza Yöneticisi, Satış Sorumlusu, Depo Sorumlusu, Katalog Sorumlusu). Bkz. [Görevler ve yetkiler](/yonetim/roller-yetkiler) |
@@ -232,6 +232,10 @@ Bu satır şu görevleri zamanı gelince çalıştırır:
 | TCMB kurlarını güncelle (Para Birimleri ekranında otomatik güncelleme açıksa) | Hafta içi 09:05 ve 15:45 |
 | Yarım kalan kart ödemelerini "başarısız" yap, stoğu geri ekle | 5 dakikada bir |
 | Son kullanma tarihi geçen lotları satılabilir stoktan düş | Her gece 00:10 |
+| Stok rezervasyon süresini aşan ödenmemiş / onaylanmamış siparişleri kapat, stoğu geri ekle | Saatte bir |
+| Vade hatırlatma e-postaları (Cari Ayarları'nda açıksa; bkz. [Vade hatırlatmaları](/cari/vadeli-calisma#hatirlatma)) | Her gün 09:00 |
+| Veritabanı yedeği (bkz. [Otomatik yedek](/baslangic/guncelleme-yedekleme#otomatik-yedek)) | Her gece 03:30 |
+| Kuyruktaki e-postaları gönder | Her dakika |
 
 Paylaşımlı hostingde cron ekleme: [Paylaşımlı hosting › Cron](/baslangic/paylasimli-hosting#cron).
 
@@ -241,8 +245,8 @@ Bildirim e-postaları varsayılan olarak **kuyrukta** (arka planda) gönderilir.
 
 1. `.env` dosyasına e-posta sunucusu bilgilerini girin (`MAIL_*`). Kurulumdan çıkan dosyada
    e-postalar gönderilmez, yalnız günlük dosyasına yazılır.
-2. Kuyruğu işleyecek bir süreç tanımlayın (VPS'te supervisor) ya da paylaşımlı hostingde
-   e-postaları anında gönderecek şekilde ayarlayın.
+2. [Cron](#cron) satırını ekleyin: kuyruk her dakika onunla boşaltılır. VPS'te isterseniz ayrıca
+   sürekli çalışan bir kuyruk işleyicisi (supervisor) tanımlayabilirsiniz.
 
 Ayrıntılar: [VPS › E-posta](/baslangic/vps#e-posta) ve
 [Paylaşımlı hosting › E-posta](/baslangic/paylasimli-hosting#e-posta). Sistemin hangi

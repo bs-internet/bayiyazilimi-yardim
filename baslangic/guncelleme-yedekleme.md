@@ -38,6 +38,31 @@ tar czf dosyalar-$(date +%F).tar.gz -C /var/www/bayiyazilimi storage/app .env
 Bu komutları her gece çalışan bir cron'a bağlayın ve yedekleri **başka bir sunucuya** taşıyın;
 aynı sunucudaki yedek, sunucu kaybında işe yaramaz.
 
+### Otomatik veritabanı yedeği {#otomatik-yedek}
+
+[Cron](/baslangic/kurulum#cron) kuruluysa sistem veritabanının yedeğini **her gece 03:30'da**
+kendisi alır (`php artisan bayi:backup`). Yedek sunucuda `storage/app/private/backups/`
+klasörüne yazılır; en yeni **14** yedek tutulur, eskileri silinir. Sunucuda `mysqldump` gerekir.
+
+Yedeğin sunucu dışında da durması için **e-postayla** gönderilmesini isteyebilirsiniz:
+**Ayarlar › Genel Ayarlar › Yedekleme** ekranında adres ve zip şifresi girin (bkz.
+[Genel ayarlar › Yedekleme](/yonetim/genel-ayarlar#yedekleme)). Yedek her gece bu adreslere
+**AES-256 şifreli zip** eki olarak gider. Zip'i 7-Zip ya da WinRAR ile açın; Windows'un kendi zip
+açıcısı AES şifreli dosyayı açamaz. 20 MB'tan büyük yedek eklenmez, e-posta yalnız yedeğin
+alındığını bildirir.
+
+| `.env` ayarı | Varsayılan | Ne işe yarar |
+|---|---|---|
+| `BAYIYAZILIMI_BACKUP_KEEP` | `14` | Sunucuda tutulacak yedek sayısı |
+| `BAYIYAZILIMI_BACKUP_AT` | `03:30` | Yedeğin alınacağı saat |
+| `BAYIYAZILIMI_BACKUP_MAIL_TO` | boş | Panelde adres girilmemişse yedeğin gideceği adres(ler) |
+| `BAYIYAZILIMI_BACKUP_MAIL_PASSWORD` | boş | Panelde şifre girilmemişse zip şifresi |
+
+::: warning Yalnız veritabanı
+Otomatik yedek veritabanını alır. Yüklenen dosyaları (`storage/app`) ve `.env`'yi yukarıdaki
+gibi ayrıca yedekleyin.
+:::
+
 ::: tip Ne zaman yedek alınır?
 En azından: her güncellemeden önce, toplu ürün aktarımı (Excel) gibi büyük işlemlerden önce ve
 düzenli olarak her gün.

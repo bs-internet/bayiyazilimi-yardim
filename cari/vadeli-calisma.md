@@ -134,8 +134,35 @@ alacaklar **vadesi en eski** borçtan başlayarak (vadesi olmayan borçta işlem
 Dağıtım her harekette baştan yapılır. Bir tahsilatı iptal ederseniz siparişlerin ödeme durumu
 da buna göre geri döner.
 
+## Vade hatırlatmaları {#hatirlatma}
+
+Sistem, vadesi yaklaşan ve geçen borçlar için her sabah **09:00**'da e-posta gönderebilir
+([cron](/baslangic/kurulum#cron) gerekir). Muhasebe başka bir sistemde yürüyorsa oradan da
+hatırlatma gidebileceği için karışıklık olmasın diye **hepsi varsayılan kapalıdır**.
+
+**Ayarlar › Tanımlamalar › Cari Ayarları › Vade hatırlatma e-postaları** tablosunda her satır
+bayi ve yönetici için ayrı açılır:
+
+| Hatırlatma | Bayi | Yönetici |
+|---|---|---|
+| **Vadesi yaklaşan borç** (vadesine **Vade uyarı süresi** kadar gün kalan) | Borç başına **bir kez** | Her sabah güncel liste |
+| **Vadesi geçen borç** | Bir kez, sonra borç kapanana kadar **Vadesi geçen borç hatırlatma aralığı** (varsayılan 7 gün) günde bir. 0: yalnız bir kez | Her sabah güncel liste |
+
+- **Bayiye giden e-posta** yalnız kendi borçlarını sayar ("*Firma* — Vadesi yaklaşan borcunuz
+  var" / "… Vadesi geçen borcunuz var"). Hesabın aktif kullanıcılarına ve tanımlıysa fatura
+  e-postasına gider. Adresi olmayan hesaba gönderilmez; adres eklenince sıradaki sabah gönderilir.
+- **Yöneticiye giden özet** tek e-postadır: "*Firma* — Günlük vade özeti (*N* bayi)". Bayi
+  bazında borç sayısı, kalan tutar ve en eski gecikme yazar, en çok geciken bayi en üsttedir.
+  Cariyi görme yetkisi olan aktif yöneticilere gider. Listede bayi yoksa gönderilmez.
+- Kapanmış (ödenmiş) borç için hatırlatma gitmez. Ödemeler borçları [FIFO](#fifo-ornegi) ile
+  kapatır.
+
+Ekstreyi istediğiniz an elle göndermek için: [Ekstreyi e-postayla göndermek](/cari/#e-posta).
+
 ## Bayinin gördüğü {#bayi}
 
-Bayinin **Cari Hesabım** ekranında: bakiye, çalışma şekli, (vadelide) kullanılabilir limit ve
-vadesi geçen borç kartları, vadesi geçmiş ve yaklaşan borçlar listesi ve ekstre. "Yaklaşan"
-sayılması için gereken gün sayısı Cari Ayarları'ndaki **Vade uyarı süresi**dir (varsayılan 7 gün).
+Bayinin **Cari Hesabım** ekranında: bakiye, çalışma şekli, (vadelide ve kredi limiti tanımlıysa)
+kullanılabilir limit ve vadesi geçen borç kartları, vadesi geçmiş ve yaklaşan borçlar listesi ve
+ekstre. "Yaklaşan" sayılması için gereken gün sayısı Cari Ayarları'ndaki **Vade uyarı
+süresi**dir (varsayılan 7 gün). Kullanılabilir limit kartını bayiden gizlemek için Cari
+Ayarları'nda **Bayiye kredi limitini göster**'i kapatın.

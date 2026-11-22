@@ -65,6 +65,29 @@ Bildirim, stok eşiğin altına **inerken bir kez** gönderilir. Stok yeniden e�
 tekrar inerse yeniden gönderilir. Stok takibi yapılmayan ve pasif ürünler için gönderilmez.
 Eşik ve aç / kapat: **Stok Ayarları** (bkz. [Stok](/stok/)).
 
+## Cari {#cari}
+
+"Cari adresleri": hesabın aktif kullanıcıları ve tanımlıysa hesabın fatura e-postası.
+
+| Olay | Alıcı | Kanal | E-posta konusu |
+|---|---|---|---|
+| Yönetici ekstreyi gönderdi (**E-postayla gönder**) | Cari adresleri | E-posta (Excel ekli) | *Firma* — Cari hesap ekstreniz (*hesap kodu*) |
+| Borcun vadesi yaklaştı (açıksa, borç başına bir kez) | Cari adresleri | E-posta | *Firma* — Vadesi yaklaşan borcunuz var |
+| Borcun vadesi geçti (açıksa, ayarlanan aralıkla) | Cari adresleri | E-posta | *Firma* — Vadesi geçen borcunuz var |
+| Günlük vade özeti (açıksa, her sabah 09:00) | Cariyi görme yetkisi olan aktif yöneticiler | E-posta | *Firma* — Günlük vade özeti (*N* bayi) |
+
+Vade e-postaları varsayılan olarak kapalıdır. Bkz. [Vade hatırlatmaları](/cari/vadeli-calisma#hatirlatma).
+
+## Sistem {#sistem}
+
+| Olay | Alıcı | Kanal | E-posta konusu |
+|---|---|---|---|
+| Günlük veritabanı yedeği alındı (adres ve şifre girildiyse) | **Yedekleme** ekranındaki adresler | E-posta (şifreli zip ekli) | *Firma* veritabanı yedeği (*tarih*) |
+| Canlı sistemde hata oluştu | `BAYIYAZILIMI_ERROR_ALERTS_TO` adresleri, yoksa aktif Super Admin'ler | E-posta + panel içi | *Firma*: sistemde hata oluştu |
+
+Bkz. [Otomatik veritabanı yedeği](/baslangic/guncelleme-yedekleme#otomatik-yedek) ve
+[Hata bildirimleri](/baslangic/sorun-giderme#hata-bildirimi).
+
 ## Panel kullanıcıları {#panel-kullanicilari}
 
 Yöneticinin **Ayarlar › Kullanıcılar** ekranında yaptığı işlemler:
@@ -116,3 +139,6 @@ Panelde bildirim türlerini tek tek kapatma ekranı yoktur. Kapatılabilenler:
 - Firma tarafındaki sipariş / teklif / iade / havale e-postaları: **Satış Ayarları ›
   Bildirimler › Bildirim e-postası** alanını boşaltarak (hepsi birden).
 - Kritik stok bildirimleri: **Stok Ayarları**'ndan.
+- Vade hatırlatmaları ve günlük vade özeti: **Cari Ayarları › Vade hatırlatma e-postaları**'ndan
+  (varsayılan kapalı).
+- Yedek e-postası: **Genel Ayarlar › Yedekleme**'de adresi boşaltarak.

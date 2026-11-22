@@ -47,6 +47,36 @@ Tema hemen uygulanır ("Mağaza teması: *tema adı*." bildirimi). Varsayılan t
 alınır ("Tema listesi yükleniyor…"). Kurulu olanlar **Kurulu** rozetiyle işaretlidir; **İncele**
 temanın tanıtım sayfasını (önizleme ve fiyat bilgisi) açar.
 
+### Hazır temalar {#hazir-temalar}
+
+Bayi Yazılımı için yedi tema vardır. Hepsi renklerini **İçerik › Görünüm › Tema renkleri**'nden
+alır; her birinin canlı demosu bayiyazilimi.com'da.
+
+| Tema | Kimin için | Öne çıkanlar |
+|---|---|---|
+| **Atlas** | Binlerce ürünü olan toptancılar | Liste / ızgara görünümü, tüm kategorileri gösteren menü, satırdan adet girip sepete ekleme |
+| **Pazar** | Market tipi, hızlı alışveriş | Büyük arama, kategori kısayolları, kartta adet seçip tek tıkla sepet, mobilde alt gezinme |
+| **Butik** | Az ama özenli ürün, marka odaklı mağaza (giyim, dekorasyon, kozmetik) | Büyük görseller, geniş boşluklar, ortalanmış logo ve menü |
+| **Kurumsal** | Üretici ve distribütörler | Önce firma tanıtımı, büyük giriş görseli, ürün grupları, katalog görünümü, öne çıkan bayi başvurusu |
+| **Oto** | Oto yedek parça satıcıları | Araç seçici (marka › model › parça grubu), OEM / ürün kodu araması, seçilen aracı hatırlama |
+| **Hırdavat** | Hırdavat ve yapı market | Simgeli reyon menüsü, alet markaları, usta / bayi çağrısı, en az sipariş adedi bilgisi |
+| **Sanayi** | Rulman, hidrolik, pnömatik, elektrik tedarikçileri | Yazarken sonuç veren kod araması, tablo görünümlü teknik katalog |
+
+### Oto teması: araç seçici için kategori ağacı {#oto}
+
+Oto temasının araç seçicisi ayrı bir veri istemez, **kategori ağacınızdan** çalışır:
+
+| Seviye | Ne olmalı | Örnek |
+|---|---|---|
+| 1. seviye (ana kategori) | Araç markası | Renault |
+| 2. seviye | Model (ve yıl aralığı) | Clio IV (2012-2019) |
+| 3. seviye | Parça grubu | Fren Sistemi |
+
+Ürünü en alt kategoriye (parça grubuna) bağlayın. Ziyaretçi araç seçicide marka ve model seçince
+seçici o kategoriye gider; seçtiği araç tarayıcıda hatırlanır. OEM ve muadil numaraları ürünün
+**arama kelimeleri** alanına yazın; arama bunları da bulur. Araç markalarını menüde sıralamak
+için **İçerik › Menüler › Kategori Menüsü**'nü kullanın (bkz. [Kategori menüsü](/vitrin/icerik-yonetimi#kategori-menusu)).
+
 ## Tema kurulumu
 
 Tema da bir eklenti gibi sunucunuza kurulur (bkz. [Eklentiler](/yonetim/moduller#eklenti-kurulumu)).

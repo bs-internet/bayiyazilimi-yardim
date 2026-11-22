@@ -109,6 +109,10 @@ PHP'nin yolu hostinge göre değişir (`/usr/local/bin/php`, `/opt/cpanel/ea-php
 gibi). Cron'da kullanılan PHP'nin de **8.4** olması gerekir. Doğru yolu hosting firmanızdan
 öğrenebilirsiniz.
 
+Bu tek satır yeter: zamanlanmış görevler (kurlar, vade hatırlatmaları, günlük yedek …) ve
+**e-posta kuyruğu** aynı cron'la çalışır. Zamanlayıcı kuyruğu her dakika boşaltır; ayrı bir kuyruk
+işleyicisi ya da ikinci bir cron satırı gerekmez.
+
 ## 8. E-posta ayarları {#e-posta}
 
 **cPanel › Email Accounts** ile bir e-posta hesabı (ör. `bildirim@firmaniz.com`) açın ve
@@ -128,20 +132,27 @@ MAIL_FROM_NAME="Firma Adınız"
 
 587 portu kullanıyorsanız `MAIL_PORT=587` yazın ve `MAIL_SCHEME` satırını `null` bırakın.
 
-Paylaşımlı hostingde sürekli çalışan bir kuyruk işleyicisi olmadığı için e-postaların **anında**
-gönderilmesini sağlayın:
+E-postalar kuyruğa yazılır ve [cron](#cron) ile en geç bir dakika içinde gönderilir
+(`QUEUE_CONNECTION=database`, varsayılan). Cron kurulmadıysa e-postalar kuyrukta bekler.
+
+::: details Cron kullanamıyorsanız
+`.env`'de `QUEUE_CONNECTION=sync` yazarsanız e-posta, işlemi yapan kişinin isteği sırasında
+gönderilir (işlem biraz daha uzun sürer). Kurlar, hatırlatmalar ve yedek gibi zamanlanmış
+görevler ise cron olmadan hiç çalışmaz.
+:::
+
+## Cloudflare kullanıyorsanız {#cloudflare}
+
+Site Cloudflare (ya da başka bir proxy / CDN) arkasındaysa `.env`'ye şu satırı ekleyin:
 
 ```ini
-QUEUE_CONNECTION=sync
+BAYIYAZILIMI_TRUSTED_PROXIES=cloudflare
 ```
 
-Böylece e-posta, işlemi yapan kişinin isteği sırasında gönderilir (işlem biraz daha uzun
-sürebilir). Alternatif olarak hosting izin veriyorsa ikinci bir cron satırıyla kuyruğu dakikada
-bir boşaltabilirsiniz:
-
-```
-cd /home/hesabim/bayiyazilimi && /usr/local/bin/php artisan queue:work --stop-when-empty >> /dev/null 2>&1
-```
+Böylece giriş kayıtlarında, etkinlik kayıtlarında ve deneme sınırlarında ziyaretçinin gerçek IP
+adresi kullanılır. Yazılmazsa herkes Cloudflare'in adresinden geliyor görünür; giriş deneme
+sınırı bütün kullanıcılara birden uygulanabilir. Cloudflare dışı bir proxy için IP / CIDR
+adreslerini virgülle yazın.
 
 ::: tip .env değişikliğinden sonra
 `.env` dosyasını değiştirdikten sonra **Ayarlar › Ön Bellek Yönetimi** ekranından

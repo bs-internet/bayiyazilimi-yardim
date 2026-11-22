@@ -118,6 +118,16 @@ sudo supervisorctl start bayiyazilimi-queue
 Sistemi her güncellediğinizde işleyicinin yeni kodu alması için `php artisan queue:restart`
 çalıştırın (supervisor süreci kendiliğinden yeniden başlatır).
 
+::: tip Supervisor şart değil
+Varsayılan olarak zamanlayıcı da kuyruğu her dakika boşaltır; yalnız cron'la da e-postalar en
+geç bir dakikada gider. Supervisor kurduysanız bu çift işlemeyi kapatmak için `.env`'ye
+`BAYIYAZILIMI_QUEUE_VIA_SCHEDULER=false` yazın.
+:::
+
+Sunucu Cloudflare ya da başka bir proxy arkasındaysa `.env`'ye
+`BAYIYAZILIMI_TRUSTED_PROXIES=cloudflare` (ya da proxy'nin IP / CIDR adresleri) yazın; bkz.
+[Cloudflare kullanıyorsanız](/baslangic/paylasimli-hosting#cloudflare).
+
 ## 6. E-posta {#e-posta}
 
 `.env` dosyasında e-posta sunucusu bilgilerini girin:

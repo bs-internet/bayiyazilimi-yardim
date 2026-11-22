@@ -237,11 +237,13 @@ Ayrıntı: [Peşin ve vadeli çalışma](/cari/vadeli-calisma).
 Sağdaki özette ürünler (adet ve tutarlarıyla), kampanya indirimi, ara toplam, KDV, kargo ve
 genel toplam yer alır.
 
-Firmamız siparişte onaylanacak sözleşme belirlediyse bir onay kutusu çıkar ve
-işaretlemeniz zorunludur. Kutunun metni sözleşmelerin adlarını sayar, ör. "**Satış Sözleşmesi**
-ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum." Her sözleşme adı bir
-bağlantıdır. Tıklayınca metin bir pencerede açılır. Onaylanacak sözleşme yoksa onay kutusu da
-çıkmaz. Sözleşmelerin tamamını [Sözleşmeler](/bayi-paneli/sozlesmeler) menüsünde de
+Firmamız siparişte onaylanacak sözleşme belirlediyse her sözleşme için ayrı bir onay kutusu
+çıkar, ör. "**Mesafeli Satış Sözleşmesi** metnini okudum, onaylıyorum." Hepsini işaretlemeniz
+zorunludur. Sözleşme adı bir bağlantıdır; tıklayınca metin bir pencerede açılır. Onaylanacak
+sözleşme yoksa onay kutusu da çıkmaz.
+
+Altında isteğe bağlı bir kutu daha vardır: "Kampanya ve yenilikler hakkında e-posta ve telefonla
+ticari ileti almak istiyorum." İşaretlemeseniz de sipariş verilir. Sözleşmelerin tamamını [Sözleşmeler](/bayi-paneli/sozlesmeler) menüsünde de
 okuyabilirsiniz.
 
 Son düğme:

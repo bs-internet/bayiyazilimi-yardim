@@ -136,3 +136,18 @@ geçerlidir).
 ## /kurulum adresi "bulunamadı" diyor
 
 Bu normaldir: sistem kurulduktan sonra sihirbaz kapanır. Giriş için `/login` adresini kullanın.
+
+## Hata bildirimleri {#hata-bildirimi}
+
+Canlı sistemde (`APP_ENV=production`) beklenmeyen bir hata oluşursa günlük dosyasına
+(`storage/logs`) yazılır ve ayrıca bildirilir: "*Firma adı*: sistemde hata oluştu" konulu bir
+e-posta ve panelde **Sistemde hata oluştu** bildirimi. İçinde hatanın türü, yeri ve mesajı yazar.
+
+- Bildirim `.env`'deki `BAYIYAZILIMI_ERROR_ALERTS_TO` adreslerine (virgülle ayrılmış) gider. Boşsa
+  aktif **Super Admin**'lere gider.
+- Aynı hata **60 dakikada bir** bildirilir (`BAYIYAZILIMI_ERROR_ALERTS_THROTTLE`, dakika); saatte en
+  çok 20 bildirim gönderilir. Hata tekrar ediyorsa ayrıntısı günlük dosyasındadır.
+- Bildirimi kapatmak için `BAYIYAZILIMI_ERROR_ALERTS=false`; yerel kurulumda varsayılan olarak
+  kapalıdır.
+- Bildirim e-postası kuyruğa alınmadan hemen gönderilir: kuyruk bozuk olsa da haberiniz olur.
+  E-posta ayarları çalışmıyorsa yalnız panel bildirimi düşer.

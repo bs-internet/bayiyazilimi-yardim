@@ -12,7 +12,7 @@ bildirimini ve kartla cari ödemeyi de bu ekrandan yaparsınız.
 |---|---|
 | **Bakiye** | Cari bakiyeniz. Altında **Borçlu** (bize borcunuz var), **Alacaklı** (alacağınız var) ya da **Bakiye yok** yazar |
 | **Çalışma şekli** | **Peşin** ya da **Vadeli (açık hesap)**. Vadeli çalışıyorsanız altında "N gün vade" |
-| **Kullanılabilir limit** | Yalnız vadeli çalışıyorsanız. Altında limitiniz, riskiniz ve varsa onay bekleyen sipariş tutarı yazar. Limit tanımlı değilse **Limitsiz**. Limit aşıldıysa kırmızı görünür |
+| **Kullanılabilir limit** | Yalnız vadeli çalışıyorsanız ve size bir kredi limiti tanımlıysa (firmamız bu kartı kapatmış olabilir). Altında limitiniz, riskiniz ve varsa onay bekleyen sipariş tutarı yazar. Limit aşıldıysa kırmızı görünür |
 | **Vadesi geçen** | Yalnız vadeli çalışıyorsanız. Vadesi geçmiş borç tutarı ve kaç siparişe ait olduğu (yoksa **Yok**) |
 
 Limit, risk ve vadenin nasıl hesaplandığı: [Peşin ve vadeli çalışma](/cari/vadeli-calisma).
@@ -28,6 +28,10 @@ sipariş açılır), "Vade … · toplam …" ve bir etiket:
 
 Ödemeleriniz en eski borcunuzdan başlayarak kapatır. Listede borçların kalan tutarı görünür.
 Açık borcunuz yoksa bu bölüm görünmez.
+
+Firmamız açtıysa vadesi yaklaşan ve geçen borçlarınız için e-posta hatırlatması da alırsınız.
+Hesap ekstreniz Excel ekiyle e-postanıza da gönderilebilir. Bu e-postalar hesabınızın aktif
+kullanıcılarına ve fatura e-postanıza gider.
 
 ## Düğmeler
 

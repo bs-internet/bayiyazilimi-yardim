@@ -217,20 +217,56 @@ ekranındaki sil düğmesini kullanın (onay sorulur).
 
 ### Ödeme formunda nasıl görünür? {#sozlesme-onayi}
 
-Ödeme formunda göster işaretli en az bir **aktif** sözleşme varsa bayinin sepet ödemesinde,
-teklif ödemesinde ve (vitrin kuruluysa) vitrinin ödeme ekranında **tek bir zorunlu onay kutusu**
+Ödeme formunda göster işaretli her **aktif** sözleşme, bayinin sepet ödemesinde, teklif
+ödemesinde ve (vitrin kuruluysa) vitrinin ödeme ekranında **kendi zorunlu onay kutusuyla**
 çıkar:
 
-> **Satış Sözleşmesi** ve **KVKK Aydınlatma Metni** metinlerini okudum, onaylıyorum.
+> ☐ **Mesafeli Satış Sözleşmesi** metnini okudum, onaylıyorum.
+> ☐ **KVKK Aydınlatma Metni** metnini okudum, onaylıyorum.
 
-Her sözleşme adı bir bağlantıdır. Tıklayınca metin bir pencerede açılır. İşaretli aktif sözleşme
-yoksa onay kutusu hiç çıkmaz. Vitrinin kayıt formunda da **Üyelik formunda göster** işaretli
-sözleşmeler için aynı şekilde çalışır.
+Sözleşme adı bir bağlantıdır. Tıklayınca metin bir pencerede açılır. Kutulardan biri bile
+işaretlenmezse sipariş verilmez; uyarı o sözleşmenin adını söyler. İşaretli aktif sözleşme yoksa
+onay kutusu çıkmaz. Vitrinin kayıt formunda **Üyelik formunda göster** işaretli sözleşmeler
+onaylatılır.
 
 ::: info Onay ayrıca kaydedilmez
-Onay kutusu işaretlenmeden sipariş (ya da üyelik) tamamlanmaz. Ancak hangi sözleşmenin hangi
+Onay kutuları işaretlenmeden sipariş (ya da üyelik) tamamlanmaz. Ancak hangi sözleşmenin hangi
 sürümünün onaylandığı ayrıca kaydedilmez.
 :::
+
+### Ticari elektronik ileti onayı {#ticari-ileti}
+
+Sözleşme kutularının altında **isteğe bağlı** bir kutu daha vardır:
+
+> ☐ Kampanya ve yenilikler hakkında e-posta ve telefonla ticari ileti almak istiyorum.
+
+İşaretlemek zorunlu değildir; sipariş onaysız da verilir. İşaretlenirse onay zamanı siparişe
+yazılır ve sipariş detayında "Ticari ileti onayı: *tarih*" olarak görünür. Vitrinin misafir teklif
+formunda da aynı kutu vardır; teklif detayında **Ticari ileti onayı** satırı "Verildi (*tarih*,
+IP: …)" ya da "Verilmedi" yazar. Ticari ileti göndermeden önce bu kaydı kontrol edin (İYS'ye
+kayıt sizin sorumluluğunuzdadır).
+
+### Metinlerde yer tutucular {#yer-tutucular}
+
+Sözleşme metninde firma bilgilerini elle yazmak yerine yer tutucu kullanabilirsiniz. Metin
+gösterilirken **Genel Ayarlar › Kurumsal Bilgiler** ve aktif **Banka Hesapları**'ndaki güncel
+değerle doldurulur; bilgileriniz değişince sözleşmeleri ayrıca düzeltmeniz gerekmez. Sözleşme
+formunun yanındaki **Yer tutucular** kartında liste vardır; her birinin yanındaki düğme kopyalar.
+
+| Yer tutucu | Yerine yazılan |
+|---|---|
+| `{unvan}` | Firma ünvanı |
+| `{vergi_dairesi}` | Vergi dairesi |
+| `{vergi_no}` | Vergi no |
+| `{mersis_no}` | MERSİS no |
+| `{adres}` | Adres (tek satır) |
+| `{telefon}` | Telefon |
+| `{eposta}` | E-posta |
+| `{web}` | Site adresi |
+| `{banka_hesaplari}` | Aktif banka hesapları (tablo: banka, hesap sahibi, IBAN, para birimi) |
+
+Aynı yer tutucular vitrinin içerik sayfalarında da çalışır. Eklentiler kendi yer tutucularını
+ekleyebilir; o zaman listede görünürler.
 
 ### Kurulumla gelen taslaklar {#hazir-sozlesmeler}
 
@@ -239,7 +275,7 @@ girilmedi." notu yazar:
 
 | Sözleşme | Gösterildiği yer |
 |---|---|
-| Satış Sözleşmesi | Ödeme formu |
+| Mesafeli Satış Sözleşmesi | Ödeme formu |
 | Üyelik Sözleşmesi | Üyelik formu |
 | KVKK Aydınlatma Metni | Ödeme formu ve üyelik formu |
 | Garanti ve İade Şartları | Genel |
