@@ -1,8 +1,8 @@
 # Vitrin nedir?
 
 ::: info Ek eklenti
-Vitrin, ayrıca satılan bir eklentidir. Bilgi ve satın alma için
-[bayiyazilimi.com](https://bayiyazilimi.com).
+Vitrin, ayrıca satılan bir eklentidir. Bilgi, demo ve satın alma için
+[market.bayiyazilimi.com](https://market.bayiyazilimi.com).
 :::
 
 Bayi Yazılımı kendi başına bir **B2B** sistemidir: yalnız sizin eklediğiniz bayiler giriş yapıp

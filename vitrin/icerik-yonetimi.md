@@ -174,10 +174,11 @@ Alt bilgi, birkaç ekrandaki bilgilerden kendiliğinden oluşur:
 **İçerik › Sayfalar** Hakkımızda, sipariş ve teslimat, gizlilik gibi içerik sayfalarını yönetir.
 Sayfalar vitrinde `/sayfa/{adres}` adresinde yayınlanır.
 
-::: info Sözleşmeler burada değil
-Ödeme ve üyelik formunda onaylatılan sözleşmeler (satış sözleşmesi, üyelik sözleşmesi, KVKK
-aydınlatma metni …) bu ekrandan değil, **Ayarlar › Tanımlamalar › Sözleşmeler**'den yönetilir;
-bkz. [Tanımlamalar › Sözleşmeler](/yonetim/tanimlamalar#sozlesmeler). Banka hesapları da
+::: info Yasal metinler burada değil
+Yasal metinler (satış sözleşmesi, üyelik sözleşmesi, KVKK aydınlatma metni …) bu ekrandan değil,
+**Ayarlar › Tanımlamalar › Sözleşmeler**'den yönetilir. Orada **Sitede sayfa olarak yayınla**
+işaretlenen sözleşme, vitrinde içerik sayfası gibi `/sayfa/{kısa ad}` adresinde yayınlanır ve alt
+menüye eklenir; bkz. [Sitede yayınlama](/yonetim/tanimlamalar#sitede-yayinlama). Banka hesapları da
 **Banka Hesapları** ekranındadır (bkz. [Havale](/cari/havale)). Sayfalar bayi panelinde
 listelenmez. Bayiler sözleşmeleri kendi **Sözleşmeler** menüsünde görür.
 :::

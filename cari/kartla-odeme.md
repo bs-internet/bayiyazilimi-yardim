@@ -1,7 +1,7 @@
 # Kartla ödeme
 
 Kredi / banka kartıyla ödeme **eklentilerle** gelir: **PayTR** ve **iyzico**. Bu eklentiler ücretsizdir;
-bilgi ve kurulum için: [bayiyazilimi.com](https://bayiyazilimi.com). Diğer ödeme kuruluşları ve
+markette hesap açmadan indirilir: [market.bayiyazilimi.com](https://market.bayiyazilimi.com). Diğer ödeme kuruluşları ve
 banka sanal POS'ları talep üzerine eklenir.
 
 Eklentinin kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar. Kurulu eklentileri

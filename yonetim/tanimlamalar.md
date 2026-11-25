@@ -177,9 +177,11 @@ Birimler diğer tanımlardan farklı çalışır:
 
 ## Sözleşmeler {#sozlesmeler}
 
-**Ayarlar › Tanımlamalar › Sözleşmeler**: satış sözleşmesi, KVKK aydınlatma metni, garanti ve
-iade şartları gibi metinler. Aktif sözleşmeler bayi panelinin **Sözleşmeler** menüsünde
-listelenir. İsterseniz ödeme formunda (vitrin kuruluysa üyelik formunda da) onaylatılır.
+**Ayarlar › Tanımlamalar › Sözleşmeler**: "Yasal metinlerin tek yeri: ödeme / üyelik formunda
+onaylatılır, sitede sayfa olarak yayınlanır. Aktif sözleşmelerin hepsi bayi panelindeki
+Sözleşmeler bölümünde de okunur." Satış sözleşmesi, KVKK aydınlatma metni, garanti ve iade
+şartları gibi metinler burada tutulur. İsterseniz ödeme formunda (vitrin kuruluysa üyelik formunda
+da) onaylatılır, vitrin kuruluysa sitede herkese açık sayfa olarak da yayınlanır.
 
 ### Liste
 
@@ -192,7 +194,8 @@ yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
 |---|---|
 | **Ödeme formu** | Siparişin ödeme adımında onaylatılır |
 | **Üyelik formu** | Vitrinin kayıt formunda onaylatılır (yalnız vitrin kuruluysa) |
-| **Genel** | Hiçbir formda onaylatılmaz. Aktifse yalnız bayi panelindeki **Sözleşmeler**'de okunur |
+| **Site** | Vitrinde herkese açık sayfa olarak yayınlanır (yalnız vitrin kuruluysa) |
+| **Genel** | Hiçbir formda onaylatılmaz, sitede yayınlanmaz. Aktifse yalnız bayi panelindeki **Sözleşmeler**'de okunur |
 
 ### Sözleşme formu
 
@@ -205,15 +208,30 @@ yer**, **Güncelleme**, **Aktif** (anahtar) ve işlemler (**Düzenle**).
 | **Sözleşme metni** | Zengin metin editörü |
 | **Gösterildiği yer › Ödeme formunda göster** | İşaretliyse sözleşme ödeme formunda onaylatılır |
 | **Gösterildiği yer › Üyelik formunda göster** | Yalnız [Vitrin eklentisi](/vitrin/) kuruluysa görünür: işaretliyse vitrinin kayıt formunda onaylatılır. Çekirdekte üyelik formu yoktur. Bayileri siz eklersiniz |
-| **Sıra** | Listede, onay kutusunda ve bayi panelinde sıralama (küçük önce) |
+| **Gösterildiği yer › Sitede sayfa olarak yayınla** | Yalnız vitrin kuruluysa görünür: işaretliyse sözleşme vitrinde herkese açık bir sayfada okunur (bkz. [Sitede yayınlama](#sitede-yayinlama)) |
+| **Sıra** | Listede, onay kutusunda, sitenin alt menüsünde ve bayi panelinde sıralama (küçük önce) |
 
-İki kutu da işaretsizse sözleşme **genel** sözleşmedir. Ekrandaki açıklama: "İşaretliyse formda
-onaylatılır. İşaretsizse genel sözleşmedir. Aktifse yalnız bayi panelindeki Sözleşmeler'de
-okunur."
+Hiçbir kutu işaretli değilse sözleşme **genel** sözleşmedir. Ekrandaki açıklama: "Formlarda her
+sözleşme ayrı kutuyla onaylatılır; sitede yayınlanan sözleşme herkese açık bir sayfada okunur.
+Aktif sözleşmelerin hepsi bayi panelindeki Sözleşmeler'de de okunur."
 
 Yeni sözleşme **pasif** başlar. Metni hazır olunca listedeki **Aktif** anahtarıyla kullanıma
 açın. Pasif sözleşme hiçbir formda ve bayi panelinde görünmez. Sözleşmeyi silmek için düzenleme
 ekranındaki sil düğmesini kullanın (onay sorulur).
+
+### Sitede yayınlama {#sitede-yayinlama}
+
+Vitrin kuruluysa yasal metinleri (KVKK aydınlatma metni, mesafeli satış sözleşmesi, çerez
+politikası …) ayrıca içerik sayfası olarak yazmanız gerekmez. Sözleşmede **Sitede sayfa olarak
+yayınla** işaretli ve sözleşme aktifse:
+
+- Metin vitrinde `/sayfa/{kısa ad}` adresinde, içerik sayfalarıyla aynı görünümde açılır.
+- Sitenin alt menüsüne (footer) ve site haritasına kendiliğinden eklenir.
+- Metindeki [yer tutucular](#yer-tutucular) Kurumsal Bilgiler'den doldurulur.
+
+Böylece aynı metin hem formda onaylatılır hem sitede okunur; değiştirdiğinizde her yerde güncellenir.
+Aynı kısa adlı bir içerik sayfası da varsa (bkz. [Vitrin › Sayfalar](/vitrin/icerik-yonetimi#sayfalar))
+o adreste **sayfa** gösterilir; çakışmaması için birini silin ya da kısa adını değiştirin.
 
 ### Ödeme formunda nasıl görünür? {#sozlesme-onayi}
 
@@ -243,8 +261,10 @@ Sözleşme kutularının altında **isteğe bağlı** bir kutu daha vardır:
 İşaretlemek zorunlu değildir; sipariş onaysız da verilir. İşaretlenirse onay zamanı siparişe
 yazılır ve sipariş detayında "Ticari ileti onayı: *tarih*" olarak görünür. Vitrinin misafir teklif
 formunda da aynı kutu vardır; teklif detayında **Ticari ileti onayı** satırı "Verildi (*tarih*,
-IP: …)" ya da "Verilmedi" yazar. Ticari ileti göndermeden önce bu kaydı kontrol edin (İYS'ye
-kayıt sizin sorumluluğunuzdadır).
+IP: …)" ya da "Verilmedi" yazar. Vitrinin üyelik (kayıt) formunda da her sözleşme kendi kutusuyla
+onaylatılır ve altında aynı isteğe bağlı kutu çıkar; işaretlenirse üyenin özet kartında **Ticari
+ileti onayı** satırı onay tarihini, işaretlenmezse "Verilmedi" yazar. Ticari ileti göndermeden önce
+bu kaydı kontrol edin (İYS'ye kayıt sizin sorumluluğunuzdadır).
 
 ### Metinlerde yer tutucular {#yer-tutucular}
 

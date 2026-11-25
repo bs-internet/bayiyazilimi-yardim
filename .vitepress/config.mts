@@ -165,6 +165,11 @@ export default defineConfig({
                 ],
             },
             {
+                text: "XML Bayilik eklentisi",
+                collapsed: true,
+                items: [{ text: "XML ürün akışı", link: "/xmlbayilik/" }],
+            },
+            {
                 text: "Sevkiyat eklentisi",
                 collapsed: true,
                 items: [

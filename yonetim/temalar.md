@@ -43,14 +43,14 @@ Tema hemen uygulanır ("Mağaza teması: *tema adı*." bildirimi). Varsayılan t
 
 ### Tüm temalar
 
-"Mağazanız için kurabileceğiniz temalar." Liste her açılışta bayiyazilimi.com'dan güncel haliyle
+"Mağazanız için kurabileceğiniz temalar." Liste her açılışta market.bayiyazilimi.com'dan güncel haliyle
 alınır ("Tema listesi yükleniyor…"). Kurulu olanlar **Kurulu** rozetiyle işaretlidir; **İncele**
-temanın tanıtım sayfasını (önizleme ve fiyat bilgisi) açar.
+temanın market sayfasını (önizleme, fiyat, satın alma) yeni sekmede açar.
 
 ### Hazır temalar {#hazir-temalar}
 
 Bayi Yazılımı için yedi tema vardır. Hepsi renklerini **İçerik › Görünüm › Tema renkleri**'nden
-alır; her birinin canlı demosu bayiyazilimi.com'da.
+alır; her birinin canlı demosu var (bağlantılar [market.bayiyazilimi.com](https://market.bayiyazilimi.com) ve [bayiyazilimi.com](https://bayiyazilimi.com) sayfalarında).
 
 | Tema | Kimin için | Öne çıkanlar |
 |---|---|---|

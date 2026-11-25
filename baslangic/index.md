@@ -41,7 +41,7 @@ Giriş ekranı ortaktır. Kullanıcı giriş yaptığında türüne göre kendi 
 - **Paraşüt** ve **BizimHesap**: satışları ön muhasebe programına satış faturası olarak aktarır.
   Bkz. [Muhasebe entegrasyonları](/muhasebe/).
 
-Eklentiler hakkında bilgi ve fiyatlar için: [bayiyazilimi.com](https://bayiyazilimi.com).
+Eklentiler, temalar ve fiyatlar: [market.bayiyazilimi.com](https://market.bayiyazilimi.com).
 
 ## Nereden başlamalı?
 

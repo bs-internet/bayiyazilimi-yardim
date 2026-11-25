@@ -7,8 +7,8 @@ Mağazanın satışlarını ön muhasebe programınıza **satış faturası** ol
 | **Paraşüt** | Satışları Paraşüt'e satış faturası olarak gönderir. İsteğe bağlı e-Fatura / e-Arşiv'e dönüştürür ve belge numarasını siparişe yazar. Bkz. [Paraşüt](/muhasebe/parasut) |
 | **BizimHesap** | Satışları BizimHesap'a satış faturası olarak gönderir. Müşteri ve ürün BizimHesap'ta yoksa oluşturulur. Bkz. [BizimHesap](/muhasebe/bizimhesap) |
 
-Eklentinin kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar. Bilgi için:
-[bayiyazilimi.com](https://bayiyazilimi.com). Kurulu eklentileri [Eklentiler](/yonetim/moduller)
+Eklentinin kurulumunu hizmet sağlayıcınız ya da geliştiriciniz yapar. Eklentiyi indirmek için:
+[market.bayiyazilimi.com](https://market.bayiyazilimi.com). Kurulu eklentileri [Eklentiler](/yonetim/moduller)
 ekranında görebilir, açıp kapatabilirsiniz.
 
 ::: tip Programınız listede yoksa

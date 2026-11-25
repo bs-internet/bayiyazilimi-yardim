@@ -13,10 +13,13 @@ Ek özellikler **eklentilerle** gelir.
 | **Paraşüt** | Satışları Paraşüt'e satış faturası olarak aktarır. İsteğe bağlı e-Fatura / e-Arşiv. Bkz. [Paraşüt](/muhasebe/parasut) |
 | **BizimHesap** | Satışları BizimHesap'a satış faturası olarak aktarır. Bkz. [BizimHesap](/muhasebe/bizimhesap) |
 | **Plasiyer** (ücretli) | Saha satış temsilcileri kendi mobil ekranından bayileri adına sipariş, teklif, tahsilat (yönetici onayıyla) ve ziyaret girer. Hedef ve prim. Bkz. [Plasiyer eklentisi](/plasiyer/) |
+| **XML Bayilik** (ücretli) | Bayilere kişiye özel ürün akışı adresi verir; ürünler tavsiye satış fiyatı, stok ve görselleriyle bayinin e-ticaret sitesine aktarılır. Bkz. [XML Bayilik eklentisi](/xmlbayilik/) |
+| **Sevkiyat** (ücretli) | Siparişleri kendi araç ve personelinizle dağıtma: sevkiyat planı, teslimat sırası, personelin telefon ekranı. Bkz. [Sevkiyat eklentisi](/sevkiyat/) |
+| **Trendyol**, **Hepsiburada** (ücretli) | Ürün, stok ve fiyatı pazaryerine gönderir, siparişleri sisteme alır. Bayi aktarımı eklentileriyle bayiler de kendi mağazalarına aktarabilir. Bkz. [Pazaryeri eklentileri](/pazaryeri/) |
 
 Mağaza ön yüzünün tasarımını değiştiren **temalar** da eklenti gibi kurulur. Bkz. [Temalar](/yonetim/temalar).
 
-Güncel liste, fiyatlar ve destek paketleri: [bayiyazilimi.com](https://bayiyazilimi.com).
+Güncel liste, fiyatlar, temalar ve hizmetler: [market.bayiyazilimi.com](https://market.bayiyazilimi.com). Ücretsiz eklentiler hesap açmadan indirilir; ücretli eklenti ve temalar markette satın alınır ve hesabınızdaki **Ürünlerim** sayfasından indirilir.
 
 ## Eklentiler ekranı {#eklentiler-ekrani}
 
@@ -69,9 +72,9 @@ Açma / kapatma [etkinlik kayıtlarına](/yonetim/etkinlik-kayitlari) yazılır.
 
 ### Tüm eklentiler
 
-"Sisteminize kurabileceğiniz eklentiler." Liste her açılışta bayiyazilimi.com'dan güncel haliyle
+"Sisteminize kurabileceğiniz eklentiler." Liste her açılışta market.bayiyazilimi.com'dan güncel haliyle
 alınır ("Eklenti listesi yükleniyor…"). Sunucu internete çıkamazsa son alınan liste gösterilir.
-Kurulu olanlar **Kurulu** rozetiyle işaretlidir. **İncele** eklentinin tanıtım sayfasını açar.
+Kurulu olanlar **Kurulu** rozetiyle işaretlidir. **İncele** eklentinin market sayfasını yeni sekmede açar; satın alma ve indirme orada yapılır.
 
 ## Eklenti kurulumu {#eklenti-kurulumu}
 
