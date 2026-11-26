@@ -148,7 +148,9 @@ Kargo ücreti ödeme adımında seçtiğiniz kargo firmasına ve sepetin desisin
 düğmesi sepete döner. Sepetiniz boşsa bu ekran açılmaz, "Sepetiniz boş." uyarısıyla sepete
 dönersiniz.
 
-Ekran numaralı adımlardan oluşur. Sağda **Sipariş özeti** görünür.
+Solda numaralı adımlar (iletişim, teslimat, fatura, sipariş notu), sağda **Sipariş özeti** yer alır.
+Kargo firması ve ödeme yöntemi özetin içinde seçilir: seçtiğiniz firmanın ücreti ve yöntemin farkı
+hemen altındaki toplamlarda görünür. Mobilde özet adımların altındadır.
 
 ### 1. İletişim Bilgileri
 
@@ -185,31 +187,33 @@ Kayıtlı bir adres seçtiğinizde alanlar o adresle dolar.
 
 Teslimat ve fatura adresi aynı olsa bile sipariş ikisini ayrı ayrı saklar.
 
-### 4. Kargo Firması {#kargo}
+### 4. Sipariş Notu
 
-Sepetinizi taşıyabilecek kargo firmaları listelenir: logo, ad, **Tahmini N iş günü** ve bu
+İsteğe bağlı, en fazla 2000 karakter. Teslimat ya da sipariş hakkında iletmek istediğiniz notu
+yazın.
+
+### Kargo Firması (özette) {#kargo}
+
+Özetteki ürünlerin altında sepetinizi taşıyabilecek kargo firmaları listelenir: logo, ad, **Tahmini N iş günü** ve bu
 sepet için kargo ücreti (ya da **Ücretsiz**). Varsayılan firma seçili gelir. Başka bir firma
 seçince özet ve toplam güncellenir. Altta "Sepet toplamı N desi üzerinden hesaplanmıştır."
 yazar.
 
-Tanımlı kargo firması yoksa bu adım görünmez ve ödeme yöntemi 4. adım olur.
+Tanımlı kargo firması yoksa bu bölüm görünmez.
 
-### 5. Ödeme Yöntemi {#odeme-yontemi}
+### Ödeme Yöntemi (özette) {#odeme-yontemi}
 
-Size açık ödeme yöntemleri listelenir. Seçtiğiniz yöntemin açıklaması altında yazar.
+Özetteki toplamların altında size açık ödeme yöntemleri listelenir. Seçtiğiniz yöntemin açıklaması altında yazar.
 
 | Yöntem | Ne zaman görünür? | Ne olur? |
 |---|---|---|
 | **Havale / EFT** | Firmamız havaleyi açtıysa ve tanımlı banka hesabı varsa | Sipariş **Ödeme Bekleniyor** durumunda açılır. Banka hesap bilgilerimiz sipariş e-postanızda ve ödeme alınana kadar [sipariş detayında](/bayi-paneli/siparislerim#havale-bilgileri) yer alır. Açıklamaya sipariş numaranızı yazın. Ödeme yaptıktan sonra [havale bildirimi](/bayi-paneli/cari-hesabim#havale-bildirimi) gönderin |
 | **Cari hesaba (vadeli)** | Vadeli (açık hesap) çalışıyorsanız | Açıklamada vade gün sayınız ve kullanılabilir limitiniz yazar. Ayrıntı aşağıda |
-| **Kredi / Banka Kartı** | Kartla ödeme açıksa | Siparişi onaylayınca güvenli ödeme sayfasına geçersiniz. Altında bilgi amaçlı **Taksit seçenekleri** tablosu görünür. Bkz. [Kartla ödeme](/cari/kartla-odeme#odeme-akisi) |
+| **Kredi / Banka Kartı** | Kartla ödeme açıksa | **Ödemeye Geç** ile kart ekranına (ya da ödeme kuruluşunun güvenli sayfasına) geçersiniz. Altında bilgi amaçlı **Taksit seçenekleri** tablosu görünür. Bkz. [Kartla ödeme](/cari/kartla-odeme#odeme-akisi) |
 
 Bazı yöntemler size özel kısıtlanmış olabilir (hesabınıza tanımlı izinli yöntemler) ya da en
 düşük sipariş tutarı olabilir. Bu durumda o yöntem listede görünmez. Hiç yöntem yoksa "Şu anda
 kullanılabilir ödeme yöntemi yok. Lütfen bizimle iletişime geçin." yazar.
-
-**Sipariş Notu**: isteğe bağlı, en fazla 2000 karakter. Teslimat ya da sipariş hakkında
-iletmek istediğiniz notu yazın.
 
 #### Havale indirimi
 
@@ -234,8 +238,8 @@ Ayrıntı: [Peşin ve vadeli çalışma](/cari/vadeli-calisma).
 
 ### Sipariş özeti ve onay {#sozlesme-onayi}
 
-Sağdaki özette ürünler (adet ve tutarlarıyla), kampanya indirimi, ara toplam, KDV, kargo ve
-genel toplam yer alır.
+Sağdaki özette ürünler (adet ve tutarlarıyla), kargo firması seçimi, kampanya indirimi, ara
+toplam, KDV, kargo, genel toplam ve ödeme yöntemi seçimi yer alır.
 
 Firmamız siparişte onaylanacak sözleşme belirlediyse her sözleşme için ayrı bir onay kutusu
 çıkar, ör. "**Mesafeli Satış Sözleşmesi** metnini okudum, onaylıyorum." Hepsini işaretlemeniz
@@ -249,7 +253,8 @@ okuyabilirsiniz.
 Son düğme:
 
 - **Siparişi Onayla**: havale ve cari hesaba ödemede.
-- **Ödemeye Geç**: kartla ödemede. Güvenli ödeme sayfasına geçersiniz.
+- **Ödemeye Geç**: kartla ödemede. Kart ekranına (ya da ödeme kuruluşunun güvenli sayfasına)
+  geçersiniz; bkz. [Kart ekranı](/cari/kartla-odeme#kart-ekrani).
 
 Hatalı ya da eksik alan varsa sayfa gönderilmez ve alanın altında hata yazar.
 

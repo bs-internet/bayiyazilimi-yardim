@@ -48,6 +48,7 @@ Etiket `PaymentMethods::label($key)` ile çözülür: eklenti kaldırılsa da es
 |---|---|---|
 | `bank_transfer` | Havale / EFT | Havale açık ve en az bir aktif banka hesabı |
 | `on_account` | Cari hesaba (vadeli) | Yalnız vadeli çalışan bayi |
+| `card_preview` | Kredi / Banka Kartı (önizleme) | Satış Ayarları › Kart ekranı önizlemesi açıkken; ödeme almaz |
 
 ## Ödeme kayıtları
 
@@ -78,3 +79,26 @@ PayTR ve iyzico eklentileri bunu genişletir:
    alanına yazılır.
 
 Taksit tablosu `/odeme/taksit/{sürücü}` adresinden sunulur (kartın ilk 6 hanesiyle BIN sorgusu).
+
+## Mağazanın kart ekranı: CardFormGateway {#card-form-gateway}
+
+Kart bilgisinin mağazanın kendi sayfasında alındığı sağlayıcılar (doğrudan 3D Secure API'si)
+`CardFormGateway`'i genişletir. Akış `HostedCardGateway` ile aynıdır; farkı ödeme sayfasıdır:
+
+1. `/odeme/kart/{referans}` çekirdeğin kart ekranını açar: girilen bilgiler, siparişin son hali ve
+   kart formu (`shop/payment/card`; tema `themes/{tema}/shop/payment/card` ile değiştirebilir, bayi
+   `app/shop/payment/card` görür). Vitrin bu rotaya mağaza düzeni verisini
+   `shop.payment.page_middleware` filtresiyle ekler.
+2. **Ödeme Yap** imzalı, CSRF korumalı düz bir form gönderimidir (`shop.payment.charge`). İstek
+   doğrulanır (Luhn, son kullanma tarihi) ve sürücünün `charge(Payment, CardDetails, Request)`
+   metoduna verilir. Yanıt genellikle bankanın 3D sayfasıdır.
+3. Sonuç `handleReturn()` / `handleCallback()` ile `complete()` ya da `fail()` olur.
+
+Sürücünün isteğe bağlı metotları: `notice()` (formun üstündeki uyarı), `maxInstallment()` (1 = tek
+çekim; büyükse kart ekranında taksit seçimi çıkar ve ödeme formundaki bilgi tablosu gösterilir).
+
+Kart bilgisi saklanmaz: `CardDetails` yalnız istek süresince bellekte durur, dökümde maskelidir
+(`masked()`, `bin()`); kart alanları doğrulama hatasında oturuma yazılmaz (`dontFlash`).
+
+Çekirdekte `card_preview` (Kredi / Banka Kartı) önizleme sürücüsü vardır: Satış Ayarları'ndan açılır,
+kart ekranını gösterir ama **hiçbir zaman ödeme almaz**.

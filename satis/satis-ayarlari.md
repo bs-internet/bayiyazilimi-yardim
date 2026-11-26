@@ -2,7 +2,7 @@
 
 **Ayarlar › Tanımlamalar › Satış Ayarları** fiyatların KDV dahil / hariç gösterimini, teklif
 geçerlilik süresini, iade talebi süresini ve yönetici bildirimlerinin gideceği e-posta adresini
-belirler. **Kaydet** ile kaydedilir. Değişiklik etkinlik kayıtlarına yazılır.
+belirler; kart ekranı önizlemesi de buradan açılır. **Kaydet** ile kaydedilir. Değişiklik etkinlik kayıtlarına yazılır.
 
 ## Fiyat gösterimi
 
@@ -43,6 +43,12 @@ değişmez. İade süresi ise talep açılırken o anki ayara göre denetlenir.
 Bildirim e-postası boşsa yeni sipariş, teklif, iade ve havale bildirimleri size **hiç gelmez**.
 Bkz. [E-posta ve bildirimler](/yonetim/e-posta-bildirimleri).
 :::
+
+## Kartla ödeme {#kartla-odeme}
+
+| Alan | Açıklama |
+|---|---|
+| **Kart ekranı önizlemesi** | Varsayılan kapalı. Sanal pos bağlanmadan önce kartla ödeme akışını (ödeme sayfası → kart ekranı) gösterir; **ödeme almaz**. Bkz. [Kart ekranı önizlemesi](/cari/kartla-odeme#onizleme). |
 
 ## İlgili ayarlar
 

@@ -64,6 +64,36 @@ Kart seçeneği ödeme ekranında yalnız şu koşullarda görünür:
 
 Bu kurallar yalnız siparişte geçerlidir. [kartla cari ödemeyi](#cari-odeme) etkilemez.
 
+## Kart ekranı (mağazanın kendi sayfası) {#kart-ekrani}
+
+Bazı ödeme kuruluşları kart bilgisinin mağazanın kendi sayfasında girilmesine izin verir (doğrudan
+3D Secure bağlantısı). Böyle bir eklentide müşteri **Ödemeye Geç**'e bastıktan sonra ödeme
+kuruluşunun sayfasına değil, mağazanın **kart ekranına** geçer:
+
+- **Sipariş Bilgileriniz**: ödeme formunda girdiği iletişim bilgileri, teslimat adresi, fatura
+  bilgileri, kargo firması ve sipariş notu.
+- **Kart Bilgileri**: kart resmi ve kart formu (kart üzerindeki ad soyad, kart numarası, son kullanma
+  tarihi, güvenlik kodu). Yazılanlar kart resminde anında görünür; güvenlik kodu yazılırken kart
+  arkasını döner. Eklenti taksit sunuyorsa taksit seçimi de buradadır.
+- **Sipariş Özeti**: ürünler, toplamlar ve **Ödeme Yap** düğmesi.
+
+**Ödeme Yap**'a basınca kart bankanın 3D Secure doğrulamasına gider; sonuç
+[ödeme akışındaki](#odeme-akisi) gibi siparişe işlenir. Kart bilgisi sistemde saklanmaz, hiçbir
+kayda ya da günlüğe yazılmaz. Sayfa vitrinde etkin temanın görünümünde açılır.
+
+### Kart ekranı önizlemesi {#onizleme}
+
+Sanal pos bağlanmadan önce bu akışı görmek için **Tanımlamalar › Satış Ayarları › Kartla ödeme ›
+Kart ekranı önizlemesi** açılır. Ödeme ekranında **Kredi / Banka Kartı** seçeneği çıkar ve kart
+ekranı açılır, ama **ödeme alınmaz**: sayfanın üstünde "bu ekran önizlemedir" uyarısı durur,
+**Ödeme Yap**'a basınca müşteri "Kartla ödeme henüz devreye alınmadı" uyarısını görür. Sipariş
+**Ödeme Bekleniyor** kalır, 60 dakika sonra **Ödeme Başarısız** olur ve stok geri eklenir.
+
+::: warning Canlı sitede
+Önizleme açıkken gerçek müşteriler de kart seçeneğini görür. Yalnız kısa bir süre için açın;
+sanal pos eklentisi kurulunca kapatın.
+:::
+
 ## Taksit {#taksit}
 
 ### Ödeme ekranındaki taksit tablosu
