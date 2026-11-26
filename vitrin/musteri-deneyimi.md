@@ -141,8 +141,10 @@ bu ürünleri çıkarması ya da teklif listesine eklemesi söylenir.
 
 ## Ödeme {#odeme}
 
-**Ödeme** (`/odeme`) ekranı hem üyeler hem misafirler içindir. Sağda sipariş özeti, solda
-numaralı adımlar vardır.
+**Ödeme** (`/odeme`) ekranı hem üyeler hem misafirler içindir. Solda numaralı adımlar (iletişim,
+teslimat, fatura, sipariş notu), sağda **Sipariş özeti** vardır. Kargo firması ve ödeme yöntemi
+özetin içinde seçilir. Özet ekrana yapışıktır; ekrandan uzunsa sayfa kaydıkça onay düğmesi ekranın
+altında kalır.
 
 ### 1. İletişim Bilgileri
 
@@ -150,6 +152,17 @@ numaralı adımlar vardır.
 |---|---|
 | **E-posta** | Zorunlu. Sipariş e-postaları ve misafirin sipariş bağlantısı buraya gider |
 | **Cep Telefonu** | Zorunlu, en az 10 karakter |
+
+Misafire bu adımda iki seçenek daha görünür (üyelik açıksa):
+
+- **Üye misiniz? Giriş yapın**: giriş sayfasına gider; girişten sonra müşteri ödeme sayfasına
+  döner, sepeti korunur ve kayıtlı adreslerini seçebilir.
+- **Bu bilgilerle üye olmak istiyorum**: işaretlenince **Şifre**, **Şifre (tekrar)** ve ödeme
+  formunda olmayan üyelik sözleşmelerinin (ör. **Üyelik Sözleşmesi**) onay kutuları çıkar. Sipariş
+  verilince üyelik de açılır: ad soyad fatura bilgilerinden alınır, sipariş ve adresler yeni hesaba
+  yazılır, müşteri oturum açmış olur ve e-postasına doğrulama bağlantısı gider. Üyelik, kayıt
+  formundaki gibi **Kısıtlı** durumda açılır. Sipariş verilemezse üyelik de açılmaz. E-posta zaten
+  kayıtlıysa "Bu e-posta adresiyle üyeliğiniz var; giriş yaparak devam edin." uyarısı çıkar.
 
 ### 2. Teslimat Adresi
 
@@ -175,20 +188,21 @@ numaralı adımlar vardır.
 | **Fatura Adresi**, **İl**, **İlçe**, **Posta Kodu** | Fatura adresi teslimattan farklıysa |
 | **Yeni adresleri Adreslerim'e kaydet** | Yalnız üye müşteride, yeni adres girildiyse. Teslimat ve fatura adresi ayrı ayrı kaydedilir |
 
-### 4. Kargo Firması
+### Kargo Firması (özette)
 
-Aktif kargo firmaları, tahmini teslim süresi ("Tahmini N iş günü") ve sepetin desisine göre
-hesaplanan ücretle listelenir. Kargo firması tanımlı değilse bu adım görünmez. Bkz.
+Seçili kargo firması ve sepetin desisine göre hesaplanan ücreti tek satırda yazar. Başka aktif
+firma varsa **Diğer kargo seçenekleri (N)** ile açılan listeden (tahmini teslim süresi ve ücretiyle)
+seçilir. Kargo firması tanımlı değilse bu bölüm görünmez. Bkz.
 [Kargo](/satis/kargo).
 
-### 5. Ödeme Yöntemi
+### Ödeme Yöntemi (özette)
 
-Ödeme ekranında yalnız o an kullanılabilir yöntemler listelenir:
+Özetteki toplamların altında yalnız o an kullanılabilir yöntemler listelenir:
 
 | Yöntem | Ne zaman görünür |
 |---|---|
 | **Havale / EFT** | Havale açıksa ve en az bir aktif banka hesabı varsa. Havale indirimi tanımlıysa "Havale indirimi (%…)" ve indirimli **Ödenecek tutar** gösterilir |
-| **Kartla ödeme** | Kart ödeme eklentisi (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir. Seçilince düğme **Ödemeye Geç** olur ve ödeme sağlayıcının sayfasına gidilir |
+| **Kartla ödeme** | Kart ödeme eklentisi (ör. PayTR, iyzico) kurulu ve açıksa. Taksit seçenekleri bilgi amaçlı gösterilir. Seçilince düğme **Ödemeye Geç** olur; ödeme sağlayıcının sayfasına ya da mağazanın [kart ekranına](/cari/kartla-odeme#kart-ekrani) gidilir |
 | **Cari hesaba (vadeli)** | Yalnız vadeli çalışan hesaplarda (genellikle bayiler) |
 
 Hiç yöntem yoksa "Şu anda kullanılabilir ödeme yöntemi yok. Lütfen bizimle iletişime geçin."
@@ -196,7 +210,7 @@ yazar. Bkz. [Havale ve ödeme bildirimi](/cari/havale), [Kartla ödeme](/cari/ka
 
 ### Not ve onay
 
-- **Sipariş Notu**: isteğe bağlı, en çok 2.000 karakter.
+- **Sipariş Notu** (solda 4. adım): isteğe bağlı, en çok 2.000 karakter.
 - Sözleşme onayı: **Ayarlar › Tanımlamalar › Sözleşmeler**'de **Ödeme formunda göster**
   işaretli her aktif sözleşme için kendi onay kutusu çıkar, ör. "**Mesafeli Satış Sözleşmesi** metnini okudum, onaylıyorum." Her kutuyu
   işaretlemek zorunludur. Sözleşme adı metni bir pencerede açan bir bağlantıdır. İşaretli sözleşme
