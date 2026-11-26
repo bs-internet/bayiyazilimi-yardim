@@ -77,17 +77,25 @@ kuruluşunun sayfasına değil, mağazanın **kart ekranına** geçer:
   arkasını döner. Eklenti taksit sunuyorsa taksit seçimi de buradadır.
 - **Sipariş Özeti**: ürünler, toplamlar ve **Ödeme Yap** düğmesi.
 
-**Ödeme Yap**'a basınca kart bankanın 3D Secure doğrulamasına gider; sonuç
-[ödeme akışındaki](#odeme-akisi) gibi siparişe işlenir. Kart bilgisi sistemde saklanmaz, hiçbir
-kayda ya da günlüğe yazılmaz. Sayfa vitrinde etkin temanın görünümünde açılır.
+**Sipariş, ödeme alınınca oluşur.** Ödeme formu gönderildiğinde henüz sipariş açılmaz: sepet
+olduğu gibi kalır, stok düşülmez, "Siparişiniz alındı" e-postası gitmez. Müşteri kart ekranından
+**Ödeme formuna dön** ile geri dönüp ödeme yöntemini ya da sepetini değiştirebilir; vazgeçerse
+sipariş hiç oluşmaz.
+
+**Ödeme Yap**'a basınca önce sepet ve tutar yeniden denetlenir (bu arada fiyat ya da stok
+değiştiyse kart bankaya gönderilmez, müşteri ödeme formuna döner). Sonra kart bankanın 3D Secure
+doğrulamasına gider; ödeme onaylanınca sipariş **Ödendi** olarak açılır, sepet boşalır ve e-postalar
+gider. Ödeme alınıp sipariş açılamazsa (ör. son ürün bu arada satıldı) yöneticilere hata bildirimi
+gider; ödeme iade edilir ya da sipariş elle girilir. Kart bilgisi sistemde saklanmaz, hiçbir kayda
+ya da günlüğe yazılmaz. Sayfa vitrinde etkin temanın görünümünde açılır.
 
 ### Kart ekranı önizlemesi {#onizleme}
 
 Sanal pos bağlanmadan önce bu akışı görmek için **Tanımlamalar › Satış Ayarları › Kartla ödeme ›
 Kart ekranı önizlemesi** açılır. Ödeme ekranında **Kredi / Banka Kartı** seçeneği çıkar ve kart
 ekranı açılır, ama **ödeme alınmaz**: sayfanın üstünde "bu ekran önizlemedir" uyarısı durur,
-**Ödeme Yap**'a basınca müşteri "Kartla ödeme henüz devreye alınmadı" uyarısını görür. Sipariş
-**Ödeme Bekleniyor** kalır, 60 dakika sonra **Ödeme Başarısız** olur ve stok geri eklenir.
+**Ödeme Yap**'a basınca müşteri "Kartla ödeme henüz devreye alınmadı" uyarısını görür. Ödeme
+alınmadığı için **sipariş oluşmaz**; sepet müşteride kalır, başka bir ödeme yöntemiyle devam edebilir.
 
 ::: warning Canlı sitede
 Önizleme açıkken gerçek müşteriler de kart seçeneğini görür. Yalnız kısa bir süre için açın;

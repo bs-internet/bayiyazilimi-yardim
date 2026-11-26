@@ -85,12 +85,19 @@ Taksit tablosu `/odeme/taksit/{sürücü}` adresinden sunulur (kartın ilk 6 han
 Kart bilgisinin mağazanın kendi sayfasında alındığı sağlayıcılar (doğrudan 3D Secure API'si)
 `CardFormGateway`'i genişletir. Akış `HostedCardGateway` ile aynıdır; farkı ödeme sayfasıdır:
 
+0. **Sipariş ödeme alınınca açılır.** Ödeme formu `OrderService::previewFromCart` ile siparişin bütün
+   denetimlerinden geçer (kayıt yapılmaz) ve yalnız bekleyen bir ödeme kaydı oluşur
+   (`CardCheckout::start`; form bilgileri ve sepetin anlık görüntüsü `payments.checkout`'ta). Sepet
+   boşalmaz, stok düşülmez, e-posta gitmez. `complete()` bu kayıttan siparişi açar
+   (`CardCheckout::place`) ve ödemeyi bağlar; `fail()` ya da süre aşımında sipariş hiç oluşmaz.
+   `buyer()` alıcı bilgisini bu kayıttan verir. Teklif ödemesi bu akışa girmez.
 1. `/odeme/kart/{referans}` çekirdeğin kart ekranını açar: girilen bilgiler, siparişin son hali ve
    kart formu (`shop/payment/card`; tema `themes/{tema}/shop/payment/card` ile değiştirebilir, bayi
    `app/shop/payment/card` görür). Vitrin bu rotaya mağaza düzeni verisini
    `shop.payment.page_middleware` filtresiyle ekler.
 2. **Ödeme Yap** imzalı, CSRF korumalı düz bir form gönderimidir (`shop.payment.charge`). İstek
-   doğrulanır (Luhn, son kullanma tarihi) ve sürücünün `charge(Payment, CardDetails, Request)`
+   doğrulanır (Luhn, son kullanma tarihi); sepet ya da tutar değiştiyse kart sağlayıcıya gitmez
+   (`CardCheckout::problem`). Sonra sürücünün `charge(Payment, CardDetails, Request)`
    metoduna verilir. Yanıt genellikle bankanın 3D sayfasıdır.
 3. Sonuç `handleReturn()` / `handleCallback()` ile `complete()` ya da `fail()` olur.
 
