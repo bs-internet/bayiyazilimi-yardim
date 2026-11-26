@@ -194,10 +194,10 @@ yazın.
 
 ### Kargo Firması (özette) {#kargo}
 
-Özetteki ürünlerin altında sepetinizi taşıyabilecek kargo firmaları listelenir: logo, ad, **Tahmini N iş günü** ve bu
-sepet için kargo ücreti (ya da **Ücretsiz**). Varsayılan firma seçili gelir. Başka bir firma
-seçince özet ve toplam güncellenir. Altta "Sepet toplamı N desi üzerinden hesaplanmıştır."
-yazar.
+Özetteki ürünlerin altında seçili kargo firması ve bu sepet için kargo ücreti (ya da **Ücretsiz**)
+tek satırda yazar; varsayılan firma seçili gelir. Başka firmalar da tanımlıysa altında
+**Diğer kargo seçenekleri (N)** bağlantısı çıkar: tıklayınca firmalar logo, ad, **Tahmini N iş
+günü** ve ücretiyle listelenir. Birini seçince liste kapanır, özet ve toplam güncellenir.
 
 Tanımlı kargo firması yoksa bu bölüm görünmez.
 
